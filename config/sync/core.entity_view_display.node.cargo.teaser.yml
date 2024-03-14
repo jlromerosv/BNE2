@@ -1,0 +1,33 @@
+uuid: 75cc524f-8a98-425e-ab31-c913ccff0ca1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cargo.field_domain_access
+    - field.field.node.cargo.field_domain_all_affiliates
+    - field.field.node.cargo.field_domain_source
+    - field.field.node.cargo.field_fecha_fin
+    - field.field.node.cargo.field_fecha_inicio
+    - node.type.cargo
+  module:
+    - user
+id: node.cargo.teaser
+targetEntityType: node
+bundle: cargo
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

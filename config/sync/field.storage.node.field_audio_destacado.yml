@@ -1,0 +1,24 @@
+uuid: cd83f2ec-6539-46c5-85d5-f68c278b8719
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - media
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_audio_destacado
+field_name: field_audio_destacado
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

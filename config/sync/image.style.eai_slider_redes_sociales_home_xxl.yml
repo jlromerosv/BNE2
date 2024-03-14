@@ -1,0 +1,15 @@
+uuid: f8298af3-99fb-469c-9347-210e255558df
+langcode: es
+status: true
+dependencies: {  }
+name: eai_slider_redes_sociales_home_xxl
+label: 'Slider Redes Sociales Home XXL'
+effects:
+  7967fd47-baf5-470b-8767-d4529acbe019:
+    uuid: 7967fd47-baf5-470b-8767-d4529acbe019
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 743
+      anchor: center-center

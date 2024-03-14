@@ -1,0 +1,18 @@
+uuid: 2c19c7f1-7ee0-4353-aafd-fbff2421056c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+id: node.ubicacion.title
+field_name: title
+entity_type: node
+bundle: ubicacion
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

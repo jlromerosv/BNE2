@@ -1,0 +1,14 @@
+uuid: bace2242-184c-4500-981d-bf994401550f
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.vista_agenda
+  module:
+    - user
+id: user_remove_role_action.vista_agenda
+label: 'Elimina el rol vista agenda al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: vista_agenda

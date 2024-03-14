@@ -1,0 +1,20 @@
+uuid: 27ef50dc-eb3d-456a-875c-4b8adb76bb30
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_anuncio
+  module:
+    - path
+id: taxonomy_term.tipo_de_anuncio.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_anuncio
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

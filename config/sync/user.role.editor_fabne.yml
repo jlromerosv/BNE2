@@ -1,0 +1,51 @@
+uuid: b31340a4-1dbe-4655-9775-ea6f780b0e05
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.html_full
+    - filter.format.html_sencillo
+    - media.type.archivo
+    - media.type.archivo_de_video
+    - media.type.imagen
+    - media.type.video_remoto
+  module:
+    - domain_access
+    - domain_content
+    - filter
+    - media
+    - node
+id: editor_fabne
+label: 'Editor FABNE'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access domain content'
+  - 'access domain content editors'
+  - 'access media overview'
+  - 'create alerta content on assigned domains'
+  - 'create archivo media'
+  - 'create archivo_de_video media'
+  - 'create campana content on assigned domains'
+  - 'create contenido_generico content on assigned domains'
+  - 'create evento content on assigned domains'
+  - 'create galeria_de_imagenes content on assigned domains'
+  - 'create imagen media'
+  - 'create noticia content on assigned domains'
+  - 'create pagina_basica content on assigned domains'
+  - 'create video_remoto media'
+  - 'delete media'
+  - 'delete own archivo media'
+  - 'delete own imagen media'
+  - 'delete own video_remoto media'
+  - 'edit own archivo media'
+  - 'edit own imagen media'
+  - 'edit own video_remoto media'
+  - 'update media'
+  - 'update pagina_basica content on assigned domains'
+  - 'use text format html_full'
+  - 'use text format html_sencillo'
+  - 'view all media revisions'
+  - 'view media'
+  - 'view own unpublished media'

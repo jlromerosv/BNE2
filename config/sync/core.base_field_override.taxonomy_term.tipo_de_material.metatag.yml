@@ -1,0 +1,18 @@
+uuid: 03f24ba4-4fac-4403-9254-a6fe4d92a140
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_material
+id: taxonomy_term.tipo_de_material.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: tipo_de_material
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

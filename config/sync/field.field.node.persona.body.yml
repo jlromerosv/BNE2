@@ -1,0 +1,23 @@
+uuid: 52402702-39d1-4202-9c1a-1bf90abee65d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.persona
+  module:
+    - text
+id: node.persona.body
+field_name: body
+entity_type: node
+bundle: persona
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

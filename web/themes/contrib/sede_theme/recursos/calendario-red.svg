@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.047" height="19.047" viewBox="0 0 19.047 19.047">
+  <g id="calendario" transform="translate(0.1 0.099)">
+    <path id="Trazado_716" data-name="Trazado 716" d="M16.687,59.65H2.16A2.143,2.143,0,0,1,0,57.527V44.791a2.143,2.143,0,0,1,2.16-2.123H16.687a2.143,2.143,0,0,1,2.16,2.123V57.527A2.143,2.143,0,0,1,16.687,59.65ZM2.16,43.826a.975.975,0,0,0-.982.965V57.527a.975.975,0,0,0,.982.965H16.687a.975.975,0,0,0,.982-.965V44.791a.975.975,0,0,0-.982-.965Zm0,0" transform="translate(0 -40.802)" fill="#ad2030" stroke="#fff" stroke-width="0.2"/>
+    <path id="Trazado_717" data-name="Trazado 717" d="M18.258,172.067H.589a.71.71,0,0,1,0-1.4H18.258a.71.71,0,0,1,0,1.4Zm0,0" transform="translate(0 -164.464)" fill="#ad2030" stroke="#fff" stroke-width="0.2"/>
+    <path id="Trazado_718" data-name="Trazado 718" d="M107.367,5.6a.7.7,0,0,1-.7-.7V.7a.7.7,0,1,1,1.4,0V4.9A.7.7,0,0,1,107.367,5.6Zm0,0" transform="translate(-102.791 0.001)" fill="#ad2030" stroke="#fff" stroke-width="0.2"/>
+    <path id="Trazado_719" data-name="Trazado 719" d="M374.031,5.6a.7.7,0,0,1-.7-.7V.7a.7.7,0,1,1,1.4,0V4.9A.7.7,0,0,1,374.031,5.6Zm0,0" transform="translate(-359.761 0.001)" fill="#ad2030" stroke="#fff" stroke-width="0.2"/>
+  </g>
+</svg>

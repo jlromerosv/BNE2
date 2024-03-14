@@ -1,0 +1,20 @@
+uuid: 36ae0503-4f85-4b69-92d7-f2da15453f51
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.coleccion
+  module:
+    - options
+id: node.coleccion.publish_state
+field_name: publish_state
+entity_type: node
+bundle: coleccion
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

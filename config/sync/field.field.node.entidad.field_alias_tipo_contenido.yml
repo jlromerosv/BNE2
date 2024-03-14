@@ -1,0 +1,38 @@
+uuid: a81a36dd-7c62-4ef4-996c-c8884f8c6e80
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alias_tipo_contenido
+    - node.type.entidad
+    - taxonomy.vocabulary.alias_de_tipo_de_contenido
+  content:
+    - 'taxonomy_term:alias_de_tipo_de_contenido:20efda27-d443-4b36-9f0a-5a930c0f1951'
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.entidad.field_alias_tipo_contenido
+field_name: field_alias_tipo_contenido
+entity_type: node
+bundle: entidad
+label: 'Alias de tipo de contenido'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 20efda27-d443-4b36-9f0a-5a930c0f1951
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alias_de_tipo_de_contenido: alias_de_tipo_de_contenido
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

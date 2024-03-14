@@ -1,0 +1,20 @@
+uuid: 5adefe48-390f-4a70-b20a-ea470d92aa31
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.publicacion
+  module:
+    - options
+id: node.publicacion.publish_state
+field_name: publish_state
+entity_type: node
+bundle: publicacion
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

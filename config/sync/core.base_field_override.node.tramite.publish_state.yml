@@ -1,0 +1,20 @@
+uuid: 16dde649-acaa-45cf-ac8f-1d28fb94b9a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+  module:
+    - options
+id: node.tramite.publish_state
+field_name: publish_state
+entity_type: node
+bundle: tramite
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

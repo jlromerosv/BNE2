@@ -1,0 +1,18 @@
+uuid: 6b935380-ba5c-472d-96d4-05f112ba6054
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad
+id: node.entidad.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: entidad
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

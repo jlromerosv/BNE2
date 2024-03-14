@@ -1,0 +1,38 @@
+uuid: eb84125d-bf85-40f6-a7b3-bec4a366d4b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alias_tipo_contenido
+    - node.type.faq
+    - taxonomy.vocabulary.alias_de_tipo_de_contenido
+  content:
+    - 'taxonomy_term:alias_de_tipo_de_contenido:89afac56-5477-48f1-be09-5b0bbf8dec2f'
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.faq.field_alias_tipo_contenido
+field_name: field_alias_tipo_contenido
+entity_type: node
+bundle: faq
+label: 'Alias de tipo de contenido'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 89afac56-5477-48f1-be09-5b0bbf8dec2f
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alias_de_tipo_de_contenido: alias_de_tipo_de_contenido
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

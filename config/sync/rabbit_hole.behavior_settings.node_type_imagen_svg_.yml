@@ -1,0 +1,14 @@
+uuid: 0af64665-8fb7-4b3d-a4a3-c8d556bb9f1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+id: node_type_imagen_svg_
+entity_type_id: node_type
+entity_id: imagen_svg_
+action: page_redirect
+allow_override: 0
+redirect: '[site:url]'
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,14 @@
+uuid: c2dcbcad-7468-4860-99be-0363987354f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sesion_de_actividad
+id: node_type_sesion_de_actividad
+entity_type_id: node_type
+entity_id: sesion_de_actividad
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

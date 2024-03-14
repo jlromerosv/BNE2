@@ -1,0 +1,19 @@
+uuid: 45f7a305-1097-4827-88c5-dcc2b94ff37d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.campana
+id: node.campana.field_email
+field_name: field_email
+entity_type: node
+bundle: campana
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

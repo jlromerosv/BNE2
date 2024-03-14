@@ -1,0 +1,12 @@
+uuid: 39742f0e-7827-406e-9ece-a51f72997111
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: editor_periodicotomia
+label: 'Editor periodicotomía'
+weight: 5
+is_admin: null
+permissions:
+  - 'access content'

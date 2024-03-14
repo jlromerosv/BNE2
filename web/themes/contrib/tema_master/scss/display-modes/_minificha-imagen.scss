@@ -1,0 +1,71 @@
+/*
+    ============= MINIFICHA CON IMAGEN ==============
+
+    Estilos dedicados al modo de visualización de minificha con imagen.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin after-icon($size, $right, $icon)
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    after-icon = Inserta un icono después del contenido
+
+    responsive-img = Convierte una imagen en responsive
+
+    ----------------------- VARIABLES -------------------------
+    $size = Tamaño del icono
+
+    $right = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $main_color_2 / 6 = Color principal de tipo 2 /6
+
+    $help_icon = Icono de ayuda
+
+    $filter_main_color_1 = Filtro del color principal
+
+    $show_more_icon = Icono de "ver más"
+
+    $button_mn_2_icon = Icono del botón principal de tipo 2
+
+*/
+
+.node--view-mode-minificha-con-imagen {     
+    margin: 15px;
+
+    h2 {
+        display: none;
+    }
+
+    .node__content {
+
+        &::after {
+            @include after-icon(20px, 10px, $button_mn_2_icon);
+            bottom: 10px;
+            filter: $filter_main_color_6;
+        }
+
+        img {
+            @include responsive-img;
+        }
+
+        .block-layout-builder {
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        .field--name-created {
+            color: #ccc;
+        }
+
+        .field--name-title {
+            a {
+            color: $main_color_2;
+            font-size: 20px;
+            }
+        }
+    }
+}

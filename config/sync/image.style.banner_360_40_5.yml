@@ -1,0 +1,25 @@
+uuid: 6b95f2b4-7cae-4f54-9188-0c2b2719c31b
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point_banner
+  module:
+    - crop
+name: banner_360_40_5
+label: 'Banner 360 - 40:5'
+effects:
+  d395620b-e248-4269-b530-eed93d0ba15c:
+    uuid: d395620b-e248-4269-b530-eed93d0ba15c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point_banner
+  399e63e2-27db-4d7f-99a5-d3a23d8c2c51:
+    uuid: 399e63e2-27db-4d7f-99a5-d3a23d8c2c51
+    id: image_scale
+    weight: 2
+    data:
+      width: 360
+      height: null
+      upscale: false

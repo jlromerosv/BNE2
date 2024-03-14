@@ -1,0 +1,8 @@
+uuid: c9ecd79e-5fe7-4d87-a0c6-60126d07071f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Marca de agua evento'
+vid: marca_de_agua_evento
+description: ''
+weight: 0

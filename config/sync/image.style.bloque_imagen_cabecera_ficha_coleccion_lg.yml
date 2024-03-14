@@ -1,0 +1,15 @@
+uuid: 5c1cd8e1-1a71-4279-b1fe-4c31fafbb4cc
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_imagen_cabecera_ficha_coleccion_lg
+label: 'Bloque Imagen Cabecera ficha colección LG'
+effects:
+  bc6b368c-2007-452b-8111-47af7c39e871:
+    uuid: bc6b368c-2007-452b-8111-47af7c39e871
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 240
+      anchor: center-center

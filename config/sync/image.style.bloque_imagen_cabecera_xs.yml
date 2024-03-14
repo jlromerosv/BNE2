@@ -1,0 +1,26 @@
+uuid: 1a9de626-ef02-4783-a25b-b9b6df1217d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point_banner
+  module:
+    - crop
+name: bloque_imagen_cabecera_xs
+label: 'Bloque Imagen cabecera XS'
+effects:
+  0636613a-e00a-4c10-9127-830b4b91ec13:
+    uuid: 0636613a-e00a-4c10-9127-830b4b91ec13
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 576
+      height: 100
+      anchor: center-center
+  afe90a28-bfc0-4254-957c-0bbea1246c16:
+    uuid: afe90a28-bfc0-4254-957c-0bbea1246c16
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: focal_point_banner
+      automatic_crop_provider: null

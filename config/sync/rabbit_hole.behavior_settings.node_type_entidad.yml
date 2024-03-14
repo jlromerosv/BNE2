@@ -1,0 +1,14 @@
+uuid: 1b6827b3-3e93-4411-98ce-6a7815911f60
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad
+id: node_type_entidad
+entity_type_id: node_type
+entity_id: entidad
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

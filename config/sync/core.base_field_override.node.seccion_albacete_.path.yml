@@ -1,0 +1,20 @@
+uuid: f7720d91-57fb-4002-85cf-63e725a5aa3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+  module:
+    - path
+id: node.seccion_albacete_.path
+field_name: path
+entity_type: node
+bundle: seccion_albacete_
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

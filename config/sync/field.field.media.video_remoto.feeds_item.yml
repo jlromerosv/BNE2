@@ -1,0 +1,23 @@
+uuid: 7fb3ecad-1cd1-4aeb-9694-eb79bc9bcb42
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.feeds_item
+    - media.type.video_remoto
+  module:
+    - feeds
+id: media.video_remoto.feeds_item
+field_name: feeds_item
+entity_type: media
+bundle: video_remoto
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

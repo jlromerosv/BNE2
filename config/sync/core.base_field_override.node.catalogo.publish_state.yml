@@ -1,0 +1,20 @@
+uuid: 4af0e433-4a5d-492f-a739-0357324e767c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.catalogo
+  module:
+    - options
+id: node.catalogo.publish_state
+field_name: publish_state
+entity_type: node
+bundle: catalogo
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: RSNbRD3ekSaZoE19f3eHhm93gKOcD2PtmaAVmV3XMes
+langcode: es
+transport: smtp
+smtp_host: dagbne16.bne.local
+smtp_port: 25
+smtp_encryption: '0'
+sendmail_path: /usr/sbin/sendmail
+sendmail_mode: bs
+smtp_credential_provider: swiftmailer
+smtp_credentials:
+  swiftmailer:
+    username: ''
+    password: issuespulsia1234
+spool_directory: ''

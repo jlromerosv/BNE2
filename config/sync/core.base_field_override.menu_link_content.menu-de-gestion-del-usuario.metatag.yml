@@ -1,0 +1,18 @@
+uuid: dc608782-e683-4d2d-b48a-ce146d3abab4
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-de-gestion-del-usuario
+id: menu_link_content.menu-de-gestion-del-usuario.metatag
+field_name: metatag
+entity_type: menu_link_content
+bundle: menu-de-gestion-del-usuario
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

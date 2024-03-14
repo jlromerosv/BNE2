@@ -1,0 +1,21 @@
+uuid: f849e6ee-1f82-4c9a-916d-9eaa26cd8a8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.anuncio
+  module:
+    - datetime
+id: node.anuncio.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: anuncio
+label: 'Fecha de aprobación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

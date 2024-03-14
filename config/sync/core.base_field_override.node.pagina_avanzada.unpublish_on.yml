@@ -1,0 +1,18 @@
+uuid: 72deb5e7-6be0-4a4e-92c5-0549e0151f46
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+id: node.pagina_avanzada.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: pagina_avanzada
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

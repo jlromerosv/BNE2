@@ -1,0 +1,10 @@
+uuid: 0cea0c24-9bcb-4dfb-84e2-77bdeb9fa7bc
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.imagen_sidebar_obra
+label: 'Imagen sidebar obra'
+targetEntityType: media
+cache: true

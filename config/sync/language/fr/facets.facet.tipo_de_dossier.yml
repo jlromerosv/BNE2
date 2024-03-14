@@ -1,0 +1,5 @@
+name: 'Type de dossier'
+url_alias: Type_de_dossier
+widget:
+  config:
+    reset_text: 'Montrer tout'

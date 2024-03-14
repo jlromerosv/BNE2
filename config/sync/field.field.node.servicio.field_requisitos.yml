@@ -1,0 +1,21 @@
+uuid: f834bb21-3b69-4e7b-a136-60bde05a78ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requisitos
+    - node.type.servicio
+  module:
+    - text
+id: node.servicio.field_requisitos
+field_name: field_requisitos
+entity_type: node
+bundle: servicio
+label: Requisitos
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,18 @@
+uuid: f46a02a2-df99-4190-bae1-88f56db8bd4a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.tramite
+target_entity_type_id: node
+target_bundle: tramite
+default_langcode: site_default
+language_alterable: true

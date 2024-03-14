@@ -1,0 +1,33 @@
+uuid: 1148f112-68ac-42db-9d39-a1749ef63f86
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.area_de_transparencia
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: areadetransparencia
+theme: bne_theme
+region: sidebar_first
+weight: -69
+provider: null
+plugin: 'facet_block:area_de_transparencia'
+settings:
+  id: 'facet_block:area_de_transparencia'
+  label: 'Área de transparencia'
+  label_display: '0'
+  provider: facets
+  block_id: areadetransparencia
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/3311

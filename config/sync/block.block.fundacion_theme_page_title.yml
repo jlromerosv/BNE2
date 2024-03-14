@@ -1,0 +1,20 @@
+uuid: fd0b4e1b-b3a6-466c-92dd-1a0c72baeae1
+langcode: es
+status: false
+dependencies:
+  theme:
+    - fundacion_theme
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: fundacion_theme_page_title
+theme: fundacion_theme
+region: pre_content
+weight: -58
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 5398ad2a-4432-4cf6-b180-cc92f5e8a0e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.colectivo
+id: taxonomy_term.colectivo.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: colectivo
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,30 @@
+uuid: c658bf1f-6ee7-4177-b69f-ec8c35358c64
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:html:99a95f0e-af0a-42c6-a72a-3c23f84995b0'
+  module:
+    - block_content
+    - system
+  theme:
+    - bne_theme
+id: selectorbuscadorgeneral
+theme: bne_theme
+region: breadcrumb
+weight: -33
+provider: null
+plugin: 'block_content:99a95f0e-af0a-42c6-a72a-3c23f84995b0'
+settings:
+  id: 'block_content:99a95f0e-af0a-42c6-a72a-3c23f84995b0'
+  label: 'Selector buscador general'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/15327\r\n/node/2785\r\n/node/18794\r\n"

@@ -1,0 +1,12 @@
+uuid: fc1e46aa-043f-4f37-a49b-a84cf27ef647
+langcode: es
+status: true
+dependencies: {  }
+label: 'Minificha Destacados crop type'
+id: minificha_destacados_crop_type
+description: ''
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

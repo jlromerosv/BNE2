@@ -1,0 +1,10 @@
+uuid: a2a1a09f-115d-4749-add6-d60b0dbd4d97
+langcode: es
+status: true
+dependencies: {  }
+id: widgets
+label: Widgets
+config_type: 0
+config_key: node
+config_value:
+  widget: widget

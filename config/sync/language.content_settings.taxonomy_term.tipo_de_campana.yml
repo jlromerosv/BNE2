@@ -1,0 +1,18 @@
+uuid: 91a2b29c-ec67-4a51-a59b-4ceba535660c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_campana
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.tipo_de_campana
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_campana
+default_langcode: site_default
+language_alterable: true

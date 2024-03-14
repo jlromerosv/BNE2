@@ -1,0 +1,36 @@
+uuid: c4d584b7-c68d-47b3-928e-e18450f17694
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugares
+    - node.type.coleccion
+    - node.type.lugar
+    - node.type.pagina_basica
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.coleccion.field_lugares
+field_name: field_lugares
+entity_type: node
+bundle: coleccion
+label: 'Dónde consultar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pagina_basica: pagina_basica
+      lugar: lugar
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: pagina_basica
+field_type: entity_reference

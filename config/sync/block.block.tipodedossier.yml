@@ -1,0 +1,29 @@
+uuid: 76810a24-5205-4def-bd36-14216d114cc7
+langcode: es
+status: false
+dependencies:
+  config:
+    - facets.facet.tipo_de_dossier
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: tipodedossier
+theme: bne_theme
+region: sidebar_first
+weight: -26
+provider: null
+plugin: 'facet_block:tipo_de_dossier'
+settings:
+  id: 'facet_block:tipo_de_dossier'
+  label: 'Tipo de dossier'
+  label_display: '0'
+  provider: facets
+  block_id: tipodedossier
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/8445

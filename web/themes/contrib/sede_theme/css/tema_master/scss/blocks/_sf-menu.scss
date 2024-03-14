@@ -1,0 +1,106 @@
+/*
+    ========== SUPERFISH MENU ==========
+
+    Estilos dedicados al menú superfish cuando no tiene
+    estilos aplicados de forma predeterminada.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin right_arrow
+
+        @mixin down_arrow
+
+        @mixin sf_sub_indicator($size, $top)
+
+    ------------------------- MIXINS --------------------------
+    right_arrow = Permite poner la flecha del menú hacia la
+    derecha
+
+    down_arrow = Permite poner la flecha del menú hacia abajo
+
+    sf_sub_indicator = Con este mixin elegimos el tamaño
+    y la posición de la flecha del menú desplegable
+
+    ----------------------- VARIABLES -------------------------
+    $size = Indica el tamaño de la flecha
+
+    $top = Indica la posición con respecto a la parte superior
+    de la página
+
+    $main_color_4 = Color principal de tipo 4
+
+    $main_color_1 /4 / 5 = Color principal de tipo 1 / 4 / 5
+
+    $blanco = Color blanco
+*/
+.block-superfish {
+
+    ul.sf-menu.sf-style-none {
+
+        &::after {
+            content: '';
+            display: block;
+            float: none;
+            clear: both;
+        }
+
+        .sf-sub-indicator {
+            @include sf_sub_indicator(15px, 45%);
+            &::after {
+                @include down_arrow;
+            }
+        }
+         
+
+        &.sf-vertical {
+            li {
+                .sf-sub-indicator {
+                    @include sf_sub_indicator(15px, 45%);
+                    &::after {
+                        @include right_arrow;
+                    }
+                }
+            }
+        }
+
+        .nolink {
+            padding-right: 3em;
+            color: $main_color_1;
+            font-weight: 500;
+        }
+    
+        li {
+            background-color: $main_color_4;
+            a {
+                color: $main_color_1;
+                text-decoration: none;
+            }
+            
+            ul {
+                .sf-sub-indicator {
+                    @include sf_sub_indicator(15px, 50%);
+                    &::after {
+                        @include right_arrow;
+                    }
+                }
+                li {
+                    background-color: $main_color_4;
+                    border-bottom: 1px solid $main_color_1;
+                    &:hover {
+                        background-color: $main_color_5;
+                        & > a {
+                            color: $blanco;
+                        }
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    a {
+                        color: $main_color_1;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

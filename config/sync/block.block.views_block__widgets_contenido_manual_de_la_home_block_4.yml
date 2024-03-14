@@ -1,0 +1,37 @@
+uuid: 8f9ca389-9fd5-47bc-8cf4-93f69aaba8c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widgets_contenido_manual_de_la_home
+  module:
+    - block_class
+    - node
+    - views
+  theme:
+    - bne_theme
+third_party_settings:
+  block_class:
+    classes: ps-otras-publicaciones-page
+id: views_block__widgets_contenido_manual_de_la_home_block_4
+theme: bne_theme
+region: post_contenido
+weight: -68
+provider: null
+plugin: 'views_block:widgets_contenido_manual_de_la_home-block_4'
+settings:
+  id: 'views_block:widgets_contenido_manual_de_la_home-block_4'
+  label: 'Otras publicaciones'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Otras publicaciones'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      publicacion: publicacion

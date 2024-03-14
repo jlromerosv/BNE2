@@ -1,0 +1,22 @@
+uuid: 8cdd6438-4bce-44de-a091-5c5034a2b3b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+id: node.tramite.sticky
+field_name: sticky
+entity_type: node
+bundle: tramite
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

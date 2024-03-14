@@ -1,0 +1,14 @@
+uuid: 1bb412ce-d939-42d8-8321-375b5f757214
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.coleccion
+id: node_type_coleccion
+entity_type_id: node_type
+entity_id: coleccion
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

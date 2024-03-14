@@ -1,0 +1,11 @@
+uuid: b278af28-6716-42ea-b86f-695877efa1c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.minificha_destacados_crop_type
+id: crop.minificha_destacados_crop_type
+target_entity_type_id: crop
+target_bundle: minificha_destacados_crop_type
+default_langcode: site_default
+language_alterable: false

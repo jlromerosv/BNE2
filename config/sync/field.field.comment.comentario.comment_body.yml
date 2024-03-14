@@ -1,0 +1,26 @@
+uuid: 1fc25bfa-5076-4b03-9192-b95d31c3e1c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+    - field.storage.comment.comment_body
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: comment.comentario.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comentario
+label: Comentario
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

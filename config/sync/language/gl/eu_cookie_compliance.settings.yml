@@ -1,0 +1,16 @@
+popup_agreed:
+  value: '<h2>Grazas por aceptar as cookies</h2><p>Vostede pode agora ocultar esta mensaxe ou informarse máis sobre as cookies.</p>'
+popup_agree_button_message: Aceptar
+popup_more_info_button_message: 'Máis info'
+popup_find_more_button_message: 'Máis info'
+popup_hide_button_message: Agochar
+popup_info:
+  value: "<h2>Utilizamos cookies neste sitio para mellorar a súa experiencia de usuario</h2>\r\n\r\n<p>Ao facer clic no botón Aceptar, aceptas que o fagamos.</p>\r\n"
+popup_link: node/2441
+disagree_button_label: 'Non, grazas'
+withdraw_message:
+  value: "<h2>Utilizamos cookies neste sitio para mellorar a súa experiencia de usuario</h2>\r\n\r\n<p>Deches o teu consentimento para que configuremos cookies.</p>\r\n"
+withdraw_action_button_label: 'Revocar consentimiento'
+withdraw_tab_button_label: 'Opcións de privacidade'
+save_preferences_button_label: 'Gardar preferencias'
+accept_all_categories_button_label: 'Acepta todas as cookies'

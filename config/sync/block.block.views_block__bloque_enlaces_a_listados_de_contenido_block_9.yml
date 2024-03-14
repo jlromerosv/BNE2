@@ -1,0 +1,33 @@
+uuid: d19a3e2c-bd77-4148-9a49-eb02ba96066c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloque_enlaces_a_listados_de_contenido
+  module:
+    - node
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloque_enlaces_a_listados_de_contenido_block_9
+theme: bne_theme
+region: sidebar_first
+weight: -70
+provider: null
+plugin: 'views_block:bloque_enlaces_a_listados_de_contenido-block_9'
+settings:
+  id: 'views_block:bloque_enlaces_a_listados_de_contenido-block_9'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      campana: campana
+      evento: evento

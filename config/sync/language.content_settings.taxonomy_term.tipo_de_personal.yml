@@ -1,0 +1,18 @@
+uuid: 278c2d45-55ef-4dee-8c28-f69f11a9aa86
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_personal
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tipo_de_personal
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_personal
+default_langcode: site_default
+language_alterable: true

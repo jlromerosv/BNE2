@@ -1,0 +1,18 @@
+uuid: 8694a548-f729-49d8-9fd4-af8c1e90caa3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+id: node.exposicion.created
+field_name: created
+entity_type: node
+bundle: exposicion
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

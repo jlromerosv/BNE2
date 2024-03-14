@@ -1,0 +1,466 @@
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
+langcode: es
+definitions:
+  system__admin_content:
+    menu_name: admin
+    parent: system.admin
+    weight: 1
+    expanded: true
+    enabled: true
+  comment__admin:
+    menu_name: admin
+    parent: 'menu_link_content:3a383771-49d0-41ed-99fc-6405277b460c'
+    weight: 9
+    expanded: false
+    enabled: true
+  poll__poll_list:
+    menu_name: admin
+    parent: 'menu_link_content:3a383771-49d0-41ed-99fc-6405277b460c'
+    weight: 8
+    expanded: false
+    enabled: true
+  system__admin_structure:
+    menu_name: admin
+    parent: system.admin
+    weight: 3
+    expanded: false
+    enabled: true
+  system__themes_page:
+    menu_name: admin
+    parent: system.admin
+    weight: 4
+    expanded: false
+    enabled: true
+  system__modules_list:
+    menu_name: admin
+    parent: system.admin
+    weight: 5
+    expanded: false
+    enabled: true
+  system__admin_config:
+    menu_name: admin
+    parent: system.admin
+    weight: 6
+    expanded: false
+    enabled: true
+  system__admin_group:
+    menu_name: admin
+    parent: system.admin
+    weight: 7
+    expanded: false
+    enabled: true
+  entity__user__collection:
+    menu_name: admin
+    parent: system.admin
+    weight: 8
+    expanded: false
+    enabled: true
+  system__admin_reports:
+    menu_name: admin
+    parent: system.admin
+    weight: 9
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_area_de_transparencia:
+    menu_name: admin
+    parent: ''
+    weight: 10
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_audios_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 11
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_de_entidades:
+    menu_name: admin
+    parent: ''
+    weight: 12
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_de_menu_items_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 13
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_de_organigrama:
+    menu_name: admin
+    parent: ''
+    weight: 14
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_de_provincias:
+    menu_name: admin
+    parent: ''
+    weight: 15
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_ficheros_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 16
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_imagenes_csv_v2:
+    menu_name: admin
+    parent: ''
+    weight: 17
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_imagenes_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 18
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_municipios:
+    menu_name: admin
+    parent: ''
+    weight: 19
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_noticias_csv_v2:
+    menu_name: admin
+    parent: ''
+    weight: 20
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_noticias_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 21
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_pagina_basica_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 22
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcarga_xml_noticias:
+    menu_name: admin
+    parent: ''
+    weight: 23
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingcargar_enlaces:
+    menu_name: admin
+    parent: ''
+    weight: 24
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__mappingtest_alias_url:
+    menu_name: admin
+    parent: ''
+    weight: 25
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_area_de_transparencia:
+    menu_name: admin
+    parent: ''
+    weight: 26
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_audios_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 27
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_de_entidades:
+    menu_name: admin
+    parent: ''
+    weight: 28
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_de_menu_items_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 29
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_de_organigrama:
+    menu_name: admin
+    parent: ''
+    weight: 30
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_de_provincias:
+    menu_name: admin
+    parent: ''
+    weight: 31
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_ficheros_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 32
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_imagenes_csv_v2:
+    menu_name: admin
+    parent: ''
+    weight: 33
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_imagenes_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 34
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_municipios:
+    menu_name: admin
+    parent: ''
+    weight: 35
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_noticias_csv_v2:
+    menu_name: admin
+    parent: ''
+    weight: 36
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_noticias_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 37
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_pagina_basica_de_csv:
+    menu_name: admin
+    parent: ''
+    weight: 38
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercarga_xml_noticias:
+    menu_name: admin
+    parent: ''
+    weight: 39
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampercargar_enlaces:
+    menu_name: admin
+    parent: ''
+    weight: 40
+    expanded: false
+    enabled: true
+  entity__feeds_feed_type__tampertest_alias_url:
+    menu_name: admin
+    parent: ''
+    weight: 41
+    expanded: false
+    enabled: true
+  entity__taxonomy_menu__collection:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  taxonomy_manager__admin:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 1
+    expanded: false
+    enabled: true
+  config__conditional_field:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 100
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8221':
+    menu_name: me0---temas
+    parent: ''
+    weight: -51
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8233':
+    menu_name: main
+    parent: ''
+    weight: 6
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8234':
+    menu_name: me0---temas
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.temas.9368'
+    weight: -58
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8219':
+    menu_name: me0---temas
+    parent: ''
+    weight: -40
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__9379':
+    menu_name: me0---temas
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.temas.9374'
+    weight: -59
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__9376':
+    menu_name: me0---temas
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.temas.9374'
+    weight: -58
+    expanded: false
+    enabled: true
+  domain_content__content_list:
+    menu_name: admin
+    parent: system.admin_content
+    weight: 11
+    expanded: false
+    enabled: true
+  domain_content__editors_list:
+    menu_name: admin
+    parent: system.admin_content
+    weight: 12
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__9374':
+    menu_name: me0---temas
+    parent: ''
+    weight: -59
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8223':
+    menu_name: me0---temas
+    parent: ''
+    weight: -50
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8225':
+    menu_name: me0---temas
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.temas.8223'
+    weight: -58
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8236':
+    menu_name: me0---temas
+    parent: ''
+    weight: -49
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8229':
+    menu_name: me0---temas
+    parent: ''
+    weight: -48
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8218':
+    menu_name: me0---temas
+    parent: ''
+    weight: -47
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8217':
+    menu_name: me0---temas
+    parent: ''
+    weight: -46
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__30':
+    menu_name: me0---temas
+    parent: ''
+    weight: -45
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8211':
+    menu_name: me0---temas
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.temas.30'
+    weight: -58
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8212':
+    menu_name: me0---temas
+    parent: ''
+    weight: -44
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8237':
+    menu_name: me0---temas
+    parent: ''
+    weight: -43
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8230':
+    menu_name: me0---temas
+    parent: ''
+    weight: -42
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8235':
+    menu_name: me0---temas
+    parent: ''
+    weight: -41
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8215':
+    menu_name: me0---temas
+    parent: ''
+    weight: -39
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8227':
+    menu_name: me0---temas
+    parent: ''
+    weight: -38
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8231':
+    menu_name: me0---temas
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.temas.8228'
+    weight: -59
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__9368':
+    menu_name: me0---temas
+    parent: ''
+    weight: -37
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8228':
+    menu_name: me0---temas
+    parent: ''
+    weight: -36
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8226':
+    menu_name: me0---temas
+    parent: ''
+    weight: -35
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8216':
+    menu_name: me0---temas
+    parent: ''
+    weight: -34
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8222':
+    menu_name: me0---temas
+    parent: ''
+    weight: -33
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8213':
+    menu_name: me0---temas
+    parent: ''
+    weight: -32
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__9367':
+    menu_name: me0---temas
+    parent: ''
+    weight: -31
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__temas__8232':
+    menu_name: me0---temas
+    parent: ''
+    weight: -55
+    expanded: false
+    enabled: true

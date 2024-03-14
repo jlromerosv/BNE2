@@ -1,0 +1,13 @@
+uuid: 5114d2a0-89bf-4809-839a-43cf9b8418fa
+langcode: es
+status: true
+dependencies: {  }
+id: archivo_de_video
+label: 'Archivo de video'
+description: ''
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_video_file
+field_map: {  }

@@ -1,0 +1,22 @@
+uuid: c0ed428a-da09-4748-8642-88bdda71ac3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_galeria
+id: taxonomy_term.tipo_galeria.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_galeria
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

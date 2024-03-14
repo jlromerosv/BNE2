@@ -1,0 +1,238 @@
+/*
+   ========== Sass Variables ==========
+
+   Fichero dedicado a todas las variables del tema.
+
+   Estas variables atienden a un diseño previamente definido.
+
+*/
+
+$bne_box_shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+//1. colores_______________________________________________________________________________________________
+//1.1. COLORES PRINCIPALES_____________________________________________________________________________
+$main_color_1: #1f4968;
+$main_color_2: #181818;
+$main_color_3: #eeeeee;
+$main_color_4: #f9f9f9;
+$main_color_5: #617f95;
+$main_color_6: #444444;
+
+//1.1. COLORES PRINCIPALES BNE_____________________________________________________________________________
+$bne_color_1: #333333;
+$bne_color_2: #606060;
+$bne_color_3: #d3d3d3;
+$bne_color_4: #f9f9f9;
+$bne_color_5: #a02424;
+$bne_color_6: #b40d04;
+$blanco: #ffffff;
+$negro: #1d1d1d;
+$filter_icon: invert(9%) sepia(80%) saturate(6428%) hue-rotate(2deg) brightness(93%) contrast(97%);
+$color_focus: #0f0fecd2;
+
+//1.1. COLORES SECUNDARIOS BNE_____________________________________________________________________________
+$alerta_color: #a02424;
+$verificacion_color: #66a5e1;
+$error_color: #ec0000;
+$bne_second_color_1: #ececec;
+
+//FONDOS
+$fondo-transparencia: rgba(29, 29, 29, 0.5);
+$fondo-transparencia-secciones: rgba(29, 29, 29, 0.75);
+
+
+
+
+
+
+//FUENTES
+$dm-serif: "DM Serif Text", serif;
+
+
+//FONT-WEIGHT FUENTES
+$dm-serif-regular: 400;
+
+$color_upopular: #970076;
+$color_albacete: #b31c46;
+
+$success_color: #33d504;
+
+//HEADIN BLOQUES HOME
+$h1_home_block: 2.75em;
+$h2_home_block: 2.5em;
+$h3_home_block: 2.25em;
+$h4_home_block: 2em;
+$h5_home_block: 1.5em;
+$h6_home_block: 1.125em;
+
+
+
+//1.2. COLORES HEADING <H>__________________________________________________________________________________
+$h1_color: $main_color_1;
+$h2_color: $main_color_1;
+$h3_color: $main_color_2;
+$h4_color: $main_color_1;
+$h5_color: $main_color_2;
+$h6_color: $main_color_1;
+
+//1.3. COLORES ENLACES <a>__________________________________________________________________________________
+$a_color: $main_color_1;
+$a_color_upopular: $color_upopular;
+$a_color_albacete: $color_albacete;
+
+//1.4. COLORES PÁRRAFOS <p>__________________________________________________________________________________
+$p_color: $main_color_6;
+$a_color_upopular: $color_upopular;
+$a_color_albacete: $color_albacete;
+$list_color: $main_color_6;
+
+//1.5. COLORES FORMULARIOS __________________________________________________________________________________
+$bg_color_form_item: $main_color_4;
+$form_error: $error_color;
+$color_placeholder: $main_color_1;
+
+//1.6. COLORES BOTONES__________________________________________________________________________________
+
+//1.6.1 BOTON 1_______________________________________________________________________________
+$button_color: $main_color_2;
+$button_bg: $blanco;
+
+$button_color_hover: $blanco;
+$button_bg_hover: $main_color_1;
+
+$button_color_albacete_hover: $color_albacete;
+$button_color_upopular_hover: $color_upopular;
+
+//1.6.2 BOTON 2_______________________________________________________________________________
+$button2_color: $blanco;
+$button2_bg: $main_color_1;
+
+$button2_color_hover: $blanco;
+$button2_bg_hover: $main_color_5;
+
+$button2_color_albacete: $main_color_2;
+$button2_color_albacete_hover: $color_albacete;
+
+$button2_color_upopular: $main_color_2;
+$button2_color_upopular_hover: $color_upopular;
+
+//1.7. COLORES DROPDOWN__________________________________________________________________________________
+$dropdown_font_color: $main_color_5;
+$dropdown2_font_color: $main_color_4;
+
+$dropdown_back_color: $main_color_4;
+$dropdown2_back_color: $main_color_5;
+
+//1.8. COLORES FOOTER __________________________________________________________________________________
+$footer_font_color: $blanco;
+$footer_background_color: $main_color_1;
+
+//2. FUENTES TAMAÑOS___________________________________________________________________________________
+$h1_font_size: 38px;
+$h2_font_size: 28px;
+$h3_font_size: 24px;
+$h4_font_size: 20px;
+$h5_font_size: 18px;
+$h6_font_size: 16px;
+
+$h1_font_size_movil: 32px;
+$h2_font_size_movil: 26px;
+$h3_font_size_movil: 24px;
+$h4_font_size_movil: 20px;
+$h5_font_size_movil: 18px;
+$h6_font_size_movil: 16px;
+
+$p_font_size: 16px;
+
+$button_font_size_mn_1: 14px;
+$button_font_size_mn_2: 16px;
+$button2_font_size: 16px;
+
+$title_header: 24px;
+
+//3. BORDES__________________________________________________________________________________________________
+$border_bottom_input: 1px solid $main_color_2;
+$border_tbody_tr: 2px solid $main_color_3;
+$border_layout_builder_separator_item: 1px outset;
+$border_form_input_error: 2px solid $form_error;
+$border_form_radio_error: 1px solid $form_error;
+$outline_form_check_error: 1px solid $form_error;
+
+//4. SHADOWS__________________________________________________________________________________________________
+$checkbox_shadow: 0 2px 3px #00000029;
+
+//5. TABLAS__________________________________________________________________________________________________
+
+//5.1 TAMAÑOS_____________________________________________________________________________________________
+$table_width: 100%;
+$table_margin: 0 0 10px;
+
+$table_thead_th_padding: 0.5rem 1rem;
+$table_thead_th_height: 2rem;
+
+$icon_width: 15px;
+$icon_height: 8px;
+
+$tbody_td_padding: 0.5rem 1rem;
+$tbody_td_height: 4rem;
+
+//6. COMPONENTE GRID__________________________________________________________________________________________
+
+$grid-gap: 20px;
+
+//6.1 COLUMNAS______________________________________________________________________________________________
+
+$column_width: 1fr;
+$repeat_column_num: 3;
+
+// 8. MEDIDAS DE BOTONES
+
+// 8.1 BOTONES PRINCIPALES
+
+// 8.1.1 ICONO
+
+$icon_btn_mn_1_width: 21px;
+$icon_btn_mn_1_height: 9px;
+$icon_btn_mn_1_m-left: 8px;
+
+// 8.2 BOTONES SECUNDARIOS
+
+// 8.2.1 ICONO
+
+$icon_btn_mn_2_size: 21px;
+$icon_btn_mn_2_m-left: 8px;
+
+//8 ICONOS_______________________________________________________________________________________________
+$filter_icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8'%3E%3Cpath d='m1.75,0.25v1.5h10.5v-1.5z m0,3v1.5h7.5v-1.5z m0,3v1.5h4.5v-1.5z' fill='%23222330'/%3E%3C/svg%3E";
+
+$menu_icon: "⌵";
+
+$button_mn_1_icon: "";
+$button_mn_2_icon: "/sites/default/files/iconos-svg/flecha-derecha.svg";
+
+$help_icon: "";
+$show_more_icon: "/sites/default/files/iconos-svg/Grupo-266.svg";
+$download_icon: "/sites/default/files/iconos-svg/icono-descarga.svg";
+$search_icon: "/sites/default/files/iconos-svg/icono-lupa.svg";
+$link_icon: "/sites/default/files/iconos-svg/icono-link.svg";
+$file_icon: "/sites/default/files/iconos-svg/archivo.svg";
+$home_icon: "/sites/default/files/iconos-svg/icono-home.svg";
+$global_icon: "/sites/default/files/iconos-svg/globo.svg";
+$message_icon: "/sites/default/files/iconos-svg/Grupo%201784.svg";
+$help_icon: "/sites/default/files/iconos-svg/ayudar.svg";
+$arrow_up: "/sites/default/files/iconos-svg/icono-arriba.svg";
+$arrow_left: "/sites/default/files/iconos-svg/Grupo%201778.svg";
+$burger_menu_icon: "/sites/default/files/iconos-svg/layer1.svg";
+$double_right_arrow: "/sites/default/files/iconos-svg/Right_Arrow_3_.svg";
+$comillas: '/sites/default/files/iconos-svg/icon-comillas.svg';
+
+//9 FILTROS
+
+$filter_main_color_1: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg)
+  brightness(92%) contrast(91%);
+$filter_main_color_1_mod_1: invert(22%) sepia(87%) saturate(404%)
+  hue-rotate(161deg) brightness(62%) contrast(91%);
+$filter_main_color_6: invert(25%) sepia(0%) saturate(0%) hue-rotate(216deg)
+  brightness(98%) contrast(93%);
+$filter_white: invert(100%) sepia(0%) saturate(1%) hue-rotate(248deg)
+  brightness(103%) contrast(101%);

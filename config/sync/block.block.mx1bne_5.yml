@@ -1,0 +1,33 @@
+uuid: b666b0e5-3a6b-4f94-a1ca-05e468628f17
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.mx1---bne
+  module:
+    - block_class
+    - system
+  theme:
+    - bne_theme
+third_party_settings:
+  block_class:
+    classes: menu-sidebar
+id: mx1bne_5
+theme: bne_theme
+region: sidebar_first
+weight: -29
+provider: null
+plugin: 'system_menu_block:mx1---bne'
+settings:
+  id: 'system_menu_block:mx1---bne'
+  label: 'MX1 - BNE nivel 3 y 4 sidebar'
+  label_display: visible
+  provider: system
+  level: 2
+  depth: 3
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/servicios/*'

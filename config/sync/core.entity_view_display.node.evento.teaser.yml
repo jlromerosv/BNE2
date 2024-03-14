@@ -1,0 +1,288 @@
+uuid: 63b1375e-c5e9-45e1-a355-1dcdfa405e97
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.evento.title
+    - core.entity_view_mode.node.teaser
+    - field.field.node.evento.body
+    - field.field.node.evento.feeds_item
+    - field.field.node.evento.field_alertas
+    - field.field.node.evento.field_alias_tipo_contenido
+    - field.field.node.evento.field_archivo
+    - field.field.node.evento.field_archivos
+    - field.field.node.evento.field_area_tematica
+    - field.field.node.evento.field_audios
+    - field.field.node.evento.field_categoria
+    - field.field.node.evento.field_ciclo_campana
+    - field.field.node.evento.field_colaboradores
+    - field.field.node.evento.field_colectivo
+    - field.field.node.evento.field_comentarios
+    - field.field.node.evento.field_comisariado
+    - field.field.node.evento.field_contenidos_relacionados
+    - field.field.node.evento.field_contenidos_vinculados
+    - field.field.node.evento.field_dia_de_feria
+    - field.field.node.evento.field_domain_access
+    - field.field.node.evento.field_domain_all_affiliates
+    - field.field.node.evento.field_domain_source
+    - field.field.node.evento.field_duracion
+    - field.field.node.evento.field_email
+    - field.field.node.evento.field_email_texto
+    - field.field.node.evento.field_enlace
+    - field.field.node.evento.field_enlace_formulario_inscripc
+    - field.field.node.evento.field_enlaces
+    - field.field.node.evento.field_entidades
+    - field.field.node.evento.field_entidades_subvencionadoras
+    - field.field.node.evento.field_etiquetas_busqueda
+    - field.field.node.evento.field_fecha_fin
+    - field.field.node.evento.field_fecha_inicio
+    - field.field.node.evento.field_galeria_de_imagenes
+    - field.field.node.evento.field_horarios
+    - field.field.node.evento.field_horarios_especificos
+    - field.field.node.evento.field_id_externo
+    - field.field.node.evento.field_idioma
+    - field.field.node.evento.field_iframe
+    - field.field.node.evento.field_imagen_cabecera
+    - field.field.node.evento.field_imagen_destacada
+    - field.field.node.evento.field_imagenes
+    - field.field.node.evento.field_informacion_adicional
+    - field.field.node.evento.field_intervalo_add_to_cal
+    - field.field.node.evento.field_lugar
+    - field.field.node.evento.field_marca_agua
+    - field.field.node.evento.field_mas_informacion
+    - field.field.node.evento.field_meta_tags
+    - field.field.node.evento.field_modalidad
+    - field.field.node.evento.field_no_mostrar_inverso
+    - field.field.node.evento.field_orden
+    - field.field.node.evento.field_patrocinadores
+    - field.field.node.evento.field_plazo_de_resolucion
+    - field.field.node.evento.field_ponentes_participantes
+    - field.field.node.evento.field_precio
+    - field.field.node.evento.field_requisitos
+    - field.field.node.evento.field_sesiones
+    - field.field.node.evento.field_subtitulo
+    - field.field.node.evento.field_telefonos
+    - field.field.node.evento.field_tipo
+    - field.field.node.evento.field_tipo_asistencia_event
+    - field.field.node.evento.field_tipo_formacion_curso
+    - field.field.node.evento.field_tipo_visualizacion_f
+    - field.field.node.evento.field_titulo_listado_agenda
+    - field.field.node.evento.field_url
+    - field.field.node.evento.field_valor
+    - field.field.node.evento.field_videos
+    - field.field.node.evento.field_yoast_seo
+    - node.type.evento
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          0aa340a6-7047-4396-b01d-1ed2c80e1ad8:
+            uuid: 0aa340a6-7047-4396-b01d-1ed2c80e1ad8
+            region: first
+            configuration:
+              id: 'field_block:node:evento:field_imagen_destacada'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: tercio_de_ancho
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          9e7753fe-ba24-491b-82fc-bd7fa2363a4f:
+            uuid: 9e7753fe-ba24-491b-82fc-bd7fa2363a4f
+            region: second
+            configuration:
+              id: 'field_block:node:evento:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          05494d57-50ad-4195-87cb-c8538cc279ff:
+            uuid: 05494d57-50ad-4195-87cb-c8538cc279ff
+            region: second
+            configuration:
+              id: 'extra_field_block:node:evento:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 5
+            additional: {  }
+          2fefe7b5-e7da-40e6-adbc-c97f8d114f24:
+            uuid: 2fefe7b5-e7da-40e6-adbc-c97f8d114f24
+            region: second
+            configuration:
+              id: 'field_block:node:evento:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          5e297b56-8dd8-4408-afee-37104d7ad91b:
+            uuid: 5e297b56-8dd8-4408-afee-37104d7ad91b
+            region: second
+            configuration:
+              id: 'field_block:node:evento:field_fecha_inicio'
+              label: Desde
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: inline
+                settings:
+                  timezone_override: ''
+                  format_type: short
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          638d815f-3157-4248-91e2-c6717d93682b:
+            uuid: 638d815f-3157-4248-91e2-c6717d93682b
+            region: second
+            configuration:
+              id: 'field_block:node:evento:field_fecha_fin'
+              label: hasta
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: inline
+                settings:
+                  timezone_override: ''
+                  format_type: short
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.evento.teaser
+targetEntityType: node
+bundle: evento
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  feeds_item: true
+  field_alertas: true
+  field_alias_tipo_contenido: true
+  field_archivo: true
+  field_archivos: true
+  field_area_tematica: true
+  field_audios: true
+  field_categoria: true
+  field_ciclo_campana: true
+  field_colaboradores: true
+  field_colectivo: true
+  field_comentarios: true
+  field_comisariado: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_dia_de_feria: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_duracion: true
+  field_email: true
+  field_email_texto: true
+  field_enlace: true
+  field_enlace_formulario_inscripc: true
+  field_enlaces: true
+  field_entidades: true
+  field_entidades_subvencionadoras: true
+  field_etiquetas_busqueda: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_galeria_de_imagenes: true
+  field_horarios: true
+  field_horarios_especificos: true
+  field_id_externo: true
+  field_idioma: true
+  field_iframe: true
+  field_imagen_cabecera: true
+  field_imagenes: true
+  field_informacion_adicional: true
+  field_intervalo_add_to_cal: true
+  field_lugar: true
+  field_marca_agua: true
+  field_mas_informacion: true
+  field_meta_tags: true
+  field_modalidad: true
+  field_no_mostrar_inverso: true
+  field_orden: true
+  field_patrocinadores: true
+  field_plazo_de_resolucion: true
+  field_ponentes_participantes: true
+  field_precio: true
+  field_requisitos: true
+  field_sesiones: true
+  field_subtitulo: true
+  field_telefonos: true
+  field_tipo: true
+  field_tipo_asistencia_event: true
+  field_tipo_formacion_curso: true
+  field_tipo_visualizacion_f: true
+  field_titulo_listado_agenda: true
+  field_url: true
+  field_valor: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

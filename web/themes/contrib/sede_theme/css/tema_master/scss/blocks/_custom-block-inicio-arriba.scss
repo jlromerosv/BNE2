@@ -1,0 +1,43 @@
+/*
+    ========== BLOQUE INICIO-ARRIBA ==========
+
+    Estilos dedicados a la vista del bloque inicio-arriba.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+
+.custom-block-inicio-arriba {
+    padding: 10px;
+    .view-content {
+        @include display_flex(row, space-between, center);
+
+        div {
+            .views-field-field-icono-svg {
+                a {
+                    @include display_flex(row, initial, center);
+                    gap: 10px;
+                    img {
+                        filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(325deg) brightness(104%) contrast(97%);
+    
+                        &.home-svg {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

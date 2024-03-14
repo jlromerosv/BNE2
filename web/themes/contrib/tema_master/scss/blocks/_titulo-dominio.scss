@@ -1,0 +1,21 @@
+/*
+    ========== TÍTULO DEL DOMINIO ==========
+
+    Estilos dedicados al título del dominio.
+
+*/
+
+.ps-titulo-dominio {
+    .views-field-field-subtitulo {
+        .field-content {
+            text-align: center;
+            font-size: $title_header;
+            color: $main_color_1;
+            font-weight: bold;
+            display: none;
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+    }
+}

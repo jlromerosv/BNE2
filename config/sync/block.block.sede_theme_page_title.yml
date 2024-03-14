@@ -1,0 +1,24 @@
+uuid: dbe1135b-0b10-44aa-97c4-918db4c83c40
+langcode: es
+status: true
+dependencies:
+  theme:
+    - sede_theme
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: sede_theme_page_title
+theme: sede_theme
+region: pre_content
+weight: -24
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

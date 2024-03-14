@@ -1,0 +1,21 @@
+uuid: dd9af3ad-860d-4f2d-bb61-1779f3b1f8ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.dossier
+  module:
+    - datetime
+id: node.dossier.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: dossier
+label: 'Fecha del contenido'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

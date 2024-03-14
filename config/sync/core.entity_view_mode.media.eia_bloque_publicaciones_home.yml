@@ -1,0 +1,10 @@
+uuid: 2185ef93-bfa6-4d24-b059-de513dbc9cf1
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.eia_bloque_publicaciones_home
+label: 'EIA Bloque Publicaciones Home'
+targetEntityType: media
+cache: true

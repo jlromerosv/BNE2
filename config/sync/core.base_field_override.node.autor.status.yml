@@ -1,0 +1,22 @@
+uuid: 01bcd3d2-d5d5-47ca-9436-1456ace339c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autor
+id: node.autor.status
+field_name: status
+entity_type: node
+bundle: autor
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,32 @@
+uuid: 0c24311f-18ca-4ef5-8aef-39d8b48fdd46
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloque_enlaces_a_listados_de_contenido
+  module:
+    - node
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloque_enlaces_a_listados_de_contenido_block_4
+theme: bne_theme
+region: sidebar_first
+weight: -68
+provider: null
+plugin: 'views_block:bloque_enlaces_a_listados_de_contenido-block_4'
+settings:
+  id: 'views_block:bloque_enlaces_a_listados_de_contenido-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      entrada_de_blog: entrada_de_blog

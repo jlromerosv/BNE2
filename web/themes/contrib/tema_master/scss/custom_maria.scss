@@ -1,0 +1,27 @@
+/* listados de contenido */
+
+.ps-fulltext-search-list {
+    /* ocultamos el filtro por dominio, porque si lo configuramos como no expuesto, no filtra como esperamos */
+    .form-item-field-domain-access {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .ps-fulltext-search-list .form-actions {
+        justify-content: center;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px){
+    .node--view-mode-teaser .node__content .layout--twocol-section {
+        flex-direction: column;
+    }
+}
+

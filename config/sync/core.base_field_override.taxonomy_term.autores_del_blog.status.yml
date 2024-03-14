@@ -1,0 +1,22 @@
+uuid: 99e63e62-b901-4922-90d3-b1bc651145ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.autores_del_blog
+id: taxonomy_term.autores_del_blog.status
+field_name: status
+entity_type: taxonomy_term
+bundle: autores_del_blog
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

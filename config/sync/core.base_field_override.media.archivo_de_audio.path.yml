@@ -1,0 +1,20 @@
+uuid: 1ff7c9c1-afae-4c35-aed7-287631a0a816
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo_de_audio
+  module:
+    - path
+id: media.archivo_de_audio.path
+field_name: path
+entity_type: media
+bundle: archivo_de_audio
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

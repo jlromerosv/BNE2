@@ -1,0 +1,22 @@
+uuid: bac243bf-1b3e-4784-b795-2f842fe51c66
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.alerta
+id: node.alerta.promote
+field_name: promote
+entity_type: node
+bundle: alerta
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

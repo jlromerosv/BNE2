@@ -1,0 +1,20 @@
+uuid: 88b58cfc-c944-4f91-9550-3f1c66e73954
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+  module:
+    - path
+id: node.destacados_manuales.path
+field_name: path
+entity_type: node
+bundle: destacados_manuales
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

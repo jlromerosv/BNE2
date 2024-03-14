@@ -1,0 +1,18 @@
+uuid: 9648a1a5-fdef-41eb-8c12-ab756c0f4139
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estadistica
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.estadistica
+target_entity_type_id: node
+target_bundle: estadistica
+default_langcode: site_default
+language_alterable: false

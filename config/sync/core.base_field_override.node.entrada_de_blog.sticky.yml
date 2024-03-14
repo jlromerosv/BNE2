@@ -1,0 +1,22 @@
+uuid: 5a9e704c-ca8c-4f0a-ab2f-ffc89f6edf6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entrada_de_blog
+id: node.entrada_de_blog.sticky
+field_name: sticky
+entity_type: node
+bundle: entrada_de_blog
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

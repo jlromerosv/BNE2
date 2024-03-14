@@ -1,0 +1,22 @@
+uuid: 24fd492d-7cb7-4e4a-851d-dd5a558fb8c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.persona
+id: node.persona.sticky
+field_name: sticky
+entity_type: node
+bundle: persona
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

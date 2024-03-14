@@ -1,0 +1,20 @@
+uuid: b3a4a4da-600c-40ca-82fa-1a0237c3bf7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+  module:
+    - options
+id: node.cargo.publish_state
+field_name: publish_state
+entity_type: node
+bundle: cargo
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

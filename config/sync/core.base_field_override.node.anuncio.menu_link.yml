@@ -1,0 +1,20 @@
+uuid: 849d6c92-fafd-4dbc-b7d6-bd87fafcd5c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.anuncio
+id: node.anuncio.menu_link
+field_name: menu_link
+entity_type: node
+bundle: anuncio
+label: 'Enlace del menu'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

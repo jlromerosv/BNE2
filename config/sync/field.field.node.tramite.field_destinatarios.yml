@@ -1,0 +1,21 @@
+uuid: 2efd8bbd-305e-4627-afe6-a162a0c24a34
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destinatarios
+    - node.type.tramite
+  module:
+    - text
+id: node.tramite.field_destinatarios
+field_name: field_destinatarios
+entity_type: node
+bundle: tramite
+label: Destinatarios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

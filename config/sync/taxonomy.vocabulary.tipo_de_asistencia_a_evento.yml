@@ -1,0 +1,8 @@
+uuid: b55c3d9b-1dfd-4557-a9e0-0348993d4d80
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Tipo de asistencia a evento'
+vid: tipo_de_asistencia_a_evento
+description: ''
+weight: 0

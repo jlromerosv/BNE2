@@ -1,0 +1,19 @@
+uuid: 2936674e-fb30-4954-b54b-cf713c674d17
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_id_externo_largo
+    - taxonomy.vocabulary.autores_del_blog
+id: taxonomy_term.autores_del_blog.field_id_externo_largo
+field_name: field_id_externo_largo
+entity_type: taxonomy_term
+bundle: autores_del_blog
+label: ID_externo_largo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

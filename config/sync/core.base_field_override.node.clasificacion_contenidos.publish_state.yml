@@ -1,0 +1,20 @@
+uuid: ca65b5cd-9178-47bd-86fb-7f03f8412e44
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+  module:
+    - options
+id: node.clasificacion_contenidos.publish_state
+field_name: publish_state
+entity_type: node
+bundle: clasificacion_contenidos
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: 3cbb19bf-6c09-42e6-8f6c-f49e58ac1d90
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_encuadernacion
+    - node.type.publicacion
+id: node.publicacion.field_tipo_encuadernacion
+field_name: field_tipo_encuadernacion
+entity_type: node
+bundle: publicacion
+label: Encuadernación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 0c1d0e23-b17d-4989-aa51-0eae97fa0bfc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_dossier_boletin
+  module:
+    - text
+id: taxonomy_term.tipo_de_dossier_boletin.default
+targetEntityType: taxonomy_term
+bundle: tipo_de_dossier_boletin
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

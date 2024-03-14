@@ -1,0 +1,19 @@
+uuid: 84108586-1efa-4e5b-9ab1-531de9954d49
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_externo
+    - node.type.obra
+id: node.obra.field_id_externo
+field_name: field_id_externo
+entity_type: node
+bundle: obra
+label: Id_externo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

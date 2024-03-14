@@ -1,0 +1,15 @@
+uuid: 0cf99046-6274-4e21-b2d6-050d4d858f7d
+langcode: es
+status: true
+dependencies: {  }
+name: slider_redes_sociales_home_sm
+label: 'Slider Redes Sociales Home SM'
+effects:
+  dc371462-39b8-4594-a9d2-5373869896e3:
+    uuid: dc371462-39b8-4594-a9d2-5373869896e3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 400
+      anchor: center-center

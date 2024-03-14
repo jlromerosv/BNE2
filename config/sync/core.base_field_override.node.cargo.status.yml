@@ -1,0 +1,22 @@
+uuid: e3ddae39-bf7f-416b-907a-33d50a6cd40c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+id: node.cargo.status
+field_name: status
+entity_type: node
+bundle: cargo
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

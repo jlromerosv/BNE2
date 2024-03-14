@@ -1,0 +1,8 @@
+uuid: 0918d72c-020a-47ce-be2a-1f9148f2a5e5
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_agenda
+label: 'fecha agenda'
+locked: false
+pattern: m/d/Y

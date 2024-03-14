@@ -1,0 +1,8 @@
+uuid: 8038fade-afd2-4274-89d9-10143ccfa7fe
+langcode: es
+status: true
+dependencies: {  }
+id: hora_bloque_actividades_home
+label: 'Hora bloque actividades home'
+locked: false
+pattern: 'H:i\h.'

@@ -1,0 +1,84 @@
+uuid: 88ba8011-d642-4d73-84a2-44a80cce5853
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_avanzada.body
+    - field.field.node.pagina_avanzada.field_contenido_generico
+    - field.field.node.pagina_avanzada.field_contenidos_relacionados
+    - field.field.node.pagina_avanzada.field_contenidos_vinculados
+    - field.field.node.pagina_avanzada.field_domain_access
+    - field.field.node.pagina_avanzada.field_domain_all_affiliates
+    - field.field.node.pagina_avanzada.field_domain_source
+    - field.field.node.pagina_avanzada.field_galeria_de_imagenes
+    - field.field.node.pagina_avanzada.field_imagen_destacada
+    - field.field.node.pagina_avanzada.field_meta_tags
+    - field.field.node.pagina_avanzada.field_rede
+    - field.field.node.pagina_avanzada.field_videos
+    - field.field.node.pagina_avanzada.field_yoast_seo
+    - node.type.pagina_avanzada
+  module:
+    - text
+    - user
+id: node.pagina_avanzada.default
+targetEntityType: node
+bundle: pagina_avanzada
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_contenido_generico:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_rede:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_videos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_galeria_de_imagenes: true
+  field_meta_tags: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

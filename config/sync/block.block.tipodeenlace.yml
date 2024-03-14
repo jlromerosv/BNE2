@@ -1,0 +1,28 @@
+uuid: 0f8d514f-1e5e-4189-9ec5-6eb7510c109d
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipo_de_enlace
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: tipodeenlace
+theme: bne_theme
+region: sidebar_first
+weight: -42
+provider: null
+plugin: 'facet_block:tipo_de_enlace'
+settings:
+  id: 'facet_block:tipo_de_enlace'
+  label: 'Tipo de enlace'
+  label_display: '0'
+  provider: facets
+  block_id: tipodeenlace
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/2823

@@ -1,0 +1,20 @@
+uuid: fa2879ea-c655-4a04-9950-73b9d02c0a30
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad_referencia_
+  module:
+    - options
+id: node.entidad_referencia_.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: entidad_referencia_
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

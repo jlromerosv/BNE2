@@ -1,0 +1,20 @@
+uuid: ea46ab6a-6b30-4183-a086-1322b488b0fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_faq
+  module:
+    - text
+id: taxonomy_term.categoria_de_faq.description
+field_name: description
+entity_type: taxonomy_term
+bundle: categoria_de_faq
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

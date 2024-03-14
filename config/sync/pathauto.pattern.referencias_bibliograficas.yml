@@ -1,0 +1,22 @@
+uuid: 0bb6a67b-3034-4648-b092-1f46334c5075
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: referencias_bibliograficas
+label: 'Referencias bibliograficas'
+type: 'canonical_entities:node'
+pattern: '/referencias-bibliograficas/[node:title]'
+selection_criteria:
+  46cfca7c-b50d-4a2e-a000-7862e65c796b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 46cfca7c-b50d-4a2e-a000-7862e65c796b
+    context_mapping:
+      node: node
+    bundles:
+      referencias_bibliograficas: referencias_bibliograficas
+selection_logic: and
+weight: -5
+relationships: {  }

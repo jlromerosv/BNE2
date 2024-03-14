@@ -1,0 +1,9 @@
+uuid: 3b71f728-1132-4b98-bf16-0086eacb4dea
+langcode: es
+status: true
+dependencies: {  }
+id: analitica_web
+label: 'Analítica web'
+description: 'Permite obtener información agrupada y anónima sobre uso y contenidos que aportan más valor en la web'
+checkbox_default_state: checked
+weight: -8

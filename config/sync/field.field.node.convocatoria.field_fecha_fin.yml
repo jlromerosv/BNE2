@@ -1,0 +1,21 @@
+uuid: ba56aa9b-3487-4e05-946b-73c941fde05d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_fin
+    - node.type.convocatoria
+  module:
+    - datetime
+id: node.convocatoria.field_fecha_fin
+field_name: field_fecha_fin
+entity_type: node
+bundle: convocatoria
+label: 'Fecha límite solicitudes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

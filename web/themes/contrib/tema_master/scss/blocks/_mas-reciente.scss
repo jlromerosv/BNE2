@@ -1,0 +1,44 @@
+/*
+    ============= MÁS RECIENTE ==============
+
+    Estilos dedicados a la vista de más recientes.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    responsive-img = Convierte una imagen en responsive
+
+    ----------------------- VARIABLES -------------------------
+    $main_color_1 / 2 = Color principal de tipo 2 /6
+
+    $blanco = Color blanco
+
+*/
+
+
+.ps-mas-reciente {
+    .grid__content {
+        position: relative;
+        &:hover {
+            .views-field-title {
+                border-bottom-color: $main_color_2;
+            }
+        }
+        .views-field-title {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba($main_color_1, 0.8);
+            padding: 20px 15px 14px;
+            border-bottom: 6px solid transparent;
+            a {
+                color: $blanco
+            }
+        }
+        img {
+            @include responsive-img;
+        }
+    }
+}

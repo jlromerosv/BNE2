@@ -1,0 +1,22 @@
+uuid: 69b03632-471c-4ce1-b55b-82de42579003
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.idioma
+id: taxonomy_term.idioma.status
+field_name: status
+entity_type: taxonomy_term
+bundle: idioma
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

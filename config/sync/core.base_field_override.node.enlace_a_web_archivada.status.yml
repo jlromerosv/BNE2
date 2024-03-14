@@ -1,0 +1,22 @@
+uuid: 682531b8-5fb9-4998-b81b-38da955e56b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+id: node.enlace_a_web_archivada.status
+field_name: status
+entity_type: node
+bundle: enlace_a_web_archivada
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

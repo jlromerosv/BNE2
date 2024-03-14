@@ -1,0 +1,23 @@
+uuid: 1258207a-1fa7-4b82-ab0f-58eff08f3dbf
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_filtros_contenido
+field_name: field_filtros_contenido
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

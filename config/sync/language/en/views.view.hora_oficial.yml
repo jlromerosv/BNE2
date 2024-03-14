@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: '<p><a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="f165610c-50fe-4ab4-8d56-d846ae457e98" href="/node/27008">Official time</a>   '

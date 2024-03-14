@@ -1,0 +1,70 @@
+uuid: 15dbd86d-e6b2-40e7-84ab-75048b8902f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contenidos_formativos.body
+    - field.field.node.contenidos_formativos.field_alertas
+    - field.field.node.contenidos_formativos.field_archivos
+    - field.field.node.contenidos_formativos.field_area_tematica
+    - field.field.node.contenidos_formativos.field_contenidos_relacionados
+    - field.field.node.contenidos_formativos.field_contenidos_vinculados
+    - field.field.node.contenidos_formativos.field_domain_access
+    - field.field.node.contenidos_formativos.field_domain_all_affiliates
+    - field.field.node.contenidos_formativos.field_domain_source
+    - field.field.node.contenidos_formativos.field_duracion
+    - field.field.node.contenidos_formativos.field_enlace
+    - field.field.node.contenidos_formativos.field_enlaces
+    - field.field.node.contenidos_formativos.field_etiquetas_busqueda
+    - field.field.node.contenidos_formativos.field_imagen_destacada
+    - field.field.node.contenidos_formativos.field_imagenes
+    - field.field.node.contenidos_formativos.field_lugar
+    - field.field.node.contenidos_formativos.field_meta_tags
+    - field.field.node.contenidos_formativos.field_requisitos
+    - field.field.node.contenidos_formativos.field_servicio
+    - field.field.node.contenidos_formativos.field_tipos
+    - field.field.node.contenidos_formativos.field_videos
+    - field.field.node.contenidos_formativos.field_yoast_seo
+    - node.type.contenidos_formativos
+  module:
+    - text
+    - user
+id: node.contenidos_formativos.default
+targetEntityType: node
+bundle: contenidos_formativos
+mode: default
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_alertas: true
+  field_archivos: true
+  field_area_tematica: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_duracion: true
+  field_enlace: true
+  field_enlaces: true
+  field_etiquetas_busqueda: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_lugar: true
+  field_meta_tags: true
+  field_requisitos: true
+  field_servicio: true
+  field_tipos: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

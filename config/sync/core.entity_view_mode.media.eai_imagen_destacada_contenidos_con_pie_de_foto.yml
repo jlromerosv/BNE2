@@ -1,0 +1,10 @@
+uuid: f0f7e3ae-322d-403e-8017-74d16ff3183f
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.eai_imagen_destacada_contenidos_con_pie_de_foto
+label: 'EAI Imagen Destacada Contenidos con pie de foto'
+targetEntityType: media
+cache: true

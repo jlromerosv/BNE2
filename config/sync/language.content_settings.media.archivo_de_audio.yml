@@ -1,0 +1,18 @@
+uuid: 535396a3-117d-4e80-80f0-66b8cad8ad26
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo_de_audio
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.archivo_de_audio
+target_entity_type_id: media
+target_bundle: archivo_de_audio
+default_langcode: site_default
+language_alterable: false

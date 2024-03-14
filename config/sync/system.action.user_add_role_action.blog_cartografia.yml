@@ -1,0 +1,14 @@
+uuid: ef210de0-a8e6-4d09-98e5-b8fd613a2a1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.blog_cartografia
+  module:
+    - user
+id: user_add_role_action.blog_cartografia
+label: 'Añade el rol Blog Cartografía al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: blog_cartografia

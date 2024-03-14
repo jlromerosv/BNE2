@@ -1,0 +1,23 @@
+uuid: 9905dc44-5f7e-4e92-86f4-51196d218379
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_o_position
+    - taxonomy.vocabulary.organigrama_de_prueba
+  module:
+    - options
+id: taxonomy_term.organigrama_de_prueba.field_o_position
+field_name: field_o_position
+entity_type: taxonomy_term
+bundle: organigrama_de_prueba
+label: Position
+description: 'The position of the organigram item (will be ignored on root items).'
+required: false
+translatable: false
+default_value:
+  -
+    value: u
+default_value_callback: ''
+settings: {  }
+field_type: list_string

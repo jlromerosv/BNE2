@@ -1,0 +1,45 @@
+uuid: 3b8733ce-73f7-42d1-b934-4ffbf7cb55c9
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.alerta.body
+    - field.field.node.alerta.field_domain_access
+    - field.field.node.alerta.field_domain_all_affiliates
+    - field.field.node.alerta.field_domain_source
+    - field.field.node.alerta.field_tipo
+    - node.type.alerta
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.alerta.full
+targetEntityType: node
+bundle: alerta
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_tipo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

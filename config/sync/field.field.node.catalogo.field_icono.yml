@@ -1,0 +1,28 @@
+uuid: 0ecd0e87-3533-49e0-9483-1cc2d40da0ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icono
+    - node.type.catalogo
+    - node.type.icono_svg_
+id: node.catalogo.field_icono
+field_name: field_icono
+entity_type: node
+bundle: catalogo
+label: Icono
+description: 'Icono para los catálogos que aparecen en el bloque de catálogos en la Home'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      icono_svg_: icono_svg_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,15 @@
+uuid: 4da5e646-85b8-4eb6-85ea-410530ca21dc
+langcode: es
+status: true
+dependencies: {  }
+name: escalar_a_ancho_180px
+label: 'Escalar a ancho 180px'
+effects:
+  19046a76-7db4-46c8-88c5-3669e2287875:
+    uuid: 19046a76-7db4-46c8-88c5-3669e2287875
+    id: image_scale
+    weight: 1
+    data:
+      width: 180
+      height: null
+      upscale: false

@@ -1,0 +1,49 @@
+
+.node--type-exposicion.node--promoted.node--view-mode-minificha-con-imagen{
+  
+    .block.block-layout-builder.block-field-blocknodeexposiciontype{
+        background-color: #1D1D1D; 
+        margin-bottom: 0px !important; 
+        margin:
+        a{
+            color: white; 
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 5px 10px;
+        } 
+      
+    }
+    .block.block-layout-builder.block-field-blocknodeexposiciontitle{
+        background-color: #1D1D1D; 
+        margin-bottom: 0px !important; 
+        a{
+            color: white; 
+        }  
+    }
+    .block.block-layout-builder.block-field-blocknodeexposicionfield-fecha-inicio{
+        background-color: #1D1D1D; 
+        margin-bottom: 0px !important; 
+        
+        .field__label{
+            color: white; 
+        }
+        time.datetime{
+            color: white; 
+        }
+    }
+    .block.block-layout-builder.block-field-blocknodeexposicionfield-fecha-fin{
+        background-color: #1D1D1D; 
+        margin-bottom: 0px !important; 
+        color: white; 
+        .field__label{
+            color: white; 
+        }
+        time.datetime{
+            color: white; 
+        }
+    }
+}
+
+.block.block-layout-builder.block-field-blocknodeexposicionfield-imagen-destacada{
+    margin-bottom: 0px !important; 
+}

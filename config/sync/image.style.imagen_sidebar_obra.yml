@@ -1,0 +1,15 @@
+uuid: 595e8fcb-0780-4b8e-be30-a030ecf0a72a
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_sidebar_obra
+label: 'Imagen sidebar obra'
+effects:
+  46637b66-982a-4735-a2ac-901c2d938282:
+    uuid: 46637b66-982a-4735-a2ac-901c2d938282
+    id: image_scale
+    weight: 1
+    data:
+      width: 322
+      height: null
+      upscale: false

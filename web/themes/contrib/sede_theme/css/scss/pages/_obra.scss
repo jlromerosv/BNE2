@@ -1,0 +1,434 @@
+.page-node-type-obra {
+  .ps-rrss-share {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+  #block-sede-theme-contenidoprincipaldelapagina {
+    padding: 15px;
+    @media (min-width: 820px) {
+      padding: 15px 80px;
+    }
+    h1 {
+      display: none;
+      .field--name-title {
+        display: none;
+      }
+    }
+    article {
+      .node__content {
+        .layout--onecol {
+          .layout__region {
+            max-width: 1366px;
+            margin: 0 auto;
+            .block-field-blocknodeobrafield-etiquetas-busqueda {
+              .field {
+                .field__item {
+                  margin: 0 10px 5px 0;
+                  @include etiqueta();
+                }
+              }
+            }
+            .block-field-blocknodeobratitle {
+              margin: 0.5em 0 0.9em 0;
+              .field--name-title {
+                @include estilo_h1();
+              }
+            }
+            .block-field-blocknodeobrafield-imagen-destacada {
+              margin: 1.9em 0;
+              .field__item {
+                text-align: center;
+              }
+              img {
+                width: 100%;
+                //max-width: 600px;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .block-field-blocknodeobrabody {
+              margin: 1.9em 0;
+            }
+          }
+        }
+        .layout--twocol-section {
+          max-width: 1366px;
+          margin: 1.9em auto;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 2em;
+          @media (min-width: 992px) {
+            grid-template-columns: 1fr 5fr;
+          }
+
+          .layout__region--first {
+            text-align: right;
+            margin-right: 0;
+            @media (max-width: 992px) {
+              flex: 0 1 100% !important;
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              width: 100%;
+              margin-bottom: 1.9em;
+            }
+            @media (max-width: 576px) {
+              flex: 0 1 100% !important;
+              display: flex;
+              flex-direction: column;
+              max-width: 100%;
+              text-align: right;
+            }
+            .block-field-blocknodeobrafield-imagen-destacada {
+              p {
+                margin-block-start: 0;
+                margin-block-end: 0;
+              }
+              margin: 0;
+              margin-bottom: 1.9em;
+              @media (max-width: 576px) {
+                img {
+                  width: 100%;
+                }
+              }
+            }
+            .block-field-blocknodeobrafield-audio-destacado {
+              margin: 0 0 1.9em 0;
+              .field--name-field-audio-destacado {
+                article {
+                  .field--name-field-media-audio-file {
+                    .field__item {
+                      display: flex;
+                      justify-content: center;
+                      flex-direction: column;
+                      align-items: center;
+                      audio {
+                      }
+
+                      &::before {
+                        content: "";
+                        display: block;
+                        height: 200px;
+                        width: 100%;
+                        background: url(/themes/contrib/sede_theme/recursos/volumen.svg)
+                          no-repeat center;
+                        background-size: 60px;
+                        border: 0.5px solid $bne_color_3;
+                        margin-bottom: 1em;
+                        @media (max-width: 992px) {
+                          max-width: 300px;
+                        }
+                        @media (max-width: 576px) {
+                          max-width: 100%;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .block-views-blockenvio-postal-block-2 {
+              .ps-postal-listado {
+                .view-content {
+                  display: block;
+                  .views-row {
+                    .views-field-nothing {
+                      .field-content {
+                        a {
+                          .ps-item-postal {
+                            font-size: 16px;
+                            color: $bne_color_6;
+                            line-height: 24px;
+                            letter-spacing: 0.96px;
+                            font-weight: 400;
+                            &:hover {
+                              text-decoration: underline !important;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .block-field-blocknodeobrafield-enlace,
+            .block-field-blocknodeobrafield-url-2,
+            .block-field-blocknodeobrafield-url {
+              margin: 0.6em 0;
+              .field {
+                position: relative;
+                &:hover {
+                  .field__label {
+                    text-decoration: underline !important;
+                  }
+                }
+                .field__label {
+                  font-size: 16px;
+                  color: $bne_color_6;
+                  line-height: 24px;
+                  letter-spacing: 0.96px;
+                  font-weight: 400;
+                }
+                .field__item {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 20;
+                  p {
+                    display: block;
+                    height: 100%;
+                  }
+                  a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 0;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+          .layout__region--second {
+            //height: 100%;
+            //margin-left: 1.9em;
+            @media (max-width: 992px) {
+              flex: 0 1 100% !important;
+              margin-left: 0;
+            }
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1.9em;
+            border: 0.5px solid $bne_color_3;
+            @media (min-width: 576px) {
+              grid-template-columns: 1fr 1fr;
+            }
+            @media (min-width: 992px) {
+              grid-template-columns: 1fr 1fr 1fr;
+            }
+            .block-views-blockentidades-nodo-block-autores-obra {
+              h1 {
+                font-size: 18px;
+                font-family: $dm-serif;
+                font-weight: $dm-serif-regular;
+                color: $negro;
+                line-height: 24px;
+                margin-bottom: 0.5em;
+              }
+              .view-header {
+                .field__label {
+                  font-size: 18px;
+                  font-family: $dm-serif;
+                  font-weight: $dm-serif-regular;
+                  color: $negro;
+                  line-height: 24px;
+                  margin-bottom: 0.5em;
+                }
+              }
+              .view-content {
+                .views-row {
+                  .views-field {
+                    padding-bottom: 0.5em;
+                    .field-content {
+                      color: $bne_color_2;
+                      a {
+                        font-size: 16px;
+                        color: $bne_color_6;
+                        line-height: 24px;
+                        letter-spacing: 0.48px;
+                        margin-block-start: 0;
+                        scroll-margin-block-end: 0;
+                        &:hover {
+                          text-decoration: underline;
+                        }
+                      }
+                      .fecha {
+                        font-size: 16px;
+                        color: $bne_color_2;
+                        line-height: 24px;
+                        letter-spacing: 0.48px;
+                        margin-top: 0.5em;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .block {
+              margin: 0;
+              .field {
+                .field__label {
+                  font-size: 18px;
+                  font-family: $dm-serif;
+                  font-weight: $dm-serif-regular;
+                  color: $negro;
+                  line-height: 24px;
+                  margin-bottom: 0.5em;
+                }
+                .field__item {
+                  font-size: 16px;
+                  color: $bne_color_2;
+                  line-height: 24px;
+                  letter-spacing: 0.48px;
+                  padding: 0;
+                  border: none;
+                  p {
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 24px;
+                    letter-spacing: 0.48px;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                  }
+                }
+              }
+            }
+            .block-field-blocknodeobrafield-autores {
+              .field__items {
+                .field__item {
+                  padding: 0;
+                  article {
+                    h2 {
+                      a {
+                        font-size: 16px;
+                        color: $bne_color_2;
+                        line-height: 24px;
+                        letter-spacing: 0.48px;
+                        pointer-events: none;
+                      }
+                      &::after {
+                        display: none;
+                      }
+                    }
+                    .node__content {
+                      display: flex;
+
+                      .field {
+                        font-size: 16px;
+                        color: $bne_color_2;
+                        line-height: 24px;
+                        letter-spacing: 0.48px;
+                      }
+                      .field--name-field-nacimiento {
+                      }
+                      .field--name-field-defuncion {
+                        &::before {
+                          content: "-";
+                          color: $bne_color_2;
+                          padding: 0 5px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .block-field-blocknodeobrafield-descripcion-sin-formato {
+              .field__item {
+                border-top: 0;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .block-views-blockdocumentos-enlaces-de-la-pagina-block-1 {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+  .block-views-blockwidget-multimedia-enlaces-block-3 {
+    max-width: 1366px;
+    margin: 0 auto;
+
+  }
+}
+
+.ps-path-envío-postal {
+  main {
+    .layout-content {
+      .region-content {
+        padding: 0 15px;
+        @include ps-content-margins();
+        #block-sede-theme-contenidoprincipaldelapagina {
+
+          h1 {
+            @include estilo_h1();
+          }
+          .ps-postal-ficha {
+            max-width: 800px;
+            margin: 0 auto;
+            .view-content {
+              .views-row {
+                article {
+                  h2 {
+                    text-align: center;
+                    a {
+                      @include h2_style($negro, 16px);
+                      span {
+                        @include h2_style($negro, 16px);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .view-footer {
+              .ps-prev-page {
+                margin-top: 2em;
+                text-align: center;
+                cursor: pointer;
+                color: $bne_color_6;
+                font-size: 16px;
+                @include tipografia($Roboto, 3, regular);
+              }
+            }
+          }
+        }
+        .block-views-blockenvio-postal-block-1{
+          margin-top: 60px;
+          h1{
+            display: none;
+          }
+          .view-envio-postal{
+            max-width: 1000px;
+            margin: 0 auto;
+            .view-content{
+              .views-row{
+                .views-field-webform{
+                  .field-content{
+                    form{
+                      display: grid;
+                      grid-template-columns: 1fr;
+                      grid-gap: 44px;
+                      @include estilos-formulario();
+                      @media (min-width: 576px) {
+                      grid-template-columns: 1fr 1fr;
+                      .form-type-textarea{
+                        grid-column: span 2;
+                      }
+                      .form-item{
+                        margin: 0;
+                      }
+
+                      }
+                      .webform-progress{
+                        display: none;
+                      }
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

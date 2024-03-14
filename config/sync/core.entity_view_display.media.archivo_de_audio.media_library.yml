@@ -1,0 +1,49 @@
+uuid: 925adeab-d369-4bd1-a35a-268db0d5566d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.archivo_de_audio.domain_access
+    - field.field.media.archivo_de_audio.feeds_item
+    - field.field.media.archivo_de_audio.field_area_tematica
+    - field.field.media.archivo_de_audio.field_descripcion
+    - field.field.media.archivo_de_audio.field_media_audio_file
+    - field.field.media.archivo_de_audio.field_urlanterior
+    - image.style.medium
+    - media.type.archivo_de_audio
+  module:
+    - svg_image
+id: media.archivo_de_audio.media_library
+targetEntityType: media
+bundle: archivo_de_audio
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  domain_access: true
+  feeds_item: true
+  field_area_tematica: true
+  field_descripcion: true
+  field_media_audio_file: true
+  field_urlanterior: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true
+  uuid: true

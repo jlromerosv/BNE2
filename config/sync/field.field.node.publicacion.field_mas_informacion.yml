@@ -1,0 +1,21 @@
+uuid: 9897ee63-75df-4e92-b01f-5183e8745472
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.publicacion
+  module:
+    - text
+id: node.publicacion.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: publicacion
+label: 'Más información'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

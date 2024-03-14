@@ -1,0 +1,33 @@
+uuid: 2da9737e-3220-4907-8b47-516c4ae1fae9
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloques_imagenes_de_cabecera
+  module:
+    - system
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloques_imagenes_de_cabecera_block_24
+theme: bne_theme
+region: breadcrumb
+weight: -36
+provider: null
+plugin: 'views_block:bloques_imagenes_de_cabecera-block_24'
+settings:
+  id: 'views_block:bloques_imagenes_de_cabecera-block_24'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/15361\r\n/blog/biblioteconomia/*"

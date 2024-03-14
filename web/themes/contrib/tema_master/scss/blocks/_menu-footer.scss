@@ -1,0 +1,33 @@
+/*
+        ========= MENÚ DEL FOOTER ==========
+    Estilos dedicados al menu del footer.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $blanco = Color blanco
+
+*/
+
+.ps-menu-footer-block {
+    padding: 25px 0;
+    .menu {
+        @include display_flex(row, space-evenly, center);
+        flex-wrap: wrap;
+        .menu-item {
+            color: $blanco;
+            margin: 5px;
+        }
+    }
+}

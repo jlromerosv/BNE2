@@ -1,0 +1,23 @@
+uuid: 78507d9c-f8ac-4a7d-ad34-97f3a409fe66
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_lugar
+  module:
+    - text
+id: taxonomy_term.tipo_de_lugar.default
+targetEntityType: taxonomy_term
+bundle: tipo_de_lugar
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

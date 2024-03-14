@@ -1,0 +1,17 @@
+uuid: f84388ed-7c16-451f-97cb-1a2ed89247dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.root
+id: area-d6c67468e
+label: Root
+weight: 2
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

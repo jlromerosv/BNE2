@@ -1,0 +1,20 @@
+uuid: 22c31e5f-a146-4ed4-bbbd-f7558d758b98
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+  module:
+    - options
+id: node.exposicion.publish_state
+field_name: publish_state
+entity_type: node
+bundle: exposicion
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

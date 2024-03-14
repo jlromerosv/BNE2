@@ -1,0 +1,25 @@
+uuid: f19f671c-3e3d-4e1c-8f3e-1cf460e8cf90
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_descripcion_enlace_menu
+    - system.menu.mx1---sede-electronica-bne
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: menu_link_content.mx1---sede-electronica-bne.field_descripcion_enlace_menu
+field_name: field_descripcion_enlace_menu
+entity_type: menu_link_content
+bundle: mx1---sede-electronica-bne
+label: 'Descripcion Enlace Menu'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

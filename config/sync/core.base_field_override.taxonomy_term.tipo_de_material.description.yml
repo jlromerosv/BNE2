@@ -1,0 +1,20 @@
+uuid: d2e5fa84-97cd-46b1-914f-0cac79d0cbb9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_material
+  module:
+    - text
+id: taxonomy_term.tipo_de_material.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_material
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

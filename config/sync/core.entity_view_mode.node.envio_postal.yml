@@ -1,0 +1,10 @@
+uuid: b5b2766f-320c-4838-815b-0a308133f427
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.envio_postal
+label: 'Envío Postal'
+targetEntityType: node
+cache: true

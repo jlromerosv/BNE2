@@ -1,0 +1,14 @@
+uuid: bad7351e-fed6-4218-8d0c-45195d24e6b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.anuncio
+id: node_type_anuncio
+entity_type_id: node_type
+entity_id: anuncio
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

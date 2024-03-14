@@ -1,0 +1,20 @@
+uuid: 2fbf97a7-e064-4c91-8947-905de801e488
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+id: node.contenidos_formativos.uid
+field_name: uid
+entity_type: node
+bundle: contenidos_formativos
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

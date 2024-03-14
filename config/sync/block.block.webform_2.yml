@@ -1,0 +1,33 @@
+uuid: 5f8cc529-b165-48a0-9415-cf45b15e593f
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.bloque_buscador_bne
+  module:
+    - block_class
+    - webform
+  theme:
+    - sede_theme
+third_party_settings:
+  block_class:
+    classes: ps-bloque-buscador-bne
+id: webform_2
+theme: sede_theme
+region: header_seccion
+weight: -31
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform bloque buscador'
+  label_display: '0'
+  provider: webform
+  webform_id: bloque_buscador_bne
+  default_data: ''
+  redirect: false
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

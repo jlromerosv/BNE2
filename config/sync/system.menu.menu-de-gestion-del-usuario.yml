@@ -1,0 +1,8 @@
+uuid: 465e7d54-c5cf-431a-87f1-56b887f54925
+langcode: es
+status: true
+dependencies: {  }
+id: menu-de-gestion-del-usuario
+label: 'Menú Panel de Gestión del Usuario'
+description: 'Dashboard o Panel de Gestión del usuario. Contiene enlaces para que el usuario acceda a los diferentes contenidos que tiene asignado.'
+locked: false

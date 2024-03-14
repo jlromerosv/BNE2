@@ -1,0 +1,9 @@
+uuid: 807bddfd-e59f-431d-965b-e5e1da1275c3
+langcode: es
+status: true
+dependencies: {  }
+id: cookie_de_sesion
+label: 'Cookie de sesión'
+description: 'Solo para usuarios registrados, permiten la navegación por la web para dichos usuarios. No se almacenan permanentemente en tu dispositivo, son temporales.'
+checkbox_default_state: required
+weight: -7

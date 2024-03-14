@@ -1,0 +1,18 @@
+uuid: 48afc7c0-e7f4-4cb5-90b2-441011449bfc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+id: node.red_social.created
+field_name: created
+entity_type: node
+bundle: red_social
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

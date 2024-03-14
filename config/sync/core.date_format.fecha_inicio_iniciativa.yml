@@ -1,0 +1,8 @@
+uuid: 613c5b47-e2b8-47ae-b02e-bdffba68261d
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_inicio_iniciativa
+label: 'Fecha inicio iniciativa'
+locked: false
+pattern: '\D\e\s\d\e \e\l j \d\e F \d\e Y'

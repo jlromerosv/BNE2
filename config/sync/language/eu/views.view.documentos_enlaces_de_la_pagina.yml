@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      title: 'Dokumentuak eta interesgarriak diren estekak'
+      header:
+        area:
+          content:
+            value: "<div>[view:title]</div>\r\n"
+            format: html_full

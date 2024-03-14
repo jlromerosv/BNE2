@@ -1,0 +1,189 @@
+uuid: bb00b63d-43e8-4afd-932f-78d219ec11f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dossier.body
+    - field.field.node.dossier.feeds_item
+    - field.field.node.dossier.field_alias_tipo_contenido
+    - field.field.node.dossier.field_archivos
+    - field.field.node.dossier.field_audios
+    - field.field.node.dossier.field_contenido_generico
+    - field.field.node.dossier.field_contenidos_relacionados
+    - field.field.node.dossier.field_contenidos_vinculados
+    - field.field.node.dossier.field_domain_access
+    - field.field.node.dossier.field_domain_all_affiliates
+    - field.field.node.dossier.field_domain_source
+    - field.field.node.dossier.field_enlaces
+    - field.field.node.dossier.field_fecha_inicio
+    - field.field.node.dossier.field_galeria_de_imagenes
+    - field.field.node.dossier.field_id_externo
+    - field.field.node.dossier.field_iframe
+    - field.field.node.dossier.field_imagen_representativa
+    - field.field.node.dossier.field_imagenes
+    - field.field.node.dossier.field_meta_tags
+    - field.field.node.dossier.field_no_mostrar_inverso
+    - field.field.node.dossier.field_tipos
+    - field.field.node.dossier.field_videos
+    - field.field.node.dossier.field_yoast_seo
+    - node.type.dossier
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          fe19fedb-550c-4dc6-b2ab-e8db86f3c6a0:
+            uuid: fe19fedb-550c-4dc6-b2ab-e8db86f3c6a0
+            region: second
+            configuration:
+              id: 'extra_field_block:node:dossier:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+          57b39092-c2f6-46e0-8533-757b5cfede72:
+            uuid: 57b39092-c2f6-46e0-8533-757b5cfede72
+            region: first
+            configuration:
+              id: 'field_block:node:dossier:field_imagen_representativa'
+              label: 'Imagen representativa'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: tercio_de_ancho
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          6de7a24c-68b4-4bb7-a774-480163d58fd2:
+            uuid: 6de7a24c-68b4-4bb7-a774-480163d58fd2
+            region: second
+            configuration:
+              id: 'field_block:node:dossier:body'
+              label: Descripción
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          63942e15-2a0d-49ed-838c-b9d0bbea9f5b:
+            uuid: 63942e15-2a0d-49ed-838c-b9d0bbea9f5b
+            region: second
+            configuration:
+              id: 'field_block:node:dossier:field_fecha_inicio'
+              label: 'Fecha del contenido'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: html_month
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          2e6aacc8-b72a-4129-a0a7-1d263bcfa5ff:
+            uuid: 2e6aacc8-b72a-4129-a0a7-1d263bcfa5ff
+            region: second
+            configuration:
+              id: 'field_block:node:dossier:field_tipos'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.dossier.teaser
+targetEntityType: node
+bundle: dossier
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_representativa:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_tipos:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_audios: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_fecha_inicio: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

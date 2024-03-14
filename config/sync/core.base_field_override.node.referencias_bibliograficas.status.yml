@@ -1,0 +1,22 @@
+uuid: 92fb50e2-de8e-43d5-83cc-5d2f47637e5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.referencias_bibliograficas
+id: node.referencias_bibliograficas.status
+field_name: status
+entity_type: node
+bundle: referencias_bibliograficas
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

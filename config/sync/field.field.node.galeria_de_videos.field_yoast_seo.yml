@@ -1,0 +1,21 @@
+uuid: 11bdefd3-956e-4067-8e6d-159f5d8a5ff3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.galeria_de_videos
+  module:
+    - yoast_seo
+id: node.galeria_de_videos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: galeria_de_videos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

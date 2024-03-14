@@ -1,0 +1,10 @@
+uuid: 5cd10aca-12f4-4712-9b27-e5d44e2d5f5f
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.logotipo
+label: Logotipo
+targetEntityType: media
+cache: true

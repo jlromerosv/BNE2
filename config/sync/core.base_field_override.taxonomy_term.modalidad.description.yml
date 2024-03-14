@@ -1,0 +1,20 @@
+uuid: 0aeb4ab0-2233-4f73-98e0-5f7bfc0b1f06
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.modalidad
+  module:
+    - text
+id: taxonomy_term.modalidad.description
+field_name: description
+entity_type: taxonomy_term
+bundle: modalidad
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 32d3ae25-c543-47b7-a287-219b8d0bad50
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horarios_especificos
+    - node.type.lugar
+  module:
+    - text
+id: node.lugar.field_horarios_especificos
+field_name: field_horarios_especificos
+entity_type: node
+bundle: lugar
+label: Horario
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

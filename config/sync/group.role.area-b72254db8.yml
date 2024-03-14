@@ -1,0 +1,17 @@
+uuid: 2456a562-649a-4dff-9777-7bb243a55c0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.blog_periodicomania
+id: area-b72254db8
+label: 'x_Blog Periodicomania'
+weight: 9
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

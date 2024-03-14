@@ -1,0 +1,15 @@
+uuid: 01ac2ab9-acdb-4276-b0f1-a11478d0353b
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_imagen_cabecera_extra_xs
+label: 'Bloque Imagen cabecera extra XS'
+effects:
+  b82cd4db-6c4b-4aad-a4e0-009d7c1bdda4:
+    uuid: b82cd4db-6c4b-4aad-a4e0-009d7c1bdda4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 570
+      height: 150
+      anchor: center-center

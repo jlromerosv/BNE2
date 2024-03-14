@@ -1,0 +1,10 @@
+uuid: 273a9c23-9607-4ac9-8c5b-8f3bdbf7d4bb
+langcode: es
+status: true
+dependencies:
+  module:
+    - feeds
+id: feeds_feed.token
+label: Comodín
+targetEntityType: feeds_feed
+cache: true

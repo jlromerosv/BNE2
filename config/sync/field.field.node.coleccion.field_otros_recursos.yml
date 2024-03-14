@@ -1,0 +1,61 @@
+uuid: 8d2a9a2c-1e32-408b-91c7-719d0f1d0de2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_otros_recursos
+    - node.type.anuncio
+    - node.type.autor
+    - node.type.bolsa_de_trabajo
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.coleccion
+    - node.type.contenido_generico
+    - node.type.convocatoria
+    - node.type.documento
+    - node.type.dossier
+    - node.type.enlace
+    - node.type.entrada_de_blog
+    - node.type.faq
+    - node.type.galeria_de_documentos
+    - node.type.galeria_de_imagenes
+    - node.type.noticia
+    - node.type.obra
+    - node.type.publicacion
+id: node.coleccion.field_otros_recursos
+field_name: field_otros_recursos
+entity_type: node
+bundle: coleccion
+label: 'x_Otros recursos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      autor: autor
+      catalogo: catalogo
+      campana: campana
+      coleccion: coleccion
+      contenido_generico: contenido_generico
+      convocatoria: convocatoria
+      documento: documento
+      dossier: dossier
+      enlace: enlace
+      entrada_de_blog: entrada_de_blog
+      galeria_de_imagenes: galeria_de_imagenes
+      galeria_de_documentos: galeria_de_documentos
+      noticia: noticia
+      obra: obra
+      faq: faq
+      publicacion: publicacion
+      anuncio: anuncio
+      bolsa_de_trabajo: bolsa_de_trabajo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: anuncio
+field_type: entity_reference

@@ -1,0 +1,26 @@
+uuid: 682570d9-a1dc-4062-85eb-b4bf645ca53d
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point_banner
+  module:
+    - crop
+name: crop_banner
+label: 'Banner crop'
+effects:
+  fabf1353-c12c-4b18-b81b-cb79198ab183:
+    uuid: fabf1353-c12c-4b18-b81b-cb79198ab183
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point_banner
+      automatic_crop_provider: null
+  0432a333-3c7b-4879-b519-6f00de8a458c:
+    uuid: 0432a333-3c7b-4879-b519-6f00de8a458c
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1920
+      height: 240
+      anchor: center-center

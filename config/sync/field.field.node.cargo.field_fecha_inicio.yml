@@ -1,0 +1,21 @@
+uuid: c7924960-6807-44db-9887-c2fba3fc3ac3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.cargo
+  module:
+    - datetime
+id: node.cargo.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: cargo
+label: 'Fecha nombramiento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

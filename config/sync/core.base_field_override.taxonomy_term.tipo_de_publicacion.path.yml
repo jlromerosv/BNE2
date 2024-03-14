@@ -1,0 +1,20 @@
+uuid: ddfcba61-d4df-4d26-8065-8c63060ea793
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_publicacion
+  module:
+    - path
+id: taxonomy_term.tipo_de_publicacion.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_publicacion
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

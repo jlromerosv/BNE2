@@ -1,0 +1,18 @@
+uuid: fbc5ad5d-d240-464a-a986-53e384977bca
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_organizativa
+id: taxonomy_term.area_organizativa.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: area_organizativa
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

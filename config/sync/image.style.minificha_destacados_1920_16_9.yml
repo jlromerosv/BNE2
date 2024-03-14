@@ -1,0 +1,25 @@
+uuid: c501528c-3126-428c-bf74-c50923d6b0b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.minificha_destacados_crop_type
+  module:
+    - crop
+name: minificha_destacados_1920_16_9
+label: 'Minificha Destacados 1920 - 16:9'
+effects:
+  02d3a841-f1ce-4856-9704-732a4e8962da:
+    uuid: 02d3a841-f1ce-4856-9704-732a4e8962da
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: minificha_destacados_crop_type
+  52e4f93e-b09e-406b-bdd3-b2502ea728e2:
+    uuid: 52e4f93e-b09e-406b-bdd3-b2502ea728e2
+    id: image_scale
+    weight: 2
+    data:
+      width: 1920
+      height: null
+      upscale: false

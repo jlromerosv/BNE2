@@ -1,0 +1,30 @@
+uuid: 4c659b5b-2bfc-4d13-a0bd-23496fe1f629
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivo
+    - media.type.archivo
+    - media.type.imagen
+    - node.type.documento
+id: node.documento.field_archivo
+field_name: field_archivo
+entity_type: node
+bundle: documento
+label: Archivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo: archivo
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: archivo
+field_type: entity_reference

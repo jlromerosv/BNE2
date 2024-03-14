@@ -1,0 +1,14 @@
+uuid: 07d598ad-f54b-4b40-8d73-e30e39ca99b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.usuario_mibne
+  module:
+    - user
+id: user_add_role_action.usuario_mibne
+label: 'Añade el rol Usuario MiBNE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: usuario_mibne

@@ -1,0 +1,29 @@
+uuid: da087571-d133-4378-a0ad-a0139d3ec4f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regimen_promocion_inmueble
+    - node.type.lugar
+    - taxonomy.vocabulary.regimen_de_promocion_de_inmbuebl
+id: node.lugar.field_regimen_promocion_inmueble
+field_name: field_regimen_promocion_inmueble
+entity_type: node
+bundle: lugar
+label: 'x_Régimen de promoción de inmuebles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      regimen_de_promocion_de_inmbuebl: regimen_de_promocion_de_inmbuebl
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

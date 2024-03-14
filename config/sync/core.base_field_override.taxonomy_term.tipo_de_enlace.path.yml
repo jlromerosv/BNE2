@@ -1,0 +1,20 @@
+uuid: f106dafb-b127-4548-9e30-e4179be51b41
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_enlace
+  module:
+    - path
+id: taxonomy_term.tipo_de_enlace.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_enlace
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

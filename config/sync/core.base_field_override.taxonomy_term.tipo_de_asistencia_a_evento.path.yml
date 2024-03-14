@@ -1,0 +1,20 @@
+uuid: ceeb8776-b6a3-477c-8c59-1e8f84f86a01
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_asistencia_a_evento
+  module:
+    - path
+id: taxonomy_term.tipo_de_asistencia_a_evento.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_asistencia_a_evento
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

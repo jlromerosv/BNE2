@@ -1,0 +1,10 @@
+uuid: a009ca82-5827-4a1b-95fc-cea85b139e19
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.destacados
+label: Destacados
+targetEntityType: node
+cache: true

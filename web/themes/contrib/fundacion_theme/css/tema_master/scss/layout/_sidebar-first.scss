@@ -1,0 +1,21 @@
+/*
+    ========= SIDEBAR-FIRST ==========
+    Estilos dedicados al Sidebar First de la web.
+
+	----------------------- VARIABLES -------------------------
+	$main_color_2 = Color principal de tipo 2
+
+	$blanco = Color blanco
+*/
+
+.region.region-sidebar-first {
+	padding: 15px; 
+    background: $blanco;
+	a{
+	    font-weight: 400;
+		font-size: 1.1em;
+		letter-spacing: 1px;
+		color: $blanco;
+	}
+}
+

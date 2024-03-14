@@ -1,0 +1,29 @@
+uuid: 6faa68f2-db74-494a-9c2c-837d8c1fc5a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.actividad_generica
+    - taxonomy.vocabulary.categorias_evento
+id: node.actividad_generica.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: actividad_generica
+label: 'Categoría de actividad'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorias_evento: categorias_evento
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

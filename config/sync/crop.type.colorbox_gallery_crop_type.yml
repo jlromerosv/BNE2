@@ -1,0 +1,12 @@
+uuid: 091f0bec-ee88-4c5d-837c-169542f0395c
+langcode: es
+status: true
+dependencies: {  }
+label: 'Colorbox Gallery crop type'
+id: colorbox_gallery_crop_type
+description: ''
+aspect_ratio: '4:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

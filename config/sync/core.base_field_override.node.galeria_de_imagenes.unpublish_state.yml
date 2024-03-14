@@ -1,0 +1,20 @@
+uuid: 0059dc2d-3c70-4c40-9a29-0f279568a98d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+  module:
+    - options
+id: node.galeria_de_imagenes.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

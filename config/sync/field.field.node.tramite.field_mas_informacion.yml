@@ -1,0 +1,21 @@
+uuid: 934827f1-5ed6-4159-aab8-9bcb8f5ec6b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.tramite
+  module:
+    - text
+id: node.tramite.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: tramite
+label: 'Más información'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

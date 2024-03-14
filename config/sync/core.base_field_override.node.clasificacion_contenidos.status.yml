@@ -1,0 +1,22 @@
+uuid: b7355da1-3ad9-4312-8c51-c8c0f8172052
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+id: node.clasificacion_contenidos.status
+field_name: status
+entity_type: node
+bundle: clasificacion_contenidos
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

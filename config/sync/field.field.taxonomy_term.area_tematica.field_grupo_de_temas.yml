@@ -1,0 +1,29 @@
+uuid: f4db7ba1-99bd-428f-a0e2-62a55410a270
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_grupo_de_temas
+    - taxonomy.vocabulary.area_tematica
+    - taxonomy.vocabulary.grupo_de_temas
+id: taxonomy_term.area_tematica.field_grupo_de_temas
+field_name: field_grupo_de_temas
+entity_type: taxonomy_term
+bundle: area_tematica
+label: 'Grupo de temas'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grupo_de_temas: grupo_de_temas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

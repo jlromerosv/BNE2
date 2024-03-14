@@ -1,0 +1,8 @@
+uuid: 5793bd4d-711c-42a7-bf08-572ccfeafbde
+langcode: es
+status: true
+dependencies: {  }
+name: '_x_Tipo de promoción de inmuebles'
+vid: tipo_de_promocion_de_inmuebles
+description: ''
+weight: 0

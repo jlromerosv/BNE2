@@ -1,0 +1,81 @@
+uuid: 190d29cc-53f6-4fad-af19-9b3898fe803d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.minificha
+    - field.field.node.galeria_de_documentos.body
+    - field.field.node.galeria_de_documentos.field_alias_tipo_contenido
+    - field.field.node.galeria_de_documentos.field_archivos
+    - field.field.node.galeria_de_documentos.field_area_de_transparencia
+    - field.field.node.galeria_de_documentos.field_area_tematica
+    - field.field.node.galeria_de_documentos.field_colectivo
+    - field.field.node.galeria_de_documentos.field_domain_access
+    - field.field.node.galeria_de_documentos.field_domain_all_affiliates
+    - field.field.node.galeria_de_documentos.field_domain_source
+    - field.field.node.galeria_de_documentos.field_enlaces
+    - field.field.node.galeria_de_documentos.field_etiquetas_busqueda
+    - field.field.node.galeria_de_documentos.field_meta_tags
+    - field.field.node.galeria_de_documentos.field_tipo
+    - field.field.node.galeria_de_documentos.field_visualizacion_documentos
+    - field.field.node.galeria_de_documentos.field_yoast_seo
+    - node.type.galeria_de_documentos
+  module:
+    - layout_builder
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.galeria_de_documentos.minificha
+targetEntityType: node
+bundle: galeria_de_documentos
+mode: minificha
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_archivos:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: enlace_archivo
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_enlaces:
+    type: link
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_alias_tipo_contenido: true
+  field_area_de_transparencia: true
+  field_area_tematica: true
+  field_colectivo: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_etiquetas_busqueda: true
+  field_meta_tags: true
+  field_tipo: true
+  field_visualizacion_documentos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

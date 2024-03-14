@@ -1,0 +1,18 @@
+uuid: d558b06f-23d9-44b6-9800-4454bc10114e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+id: taxonomy_term.etiquetas_de_busqueda.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: etiquetas_de_busqueda
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

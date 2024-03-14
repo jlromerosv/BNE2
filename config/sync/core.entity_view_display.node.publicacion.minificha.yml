@@ -1,0 +1,118 @@
+uuid: bf334d1f-424a-4621-b276-b5d97c120f36
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.minificha
+    - field.field.node.publicacion.body
+    - field.field.node.publicacion.feeds_item
+    - field.field.node.publicacion.field_alias_tipo_contenido
+    - field.field.node.publicacion.field_ano
+    - field.field.node.publicacion.field_archivo
+    - field.field.node.publicacion.field_archivo_2
+    - field.field.node.publicacion.field_archivos
+    - field.field.node.publicacion.field_audios
+    - field.field.node.publicacion.field_codigo_identificativo
+    - field.field.node.publicacion.field_codigo_referencia
+    - field.field.node.publicacion.field_contenido_generico
+    - field.field.node.publicacion.field_contenidos_relacionados
+    - field.field.node.publicacion.field_contenidos_vinculados
+    - field.field.node.publicacion.field_descripcion_corta
+    - field.field.node.publicacion.field_descripcion_sin_formato
+    - field.field.node.publicacion.field_disponibilidad_texto_libre
+    - field.field.node.publicacion.field_domain_access
+    - field.field.node.publicacion.field_domain_all_affiliates
+    - field.field.node.publicacion.field_domain_source
+    - field.field.node.publicacion.field_enlace
+    - field.field.node.publicacion.field_enlaces
+    - field.field.node.publicacion.field_epub_url
+    - field.field.node.publicacion.field_estado
+    - field.field.node.publicacion.field_etiquetas_busqueda
+    - field.field.node.publicacion.field_galeria_de_imagenes
+    - field.field.node.publicacion.field_id_externo
+    - field.field.node.publicacion.field_iframe
+    - field.field.node.publicacion.field_imagen_destacada
+    - field.field.node.publicacion.field_imagen_representativa
+    - field.field.node.publicacion.field_imagenes
+    - field.field.node.publicacion.field_mas_informacion
+    - field.field.node.publicacion.field_meta_tags
+    - field.field.node.publicacion.field_no_mostrar_inverso
+    - field.field.node.publicacion.field_precio_euros
+    - field.field.node.publicacion.field_precio_oferta_euros
+    - field.field.node.publicacion.field_publicaciones
+    - field.field.node.publicacion.field_texto_libre
+    - field.field.node.publicacion.field_tipo_encuadernacion
+    - field.field.node.publicacion.field_tipo_texto_libre_
+    - field.field.node.publicacion.field_tipos
+    - field.field.node.publicacion.field_url_2
+    - field.field.node.publicacion.field_valor
+    - field.field.node.publicacion.field_videos
+    - node.type.publicacion
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.publicacion.minificha
+targetEntityType: node
+bundle: publicacion
+mode: minificha
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_ano: true
+  field_archivo: true
+  field_archivo_2: true
+  field_archivos: true
+  field_audios: true
+  field_codigo_identificativo: true
+  field_codigo_referencia: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_descripcion_corta: true
+  field_descripcion_sin_formato: true
+  field_disponibilidad_texto_libre: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_enlaces: true
+  field_epub_url: true
+  field_estado: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_destacada: true
+  field_imagen_representativa: true
+  field_imagenes: true
+  field_mas_informacion: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_precio_euros: true
+  field_precio_oferta_euros: true
+  field_publicaciones: true
+  field_texto_libre: true
+  field_tipo_encuadernacion: true
+  field_tipo_texto_libre_: true
+  field_tipos: true
+  field_url_2: true
+  field_valor: true
+  field_videos: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

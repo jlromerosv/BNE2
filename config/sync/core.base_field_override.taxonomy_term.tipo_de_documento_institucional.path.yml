@@ -1,0 +1,20 @@
+uuid: ca157e6c-afe8-4352-a28e-13795a0feff3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_documento_institucional
+  module:
+    - path
+id: taxonomy_term.tipo_de_documento_institucional.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_documento_institucional
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

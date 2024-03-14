@@ -1,0 +1,23 @@
+uuid: 6b1c3728-3463-4678-af63-416d4af10402
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: jhFxRp8vLclTANPnqGToz9M65P0zkIpKwWUwZUEPlVQ
+id: taxonomy_term.field_o_image_url
+field_name: field_o_image_url
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: true
+custom_storage: false

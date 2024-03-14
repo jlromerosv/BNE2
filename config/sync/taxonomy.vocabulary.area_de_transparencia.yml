@@ -1,0 +1,8 @@
+uuid: d7f6d5ce-f11f-4786-a519-a4efb54ac66d
+langcode: es
+status: true
+dependencies: {  }
+name: 'Area de transparencia'
+vid: area_de_transparencia
+description: ''
+weight: 0

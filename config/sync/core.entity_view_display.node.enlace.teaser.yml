@@ -1,0 +1,152 @@
+uuid: b431620f-c367-408a-964a-3c96fbf550a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.enlace.body
+    - field.field.node.enlace.feeds_item
+    - field.field.node.enlace.field_alias_tipo_contenido
+    - field.field.node.enlace.field_area_de_transparencia
+    - field.field.node.enlace.field_area_tematica
+    - field.field.node.enlace.field_colectivo
+    - field.field.node.enlace.field_domain_access
+    - field.field.node.enlace.field_domain_all_affiliates
+    - field.field.node.enlace.field_domain_source
+    - field.field.node.enlace.field_enlace
+    - field.field.node.enlace.field_etiquetas_busqueda
+    - field.field.node.enlace.field_id_externo
+    - field.field.node.enlace.field_imagen_destacada
+    - field.field.node.enlace.field_meta_tags
+    - field.field.node.enlace.field_subtitulo
+    - field.field.node.enlace.field_tipo
+    - node.type.enlace
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          f5288d2c-1356-429c-bfb1-69ba8f25ff2d:
+            uuid: f5288d2c-1356-429c-bfb1-69ba8f25ff2d
+            region: second
+            configuration:
+              id: 'field_block:node:enlace:field_enlace'
+              label: Enlace
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: true
+                  url_plain: true
+                  rel: nofollow
+                  target: _blank
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          d04ca614-d69f-426a-96c3-466153a8a41e:
+            uuid: d04ca614-d69f-426a-96c3-466153a8a41e
+            region: second
+            configuration:
+              id: 'field_block:node:enlace:body'
+              label: Descripción
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          b8dd4e70-3d61-452c-a871-707c88c7ca65:
+            uuid: b8dd4e70-3d61-452c-a871-707c88c7ca65
+            region: first
+            configuration:
+              id: 'field_block:node:enlace:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: tercio_de_ancho
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+id: node.enlace.teaser
+targetEntityType: node
+bundle: enlace
+mode: teaser
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_enlace:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_area_de_transparencia: true
+  field_area_tematica: true
+  field_colectivo: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_etiquetas_busqueda: true
+  field_id_externo: true
+  field_imagen_destacada: true
+  field_meta_tags: true
+  field_subtitulo: true
+  field_tipo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

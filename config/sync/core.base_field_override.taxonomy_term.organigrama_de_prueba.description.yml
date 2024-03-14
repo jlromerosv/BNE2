@@ -1,0 +1,20 @@
+uuid: daf5e904-c019-4859-a270-f5216ef16a5b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organigrama_de_prueba
+  module:
+    - text
+id: taxonomy_term.organigrama_de_prueba.description
+field_name: description
+entity_type: taxonomy_term
+bundle: organigrama_de_prueba
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

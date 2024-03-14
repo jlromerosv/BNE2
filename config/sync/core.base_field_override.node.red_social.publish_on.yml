@@ -1,0 +1,18 @@
+uuid: cbf68d23-27dd-4e78-b473-00d3c9d93805
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+id: node.red_social.publish_on
+field_name: publish_on
+entity_type: node
+bundle: red_social
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

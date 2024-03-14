@@ -1,0 +1,18 @@
+uuid: be6cb9b7-2960-4a3a-aac6-7f02d3f0eb9b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.serie_estadistica
+id: node.serie_estadistica.publish_on
+field_name: publish_on
+entity_type: node
+bundle: serie_estadistica
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

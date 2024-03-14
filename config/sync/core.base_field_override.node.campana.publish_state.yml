@@ -1,0 +1,20 @@
+uuid: 90feef8e-c91b-40a2-972a-3f1dd6c5cee5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.campana
+  module:
+    - options
+id: node.campana.publish_state
+field_name: publish_state
+entity_type: node
+bundle: campana
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

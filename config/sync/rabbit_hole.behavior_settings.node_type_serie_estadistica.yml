@@ -1,0 +1,14 @@
+uuid: 4a5ffb59-c728-45fd-a14e-502d551b3218
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.serie_estadistica
+id: node_type_serie_estadistica
+entity_type_id: node_type
+entity_id: serie_estadistica
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

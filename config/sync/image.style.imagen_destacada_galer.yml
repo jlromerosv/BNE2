@@ -1,0 +1,15 @@
+uuid: a4c1dfc5-2a21-4f96-b273-ba1ae56156b7
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_destacada_galer
+label: 'Imagen destacada galería imágenes'
+effects:
+  d0c44cd3-d3b4-45d6-ba34-2001bfff9e45:
+    uuid: d0c44cd3-d3b4-45d6-ba34-2001bfff9e45
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 500
+      anchor: center-center

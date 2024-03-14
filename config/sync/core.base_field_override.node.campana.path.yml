@@ -1,0 +1,20 @@
+uuid: 0ce83497-85cc-4bfc-b30a-593cfff502d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.campana
+  module:
+    - path
+id: node.campana.path
+field_name: path
+entity_type: node
+bundle: campana
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

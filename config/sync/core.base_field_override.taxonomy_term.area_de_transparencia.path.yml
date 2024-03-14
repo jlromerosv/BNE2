@@ -1,0 +1,20 @@
+uuid: 22f86d40-98a9-4af1-965c-17ca97977130
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_de_transparencia
+  module:
+    - path
+id: taxonomy_term.area_de_transparencia.path
+field_name: path
+entity_type: taxonomy_term
+bundle: area_de_transparencia
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

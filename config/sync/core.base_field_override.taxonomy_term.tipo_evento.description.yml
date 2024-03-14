@@ -1,0 +1,20 @@
+uuid: 128e6125-e78f-4377-b44d-4666ccd29cb7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_evento
+  module:
+    - text
+id: taxonomy_term.tipo_evento.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_evento
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

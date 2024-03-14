@@ -1,0 +1,20 @@
+uuid: 2f547fe0-3e4c-4510-a162-a535eeda1dcf
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+  module:
+    - options
+id: node.documento.publish_state
+field_name: publish_state
+entity_type: node
+bundle: documento
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

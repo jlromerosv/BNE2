@@ -1,0 +1,18 @@
+uuid: c4e0f77b-4e17-432c-b33f-dd2e3d29b656
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.disponibilidad_publicaciones
+id: taxonomy_term.disponibilidad_publicaciones.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: disponibilidad_publicaciones
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

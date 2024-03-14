@@ -1,0 +1,20 @@
+uuid: b5b553de-b3fc-4488-b21c-a7ab3ead0271
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estadistica
+  module:
+    - path
+id: node.estadistica.path
+field_name: path
+entity_type: node
+bundle: estadistica
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

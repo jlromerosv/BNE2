@@ -1,0 +1,160 @@
+/*
+    ========= REGIONS ==========
+
+    Estilos dedicados a los estilos de las regiones de la web.
+
+       Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin grid-column-region($columns, $justify, $align)
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin ps-content-margins($breakpoint, $max-width)
+
+    ------------------------- MIXINS --------------------------
+    grid-coloumn-region = Estilo de grid de las regiones del
+    tema
+
+    display_flex = Mixin para las vistas display flex
+
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    ----------------------- VARIABLES -------------------------
+    $columns = Número de columnas que va a tener el Grid
+
+    $justify = Alineación horizontal de los ítems del grid
+
+    $align = Alineación vertical de los ítems del grid
+
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $breakpoint = Breakpoint hasta el cuál el margen tendrá
+    efecto
+
+    $max-width = EL máximo de ancho que tendrá el contenedor al
+    que se le aplique.
+*/
+
+
+.ps_header_2_col {
+    &-left-right {
+        .ps_header_2_col_content {
+            @include grid-column-region(max-content 1fr, initial, center);
+            @include ps-content-margins(992px, 1670px);
+        }
+    }
+
+    .header_col_right {
+        padding-left: 16px;
+        .region-header-derecho-2-2 {
+            @include display_flex(row, center, center);
+        }
+    }
+}
+
+.ps_header_3_col {
+    &-left-main {
+        .ps_header_3_col_content {
+            @include grid-column-region(1fr 2fr, initial, center);
+            @include ps-content-margins(992px, 1670px);
+        }
+    }
+
+    &-main-right {
+        .ps_header_3_col_content {
+            @include grid-column-region(2fr 1fr, initial, center);
+            @include ps-content-margins(992px, 1670px);
+        }
+    }
+
+    &-left-main-right {
+        .ps_header_3_col_content {
+            @include grid-column-region(1fr 2fr 1fr, initial, center);
+            @include ps-content-margins(992px, 1670px);
+        }
+    }
+}
+
+.ps_header_site_2_col {
+    &-left-right {
+        .ps_header_site_2_col_content {
+            @include display_flex(row, initial, center);
+            @include ps-content-margins(992px, 1670px);
+        }
+    }
+}
+
+
+
+
+.ps_layout {
+    .layout-sidebar-first {
+        margin-right: 15px;
+    }
+    .layout-sidebar-second {
+        margin-left: 15px;
+    }
+    &.ps-left-main {
+        @include grid-column-region(1fr 4fr, initial, initial);
+    
+        @media (max-width: 800px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &.ps-main-right {
+        @include grid-column-region(4fr 1fr, initial, initial);
+    
+        @media (max-width: 800px) {
+            grid-template-columns: 8fr 4fr;
+        }
+    }
+    &.ps-left-main-right {
+        @include grid-column-region(1fr 3fr 1fr, initial, initial);
+    
+        @media (max-width: 800px) {
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+    }
+}
+
+
+
+
+.ps_footer_2_col {
+    &-left-right {
+        @include grid-column-region(repeat(2, 1fr), initial, center);
+    }
+}
+
+.ps_footer_3_col {
+
+    justify-items: initial;
+    padding: 10px;
+    @include ps-content-margins(992px, 1763px);
+
+    .footer_col_right {
+        justify-self: flex-end;
+    }
+
+    &-left-main {
+        @include grid-column-region(1fr 2fr, initial, center);
+    }
+
+    &-main-right {
+        @include grid-column-region(2fr 1fr, initial, center);
+    }
+
+    &-left-main-right {
+        display: grid;
+        justify-items: center;
+        @media (min-width: 768px) {
+            @include grid-column-region(1fr 2fr 1fr, center, center); 
+        }
+    }
+}
+

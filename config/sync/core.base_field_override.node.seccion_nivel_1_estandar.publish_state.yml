@@ -1,0 +1,20 @@
+uuid: 45eee803-f4eb-48ac-8a07-5ecf447f2d7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+  module:
+    - options
+id: node.seccion_nivel_1_estandar.publish_state
+field_name: publish_state
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

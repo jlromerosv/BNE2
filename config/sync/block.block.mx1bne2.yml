@@ -1,0 +1,42 @@
+uuid: d386183b-d161-41c0-9116-083728c10da8
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne-2
+  module:
+    - block_class
+    - domain
+    - system
+  theme:
+    - bne_theme
+third_party_settings:
+  block_class:
+    classes: menu-select-perfil
+id: mx1bne2
+theme: bne_theme
+region: header_izquierdo_1_2
+weight: -15
+provider: null
+plugin: 'system_menu_block:mx1---bne-2'
+settings:
+  id: 'system_menu_block:mx1---bne-2'
+  label: 'MX1 - BNE - Selecciona tu perfil'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      jmoreno_albacete_pulsia_es: jmoreno_albacete_pulsia_es
+      desarrollo_bne_pulsia_es: desarrollo_bne_pulsia_es

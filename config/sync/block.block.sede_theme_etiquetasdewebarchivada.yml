@@ -1,0 +1,28 @@
+uuid: d5be5f59-d2a3-448a-8a7a-d447606b09e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.etiquetas_de_web_archivada
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_etiquetasdewebarchivada
+theme: sede_theme
+region: sidebar_first
+weight: -16
+provider: null
+plugin: 'facet_block:etiquetas_de_web_archivada'
+settings:
+  id: 'facet_block:etiquetas_de_web_archivada'
+  label: 'Etiquetas de web archivada'
+  label_display: '0'
+  provider: facets
+  block_id: etiquetasdewebarchivada
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /colecciones/archivo-web-espanola/webs-achivadas

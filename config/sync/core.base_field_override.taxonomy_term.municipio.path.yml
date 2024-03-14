@@ -1,0 +1,20 @@
+uuid: d4fbd5c0-716d-4b89-bfe0-e43736374c3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.municipio
+  module:
+    - path
+id: taxonomy_term.municipio.path
+field_name: path
+entity_type: taxonomy_term
+bundle: municipio
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

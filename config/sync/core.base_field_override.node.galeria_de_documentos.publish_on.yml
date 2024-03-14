@@ -1,0 +1,18 @@
+uuid: 19423551-87f3-4629-bb2b-b2c1ff3b56c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_documentos
+id: node.galeria_de_documentos.publish_on
+field_name: publish_on
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

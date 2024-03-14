@@ -1,0 +1,21 @@
+uuid: fdeb80b3-1c25-4008-968e-33f4fdbc5fc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.autor
+  module:
+    - metatag
+id: node.autor.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: autor
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

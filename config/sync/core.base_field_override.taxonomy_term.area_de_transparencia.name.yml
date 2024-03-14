@@ -1,0 +1,18 @@
+uuid: fad67378-36c1-4516-961c-304c2882627f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_de_transparencia
+id: taxonomy_term.area_de_transparencia.name
+field_name: name
+entity_type: taxonomy_term
+bundle: area_de_transparencia
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

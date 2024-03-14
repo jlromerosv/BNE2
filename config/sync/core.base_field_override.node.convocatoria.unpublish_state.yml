@@ -1,0 +1,20 @@
+uuid: 6270cbd3-7e05-43a7-b46c-b87463b3a4c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.convocatoria
+  module:
+    - options
+id: node.convocatoria.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: convocatoria
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

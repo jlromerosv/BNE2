@@ -1,0 +1,18 @@
+uuid: c583716e-ff7e-4216-a277-2c5fe703f8f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+id: node.bolsa_de_trabajo.title
+field_name: title
+entity_type: node
+bundle: bolsa_de_trabajo
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

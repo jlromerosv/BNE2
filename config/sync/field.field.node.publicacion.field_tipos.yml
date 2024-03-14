@@ -1,0 +1,29 @@
+uuid: 2621efac-bff8-4627-97e0-67b99c6b23d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipos
+    - node.type.publicacion
+    - taxonomy.vocabulary.tipo_de_publicacion
+id: node.publicacion.field_tipos
+field_name: field_tipos
+entity_type: node
+bundle: publicacion
+label: 'Tipos de publicación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_publicacion: tipo_de_publicacion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

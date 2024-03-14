@@ -1,0 +1,27 @@
+uuid: 859cb7b0-b58f-43f9-a764-03158c52a37c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iniciativa_superior
+    - node.type.iniciativa
+id: node.iniciativa.field_iniciativa_superior
+field_name: field_iniciativa_superior
+entity_type: node
+bundle: iniciativa
+label: 'Iniciativa superior'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      iniciativa: iniciativa
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

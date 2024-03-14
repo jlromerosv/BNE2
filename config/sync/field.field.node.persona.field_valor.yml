@@ -1,0 +1,19 @@
+uuid: ac4c32fb-1bc0-4590-8c8c-0092f61ab46c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_valor
+    - node.type.persona
+id: node.persona.field_valor
+field_name: field_valor
+entity_type: node
+bundle: persona
+label: Cargo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

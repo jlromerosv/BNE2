@@ -1,0 +1,8 @@
+uuid: 3b55dacd-b206-49b1-b41f-016b4687086f
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_comentario
+label: 'Fecha comentario'
+locked: false
+pattern: 'j \d\e F \d\e Y \a \l\a\s H:i'

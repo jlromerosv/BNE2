@@ -1,0 +1,10 @@
+uuid: 77ab9c5f-c982-47dc-becf-bc0db330f03b
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.bloque_enlaces_destacados_home
+label: 'Bloque enlaces destacados home'
+targetEntityType: media
+cache: true

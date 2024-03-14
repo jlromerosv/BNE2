@@ -1,0 +1,29 @@
+/*
+    ========== GALERÍA DE IMÁGENES ==========
+
+    Estilos dedicados a la vista de galería de imágenes.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin gallery_img_styles($column_number, $column_width, $gap)
+
+    ------------------------- MIXINS --------------------------
+    gallery_img_styles = Estilos de la galería de imágenes
+
+    ----------------------- VARIABLES -------------------------
+    $column_number = Número de columnas del grid
+
+    $column_width = Ancho de las columnas del grid
+
+    $gap = Espacio entre las rejillas del grid
+*/
+
+.node--type-galeria-de-imagenes {
+    .field--name-field-imagenes {
+        @include gallery_img_styles($repeat_column_num_gallery_img, $column_width_gallery_img, $grid-gap_gallery_img);
+
+        @media (max-width: 700px) {
+            @include gallery_img_styles(2, $column_width_gallery_img, $grid-gap_gallery_img);
+        }
+    }
+}

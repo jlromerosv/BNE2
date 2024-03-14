@@ -1,0 +1,14 @@
+uuid: 7327ef69-bc5f-4266-9f75-3f39df77bd55
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_de_feria
+  module:
+    - user
+id: user_remove_role_action.administrador_de_feria
+label: 'Elimina el rol Administrador de feria al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrador_de_feria

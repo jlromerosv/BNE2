@@ -1,0 +1,8 @@
+uuid: 0f437de9-60c0-4b50-9931-9908ba0cd0d4
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de ciclo'
+vid: tipo_de_campana
+description: ''
+weight: 0

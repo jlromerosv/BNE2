@@ -1,0 +1,20 @@
+uuid: 29d5d49c-535d-47a8-84c3-e6cc3c3780d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_exposicion
+  module:
+    - path
+id: taxonomy_term.tipo_de_exposicion.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_exposicion
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,32 @@
+uuid: 5febf972-2b1f-4c30-beaf-9234a751528e
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloque_enlaces_a_listados_de_contenido
+  module:
+    - node
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloque_enlaces_a_listados_de_contenido_block_2
+theme: bne_theme
+region: sidebar_first
+weight: -66
+provider: null
+plugin: 'views_block:bloque_enlaces_a_listados_de_contenido-block_2'
+settings:
+  id: 'views_block:bloque_enlaces_a_listados_de_contenido-block_2'
+  label: ' Bloque Enlaces a listados de contenido: listado convocatorias ( contenidos )'
+  label_display: '0'
+  provider: views
+  views_label: ' Bloque Enlaces a listados de contenido: listado convocatorias ( contenidos )'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      convocatoria: convocatoria

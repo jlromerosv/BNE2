@@ -1,0 +1,18 @@
+uuid: 5a5c9ca5-4d30-4ed5-99cc-b7fbce242af1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_personalizada
+id: node.pagina_personalizada.title
+field_name: title
+entity_type: node
+bundle: pagina_personalizada
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: bb305568-e2e7-4cf9-ad56-3e0c10a4cca9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_iniciativa
+  module:
+    - path
+id: taxonomy_term.estado_iniciativa.path
+field_name: path
+entity_type: taxonomy_term
+bundle: estado_iniciativa
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

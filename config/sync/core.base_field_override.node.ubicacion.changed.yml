@@ -1,0 +1,18 @@
+uuid: 301ee01c-1abd-4598-b0d4-b3e3607e8064
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+id: node.ubicacion.changed
+field_name: changed
+entity_type: node
+bundle: ubicacion
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

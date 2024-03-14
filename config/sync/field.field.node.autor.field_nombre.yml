@@ -1,0 +1,19 @@
+uuid: ca28dcdc-2a34-43fc-aa1c-641e5abc8112
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre
+    - node.type.autor
+id: node.autor.field_nombre
+field_name: field_nombre
+entity_type: node
+bundle: autor
+label: Nombre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

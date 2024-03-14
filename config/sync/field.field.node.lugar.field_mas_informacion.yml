@@ -1,0 +1,26 @@
+uuid: b76dc856-178e-4a8e-ad3a-49cbd0ed022e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.lugar
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.lugar.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: lugar
+label: 'Más información'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

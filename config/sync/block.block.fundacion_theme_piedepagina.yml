@@ -1,0 +1,29 @@
+uuid: fa949b3b-5fa3-4d43-93f5-ab35dcf56f20
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_piedepagina
+theme: fundacion_theme
+region: footer_inferior
+weight: -16
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Pie de página'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

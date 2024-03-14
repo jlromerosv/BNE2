@@ -1,0 +1,34 @@
+uuid: 23222b77-3279-4ce2-9358-072d447183b1
+langcode: es
+status: true
+dependencies:
+  module:
+    - organigrams
+third_party_settings:
+  organigrams:
+    organigrams_font_name: ''
+    organigrams_font_color: ''
+    organigrams_font_size: ''
+    organigrams_vertical_alignment: '1'
+    organigrams_line_height: ''
+    organigrams_font_color_hover: ''
+    organigrams_border_color: ''
+    organigrams_vertical_space: '20'
+    organigrams_horizontal_space: '20'
+    organigrams_background_color: ''
+    organigrams_shadow_offset: '0'
+    organigrams_node_width: '120'
+    organigrams_node_height: '400'
+    organigrams_border_color_hover: ''
+    organigrams_background_color_hover: ''
+    organigrams_horizontal_offset: '30'
+    organigrams_bottom_radius: '0'
+    organigrams_top_radius: '0'
+    organigrams_line_color: ''
+    organigrams_canvas_width: auto
+    organigrams_canvas_height: auto
+    organigrams_center: 1
+name: 'x_Organigrama de prueba'
+vid: organigrama_de_prueba
+description: desc
+weight: 0

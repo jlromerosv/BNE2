@@ -1,0 +1,28 @@
+uuid: ea3fdfb4-7a23-4482-933a-0a800ebd6b99
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_galeria_de_imagenes
+    - node.type.convocatoria
+    - node.type.galeria_de_imagenes
+id: node.convocatoria.field_galeria_de_imagenes
+field_name: field_galeria_de_imagenes
+entity_type: node
+bundle: convocatoria
+label: 'Galería de imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      galeria_de_imagenes: galeria_de_imagenes
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

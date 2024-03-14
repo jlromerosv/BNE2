@@ -1,0 +1,15 @@
+uuid: f217a5f7-4fdc-4b4b-a92e-0a147dab1bf4
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_colecciones_blog_xxl
+label: 'Bloque colecciones blog XXL'
+effects:
+  d43736ec-7e78-4ee1-8085-ba685bbe17cd:
+    uuid: d43736ec-7e78-4ee1-8085-ba685bbe17cd
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 382
+      height: 267
+      anchor: center-center

@@ -1,0 +1,263 @@
+uuid: 3fe8d938-2274-40d3-a527-46ba1ed8ce45
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.entrada_de_blog.created
+    - core.base_field_override.node.entrada_de_blog.path
+    - core.base_field_override.node.entrada_de_blog.status
+    - core.base_field_override.node.entrada_de_blog.title
+    - field.field.node.entrada_de_blog.body
+    - field.field.node.entrada_de_blog.field_autor_entrada_blog
+    - field.field.node.entrada_de_blog.field_blog
+    - field.field.node.entrada_de_blog.field_categoria
+    - field.field.node.entrada_de_blog.field_domain_access
+    - field.field.node.entrada_de_blog.field_etiquetas_busqueda
+    - field.field.node.entrada_de_blog.field_fecha_inicio
+    - field.field.node.entrada_de_blog.field_id_externo
+    - field.field.node.entrada_de_blog.field_imagen_destacada
+    - node.type.entrada_de_blog
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      415e8ae5-bd63-4cc2-b84b-c3313b81fc5c:
+        invert: false
+        uuid: 415e8ae5-bd63-4cc2-b84b-c3313b81fc5c
+        plugin: required
+        source: alias
+        weight: 0
+        label: Obligatorio
+      b52c8b12-731e-4ca5-90ce-c28c4a968b52:
+        separator: '}'
+        limit: null
+        uuid: b52c8b12-731e-4ca5-90ce-c28c4a968b52
+        plugin: explode
+        source: autor
+        weight: 0
+        label: Explode
+      eac5fc8c-03da-4799-895f-88433fadd76f:
+        separator: '}'
+        limit: null
+        uuid: eac5fc8c-03da-4799-895f-88433fadd76f
+        plugin: explode
+        source: categoria
+        weight: 0
+        label: Explode
+      52fc2d0e-3b74-4f00-b7ef-09f39826af81:
+        separator: '}'
+        limit: null
+        uuid: 52fc2d0e-3b74-4f00-b7ef-09f39826af81
+        plugin: explode
+        source: etiqueta
+        weight: 0
+        label: Explode
+      5740b9f4-340f-4814-af72-d5b719f4683d:
+        invert: false
+        uuid: 5740b9f4-340f-4814-af72-d5b719f4683d
+        plugin: required
+        source: id_externo
+        weight: 0
+        label: Obligatorio
+label: 'Carga entrada de blog'
+id: carga_entrada_de_blog
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: entrada_de_blog
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  alias:
+    value: Alias
+    label: Alias
+    machine_name: alias
+    type: csv
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  categoria:
+    value: Categoria
+    label: Categoria
+    machine_name: categoria
+    type: csv
+  autor:
+    value: Autor
+    label: Autor
+    machine_name: autor
+    type: csv
+  etiqueta:
+    value: Etiqueta
+    label: Etiqueta
+    machine_name: etiqueta
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  published:
+    value: Published
+    label: Published
+    machine_name: published
+    type: csv
+  publicado:
+    value: Publicado
+    label: Publicado
+    machine_name: publicado
+    type: csv
+  blog:
+    value: Blog
+    label: Blog
+    machine_name: blog
+    type: csv
+  imagendestacada:
+    value: ImagenDestacada
+    label: ImagenDestacada
+    machine_name: imagendestacada
+    type: csv
+mappings:
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: path
+    map:
+      alias: alias
+      pathauto: ''
+    settings:
+      language: null
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: field_fecha_inicio
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_categoria
+    map:
+      target_id: categoria
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_autor_entrada_blog
+    map:
+      target_id: autor
+    settings:
+      language: ''
+      reference_by: field_id_externo_largo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_etiquetas_busqueda
+    map:
+      target_id: etiqueta
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: status
+    map:
+      value: publicado
+    settings:
+      language: null
+  -
+    target: field_blog
+    map:
+      target_id: blog
+    settings:
+      language: ''
+      reference_by: field_texto_url
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_imagen_destacada
+    map:
+      target_id: imagendestacada
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0

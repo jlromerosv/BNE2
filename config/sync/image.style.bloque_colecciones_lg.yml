@@ -1,0 +1,25 @@
+uuid: 72b52a11-1be4-4510-b07a-bf960c3adabf
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.detalle_colecciones
+  module:
+    - crop
+name: bloque_colecciones_lg
+label: 'Bloque colecciones home LG'
+effects:
+  db7e347d-e073-4287-a172-bc2932711dca:
+    uuid: db7e347d-e073-4287-a172-bc2932711dca
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: detalle_colecciones
+  02d7fd06-f3e9-4483-8cf9-294f301ccc5e:
+    uuid: 02d7fd06-f3e9-4483-8cf9-294f301ccc5e
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 600
+      height: 300
+      anchor: center-center

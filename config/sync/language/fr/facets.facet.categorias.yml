@@ -1,0 +1,4 @@
+name: 'Catégories d''initiative urbaine'
+widget:
+  config:
+    default_option_label: Sélectionner

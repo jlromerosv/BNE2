@@ -1,0 +1,29 @@
+uuid: 3483b647-23c9-42ef-bfc5-62cff4a1b2a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado
+    - node.type.iniciativa
+    - taxonomy.vocabulary.estado_iniciativa
+id: node.iniciativa.field_estado
+field_name: field_estado
+entity_type: node
+bundle: iniciativa
+label: Estado
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      estado_iniciativa: estado_iniciativa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

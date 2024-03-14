@@ -1,0 +1,18 @@
+uuid: b975b1c1-832b-4d35-a8e3-3fd62ff917a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_enlace
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.tipo_de_enlace
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_enlace
+default_langcode: site_default
+language_alterable: true

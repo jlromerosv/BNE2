@@ -1,0 +1,18 @@
+uuid: 23ba82e3-98b3-4840-9548-6fe4616307e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.area-group_node-entrada_de_blog
+id: group_content.area-group_node-entrada_de_blog.metatag
+field_name: metatag
+entity_type: group_content
+bundle: area-group_node-entrada_de_blog
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

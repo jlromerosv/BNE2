@@ -1,0 +1,22 @@
+uuid: 784e12e4-1b41-47e7-a1e4-f2577b240709
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_portal_web
+id: taxonomy_term.tipo_de_portal_web.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_portal_web
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,30 @@
+uuid: 842d0be8-c3c7-4c61-9ec2-9e4731cefdda
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.evento
+  module:
+    - iframe
+id: node.evento.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: evento
+label: Iframes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '0'
+  tokensupport: null
+  width: null
+  height: null
+field_type: iframe

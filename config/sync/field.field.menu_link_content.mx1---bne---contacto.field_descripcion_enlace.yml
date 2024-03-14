@@ -1,0 +1,19 @@
+uuid: 9845a0dd-5771-4fd0-ae4b-80dd94576fa4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_descripcion_enlace
+    - system.menu.mx1---bne---contacto
+id: menu_link_content.mx1---bne---contacto.field_descripcion_enlace
+field_name: field_descripcion_enlace
+entity_type: menu_link_content
+bundle: mx1---bne---contacto
+label: 'Descripcion enlace'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,22 @@
+uuid: 26801ff9-96f8-498b-8504-83f7903775d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_referencia_bibliografica
+id: taxonomy_term.tipo_de_referencia_bibliografica.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_referencia_bibliografica
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

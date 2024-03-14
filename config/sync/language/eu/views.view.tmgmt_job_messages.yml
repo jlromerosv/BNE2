@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ezarri
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      pager:
+        options:
+          tags:
+            previous: '‹ aurrekoa'
+            next: 'hurrengoa ›'
+            first: '« lehenengoa'
+            last: 'azkena »'
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+      fields:
+        created:
+          label: Sortua
+        label:
+          label: Elementua
+        name:
+          label: Izena
+          separator: ', '
+      title: Mezuak
+      arguments:
+        tjid:
+          exception:
+            title: Guztiak

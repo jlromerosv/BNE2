@@ -1,0 +1,12 @@
+uuid: 2b6237a6-6fe4-4a7c-b883-f95d7e891147
+langcode: es
+status: true
+dependencies: {  }
+id: dos_columnas_85_15_
+label: 'Dos columnas 85% - 15%'
+image: ''
+description: ''
+html:
+  value: "<div class=\"template-two-colums-85-15\" style=\"display: grid; grid-template-columns: 3fr 1fr\">\r\n<div class=\"colum-1\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em \"><p>&nbsp;</p></div>\r\n\r\n<div class=\"colum-2\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\"><p>&nbsp;</p></div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: html_full
+weight: -5

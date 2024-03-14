@@ -1,0 +1,15 @@
+uuid: 77f8c149-1b8d-4507-8449-9bc1b965a3f4
+langcode: es
+status: true
+dependencies: {  }
+name: escalar_a_ancho_992px
+label: 'Escalar a ancho 992px'
+effects:
+  55415528-ce5d-42f3-8c6c-dcac7dbabbcf:
+    uuid: 55415528-ce5d-42f3-8c6c-dcac7dbabbcf
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: null
+      upscale: false

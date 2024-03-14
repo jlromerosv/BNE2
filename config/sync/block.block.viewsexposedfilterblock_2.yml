@@ -1,0 +1,27 @@
+uuid: 5caa19ed-6d67-4aa7-8baf-904779fc84bc
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+    - views_exposed_filter_blocks
+  theme:
+    - bne_theme
+id: viewsexposedfilterblock_2
+theme: bne_theme
+region: breadcrumb
+weight: -30
+provider: null
+plugin: views_exposed_filter_blocks_block
+settings:
+  id: views_exposed_filter_blocks_block
+  label: 'Views exposed filter block buscador general'
+  label_display: '0'
+  provider: views_exposed_filter_blocks
+  view_display: 'buscador_solr_texto_completo:block_1'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /buscador

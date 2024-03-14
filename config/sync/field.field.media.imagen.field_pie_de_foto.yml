@@ -1,0 +1,24 @@
+uuid: cfd9a568-e8a7-4cc6-86c5-d5cba77943e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_pie_de_foto
+    - media.type.imagen
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: media.imagen.field_pie_de_foto
+field_name: field_pie_de_foto
+entity_type: media
+bundle: imagen
+label: 'Pie de foto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

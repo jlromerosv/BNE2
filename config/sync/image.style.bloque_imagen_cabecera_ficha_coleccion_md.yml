@@ -1,0 +1,15 @@
+uuid: d3252d5e-01ed-4715-8cac-0ed55bbfd45f
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_imagen_cabecera_ficha_coleccion_md
+label: 'Bloque Imagen Cabecera ficha colección MD'
+effects:
+  d95edefc-1b8e-43bf-83eb-e984c8d07e21:
+    uuid: d95edefc-1b8e-43bf-83eb-e984c8d07e21
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 240
+      anchor: center-center

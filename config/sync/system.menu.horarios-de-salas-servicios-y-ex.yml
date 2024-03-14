@@ -1,0 +1,8 @@
+uuid: 36927c67-3a9f-4065-b3ef-b5f164ae1fc8
+langcode: es
+status: true
+dependencies: {  }
+id: horarios-de-salas-servicios-y-ex
+label: 'Horarios de salas, servicios y exposiciones'
+description: ''
+locked: false

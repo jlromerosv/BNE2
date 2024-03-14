@@ -1,0 +1,20 @@
+uuid: 7f8a4729-97f3-49e1-943a-87f771f258e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+  module:
+    - options
+id: node.bolsa_de_trabajo.publish_state
+field_name: publish_state
+entity_type: node
+bundle: bolsa_de_trabajo
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

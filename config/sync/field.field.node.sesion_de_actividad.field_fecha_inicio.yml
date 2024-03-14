@@ -1,0 +1,21 @@
+uuid: 184da9e6-93b8-4e8e-9b4b-e1df8b6b24c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.sesion_de_actividad
+  module:
+    - datetime
+id: node.sesion_de_actividad.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Fecha de inicio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

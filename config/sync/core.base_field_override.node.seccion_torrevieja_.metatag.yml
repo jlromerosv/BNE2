@@ -1,0 +1,18 @@
+uuid: 299b9605-f6c2-4f97-ad8d-c0ed5360ea9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_torrevieja_
+id: node.seccion_torrevieja_.metatag
+field_name: metatag
+entity_type: node
+bundle: seccion_torrevieja_
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

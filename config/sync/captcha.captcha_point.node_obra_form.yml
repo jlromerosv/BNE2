@@ -1,0 +1,7 @@
+uuid: fcc06953-93c6-4dae-b6ce-e95975dfb206
+langcode: es
+status: false
+dependencies: {  }
+formId: node_obra_form
+captchaType: default
+label: node_obra_form

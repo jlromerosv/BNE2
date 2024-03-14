@@ -1,0 +1,26 @@
+uuid: e964173f-0080-4bc5-95c4-0e2ba2f686e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.convocatoria
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.convocatoria.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: convocatoria
+label: 'Observaciones al estado'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

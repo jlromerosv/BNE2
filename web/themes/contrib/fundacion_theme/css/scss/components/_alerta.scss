@@ -1,0 +1,72 @@
+.ps-node--type-alerta {
+  position: relative;
+  padding: 20px;
+  h3 {
+    font-size: 24px;
+    font-family: $dm-serif;
+    font-weight: $dm-serif-regular;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    a {
+      color: $blanco;
+    }
+    &::after {
+      display: none;
+    }
+  }
+
+  .ps-field--name-body {
+    text-align: center;
+    p {
+      color: inherit;
+      font-size: 16px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: inherit;
+    }
+  }
+
+  .close-alert {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 14px;
+    font-size: 25px;
+    cursor: pointer;
+    @media (max-width: 575.98px) {
+      top: 0;
+      right: 15px;
+    }
+
+  }
+}
+.ps-informacion {
+  a {
+    color: $bne_color_6;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.ps-importante {
+    a {
+      color: $blanco;
+      text-decoration: underline;
+
+    }
+  }
+.ps-alertas-markup {
+  .views-row {
+    display: none;
+  }
+}

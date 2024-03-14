@@ -1,0 +1,28 @@
+uuid: 2bc6fd38-0b2a-4757-93bf-68d1dea97d5c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alertas
+    - node.type.alerta
+    - node.type.pagina_basica
+id: node.pagina_basica.field_alertas
+field_name: field_alertas
+entity_type: node
+bundle: pagina_basica
+label: Alertas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      alerta: alerta
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

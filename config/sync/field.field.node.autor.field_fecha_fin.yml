@@ -1,0 +1,21 @@
+uuid: 99b44a34-5b2b-4c09-b1a9-bddc501e6a24
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_fin
+    - node.type.autor
+  module:
+    - datetime
+id: node.autor.field_fecha_fin
+field_name: field_fecha_fin
+entity_type: node
+bundle: autor
+label: x_Defunción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

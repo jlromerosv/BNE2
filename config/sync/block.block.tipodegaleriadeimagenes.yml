@@ -1,0 +1,29 @@
+uuid: d34dde71-3180-40b1-9875-0d9c2f3a6451
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipo_galeria_imagenes
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: tipodegaleriadeimagenes
+theme: bne_theme
+region: sidebar_first
+weight: -58
+provider: null
+plugin: 'facet_block:tipo_galeria_imagenes'
+settings:
+  id: 'facet_block:tipo_galeria_imagenes'
+  label: Tipo
+  label_display: visible
+  provider: facets
+  block_id: tipodegaleriadeimagenes
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/8441

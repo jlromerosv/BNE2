@@ -1,0 +1,19 @@
+uuid: 0ec72eec-4323-4129-aa99-24046b651403
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_criterios
+field_name: field_criterios
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

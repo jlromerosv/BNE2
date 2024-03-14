@@ -1,0 +1,104 @@
+uuid: d306ba43-6120-40b1-830e-2b9aed41ac8f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.destacados
+    - field.field.node.iniciativa.body
+    - field.field.node.iniciativa.feeds_item
+    - field.field.node.iniciativa.field_alias_tipo_contenido
+    - field.field.node.iniciativa.field_archivos
+    - field.field.node.iniciativa.field_area_de_transparencia
+    - field.field.node.iniciativa.field_categorias
+    - field.field.node.iniciativa.field_contenido_generico
+    - field.field.node.iniciativa.field_contenidos_relacionados
+    - field.field.node.iniciativa.field_contenidos_vinculados
+    - field.field.node.iniciativa.field_domain_access
+    - field.field.node.iniciativa.field_domain_all_affiliates
+    - field.field.node.iniciativa.field_domain_source
+    - field.field.node.iniciativa.field_enlaces
+    - field.field.node.iniciativa.field_entidades
+    - field.field.node.iniciativa.field_estado
+    - field.field.node.iniciativa.field_etiquetas_busqueda
+    - field.field.node.iniciativa.field_fecha_fin
+    - field.field.node.iniciativa.field_fecha_inicio
+    - field.field.node.iniciativa.field_fechas_inicio_fin
+    - field.field.node.iniciativa.field_galeria_de_imagenes
+    - field.field.node.iniciativa.field_id_externo
+    - field.field.node.iniciativa.field_iframe
+    - field.field.node.iniciativa.field_imagen_destacada
+    - field.field.node.iniciativa.field_imagenes
+    - field.field.node.iniciativa.field_iniciativa_superior
+    - field.field.node.iniciativa.field_meta_tags
+    - field.field.node.iniciativa.field_no_mostrar_inverso
+    - field.field.node.iniciativa.field_orden
+    - field.field.node.iniciativa.field_tipo
+    - field.field.node.iniciativa.field_tipos
+    - field.field.node.iniciativa.field_videos
+    - field.field.node.iniciativa.field_yoast_seo
+    - node.type.iniciativa
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.iniciativa.destacados
+targetEntityType: node
+bundle: iniciativa
+mode: destacados
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_de_transparencia: true
+  field_categorias: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_entidades: true
+  field_estado: true
+  field_etiquetas_busqueda: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_fechas_inicio_fin: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagenes: true
+  field_iniciativa_superior: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_orden: true
+  field_tipo: true
+  field_tipos: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

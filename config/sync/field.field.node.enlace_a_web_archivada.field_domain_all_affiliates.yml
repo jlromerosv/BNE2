@@ -1,0 +1,21 @@
+uuid: 69c02332-5814-4dcd-a2f3-1770e19f7164
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.enlace_a_web_archivada
+id: node.enlace_a_web_archivada.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: enlace_a_web_archivada
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

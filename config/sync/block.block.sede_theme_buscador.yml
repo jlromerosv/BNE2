@@ -1,0 +1,25 @@
+uuid: 97e87929-26c2-448a-b393-00c7f1cd8c3b
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:html:e8f52a25-255e-4e17-b82a-a985b11523fe'
+  module:
+    - block_content
+  theme:
+    - sede_theme
+id: sede_theme_buscador
+theme: sede_theme
+region: header_site_2_2
+weight: -21
+provider: null
+plugin: 'block_content:e8f52a25-255e-4e17-b82a-a985b11523fe'
+settings:
+  id: 'block_content:e8f52a25-255e-4e17-b82a-a985b11523fe'
+  label: Buscador
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

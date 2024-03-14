@@ -1,0 +1,14 @@
+uuid: 9fb7f450-7b9d-468a-8812-910a0d6ad362
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entrada_de_blog
+id: node_type_entrada_de_blog
+entity_type_id: node_type
+entity_id: entrada_de_blog
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

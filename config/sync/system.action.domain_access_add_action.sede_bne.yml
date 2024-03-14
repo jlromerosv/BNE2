@@ -1,0 +1,14 @@
+uuid: 6ab878fc-97b1-4df2-aac1-77923eb72a65
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.sede_bne
+  module:
+    - domain_access
+id: domain_access_add_action.sede_bne
+label: 'Add selected content to the Sede BNE domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: sede_bne

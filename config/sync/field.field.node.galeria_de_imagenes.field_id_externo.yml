@@ -1,0 +1,19 @@
+uuid: b499516e-2ac1-4bae-b0cb-372f46d67b3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_externo
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.field_id_externo
+field_name: field_id_externo
+entity_type: node
+bundle: galeria_de_imagenes
+label: Id_externo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

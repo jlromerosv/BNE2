@@ -1,0 +1,26 @@
+uuid: 49393992-e10d-4d1e-8991-48a7547ac6a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.domain_access
+    - taxonomy.vocabulary.area_tematica
+id: taxonomy_term.area_tematica.domain_access
+field_name: domain_access
+entity_type: taxonomy_term
+bundle: area_tematica
+label: domain_access
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

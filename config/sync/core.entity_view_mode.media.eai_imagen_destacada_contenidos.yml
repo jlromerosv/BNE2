@@ -1,0 +1,10 @@
+uuid: 15f99976-1cb2-4480-aeee-f3a3cc07d96c
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.eai_imagen_destacada_contenidos
+label: 'EAI Imagen Destacada Contenidos'
+targetEntityType: media
+cache: true

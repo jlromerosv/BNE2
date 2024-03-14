@@ -1,0 +1,18 @@
+/*
+    ========== COOKIE COMPLIANCE ==========
+
+    Estilos dedicados al módulo de cookie compliance.
+
+*/
+
+.eu-cookie-compliance-content {
+    font-size: 14px;
+    h2, p {
+        font-size: 14px;
+    }
+    .eu-cookie-compliance-buttons.eu-cookie-compliance-has-categories {
+        @media (max-width: 600px) {
+            float: none;
+        }
+    }
+}

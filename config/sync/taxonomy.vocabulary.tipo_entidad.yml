@@ -1,0 +1,8 @@
+uuid: cd349f29-84dc-45f1-a0ed-21d0299b2ecd
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de entidad'
+vid: tipo_entidad
+description: ''
+weight: 0

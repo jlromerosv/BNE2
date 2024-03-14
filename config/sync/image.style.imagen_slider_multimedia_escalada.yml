@@ -1,0 +1,15 @@
+uuid: ced56785-0dd9-428d-899b-47ddfb315e69
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_slider_multimedia_escalada
+label: 'Imagen slider multimedia escalada'
+effects:
+  fe5a2c80-8896-4661-b3d8-12948fa0676c:
+    uuid: fe5a2c80-8896-4661-b3d8-12948fa0676c
+    id: image_scale
+    weight: 1
+    data:
+      width: 700
+      height: null
+      upscale: false

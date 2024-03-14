@@ -1,0 +1,18 @@
+uuid: f536b2bd-b456-4e90-9cb2-57c0b7110da8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.changed
+field_name: changed
+entity_type: node
+bundle: seccion_albacete_
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

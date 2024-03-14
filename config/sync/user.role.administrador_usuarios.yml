@@ -1,0 +1,26 @@
+uuid: 2c21fe89-a963-436c-b6b3-855898da4b5a
+langcode: es
+status: true
+dependencies:
+  module:
+    - domain
+    - domain_access
+    - field_permissions
+id: administrador_usuarios
+label: 'Administrador usuarios'
+weight: -6
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'administer permissions'
+  - 'administer users'
+  - 'assign editors to any domain'
+  - 'create field_editor_de_blog'
+  - 'edit field_editor_de_blog'
+  - 'edit own field_editor_de_blog'
+  - 'use domain nav block'
+  - 'use domain switcher block'
+  - 'view assigned domains'
+  - 'view field_editor_de_blog'
+  - 'view own field_editor_de_blog'
+  - 'view user email addresses'

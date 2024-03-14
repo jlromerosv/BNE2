@@ -1,0 +1,18 @@
+uuid: 426f4ba1-adcd-42e2-bd05-6b63b402748f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.convocatoria
+id: node.convocatoria.title
+field_name: title
+entity_type: node
+bundle: convocatoria
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

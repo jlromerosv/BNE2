@@ -1,0 +1,7 @@
+uuid: e9da9f0d-5909-4cd5-9026-0c2d0c6276a5
+langcode: es
+status: false
+dependencies: {  }
+formId: node_cargo_form
+captchaType: default
+label: node_cargo_form

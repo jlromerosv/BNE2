@@ -1,0 +1,9 @@
+display:
+  block_3:
+    display_title: 'Contidos relacionados'
+    display_options:
+      title: 'Contidos relacionados'
+  block_2:
+    display_title: 'Te pode interesar'
+    display_options:
+      title: 'Te pode interesar'

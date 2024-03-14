@@ -1,0 +1,19 @@
+uuid: b59fd3e6-f661-4cb2-8183-4366d16fd59d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefonos
+    - node.type.lugar
+id: node.lugar.field_telefonos
+field_name: field_telefonos
+entity_type: node
+bundle: lugar
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

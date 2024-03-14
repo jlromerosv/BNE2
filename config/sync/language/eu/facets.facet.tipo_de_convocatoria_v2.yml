@@ -1,0 +1,5 @@
+name: Deialdi-mota
+url_alias: 'mota _ deialdia'
+widget:
+  config:
+    reset_text: 'Erakutsi dena'

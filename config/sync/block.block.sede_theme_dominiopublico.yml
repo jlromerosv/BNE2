@@ -1,0 +1,33 @@
+uuid: 8f3879ab-942d-4ef2-9b5b-a1772ff3e43c
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.dominio_publico
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_dominiopublico
+theme: sede_theme
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:dominio_publico'
+settings:
+  id: 'facet_block:dominio_publico'
+  label: 'Dominio público'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: dominiopublico
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/26819

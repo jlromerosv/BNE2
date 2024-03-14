@@ -1,0 +1,22 @@
+uuid: ec35c254-4f1e-46f3-9f5f-185202b6db8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_evento
+id: taxonomy_term.tipo_evento.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_evento
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

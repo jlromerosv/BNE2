@@ -1,0 +1,18 @@
+uuid: af4fb3a9-cdaa-4e8a-8c28-da239e4584d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_estandar
+id: node.seccion_estandar.changed
+field_name: changed
+entity_type: node
+bundle: seccion_estandar
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: 4b95f7a5-b474-4302-9d8d-44abd07cda01
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_lugar
+id: taxonomy_term.tipo_de_lugar.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_de_lugar
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

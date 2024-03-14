@@ -1,0 +1,370 @@
+uuid: 8caca3b2-79d0-47e2-a78c-b64e663b05b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.obra.title
+    - field.field.node.obra.body
+    - field.field.node.obra.field_ano
+    - field.field.node.obra.field_autores
+    - field.field.node.obra.field_codigo_referencia
+    - field.field.node.obra.field_datos_cartograficos
+    - field.field.node.obra.field_descripci
+    - field.field.node.obra.field_descripcion_sin_formato
+    - field.field.node.obra.field_domain_access
+    - field.field.node.obra.field_enlace
+    - field.field.node.obra.field_id_externo
+    - field.field.node.obra.field_imagen_destacada
+    - field.field.node.obra.field_interprete
+    - field.field.node.obra.field_issn
+    - field.field.node.obra.field_mas_informacion
+    - field.field.node.obra.field_numeros
+    - field.field.node.obra.field_tipo_texto_libre_
+    - field.field.node.obra.field_url_2
+    - node.type.obra
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      17ba0ecb-7c6e-4d6b-8e21-b2fb9f5ceae2:
+        separator: '}'
+        limit: null
+        uuid: 17ba0ecb-7c6e-4d6b-8e21-b2fb9f5ceae2
+        plugin: explode
+        source: autor
+        weight: 0
+        label: Explode
+      c4f274f8-9e38-4bfc-92da-acaed104da1c:
+        separator: '}'
+        limit: null
+        uuid: c4f274f8-9e38-4bfc-92da-acaed104da1c
+        plugin: explode
+        source: materia
+        weight: 0
+        label: Explode
+      9970fea1-5d95-4108-a77d-a1916385bd55:
+        find: '|'
+        replace: ;
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 9970fea1-5d95-4108-a77d-a1916385bd55
+        plugin: find_replace
+        source: descripcion_fisic
+        weight: 0
+        label: 'Find replace'
+      1d2eb814-3306-4c4b-9105-f9bb48821cbc:
+        find: '|'
+        replace: ;
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 1d2eb814-3306-4c4b-9105-f9bb48821cbc
+        plugin: find_replace
+        source: descripcion
+        weight: 0
+        label: 'Find replace'
+      d858b04b-6c0c-44cb-bd0c-6f55a22869cf:
+        find: '|'
+        replace: ;
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: d858b04b-6c0c-44cb-bd0c-6f55a22869cf
+        plugin: find_replace
+        source: datos_de_edicion
+        weight: 0
+        label: 'Find replace'
+      02a12c89-eb49-4b4b-8ce5-3159291baac8:
+        find: '|'
+        replace: ;
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 02a12c89-eb49-4b4b-8ce5-3159291baac8
+        plugin: find_replace
+        source: numeros
+        weight: 0
+        label: 'Find replace'
+      3997dd62-55bc-41c5-a1af-47b840ddd301:
+        find: ;
+        replace: '|'
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 3997dd62-55bc-41c5-a1af-47b840ddd301
+        plugin: find_replace
+        source: interpretes
+        weight: 0
+        label: 'Find replace'
+      9ab16c55-7afd-4baa-af86-1b52285d0c9f:
+        find: '|'
+        replace: ;
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 9ab16c55-7afd-4baa-af86-1b52285d0c9f
+        plugin: find_replace
+        source: titulo
+        weight: 0
+        label: 'Find replace'
+label: 'Cargar Obras desde CSV '
+id: cargar_obras_desde_csv_
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: obra
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titulo:
+    value: TÍTULO
+    label: TÍTULO
+    machine_name: titulo
+    type: csv
+  autor:
+    value: AUTOR
+    label: AUTOR
+    machine_name: autor
+    type: csv
+  fecha:
+    value: FECHA
+    label: FECHA
+    machine_name: fecha
+    type: csv
+  tipo_de_documento:
+    value: 'TIPO DE DOCUMENTO'
+    label: 'TIPO DE DOCUMENTO'
+    machine_name: tipo_de_documento
+    type: csv
+  datos_de_edicion:
+    value: 'DATOS DE EDICIÓN'
+    label: 'DATOS DE EDICIÓN'
+    machine_name: datos_de_edicion
+    type: csv
+  descripcion_fisica:
+    value: 'DESCRIPCIÓN FÍSICA'
+    label: 'DESCRIPCIÓN FÍSICA'
+    machine_name: descripcion_fisica
+    type: csv
+  materia:
+    value: MATERIA
+    label: MATERIA
+    machine_name: materia
+    type: csv
+  signatura:
+    value: SIGNATURA
+    label: SIGNATURA
+    machine_name: signatura
+    type: csv
+  descripcion:
+    value: DESCRIPCIÓN
+    label: DESCRIPCIÓN
+    machine_name: descripcion
+    type: csv
+  registro_en_el_catalogo:
+    value: 'REGISTRO EN EL CATÁLOGO'
+    label: 'REGISTRO EN EL CATÁLOGO'
+    machine_name: registro_en_el_catalogo
+    type: csv
+  obra_digitalizada:
+    value: 'OBRA DIGITALIZADA'
+    label: 'OBRA DIGITALIZADA'
+    machine_name: obra_digitalizada
+    type: csv
+  rutaimagen:
+    value: RutaImagen
+    label: RutaImagen
+    machine_name: rutaimagen
+    type: csv
+  domain:
+    value: domain
+    label: domain
+    machine_name: domain
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  descripcion_fisic:
+    value: 'DESCRIPCIÓN FÍSICA'
+    label: 'DESCRIPCIÓN FÍSICA'
+    machine_name: descripcion_fisic
+    type: csv
+  documento_digitalizado:
+    value: 'DOCUMENTO DIGITALIZADO'
+    label: 'DOCUMENTO DIGITALIZADO'
+    machine_name: documento_digitalizado
+    type: csv
+  numeros:
+    value: NÚMEROS
+    label: NÚMEROS
+    machine_name: numeros
+    type: csv
+  interpretes:
+    value: INTÉRPRETES
+    label: INTÉRPRETES
+    machine_name: interpretes
+    type: csv
+  datos_cartograficos:
+    value: 'DATOS CARTOGRÁFICOS'
+    label: 'DATOS CARTOGRÁFICOS'
+    machine_name: datos_cartograficos
+    type: csv
+  issn:
+    value: ISSN
+    label: ISSN
+    machine_name: issn
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_autores
+    map:
+      target_id: autor
+    settings:
+      language: ''
+      reference_by: title
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_ano
+    map:
+      value: fecha
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_tipo_texto_libre_
+    map:
+      value: tipo_de_documento
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_mas_informacion
+    map:
+      value: datos_de_edicion
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_descripcion_sin_formato
+    map:
+      value: materia
+    settings:
+      language: null
+  -
+    target: field_codigo_referencia
+    map:
+      value: signatura
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_url_2
+    map:
+      uri: registro_en_el_catalogo
+      title: ''
+    settings:
+      language: null
+  -
+    target: field_enlace
+    map:
+      uri: obra_digitalizada
+      title: ''
+    settings:
+      language: null
+  -
+    target: field_imagen_destacada
+    map:
+      target_id: rutaimagen
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_domain_access
+    map:
+      target_id: domain
+    settings:
+      reference_by: hostname
+  -
+    target: field_id_externo
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_descripci
+    map:
+      value: descripcion_fisic
+    settings:
+      language: null
+  -
+    target: field_numeros
+    map:
+      value: numeros
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_interprete
+    map:
+      value: interpretes
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_datos_cartograficos
+    map:
+      value: datos_cartograficos
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_issn
+    map:
+      value: issn
+    settings:
+      language: null
+    unique: {  }

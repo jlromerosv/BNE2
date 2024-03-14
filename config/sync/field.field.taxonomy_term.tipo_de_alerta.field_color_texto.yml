@@ -1,0 +1,22 @@
+uuid: c6a8d9ec-f647-48db-94cf-820cfe9186f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_color_texto
+    - taxonomy.vocabulary.tipo_de_alerta
+  module:
+    - color_field
+id: taxonomy_term.tipo_de_alerta.field_color_texto
+field_name: field_color_texto
+entity_type: taxonomy_term
+bundle: tipo_de_alerta
+label: 'Color texto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

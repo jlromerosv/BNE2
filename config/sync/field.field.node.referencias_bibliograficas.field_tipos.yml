@@ -1,0 +1,29 @@
+uuid: 7b063337-edec-47ec-855b-64a6dc985ad3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipos
+    - node.type.referencias_bibliograficas
+    - taxonomy.vocabulary.tipo_de_referencia_bibliografica
+id: node.referencias_bibliograficas.field_tipos
+field_name: field_tipos
+entity_type: node
+bundle: referencias_bibliograficas
+label: 'Tipo de referencia bibliográfica'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_referencia_bibliografica: tipo_de_referencia_bibliografica
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: c2633673-22a3-44dc-9c80-a53604cd2141
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_serie_estadistica
+    - node.type.estadistica
+    - node.type.serie_estadistica
+id: node.estadistica.field_serie_estadistica
+field_name: field_serie_estadistica
+entity_type: node
+bundle: estadistica
+label: 'Serie estadística'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      serie_estadistica: serie_estadistica
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

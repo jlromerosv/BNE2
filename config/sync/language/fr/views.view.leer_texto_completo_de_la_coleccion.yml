@@ -1,0 +1,10 @@
+label: 'LIRE LE TEXTE COMPLET DE LA COLLECTION'
+display:
+  default:
+    display_options:
+      title: 'MASQUER LE TEXTE COMPLET DE LA COLLECTION'
+      footer:
+        area:
+          content:
+            value: "<div class=\"ps-show-description desc-collec-button\">[view:title]</div>\r\n\r\n<div class=\"ps-hide-description desc-collec-button\">[view:label]</div>\r\n"
+            format: html_full

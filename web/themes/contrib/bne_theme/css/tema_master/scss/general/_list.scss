@@ -1,0 +1,29 @@
+/*
+    ========= LISTAS ==========
+    Estilos dedicados a las listas de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin tipografia($font,$index,$weight)
+
+    ------------------------ MIXINS ---------------------------
+    tipografía = Mixin que identifica el tipo de letra a usar
+
+    ----------------------- VARIABLES -------------------------
+    $font = Representa el mapa de tipo de fuente
+
+    $index = El índice del mapa $family
+
+    $weight = El índice del mapa $font
+
+    ------------------------- MAPAS ---------------------------
+    $family:('Open Sans', 'Source Sans Pro', 'Roboto');
+
+    $Roboto:(thin:100,light:300,regular:400,medium:500,
+    bold:700, black:900)
+*/
+
+
+ul{  
+    @include tipografia($Roboto,3,bold); 
+}

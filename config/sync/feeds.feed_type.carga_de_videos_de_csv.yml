@@ -1,0 +1,97 @@
+uuid: 0a3baaa0-f353-41d1-ad2a-8d4d47d12f8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.media.video_remoto.created
+    - core.base_field_override.media.video_remoto.name
+    - field.field.media.video_remoto.domain_access
+    - field.field.media.video_remoto.field_id_externo
+    - field.field.media.video_remoto.field_media_oembed_video
+    - media.type.video_remoto
+  module:
+    - media
+label: 'Carga de videos de CSV'
+id: carga_de_videos_de_csv
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:media'
+processor_configuration:
+  values:
+    bundle: video_remoto
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  namevideo:
+    value: NameVideo
+    label: NameVideo
+    machine_name: namevideo
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  rutavideo:
+    value: RutaVideo
+    label: RutaVideo
+    machine_name: rutavideo
+    type: csv
+mappings:
+  -
+    target: name
+    map:
+      value: namevideo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: field_id_externo
+    map:
+      value: rutavideo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_media_oembed_video
+    map:
+      value: rutavideo
+    settings:
+      language: null
+    unique: {  }

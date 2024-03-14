@@ -1,0 +1,20 @@
+uuid: c6203c2e-8b19-48bc-b415-80b33cb6c0b9
+langcode: es
+status: true
+dependencies:
+  theme:
+    - bne_theme
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: bne_theme_local_actions
+theme: bne_theme
+region: pre_content
+weight: -59
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de la administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

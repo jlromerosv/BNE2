@@ -1,0 +1,18 @@
+uuid: aa520d5a-42e5-4a94-9a41-29b945ff1a87
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+id: node.destacados_manuales.title
+field_name: title
+entity_type: node
+bundle: destacados_manuales
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

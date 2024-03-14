@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+	<h3>{{ title }}</h3>
+{% endif %}
+<div class="tabs-videos"></div>
+<div class="videos-container">
+	{% set contador = 1 %}
+	{% for row in rows %}
+
+		{% set id = row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ mid }}'] %}
+		{% set titulo = row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ name }}'] %}
+		{% set video = row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_videos }}'] %}
+
+		{% if contador == 1 %}
+			<div id="{{id|render|striptags|trim}}" class="video-link link-active">{{titulo}}</div>
+		{% else %}
+			<div id="{{id|render|striptags|trim}}" class="video-link">{{titulo}}</div>
+		{% endif %}
+		<div id="ps-{{id|render|striptags|trim}}" class="video-content">{{video}}</div>
+
+		{% set contador = contador + 1 %}
+
+	{% endfor %}
+</div>

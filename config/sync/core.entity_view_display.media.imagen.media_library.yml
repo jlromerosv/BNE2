@@ -1,0 +1,69 @@
+uuid: 3917f472-3590-4e63-a989-48b300af7283
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.imagen.domain_access
+    - field.field.media.imagen.feeds_item
+    - field.field.media.imagen.field_area_tematica
+    - field.field.media.imagen.field_id_blog_attachment_
+    - field.field.media.imagen.field_id_externo
+    - field.field.media.imagen.field_media_image
+    - field.field.media.imagen.field_pie_de_foto
+    - field.field.media.imagen.field_tipo
+    - field.field.media.imagen.field_urlanterior
+    - image.style.medium
+    - media.type.imagen
+  module:
+    - svg_image
+id: media.imagen.media_library
+targetEntityType: media
+bundle: imagen
+mode: media_library
+content:
+  field_area_tematica:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  domain_access: true
+  feeds_item: true
+  field_id_blog_attachment_: true
+  field_id_externo: true
+  field_media_image: true
+  field_pie_de_foto: true
+  field_tipo: true
+  field_urlanterior: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true
+  uuid: true

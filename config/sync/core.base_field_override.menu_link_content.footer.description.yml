@@ -1,0 +1,18 @@
+uuid: 2e6abbec-b202-4a06-89f4-016f3059b513
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+id: menu_link_content.footer.description
+field_name: description
+entity_type: menu_link_content
+bundle: footer
+label: Descripción
+description: 'Mostrar cuando se pase el cursor por encima del enlace de menú.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

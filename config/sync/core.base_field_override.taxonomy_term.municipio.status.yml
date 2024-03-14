@@ -1,0 +1,22 @@
+uuid: e1aad5cb-cb0e-4e0b-b231-c515bbd88450
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.municipio
+id: taxonomy_term.municipio.status
+field_name: status
+entity_type: taxonomy_term
+bundle: municipio
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

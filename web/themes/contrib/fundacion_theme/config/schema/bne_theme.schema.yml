@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Seven theme.
+
+fundacion_theme.settings:
+  type: theme_settings
+  label: 'BNE'

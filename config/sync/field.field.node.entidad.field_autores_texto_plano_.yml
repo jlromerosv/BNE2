@@ -1,0 +1,24 @@
+uuid: 5cf21141-900c-41b6-943e-9f41ee4683a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autores_texto_plano_
+    - node.type.entidad
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.entidad.field_autores_texto_plano_
+field_name: field_autores_texto_plano_
+entity_type: node
+bundle: entidad
+label: 'Bloquear la traducción'
+description: 'Para bloquear la traduccción automática, escribir bloqueartraduccion'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

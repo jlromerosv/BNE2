@@ -1,0 +1,38 @@
+uuid: 7a4c91d2-2466-4c7c-b280-1b7d12680411
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne
+  module:
+    - block_class
+    - system
+  theme:
+    - bne_theme
+third_party_settings:
+  block_class:
+    classes: menu-sidebar
+id: mx1bne
+theme: bne_theme
+region: sidebar_first
+weight: -61
+provider: null
+plugin: 'system_menu_block:mx1---bne'
+settings:
+  id: 'system_menu_block:mx1---bne'
+  label: 'MX1 - BNE'
+  label_display: '0'
+  provider: system
+  level: 2
+  depth: 5
+  expand_all_items: true
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/coneixeu-nos/*\r\n/conezanos/*\r\n/ezagutu-gaitzazu/*\r\n/propos-nous/*\r\n/conocenos/*\r\n/conocenos/*/*\r\n/coneix-nos/*\r\n/conecenos/*\r\n/about-us/*\r\n/ezagut-gaitzazu/*\r\n/connais-nous/*\r\n/catalogos/*\r\n/catal*/*\r\n/katalogoak/*\r\n/servicios/*\r\n/serv*/*\r\n/zerbitzuak/*"

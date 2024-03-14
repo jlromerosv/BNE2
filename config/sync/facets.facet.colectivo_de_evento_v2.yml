@@ -1,0 +1,56 @@
+uuid: 458da805-ad69-407a-bd53-e5271fcd96c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.index.solr_index
+    - views.view.buscadores_a_texto_completo
+  module:
+    - search_api
+id: colectivo_de_evento_v2
+name: Colectivo
+weight: 0
+min_count: 1
+missing: false
+missing_label: others
+url_alias: colectivo_de_evento_v2
+facet_source_id: 'search_api:views_block__buscadores_a_texto_completo__block_30'
+field_identifier: field_colectivo
+query_operator: or
+hard_limit: 0
+exclude: false
+use_hierarchy: false
+keep_hierarchy_parents_active: false
+hierarchy:
+  type: taxonomy
+  config: {  }
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+widget:
+  type: dropdown
+  config:
+    show_numbers: true
+    default_option_label: Seleccionar
+empty_behavior:
+  behavior: none
+only_visible_when_facet_source_is_visible: false
+show_only_one_result: true
+show_title: true
+processor_configs:
+  term_weight_widget_order:
+    processor_id: term_weight_widget_order
+    weights:
+      sort: 60
+    settings:
+      sort: ASC
+  translate_entity:
+    processor_id: translate_entity
+    weights:
+      build: 5
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }

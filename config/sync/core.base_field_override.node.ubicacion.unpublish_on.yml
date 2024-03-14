@@ -1,0 +1,18 @@
+uuid: 63212466-5204-4a94-a792-c15b95ff2555
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+id: node.ubicacion.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: ubicacion
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

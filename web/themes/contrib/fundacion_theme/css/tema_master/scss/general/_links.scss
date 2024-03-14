@@ -1,0 +1,21 @@
+/*
+    ========== ENLACES ==========
+    
+    Estilos dedicados a los enlaces de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin link_style($color) 
+
+    ------------------------- MIXINS --------------------------
+    link_style = Estilo del enlace
+
+    ----------------------- VARIABLES -------------------------
+    $a_color = Representa el color del enlace
+
+*/
+
+
+a {
+    @include link_style($a_color);
+}

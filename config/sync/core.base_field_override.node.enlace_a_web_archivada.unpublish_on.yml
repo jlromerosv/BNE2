@@ -1,0 +1,18 @@
+uuid: 61251ace-825e-46db-b8de-72f3689633ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+id: node.enlace_a_web_archivada.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: enlace_a_web_archivada
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,59 @@
+uuid: 1b567fcc-4382-42d8-b3d8-1126e4e43918
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.envio
+    - field.field.media.imagen.domain_access
+    - field.field.media.imagen.feeds_item
+    - field.field.media.imagen.field_area_tematica
+    - field.field.media.imagen.field_id_blog_attachment_
+    - field.field.media.imagen.field_id_externo
+    - field.field.media.imagen.field_media_image
+    - field.field.media.imagen.field_pie_de_foto
+    - field.field.media.imagen.field_tipo
+    - field.field.media.imagen.field_urlanterior
+    - media.type.imagen
+  module:
+    - layout_builder
+    - svg_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.imagen.envio
+targetEntityType: media
+bundle: imagen
+mode: envio
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  domain_access: true
+  feeds_item: true
+  field_area_tematica: true
+  field_id_blog_attachment_: true
+  field_id_externo: true
+  field_pie_de_foto: true
+  field_tipo: true
+  field_urlanterior: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
+  uuid: true

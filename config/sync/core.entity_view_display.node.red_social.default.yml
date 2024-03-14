@@ -1,0 +1,63 @@
+uuid: dd59650a-c7b7-438d-b8d1-7e166cc41589
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.red_social.body
+    - field.field.node.red_social.field_alias_tipo_contenido
+    - field.field.node.red_social.field_domain_access
+    - field.field.node.red_social.field_domain_all_affiliates
+    - field.field.node.red_social.field_domain_source
+    - field.field.node.red_social.field_enlace
+    - field.field.node.red_social.field_icono
+    - field.field.node.red_social.field_meta_tags
+    - field.field.node.red_social.field_yoast_seo
+    - node.type.red_social
+  module:
+    - link
+    - user
+id: node.red_social.default
+targetEntityType: node
+bundle: red_social
+mode: default
+content:
+  field_alias_tipo_contenido:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_enlace:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icono:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_meta_tags: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

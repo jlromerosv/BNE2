@@ -1,0 +1,32 @@
+uuid: f4067edd-7d34-4e21-a97f-c61fe3095bac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicaciones
+    - node.type.coleccion
+    - node.type.contenido_generico
+    - node.type.publicacion
+    - node.type.referencias_bibliograficas
+id: node.coleccion.field_publicaciones
+field_name: field_publicaciones
+entity_type: node
+bundle: coleccion
+label: 'Publicaciones y bibliografía'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contenido_generico: contenido_generico
+      publicacion: publicacion
+      referencias_bibliograficas: referencias_bibliograficas
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: publicacion
+field_type: entity_reference

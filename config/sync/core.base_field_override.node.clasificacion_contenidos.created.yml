@@ -1,0 +1,18 @@
+uuid: 4920dffd-2bb8-4d85-8875-26e33d3551d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+id: node.clasificacion_contenidos.created
+field_name: created
+entity_type: node
+bundle: clasificacion_contenidos
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

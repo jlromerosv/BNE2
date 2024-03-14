@@ -1,0 +1,18 @@
+uuid: 1cf45e04-2844-4d91-b9e5-e6b2d251ce4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.horarios-de-salas-servicios-y-ex
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.horarios-de-salas-servicios-y-ex
+target_entity_type_id: menu_link_content
+target_bundle: horarios-de-salas-servicios-y-ex
+default_langcode: site_default
+language_alterable: true

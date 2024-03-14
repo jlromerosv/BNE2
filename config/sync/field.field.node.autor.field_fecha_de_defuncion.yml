@@ -1,0 +1,25 @@
+uuid: 9c8b3fec-6c32-4537-9a39-9d7e6f036ba1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_de_defuncion
+    - node.type.autor
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.autor.field_fecha_de_defuncion
+field_name: field_fecha_de_defuncion
+entity_type: node
+bundle: autor
+label: 'Fecha de defunción'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

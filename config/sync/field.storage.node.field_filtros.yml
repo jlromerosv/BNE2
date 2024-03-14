@@ -1,0 +1,24 @@
+uuid: 9a1e1cf7-8b78-41af-9f39-6fd30732f4e5
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_filtros
+field_name: field_filtros
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

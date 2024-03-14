@@ -1,0 +1,10 @@
+uuid: f931bcdd-b1ee-4c9e-842d-42342458f15e
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.envio
+label: 'Envío Postal'
+targetEntityType: media
+cache: true

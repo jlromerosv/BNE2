@@ -1,0 +1,28 @@
+uuid: 2b405792-8ee2-4499-9917-8a09d691165a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_videos
+    - media.type.video_remoto
+    - node.type.iniciativa
+id: node.iniciativa.field_videos
+field_name: field_videos
+entity_type: node
+bundle: iniciativa
+label: Vídeos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video_remoto: video_remoto
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

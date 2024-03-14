@@ -1,0 +1,20 @@
+uuid: e0ac3d41-a2eb-457d-935b-537dd4ca0a50
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+  module:
+    - options
+id: node.destacados_manuales.publish_state
+field_name: publish_state
+entity_type: node
+bundle: destacados_manuales
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

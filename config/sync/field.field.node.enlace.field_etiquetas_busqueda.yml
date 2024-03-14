@@ -1,0 +1,65 @@
+uuid: bf067eb6-d7c1-47cd-a97c-a56609336855
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas_busqueda
+    - node.type.enlace
+    - taxonomy.vocabulary.area_organizativa
+    - taxonomy.vocabulary.categoria_de_servicio
+    - taxonomy.vocabulary.categorias_evento
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+    - taxonomy.vocabulary.tipo_convocatoria
+    - taxonomy.vocabulary.tipo_de_campana
+    - taxonomy.vocabulary.tipo_de_contenidos_formativos
+    - taxonomy.vocabulary.tipo_de_exposicion
+    - taxonomy.vocabulary.tipo_de_lugar
+    - taxonomy.vocabulary.tipo_de_material
+    - taxonomy.vocabulary.tipo_de_persona
+    - taxonomy.vocabulary.tipo_de_publicacion
+    - taxonomy.vocabulary.tipo_de_referencia_bibliografica
+    - taxonomy.vocabulary.tipo_de_servicio
+    - taxonomy.vocabulary.tipo_entidad
+    - taxonomy.vocabulary.tipo_evento
+    - taxonomy.vocabulary.tipo_galeria
+    - taxonomy.vocabulary.tipo_iniciativa
+    - taxonomy.vocabulary.tipo_tramite
+id: node.enlace.field_etiquetas_busqueda
+field_name: field_etiquetas_busqueda
+entity_type: node
+bundle: enlace
+label: 'Etiquetas de búsqueda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_de_servicio: categoria_de_servicio
+      categorias_evento: categorias_evento
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+      tipo_de_lugar: tipo_de_lugar
+      tipo_de_campana: tipo_de_campana
+      tipo_de_contenidos_formativos: tipo_de_contenidos_formativos
+      tipo_convocatoria: tipo_convocatoria
+      tipo_entidad: tipo_entidad
+      tipo_evento: tipo_evento
+      tipo_de_exposicion: tipo_de_exposicion
+      tipo_galeria: tipo_galeria
+      tipo_iniciativa: tipo_iniciativa
+      tipo_de_material: tipo_de_material
+      tipo_de_persona: tipo_de_persona
+      tipo_de_publicacion: tipo_de_publicacion
+      tipo_de_referencia_bibliografica: tipo_de_referencia_bibliografica
+      tipo_de_servicio: tipo_de_servicio
+      tipo_tramite: tipo_tramite
+      area_organizativa: area_organizativa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: tipo_tramite
+field_type: entity_reference

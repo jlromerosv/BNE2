@@ -1,0 +1,18 @@
+uuid: 5fea8f19-9e85-4790-a1bc-084c5abd7a2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.coleccion
+id: node.coleccion.changed
+field_name: changed
+entity_type: node
+bundle: coleccion
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

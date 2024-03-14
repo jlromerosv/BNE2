@@ -1,0 +1,8 @@
+uuid: 7de402ef-6410-4f99-ab81-66b67217f589
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Tipo de personal'
+vid: tipo_de_personal
+description: ''
+weight: 0

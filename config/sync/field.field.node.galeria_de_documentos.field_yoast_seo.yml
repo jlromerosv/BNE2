@@ -1,0 +1,27 @@
+uuid: fab11b33-f944-49e6-b180-939dc6a23b06
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.galeria_de_documentos
+  module:
+    - yoast_seo
+id: node.galeria_de_documentos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    yoast_seo:
+      focus_keyword: ''
+      status: ''
+    status: ''
+    focus_keyword: ''
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

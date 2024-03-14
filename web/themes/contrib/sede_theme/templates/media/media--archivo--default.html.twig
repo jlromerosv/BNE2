@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'media',
+    'media--type-' ~ media.bundle()|clean_class,
+    not media.isPublished() ? 'media--unpublished',
+    view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
+    'ps-custom-media-default',
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+  {% if content %}
+    
+    {{ content.thumbnail }}
+
+    <div class="field-group ps-custom-field-group">
+        <div class="field field--field-media-file field--field-name field-link-name">
+            <a href="{{ content.field_media_file[0]['#markup'] }}">{{ content.name[0]["#context"]["value"] }}</a>
+        </div>
+        <div class="field field--name-created field--type-created field--label-hidden field__item">{{ content.created[0]["#markup"] }}</div>
+        {{ content|without('thumbnail','field_media_file', 'created', 'name') }}
+    </div>
+  {% endif %}
+</article>

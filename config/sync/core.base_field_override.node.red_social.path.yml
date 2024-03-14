@@ -1,0 +1,20 @@
+uuid: 74d29c3e-8b60-4397-bcf4-10a19c8da691
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+  module:
+    - path
+id: node.red_social.path
+field_name: path
+entity_type: node
+bundle: red_social
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

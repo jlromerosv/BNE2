@@ -1,0 +1,24 @@
+uuid: 25c236b0-222c-4ef8-b73a-b1f67e34128d
+langcode: es
+status: false
+dependencies:
+  module:
+    - node
+id: para_listados_por_tipo_de_contenido_y_tipo
+label: 'Para listados, por tipo'
+type: 'canonical_entities:node'
+pattern: '/[node:field_tipo:entity:url:path][node:field_tipos:0:entity:url:path]/[node:title]'
+selection_criteria:
+  4530b540-d857-456b-9b72-f3aaf0f62252:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 4530b540-d857-456b-9b72-f3aaf0f62252
+    context_mapping:
+      node: node
+    bundles:
+      convocatoria: convocatoria
+      dossier: dossier
+      lugar: lugar
+selection_logic: and
+weight: 3
+relationships: {  }

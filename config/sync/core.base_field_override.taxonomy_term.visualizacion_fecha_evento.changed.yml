@@ -1,0 +1,18 @@
+uuid: acb79594-3865-452d-b5dc-3b104141081d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visualizacion_fecha_evento
+id: taxonomy_term.visualizacion_fecha_evento.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: visualizacion_fecha_evento
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

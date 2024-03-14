@@ -1,0 +1,11 @@
+uuid: dee65746-94ee-4c09-a1f5-bda11e287700
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.recorte_libre
+id: crop.recorte_libre
+target_entity_type_id: crop
+target_bundle: recorte_libre
+default_langcode: site_default
+language_alterable: false

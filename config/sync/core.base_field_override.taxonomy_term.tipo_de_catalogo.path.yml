@@ -1,0 +1,20 @@
+uuid: 0ca4e2c4-edb0-4c02-8ab5-848e8d1c6bd0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_catalogo
+  module:
+    - path
+id: taxonomy_term.tipo_de_catalogo.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_catalogo
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

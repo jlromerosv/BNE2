@@ -1,0 +1,161 @@
+.ps-breadcrumb-region {
+  .breadcrumb-block {
+    .breadcrumb {
+      h2#system-breadcrumb {
+        color: $blanco;
+        background-color: $bne_color_1;
+      }
+    }
+  }
+}
+#block-mx1bnecontactoenlacesuperior {
+  h2#block-mx1bnecontactoenlacesuperior-menu {
+    color: $blanco;
+    background-color: $bne_color_1;
+  }
+}
+
+// .ps_header_site_2_col.ps_header_site_2_col-left-right {
+//   .header_site_left {
+//     .region-header-site-1-2 {
+//       .view-content {
+//         display: flex;
+//         .ps-row {
+//           .views-field-field-imagen-representativa {
+//             .field-content {
+//               .field--name-field-media-image {
+//                 .field__label.visually-hidden {
+//                   color: $blanco;
+//                   background-color: $bne_color_1;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.ps-eu-footer .view-content > div .views-field-field-imagen-destacada {
+  article {
+    .field--name-field-media-image {
+      .field__label.visually-hidden {
+        color: $blanco;
+        background-color: $bne_color_1;
+      }
+    }
+  }
+}
+
+.footer-central
+  .footer-central-derecho
+  .region-footer-central-2-2
+  #block-mxaccesospiebne-2 {
+  h2#block-mxaccesospiebne-2-menu {
+    color: $blanco;
+    background-color: $bne_color_1;
+  }
+}
+
+.ps_footer_2_col.ps_footer_2_col-left-right {
+  .region-footer-izquierdo-1-2 {
+    .ps-row {
+      .views-field-field-imagen-representativa {
+        article {
+          .field--name-field-media-image {
+            .field__label.visually-hidden {
+              color: $blanco;
+              background-color: $bne_color_1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.ps_footer_2_col {
+  .footer_col_right {
+    .region-footer-derecho-2-2 {
+      .view-widget {
+        .view-content {
+          .ps-row {
+            .views-field-field-imagen-destacada {
+              article {
+                .field--name-field-media-image {
+                  .field__label.visually-hidden {
+                    color: $blanco;
+                    background-color: $bne_color_1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.ps-footer-inferior {
+  .region-footer-inferior {
+    #block-sede-theme-piedepagina {
+      h2#block-sede-theme-piedepagina-menu {
+        color: $blanco;
+        background-color: $bne_color_1;
+      }
+    }
+  }
+}
+
+.ps-listado-publicaciones {
+  .view-content {
+    .views-row {
+      article {
+        .node__content .layout:nth-child(3) {
+          .layout__region {
+            .block-field-blocknodepublicacionfield-precio-oferta-euros
+              .field--name-field-precio-oferta-euros {
+              //background: rgba(0, 0, 0, 0.9);
+            }
+            .block-field-blocknodepublicacionfield-estado
+              .field--name-field-estado {
+              //background: rgba(0, 0, 0, 0.9);
+            }
+            .block-field-blocknodepublicacionfield-precio-euros
+              .field--name-field-precio-euros {
+              //background: rgba(0, 0, 0, 0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.galeria-slick .view-content .slick nav.slick__arrow.visually-hidden {
+  .slick-prev {
+    color: $blanco;
+    background-color: $bne_color_1;
+  }
+  .slick-next {
+    color: $blanco;
+    background-color: $bne_color_1;
+  }
+}
+.ps-videos-web .view-content .tabs-videos .video-link {
+   background-color: $negro;
+   color: $blanco !important;
+
+}
+.ps-videos-web{
+  .videos-container {
+    .video-content {
+      .field--name-field-media-oembed-video {
+        .field__label {
+          color: $blanco;
+          background-color: $bne_color_1;
+        }
+      }
+    }
+  }
+}

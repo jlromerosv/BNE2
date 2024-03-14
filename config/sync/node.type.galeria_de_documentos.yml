@@ -1,0 +1,33 @@
+uuid: 704e8517-1ab3-475e-9190-529d702cf781
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - mx1---bne
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Grupo de documentos'
+type: galeria_de_documentos
+description: 'Conjunto de documentos relacionados entre sí. Se pueden clasificar por tipo.'
+help: 'Para fases de convocatoria usar por ejemplo: Bases y convocatoria, Proceso previo, Plazo de solicitudes, Tribunal calificador, Listas provisionales de admitidos y excluidos, Listas definitivas de admitidos y excluidos, Primer ejercicio, Segundo ejercicio, Tercer ejercicio, Cuarto ejercicio, Quinto ejercicio, Fase de oposición, Fase de concurso, Exclusión de aspirantes, Desistimiento de aspirantes, Calificación definitiva del proceso selectivo, Lista de aprobados, Presentación de documentación, Oferta de destinos, Adjudicación de destinos, Nombramiento, Nombramiento en prácticas, Curso selectivo, Toma de posesión, Suspensión del proceso selectivo, Ejecución de Sentencia, Listado provisional de Bolsa de Trabajo, Listado definitivo de Bolsa de Trabajo'
+new_revision: true
+preview_mode: 1
+display_submitted: false

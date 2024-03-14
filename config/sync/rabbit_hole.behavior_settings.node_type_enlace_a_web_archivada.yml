@@ -1,0 +1,14 @@
+uuid: a9fa43a4-b34d-4fe0-b988-e61c104d953b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+id: node_type_enlace_a_web_archivada
+entity_type_id: node_type
+entity_id: enlace_a_web_archivada
+action: page_redirect
+allow_override: 1
+redirect: 'http://www.dl-e.es/openwayback/wayback/*/[node:field_enlace]'
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,8 @@
+uuid: 9e235492-277f-40ae-8ff5-6b37654d03c2
+langcode: es
+status: true
+dependencies: {  }
+name: 'Etiquetas de Búsqueda'
+vid: etiquetas_de_busqueda
+description: ''
+weight: 0

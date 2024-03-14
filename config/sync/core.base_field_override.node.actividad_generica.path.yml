@@ -1,0 +1,20 @@
+uuid: d8b760b3-c5c6-4d0c-a5b8-e5a30e47f065
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad_generica
+  module:
+    - path
+id: node.actividad_generica.path
+field_name: path
+entity_type: node
+bundle: actividad_generica
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

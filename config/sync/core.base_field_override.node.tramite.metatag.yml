@@ -1,0 +1,18 @@
+uuid: 2a8128d3-4f4f-4356-8a19-5cafb2be20a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+id: node.tramite.metatag
+field_name: metatag
+entity_type: node
+bundle: tramite
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

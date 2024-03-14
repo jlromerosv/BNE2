@@ -1,0 +1,33 @@
+uuid: a1f96b93-d196-49a7-96a2-6a203a4cb4cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipos_de_portal_web
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: tiposdeportalweb
+theme: bne_theme
+region: sidebar_first
+weight: -37
+provider: null
+plugin: 'facet_block:tipos_de_portal_web'
+settings:
+  id: 'facet_block:tipos_de_portal_web'
+  label: 'Tipos de portal web'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: tiposdeportalweb
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/22919

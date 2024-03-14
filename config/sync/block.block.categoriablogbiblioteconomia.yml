@@ -1,0 +1,28 @@
+uuid: f8793333-2f85-4064-97f3-f03465ae8a21
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.categoria_blog_biblioteconomia
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: categoriablogbiblioteconomia
+theme: bne_theme
+region: sidebar_first
+weight: -49
+provider: null
+plugin: 'facet_block:categoria_blog_biblioteconomia'
+settings:
+  id: 'facet_block:categoria_blog_biblioteconomia'
+  label: 'Categoría blog biblioteconomía'
+  label_display: '0'
+  provider: facets
+  block_id: categoriablogbiblioteconomia
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/15361

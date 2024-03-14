@@ -1,0 +1,14 @@
+uuid: 73fb49d7-5e48-4a49-8b4a-c2bb52995fd3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_anuncio
+id: taxonomy_vocabulary_tipo_de_anuncio
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_anuncio
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

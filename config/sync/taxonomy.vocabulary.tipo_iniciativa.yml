@@ -1,0 +1,8 @@
+uuid: 7ae646cc-ddd9-4673-8680-452f480d2071
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de iniciativa'
+vid: tipo_iniciativa
+description: ''
+weight: 0

@@ -1,0 +1,59 @@
+uuid: f56f7c60-a3d8-45ea-98d7-8b52f6d159dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hito.body
+    - field.field.node.hito.feeds_item
+    - field.field.node.hito.field_autores
+    - field.field.node.hito.field_domain_access
+    - field.field.node.hito.field_domain_all_affiliates
+    - field.field.node.hito.field_domain_source
+    - field.field.node.hito.field_enlace
+    - field.field.node.hito.field_fecha_fin
+    - field.field.node.hito.field_fecha_inicio
+    - field.field.node.hito.field_id_externo
+    - field.field.node.hito.field_imagen_destacada
+    - field.field.node.hito.field_orden
+    - field.field.node.hito.field_orden_cronologia
+    - field.field.node.hito.field_tipo_texto_libre_
+    - node.type.hito
+  module:
+    - text
+    - user
+id: node.hito.teaser
+targetEntityType: node
+bundle: hito
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_autores: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_id_externo: true
+  field_imagen_destacada: true
+  field_orden: true
+  field_orden_cronologia: true
+  field_tipo_texto_libre_: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,19 @@
+uuid: 6a90d8d5-cb72-41a0-8e9f-a6f40a39d597
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+id: area-member
+label: Miembro
+weight: -100
+internal: true
+audience: member
+group_type: area
+permissions_ui: true
+permissions:
+  - 'access content overview'
+  - 'access group_node overview'
+  - 'administer members'
+  - 'view group'
+  - 'view group_membership content'

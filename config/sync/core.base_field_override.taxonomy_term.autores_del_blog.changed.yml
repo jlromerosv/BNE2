@@ -1,0 +1,18 @@
+uuid: c26ce6bb-0930-4ff2-a181-e61e7545b5b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.autores_del_blog
+id: taxonomy_term.autores_del_blog.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: autores_del_blog
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

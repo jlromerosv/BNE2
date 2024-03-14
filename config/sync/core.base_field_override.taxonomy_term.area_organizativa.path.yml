@@ -1,0 +1,20 @@
+uuid: 32897a28-120d-4091-9aee-0fc7d9b825ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_organizativa
+  module:
+    - path
+id: taxonomy_term.area_organizativa.path
+field_name: path
+entity_type: taxonomy_term
+bundle: area_organizativa
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

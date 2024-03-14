@@ -1,0 +1,18 @@
+uuid: 89ed208b-a074-4e33-a5b4-1969028a8d95
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+id: node.clasificacion_contenidos.title
+field_name: title
+entity_type: node
+bundle: clasificacion_contenidos
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

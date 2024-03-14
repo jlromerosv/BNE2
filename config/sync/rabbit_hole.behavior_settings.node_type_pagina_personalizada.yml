@@ -1,0 +1,14 @@
+uuid: 4a546d20-78de-42f5-9820-313710a96a1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_personalizada
+id: node_type_pagina_personalizada
+entity_type_id: node_type
+entity_id: pagina_personalizada
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

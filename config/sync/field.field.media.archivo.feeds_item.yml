@@ -1,0 +1,23 @@
+uuid: ba3c29cf-7c00-4d08-8db5-64ada65e0972
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.feeds_item
+    - media.type.archivo
+  module:
+    - feeds
+id: media.archivo.feeds_item
+field_name: feeds_item
+entity_type: media
+bundle: archivo
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

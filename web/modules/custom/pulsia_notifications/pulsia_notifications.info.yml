@@ -1,0 +1,6 @@
+name: 'pulsia_notifications'
+type: module
+description: 'Módulo de gestión de notificaciones'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'

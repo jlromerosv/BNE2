@@ -1,0 +1,21 @@
+uuid: 73d466ed-46cc-4dee-a850-875e84a170ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.obra
+  module:
+    - metatag
+id: node.obra.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: obra
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

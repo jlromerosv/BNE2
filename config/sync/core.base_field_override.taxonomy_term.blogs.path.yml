@@ -1,0 +1,20 @@
+uuid: 5c3fa58b-b370-40be-8249-96f2b88c9325
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.blogs
+  module:
+    - path
+id: taxonomy_term.blogs.path
+field_name: path
+entity_type: taxonomy_term
+bundle: blogs
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

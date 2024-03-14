@@ -1,0 +1,387 @@
+uuid: e36e1f8b-6b72-415b-9f4b-b8894f8e9c3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.publicacion.title
+    - core.entity_view_mode.node.listado
+    - field.field.node.publicacion.body
+    - field.field.node.publicacion.feeds_item
+    - field.field.node.publicacion.field_alias_tipo_contenido
+    - field.field.node.publicacion.field_ano
+    - field.field.node.publicacion.field_archivo
+    - field.field.node.publicacion.field_archivo_2
+    - field.field.node.publicacion.field_archivos
+    - field.field.node.publicacion.field_audios
+    - field.field.node.publicacion.field_codigo_identificativo
+    - field.field.node.publicacion.field_codigo_referencia
+    - field.field.node.publicacion.field_contenido_generico
+    - field.field.node.publicacion.field_contenidos_relacionados
+    - field.field.node.publicacion.field_contenidos_vinculados
+    - field.field.node.publicacion.field_descripcion_corta
+    - field.field.node.publicacion.field_descripcion_sin_formato
+    - field.field.node.publicacion.field_disponibilidad_texto_libre
+    - field.field.node.publicacion.field_domain_access
+    - field.field.node.publicacion.field_domain_all_affiliates
+    - field.field.node.publicacion.field_domain_source
+    - field.field.node.publicacion.field_enlace
+    - field.field.node.publicacion.field_enlaces
+    - field.field.node.publicacion.field_epub_url
+    - field.field.node.publicacion.field_estado
+    - field.field.node.publicacion.field_etiquetas_busqueda
+    - field.field.node.publicacion.field_galeria_de_imagenes
+    - field.field.node.publicacion.field_id_externo
+    - field.field.node.publicacion.field_iframe
+    - field.field.node.publicacion.field_imagen_destacada
+    - field.field.node.publicacion.field_imagen_representativa
+    - field.field.node.publicacion.field_imagenes
+    - field.field.node.publicacion.field_mas_informacion
+    - field.field.node.publicacion.field_meta_tags
+    - field.field.node.publicacion.field_no_mostrar_inverso
+    - field.field.node.publicacion.field_precio_euros
+    - field.field.node.publicacion.field_precio_oferta_euros
+    - field.field.node.publicacion.field_publicaciones
+    - field.field.node.publicacion.field_texto_libre
+    - field.field.node.publicacion.field_tipo_encuadernacion
+    - field.field.node.publicacion.field_tipo_texto_libre_
+    - field.field.node.publicacion.field_tipos
+    - field.field.node.publicacion.field_url_2
+    - field.field.node.publicacion.field_valor
+    - field.field.node.publicacion.field_videos
+    - node.type.publicacion
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          3a959de9-4bc4-47b5-9a1d-3c7334d059e2:
+            uuid: 3a959de9-4bc4-47b5-9a1d-3c7334d059e2
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:field_imagen_representativa'
+              label: 'Imagen representativa'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: blazy_media
+                label: hidden
+                settings:
+                  caption:
+                    domain_access: '0'
+                    feeds_item: '0'
+                    field_area_tematica: '0'
+                    field_id_blog_attachment_: '0'
+                    field_id_externo: '0'
+                    field_tipo: '0'
+                    field_urlanterior: '0'
+                  view_mode: eia_bloque_publicaciones_home
+                  background: false
+                  box_caption: ''
+                  box_caption_custom: ''
+                  box_media_style: ''
+                  loading: ''
+                  preload: false
+                  responsive_image_style: ''
+                  box_style: ''
+                  image_style: imagen_lis
+                  media_switch: ''
+                  ratio: ''
+                  thumbnail_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          b018c699-c495-47ee-8ec9-e39e0bc7333a:
+            uuid: b018c699-c495-47ee-8ec9-e39e0bc7333a
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:field_tipos'
+              label: 'Tipos de publicación'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b1c55f1b-072c-4b74-b82b-934ce5ce0084:
+            uuid: b1c55f1b-072c-4b74-b82b-934ce5ce0084
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          84267806-4002-43ce-9e60-9de44271e6c3:
+            uuid: 84267806-4002-43ce-9e60-9de44271e6c3
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:field_precio_euros'
+              label: Precio
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_decimal
+                label: hidden
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7f25e94d-1607-403a-8255-f9651e01ae56:
+            uuid: 7f25e94d-1607-403a-8255-f9651e01ae56
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:field_precio_oferta_euros'
+              label: 'Precio oferta'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_decimal
+                label: hidden
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          988eb38e-486f-4eff-bef4-45ec956c4724:
+            uuid: 988eb38e-486f-4eff-bef4-45ec956c4724
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:field_estado'
+              label: Disponibilidad
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          7877ce88-1569-45bd-b21d-2a7589b2876d:
+            uuid: 7877ce88-1569-45bd-b21d-2a7589b2876d
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:field_disponibilidad_texto_libre'
+              label: 'Disponibilidad texto libre'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.publicacion.listado
+targetEntityType: node
+bundle: publicacion
+mode: listado
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ano:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_archivo_2:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_contenido_generico:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_enlaces:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_estado:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_id_externo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_imagen_representativa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_publicaciones:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_tipo_encuadernacion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_tipo_texto_libre_:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_url_2:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivo: true
+  field_archivos: true
+  field_audios: true
+  field_codigo_identificativo: true
+  field_codigo_referencia: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_descripcion_corta: true
+  field_descripcion_sin_formato: true
+  field_disponibilidad_texto_libre: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_epub_url: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_imagenes: true
+  field_iframe: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_mas_informacion: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_precio_euros: true
+  field_precio_oferta_euros: true
+  field_texto_libre: true
+  field_tipos: true
+  field_valor: true
+  field_videos: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

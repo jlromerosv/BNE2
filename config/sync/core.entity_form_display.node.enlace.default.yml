@@ -1,0 +1,175 @@
+uuid: f8ee5808-0466-4951-a7f8-64bf0e679bfd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.enlace.body
+    - field.field.node.enlace.feeds_item
+    - field.field.node.enlace.field_alias_tipo_contenido
+    - field.field.node.enlace.field_area_de_transparencia
+    - field.field.node.enlace.field_area_tematica
+    - field.field.node.enlace.field_colectivo
+    - field.field.node.enlace.field_domain_access
+    - field.field.node.enlace.field_domain_all_affiliates
+    - field.field.node.enlace.field_domain_source
+    - field.field.node.enlace.field_enlace
+    - field.field.node.enlace.field_etiquetas_busqueda
+    - field.field.node.enlace.field_id_externo
+    - field.field.node.enlace.field_imagen_destacada
+    - field.field.node.enlace.field_meta_tags
+    - field.field.node.enlace.field_subtitulo
+    - field.field.node.enlace.field_tipo
+    - node.type.enlace
+  module:
+    - content_moderation
+    - field_group
+    - link
+    - media_library
+    - metatag
+    - text
+third_party_settings:
+  field_group:
+    group_clasificacion:
+      children:
+        - field_area_de_transparencia
+      label: Clasificación
+      region: content
+      parent_name: ''
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: node.enlace.default
+targetEntityType: node
+bundle: enlace
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_alias_tipo_contenido:
+    type: entity_reference_autocomplete
+    weight: 31
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_area_de_transparencia:
+    type: options_buttons
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_domain_source:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_enlace:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_id_externo:
+    type: string_textfield
+    weight: 32
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_imagen_destacada:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 33
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_tipo:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  feeds_item: true
+  field_area_tematica: true
+  field_colectivo: true
+  field_etiquetas_busqueda: true
+  field_subtitulo: true
+  langcode: true
+  path: true
+  promote: true
+  publish_on: true
+  publish_state: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
+  url_redirects: true

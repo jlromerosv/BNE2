@@ -1,0 +1,22 @@
+uuid: 41a03781-bb1d-4edb-a594-73392ef46ce4
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.accesibilidad
+id: taxonomy_term.accesibilidad.status
+field_name: status
+entity_type: taxonomy_term
+bundle: accesibilidad
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: e490e0b6-e305-4e11-a9d0-e3bacb9f19c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_autores
+id: taxonomy_term.etiquetas_autores.status
+field_name: status
+entity_type: taxonomy_term
+bundle: etiquetas_autores
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,28 @@
+uuid: 9a72f5ac-b79b-41f5-90bc-e751dcb6bba4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivo
+    - media.type.archivo
+    - node.type.contenido_generico
+id: node.contenido_generico.field_archivo
+field_name: field_archivo
+entity_type: node
+bundle: contenido_generico
+label: Archivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo: archivo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

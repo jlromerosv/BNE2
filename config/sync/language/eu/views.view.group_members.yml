@@ -1,0 +1,46 @@
+label: 'Taldeko kideak'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ezarri
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Lehenengoa'
+            last: 'Azkena »'
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+      fields:
+        name:
+          label: Erabiltzailea
+          separator: ', '
+        group_roles:
+          label: Zereginak
+          separator: ', '
+        changed:
+          label: Eguneratuta
+          separator: ', '
+        created:
+          label: Sartuta
+          separator: ', '
+        dropbutton:
+          label: Eragiketak
+      arguments:
+        gid:
+          exception:
+            title: Guztiak
+      title: Kideak
+  page_1:
+    display_title: Orria
+    display_options:
+      menu:
+        title: Kideak

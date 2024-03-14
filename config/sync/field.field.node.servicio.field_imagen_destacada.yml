@@ -1,0 +1,28 @@
+uuid: 92530193-c663-44a7-bdde-c2a0fa3b73a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_destacada
+    - media.type.imagen
+    - node.type.servicio
+id: node.servicio.field_imagen_destacada
+field_name: field_imagen_destacada
+entity_type: node
+bundle: servicio
+label: 'Imagen Destacada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

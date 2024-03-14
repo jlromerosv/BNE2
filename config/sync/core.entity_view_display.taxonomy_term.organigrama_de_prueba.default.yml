@@ -1,0 +1,54 @@
+uuid: 1478c41e-7acb-48c3-957a-79659bd49915
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.organigrama_de_prueba.field_entidad_representada
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_background_color
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_background_color_hover
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_bold_border
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_border_color
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_border_color_hover
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_font_color
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_font_color_hover
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_image_alignment
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_image_url
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_position
+    - field.field.taxonomy_term.organigrama_de_prueba.field_o_url
+    - taxonomy.vocabulary.organigrama_de_prueba
+  module:
+    - text
+id: taxonomy_term.organigrama_de_prueba.default
+targetEntityType: taxonomy_term
+bundle: organigrama_de_prueba
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_entidad_representada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_o_background_color: true
+  field_o_background_color_hover: true
+  field_o_bold_border: true
+  field_o_border_color: true
+  field_o_border_color_hover: true
+  field_o_font_color: true
+  field_o_font_color_hover: true
+  field_o_image_alignment: true
+  field_o_image_url: true
+  field_o_position: true
+  field_o_url: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,8 @@
+uuid: daaf62cd-0efb-4a05-85a7-2d3d53a59437
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de catálogo'
+vid: tipo_de_catalogo
+description: ''
+weight: 0

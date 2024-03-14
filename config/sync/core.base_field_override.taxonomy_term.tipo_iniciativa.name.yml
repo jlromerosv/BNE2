@@ -1,0 +1,18 @@
+uuid: 2f0914eb-dda2-4ac1-bb64-694b8deb2d29
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_iniciativa
+id: taxonomy_term.tipo_iniciativa.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_iniciativa
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

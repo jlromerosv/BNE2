@@ -1,0 +1,19 @@
+/*
+    ========== ALERTAS ==========
+
+    Estilos dedicados al bloque de buscador de la web.
+
+    ----------------------- VARIABLES -------------------------
+    $blanco = Color blanco
+
+*/
+
+.ps-block-buscador {
+    position: relative;
+    a {
+        img {
+            filter: $filter_main_color_1_mod_1;
+            width: 20px;
+        }
+    }
+}

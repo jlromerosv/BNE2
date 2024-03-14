@@ -1,0 +1,3 @@
+settings:
+  confirmation_message: 'El vostre missatge s''ha enviat.'
+  confirmation_url: node/2441

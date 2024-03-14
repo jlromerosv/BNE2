@@ -1,0 +1,18 @@
+uuid: d130d879-3893-4507-aae2-8d568e0e9ec1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_de_transparencia
+id: taxonomy_term.area_de_transparencia.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: area_de_transparencia
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

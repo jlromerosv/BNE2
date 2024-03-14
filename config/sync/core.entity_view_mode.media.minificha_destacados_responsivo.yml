@@ -1,0 +1,10 @@
+uuid: d7653eb6-4dbc-4f54-ac0d-a69def94604a
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.minificha_destacados_responsivo
+label: 'Minificha Destacados responsivo'
+targetEntityType: media
+cache: true

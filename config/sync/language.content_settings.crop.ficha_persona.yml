@@ -1,0 +1,11 @@
+uuid: 477c5bc1-5d88-435b-90e3-2a80957532ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.ficha_persona
+id: crop.ficha_persona
+target_entity_type_id: crop
+target_bundle: ficha_persona
+default_langcode: site_default
+language_alterable: false

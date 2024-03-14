@@ -1,0 +1,18 @@
+uuid: 7c68533f-b7f9-4af9-b129-3f1b0a1b2e3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.otras-secciones
+id: menu_link_content.otras-secciones.metatag
+field_name: metatag
+entity_type: menu_link_content
+bundle: otras-secciones
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

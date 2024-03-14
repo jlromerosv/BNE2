@@ -1,0 +1,25 @@
+uuid: 5434c2b0-726a-401c-924e-a671ef8b223f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_source
+    - node.type.convocatoria
+id: node.convocatoria.field_domain_source
+field_name: field_domain_source
+entity_type: node
+bundle: convocatoria
+label: 'Domain Source'
+description: 'Select the canonical domain for this content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

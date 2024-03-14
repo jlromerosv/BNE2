@@ -1,0 +1,18 @@
+uuid: a1303e16-e2f8-4c18-bf8d-f07138e2c7d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_documentos
+id: node.galeria_de_documentos.metatag
+field_name: metatag
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

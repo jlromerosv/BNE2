@@ -1,0 +1,8 @@
+uuid: 2096e580-2ac9-4cbd-a419-0aadfcc1c6de
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Grupo de temas'
+vid: grupo_de_temas
+description: ''
+weight: 0

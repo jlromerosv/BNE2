@@ -1,0 +1,7 @@
+uuid: 0f560d74-4a86-40d3-aa67-784926abeb0a
+langcode: es
+status: false
+dependencies: {  }
+formId: node_icono_svg__form
+captchaType: default
+label: node_icono_svg__form

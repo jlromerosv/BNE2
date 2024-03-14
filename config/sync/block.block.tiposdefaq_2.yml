@@ -1,0 +1,33 @@
+uuid: e61b6f1c-58fe-4c1b-89e7-bedd69b5e16a
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipos_de_faq
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: tiposdefaq_2
+theme: sede_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:tipos_de_faq'
+settings:
+  id: 'facet_block:tipos_de_faq'
+  label: 'Tipos de FAQ'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: tiposdefaq_2
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/3001

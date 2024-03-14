@@ -1,0 +1,15 @@
+uuid: 351cc038-684c-45fe-aab6-e2b7009087b8
+langcode: es
+status: true
+dependencies: {  }
+name: cabecera_seccion_bne_md
+label: 'Cabecera seccion BNE MD'
+effects:
+  e8d13eac-acff-4976-aca8-0535132b10f5:
+    uuid: e8d13eac-acff-4976-aca8-0535132b10f5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 600
+      anchor: center-center

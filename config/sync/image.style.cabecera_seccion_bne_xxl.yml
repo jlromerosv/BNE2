@@ -1,0 +1,15 @@
+uuid: a2309d2d-5931-4d51-824d-5c12de6a4a4a
+langcode: es
+status: true
+dependencies: {  }
+name: cabecera_seccion_bne_xxl
+label: 'Cabecera seccion BNE XXL'
+effects:
+  5d090c47-8d34-4d97-a479-0e1c8444fc98:
+    uuid: 5d090c47-8d34-4d97-a479-0e1c8444fc98
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 600
+      anchor: center-center

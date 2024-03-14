@@ -1,0 +1,20 @@
+uuid: b588f5ea-63a2-419d-a547-60520dd045c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace
+  module:
+    - options
+id: node.enlace.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: enlace
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

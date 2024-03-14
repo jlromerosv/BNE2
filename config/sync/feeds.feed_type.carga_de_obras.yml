@@ -1,0 +1,268 @@
+uuid: 6c817390-6204-4a2f-b8dd-f4d9dec24b8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.obra.title
+    - field.field.node.obra.body
+    - field.field.node.obra.field_ano
+    - field.field.node.obra.field_autores
+    - field.field.node.obra.field_codigo_referencia
+    - field.field.node.obra.field_descripcion_sin_formato
+    - field.field.node.obra.field_domain_access
+    - field.field.node.obra.field_enlace
+    - field.field.node.obra.field_imagen_destacada
+    - field.field.node.obra.field_mas_informacion
+    - field.field.node.obra.field_notas
+    - field.field.node.obra.field_tipo_texto_libre_
+    - field.field.node.obra.field_url_2
+    - node.type.obra
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      734acfdd-2102-479b-b5ec-d73ee424be84:
+        separator: '}'
+        limit: null
+        uuid: 734acfdd-2102-479b-b5ec-d73ee424be84
+        plugin: explode
+        source: autor
+        weight: 0
+        label: Explode
+      44586d3e-52a3-4748-8ee7-bf90046a2457:
+        separator: '}'
+        limit: null
+        uuid: 44586d3e-52a3-4748-8ee7-bf90046a2457
+        plugin: explode
+        source: materia
+        weight: 0
+        label: Explode
+label: 'Carga de Obras (NO FUNCIONA CORRECTAMENTE)'
+id: carga_de_obras
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: obra
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titulo:
+    value: TÍTULO
+    label: TÍTULO
+    machine_name: titulo
+    type: csv
+  descripcion:
+    value: Descripción
+    label: Descripción
+    machine_name: descripcion
+    type: csv
+  domain:
+    value: domain
+    label: domain
+    machine_name: domain
+    type: csv
+  autores:
+    value: AUTORES
+    label: AUTORES
+    machine_name: autores
+    type: csv
+  fecha:
+    value: FECHA
+    label: FECHA
+    machine_name: fecha
+    type: csv
+  tipo_de_documento:
+    value: 'TIPO DE DOCUMENTO'
+    label: 'TIPO DE DOCUMENTO'
+    machine_name: tipo_de_documento
+    type: csv
+  datos_de_edicion:
+    value: 'DATOS DE EDICIÓN'
+    label: 'DATOS DE EDICIÓN'
+    machine_name: datos_de_edicion
+    type: csv
+  descripcion_fisica:
+    value: 'DESCRIPCIÓN FÍSICA'
+    label: 'DESCRIPCIÓN FÍSICA'
+    machine_name: descripcion_fisica
+    type: csv
+  materia:
+    value: MATERIA
+    label: MATERIA
+    machine_name: materia
+    type: csv
+  signatura:
+    value: SIGNATURA
+    label: SIGNATURA
+    machine_name: signatura
+    type: csv
+  notas_del_catalogo:
+    value: 'NOTAS DEL CATÁLOGO'
+    label: 'NOTAS DEL CATÁLOGO'
+    machine_name: notas_del_catalogo
+    type: csv
+  '':
+    value: DESCRIPCIÓN
+    label: DESCRIPCIÓN
+    machine_name: ''
+    type: csv
+  descripcion_body:
+    value: DESCRIPCIÓN
+    label: DESCRIPCIÓN
+    machine_name: descripcion_body
+    type: csv
+  obra_digitalizada:
+    value: 'OBRA DIGITALIZADA'
+    label: 'OBRA DIGITALIZADA'
+    machine_name: obra_digitalizada
+    type: csv
+  nameimagen:
+    value: NameImagen
+    label: NameImagen
+    machine_name: nameimagen
+    type: csv
+  nombreimagen:
+    value: NameImagen
+    label: NameImagen
+    machine_name: nombreimagen
+    type: csv
+  registro_en_el_catalogo:
+    value: 'REGISTRO EN EL CATÁLOGO'
+    label: 'REGISTRO EN EL CATÁLOGO'
+    machine_name: registro_en_el_catalogo
+    type: csv
+  autor:
+    value: AUTOR
+    label: AUTOR
+    machine_name: autor
+    type: csv
+  descripcion_:
+    value: DESCRIPCIÓN
+    label: DESCRIPCIÓN
+    machine_name: descripcion_
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: descripcion_
+      summary: ''
+    settings:
+      language: ''
+      format: html_sencillo
+  -
+    target: field_domain_access
+    map:
+      target_id: domain
+    settings:
+      reference_by: hostname
+  -
+    target: field_autores
+    map:
+      target_id: autor
+    settings:
+      language: null
+      reference_by: title
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_ano
+    map:
+      value: fecha
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_tipo_texto_libre_
+    map:
+      value: tipo_de_documento
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_mas_informacion
+    map:
+      value: datos_de_edicion
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_descripcion_sin_formato
+    map:
+      value: materia
+    settings:
+      language: ''
+  -
+    target: field_codigo_referencia
+    map:
+      value: signatura
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_notas
+    map:
+      value: notas_del_catalogo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: descripcion_body
+      summary: ''
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_enlace
+    map:
+      uri: obra_digitalizada
+      title: ''
+    settings:
+      language: null
+  -
+    target: field_imagen_destacada
+    map:
+      target_id: nombreimagen
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_url_2
+    map:
+      uri: registro_en_el_catalogo
+      title: ''
+    settings:
+      language: null

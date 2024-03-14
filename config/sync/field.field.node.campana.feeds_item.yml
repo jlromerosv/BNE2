@@ -1,0 +1,23 @@
+uuid: 758eb228-af3a-4bff-9ef7-e8032e3b2318
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.campana
+  module:
+    - feeds
+id: node.campana.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: campana
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

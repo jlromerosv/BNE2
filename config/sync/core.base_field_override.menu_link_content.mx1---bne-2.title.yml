@@ -1,0 +1,18 @@
+uuid: ce2e244f-4e97-4425-b3bc-403c27b45bb1
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne-2
+id: menu_link_content.mx1---bne-2.title
+field_name: title
+entity_type: menu_link_content
+bundle: mx1---bne-2
+label: 'Título del enlace del menú.'
+description: 'El texto que se usará en el menú para este enlace.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

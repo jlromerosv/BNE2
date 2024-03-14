@@ -1,0 +1,18 @@
+uuid: 173fc7db-5639-4256-b177-b8666d7d3279
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad_generica
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.actividad_generica
+target_entity_type_id: node
+target_bundle: actividad_generica
+default_langcode: site_default
+language_alterable: false

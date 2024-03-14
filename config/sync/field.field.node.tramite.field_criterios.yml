@@ -1,0 +1,21 @@
+uuid: 2ebb82bf-6bd2-447b-9c67-5d9d2046dec4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_criterios
+    - node.type.tramite
+  module:
+    - text
+id: node.tramite.field_criterios
+field_name: field_criterios
+entity_type: node
+bundle: tramite
+label: Criterios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

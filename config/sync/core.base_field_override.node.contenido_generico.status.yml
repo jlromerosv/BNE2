@@ -1,0 +1,22 @@
+uuid: 9861e54b-8bfb-4a25-a1c9-4ddf446b8f0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_generico
+id: node.contenido_generico.status
+field_name: status
+entity_type: node
+bundle: contenido_generico
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

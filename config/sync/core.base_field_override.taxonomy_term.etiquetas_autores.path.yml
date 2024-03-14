@@ -1,0 +1,20 @@
+uuid: 1ea70f97-fdc7-49dd-b668-757dd06ae9b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_autores
+  module:
+    - path
+id: taxonomy_term.etiquetas_autores.path
+field_name: path
+entity_type: taxonomy_term
+bundle: etiquetas_autores
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

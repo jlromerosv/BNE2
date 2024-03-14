@@ -1,0 +1,22 @@
+uuid: 5d3daf5f-7f29-46a1-937e-6777a21b0bdf
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organigrama_de_prueba
+id: taxonomy_term.organigrama_de_prueba.status
+field_name: status
+entity_type: taxonomy_term
+bundle: organigrama_de_prueba
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

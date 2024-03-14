@@ -1,0 +1,34 @@
+uuid: 26d3e61e-4dea-4994-969a-c99e127a3930
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo
+    - node.type.contenido_generico
+    - taxonomy.vocabulary.tipo_de_contenido_generico
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.contenido_generico.field_tipo
+field_name: field_tipo
+entity_type: node
+bundle: contenido_generico
+label: 'Tipo de contenido genérico'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_contenido_generico: tipo_de_contenido_generico
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

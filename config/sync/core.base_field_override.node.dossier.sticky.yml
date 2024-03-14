@@ -1,0 +1,22 @@
+uuid: 73b3a53a-25f0-40cf-a30c-c4add8c0a377
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.dossier
+id: node.dossier.sticky
+field_name: sticky
+entity_type: node
+bundle: dossier
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 39a5adf1-2188-47bf-a172-b555c2381cfe
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.efectos_silencio_administrativo
+id: taxonomy_term.efectos_silencio_administrativo.status
+field_name: status
+entity_type: taxonomy_term
+bundle: efectos_silencio_administrativo
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

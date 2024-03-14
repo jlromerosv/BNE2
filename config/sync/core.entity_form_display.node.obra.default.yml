@@ -1,0 +1,578 @@
+uuid: 7d4fd107-1e3c-478b-953e-0a4e8abdeed7
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.content_browser
+    - field.field.node.obra.body
+    - field.field.node.obra.feeds_item
+    - field.field.node.obra.field_alias_tipo_contenido
+    - field.field.node.obra.field_ano
+    - field.field.node.obra.field_archivos
+    - field.field.node.obra.field_audio_destacado
+    - field.field.node.obra.field_audios
+    - field.field.node.obra.field_autores
+    - field.field.node.obra.field_autores_texto_plano_
+    - field.field.node.obra.field_campo_de_actividad
+    - field.field.node.obra.field_categoria_postal
+    - field.field.node.obra.field_codigo_identificativo
+    - field.field.node.obra.field_codigo_referencia
+    - field.field.node.obra.field_comentarios
+    - field.field.node.obra.field_contenidos_relacionados
+    - field.field.node.obra.field_contenidos_vinculados
+    - field.field.node.obra.field_datos_cartograficos
+    - field.field.node.obra.field_descripci
+    - field.field.node.obra.field_descripcion_corta
+    - field.field.node.obra.field_descripcion_sin_formato
+    - field.field.node.obra.field_domain_access
+    - field.field.node.obra.field_domain_all_affiliates
+    - field.field.node.obra.field_domain_source
+    - field.field.node.obra.field_enlace
+    - field.field.node.obra.field_enlaces
+    - field.field.node.obra.field_etiquetas_busqueda
+    - field.field.node.obra.field_fecha_obra
+    - field.field.node.obra.field_galeria_de_imagenes
+    - field.field.node.obra.field_generos
+    - field.field.node.obra.field_hashtag
+    - field.field.node.obra.field_id_externo
+    - field.field.node.obra.field_iframe
+    - field.field.node.obra.field_imagen_destacada
+    - field.field.node.obra.field_imagen_representativa
+    - field.field.node.obra.field_imagenes
+    - field.field.node.obra.field_interprete
+    - field.field.node.obra.field_issn
+    - field.field.node.obra.field_mas_informacion
+    - field.field.node.obra.field_meta_tags
+    - field.field.node.obra.field_no_mostrar_inverso
+    - field.field.node.obra.field_notas
+    - field.field.node.obra.field_numeros
+    - field.field.node.obra.field_tipo
+    - field.field.node.obra.field_tipo_texto_libre_
+    - field.field.node.obra.field_url
+    - field.field.node.obra.field_url_2
+    - field.field.node.obra.field_videos
+    - field.field.node.obra.field_yoast_seo
+    - node.type.obra
+  module:
+    - comment
+    - content_moderation
+    - datetime
+    - entity_browser
+    - field_group
+    - iframe
+    - link
+    - media_library
+    - metatag
+    - path
+    - text
+    - yoast_seo
+third_party_settings:
+  field_group:
+    group_clasificacion:
+      children: {  }
+      label: Clasificación
+      region: hidden
+      parent_name: ''
+      weight: 38
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_multimedia:
+      children:
+        - field_imagenes
+        - field_galeria_de_imagenes
+        - field_videos
+        - field_archivos
+        - field_audios
+        - field_audio_destacado
+        - field_iframe
+        - field_enlaces
+      label: Multimedia
+      region: content
+      parent_name: ''
+      weight: 9
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_ficha_tecnica:
+      children:
+        - field_mas_informacion
+        - field_tipo_texto_libre_
+        - field_codigo_referencia
+        - field_campo_de_actividad
+        - field_generos
+        - field_descripcion_sin_formato
+        - field_descripci
+        - field_datos_cartograficos
+        - field_interprete
+        - field_numeros
+        - field_issn
+        - field_notas
+        - field_codigo_identificativo
+        - field_descripcion_corta
+        - field_enlace
+        - field_url_2
+        - field_url
+      label: 'Ficha técnica'
+      region: content
+      parent_name: ''
+      weight: 8
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_seo:
+      children:
+        - field_yoast_seo
+      label: SEO
+      region: content
+      parent_name: ''
+      weight: 17
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+        weight: 0
+    group_otros:
+      children:
+        - field_contenidos_relacionados
+        - field_no_mostrar_inverso
+        - field_contenidos_vinculados
+      label: Otros
+      region: content
+      parent_name: ''
+      weight: 10
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: node.obra.default
+targetEntityType: node
+bundle: obra
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_alias_tipo_contenido:
+    type: entity_reference_autocomplete
+    weight: 22
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ano:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_archivos:
+    type: media_library_widget
+    weight: 24
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_audio_destacado:
+    type: media_library_widget
+    weight: 27
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_audios:
+    type: media_library_widget
+    weight: 25
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_autores:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_autores_texto_plano_:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_campo_de_actividad:
+    type: string_textarea
+    weight: 40
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_categoria_postal:
+    type: options_buttons
+    weight: 23
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_codigo_identificativo:
+    type: string_textfield
+    weight: 50
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_codigo_referencia:
+    type: string_textfield
+    weight: 39
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_comentarios:
+    type: comment_default
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contenidos_relacionados:
+    type: entity_browser_entity_reference
+    weight: 54
+    region: content
+    settings:
+      entity_browser: content_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_contenidos_vinculados:
+    type: entity_browser_entity_reference
+    weight: 56
+    region: content
+    settings:
+      entity_browser: content_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_datos_cartograficos:
+    type: string_textfield
+    weight: 45
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_descripci:
+    type: string_textarea
+    weight: 44
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_descripcion_corta:
+    type: string_textarea
+    weight: 51
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_descripcion_sin_formato:
+    type: string_textarea
+    weight: 43
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_domain_source:
+    type: options_select
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_enlace:
+    type: link_default
+    weight: 52
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_enlaces:
+    type: link_default
+    weight: 29
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_fecha_obra:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_galeria_de_imagenes:
+    type: entity_reference_autocomplete
+    weight: 22
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_generos:
+    type: entity_reference_autocomplete
+    weight: 42
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_id_externo:
+    type: string_textfield
+    weight: 20
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_iframe:
+    type: iframe_urlwidthheight
+    weight: 28
+    region: content
+    settings:
+      headerlevel: '3'
+      class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      allowfullscreen: '0'
+      tokensupport: '0'
+      width: ''
+      height: ''
+      expose_class: false
+    third_party_settings: {  }
+  field_imagen_destacada:
+    type: media_library_widget
+    weight: 7
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_imagenes:
+    type: media_library_widget
+    weight: 21
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_interprete:
+    type: string_textfield
+    weight: 46
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_issn:
+    type: string_textfield
+    weight: 48
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_mas_informacion:
+    type: text_textarea
+    weight: 37
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 18
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_no_mostrar_inverso:
+    type: boolean_checkbox
+    weight: 55
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_notas:
+    type: string_textfield
+    weight: 49
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_numeros:
+    type: string_textfield
+    weight: 47
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tipo:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tipo_texto_libre_:
+    type: string_textfield
+    weight: 38
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_url:
+    type: link_default
+    weight: 54
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_url_2:
+    type: link_default
+    weight: 53
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_videos:
+    type: media_library_widget
+    weight: 23
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 10
+    region: content
+    settings:
+      body: body
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  feeds_item: true
+  field_etiquetas_busqueda: true
+  field_hashtag: true
+  field_imagen_representativa: true
+  langcode: true
+  promote: true
+  publish_on: true
+  publish_state: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
+  url_redirects: true

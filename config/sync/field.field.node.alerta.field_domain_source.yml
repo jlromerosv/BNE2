@@ -1,0 +1,25 @@
+uuid: 7da0f8fc-213d-42c0-9db6-ca8cb040ede3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_source
+    - node.type.alerta
+id: node.alerta.field_domain_source
+field_name: field_domain_source
+entity_type: node
+bundle: alerta
+label: 'Domain Source'
+description: 'Select the canonical domain for this content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

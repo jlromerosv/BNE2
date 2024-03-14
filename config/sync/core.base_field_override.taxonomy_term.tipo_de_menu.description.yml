@@ -1,0 +1,20 @@
+uuid: 7aac9a6d-4d9f-48b0-bf37-ac364e05e1d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_menu
+  module:
+    - text
+id: taxonomy_term.tipo_de_menu.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_menu
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

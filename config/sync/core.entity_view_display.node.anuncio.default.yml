@@ -1,0 +1,80 @@
+uuid: ba6334a4-1c5c-42d8-85be-d7d9ea69136b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.anuncio.body
+    - field.field.node.anuncio.field_archivos
+    - field.field.node.anuncio.field_codigo_referencia
+    - field.field.node.anuncio.field_domain_access
+    - field.field.node.anuncio.field_domain_all_affiliates
+    - field.field.node.anuncio.field_domain_source
+    - field.field.node.anuncio.field_enlace
+    - field.field.node.anuncio.field_entidad
+    - field.field.node.anuncio.field_fecha_inicio
+    - field.field.node.anuncio.field_tipo
+    - node.type.anuncio
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.anuncio.default
+targetEntityType: node
+bundle: anuncio
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_codigo_referencia:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_enlace:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_entidad:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_archivos: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_tipo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

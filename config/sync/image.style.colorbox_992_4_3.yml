@@ -1,0 +1,25 @@
+uuid: 44ba7d29-6953-417a-be18-fdc64d29722a
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.colorbox_gallery_crop_type
+  module:
+    - crop
+name: colorbox_992_4_3
+label: 'Colorbox 992 - 4:3'
+effects:
+  4d7de8c7-174e-409e-a50b-dad2f83619c5:
+    uuid: 4d7de8c7-174e-409e-a50b-dad2f83619c5
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: colorbox_gallery_crop_type
+  7e31cdfd-f001-4b86-a694-825091615d41:
+    uuid: 7e31cdfd-f001-4b86-a694-825091615d41
+    id: image_scale
+    weight: 2
+    data:
+      width: 992
+      height: null
+      upscale: false

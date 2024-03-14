@@ -1,0 +1,20 @@
+uuid: 464f0076-3611-45c4-b391-57337c76e2c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.area-group_membership
+  module:
+    - path
+id: group_content.area-group_membership.path
+field_name: path
+entity_type: group_content
+bundle: area-group_membership
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

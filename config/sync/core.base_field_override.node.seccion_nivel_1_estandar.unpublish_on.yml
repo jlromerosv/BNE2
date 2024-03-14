@@ -1,0 +1,18 @@
+uuid: fe3f6c33-32f0-4bcb-8464-b6d103b755fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+id: node.seccion_nivel_1_estandar.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

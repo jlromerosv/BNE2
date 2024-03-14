@@ -1,0 +1,20 @@
+uuid: 106540cc-3e5b-4291-b520-21805e080714
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_tematica
+  module:
+    - text
+id: taxonomy_term.area_tematica.description
+field_name: description
+entity_type: taxonomy_term
+bundle: area_tematica
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

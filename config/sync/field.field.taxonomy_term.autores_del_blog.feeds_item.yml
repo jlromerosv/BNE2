@@ -1,0 +1,23 @@
+uuid: 8ed2dbe9-3abd-45bf-8cd2-8164cc2e7d4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.feeds_item
+    - taxonomy.vocabulary.autores_del_blog
+  module:
+    - feeds
+id: taxonomy_term.autores_del_blog.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+bundle: autores_del_blog
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

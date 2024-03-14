@@ -1,0 +1,18 @@
+uuid: d9c48985-7450-4c09-a569-84933bd7d73a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_basica
+id: node.pagina_basica.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: pagina_basica
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

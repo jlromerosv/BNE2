@@ -1,0 +1,18 @@
+uuid: 61b198eb-476a-4fb0-9428-e57e1268a651
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_estandar
+id: node.seccion_estandar.metatag
+field_name: metatag
+entity_type: node
+bundle: seccion_estandar
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,22 @@
+drupalAcctProvisionServer: ldap_bne
+ldapEntryProvisionServer: ldap_bne
+drupalAcctProvisionTriggers:
+  - drupal_on_login
+  - drupal_on_update_create
+ldapEntryProvisionTriggers:
+  - ldap_on_update_create
+  - ldap_on_login
+userUpdateCronQuery: none
+userUpdateCronInterval: daily
+orphanedDrupalAcctBehavior: ldap_user_orphan_email
+orphanedDrupalAcctReportingInbox: ''
+orphanedCheckQty: 100
+orphanedAccountCheckInterval: weekly
+userConflictResolve: resolve
+manualAccountConflict: conflict_associate
+acctCreation: ldap_behaviour
+ldapUserSyncMappings: {  }
+_core:
+  default_config_hash: xGaDFlyXTmhzluhiRhEx58v_3Fu-nMhCzEBF8K4eqHU
+langcode: es
+disableAdminPasswordField: false

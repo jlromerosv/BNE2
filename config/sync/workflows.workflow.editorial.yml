@@ -1,0 +1,126 @@
+uuid: 31c9c7cb-bb7e-4da3-9552-2de6a5384e63
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+    - node.type.pagina_basica
+    - node.type.pagina_personalizada
+    - node.type.seccion_albacete_
+    - node.type.seccion_nivel_1_estandar
+  module:
+    - content_moderation
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Borrador
+      weight: -3
+      published: false
+      default_revision: false
+    no_publicado:
+      label: 'No publicado'
+      weight: 1
+      published: false
+      default_revision: true
+    pendiente_de_publicar:
+      label: 'Pendiente de publicar'
+      weight: -2
+      published: false
+      default_revision: true
+    publicacion_acceso_admin_:
+      label: 'Publicación (Acceso admin)'
+      weight: 2
+      published: true
+      default_revision: true
+    publicacion_rechazada:
+      label: 'Publicación rechazada'
+      weight: -1
+      published: false
+      default_revision: true
+    published:
+      label: Publicado
+      weight: 0
+      published: true
+      default_revision: true
+  transitions:
+    conceder_publicacion:
+      label: 'Conceder publicación'
+      from:
+        - pendiente_de_publicar
+      to: published
+      weight: 2
+    conceder_publicacion_admin:
+      label: 'Conceder publicación admin'
+      from:
+        - no_publicado
+        - pendiente_de_publicar
+        - publicacion_acceso_admin_
+      to: publicacion_acceso_admin_
+      weight: 6
+    despublicar:
+      label: Despublicar
+      from:
+        - published
+      to: no_publicado
+      weight: 3
+    despublicar_admin:
+      label: 'Despublicar admin'
+      from:
+        - publicacion_acceso_admin_
+      to: no_publicado
+      weight: 7
+    editar_borrador:
+      label: 'Editar borrador'
+      from:
+        - draft
+      to: draft
+      weight: -1
+    nuevo_borrador:
+      label: 'Nuevo borrador'
+      from:
+        - published
+      to: draft
+      weight: 1
+    publish:
+      label: Publicar
+      from:
+        - draft
+        - published
+      to: published
+      weight: 0
+    rechazar_publicacion:
+      label: 'Rechazar publicación'
+      from:
+        - pendiente_de_publicar
+      to: publicacion_rechazada
+      weight: 5
+    republicar:
+      label: Republicar
+      from:
+        - no_publicado
+      to: published
+      weight: 4
+    restablecer_publicacion:
+      label: 'Restablecer publicación'
+      from:
+        - no_publicado
+        - publicacion_rechazada
+      to: draft
+      weight: -2
+    solicitar_publicacion:
+      label: 'Solicitar publicación'
+      from:
+        - draft
+      to: pendiente_de_publicar
+      weight: -3
+  entity_types:
+    node:
+      - pagina_avanzada
+      - pagina_basica
+      - pagina_personalizada
+      - seccion_albacete_
+      - seccion_nivel_1_estandar
+  default_moderation_state: published

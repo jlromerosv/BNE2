@@ -1,0 +1,22 @@
+uuid: 055f0ff2-44e3-4e84-8c86-d0f8bc2d86fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+id: node.destacados_manuales.promote
+field_name: promote
+entity_type: node
+bundle: destacados_manuales
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

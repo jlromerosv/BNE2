@@ -1,0 +1,20 @@
+uuid: cbc94897-4e80-418f-9a2a-ae96f5394e39
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.grupo_de_temas
+  module:
+    - path
+id: taxonomy_term.grupo_de_temas.path
+field_name: path
+entity_type: taxonomy_term
+bundle: grupo_de_temas
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

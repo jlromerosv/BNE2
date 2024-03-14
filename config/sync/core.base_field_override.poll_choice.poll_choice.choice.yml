@@ -1,0 +1,18 @@
+uuid: 8102d396-aa7d-4cf7-9d83-50f966453e59
+langcode: es
+status: true
+dependencies:
+  module:
+    - poll
+id: poll_choice.poll_choice.choice
+field_name: choice
+entity_type: poll_choice
+bundle: poll_choice
+label: Opción
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

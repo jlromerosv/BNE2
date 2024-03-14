@@ -1,0 +1,19 @@
+uuid: 7eda8470-6e11-409f-b1df-f272659b7f63
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_externo
+    - node.type.entrada_de_blog
+id: node.entrada_de_blog.field_id_externo
+field_name: field_id_externo
+entity_type: node
+bundle: entrada_de_blog
+label: Id_externo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

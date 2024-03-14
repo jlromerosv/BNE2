@@ -1,0 +1,7 @@
+uuid: d450c93d-7973-4694-b921-8158bd95ae8e
+langcode: es
+status: false
+dependencies: {  }
+formId: node_campana_form
+captchaType: default
+label: node_campana_form

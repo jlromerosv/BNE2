@@ -1,0 +1,12 @@
+uuid: f994aab4-ef17-4e11-81f4-99354e4c9fdc
+langcode: es
+status: true
+dependencies: {  }
+label: 'Banner obras e imagen destacada'
+id: banner_obras
+description: ''
+aspect_ratio: '13:4'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,20 @@
+uuid: 95080aee-a915-4d43-8401-1ded3b1372d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_documento_institucional
+  module:
+    - text
+id: taxonomy_term.tipo_de_documento_institucional.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_documento_institucional
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

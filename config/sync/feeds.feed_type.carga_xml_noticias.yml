@@ -1,0 +1,165 @@
+uuid: be07e563-f5e0-4bc0-844d-7419606c6d76
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.noticia.created
+    - core.base_field_override.node.noticia.title
+    - field.field.node.noticia.body
+    - field.field.node.noticia.field_subtitulo
+    - node.type.noticia
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      20474e05-a9f5-4ca5-bb7b-31e344173cd0:
+        find: '<em>'
+        replace: ''
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 20474e05-a9f5-4ca5-bb7b-31e344173cd0
+        plugin: find_replace
+        source: titular
+        weight: 0
+        label: 'Find replace'
+      752bd6b5-975f-4edf-be49-4ad4182fa1a2:
+        find: '</em>'
+        replace: ''
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 752bd6b5-975f-4edf-be49-4ad4182fa1a2
+        plugin: find_replace
+        source: titular
+        weight: 1
+        label: 'Find replace'
+      f65f1c94-9043-414d-9716-90812ead5bae:
+        find: '<p>'
+        replace: ''
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: f65f1c94-9043-414d-9716-90812ead5bae
+        plugin: find_replace
+        source: texto
+        weight: 0
+        label: 'Find replace'
+      5e192f2b-49a9-4278-ac5f-3e2dcfcda2b5:
+        find: '</p>'
+        replace: ''
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 5e192f2b-49a9-4278-ac5f-3e2dcfcda2b5
+        plugin: find_replace
+        source: texto
+        weight: 1
+        label: 'Find replace'
+      240acf35-c36d-41c4-8e80-654e22d80e21:
+        date_format: 'Y-m-d H:i'
+        uuid: 240acf35-c36d-41c4-8e80-654e22d80e21
+        plugin: timetodate
+        source: fecha
+        weight: -9
+        label: 'Unix timestamp to Date'
+      8260a871-b5d0-4c4e-baaf-9e446ea82fb7:
+        operation: division
+        flip: false
+        value: !!float 1000
+        uuid: 8260a871-b5d0-4c4e-baaf-9e446ea82fb7
+        plugin: math
+        source: fecha
+        weight: -10
+        label: Math
+label: 'Carga XML noticias'
+id: carga_xml_noticias
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml html'
+  directory: 'private://feeds'
+parser: xml
+parser_configuration:
+  context:
+    value: /Noticias/Noticia
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+  use_tidy: false
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: noticia
+  langcode: es
+  insert_new: 1
+  update_existing: 1
+  update_non_existent: _delete
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titular:
+    label: Titular
+    machine_name: titular
+    value: Titular
+    type: xml
+  texto:
+    label: Texto
+    machine_name: texto
+    value: Texto
+    type: xml
+  textoimagen:
+    label: TextoImagen
+    machine_name: textoimagen
+    value: TextoImagen
+    type: xml
+  fecha:
+    label: Fecha
+    machine_name: fecha
+    value: Fecha
+    type: xml
+  fecha2:
+    label: Fecha2
+    machine_name: fecha2
+    value: Fecha2
+    type: xml
+mappings:
+  -
+    target: title
+    map:
+      value: titular
+    settings:
+      language: ''
+    unique:
+      value: '1'
+  -
+    target: field_subtitulo
+    map:
+      value: texto
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: textoimagen
+      summary: ''
+    settings:
+      language: ''
+      format: html_sencillo
+  -
+    target: created
+    map:
+      value: fecha
+    settings:
+      language: null
+      timezone: UTC

@@ -1,0 +1,14 @@
+uuid: 81bad5fd-9112-416b-b8e6-f4fb5c85a001
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.widget
+id: node_type_widget
+entity_type_id: node_type
+entity_id: widget
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

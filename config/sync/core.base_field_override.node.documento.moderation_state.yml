@@ -1,0 +1,18 @@
+uuid: cd9798ab-c56e-4e96-a107-cc384fa9d778
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+id: node.documento.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: documento
+label: 'Estado de moderación'
+description: 'El estado de moderación de esta pieza de contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

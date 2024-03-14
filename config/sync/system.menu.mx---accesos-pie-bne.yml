@@ -1,0 +1,8 @@
+uuid: afa628c4-2b55-4c0a-9b43-cad8f5e00db0
+langcode: es
+status: true
+dependencies: {  }
+id: mx---accesos-pie-bne
+label: 'MX - Accesos pie BNE'
+description: ''
+locked: false

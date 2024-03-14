@@ -1,0 +1,31 @@
+uuid: 8e337806-960b-43b9-9e1b-6998c37586d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.content_browser
+  module:
+    - views
+name: explorador_autores_y_entradas_de_block
+label: 'Explorador Autores y entradas de block'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  c7659bf2-9930-4372-a68f-d77b4540e637:
+    id: view
+    uuid: c7659bf2-9930-4372-a68f-d77b4540e637
+    label: Ver
+    weight: 1
+    settings:
+      submit_text: Aceptar
+      auto_select: false
+      view: content_browser
+      view_display: entity_browser_5

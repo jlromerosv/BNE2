@@ -1,0 +1,18 @@
+uuid: 8d46eceb-3a99-42f3-bf6e-dfbce82b7fe8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+id: node.bolsa_de_trabajo.publish_on
+field_name: publish_on
+entity_type: node
+bundle: bolsa_de_trabajo
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

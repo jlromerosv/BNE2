@@ -1,0 +1,20 @@
+uuid: e9e0e7aa-25f8-4d5c-b167-93886f7a8361
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+  module:
+    - options
+id: node.obra.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: obra
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

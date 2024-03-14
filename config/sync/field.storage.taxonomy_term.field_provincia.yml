@@ -1,0 +1,19 @@
+uuid: 64bb97fe-c8d7-4dba-9578-83ddfce5995f
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_provincia
+field_name: field_provincia
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

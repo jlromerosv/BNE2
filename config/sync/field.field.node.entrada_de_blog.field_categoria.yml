@@ -1,0 +1,29 @@
+uuid: 9abeba20-d32c-4fe2-8e5f-2c6f3521b097
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.entrada_de_blog
+    - taxonomy.vocabulary.categoria_actualidad
+id: node.entrada_de_blog.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: entrada_de_blog
+label: 'Categoría de actualidad'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_actualidad: categoria_actualidad
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

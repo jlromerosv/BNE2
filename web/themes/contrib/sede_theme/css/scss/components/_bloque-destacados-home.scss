@@ -1,0 +1,123 @@
+.bloque-destacados-home {
+  padding: 20px 0;
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .views-row {
+      position: relative;
+      .views-field-field-media-image {
+        picture {
+          display: block;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .views-field-title {
+        background: rgba(29, 29, 29, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        display: block;
+        height: 100%;
+        width: 100%;
+        .field-content {
+          display: block;
+          height: 100%;
+          // padding: 0 30px;
+          @media (min-width: 992px) {
+            padding: 0 40px;
+          }
+          .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            .subtitulo {
+              font-size: 14px;
+              color: $bne_color_4;
+              line-height: 20px;
+              letter-spacing: 0.42px;
+              text-align: center;
+              text-transform: uppercase;
+            }
+            .titulo {
+              font-size: $h5_home_block;
+              font-family: $dm-serif;
+              font-weight: $dm-serif-regular;
+              color: $blanco;
+              letter-spacing: 0.6px;
+              text-align: center;
+              @media (min-width: 568px) {
+                font-size: 1.8em;;
+              }
+            }
+            .descripcion {
+              overflow: hidden;
+              @media (max-width: 568px) {
+                display: none;
+              }
+              p {
+                font-size: 16px;
+                color: $bne_color_4;
+                line-height: 26px;
+                letter-spacing: 0.54px;
+                text-align: center;
+              }
+              a {
+                color: $bne_color_4;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .views-field-view-node {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        display: block;
+        height: 100%;
+        span {
+          display: block;
+          height: 100%;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+          }
+        }
+      }
+
+    }
+  }
+  &.destacados-responsive{
+    .grid-1{
+      @media (min-width: 992px) {
+        grid-template-columns: 1fr;
+      }
+    }
+    .grid-2{
+      @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .grid-3{
+      @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+}

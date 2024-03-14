@@ -1,0 +1,20 @@
+uuid: 3e65e436-67cc-4a86-be91-225f9a414523
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+  module:
+    - options
+id: node.red_social.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: red_social
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

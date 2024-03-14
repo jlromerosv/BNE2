@@ -1,0 +1,18 @@
+uuid: 76be0ed1-2925-4408-a1f1-25fb330bbaf8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_contacto
+id: taxonomy_term.categoria_contacto.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: categoria_contacto
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

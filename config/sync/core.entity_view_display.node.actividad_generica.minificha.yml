@@ -1,0 +1,72 @@
+uuid: a3ab916b-8e9c-42ff-9e30-a74fee043588
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.minificha
+    - field.field.node.actividad_generica.body
+    - field.field.node.actividad_generica.feeds_item
+    - field.field.node.actividad_generica.field_archivos
+    - field.field.node.actividad_generica.field_area_tematica
+    - field.field.node.actividad_generica.field_categoria
+    - field.field.node.actividad_generica.field_colaboradores
+    - field.field.node.actividad_generica.field_colectivo
+    - field.field.node.actividad_generica.field_contenidos_vinculados
+    - field.field.node.actividad_generica.field_domain_access
+    - field.field.node.actividad_generica.field_domain_all_affiliates
+    - field.field.node.actividad_generica.field_domain_source
+    - field.field.node.actividad_generica.field_email
+    - field.field.node.actividad_generica.field_enlace_formulario_inscripc
+    - field.field.node.actividad_generica.field_entidades
+    - field.field.node.actividad_generica.field_imagen_destacada
+    - field.field.node.actividad_generica.field_imagen_representativa
+    - field.field.node.actividad_generica.field_imagenes
+    - field.field.node.actividad_generica.field_lugares
+    - field.field.node.actividad_generica.field_telefonos
+    - field.field.node.actividad_generica.field_tipo
+    - node.type.actividad_generica
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.actividad_generica.minificha
+targetEntityType: node
+bundle: actividad_generica
+mode: minificha
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_archivos: true
+  field_area_tematica: true
+  field_categoria: true
+  field_colaboradores: true
+  field_colectivo: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_email: true
+  field_enlace_formulario_inscripc: true
+  field_entidades: true
+  field_imagen_destacada: true
+  field_imagen_representativa: true
+  field_imagenes: true
+  field_lugares: true
+  field_telefonos: true
+  field_tipo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,8 @@
+uuid: 1e9aa757-ba11-4cb4-95e6-a3526497dd88
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Estado Iniciativa'
+vid: estado_iniciativa
+description: ''
+weight: 0

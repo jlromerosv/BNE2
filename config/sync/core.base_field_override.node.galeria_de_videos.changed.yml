@@ -1,0 +1,18 @@
+uuid: bc4bee80-8380-4241-8a6b-6c26955683bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_videos
+id: node.galeria_de_videos.changed
+field_name: changed
+entity_type: node
+bundle: galeria_de_videos
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

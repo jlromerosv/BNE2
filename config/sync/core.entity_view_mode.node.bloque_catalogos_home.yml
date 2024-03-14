@@ -1,0 +1,10 @@
+uuid: 49fd448b-7db6-489f-8e45-479f1a5b96dd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.bloque_catalogos_home
+label: 'Bloque catálogos home'
+targetEntityType: node
+cache: true

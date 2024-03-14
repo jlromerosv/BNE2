@@ -1,0 +1,29 @@
+uuid: ed754574-9a43-44ec-8277-f86f53f9837c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado
+    - node.type.lugar
+    - taxonomy.vocabulary.estado_promocion_inmuebles
+id: node.lugar.field_estado
+field_name: field_estado
+entity_type: node
+bundle: lugar
+label: 'x_Estado de promoción de inmueble'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      estado_promocion_inmuebles: estado_promocion_inmuebles
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

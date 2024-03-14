@@ -1,0 +1,18 @@
+uuid: ecb025bf-4e45-42e0-ac95-dbcd414c4551
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_persona
+id: taxonomy_term.tipo_de_persona.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_persona
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

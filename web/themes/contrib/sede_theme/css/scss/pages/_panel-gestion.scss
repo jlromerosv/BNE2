@@ -1,0 +1,94 @@
+.ps-page-gestion-usuario {
+  main {
+    .ps_layout {
+      max-width: 1200px !important;
+      margin: 0 auto;
+    }
+    #block-sede-theme-contenidoprincipaldelapagina{
+      h1{
+        display: none;
+      }
+    }
+  }
+}
+
+.path-user {
+  #block-sede-theme-menupaneldegestiondelusuario {
+
+    h2#block-sede-theme-menupaneldegestiondelusuario-menu {
+        text-align: center;
+    }
+    ul.menu-level-0 {
+        margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: $negro;
+      padding: 5px;
+      @media (min-width: 576px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @media (min-width: 992px) {
+        grid-template-columns: repeat(5, 1fr);
+      }
+      @media (min-width: 1400px) {
+        grid-template-columns: repeat(8, 1fr);
+      }
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+      .menu-item {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        list-style: none;
+        cursor: pointer;
+        background: $negro;
+        border: 1px solid $negro;
+        &:hover{
+            border: 1px solid $bne_color_6;
+        }
+        a{
+            text-align: center;
+            font-size: 15px;
+            //color: $bne_color_1;
+            color: $blanco;
+            line-height: 22px;
+            letter-spacing: 0.42px;
+
+        }
+        .menu_link_content{
+            margin-top: 20px;
+            .field--name-field-icono{
+              h2{
+                a{
+                  pointer-events: none;
+                  cursor: none;
+                }
+              }
+                svg{
+                    width: 40px;
+                    height: 40px;
+                    .a{
+                        //fill: $bne_color_1 !important;
+                        fill: $blanco !important;
+                        stroke: none !important;
+                        stroke-width: 0;
+                    }
+                    path{
+                        // fill: $bne_color_1 !important;
+                        fill: $blanco !important;
+                        stroke: none !important;
+                        stroke-width: 0;
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+}

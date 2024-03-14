@@ -1,0 +1,8 @@
+uuid: 166facca-d284-4b5d-9a83-67433d2de05d
+langcode: es
+status: true
+dependencies: {  }
+name: 'Género autor'
+vid: genero_autor
+description: 'Diferencia los autores por género'
+weight: 0

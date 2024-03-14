@@ -1,0 +1,28 @@
+uuid: 421585dc-f6d5-4923-b176-1a8eb2472197
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actividades
+    - node.type.campana
+    - node.type.evento
+id: node.campana.field_actividades
+field_name: field_actividades
+entity_type: node
+bundle: campana
+label: Actividades
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      evento: evento
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: e1b65abd-e9fa-4144-8f14-5fa389c17abd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_torrevieja_
+id: node.seccion_torrevieja_.title
+field_name: title
+entity_type: node
+bundle: seccion_torrevieja_
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

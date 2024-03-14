@@ -1,0 +1,28 @@
+uuid: a13fc5b2-02a4-4db9-988d-b7de1977868f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugar
+    - node.type.exposicion
+    - node.type.lugar
+id: node.exposicion.field_lugar
+field_name: field_lugar
+entity_type: node
+bundle: exposicion
+label: Lugar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lugar: lugar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

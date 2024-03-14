@@ -1,0 +1,20 @@
+uuid: b8bfad2e-27c6-4531-b46a-80e34dfe910a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+  module:
+    - path
+id: node.enlace_a_web_archivada.path
+field_name: path
+entity_type: node
+bundle: enlace_a_web_archivada
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

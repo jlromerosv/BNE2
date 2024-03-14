@@ -1,0 +1,28 @@
+uuid: a88cc36e-aede-4b5c-88f6-2a64f0fbfd30
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dominio_publico
+    - node.type.autor
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.autor.field_dominio_publico
+field_name: field_dominio_publico
+entity_type: node
+bundle: autor
+label: 'Dominio público'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

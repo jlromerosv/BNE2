@@ -1,0 +1,653 @@
+/*
+	========== SASS MIXINS ==========
+
+	Fichero dedicado a los mixins creados para el proyecto.
+
+*/
+@mixin estilo_h1 {
+  font-size: 2.4em;
+  font-family: $dm-serif;
+  font-weight: $dm-serif-regular;
+  color: $negro;
+  line-height: 52px;
+
+  @media (max-width: 575.98px) {
+    font-size: 2em;
+  }
+}
+
+@mixin tipografia($font, $index, $weight) {
+  font-family: nth($family, $index);
+  font-weight: #{map-get($font, $weight)};
+}
+
+@mixin display_flex($direction, $justify_content, $align_items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify_content;
+  align-items: $align_items;
+}
+
+@mixin background_image($bg_repeat, $bg_size, $bg_position, $url) {
+  background-image: url($url);
+  background-repeat: $bg_repeat;
+  background-size: $bg_size;
+  background-position: $bg_position;
+}
+
+@mixin etiqueta() {
+  color: $bne_color_2;
+  font-size: 14px;
+  border: 1px solid $bne_color_3;
+  padding: 3px 15px !important;
+  border-radius: 3px;
+  display: inline-block;
+
+}
+
+@mixin titulo_ficha() {
+  margin-bottom: 2em;
+  margin-top: 1em;
+
+  span {
+    font-size: 38px;
+    font-family: $dm-serif;
+    font-weight: $dm-serif-regular;
+    color: #1d1d1d;
+    line-height: 52px;
+  }
+}
+
+@mixin estilos_body {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: $bne_color_2;
+  line-height: 34px;
+  letter-spacing: 0.48px;
+  img{
+    float: none;
+  }
+
+
+  h1 {
+    font-family: $dm-serif;
+    font-weight: $dm-serif-regular;
+    font-size: 38px;
+    color: $negro;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  h2 {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 24px;
+    color: $negro;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  h3 {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 22px;
+    color: $negro;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  h4 {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 20px;
+    color: $negro;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  h5 {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    color: $negro;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  h6 {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    color: $negro;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: $bne_color_2;
+    line-height: 34px;
+    letter-spacing: 0.48px;
+
+    &:first-child {
+      margin-block-start: 0;
+    }
+  }
+
+  li {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: $bne_color_2;
+    line-height: 34px;
+    letter-spacing: 0.48px;
+  }
+
+  a {
+    font-family: "Roboto";
+    font-weight: 400;
+    color: $bne_color_6;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  figure {
+    figcaption {
+      font-size: 14px;
+      line-height: 24px;
+
+      em {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .media--type-imagen.align-center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .media--type-imagen.align-left{
+    margin-right: 20px;
+    @media (max-width: 1200px) {
+      display: block;
+      float: none;
+      }
+  }
+
+  .media--type-imagen.align-right{
+    margin-left: 20px;
+    @media (max-width: 1200px) {
+    display: block;
+    float: none;
+    }
+  }
+}
+
+//TÍTULOS
+
+@mixin h1_style($color, $size) {
+  color: $color;
+  font-size: $size;
+  @include tipografia($Roboto, 3, medium);
+}
+
+@mixin h2_style($color, $size) {
+  color: $color;
+  font-size: $size;
+  @include tipografia($Roboto, 3, medium);
+}
+
+@mixin h3_style($color, $size) {
+  color: $color;
+  font-size: $size;
+  @include tipografia($Roboto, 3, bold);
+}
+
+@mixin h4_style($color, $size) {
+  color: $color;
+  font-size: $size;
+  @include tipografia($Roboto, 3, bold);
+}
+
+@mixin h5_style($color, $size) {
+  color: $color;
+  font-size: $size;
+  @include tipografia($Roboto, 3, medium);
+}
+
+@mixin h6_style($color, $size) {
+  color: $color;
+  font-size: $size;
+  @include tipografia($Roboto, 3, bold);
+}
+
+@mixin underline_view_title($background-color, $height, $width) {
+  content: "";
+  display: block;
+  width: $width;
+  height: $height;
+  margin: 5px 0;
+  background-color: $background-color;
+}
+
+//PARRAFOS
+
+@mixin p_style($color) {
+  color: $color;
+  font-size: $p_font_size;
+  @include tipografia($Roboto, 3, regular);
+}
+
+//ENLACES
+
+@mixin link_style($color) {
+  color: $color;
+  @include tipografia($Roboto, 3, medium);
+  text-decoration: none;
+}
+
+//BOTONES
+
+@mixin button_style_scnd($color, $bg_color, $border_color) {
+  color: $color;
+  font-size: $button2_font_size;
+  background-color: $bg_color;
+  padding: 8px 24px;
+  border: 1px solid $border_color;
+  @include tipografia($Roboto, 3, medium);
+}
+
+@mixin button_style_scnd_hover($color, $bg_color, $border_color) {
+  color: $color;
+  font-size: $button2_font_size;
+  background-color: $bg_color;
+  border-color: $border_color;
+}
+
+@mixin button_icon($height, $width, $m-left, $img, $filter) {
+  content: "";
+  display: block;
+  width: $width;
+  height: $height;
+  margin-left: $m-left;
+  @include background_image(no-repeat, contain, initial, $img);
+  filter: $filter;
+}
+
+//LABEL
+
+@mixin form_label {
+  color: $main_color_2;
+  @include tipografia($Roboto, 3, regular);
+}
+
+//INPUT
+
+@mixin input_style($padding) {
+  border: none;
+  border-bottom: $border_bottom_input;
+  padding: $padding;
+  background-color: $bg_color_form_item;
+}
+
+// RADIO
+
+@mixin radio_style($size, $border-width) {
+  appearance: none;
+  width: $size;
+  height: $size;
+  border-radius: 100%;
+  border: $border-width solid $main_color_5;
+}
+
+@mixin radio_check_style($size, $margin) {
+  content: "";
+  display: block;
+  width: $size;
+  height: $size;
+  border-radius: 100%;
+  margin: $margin auto;
+}
+
+//BOX
+
+@mixin main_box {
+  background-color: $main_color_1;
+  color: $main_font_color_4;
+  border-radius: 3px;
+}
+
+// TABLAS
+
+@mixin table_style {
+  width: $table_width;
+  margin: $table_margin;
+}
+
+@mixin table_thead_th {
+  padding: $table_thead_th_padding;
+  height: $table_thead_th_height;
+  background-color: $main_color_4;
+}
+
+@mixin table_thead_filter {
+  position: relative;
+  @include display_flex(row, space-between, center);
+}
+
+@mixin table_thead_filter_icon {
+  content: "";
+  @include background_image(no-repeat, contain, initial, $filter_icon);
+  display: block;
+  height: $icon_height;
+  width: $icon_width;
+  margin-left: 15px;
+}
+
+// MENÚS
+
+@mixin right_arrow {
+  content: $menu_icon;
+  font-weight: bold;
+  transform: rotateZ(270deg);
+}
+
+@mixin down_arrow {
+  content: $menu_icon;
+  font-weight: bold;
+}
+
+@mixin sf_sub_indicator($size, $top) {
+  width: $size;
+  height: $size;
+  top: $top;
+}
+
+// IMÁGENES
+
+@mixin responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+// GALERÍA
+
+@mixin gallery_img_styles($column_number, $column_width) {
+  display: grid;
+  grid-template-columns: repeat($column_number, $column_width);
+  align-items: center;
+
+  img {
+    @include responsive-img;
+  }
+}
+
+// REGIONS
+
+@mixin grid-column-region($columns, $justify, $align) {
+  display: grid;
+  grid-template-columns: $columns;
+  justify-items: $justify;
+  align-items: $align;
+}
+
+// BASE
+
+@mixin ps-content-margins($breakpoint, $max-width) {
+  @media screen and (min-width: $breakpoint) {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
+
+@mixin ps-content-margins() {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+// ICONOS
+
+@mixin before-icon($size, $left, $icon) {
+  content: "";
+  display: block;
+  @include background-image(no-repeat, contain, initial, $icon);
+  position: absolute;
+  left: $left;
+  width: $size;
+  height: $size;
+}
+
+@mixin after-icon($size, $right, $icon) {
+  content: "";
+  display: block;
+  @include background-image(no-repeat, cover, initial, $icon);
+  position: absolute;
+  right: $right;
+  width: $size;
+  height: $size;
+}
+
+// LAYOUT GRID VIEW
+
+@mixin grid-layout-view($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+@mixin mf-responsive-grid-layout-view($min-width, $columns, $rows) {
+  @media (min-width: $min-width) {
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+  }
+}
+
+@mixin titulo-listado {
+  font-size: 18px;
+  color: $negro;
+  line-height: 24px;
+  font-family: $dm-serif;
+  font-weight: $dm-serif-regular;
+
+  @media (max-width: 767.98px) {
+    font-size: 18px;
+  }
+}
+
+@mixin estilos-formulario {
+  label {
+    color: $bne_color_1;
+    font-size: 14px;
+    @include tipografia($Roboto, 3, medium);
+    margin-bottom: 10px;
+  }
+  .form-type-email {
+    label {
+    }
+    input {
+      height: 60px;
+      border: 0.5px solid $bne_color_3;
+      padding: 0 30px;
+      background-color: $blanco;
+      box-sizing: border-box;
+      width: 100%;
+      display: block;
+      &::placeholder {
+        color: $bne_color_2;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .form-type-textfield {
+    margin-top: 0;
+    label {
+    }
+    input {
+      height: 60px;
+      border: 0.5px solid $bne_color_3;
+      padding: 0 30px;
+      background-color: $blanco;
+      box-sizing: border-box;
+      width: 100%;
+      display: block;
+      color: $bne_color_1;
+      &::placeholder {
+        color: $bne_color_2;
+        font-size: 16px;
+      }
+    }
+  }
+  .form-type-textarea {
+    label {
+      display: none;
+    }
+    .form-textarea-wrapper {
+      textarea {
+        border: 0.5px solid $bne_color_3;
+        padding: 15px 30px;
+        background-color: $blanco;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        color: $bne_color_1;
+        &::placeholder {
+          color: $bne_color_2;
+          font-size: 16px;
+        }
+      }
+    }
+    .description {
+      margin-top: 2em;
+      color: $bne_color_2;
+      font-size: 16px;
+      line-height: 34px;
+      letter-spacing: 0.48;
+      a {
+        color: $bne_color_6;
+        font-size: 16px;
+        line-height: 34px;
+        letter-spacing: 0.48px;
+      }
+    }
+  }
+  .form-type-checkbox {
+    display: flex;
+    margin: 2em 0;
+    input {
+      box-shadow: none;
+    }
+    label {
+      display: none;
+    }
+    .description {
+      color: $bne_color_2;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.42px;
+      margin-left: 1em;
+      p {
+        color: $bne_color_2;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.42px;
+        margin-left: 1em;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        a {
+          color: $bne_color_6;
+        }
+      }
+    }
+  }
+  .form-type-select {
+    margin: 0;
+
+
+    .select2-selection {
+      height: 60px;
+      .select2-selection__rendered{
+        color: $bne_color_2;
+      }
+
+
+      span {
+        height: 60px;
+        color: $bne_color_1;
+
+      }
+    }
+  }
+}
+
+@mixin enlace {
+  color: $bne_color_6;
+  font-size: 16px;
+  line-height: 24px;
+  @include tipografia($Roboto, 3, regular);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin box-hover-effect{
+  box-shadow: 0px 0px 8px $bne_color_3;
+}
+
+@mixin cuadricula-listado{
+  display: grid;
+    grid-template-columns: 1fr;
+    border-left: 0.5px solid $bne_color_3;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+      .views-row:nth-child(-n+2){
+        border-top: 0.5px solid $bne_color_3;
+        border-right: 0.5px solid $bne_color_3;
+        border-bottom: 0.5px solid $bne_color_3;
+      }
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      .views-row:nth-child(-n+3){
+        border-top: 0.5px solid $bne_color_3;
+        border-right: 0.5px solid $bne_color_3;
+        border-bottom: 0.5px solid $bne_color_3;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      grid-template-columns: repeat(4, 1fr);
+      .views-row:nth-child(-n+4){
+        border-top: 0.5px solid $bne_color_3;
+        border-right: 0.5px solid $bne_color_3;
+        border-bottom: 0.5px solid $bne_color_3;
+      }
+
+    }
+    .views-row {
+      border-right: 0.5px solid $bne_color_3;
+        border-bottom: 0.5px solid $bne_color_3;
+    }
+}

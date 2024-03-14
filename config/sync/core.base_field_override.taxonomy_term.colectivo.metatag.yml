@@ -1,0 +1,18 @@
+uuid: 5e43b2ef-476a-4af2-93be-9250b0057c9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.colectivo
+id: taxonomy_term.colectivo.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: colectivo
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

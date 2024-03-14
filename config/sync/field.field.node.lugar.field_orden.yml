@@ -1,0 +1,30 @@
+uuid: aa24cfa4-e326-4b9b-9a93-a6a467b5774e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.lugar
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.lugar.field_orden
+field_name: field_orden
+entity_type: node
+bundle: lugar
+label: Orden
+description: 'Orden ascendente, a menor valor, aparece antes en la página de Horarios y en la de Consulta de salas'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

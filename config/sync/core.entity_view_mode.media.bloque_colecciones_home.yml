@@ -1,0 +1,10 @@
+uuid: 191313f0-096e-443a-b553-298cfebe43e4
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.bloque_colecciones_home
+label: 'Bloque colecciones home'
+targetEntityType: media
+cache: true

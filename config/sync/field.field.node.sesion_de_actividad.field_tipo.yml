@@ -1,0 +1,29 @@
+uuid: b8ff8bf7-2de1-4ec1-b14d-30acbf13cc55
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo
+    - node.type.sesion_de_actividad
+    - taxonomy.vocabulary.tipo_evento
+id: node.sesion_de_actividad.field_tipo
+field_name: field_tipo
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Tipo de actividad'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_evento: tipo_evento
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

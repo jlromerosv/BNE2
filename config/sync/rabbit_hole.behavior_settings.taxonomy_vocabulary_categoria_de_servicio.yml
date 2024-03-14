@@ -1,0 +1,14 @@
+uuid: 69913ba3-e28f-4131-a418-d840b02172e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_servicio
+id: taxonomy_vocabulary_categoria_de_servicio
+entity_type_id: taxonomy_vocabulary
+entity_id: categoria_de_servicio
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

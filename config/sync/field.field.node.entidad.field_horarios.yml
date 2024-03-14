@@ -1,0 +1,29 @@
+uuid: 55c5daee-31c4-4f23-aa02-14162721e3e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horarios
+    - node.type.entidad
+    - node.type.horarios
+id: node.entidad.field_horarios
+field_name: field_horarios
+entity_type: node
+bundle: entidad
+label: Horario
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      horarios: horarios
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

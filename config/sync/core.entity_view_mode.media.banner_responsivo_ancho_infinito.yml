@@ -1,0 +1,10 @@
+uuid: c1738d76-00b7-4171-af76-1e5787d3860d
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.banner_responsivo_ancho_infinito
+label: 'Banner responsivo ancho infinito'
+targetEntityType: media
+cache: true

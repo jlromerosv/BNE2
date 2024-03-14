@@ -1,0 +1,22 @@
+uuid: b72241d9-aead-4d04-bc1c-d25eb45d0c79
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+id: node.pagina_avanzada.sticky
+field_name: sticky
+entity_type: node
+bundle: pagina_avanzada
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

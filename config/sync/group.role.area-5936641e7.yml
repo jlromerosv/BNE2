@@ -1,0 +1,17 @@
+uuid: f333fdcc-5426-4761-b2fb-8a71f3390a1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.administrador_formularios
+id: area-5936641e7
+label: 'Administrador formularios'
+weight: 1
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

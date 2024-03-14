@@ -1,0 +1,5 @@
+name: 'Categories of urban initiative'
+url_alias: categories
+widget:
+  config:
+    default_option_label: Select

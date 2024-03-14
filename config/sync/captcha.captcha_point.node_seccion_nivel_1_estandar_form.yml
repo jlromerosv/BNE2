@@ -1,0 +1,7 @@
+uuid: 80c796d6-fb97-4285-8372-3edc552649ba
+langcode: es
+status: false
+dependencies: {  }
+formId: node_seccion_nivel_1_estandar_form
+captchaType: default
+label: node_seccion_nivel_1_estandar_form

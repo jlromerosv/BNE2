@@ -1,0 +1,14 @@
+uuid: 0e07f011-95d8-4d77-8711-70f69267fe75
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.hito
+id: node_type_hito
+entity_type_id: node_type
+entity_id: hito
+action: page_redirect
+allow_override: 0
+redirect: '[site:url]'
+redirect_code: 301
+redirect_fallback_action: access_denied

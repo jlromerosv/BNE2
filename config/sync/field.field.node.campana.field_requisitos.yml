@@ -1,0 +1,21 @@
+uuid: b837dee7-08dc-4ddb-82a2-f6a71eb5b345
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requisitos
+    - node.type.campana
+  module:
+    - text
+id: node.campana.field_requisitos
+field_name: field_requisitos
+entity_type: node
+bundle: campana
+label: Requisitos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

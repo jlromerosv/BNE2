@@ -1,0 +1,18 @@
+uuid: d893ea4a-dc88-4e54-82c6-774065fd0e85
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_alerta
+id: taxonomy_term.tipo_de_alerta.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_alerta
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

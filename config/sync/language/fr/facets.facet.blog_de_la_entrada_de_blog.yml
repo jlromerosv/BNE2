@@ -1,0 +1,5 @@
+name: 'Il sélectionne le blog'
+url_alias: Blog
+widget:
+  config:
+    reset_text: 'Montrer tout'

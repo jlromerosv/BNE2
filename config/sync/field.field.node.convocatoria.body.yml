@@ -1,0 +1,27 @@
+uuid: 31b29e9e-b717-473b-ad82-66eebb12bf75
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.convocatoria
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.convocatoria.body
+field_name: body
+entity_type: node
+bundle: convocatoria
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

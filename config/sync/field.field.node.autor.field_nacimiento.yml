@@ -1,0 +1,19 @@
+uuid: b78c49ec-3357-4309-b765-0abcceeb8882
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nacimiento
+    - node.type.autor
+id: node.autor.field_nacimiento
+field_name: field_nacimiento
+entity_type: node
+bundle: autor
+label: Nacimiento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

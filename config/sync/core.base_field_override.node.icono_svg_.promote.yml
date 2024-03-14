@@ -1,0 +1,22 @@
+uuid: 9a692479-3afb-474e-9547-a8c999a5af33
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.icono_svg_
+id: node.icono_svg_.promote
+field_name: promote
+entity_type: node
+bundle: icono_svg_
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

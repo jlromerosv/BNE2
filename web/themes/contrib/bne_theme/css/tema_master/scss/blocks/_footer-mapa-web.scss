@@ -1,0 +1,67 @@
+/*
+    ========== MAPA WEB ==========
+
+    Estilos dedicados a la vista del bloque del mapa web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin underline_view_title
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    underline_view_title = Estilo para crear una línea debajo
+    del título
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $blanco = Variable que representa el color blanco
+
+*/
+
+.block-menu.navigation.menu--main {
+    padding: 10px;
+    h2 {
+        color: $blanco;
+        &::after {
+            @include underline_view_title($blanco, 1px, 100%);
+        }
+    }
+
+    .menu {
+        @include display_flex(row, space-between, initial);
+        gap: 15px;
+        .menu-item {
+            &--expanded {
+                &::marker{
+                    content: '';
+                }
+            }
+
+            span {
+                font-size: 18px;
+            }
+
+            .menu {
+                margin-top: 15px;
+                display: block;
+
+                .menu-item {
+                    &:not(:first-child) {
+                        margin-top: 8px;
+                    }
+                    a {
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+uuid: 02073a81-53bb-48bb-aeba-d734a616735a
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type_de_directorio2
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: contenttypededirectorio2
+theme: bne_theme
+region: sidebar_first
+weight: -45
+provider: null
+plugin: 'facet_block:content_type_de_directorio2'
+settings:
+  id: 'facet_block:content_type_de_directorio2'
+  label: 'Tipo de contacto'
+  label_display: visible
+  provider: facets
+  block_id: contenttypededirectorio2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /directorio/28

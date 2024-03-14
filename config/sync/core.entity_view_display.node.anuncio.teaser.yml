@@ -1,0 +1,59 @@
+uuid: 5729a712-8159-4f40-82c3-39c628ec7d24
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.anuncio.body
+    - field.field.node.anuncio.field_archivos
+    - field.field.node.anuncio.field_codigo_referencia
+    - field.field.node.anuncio.field_domain_access
+    - field.field.node.anuncio.field_domain_all_affiliates
+    - field.field.node.anuncio.field_domain_source
+    - field.field.node.anuncio.field_enlace
+    - field.field.node.anuncio.field_entidad
+    - field.field.node.anuncio.field_fecha_inicio
+    - field.field.node.anuncio.field_tipo
+    - node.type.anuncio
+  module:
+    - text
+    - user
+id: node.anuncio.teaser
+targetEntityType: node
+bundle: anuncio
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_archivos:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_codigo_referencia: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_entidad: true
+  field_fecha_inicio: true
+  field_tipo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,12 @@
+uuid: 18c94db4-45d4-405e-839c-966d37e57460
+langcode: es
+status: true
+dependencies: {  }
+id: nota_al_pie
+label: 'Nota al pie'
+image: ''
+description: ''
+html:
+  value: '<div class="nota-al-pie" style="border-width: 1px; border-style: dotted; border-color: red; padding: 1em; height: auto">&nbsp;</div>'
+  format: root_formato_de_texto
+weight: 5

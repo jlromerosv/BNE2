@@ -1,0 +1,18 @@
+uuid: ea0eb4f9-82f4-40b5-a6eb-6027af09c57a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_postal
+id: taxonomy_term.categoria_postal.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: categoria_postal
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

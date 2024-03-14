@@ -1,0 +1,19 @@
+uuid: ccac1d69-dc65-4604-98af-938a2930054b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_informacion_tramite_presen
+field_name: field_informacion_tramite_presen
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

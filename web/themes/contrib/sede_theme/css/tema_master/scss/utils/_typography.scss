@@ -1,0 +1,17 @@
+/*
+    ========== FICHERO DE FUENTES ==========
+
+    Fichero dedicado a los maps de las fuentes en SASS.
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$family:('Open Sans', 'Source Sans Pro', 'Roboto');
+
+$TheSans:(light:300,regular:400,semi-bold:600,bold:700);
+$SourceSans:(light:300,regular:400,semi-bold:600);
+$Roboto:(thin:100,light:300,regular:400,medium:500,bold:700, black:900)

@@ -1,0 +1,20 @@
+uuid: 143f76f8-55c3-41aa-b9e4-895a7f7bbde8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_referencia_bibliografica
+  module:
+    - path
+id: taxonomy_term.tipo_de_referencia_bibliografica.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_referencia_bibliografica
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

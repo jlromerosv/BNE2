@@ -1,0 +1,18 @@
+uuid: b994bae5-1791-4e62-a5e9-5996fb6e8c8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.idioma
+id: taxonomy_term.idioma.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: idioma
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

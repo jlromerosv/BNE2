@@ -1,0 +1,32 @@
+uuid: 7a104bc2-a72e-431c-92e3-50eb4c47ddbe
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Redes sociales'
+type: red_social
+description: "Enlaces e iconos a las redes sociales de las entidades. Se usan en bloques integrados con RRSS como el footer, el header o la información de las entidades.\t\t"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

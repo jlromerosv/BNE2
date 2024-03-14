@@ -1,0 +1,46 @@
+display:
+  block_1:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h2>[view:title]</h2>\r\n"
+            format: html_full
+  block_2:
+    display_options:
+      title: 'Azken berriak'
+      header:
+        area:
+          content:
+            value: "<h2>[view:title]</h2>\r\n"
+            format: html_full
+  block_3:
+    display_options:
+      title: 'Azken berriak'
+      footer:
+        area:
+          content:
+            value: "<p><a href=\"/noticias\">Ver más noticias</a></p>\r\n"
+            format: html_full
+  block_4:
+    display_options:
+      title: 'Azken berriak'
+      footer:
+        area:
+          content:
+            value: "<p><a href=\"/noticias\">Ver más noticias</a></p>\r\n"
+            format: html_full
+  block_5:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h2>[view:title]</h2>\r\n"
+            format: html_full
+  block_6:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h2>[view:title]</h2>\r\n"
+            format: html_full

@@ -1,0 +1,15 @@
+uuid: c0ebc890-0177-453b-aa00-325ffd4553f4
+langcode: es
+status: true
+dependencies: {  }
+name: slider_redes_sociales_home_xs
+label: 'Slider Redes Sociales Home XS'
+effects:
+  5e5eb515-51c7-48bd-87b1-35c9b5a69235:
+    uuid: 5e5eb515-51c7-48bd-87b1-35c9b5a69235
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 576
+      height: 600
+      anchor: center-center

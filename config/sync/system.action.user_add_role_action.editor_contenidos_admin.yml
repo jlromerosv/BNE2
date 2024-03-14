@@ -1,0 +1,14 @@
+uuid: 8957fcfe-8696-4537-9581-b0ea862e365c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_contenidos_admin
+  module:
+    - user
+id: user_add_role_action.editor_contenidos_admin
+label: 'Añade el rol Editor contenidos admin al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor_contenidos_admin

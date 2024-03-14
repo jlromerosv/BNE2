@@ -1,0 +1,33 @@
+uuid: e7905492-0294-4121-8346-6f0ff1551d79
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipos_de_publicaciones
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: tiposdepublicaciones
+theme: bne_theme
+region: sidebar_first
+weight: -54
+provider: null
+plugin: 'facet_block:tipos_de_publicaciones'
+settings:
+  id: 'facet_block:tipos_de_publicaciones'
+  label: 'Tipo de publicación'
+  label_display: visible
+  provider: facets
+  block_id: tiposdepublicaciones
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/3050

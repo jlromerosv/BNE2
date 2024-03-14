@@ -1,0 +1,18 @@
+uuid: 922ea7e9-91c7-41af-b0f2-ad5771f1f1d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.icono_svg_
+id: node.icono_svg_.created
+field_name: created
+entity_type: node
+bundle: icono_svg_
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

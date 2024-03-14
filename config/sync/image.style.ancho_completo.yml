@@ -1,0 +1,15 @@
+uuid: 30f72978-3524-4fcb-8aac-6847727da1e6
+langcode: es
+status: true
+dependencies: {  }
+name: ancho_completo
+label: 'Ancho completo'
+effects:
+  fd32b99b-2087-4def-a8ee-19a91d98ace6:
+    uuid: fd32b99b-2087-4def-a8ee-19a91d98ace6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

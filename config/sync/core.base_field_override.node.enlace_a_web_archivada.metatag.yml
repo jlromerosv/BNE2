@@ -1,0 +1,18 @@
+uuid: cceaaccf-f2db-4507-8389-30530647f1c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+id: node.enlace_a_web_archivada.metatag
+field_name: metatag
+entity_type: node
+bundle: enlace_a_web_archivada
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

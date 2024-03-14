@@ -1,0 +1,20 @@
+uuid: 692c8d91-19b6-4574-9580-b20672b29b0c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad_referencia_
+  module:
+    - path
+id: node.entidad_referencia_.path
+field_name: path
+entity_type: node
+bundle: entidad_referencia_
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

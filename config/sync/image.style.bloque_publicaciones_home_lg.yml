@@ -1,0 +1,15 @@
+uuid: 96f20818-3661-4b9a-aac5-f3bfbae73fcc
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_publicaciones_home_lg
+label: 'Bloque publicaciones home LG'
+effects:
+  69ec8796-759b-479f-8de7-55fd62cb7d19:
+    uuid: 69ec8796-759b-479f-8de7-55fd62cb7d19
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 495
+      height: 655
+      anchor: center-center

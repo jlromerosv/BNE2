@@ -1,0 +1,28 @@
+uuid: de0947ae-1bdc-4082-9a48-71779cce9311
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_svg_
+    - node.type.contenido_generico
+    - node.type.imagen_svg_
+id: node.contenido_generico.field_imagen_svg_
+field_name: field_imagen_svg_
+entity_type: node
+bundle: contenido_generico
+label: 'Imagen (SVG)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      imagen_svg_: imagen_svg_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

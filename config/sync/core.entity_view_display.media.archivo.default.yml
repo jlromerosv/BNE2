@@ -1,0 +1,114 @@
+uuid: 279b05fb-b9d3-4ef4-86c9-51601a0b9c76
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.archivo.domain_access
+    - field.field.media.archivo.feeds_item
+    - field.field.media.archivo.field_area_tematica
+    - field.field.media.archivo.field_area_transparencia
+    - field.field.media.archivo.field_descripcion_con_formato
+    - field.field.media.archivo.field_etiquetas_busqueda
+    - field.field.media.archivo.field_id_externo
+    - field.field.media.archivo.field_media_file
+    - field.field.media.archivo.field_tipo
+    - field.field.media.archivo.field_urlanterior
+    - image.style.escalar_a_ancho_180px
+    - media.type.archivo
+  module:
+    - file
+    - svg_image
+    - text
+id: media.archivo.default
+targetEntityType: media
+bundle: archivo
+mode: default
+content:
+  created:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_area_transparencia:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_descripcion_con_formato:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_etiquetas_busqueda:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_id_externo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_media_file:
+    type: file_url_plain
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_tipo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: escalar_a_ancho_180px
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  domain_access: true
+  feeds_item: true
+  field_area_tematica: true
+  field_urlanterior: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true
+  uuid: true

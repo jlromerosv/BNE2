@@ -1,0 +1,38 @@
+uuid: 833decfb-7fec-4d7a-914d-6e837996ea68
+langcode: es
+status: true
+dependencies: {  }
+id: ldap_bne
+label: 'LDAP BNE'
+type: ad
+address: bns38.bne.local
+port: 389
+timeout: 10
+encryption: none
+weight: null
+bind_method: service_account
+binddn: adminaplicaciones
+bindpw: adminaplicaciones
+basedn:
+  - 'ou=migrados,dc=BNE,dc=local'
+user_attr: samaccountname
+account_name_attr: samaccountname
+mail_attr: mail
+mail_template: ''
+picture_attr: ''
+unique_persistent_attr: ''
+unique_persistent_attr_binary: false
+user_dn_expression: ''
+testing_drupal_username: ''
+testing_drupal_user_dn: ''
+grp_unused: true
+grp_object_cat: ''
+grp_nested: false
+grp_user_memb_attr_exists: false
+grp_user_memb_attr: ''
+grp_memb_attr: ''
+grp_memb_attr_match_user_attr: ''
+grp_derive_from_dn: false
+grp_derive_from_dn_attr: ''
+grp_test_grp_dn: ''
+grp_test_grp_dn_writeable: ''

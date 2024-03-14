@@ -1,0 +1,18 @@
+uuid: 73e764b5-7088-4b96-aca4-c9059b6c35ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.imagen_svg_
+target_entity_type_id: node
+target_bundle: imagen_svg_
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,7 @@
+uuid: 156e2407-817b-48b0-af08-b301f5c48526
+langcode: es
+status: false
+dependencies: {  }
+formId: node_iniciativa_form
+captchaType: default
+label: node_iniciativa_form

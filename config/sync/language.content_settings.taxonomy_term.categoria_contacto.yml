@@ -1,0 +1,18 @@
+uuid: 8f8884c8-c142-4b54-aa26-0d14f6cdf728
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_contacto
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.categoria_contacto
+target_entity_type_id: taxonomy_term
+target_bundle: categoria_contacto
+default_langcode: site_default
+language_alterable: false

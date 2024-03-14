@@ -1,0 +1,14 @@
+uuid: 34e495b8-29fb-4a25-bb4e-660feb7ca8d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.desarrollo_bne_pulsia_es
+  module:
+    - domain_access
+id: domain_access_add_action.desarrollo_bne_pulsia_es
+label: 'Add selected content to the BNE domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: desarrollo_bne_pulsia_es

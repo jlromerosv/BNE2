@@ -1,0 +1,33 @@
+uuid: 635a4634-0c13-4eb9-a5bd-fc369a34d65f
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.colectivo_del_evento
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_colectivodelevento
+theme: fundacion_theme
+region: sidebar_first
+weight: -22
+provider: null
+plugin: 'facet_block:colectivo_del_evento'
+settings:
+  id: 'facet_block:colectivo_del_evento'
+  label: 'Colectivo del evento'
+  label_display: '0'
+  provider: facets
+  block_id: colectivodelevento
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/21961

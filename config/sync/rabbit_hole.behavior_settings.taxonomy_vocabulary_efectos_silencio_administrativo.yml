@@ -1,0 +1,14 @@
+uuid: dcad1ce1-eade-48bb-824d-2acda58e4304
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.efectos_silencio_administrativo
+id: taxonomy_vocabulary_efectos_silencio_administrativo
+entity_type_id: taxonomy_vocabulary
+entity_id: efectos_silencio_administrativo
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

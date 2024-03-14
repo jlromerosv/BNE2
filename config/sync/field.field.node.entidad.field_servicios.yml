@@ -1,0 +1,28 @@
+uuid: c98c5ebb-51a2-435b-97a4-6119d3d5fad8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servicios
+    - node.type.entidad
+    - node.type.servicio
+id: node.entidad.field_servicios
+field_name: field_servicios
+entity_type: node
+bundle: entidad
+label: Servicios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      servicio: servicio
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: f99ce49d-56b9-42b3-9b33-447b36d49b0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_dossier_boletin
+  module:
+    - path
+id: taxonomy_term.tipo_de_dossier_boletin.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_dossier_boletin
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

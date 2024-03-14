@@ -1,0 +1,18 @@
+uuid: 777d0923-0133-43c2-aeeb-3b224ee47ae3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_imagen
+id: taxonomy_term.categoria_de_imagen.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: categoria_de_imagen
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: 1df4e301-a99a-4cbd-99b4-e1e93c17a25e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.campana
+id: node.campana.uid
+field_name: uid
+entity_type: node
+bundle: campana
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

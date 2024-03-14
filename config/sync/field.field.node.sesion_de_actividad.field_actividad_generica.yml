@@ -1,0 +1,30 @@
+uuid: d1466768-6104-44c8-8835-f1fd6087b231
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actividad_generica
+    - node.type.contenidos_formativos
+    - node.type.evento
+    - node.type.sesion_de_actividad
+id: node.sesion_de_actividad.field_actividad_generica
+field_name: field_actividad_generica
+entity_type: node
+bundle: sesion_de_actividad
+label: Evento/Actividad
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contenidos_formativos: contenidos_formativos
+      evento: evento
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: contenidos_formativos
+field_type: entity_reference

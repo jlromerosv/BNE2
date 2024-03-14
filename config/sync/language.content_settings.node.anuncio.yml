@@ -1,0 +1,18 @@
+uuid: c269622a-105d-4488-a0fd-870392a26854
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.anuncio
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.anuncio
+target_entity_type_id: node
+target_bundle: anuncio
+default_langcode: site_default
+language_alterable: false

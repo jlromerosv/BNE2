@@ -1,0 +1,20 @@
+uuid: 920dfa90-6769-48c6-8cb7-c70bea94f809
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autor
+  module:
+    - path
+id: node.autor.path
+field_name: path
+entity_type: node
+bundle: autor
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

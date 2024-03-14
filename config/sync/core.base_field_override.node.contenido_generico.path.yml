@@ -1,0 +1,20 @@
+uuid: 86d53cd0-01b2-4322-a864-104689301f30
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_generico
+  module:
+    - path
+id: node.contenido_generico.path
+field_name: path
+entity_type: node
+bundle: contenido_generico
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

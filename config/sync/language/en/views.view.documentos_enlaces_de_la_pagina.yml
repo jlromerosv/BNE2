@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      title: 'Documents / Links of interest'
+      header:
+        area:
+          content:
+            value: "<div>[view:title]</div>\r\n"
+            format: html_full

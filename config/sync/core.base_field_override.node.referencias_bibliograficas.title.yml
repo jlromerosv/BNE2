@@ -1,0 +1,18 @@
+uuid: f6c7ad9d-c80c-4e9e-9773-2a1c262fb375
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.referencias_bibliograficas
+id: node.referencias_bibliograficas.title
+field_name: title
+entity_type: node
+bundle: referencias_bibliograficas
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

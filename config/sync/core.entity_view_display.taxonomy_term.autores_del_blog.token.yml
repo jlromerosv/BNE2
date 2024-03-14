@@ -1,0 +1,35 @@
+uuid: 6edb9865-5c7b-40e7-af0b-8ca6a7803868
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.token
+    - field.field.taxonomy_term.autores_del_blog.feeds_item
+    - field.field.taxonomy_term.autores_del_blog.field_id_externo_largo
+    - taxonomy.vocabulary.autores_del_blog
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.autores_del_blog.token
+targetEntityType: taxonomy_term
+bundle: autores_del_blog
+mode: token
+content:
+  description:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_id_externo_largo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

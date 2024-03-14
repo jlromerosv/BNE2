@@ -1,0 +1,20 @@
+uuid: c4c85b0d-ffa8-45ad-be3f-cb8249b47907
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero
+  module:
+    - path
+id: taxonomy_term.genero.path
+field_name: path
+entity_type: taxonomy_term
+bundle: genero
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

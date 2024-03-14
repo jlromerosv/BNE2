@@ -1,0 +1,28 @@
+uuid: e02b9c6a-c85f-4a3f-a1cd-4534dc7e774c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - media.type.imagen
+    - node.type.publicacion
+id: node.publicacion.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: publicacion
+label: Imágenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

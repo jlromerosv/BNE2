@@ -1,0 +1,98 @@
+.ps-path-directorio-de-contacto {
+  #block-fundacion-theme-contenidoprincipaldelapagina {
+    padding: 0em 0 0 1em !important;
+    @media (max-width: 992px) {
+      padding: 0em !important;
+    }
+    h1 {
+      display: none;
+    }
+    article {
+      .node__content {
+      }
+    }
+  }
+}
+
+.ps-directorio {
+  margin-top: 1.9em;
+  .view-filters {
+    padding: 0 50px;
+    // margin-top: 2em;
+    min-height: 126px;
+    @media (max-width: 650px) {
+      min-height: 220px;
+    }
+    @media (max-width: 991.98px) {
+      padding: 0 15px;
+    }
+    .form--inline {
+      @media (max-width: 650px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+      }
+    }
+  }
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .views-row {
+      border: 0.5px solid $bne_color_3;
+      background: $blanco;
+      padding: 30px;
+      cursor: pointer;
+      article {
+        h2 {
+          a {
+            font-size: 24px;
+            color: $negro;
+            font-family: $dm-serif;
+            font-weight: $dm-serif-regular;
+            line-height: 36px;
+          }
+          &::after {
+            display: none;
+          }
+        }
+        .node__content {
+          .layout {
+            .layout__region {
+              .block-field-blocknodelugartitle, .block-field-blocknodeserviciotitle, .block-field-blocknodeentidadtitle {
+                font-size: 24px;
+                font-family: "DM Serif Text", serif;
+                font-weight: 400;
+                color: $negro;
+                line-height: 30px;
+                margin-bottom: 0.5em;
+              }
+              .block {
+                margin-bottom: 0.5em;
+                .field--name-field-telefonos {
+                  font-size: 16px;
+                  color: $bne_color_2;
+                  line-height: 24px;
+                  letter-spacing: 0.48px;
+                }
+              }
+              .block {
+                .field--name-field-email {
+                  font-size: 16px;
+                  color: $bne_color_2;
+                  line-height: 24px;
+                  letter-spacing: 0.48px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

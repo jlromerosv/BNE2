@@ -1,0 +1,14 @@
+uuid: 2788be17-a30e-40d3-ab89-dc08e322cda3
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.blog_cartografia
+  module:
+    - user
+id: user_remove_role_action.blog_cartografia
+label: 'Elimina el rol Blog Cartografía al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: blog_cartografia

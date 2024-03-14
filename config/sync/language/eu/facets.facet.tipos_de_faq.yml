@@ -1,0 +1,5 @@
+name: FAQ-motak
+url_alias: '_ faq _'
+widget:
+  config:
+    reset_text: 'Erakutsi dena'

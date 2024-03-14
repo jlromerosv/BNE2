@@ -1,0 +1,230 @@
+uuid: 0ab783f0-85c1-4714-a81c-86c861976713
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.noticia.created
+    - core.base_field_override.node.noticia.title
+    - core.entity_view_mode.node.minificha_con_imagen
+    - field.field.node.noticia.body
+    - field.field.node.noticia.feeds_item
+    - field.field.node.noticia.field_alias_tipo_contenido
+    - field.field.node.noticia.field_archivos
+    - field.field.node.noticia.field_area_tematica
+    - field.field.node.noticia.field_audios
+    - field.field.node.noticia.field_categorias
+    - field.field.node.noticia.field_clasificacion_contenidos
+    - field.field.node.noticia.field_colectivo
+    - field.field.node.noticia.field_contenidos_relacionados
+    - field.field.node.noticia.field_contenidos_vinculados
+    - field.field.node.noticia.field_descripcion_corta
+    - field.field.node.noticia.field_domain_access
+    - field.field.node.noticia.field_domain_all_affiliates
+    - field.field.node.noticia.field_domain_source
+    - field.field.node.noticia.field_enlaces
+    - field.field.node.noticia.field_etiquetas_busqueda
+    - field.field.node.noticia.field_fecha_actualizacion_visibl
+    - field.field.node.noticia.field_filtros
+    - field.field.node.noticia.field_galeria_de_imagenes
+    - field.field.node.noticia.field_id_externo
+    - field.field.node.noticia.field_iframe
+    - field.field.node.noticia.field_imagen_cabecera
+    - field.field.node.noticia.field_imagen_destacada
+    - field.field.node.noticia.field_imagenes
+    - field.field.node.noticia.field_meta_tags
+    - field.field.node.noticia.field_no_mostrar_inverso
+    - field.field.node.noticia.field_subtitulo
+    - field.field.node.noticia.field_urlanterior
+    - field.field.node.noticia.field_videos
+    - field.field.node.noticia.field_yoast_seo
+    - node.type.noticia
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          fecfbd88-462c-487c-8f17-d5a9ad13e319:
+            uuid: fecfbd88-462c-487c-8f17-d5a9ad13e319
+            region: content
+            configuration:
+              id: 'field_block:node:noticia:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: minificha_destacados_responsivo
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          83f2f6a3-fedd-4e48-bb5f-d3b498a4df79:
+            uuid: 83f2f6a3-fedd-4e48-bb5f-d3b498a4df79
+            region: first
+            configuration:
+              id: 'field_block:node:noticia:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          3da005de-aec3-4d86-94fa-1f471d3c89ea:
+            uuid: 3da005de-aec3-4d86-94fa-1f471d3c89ea
+            region: first
+            configuration:
+              id: 'field_block:node:noticia:body'
+              label: Contenido
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 200
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          6a6244d5-cf05-4478-83d1-60354111144c:
+            uuid: 6a6244d5-cf05-4478-83d1-60354111144c
+            region: first
+            configuration:
+              id: 'field_block:node:noticia:created'
+              label: Fecha
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: hidden
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 0
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+          09096925-e189-402b-a5f6-1f7695ab8952:
+            uuid: 09096925-e189-402b-a5f6-1f7695ab8952
+            region: second
+            configuration:
+              id: 'extra_field_block:node:noticia:links'
+              label: Enlaces
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.noticia.minificha_con_imagen
+targetEntityType: node
+bundle: noticia
+mode: minificha_con_imagen
+content:
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_subtitulo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_tematica: true
+  field_audios: true
+  field_categorias: true
+  field_clasificacion_contenidos: true
+  field_colectivo: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_descripcion_corta: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_etiquetas_busqueda: true
+  field_fecha_actualizacion_visibl: true
+  field_filtros: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_cabecera: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_urlanterior: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

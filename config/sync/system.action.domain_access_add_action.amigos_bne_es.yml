@@ -1,0 +1,14 @@
+uuid: 21a46699-2c08-4889-aa1f-247260a6fb47
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.amigos_bne_es
+  module:
+    - domain_access
+id: domain_access_add_action.amigos_bne_es
+label: 'Add selected content to the Fundación de Amigos de la BNE domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: amigos_bne_es

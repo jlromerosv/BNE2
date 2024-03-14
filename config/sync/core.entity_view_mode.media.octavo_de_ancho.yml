@@ -1,0 +1,10 @@
+uuid: 74ac3514-2d52-408a-bae6-6aa5c9ef4c02
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.octavo_de_ancho
+label: 'Octavo de ancho'
+targetEntityType: media
+cache: true

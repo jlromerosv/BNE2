@@ -1,0 +1,14 @@
+uuid: ffccb62f-91db-4a39-a487-e330f8dabf5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_fabne
+  module:
+    - user
+id: user_remove_role_action.editor_fabne
+label: 'Elimina el rol Editor FABNE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor_fabne

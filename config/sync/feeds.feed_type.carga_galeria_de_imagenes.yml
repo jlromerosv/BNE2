@@ -1,0 +1,173 @@
+uuid: dd6f4b66-ae64-473e-8916-f6e3b4fd9630
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.galeria_de_imagenes.created
+    - core.base_field_override.node.galeria_de_imagenes.path
+    - core.base_field_override.node.galeria_de_imagenes.title
+    - field.field.node.galeria_de_imagenes.body
+    - field.field.node.galeria_de_imagenes.field_domain_access
+    - field.field.node.galeria_de_imagenes.field_id_externo
+    - field.field.node.galeria_de_imagenes.field_imagen_destacada
+    - field.field.node.galeria_de_imagenes.field_imagenes
+    - field.field.node.galeria_de_imagenes.field_tipos
+    - node.type.galeria_de_imagenes
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      2236a5b8-e23e-4b2a-aef4-2b16190aa12b:
+        separator: '}'
+        limit: null
+        uuid: 2236a5b8-e23e-4b2a-aef4-2b16190aa12b
+        plugin: explode
+        source: rutaimagen
+        weight: 0
+        label: Explode
+label: 'Carga Galería de Imagenes'
+id: carga_galeria_de_imagenes
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: galeria_de_imagenes
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  alias:
+    value: Alias
+    label: Alias
+    machine_name: alias
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  rutaimagen:
+    value: RutaImagen
+    label: RutaImagen
+    machine_name: rutaimagen
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  tipo:
+    value: Tipo
+    label: Tipo
+    machine_name: tipo
+    type: csv
+  imagendestacadagaleria:
+    value: ImagenDestacadaGaleria
+    label: ImagenDestacadaGaleria
+    machine_name: imagendestacadagaleria
+    type: csv
+mappings:
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: path
+    map:
+      alias: alias
+      pathauto: ''
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_imagenes
+    map:
+      target_id: rutaimagen
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_tipos
+    map:
+      target_id: tipo
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_id_externo
+    map:
+      value: alias
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_imagen_destacada
+    map:
+      target_id: imagendestacadagaleria
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0

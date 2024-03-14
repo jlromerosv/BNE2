@@ -1,0 +1,33 @@
+uuid: 94063ec1-e18b-473a-a457-8280e1302827
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:html:41d3e5ce-f5d2-4f08-993c-df3da1e00982'
+  module:
+    - block_content
+    - node
+  theme:
+    - fundacion_theme
+id: fundacion_theme_bloqueaccesibilidad
+theme: fundacion_theme
+region: content
+weight: -19
+provider: null
+plugin: 'block_content:41d3e5ce-f5d2-4f08-993c-df3da1e00982'
+settings:
+  id: 'block_content:41d3e5ce-f5d2-4f08-993c-df3da1e00982'
+  label: 'Bloque accesibilidad'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      noticia: noticia

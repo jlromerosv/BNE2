@@ -1,0 +1,144 @@
+uuid: bd9eead4-37b4-4283-a107-f15433c1a716
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.galeria_de_imagenes.body
+    - field.field.node.galeria_de_imagenes.feeds_item
+    - field.field.node.galeria_de_imagenes.field_alias_tipo_contenido
+    - field.field.node.galeria_de_imagenes.field_archivos
+    - field.field.node.galeria_de_imagenes.field_area_tematica
+    - field.field.node.galeria_de_imagenes.field_codigo_referencia
+    - field.field.node.galeria_de_imagenes.field_colectivo
+    - field.field.node.galeria_de_imagenes.field_contenido_generico
+    - field.field.node.galeria_de_imagenes.field_contenidos_relacionados
+    - field.field.node.galeria_de_imagenes.field_domain_access
+    - field.field.node.galeria_de_imagenes.field_domain_all_affiliates
+    - field.field.node.galeria_de_imagenes.field_domain_source
+    - field.field.node.galeria_de_imagenes.field_enlace
+    - field.field.node.galeria_de_imagenes.field_etiquetas_busqueda
+    - field.field.node.galeria_de_imagenes.field_fecha_galeria
+    - field.field.node.galeria_de_imagenes.field_id_externo
+    - field.field.node.galeria_de_imagenes.field_imagen_destacada
+    - field.field.node.galeria_de_imagenes.field_imagenes
+    - field.field.node.galeria_de_imagenes.field_meta_tags
+    - field.field.node.galeria_de_imagenes.field_tipos
+    - field.field.node.galeria_de_imagenes.field_yoast_seo
+    - node.type.galeria_de_imagenes
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.galeria_de_imagenes.default
+targetEntityType: node
+bundle: galeria_de_imagenes
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_alias_tipo_contenido:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_archivos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_codigo_referencia:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_contenido_generico:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_contenidos_relacionados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_enlace:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_etiquetas_busqueda:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fecha_galeria:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_id_externo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  feeds_item: true
+  field_area_tematica: true
+  field_colectivo: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_tipos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

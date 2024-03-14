@@ -1,0 +1,7 @@
+uuid: 92f4da9d-be7d-434f-b139-5fb950593d61
+langcode: es
+status: false
+dependencies: {  }
+formId: node_pagina_personalizada_form
+captchaType: default
+label: node_pagina_personalizada_form

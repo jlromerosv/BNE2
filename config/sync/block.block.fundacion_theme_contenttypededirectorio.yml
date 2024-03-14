@@ -1,0 +1,29 @@
+uuid: d4b3aff8-fae9-4757-907c-cbf1e9f50cef
+langcode: es
+status: false
+dependencies:
+  config:
+    - facets.facet.content_type_de_directorio
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_contenttypededirectorio
+theme: fundacion_theme
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:content_type_de_directorio'
+settings:
+  id: 'facet_block:content_type_de_directorio'
+  label: 'Content type de directorio'
+  label_display: '0'
+  provider: facets
+  block_id: contenttypededirectorio
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/directorio\r\n"

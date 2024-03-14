@@ -1,0 +1,18 @@
+uuid: ff9c1ea5-b7c4-4f37-97d9-03a208ef3e07
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.mx1---bne
+target_entity_type_id: menu_link_content
+target_bundle: mx1---bne
+default_langcode: site_default
+language_alterable: true

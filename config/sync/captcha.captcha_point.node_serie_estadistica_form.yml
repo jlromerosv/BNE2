@@ -1,0 +1,7 @@
+uuid: 7f73133a-c2be-452e-96cb-333b7ebda457
+langcode: es
+status: false
+dependencies: {  }
+formId: node_serie_estadistica_form
+captchaType: default
+label: node_serie_estadistica_form

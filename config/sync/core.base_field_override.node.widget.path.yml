@@ -1,0 +1,20 @@
+uuid: fb5329c9-d525-449c-9e7c-89f413884279
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.widget
+  module:
+    - path
+id: node.widget.path
+field_name: path
+entity_type: node
+bundle: widget
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

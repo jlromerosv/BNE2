@@ -1,0 +1,27 @@
+/*
+    ============= MULTIMEDIA ==============
+
+    Estilos dedicados a las imágenes e iconos svg de la we.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    responsive-img = Convierte una imagen en responsive
+
+*/
+
+.ps-imagen-destacada img{
+    @include responsive-img;
+}
+
+.img-responsive {
+    @include responsive-img;
+}
+
+.node--type-icono-svg-, .node--type-imagen-svg- {
+    h2 {
+        display: none;
+    }
+}

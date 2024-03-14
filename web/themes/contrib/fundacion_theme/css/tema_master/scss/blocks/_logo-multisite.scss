@@ -1,0 +1,29 @@
+/*
+    ========== LOGO MULTISITE ==========
+
+    Estilos dedicados a la vista del logo multisite.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+
+.ps-logo-multisite {
+    .field-content  {
+        a {
+            @include display_flex(row, initial, center);
+            gap: 10px;
+        }
+    }
+}

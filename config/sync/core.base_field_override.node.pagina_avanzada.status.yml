@@ -1,0 +1,22 @@
+uuid: bb69e1e2-cc22-4bf1-b2c6-9cc08e5bd9d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+id: node.pagina_avanzada.status
+field_name: status
+entity_type: node
+bundle: pagina_avanzada
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

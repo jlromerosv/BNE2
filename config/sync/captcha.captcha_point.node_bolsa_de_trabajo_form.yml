@@ -1,0 +1,7 @@
+uuid: b8417861-139b-4953-a10b-8c2f9a2280a6
+langcode: es
+status: false
+dependencies: {  }
+formId: node_bolsa_de_trabajo_form
+captchaType: default
+label: node_bolsa_de_trabajo_form

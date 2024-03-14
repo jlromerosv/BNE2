@@ -1,0 +1,14 @@
+uuid: 21c7c4a6-a03c-49c9-865d-72543cfb06be
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_biblioteconomia
+  module:
+    - user
+id: user_remove_role_action.editor_biblioteconomia
+label: 'Elimina el rol Editor biblioteconomía al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor_biblioteconomia

@@ -1,0 +1,22 @@
+uuid: 5a848873-e63d-441c-bb4f-d817ac829e8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+id: taxonomy_term.etiquetas_de_busqueda.status
+field_name: status
+entity_type: taxonomy_term
+bundle: etiquetas_de_busqueda
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

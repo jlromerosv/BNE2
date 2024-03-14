@@ -1,0 +1,18 @@
+uuid: 570b0ecf-a7b8-4b97-a7da-3bc7ae2ec7fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero
+id: taxonomy_term.genero.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: genero
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

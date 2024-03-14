@@ -1,0 +1,31 @@
+uuid: 7641cf36-9da6-47ef-8f5b-7c5778224481
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenido_generico
+    - node.type.contenido_generico
+    - node.type.evento
+    - node.type.pagina_personalizada
+id: node.pagina_personalizada.field_contenido_generico
+field_name: field_contenido_generico
+entity_type: node
+bundle: pagina_personalizada
+label: 'Enlaces Destacados'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contenido_generico: contenido_generico
+      evento: evento
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: contenido_generico
+field_type: entity_reference

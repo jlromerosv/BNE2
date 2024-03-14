@@ -1,0 +1,26 @@
+uuid: b6caf6df-ce86-45ac-9e74-8fd10d18e26a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informacion_adicional
+    - node.type.lugar
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.lugar.field_informacion_adicional
+field_name: field_informacion_adicional
+entity_type: node
+bundle: lugar
+label: 'Información adicional'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,24 @@
+uuid: 724ab0b7-ad31-4bdc-8025-4176f1c89c57
+langcode: es
+status: true
+dependencies:
+  module:
+    - domain
+    - field_permissions
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: taxonomy_term.domain_access
+field_name: domain_access
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: domain
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: true
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 4491f208-731d-4394-9a2c-8c3229cec967
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.entidad
+  module:
+    - iframe
+id: node.entidad.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: entidad
+label: Iframes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '0'
+  tokensupport: null
+  width: null
+  height: null
+field_type: iframe

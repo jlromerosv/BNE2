@@ -1,0 +1,22 @@
+uuid: a2dd0f1c-5c53-488e-94bb-8e45bdf68760
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo
+id: media.archivo.status
+field_name: status
+entity_type: media
+bundle: archivo
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 2f16c3d6-e0d0-4100-860c-2b62b3d7a93f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_personal
+  module:
+    - text
+id: taxonomy_term.tipo_de_personal.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_personal
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

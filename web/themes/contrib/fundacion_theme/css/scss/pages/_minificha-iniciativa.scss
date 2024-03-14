@@ -1,0 +1,35 @@
+.node--type-iniciativa.node--promoted.node--view-mode-minificha-con-imagen{
+    border: solid 0.5px #D3D3D3;
+    max-width: 300px;
+    margin:0px; 
+    .field.field--name-field-categorias.field--type-entity-reference.field--label-hidden.field__items{//CATEGORÍA
+        .field__item{
+            padding:20px 20px 10px 20px !important; 
+        }
+        a{
+            color: #606060;  
+            border: 1px solid #D3D3D3;
+            border-radius: 5px;
+            padding: 5px 15px;  
+            font-size: 14px;
+            @include tipografia($Roboto,2,regular);  
+        }
+    }
+    .block.block-layout-builder.block-field-blocknodeiniciativatitle{//TÍTULO
+        padding:0px 20px 20px 20px;
+        a{
+            @include tipografia($Roboto,2,regular);
+            font-size: 24px;
+            color: #1D1D1D;
+            font-weight: 600;
+        }
+    }
+    .block.block-layout-builder.block-field-blocknodeiniciativabody{//DESCRIPCIÓN
+        padding:0px 20px 25px 20px;
+        p{
+           color: #606060; 
+           @include tipografia($Roboto,2,regular);
+           font-size: 14px;
+        }
+    }   
+}

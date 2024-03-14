@@ -1,0 +1,29 @@
+uuid: 3d7dc4d6-ee69-4d33-bf23-d166faba1d2c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_generos
+    - node.type.obra
+    - taxonomy.vocabulary.genero
+id: node.obra.field_generos
+field_name: field_generos
+entity_type: node
+bundle: obra
+label: Género
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      genero: genero
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

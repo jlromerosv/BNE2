@@ -1,0 +1,18 @@
+uuid: 6fb838fd-674c-430b-bdfb-2c3981c474d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sesion_de_actividad
+id: node.sesion_de_actividad.changed
+field_name: changed
+entity_type: node
+bundle: sesion_de_actividad
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

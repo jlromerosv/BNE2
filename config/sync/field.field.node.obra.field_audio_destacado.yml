@@ -1,0 +1,28 @@
+uuid: 728f2405-5655-4e3c-9844-4a5e3e2ddcf1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio_destacado
+    - media.type.archivo_de_audio
+    - node.type.obra
+id: node.obra.field_audio_destacado
+field_name: field_audio_destacado
+entity_type: node
+bundle: obra
+label: 'Audio destacado'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo_de_audio: archivo_de_audio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

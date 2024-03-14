@@ -1,0 +1,8 @@
+uuid: 8e7400db-61f1-4ea9-aa2d-697444dfbdf0
+langcode: es
+status: true
+dependencies: {  }
+id: aNkRiCzjfJQdg8nBocBcXhm1bm6WLTXsKRTh-yDHMc8
+label: 'https://www.bne.es/ca'
+context:
+  language: ca

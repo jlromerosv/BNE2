@@ -1,0 +1,18 @@
+uuid: a5370a4b-fd73-46fc-9558-de46d6289b87
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---sede-electronica-bne
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.mx1---sede-electronica-bne
+target_entity_type_id: menu_link_content
+target_bundle: mx1---sede-electronica-bne
+default_langcode: site_default
+language_alterable: true

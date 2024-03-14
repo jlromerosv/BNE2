@@ -1,0 +1,14 @@
+uuid: 0bcad91d-bc99-4445-9cec-11aa713e1e72
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.evento
+id: node_type_evento
+entity_type_id: node_type
+entity_id: evento
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

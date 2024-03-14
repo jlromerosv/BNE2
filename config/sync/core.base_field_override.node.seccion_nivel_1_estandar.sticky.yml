@@ -1,0 +1,22 @@
+uuid: 7be6b549-82aa-4159-ba89-6b198ae3841d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+id: node.seccion_nivel_1_estandar.sticky
+field_name: sticky
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

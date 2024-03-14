@@ -1,0 +1,22 @@
+uuid: 1510844b-506a-42f2-9b3d-e6736a8e04e6
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sede_theme
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: sede_theme_messages
+theme: sede_theme
+region: header_superior
+weight: -13
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

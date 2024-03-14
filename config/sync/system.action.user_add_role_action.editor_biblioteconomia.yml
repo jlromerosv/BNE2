@@ -1,0 +1,14 @@
+uuid: 96c7ca81-c19c-4202-b05f-0d83ed85587b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_biblioteconomia
+  module:
+    - user
+id: user_add_role_action.editor_biblioteconomia
+label: 'Añade el rol Editor biblioteconomía al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor_biblioteconomia

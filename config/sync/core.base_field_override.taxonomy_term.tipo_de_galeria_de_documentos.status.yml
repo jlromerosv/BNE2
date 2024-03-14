@@ -1,0 +1,22 @@
+uuid: 4f7a0d9f-61b0-458f-83f8-f2f6f3ce9a10
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_galeria_de_documentos
+id: taxonomy_term.tipo_de_galeria_de_documentos.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_galeria_de_documentos
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

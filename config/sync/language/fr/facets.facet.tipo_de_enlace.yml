@@ -1,0 +1,5 @@
+name: 'Type de raccorde'
+url_alias: Type_de_raccorde
+widget:
+  config:
+    reset_text: 'Montrer tout'

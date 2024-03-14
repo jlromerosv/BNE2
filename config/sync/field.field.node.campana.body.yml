@@ -1,0 +1,23 @@
+uuid: c4e8c4e6-f086-419b-82e1-ae893148a5f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.campana
+  module:
+    - text
+id: node.campana.body
+field_name: body
+entity_type: node
+bundle: campana
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

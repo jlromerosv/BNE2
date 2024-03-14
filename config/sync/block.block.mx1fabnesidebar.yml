@@ -1,0 +1,46 @@
+uuid: 165f65ad-399e-4c91-b423-a04fc122b0ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---fabne---sidebar
+  module:
+    - block_class
+    - node
+    - system
+  theme:
+    - fundacion_theme
+third_party_settings:
+  block_class:
+    classes: menu-sidebar
+id: mx1fabnesidebar
+theme: fundacion_theme
+region: sidebar_first
+weight: -31
+provider: null
+plugin: 'system_menu_block:mx1---fabne---sidebar'
+settings:
+  id: 'system_menu_block:mx1---fabne---sidebar'
+  label: 'MX1 - FABNE - Sidebar'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: true
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      pagina_basica: pagina_basica
+      pagina_personalizada: pagina_personalizada
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/26820\r\n/memorias-cuentas-anuales\r\n/galeria-videos\r\n/la-fundacion\r\n/la-fundacion/*"

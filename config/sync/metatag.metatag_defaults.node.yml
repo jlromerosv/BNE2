@@ -1,0 +1,26 @@
+uuid: 17878ccc-df5a-4795-83ce-bfc42cf669b6
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Contenido
+tags:
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  image_src: '[node:field_imagen_destacada:0:entity:field_media_image:entity:url] https://www.bne.es/sites/default/files/repositorio-imagenes/logo-bne-rrss-0.png'
+  og_description: '[node:summary]'
+  og_image_secure_url: '[node:field_imagen_destacada:0:entity:field_media_image:entity:url] https://www.bne.es/sites/default/files/repositorio-imagenes/logo-bne-rrss-0.png'
+  og_image_url: '[node:field_imagen_destacada:0:entity:field_media_image:entity:url] https://www.bne.es/sites/default/files/repositorio-imagenes/logo-bne-rrss-0.png'
+  og_site_name: '[site:name]'
+  og_title: '[node:title]'
+  og_type: '[node:field_alias_tipo_contenido]'
+  og_url: '[node:url]'
+  title: '[node:title] | [site:name]'
+  twitter_cards_description: '[node:summary]'
+  twitter_cards_image: 'https://www.bne.es/sites/default/files/repositorio-imagenes/logo-bne-rrss-0.png'
+  twitter_cards_page_url: '[node:url]'
+  twitter_cards_site: '@BNE_biblioteca'
+  twitter_cards_title: '[node:title]'
+  twitter_cards_type: summary_large_image

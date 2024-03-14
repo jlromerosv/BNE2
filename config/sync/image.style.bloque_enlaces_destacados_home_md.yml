@@ -1,0 +1,15 @@
+uuid: 3279beec-5c80-4ca5-b4a0-b20b3ac70e7c
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_enlaces_destacados_home_md
+label: 'Bloque Enlaces Destacados Home MD'
+effects:
+  1d87179b-99dc-4306-8d2a-fe075c5edced:
+    uuid: 1d87179b-99dc-4306-8d2a-fe075c5edced
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 600
+      anchor: center-center

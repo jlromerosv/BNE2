@@ -1,0 +1,70 @@
+uuid: 8edd1c26-917c-4e20-b72a-8a699f2908bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_vinculados
+    - node.type.autor
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.coleccion
+    - node.type.contenido_generico
+    - node.type.convocatoria
+    - node.type.dossier
+    - node.type.enlace
+    - node.type.entidad
+    - node.type.entrada_de_blog
+    - node.type.evento
+    - node.type.faq
+    - node.type.galeria_de_imagenes
+    - node.type.iniciativa
+    - node.type.lugar
+    - node.type.noticia
+    - node.type.obra
+    - node.type.pagina_basica
+    - node.type.pagina_personalizada
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.servicio
+id: node.pagina_personalizada.field_contenidos_vinculados
+field_name: field_contenidos_vinculados
+entity_type: node
+bundle: pagina_personalizada
+label: 'Te puede interesar/Catálogos'
+description: 'Permite enlazar cualquier tipo de contenido. En las <b>páginas de inicio</b> usamos este campo para el bloque de <b>catálogos</b>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      autor: autor
+      catalogo: catalogo
+      campana: campana
+      coleccion: coleccion
+      contenido_generico: contenido_generico
+      convocatoria: convocatoria
+      dossier: dossier
+      enlace: enlace
+      entidad: entidad
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      galeria_de_imagenes: galeria_de_imagenes
+      pagina_basica: pagina_basica
+      iniciativa: iniciativa
+      noticia: noticia
+      obra: obra
+      persona: persona
+      faq: faq
+      publicacion: publicacion
+      lugar: lugar
+      pagina_personalizada: pagina_personalizada
+      servicio: servicio
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: autor
+field_type: entity_reference

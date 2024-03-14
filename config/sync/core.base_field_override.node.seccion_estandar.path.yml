@@ -1,0 +1,20 @@
+uuid: 66312ee9-613a-40b7-abbe-04cab7341808
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_estandar
+  module:
+    - path
+id: node.seccion_estandar.path
+field_name: path
+entity_type: node
+bundle: seccion_estandar
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

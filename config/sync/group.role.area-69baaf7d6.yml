@@ -1,0 +1,17 @@
+uuid: fe1aeb23-1efd-4e8c-a352-ba41e3c67ba3
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.administrador_de_feria
+id: area-69baaf7d6
+label: 'x_Administrador temporal'
+weight: 3
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

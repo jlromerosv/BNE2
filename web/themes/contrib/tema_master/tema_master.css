@@ -1,0 +1,4986 @@
+@charset "UTF-8";
+/*
+    ========== FICHERO DE IMPORTACIÓN ==========
+
+    En este fichero se hará la importación de cada archivo
+    SCSS. 
+
+*/
+/* UTILS */
+/*
+   ========== Sass Variables ==========
+
+   Fichero dedicado a todas las variables del tema.
+
+   Estas variables atienden a un diseño previamente definido.
+
+*/
+/*
+	========== SASS MIXINS ==========
+
+	Fichero dedicado a los mixins creados para el proyecto.
+
+*/
+/*
+    ========== FICHERO DE FUENTES ==========
+
+    Fichero dedicado a los maps de las fuentes en SASS.
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* GENERAL */
+/*
+    ========== TÍTULOS ==========
+
+    Estilos dedicados a los títulos de la web. 
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin h1_style ($color, $size)
+
+        @mixin h2_style ($color, $size)
+
+        @mixin h3_style ($color, $size)
+
+        @mixin h4_style ($color, $size)
+
+        @mixin h5_style ($color, $size)
+
+        @mixin h6_style ($color, $size)
+
+        @mixin underline_view_title
+
+    ------------------------- MIXINS --------------------------
+    h1 / h2 / h3 / h4 / h5 / h6_style = Estilos para los
+    diferentes títulos
+
+    underline_view_title = Estilo para crear una línea debajo
+    del título
+    ----------------------- VARIABLES -------------------------
+    $main_color_1 = Color principal de tipo 1
+
+    $color = Color de la fuente
+
+    $size = Tamaño de la fuente
+
+*/
+.node--view-mode-minificha > h1, .node--view-mode-minificha > h2, .node--view-mode-minificha > h3,
+.node--view-mode-teaser > h1,
+.node--view-mode-teaser > h2,
+.node--view-mode-teaser > h3 {
+  display: none;
+}
+
+.node--type-pagina-avanzada.node--view-mode-full > h2 {
+  display: none;
+}
+
+.node--type-pagina-personalizada.node--view-mode-full > h2 {
+  display: none;
+}
+
+.ps-style-lb-title .field--name-title {
+  color: #1F4968;
+  font-size: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.ps-style-lb-title .field--name-title::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 2px;
+  margin: 5px 0;
+  background-color: #1F4968;
+}
+
+/*
+    ========== FORMULARIOS ==========
+
+    Estilos dedicados a los formularios de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin form_label
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display
+
+    form_label = Estilo de la etiqueta label
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $color_placeholder = Color del texto placeholder del campo
+*/
+input[type=email],
+input[type=text],
+input[type=number],
+input[type=password],
+textarea,
+select {
+  border: none;
+  border-bottom: 1px solid #181818;
+  padding: 5px;
+  background-color: #F9F9F9;
+}
+
+label {
+  color: #181818;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+::placeholder {
+  color: #1F4968;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #1F4968;
+}
+
+.form-type-textfield,
+.form-type-email,
+.form-type-textarea,
+.form-type-select,
+.form-type-search-api-autocomplete,
+.form-type-password {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+}
+
+input[type=submit] {
+  color: #181818;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  padding: 8px 24px;
+  border: 1px solid #181818;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+input[type=submit]:hover {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #1F4968;
+  border-color: #1F4968;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: initial;
+}
+
+/*
+    ========== ENLACES ==========
+
+    Estilos dedicados a los enlaces de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin link_style($color)
+
+    ------------------------- MIXINS --------------------------
+    link_style = Estilo del enlace
+
+    ----------------------- VARIABLES -------------------------
+    $a_color = Representa el color del enlace
+
+*/
+a {
+  text-decoration: none;
+}
+
+/*
+    ========== TABLAS ==========
+
+    Estilos dedicados a las tablas.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin table_style
+
+        @mixin table_thead_th
+
+        @mixin table_thead_filter
+
+        @mxin table_thead_filter_icon
+
+    ------------------------- MIXINS --------------------------
+    table_style = Estilo general de la tabla
+
+    table_thead_th = Estilo de los títulos de cabecera de la
+    tabla
+
+    table_thead_filter = Estilo de las columnas con filtro
+
+    table_thead_filter_icon = Estilo del icono del filtro
+    ----------------------- VARIABLES -------------------------
+    $border_tbody_tr = Borde para las filas de la tabla
+
+    $main_color_3 = Tipo 3 de colores principales
+
+    $tbody_td_padding = Padding de cada celda perteneciente
+    a una columna
+
+    $tbody_td_height = Altura de cada celda perteneciente
+    a una columna
+*/
+table {
+  width: 100%;
+  margin: 0 0 10px;
+}
+table thead th {
+  padding: 0.5rem 1rem;
+  height: 2rem;
+  background-color: #F9F9F9;
+}
+table thead th a {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+table thead th a::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8'%3E%3Cpath d='m1.75,0.25v1.5h10.5v-1.5z m0,3v1.5h7.5v-1.5z m0,3v1.5h4.5v-1.5z' fill='%23222330'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  display: block;
+  height: 8px;
+  width: 15px;
+  margin-left: 15px;
+}
+table tbody tr {
+  border-bottom: 2px solid #EEEEEE;
+}
+table tbody tr:hover {
+  background-color: #EEEEEE;
+}
+table tbody tr td {
+  padding: 0.5rem 1rem;
+  height: 4rem;
+}
+
+.table-responsive .view-content {
+  overflow-x: auto;
+}
+.table-responsive .view-content thead th {
+  min-width: 150px;
+}
+
+/*
+    ========= LISTAS ==========
+    Estilos dedicados a las listas de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin tipografia($font,$index,$weight)
+
+    ------------------------ MIXINS ---------------------------
+    tipografía = Mixin que identifica el tipo de letra a usar
+
+    ----------------------- VARIABLES -------------------------
+    $font = Representa el mapa de tipo de fuente
+
+    $index = El índice del mapa $family
+
+    $weight = El índice del mapa $font
+
+    ------------------------- MAPAS ---------------------------
+    $family:('Open Sans', 'Source Sans Pro', 'Roboto');
+
+    $Roboto:(thin:100,light:300,regular:400,medium:500,
+    bold:700, black:900)
+*/
+ul, ol {
+  font-family: "Roboto";
+  font-weight: 400;
+  padding-left: 20px;
+  color: #444444;
+}
+
+.ck-tabla {
+  border: none !important;
+  padding: 0 !important;
+  overflow: scroll;
+  width: 90vw;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: green;
+}
+@media (min-width: 992px) {
+  .ck-tabla {
+    overflow: unset;
+    width: 100%;
+  }
+}
+.ck-tabla table {
+  width: 1100px !important;
+  border: none !important;
+}
+.ck-tabla table caption {
+  padding: 1em 0;
+  color: #005172;
+  font-weight: 600;
+  font-size: 16px;
+}
+.ck-tabla table thead {
+  border: none !important;
+}
+.ck-tabla table thead tr,
+.ck-tabla table thead th {
+  border: none !important;
+}
+.ck-tabla table thead th {
+  font-family: "Montserrat";
+  font-weight: 600 !important;
+  line-height: 22px;
+  font-size: 16px !important;
+  color: green !important;
+  background: #F5F5F5;
+  padding: 1em !important;
+  text-align: left;
+}
+.ck-tabla table tbody {
+  border: none !important;
+}
+.ck-tabla table tbody tr {
+  border-bottom: 1px solid green !important;
+}
+.ck-tabla table tbody td {
+  border: none !important;
+  font-family: "Montserrat";
+  font-weight: 400 !important;
+  line-height: 19px;
+  font-size: 16px !important;
+}
+.ck-tabla table tbody th {
+  font-family: "Montserrat";
+  font-weight: 600 !important;
+  line-height: 22px;
+  font-size: 18px !important;
+  color: green !important;
+  background: #F5F5F5;
+  padding: 1em !important;
+  text-align: left;
+}
+
+.template-two-colums-50-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .template-two-colums-50-50 {
+    grid-template-columns: 1fr !important;
+  }
+}
+.template-two-colums-50-50 .colum-1 {
+  position: relative;
+  border: none !important;
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-50-50 .colum-2 {
+  border: none !important;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .template-two-colums-50-50 .colum-1 {
+    padding: 0 !important;
+  }
+  .template-two-colums-50-50 .colum-2 {
+    padding: 0 !important;
+  }
+}
+.template-two-colums-50-50 article .field--name-field-media-oembed-video .field__item {
+  height: 400px;
+}
+.template-two-colums-50-50 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-50-50 .field--type-image {
+  width: 100%;
+}
+.template-two-colums-50-50 .field--type-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+.template-two-colums-50-50 img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.template-two-colums-40-60 {
+  display: grid;
+  grid-gap: 2em;
+  display: -ms-grid;
+  -ms-grid-columns: 1fr !important;
+}
+.template-two-colums-40-60 .colum-1 {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+}
+.template-two-colums-40-60 .colum-2 {
+  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+  .template-two-colums-40-60 {
+    grid-template-columns: 1fr !important;
+  }
+}
+.template-two-colums-40-60 p {
+  margin-top: 0 !important;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .template-two-colums-40-60 {
+    grid-template-columns: 40% 60%;
+    display: -ms-grid;
+    -ms-grid-columns: 4fr 1em 6fr !important;
+  }
+  .template-two-colums-40-60 .colum-1 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  .template-two-colums-40-60 .colum-2 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+  }
+}
+@media (max-width: 768px) {
+  .template-two-colums-40-60 .colum-1 {
+    padding: 0 !important;
+  }
+  .template-two-colums-40-60 .colum-2 {
+    padding: 0 !important;
+  }
+}
+.template-two-colums-40-60 .colum-1 {
+  position: relative;
+  border: none !important;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-40-60 .colum-1 article .field--name-field-media-oembed-video .field__item {
+  height: 320px;
+}
+.template-two-colums-40-60 .colum-1 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-40-60 .colum-2 {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border: none !important;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-40-60 .colum-2 article .field--name-field-media-oembed-video .field__item {
+  height: 480px;
+}
+.template-two-colums-40-60 .colum-2 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-40-60 .field--type-image {
+  width: 100%;
+}
+.template-two-colums-40-60 .field--type-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+.template-two-colums-40-60 img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.template-two-colums-60-40 {
+  display: grid;
+  grid-gap: 2em;
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+  .template-two-colums-60-40 {
+    grid-template-columns: 1fr !important;
+  }
+}
+.template-two-colums-60-40 p {
+  margin-top: 0 !important;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .template-two-colums-60-40 {
+    grid-template-columns: 60% 40%;
+    grid-gap: 2em;
+  }
+  .template-two-colums-60-40 .colum-1 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+  .template-two-colums-60-40 .colum-2 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .template-two-colums-60-40 .colum-1 {
+    padding: 0 !important;
+  }
+  .template-two-colums-60-40 .colum-2 {
+    padding: 0 !important;
+  }
+}
+.template-two-colums-60-40 .colum-1 {
+  height: auto;
+  position: relative;
+  border: none !important;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-60-40 .colum-1 article .field--name-field-media-oembed-video .field__item {
+  height: 480px;
+}
+.template-two-colums-60-40 .colum-1 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-60-40 .colum-2 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: auto;
+  overflow: hidden;
+  border: none !important;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-60-40 .colum-2 article .field--name-field-media-oembed-video .field__item {
+  height: 320px;
+}
+.template-two-colums-60-40 .colum-2 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-60-40 .field--type-image {
+  width: 100%;
+}
+.template-two-colums-60-40 .field--type-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+.template-two-colums-60-40 img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.template-two-colums-25-75 {
+  display: grid;
+  grid-gap: 2em;
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+  .template-two-colums-25-75 {
+    grid-template-columns: 1fr !important;
+  }
+}
+.template-two-colums-25-75 p {
+  margin-top: 0 !important;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .template-two-colums-25-75 {
+    grid-template-columns: 25% 75%;
+    grid-gap: 2em;
+  }
+  .template-two-colums-25-75 .colum-1 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+  .template-two-colums-25-75 .colum-2 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .template-two-colums-25-75 .colum-1 {
+    padding: 0 !important;
+  }
+  .template-two-colums-25-75 .colum-2 {
+    padding: 0 !important;
+  }
+}
+.template-two-colums-25-75 .colum-1 {
+  position: relative;
+  border: none !important;
+  height: auto;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-25-75 .colum-1 article .field--name-field-media-oembed-video .field__item {
+  height: 205px;
+}
+.template-two-colums-25-75 .colum-1 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-25-75 .colum-2 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: auto;
+  overflow: hidden;
+  border: none !important;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-25-75 .colum-2 article .field--name-field-media-oembed-video .field__item {
+  height: 600px;
+}
+.template-two-colums-25-75 .colum-2 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-25-75 .field--type-image {
+  width: 100%;
+}
+.template-two-colums-25-75 .field--type-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+.template-two-colums-25-75 img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.template-two-colums-75-25 {
+  display: grid;
+  grid-gap: 2em;
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+  .template-two-colums-75-25 {
+    grid-template-columns: 1fr !important;
+  }
+}
+.template-two-colums-75-25 p {
+  margin-top: 0 !important;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .template-two-colums-75-25 {
+    grid-template-columns: 75% 25%;
+    grid-gap: 2em;
+  }
+  .template-two-colums-75-25 .colum-1 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+  .template-two-colums-75-25 .colum-2 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .template-two-colums-75-25 .colum-1 {
+    padding: 0 !important;
+  }
+  .template-two-colums-75-25 .colum-2 {
+    padding: 0 !important;
+  }
+}
+.template-two-colums-75-25 .colum-1 {
+  position: relative;
+  border: none !important;
+  height: auto;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-75-25 .colum-1 article .field--name-field-media-oembed-video .field__item {
+  height: 600px;
+}
+.template-two-colums-75-25 .colum-1 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-75-25 .colum-2 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: auto;
+  overflow: hidden;
+  border: none !important;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-75-25 .colum-2 article .field--name-field-media-oembed-video .field__item {
+  height: 205px;
+}
+.template-two-colums-75-25 .colum-2 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-75-25 .field--type-image {
+  width: 100%;
+}
+.template-two-colums-75-25 .field--type-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+.template-two-colums-75-25 img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.template-two-colums-15-85 {
+  display: grid;
+  grid-gap: 5px;
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+  .template-two-colums-15-85 {
+    grid-template-columns: 1fr !important;
+  }
+}
+.template-two-colums-15-85 p {
+  margin-top: 0 !important;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .template-two-colums-15-85 {
+    grid-template-columns: 15% 85% !important;
+    grid-gap: 5px;
+  }
+  .template-two-colums-15-85 .colum-1 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+  .template-two-colums-15-85 .colum-2 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .template-two-colums-15-85 .colum-1 {
+    padding: 0 !important;
+  }
+  .template-two-colums-15-85 .colum-2 {
+    padding: 0 !important;
+  }
+}
+.template-two-colums-15-85 .colum-1 {
+  position: relative;
+  border: none !important;
+  height: auto;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-15-85 .colum-1 article .field--name-field-media-oembed-video .field__item {
+  height: 205px;
+}
+.template-two-colums-15-85 .colum-1 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-15-85 .colum-2 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: auto;
+  overflow: hidden;
+  border: none !important;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-15-85 .colum-2 article .field--name-field-media-oembed-video .field__item {
+  height: 600px;
+}
+.template-two-colums-15-85 .colum-2 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-15-85 .field--type-image {
+  width: 100%;
+}
+.template-two-colums-15-85 .field--type-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+.template-two-colums-15-85 img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.template-two-colums-85-15 {
+  display: grid;
+  grid-gap: 5px;
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+  .template-two-colums-85-15 {
+    grid-template-columns: 1fr !important;
+  }
+}
+.template-two-colums-85-15 p {
+  margin-top: 0 !important;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .template-two-colums-85-15 {
+    grid-template-columns: 85% 15% !important;
+    grid-gap: 5px;
+  }
+  .template-two-colums-85-15 .colum-1 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+  .template-two-colums-85-15 .colum-2 {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .template-two-colums-85-15 .colum-1 {
+    padding: 0 !important;
+  }
+  .template-two-colums-85-15 .colum-2 {
+    padding: 0 !important;
+  }
+}
+.template-two-colums-85-15 .colum-1 {
+  position: relative;
+  border: none !important;
+  height: auto;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-85-15 .colum-1 article .field--name-field-media-oembed-video .field__item {
+  height: 600px;
+}
+.template-two-colums-85-15 .colum-1 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-85-15 .colum-2 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: auto;
+  overflow: hidden;
+  border: none !important;
+  width: 100%;
+  height: 100%;
+}
+.template-two-colums-85-15 .colum-2 article .field--name-field-media-oembed-video .field__item {
+  height: 205px;
+}
+.template-two-colums-85-15 .colum-2 article .field--name-field-media-oembed-video .field__item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.template-two-colums-85-15 .field--type-image {
+  width: 100%;
+}
+.template-two-colums-85-15 .field--type-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+.template-two-colums-85-15 img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.ck-tabla {
+  border: none !important;
+  padding: 0 !important;
+  overflow: scroll;
+  width: 90vw;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #33D504;
+}
+@media (min-width: 992px) {
+  .ck-tabla {
+    overflow: unset;
+    width: 100%;
+  }
+}
+.ck-tabla table {
+  width: 1100px !important;
+  border: none !important;
+}
+.ck-tabla table caption {
+  padding: 1em 0;
+  color: #005172;
+  font-weight: 600;
+  font-size: 16px;
+}
+.ck-tabla table thead {
+  border: none !important;
+}
+.ck-tabla table thead tr,
+.ck-tabla table thead th {
+  border: none !important;
+}
+.ck-tabla table thead th {
+  font-family: "Montserrat";
+  font-weight: 600 !important;
+  line-height: 22px;
+  font-size: 16px !important;
+  color: #33D504 !important;
+  background: #F5F5F5;
+  padding: 1em !important;
+  text-align: left;
+}
+.ck-tabla table tbody {
+  border: none !important;
+}
+.ck-tabla table tbody tr {
+  border-bottom: 1px solid #33D504 !important;
+}
+.ck-tabla table tbody td {
+  border: none !important;
+  font-family: "Montserrat";
+  font-weight: 400 !important;
+  line-height: 19px;
+  font-size: 16px !important;
+}
+.ck-tabla table tbody th {
+  font-family: "Montserrat";
+  font-weight: 600 !important;
+  line-height: 22px;
+  font-size: 18px !important;
+  color: #33D504 !important;
+  background: #F5F5F5;
+  padding: 1em !important;
+  text-align: left;
+}
+
+.template-cita-50-center .colum {
+  border: none !important;
+  border-left: 1px solid #33D504 !important;
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: left;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.template-cita-50-center-border-top-bottom .colum {
+  border: none !important;
+  border-bottom: 1px solid #33D504 !important;
+  border-top: 1px solid #33D504 !important;
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: left;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.pl-img-video-full {
+  border: none !important;
+}
+.pl-img-video-full article {
+  width: 100%;
+}
+.pl-img-video-full img {
+  width: 100% !important;
+  height: auto !important;
+}
+.pl-img-video-full iframe.media-oembed-content {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.nota-al-pie {
+  border: none !important;
+  font-weight: 300;
+  font-size: 13px;
+  font-family: "Montserrat";
+  line-height: 20px;
+  padding: 0 !important;
+}
+
+/*
+    ========== FIELD NAME BODY ==========
+
+    Estilos dedicados al campo body.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------    
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+.field--name-body .field--name-field-media-oembed-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: initial;
+}
+.field--name-body .media-library-item__preview img {
+  max-width: 645px;
+  height: auto;
+}
+.field--name-body p img {
+  max-width: 645px;
+  height: auto;
+}
+.field--name-body .align-center .media-library-item__preview .field--type-image {
+  display: grid;
+}
+.field--name-body .align-center .media-library-item__preview .field--type-image img {
+  justify-self: center;
+  max-width: 645px;
+}
+
+/*
+    ========== BREADCRUMB ==========
+
+    Estilos dedicados al breadcrumb.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin before-icon($size, $left, $icon)
+
+    ------------------------- MIXINS --------------------------    
+    before-icon = Mixin para insertar icono antes del contenido
+
+    ----------------------- VARIABLES -------------------------
+    $main_color_4 = Color principal de tipo 4
+
+    $size = Tamaño del icono
+
+    $left = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $home_icon = Icono de la home
+
+*/
+.breadcrumb {
+  position: relative;
+  background-color: #F9F9F9;
+  padding: 10px;
+}
+.breadcrumb li:before {
+  content: " | ";
+}
+.breadcrumb li:first-child {
+  padding-left: 35px;
+}
+.breadcrumb li:first-child::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/icono-home.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 10px;
+  width: 19px;
+  height: 19px;
+}
+
+/*
+    ============= MULTIMEDIA ==============
+
+    Estilos dedicados a las imágenes e iconos svg de la we.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    responsive-img = Convierte una imagen en responsive
+
+*/
+.ps-imagen-destacada img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.node--type-icono-svg- h2, .node--type-imagen-svg- h2 {
+  display: none;
+}
+
+/*
+    ========== PÁRRAFOS ==========
+
+    Estilos dedicados a los párrafos de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin p_style($p_color)
+
+    ------------------------- MIXINS --------------------------
+    p_style = Estilo del párrafo
+    ----------------------- VARIABLES -------------------------
+    p_$color = Representa el color del párrafo
+*/
+p {
+  color: #444444;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+/* LAYOUT */
+/*
+    ========= BASE ==========
+    Estilos básicos y generales de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin tipografia($font,$index,$weight)
+
+        @mixin ps-content-margins($breakpoint, $max-width)
+
+    ------------------------ MIXINS ---------------------------
+    tipografía = Mixin que identifica el tipo de letra a usar
+
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    ----------------------- VARIABLES -------------------------
+    $font = Representa el mapa de tipo de fuente
+
+    $index = El índice del mapa $family
+
+    $weight = El índice del mapa $font
+
+    $breakpoint = Breakpoint hasta el cuál el margen tendrá
+    efecto
+
+    $max-width = EL máximo de ancho que tendrá el contenedor al
+    que se le aplique.
+
+    ------------------------- MAPAS ---------------------------
+    $family:('Open Sans', 'Source Sans Pro', 'Roboto');
+
+    $SourceSans:(light:300,regular:400,semi-bold:600);
+*/
+body {
+  color: black;
+  position: relative;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+}
+
+.layout-container div {
+  color: #444444;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+@media screen and (min-width: 992px) {
+  .ps-content-margins {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+/*
+    ========= REGION ==========
+    Estilos dedicados a la clase region de la web.
+*/
+.region {
+  margin: 0 auto;
+}
+
+/*
+    ========= HEADER ==========
+    Estilos dedicados al header de la web.
+
+    ----------------------- VARIABLES -------------------------
+    $main_color_2 / 4 = Color principal de estilo 2 / 4
+
+*/
+.ps_header_2_col {
+  background-color: #181818;
+  padding: 10px 20px;
+}
+.ps_header_2_col a {
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 12px;
+}
+.ps_header_2_col.ps_header_2_col-left-right .header_col_right .region-header-derecho-2-2 {
+  justify-content: flex-end;
+}
+
+.ps_header_3_col {
+  background-color: #F9F9F9;
+  padding: 10px 20px;
+}
+.ps_header_3_col .header_col_left .views-field-field-imagen-representativa img {
+  max-height: 70px;
+  width: auto;
+}
+.ps_header_3_col .header_col_right .views-field-field-imagen-destacada img {
+  max-height: 70px;
+  width: auto;
+}
+
+.ps_microsite_container .ps_header_site_2_col {
+  background-color: #F9F9F9;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2509803922);
+  position: relative;
+  z-index: 1000;
+}
+.ps_microsite_container .ps_header_site_2_col .ps_header_site_2_col_content {
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/*
+    ========= REGIONS ==========
+
+    Estilos dedicados a los estilos generales de los menús.
+
+*/
+ul.menu {
+  margin-left: 0;
+}
+ul.menu .menu-item {
+  padding-top: 0;
+}
+
+/*
+    ========= FOOTER ==========
+    Estilos dedicados al footer de la web.
+
+    ----------------------- VARIABLES -------------------------
+    $footer_background_color = Color de fondo del footer
+
+    $footer_font_color = El color de fuente del footer
+*/
+footer {
+  background-color: #1F4968;
+  color: #FFFFFF;
+}
+footer p, footer a {
+  color: #FFFFFF;
+}
+footer .logo svg, footer .logo img {
+  min-height: 45px;
+  width: auto;
+}
+
+/*
+    ========= SIDEBAR-FIRST ==========
+    Estilos dedicados al Sidebar First de la web.
+
+	----------------------- VARIABLES -------------------------
+	$blanco = Color blanco
+*/
+.region.region-sidebar-first {
+  background: #FFFFFF;
+}
+.region.region-sidebar-first a {
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+.region.region-sidebar-first .menu-level-0 > li:not(:first-child) {
+  margin-top: 15px;
+}
+.region.region-sidebar-first .menu-level-0 > li > span::after, .region.region-sidebar-first .menu-level-0 > li > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #1F4968;
+  display: none;
+}
+.region.region-sidebar-first .menu-level-1 > li {
+  margin-top: 15px;
+}
+.region.region-sidebar-first .menu-level-1 > li a {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+.region.region-sidebar-first .menu-level-2 > li {
+  margin-top: 15px;
+  transform: translateX(20px);
+}
+.region.region-sidebar-first .menu-level-2 > li a {
+  font-weight: 400;
+  color: #181818;
+}
+.region.region-sidebar-first .menu li::marker {
+  content: "";
+}
+
+/*
+    ========= TABS ==========
+    Estilos dedicados al menú de pestañas de la web.
+
+    ----------------------- VARIABLES -------------------------
+	$main_color_1 / 6 = Color principal de tipo 1 / 6
+
+	$blanco = Color blanco
+*/
+.tabs .tabs {
+  border-bottom: 1px solid #444444;
+}
+.tabs .tabs li {
+  margin-left: auto;
+}
+.tabs .tabs li a.is-active,
+.tabs .tabs li a:hover {
+  border-bottom: 1px solid #1F4968;
+  background-color: #FFFFFF;
+}
+
+/*
+    ========= BREADCRUMB ==========
+
+    Estilos para las breadcrumb.
+*/
+.breadcrumb {
+  padding: 0.5em 0;
+}
+
+/*
+    ========= REGIONS ==========
+
+    Estilos dedicados a los estilos de las regiones de la web.
+
+       Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin grid-column-region($columns, $justify, $align)
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin ps-content-margins($breakpoint, $max-width)
+
+    ------------------------- MIXINS --------------------------
+    grid-coloumn-region = Estilo de grid de las regiones del
+    tema
+
+    display_flex = Mixin para las vistas display flex
+
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    ----------------------- VARIABLES -------------------------
+    $columns = Número de columnas que va a tener el Grid
+
+    $justify = Alineación horizontal de los ítems del grid
+
+    $align = Alineación vertical de los ítems del grid
+
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $breakpoint = Breakpoint hasta el cuál el margen tendrá
+    efecto
+
+    $max-width = EL máximo de ancho que tendrá el contenedor al
+    que se le aplique.
+*/
+.ps_header_2_col-left-right .ps_header_2_col_content {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  justify-items: initial;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .ps_header_2_col-left-right .ps_header_2_col_content {
+    max-width: 1670px;
+    margin: 0 auto;
+  }
+}
+.ps_header_2_col .header_col_right {
+  padding-left: 16px;
+}
+.ps_header_2_col .header_col_right .region-header-derecho-2-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ps_header_3_col-left-main .ps_header_3_col_content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: initial;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .ps_header_3_col-left-main .ps_header_3_col_content {
+    max-width: 1670px;
+    margin: 0 auto;
+  }
+}
+.ps_header_3_col-main-right .ps_header_3_col_content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: initial;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .ps_header_3_col-main-right .ps_header_3_col_content {
+    max-width: 1670px;
+    margin: 0 auto;
+  }
+}
+.ps_header_3_col-left-main-right .ps_header_3_col_content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: initial;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .ps_header_3_col-left-main-right .ps_header_3_col_content {
+    max-width: 1670px;
+    margin: 0 auto;
+  }
+}
+
+.ps_header_site_2_col-left-right .ps_header_site_2_col_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .ps_header_site_2_col-left-right .ps_header_site_2_col_content {
+    max-width: 1670px;
+    margin: 0 auto;
+  }
+}
+
+.ps_layout .layout-sidebar-first {
+  margin-right: 15px;
+}
+.ps_layout .layout-sidebar-second {
+  margin-left: 15px;
+}
+.ps_layout.ps-left-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  justify-items: initial;
+  align-items: initial;
+}
+@media (max-width: 800px) {
+  .ps_layout.ps-left-main {
+    grid-template-columns: 1fr;
+  }
+}
+.ps_layout.ps-main-right {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-items: initial;
+  align-items: initial;
+}
+@media (max-width: 800px) {
+  .ps_layout.ps-main-right {
+    grid-template-columns: 8fr 4fr;
+  }
+}
+.ps_layout.ps-left-main-right {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: initial;
+  align-items: initial;
+}
+@media (max-width: 800px) {
+  .ps_layout.ps-left-main-right {
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+}
+
+.ps_footer_2_col-left-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: initial;
+  align-items: center;
+}
+
+.ps_footer_3_col {
+  justify-items: initial;
+  padding: 10px;
+}
+@media screen and (min-width: 992px) {
+  .ps_footer_3_col {
+    max-width: 1763px;
+    margin: 0 auto;
+  }
+}
+.ps_footer_3_col .footer_col_right {
+  justify-self: flex-end;
+}
+.ps_footer_3_col-left-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: initial;
+  align-items: center;
+}
+.ps_footer_3_col-main-right {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: initial;
+  align-items: center;
+}
+.ps_footer_3_col-left-main-right {
+  display: grid;
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  .ps_footer_3_col-left-main-right {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+/*
+    ========= GRID LAYOUT VIEW ==========
+    Estilos dedicados al grid layout de las vistas.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin grid-layout-view($columns, $rows)
+
+        @mixin mf-responsive-grid-layout-view ($min-width, $columns, $rows)
+
+    ------------------------- MIXINS --------------------------    
+    grid-layout-view = Convierte la estructura de la vista
+    en grid
+
+    mf-responsive-grid-layout-view = Te permite hacer 
+    responsive la estructura
+
+    ----------------------- VARIABLES -------------------------
+    $columns = Número de columnas del grid (grid-layout-view)
+
+    $rows = Número de filas (grid-layout-view)
+
+    $min-width = Mínimo de ancho para el breakpoint
+
+    $columns = Columnas en responsive (mf-responsive-grid-layout-view)
+
+    $rows = Filas en responsive (mf-responsive-grid-layout-view)
+
+*/
+.grid-layout-view-3-col .view-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: initial;
+}
+@media (min-width: 576px) {
+  .grid-layout-view-3-col .view-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: initial;
+  }
+}
+
+/*
+    ========= SIDEBAR-SECOND ==========
+    Estilos dedicados al Sidebar Second de la web.
+
+	----------------------- VARIABLES -------------------------
+	$blanco = Color blanco
+*/
+.region.region-sidebar-second {
+  background-color: #FFFFFF;
+}
+.region.region-sidebar-second a {
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+/* DISPLAY MODES */
+/*
+    ============= TEASER ==============
+
+    Estilos dedicados al modo de visualización de resumen.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin responsive-img
+
+        @mixin button_icon($height, $width, $m-left, $img, $filter)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    responsive-img = Convierte una imagen en responsive
+
+    button_icon = Poner un icono a un botón
+
+    ----------------------- VARIABLES -------------------------
+
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $height = Altura del icono
+
+    $width = Anchura del icono
+
+    $m-left = Margen izquierdo del icono
+
+    $img = Imagen del icono
+
+    $filter = Filtro aplicado al icono
+
+*/
+.node--view-mode-teaser .node__content .layout--twocol-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.node--view-mode-teaser .node__content .layout--twocol-section .field--type-image .field__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.node--view-mode-teaser .node__content .layout--twocol-section .field--type-image .field__item img {
+  max-width: 100%;
+  height: auto;
+}
+.node--view-mode-teaser .node__content .layout--twocol-section .layout__region--first {
+  flex: 0 1 33%;
+}
+.node--view-mode-teaser .node__content .layout--twocol-section .layout__region--second {
+  margin-left: 15px;
+  flex: 0 1 67%;
+}
+.node--view-mode-teaser .node__content .layout--twocol-section .layout__region--second .node__links .node-readmore a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.node--view-mode-teaser .node__content .layout--twocol-section .layout__region--second .node__links .node-readmore a::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-left: 8px;
+  background-image: url("/sites/default/files/iconos-svg/flecha-derecha.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(62%) contrast(91%);
+}
+
+/*
+    ============= ACORDEON ==============
+
+    Estilos dedicados al modo de visualización de acordeón.
+
+*/
+.node--view-mode-acordeon {
+  margin: 10px 0;
+}
+.node--view-mode-acordeon h2 {
+  display: none;
+}
+
+/*
+    ============= MINIFICHA CON IMAGEN ==============
+
+    Estilos dedicados al modo de visualización de minificha con imagen.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin after-icon($size, $right, $icon)
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    after-icon = Inserta un icono después del contenido
+
+    responsive-img = Convierte una imagen en responsive
+
+    ----------------------- VARIABLES -------------------------
+    $size = Tamaño del icono
+
+    $right = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $main_color_2 / 6 = Color principal de tipo 2 /6
+
+    $help_icon = Icono de ayuda
+
+    $filter_main_color_1 = Filtro del color principal
+
+    $show_more_icon = Icono de "ver más"
+
+    $button_mn_2_icon = Icono del botón principal de tipo 2
+
+*/
+.node--view-mode-minificha-con-imagen {
+  margin: 15px;
+}
+.node--view-mode-minificha-con-imagen h2 {
+  display: none;
+}
+.node--view-mode-minificha-con-imagen .node__content::after {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/flecha-derecha.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  bottom: 10px;
+  filter: invert(25%) sepia(0%) saturate(0%) hue-rotate(216deg) brightness(98%) contrast(93%);
+}
+.node--view-mode-minificha-con-imagen .node__content img {
+  max-width: 100%;
+  height: auto;
+}
+.node--view-mode-minificha-con-imagen .node__content .block-layout-builder {
+  margin: 0;
+  margin-bottom: 8px;
+}
+.node--view-mode-minificha-con-imagen .node__content .field--name-created {
+  color: #ccc;
+}
+.node--view-mode-minificha-con-imagen .node__content .field--name-title a {
+  color: #181818;
+  font-size: 20px;
+}
+
+/* BLOCKS */
+/*
+    ========== COMPONENTE GRID ==========
+
+    Estilos dedicados a la vista componente grid.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    responsive-img = Hace que las imágenes sean adaptables
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $repeat_column_num = Veces que se repite una columna en
+    componente grid
+
+    $column_width = Ancho de la columna en componente grid
+
+    $grid-gap = Espacio entre rejillas de componente grid
+
+*/
+.ps-componente-grid .view-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 800px) {
+  .ps-componente-grid .view-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 390px) {
+  .ps-componente-grid .view-content {
+    grid-template-columns: 1fr;
+  }
+}
+.ps-componente-grid .view-content .views-row h2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+}
+.ps-componente-grid .view-content .views-row img {
+  max-width: 100%;
+  height: auto;
+}
+.ps-componente-grid .view-content .views-row .node__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+}
+
+.menu-sidebar .menu .menu-item--active-trail .is-active {
+  border-bottom: 4px solid red;
+  padding-bottom: 4px;
+  display: block;
+}
+.menu-sidebar .menu .menu-item {
+  margin: 0 0 15px 0;
+}
+.menu-sidebar .menu .menu-item a {
+  font-size: 16px;
+  color: #000000;
+  display: block;
+  padding-bottom: 4px;
+}
+.menu-sidebar .menu .menu-item a:hover {
+  border-bottom: 4px solid red;
+}
+.menu-sidebar .menu .menu-item p {
+  font-size: 16px;
+  color: #000000;
+}
+.menu-sidebar .menu .menu-item ul {
+  margin-top: 15px;
+}
+.menu-sidebar .menu .menu-item ul li {
+  margin-left: 20px;
+}
+.menu-sidebar .menu .menu-item ul li a {
+  font-size: 14px;
+  color: #000000;
+}
+.menu-sidebar .menu .menu-item ul li p {
+  font-size: 14px;
+  color: #000000;
+}
+.menu-sidebar .menu-item--expanded {
+  padding: 0;
+  position: relative;
+  padding-right: 25px;
+}
+.menu-sidebar .menu-item--expanded a {
+  display: block;
+}
+.menu-sidebar .menu-item--expanded button {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: url(/themes/contrib/tema_master/recursos/arrows_down_grey.svg) no-repeat center;
+  background-size: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: none;
+}
+.menu-sidebar .menu-item--expanded .rotate-svg {
+  transition: all 0.5s ease;
+  transform: rotate(-90deg);
+}
+.menu-sidebar .menu-item--expanded ul {
+  display: none;
+}
+.menu-sidebar .menu-item--expanded .ps-show-submenu {
+  height: 100%;
+  max-height: 100vh;
+  transition: max-height 0.5s ease-in;
+}
+
+/*
+        ========= MENÚ DEL FOOTER ==========
+    Estilos dedicados al menu del footer.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $blanco = Color blanco
+
+*/
+.ps-menu-footer-block {
+  padding: 25px 0;
+}
+.ps-menu-footer-block .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ps-menu-footer-block .menu .menu-item {
+  color: #FFFFFF;
+  margin: 5px;
+}
+
+/*
+    ========== LAYOUT BUILDER ==========
+
+    Estilos generales aplicados al layout builder
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    responsive-img = Hace que las imágenes sean adaptables
+
+    ----------------------- VARIABLES -------------------------
+    $label_layout_builder = Tamaño de fuente del label de
+    layout builder
+
+    $border_layout_builder_separator_item = Estilos que forman
+    un separador de los diferentes ítems que se muestran
+*/
+@media (min-width: 992px) {
+  .layout--twocol-section {
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 992px) {
+  .layout--twocol-section .layout__region {
+    margin: 0 7.5px;
+  }
+  .layout--twocol-section .layout__region:last-child {
+    margin-right: 0;
+  }
+  .layout--twocol-section .layout__region:first-child {
+    margin-left: 0;
+  }
+}
+.layout--twocol-section .layout__region .block-layout-builder {
+  margin: 20px 0;
+}
+.layout--twocol-section .layout__region .block-layout-builder .field__label {
+  font-size: 15px;
+  font-weight: bold;
+}
+.layout--twocol-section .layout__region .block-layout-builder .field__items > .field__item:not(:first-child) {
+  border-top: 1px outset;
+}
+.layout--twocol-section .layout__region .block-layout-builder .field__items > .field__item {
+  padding: 15px;
+}
+.layout--twocol-section .layout__region .block-layout-builder .field__items > .field__item h2 {
+  margin: 0;
+}
+
+/* Layout de 67-33 */
+.layout--twocol-section--67-33 .layout__region--second .field--name-field-imagen-representativa img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Layout de 25-75 */
+.layout--twocol-section--25-75 .layout__region--first .field--name-field-imagen-representativa img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+    ========== SUPERFISH MENU ==========
+
+    Estilos dedicados al menú superfish cuando no tiene
+    estilos aplicados de forma predeterminada.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin right_arrow
+
+        @mixin down_arrow
+
+        @mixin sf_sub_indicator($size, $top)
+
+    ------------------------- MIXINS --------------------------
+    right_arrow = Permite poner la flecha del menú hacia la
+    derecha
+
+    down_arrow = Permite poner la flecha del menú hacia abajo
+
+    sf_sub_indicator = Con este mixin elegimos el tamaño
+    y la posición de la flecha del menú desplegable
+
+    ----------------------- VARIABLES -------------------------
+    $size = Indica el tamaño de la flecha
+
+    $top = Indica la posición con respecto a la parte superior
+    de la página
+
+    $main_color_4 = Color principal de tipo 4
+
+    $main_color_1 /4 / 5 = Color principal de tipo 1 / 4 / 5
+
+    $blanco = Color blanco
+*/
+.block-superfish .sf-accordion-toggle a::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/layer1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  width: 20px;
+  height: 20px;
+}
+.block-superfish .sf-accordion-toggle a span {
+  display: none;
+}
+.block-superfish ul.sf-menu.sf-style-none::after {
+  content: "";
+  display: block;
+  float: none;
+  clear: both;
+}
+.block-superfish ul.sf-menu.sf-style-none .sf-sub-indicator {
+  width: 15px;
+  height: 15px;
+  top: 45%;
+}
+.block-superfish ul.sf-menu.sf-style-none .sf-sub-indicator::after {
+  content: "⌵";
+  font-weight: bold;
+}
+.block-superfish ul.sf-menu.sf-style-none.sf-vertical li .sf-sub-indicator {
+  width: 15px;
+  height: 15px;
+  top: 45%;
+}
+.block-superfish ul.sf-menu.sf-style-none.sf-vertical li .sf-sub-indicator::after {
+  content: "⌵";
+  font-weight: bold;
+  transform: rotateZ(270deg);
+}
+.block-superfish ul.sf-menu.sf-style-none .nolink {
+  padding-right: 3em;
+  color: #1F4968;
+  font-weight: 500;
+}
+.block-superfish ul.sf-menu.sf-style-none li {
+  background-color: #F9F9F9;
+}
+.block-superfish ul.sf-menu.sf-style-none li a {
+  color: #1F4968;
+  text-decoration: none;
+}
+.block-superfish ul.sf-menu.sf-style-none li > span {
+  display: block;
+  padding: 1em 1.5em;
+  position: relative;
+  font-weight: 500;
+  color: #1F4968;
+}
+.block-superfish ul.sf-menu.sf-style-none li ul .sf-sub-indicator {
+  width: 15px;
+  height: 15px;
+  top: 50%;
+}
+.block-superfish ul.sf-menu.sf-style-none li ul .sf-sub-indicator::after {
+  content: "⌵";
+  font-weight: bold;
+  transform: rotateZ(270deg);
+}
+.block-superfish ul.sf-menu.sf-style-none li ul li {
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #1F4968;
+}
+.block-superfish ul.sf-menu.sf-style-none li ul li:hover {
+  background-color: #617F95;
+}
+.block-superfish ul.sf-menu.sf-style-none li ul li:hover > a, .block-superfish ul.sf-menu.sf-style-none li ul li:hover > span {
+  color: #FFFFFF;
+}
+.block-superfish ul.sf-menu.sf-style-none li ul li:last-child {
+  border-bottom: none;
+}
+.block-superfish ul.sf-menu.sf-style-none li ul li a,
+.block-superfish ul.sf-menu.sf-style-none li ul li span {
+  color: #1F4968;
+  text-decoration: none;
+  font-weight: 500;
+}
+.block-superfish ul.sf-menu.sf-style-none > li:first-child a {
+  padding-left: 1.5em;
+}
+@media (min-width: 768px) {
+  .block-superfish ul.sf-menu.sf-style-none > li:first-child a {
+    padding-left: 0;
+  }
+}
+
+/*
+    ========== GALERÍA DE IMÁGENES ==========
+
+    Estilos dedicados a la vista de galería de imágenes.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin gallery_img_styles($column_number, $column_width)
+
+    ------------------------- MIXINS --------------------------
+    gallery_img_styles = Estilos de la galería de imágenes
+
+    ----------------------- VARIABLES -------------------------
+    $column_number = Número de columnas del grid
+
+    $column_width = Ancho de las columnas del grid
+*/
+.ps-gallery-img-block {
+  background-color: #EEEEEE;
+  padding: 30px;
+}
+.ps-gallery-img-block .ps-gallery-img h2 {
+  margin-top: 0;
+}
+.ps-gallery-img-block .ps-gallery-img .view-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.ps-gallery-img-block .ps-gallery-img .view-content img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 760px) {
+  .ps-gallery-img-block .ps-gallery-img .view-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .ps-gallery-img-block .ps-gallery-img .view-content img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.ps-gallery-img-block .ps-gallery-img .view-content .views-row {
+  margin: 10px;
+}
+
+/*
+    ========== GALERÍA DE VÍDEOS ==========
+
+    Estilos dedicados a la vista de galería de vídeos.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin ps-content-margins($breakpoint, $max-width)
+
+        @mixin grid-layout-view($columns, $rows)
+
+        @mixin mf-responsive-grid-layout-view ($min-width, $columns, $rows)
+
+    ------------------------- MIXINS --------------------------   
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    grid-layout-view = Convierte la estructura de la vista
+    en grid
+
+    mf-responsive-grid-layout-view = Te permite hacer 
+    responsive la estructura
+
+    ----------------------- VARIABLES -------------------------
+    $breakpoints = Medida que marca el punto de ruptura
+
+    $max-width = Máximo de ancho
+
+    $columns = Número de columnas del grid (grid-layout-view / mf-responsive-grid-layout-view)
+
+    $rows = Número de filas (grid-layout-view / mf-responsive-grid-layout-view)
+
+    $min-width = Mínimo de ancho para el breakpoint
+
+*/
+@media screen and (min-width: 992px) {
+  .ps-videos-web-block {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+}
+.ps-videos-web-block .view-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: initial;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .ps-videos-web-block .view-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: initial;
+  }
+}
+.ps-videos-web-block .view-content .views-row {
+  margin: 0 10px 30px;
+}
+.ps-videos-web-block .view-content .views-row .media-oembed-content {
+  width: 100%;
+  height: 70vw;
+}
+@media (min-width: 768px) {
+  .ps-videos-web-block .view-content .views-row .media-oembed-content {
+    height: 20vw;
+  }
+}
+.ps-videos-web-block .view-content .views-row .views-field-name .field-content {
+  font-weight: bold;
+}
+
+/*
+        ========= MENU ENCABEZADO ==========
+    Estilos dedicados al menu encabezado del header de la web.
+*/
+.menu--menu-encabezado .menu {
+  display: flex;
+}
+
+/*
+    ========== BLOQUE DESTACADOS ==========
+
+    Estilos dedicados a la vista del bloque destacados.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+         @mixin ps-content-margins($breakpoint, $max-width)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $blanco = Color blanco
+
+    $breakpoint = Breakpoint hasta el cuál el margen tendrá
+    efecto
+
+    $max-width = EL máximo de ancho que tendrá el contenedor al
+    que se le aplique.
+
+*/
+@media screen and (min-width: 992px) {
+  .ps-destacados-block {
+    max-width: 1526px;
+    margin: 0 auto;
+  }
+}
+.ps-destacados-block .node--view-mode-destacados.node--type-evento .node__content img {
+  display: initial;
+}
+.ps-destacados-block .node--view-mode-destacados .node__content {
+  position: relative;
+  overflow: hidden;
+  min-height: 275px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5px;
+}
+.ps-destacados-block .node--view-mode-destacados .node__content img {
+  display: none;
+}
+.ps-destacados-block .node--view-mode-destacados .node__content:hover .related-content-banner {
+  bottom: 0;
+}
+.ps-destacados-block .node--view-mode-destacados .node__content .related-content-banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: -180px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 300ms;
+}
+.ps-destacados-block .node--view-mode-destacados .node__content .related-content-banner a {
+  display: block;
+  height: 100%;
+}
+.ps-destacados-block .node--view-mode-destacados .node__content .related-content-banner a h3 {
+  color: #FFFFFF;
+  height: 59px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+}
+.ps-destacados-block .node--view-mode-destacados .node__content .related-content-banner a h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin: 10px auto 0 auto;
+}
+.ps-destacados-block .node--view-mode-destacados .node__content .related-content-banner a .field--name-body h2 {
+  display: none;
+}
+.ps-destacados-block .node--view-mode-destacados .node__content .related-content-banner a p {
+  color: #FFFFFF;
+  padding: 0 15px;
+}
+
+/*
+    ========== SOCIAL BLOCK ==========
+
+    Estilos dedicados a la vista social block.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin h1_style ($color, $size)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    h1_style = Estilos para los diferentes títulos
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $filter_white = Filtro para convertir a blanco
+
+    $color = Color de la fuente
+
+    $size = Tamaño de la fuente
+
+*/
+.ps-social-block .view-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+.ps-social-block .view-content > div {
+  margin: 0 8px;
+}
+.ps-social-block .view-content > div:first-child {
+  margin-left: 0;
+}
+.ps-social-block .view-content > div:last-child {
+  margin-right: 0;
+}
+.ps-social-block.white-icon .view-content > div svg {
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(248deg) brightness(103%) contrast(101%);
+}
+
+.ps-social-block-footer > h1 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+/* Iconos de menú superior */
+.ps-social-block-menu-superior img {
+  max-height: 15px;
+  width: auto;
+}
+.ps-social-block-menu-superior.login-user-menu {
+  margin-left: 16px;
+}
+
+/*
+    ========== LOGO MULTISITE ==========
+
+    Estilos dedicados a la vista del logo multisite.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+.ps-logo-multisite .field-content a {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  font-weight: normal;
+  font-size: 0;
+}
+.ps-logo-multisite .field-content a .media--type-imagen {
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .ps-logo-multisite .field-content a {
+    font-size: 12px;
+  }
+}
+
+/*
+    ========== LANGUAGE SWITCHER ==========
+
+    Estilos dedicados a la vista social block.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $blanco = Hace referencia al color blanco
+
+*/
+.language-switcher-language-url {
+  margin-right: 20px;
+}
+.language-switcher-language-url .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+  list-style: none;
+}
+.language-switcher-language-url .links li:not(:first-child)::before {
+  content: "|";
+  color: #FFFFFF;
+  margin: 0 5px;
+}
+.language-switcher-language-url .links li .is-active {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.language-switcher-language-url .links li a {
+  text-transform: uppercase;
+}
+
+/*
+    ========== BLOQUE ENLACES DE INTERÉS ==========
+
+    Estilos dedicados a la vista del bloque enlaces de interés.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin grid-layout-view($columns, $rows)
+
+        @mixin mf-responsive-grid-layout-view ($min-width, $columns, $rows)
+
+        @mixin before-icon($size, $left, $icon)
+
+        before-icon = Icono previo al texto del enlace
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    grid-layout-view = Convierte la estructura de la vista
+    en grid
+
+    mf-responsive-grid-layout-view = Te permite hacer 
+    responsive la estructura
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $main_color_3 = Color principal de tipo 3
+
+    $columns = Número de columnas del grid (grid-layout-view / mf-responsive-grid-layout-view)
+
+    $rows = Número de filas (grid-layout-view / mf-responsive-grid-layout-view)
+
+    $size = Tamaño del icono
+
+    $left = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+*/
+.ps-enlaces-interes-block {
+  background-color: #EEEEEE;
+  padding: 20px 30px;
+}
+@media (min-width: 770px) {
+  .ps-enlaces-interes-block {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
+.ps-enlaces-interes-block h1 {
+  margin: 0;
+}
+.ps-enlaces-interes-block .ps-enlaces-interes {
+  padding-top: 10px;
+}
+.ps-enlaces-interes-block .ps-enlaces-interes .view-header {
+  display: none;
+}
+@media (min-width: 770px) {
+  .ps-enlaces-interes-block .ps-enlaces-interes {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 770px) {
+  .ps-enlaces-interes-block .ps-enlaces-interes .view-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: initial;
+    flex-wrap: wrap;
+  }
+}
+.ps-enlaces-interes-block .ps-enlaces-interes .view-content .views-row {
+  margin-bottom: 10px;
+}
+@media (min-width: 770px) {
+  .ps-enlaces-interes-block .ps-enlaces-interes .view-content .views-row {
+    flex: 1;
+    margin: 5px;
+  }
+}
+.ps-enlaces-interes-block .ps-enlaces-interes .view-content .views-row h2 {
+  display: block;
+}
+.ps-enlaces-interes-block .ps-enlaces-interes .view-content .views-row .field--name-body p {
+  margin: 0;
+}
+.ps-enlaces-interes-block .ps-enlaces-interes .view-content .views-row .field--name-body .field--name-field-media-oembed-video {
+  display: none;
+}
+
+.ps-enlaces-destacados .field--name-field-contenidos-relacionados {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: initial;
+}
+@media (min-width: 460px) {
+  .ps-enlaces-destacados .field--name-field-contenidos-relacionados {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: initial;
+  }
+}
+@media (min-width: 720px) {
+  .ps-enlaces-destacados .field--name-field-contenidos-relacionados {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: initial;
+  }
+}
+.ps-enlaces-destacados .field--name-field-contenidos-relacionados .field__item {
+  position: relative;
+  padding-left: 15px;
+  margin: 7px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+.ps-enlaces-destacados .field--name-field-contenidos-relacionados .field__item::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/Right_Arrow_3_.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 8px;
+}
+
+/*
+    ========== BLOQUE INICIO-ARRIBA ==========
+
+    Estilos dedicados a la vista del bloque inicio-arriba.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $filter_white = Filtro de color blanco
+
+    $main_color_3 = Color principal de tipo 3
+
+*/
+.custom-block-inicio-arriba {
+  padding: 10px;
+}
+@media screen and (min-width: 992px) {
+  .custom-block-inicio-arriba {
+    max-width: 1763px;
+    margin: 0 auto;
+  }
+}
+.custom-block-inicio-arriba .view-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-block-inicio-arriba .view-content div .views-field-field-icono-svg a {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+.custom-block-inicio-arriba .view-content div .views-field-field-icono-svg a img {
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(248deg) brightness(103%) contrast(101%);
+  margin-right: 10px;
+}
+.custom-block-inicio-arriba .view-content div .views-field-field-icono-svg a img.home-svg {
+  width: 25px;
+}
+.custom-block-inicio-arriba::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .custom-block-inicio-arriba::after {
+    content: none;
+  }
+}
+
+/* Bloque Inicio / Arriba */
+.custom-block--bloque-inicio .views-field-field-icono-svg a,
+.cusotm-block--bloque-arriba .views-field-field-icono-svg a {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+.custom-block--bloque-inicio .views-field-field-icono-svg a img,
+.cusotm-block--bloque-arriba .views-field-field-icono-svg a img {
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(248deg) brightness(103%) contrast(101%);
+  margin-right: 10px;
+}
+.custom-block--bloque-inicio .views-field-field-icono-svg a img.home-svg,
+.cusotm-block--bloque-arriba .views-field-field-icono-svg a img.home-svg {
+  width: 25px;
+}
+
+/*
+    ========== SUBENCABEZADO SITE ==========
+
+    Estilos dedicados a la vista del subencabezado.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    responsive-img = Convierte a las imágenes en responsive
+
+*/
+.ps-subenc-site {
+  width: 100%;
+}
+.ps-subenc-site .field--type-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+        ========= MENU ENLACES SUPERIOR ==========
+    Estilos dedicados al menu de enlaces superior de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin before-icon($size, $left, $icon)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    before-icon = Mixin para insertar icono antes del contenido
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $size = Tamaño del icono
+
+    $left = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $blanco = Color blanco
+
+    $message_icon = Icono de mensaje
+
+    main_color_6 / 2 = Color principal de tipo 6 / 2
+*/
+.ps-menu--menu-enlaces-superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  margin: 0 15px;
+  position: relative;
+}
+.ps-menu--menu-enlaces-superior:hover .menu {
+  display: block;
+}
+.ps-menu--menu-enlaces-superior .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.ps-menu--menu-enlaces-superior .menu .menu-item {
+  padding: 10px;
+  border-bottom: 1px solid #444444;
+}
+.ps-menu--menu-enlaces-superior::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/Grupo%201784.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  position: initial;
+}
+.ps-menu--menu-enlaces-superior::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #FFFFFF;
+  margin-left: 5px;
+}
+@media (min-width: 912px) {
+  .ps-menu--menu-enlaces-superior .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: initial;
+    margin-top: 0;
+    margin-bottom: 2px;
+    position: initial;
+  }
+  .ps-menu--menu-enlaces-superior .menu-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .ps-menu--menu-enlaces-superior .menu .menu-item {
+    padding: 0;
+    border-bottom: none;
+  }
+  .ps-menu--menu-enlaces-superior::before, .ps-menu--menu-enlaces-superior::after {
+    content: none;
+  }
+}
+
+/*
+    ========== MAPA WEB ==========
+
+    Estilos dedicados a la vista del bloque del mapa web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin underline_view_title($background-color, $height, $width)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    underline_view_title = Estilo para crear una línea debajo
+    del título
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $blanco = Variable que representa el color blanco
+
+    $background-color = Color de fondo
+
+    $height = Altura de la línea
+
+    $width = Anchura de la línea
+
+*/
+.ps-web-map-block {
+  padding: 10px;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .ps-web-map-block {
+    max-width: 1763px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .ps-web-map-block {
+    display: block;
+  }
+}
+.ps-web-map-block h2 {
+  color: #FFFFFF;
+}
+.ps-web-map-block h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 5px 0;
+  background-color: #FFFFFF;
+}
+.ps-web-map-block .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+}
+.ps-web-map-block .menu .menu-item--expanded::marker, .ps-web-map-block .menu .menu-item--collapsed::marker {
+  content: "";
+}
+.ps-web-map-block .menu .menu-item span {
+  color: #FFFFFF;
+}
+.ps-web-map-block .menu .menu-item a {
+  color: #FFFFFF;
+}
+.ps-web-map-block .menu .menu-item a.is-active {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.ps-web-map-block .menu .menu-item .menu {
+  margin-top: 15px;
+  display: block;
+}
+.ps-web-map-block .menu .menu-item .menu .menu-item:not(:first-child) {
+  margin-top: 8px;
+}
+.ps-web-map-block .menu .menu-item .menu .menu-item a {
+  font-weight: lighter;
+}
+
+/*
+    ========== ENLACES DE LA PÁGINA ==========
+
+    Estilos dedicados a la vista del bloque del mapa web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin before-icon($size, $left, $icon)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    before-icon = Icono previo al texto del enlace
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $size = Tamaño del icono
+
+    $left = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $link_icon = Icono referente al link externo
+
+    $filter_main_color_1 = Filtro para convertir a color principal
+
+*/
+.ps-custom-enlace-block .ps-enlace-view {
+  border: 1px solid #EEEEEE;
+  padding: 20px;
+}
+.ps-custom-enlace-block .ps-enlace-view .view-header {
+  display: none;
+}
+.ps-custom-enlace-block .ps-enlace-view .views-field-field-enlaces .field-content a {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  padding-left: 23px;
+  position: relative;
+}
+.ps-custom-enlace-block .ps-enlace-view .views-field-field-enlaces .field-content a::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/icono-link.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(92%) contrast(91%);
+}
+
+.ps-external-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  padding-left: 20px;
+  width: max-content;
+}
+.ps-external-link::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/icono-link.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(92%) contrast(91%);
+}
+
+.node--type-enlace.node--view-mode-teaser .node__content .layout__region--second .block-field-blocknodeenlacefield-enlace {
+  display: none;
+}
+
+/*
+    ========== MEDIA FILE ==========
+
+    Estilos dedicados a la vista de los archivos con el logo.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    @mixin before-icon($size, $left, $icon)
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $size = Tamaño del icono
+
+    $left = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $main_color_2 = Color principal de tipo 2
+
+    $file_icon = Icono de archivo
+
+    $download_icon = Icono de descarga
+
+    $filter_main_color_1 = Filtro del color principal
+
+*/
+.ps-custom-media-default {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+}
+.ps-custom-media-default .ps-custom-field-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  gap: 15px;
+  padding-left: 15px;
+}
+.ps-custom-media-default .ps-custom-field-group .field-link-name a {
+  color: #181818 !important;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+.ps-custom-media-default .ps-custom-field-group .field-link-name a::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/archivo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+.ps-custom-media-default .ps-custom-field-group .field--type-created {
+  color: #ccc;
+}
+
+.downloadable-file {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  padding-left: 20px;
+  width: max-content;
+  position: relative;
+}
+.downloadable-file::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/icono-descarga.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(92%) contrast(91%);
+}
+
+/*
+    ========== MEDIA AUDIO ==========
+
+    Estilos dedicados a la vista para el tipo de multimedia "audio".
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+.media--type-archivo-de-audio.media--view-mode-default {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+.media--type-archivo-de-audio.media--view-mode-default .field--name-field-media-audio-file {
+  margin-right: 15px;
+}
+.media--type-archivo-de-audio.media--view-mode-default .field--name-name {
+  font-weight: bold;
+}
+
+/*
+    ========== FACETS ==========
+
+    Estilos dedicados a las facetas de la webs.
+
+*/
+.facets-widget-checkbox ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*
+        ========= OBRAS ==========
+    Estilos dedicados al bloque de contenido obras.
+
+*/
+.node--type-obra .field--name-field-generos .field__item {
+  padding: 0 !important;
+}
+
+/*
+    ========== BLOQUE DOSSIER ==========
+
+    Estilos dedicados a la vista del bloque dossier.
+
+*/
+.node--type-dossier .field--name-field-tipos .field__item {
+  padding: 0 !important;
+}
+
+/*
+    ========== ALERTAS ==========
+
+    Estilos dedicados a la alerta de la web.
+
+    ----------------------- VARIABLES -------------------------
+    $blanco = Color blanco
+
+*/
+/*
+    ========== ALERTAS ==========
+
+    Estilos dedicados al bloque de buscador de la web.
+
+    ----------------------- VARIABLES -------------------------
+    $blanco = Color blanco
+
+*/
+.ps-block-buscador {
+  position: relative;
+}
+.ps-block-buscador a img {
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(62%) contrast(91%);
+  width: 20px;
+}
+
+/*
+    ========== BLOQUE UNIÓN EURPOEA FOOTER ==========
+
+    Estilos dedicados a la vista del bloque unión europea del footer.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+.ps-eu-footer {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .ps-eu-footer {
+    margin-top: 0;
+  }
+}
+.ps-eu-footer .view-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .ps-eu-footer .view-content > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: center;
+  }
+}
+.ps-eu-footer .view-content > div .views-field-body {
+  text-align: center;
+}
+.ps-eu-footer .view-content > div .views-field-field-imagen-destacada {
+  margin-right: 10px;
+}
+
+/*
+        ========= RED SOCIAL ==========
+    Estilos dedicados a las redes sociales.
+
+*/
+.node--type-red-social.node--view-mode-teaser .node__content .field--name-field-icono .node--type-icono-svg- h2 {
+  display: none;
+}
+.node--type-red-social.node--view-mode-teaser .node__content .field--name-field-icono .node--type-icono-svg- img {
+  max-width: 50px;
+  height: auto;
+}
+
+/*
+    ========== WEBFORM DE BÚSQUEDA ==========
+
+    Estilos dedicados al webform de la búsqueda.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $main_color_4 = Color principal de tipo 4
+
+*/
+.webform-submission-bloque-buscador-form {
+  position: absolute;
+  width: 100%;
+  z-index: 8;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 80px;
+}
+.webform-submission-bloque-buscador-form .form-type-textfield {
+  margin: 0;
+  width: 100%;
+}
+.webform-submission-bloque-buscador-form .form-type-textfield label {
+  display: none;
+}
+.webform-submission-bloque-buscador-form .form-type-textfield input {
+  border: none;
+  font-size: 18px;
+}
+.webform-submission-bloque-buscador-form .close-form-icon {
+  cursor: pointer;
+}
+
+/*
+    ========== SUBENCABEZADO SITE ==========
+
+    Estilos dedicados a la vista del subencabezado.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin after-icon($size, $right, $icon)
+
+    ------------------------- MIXINS --------------------------
+    after-icon = Inserta un icono después del contenido
+
+    ----------------------- VARIABLES -------------------------
+    $size = Tamaño del icono
+
+    $right = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $h1_font_size = Tamaño del texto de h1
+
+    $button_mn_2_icon = Icono del botón principal 2
+
+    $filter_white = Filtro de color blanco
+
+    $blanco = Color blanco
+
+*/
+.ps-submenu-card .menu-level-0 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 560px) {
+  .ps-submenu-card .menu-level-0 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .ps-submenu-card .menu-level-0 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.ps-submenu-card .menu-level-0 > .menu-item {
+  background-size: cover;
+  overflow: hidden;
+  height: 250px;
+}
+.ps-submenu-card .menu-level-0 > .menu-item::marker {
+  content: "";
+}
+@media (min-width: 560px) {
+  .ps-submenu-card .menu-level-0 > .menu-item:hover > span, .ps-submenu-card .menu-level-0 > .menu-item:hover > a {
+    margin-top: 0;
+  }
+}
+.ps-submenu-card .menu-level-0 > .menu-item > span, .ps-submenu-card .menu-level-0 > .menu-item > a {
+  display: block;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  padding: 20px 10px;
+  transition: all 300ms;
+}
+@media (min-width: 560px) {
+  .ps-submenu-card .menu-level-0 > .menu-item > span, .ps-submenu-card .menu-level-0 > .menu-item > a {
+    margin-top: 180px;
+  }
+}
+.ps-submenu-card .menu-level-0 > .menu-item > span::after, .ps-submenu-card .menu-level-0 > .menu-item > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: #FFFFFF;
+}
+.ps-submenu-card .menu-level-0 > .menu-item .menu-dropdown-0 {
+  height: calc(100% - 69px);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 10px;
+}
+.ps-submenu-card .menu-level-0 > .menu-item .menu-dropdown-0 a {
+  color: #FFFFFF;
+}
+.ps-submenu-card .menu-level-0 > .menu-item .menu-dropdown-0::after {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/flecha-derecha.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  bottom: 10px;
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(248deg) brightness(103%) contrast(101%);
+}
+.ps-submenu-card .menu-level-0 img {
+  display: none;
+}
+
+/*
+    ========== TÍTULO DEL DOMINIO ==========
+
+    Estilos dedicados al título del dominio.
+
+*/
+.ps-titulo-dominio .views-field-field-subtitulo .field-content {
+  text-align: center;
+  font-size: 24px;
+  color: #1F4968;
+  font-weight: bold;
+  display: none;
+}
+@media (min-width: 768px) {
+  .ps-titulo-dominio .views-field-field-subtitulo .field-content {
+    display: block;
+  }
+}
+
+/*
+    ========== BLOQUE DESTACADOS ==========
+
+    Estilos dedicados a la vista del bloque destacados.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin background_image($bg_repeat, $bg_size, $bg_position, $url)
+
+        @mixin before-icon($size, $left, $icon)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    background_image = Poner una imagen de fondo
+
+    before-icon = Icono previo al texto del enlace
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $bg_repeat = Repetición del fondo
+
+    $bg_size = Tamaño del fondo
+
+    $bg_position = Posición del fondo
+
+    $url = Url de la imagen que se pondrá de fondo
+
+    $main_color_3 = Color principal de tipo 3
+
+    $size = Tamaño del icono
+
+    $left = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $show_more_icon = Icono de "ver más"
+
+    $file_icon = Icono de fichero
+
+*/
+.ps-custom-file {
+  border: 1px solid #EEEEEE;
+  padding: 20px;
+}
+
+/*
+    ========== COOKIE COMPLIANCE ==========
+
+    Estilos dedicados al módulo de cookie compliance.
+
+*/
+.eu-cookie-compliance-content {
+  font-size: 14px;
+}
+.eu-cookie-compliance-content h2, .eu-cookie-compliance-content p {
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .eu-cookie-compliance-content .eu-cookie-compliance-buttons.eu-cookie-compliance-has-categories {
+    float: none;
+  }
+}
+
+/*
+    ========== BLOQUE DE VOLVER ==========
+
+    Estilos dedicados al bloque de "volver" de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin before-icon($size, $left, $icon)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    before-icon = Icono previo al texto del enlace
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $size = Tamaño del icono
+
+    $left = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $main_color_2 = Color principal de tipo 2
+
+    $arrow_left = Icono de flecha izquierda
+*/
+.ps-custom-block-volver .field--name-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.ps-custom-block-volver .field--name-body p {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+.ps-custom-block-volver .field--name-body p::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/Grupo%201778.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  height: 12px;
+}
+.ps-custom-block-volver .field--name-body p a {
+  color: #181818;
+}
+
+/*
+    ========== COMENTARIOS ==========
+
+    Estilos dedicados a los comentarios.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin ps-content-margins($breakpoint, $max-width)
+
+    ------------------------- MIXINS --------------------------   
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    ----------------------- VARIABLES -------------------------
+    $breakpoints = Medida que marca el punto de ruptura
+
+    $max-width = Máximo de ancho
+*/
+@media screen and (min-width: 992px) {
+  .ps-comentarios {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+}
+
+/*
+    ========== ICONOS ACCESO DIRECTO ==========
+
+    Estilos dedicados a los iconos de acceso directo
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $main_color_5 = Color principal de tipo 5
+*/
+@media (min-width: 420px) {
+  .ps-iconos-acceso-rapido .view-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.ps-iconos-acceso-rapido .view-content > div {
+  border: 1px solid #617F95;
+  margin: 15px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 420px) {
+  .ps-iconos-acceso-rapido .view-content > div {
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.ps-iconos-acceso-rapido .view-content > div div {
+  margin-left: 15px;
+}
+@media (min-width: 420px) {
+  .ps-iconos-acceso-rapido .view-content > div div {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+/*
+    ============= MÁS RECIENTE ==============
+
+    Estilos dedicados a la vista de más recientes.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    responsive-img = Convierte una imagen en responsive
+
+    ----------------------- VARIABLES -------------------------
+    $main_color_1 / 2 = Color principal de tipo 2 /6
+
+    $blanco = Color blanco
+
+*/
+.ps-mas-reciente .grid__content {
+  position: relative;
+}
+.ps-mas-reciente .grid__content:hover .views-field-title {
+  border-bottom-color: #181818;
+}
+.ps-mas-reciente .grid__content .views-field-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(31, 73, 104, 0.8);
+  padding: 20px 15px 14px;
+  border-bottom: 6px solid transparent;
+}
+.ps-mas-reciente .grid__content .views-field-title a {
+  color: #FFFFFF;
+}
+.ps-mas-reciente .grid__content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+    ========== ARBOL DE TEMAS ==========
+
+    Estilos dedicados a la vista para el tipo de multimedia "audio".
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin grid-layout-view($columns, $rows)
+
+        @mixin mf-responsive-grid-layout-view ($min-width, $columns, $rows)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    grid-layout-view = Convierte la estructura de la vista
+    en grid
+
+    mf-responsive-grid-layout-view = Te permite hacer 
+    responsive la estructura
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $columns = Número de columnas del grid (grid-layout-view / mf-responsive-grid-layout-view)
+
+    $rows = Número de filas (grid-layout-view / mf-responsive-grid-layout-view)
+
+*/
+.ps-arbol-temas .view-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: initial;
+}
+@media (min-width: 460px) {
+  .ps-arbol-temas .view-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: initial;
+  }
+}
+@media (min-width: 760px) {
+  .ps-arbol-temas .view-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: initial;
+  }
+}
+.ps-arbol-temas .view-content > .view-grouping {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+}
+.ps-arbol-temas .view-content > .view-grouping:not(:first-child, :nth-child(2), :nth-child(3)) {
+  margin-top: 15px;
+}
+.ps-arbol-temas .view-content > .view-grouping > .view-grouping-header {
+  margin-right: 20px;
+}
+.ps-arbol-temas .view-content h1,
+.ps-arbol-temas .view-content h2,
+.ps-arbol-temas .view-content h3 {
+  margin-top: 0;
+}
+
+/*
+    ========== PANEL GESTIÓN ==========
+
+    Estilos dedicados a la vista para el panel de gestión.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+.ps-panel-gestion .menu.menu-level-0 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ps-panel-gestion .menu.menu-level-0 .menu-item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: initial;
+  align-items: center;
+  min-width: 120px;
+  margin: 10px;
+}
+.ps-panel-gestion .menu.menu-level-0 .menu-item a {
+  margin-top: 5px;
+}
+.ps-panel-gestion .menu.menu-level-0 .menu-item svg {
+  height: 50px;
+  width: 50px;
+}
+
+/*
+    ========== COLECTIVOS ==========
+
+    Estilos dedicados a la vista para los colectivos.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $main_color_1 / 2 = Color principal de tipo 1 / 2
+
+*/
+.ps-colectivos-iconos .grid__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ps-colectivos-iconos .grid__content .views-field-field-icono-svg- {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F4968;
+  margin-bottom: 20px;
+}
+.ps-colectivos-iconos .grid__content .views-field-name {
+  text-align: center;
+}
+.ps-colectivos-iconos .grid__content .views-field-name::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #181818;
+  margin: 5px auto 0;
+}
+
+/*
+    ========== WEBS DESTACADAS ==========
+
+    Estilos dedicados a la vista de webs destacadas.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin ps-content-margins($breakpoint, $max-width)
+
+    ------------------------- MIXINS --------------------------   
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    ----------------------- VARIABLES -------------------------
+    $main_color_1 / 2 / 3 / 6 = Color principal de tipo 1 / 2 / 3 / 6
+
+    $a_color = Color por defecto de los enlaces de la web
+
+    $blanco = Color blanco
+
+    $breakpoints = Medida que marca el punto de ruptura
+
+    $max-width = Máximo de ancho
+
+    $global_icon = Icono de la bola del mundo
+*/
+/* Slider webs destacadas */
+.ps-webs-destacadas {
+  background-color: #FFFFFF;
+  margin-top: 30px;
+}
+.ps-webs-destacadas .view-content {
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: scroll;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .ps-webs-destacadas .view-content {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+}
+.ps-webs-destacadas .view-content::-webkit-scrollbar {
+  display: none;
+}
+.ps-webs-destacadas .view-content .views-row:not(:first-child) {
+  margin-left: 50px;
+}
+.ps-webs-destacadas .view-content .views-row .field-content > div a {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  color: #1F4968;
+}
+.ps-webs-destacadas .view-content .views-row .field-content > div .field__item {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 3px #EEEEEE;
+}
+.ps-webs-destacadas .view-content .views-row .field-content > div .field__item img {
+  width: auto;
+  height: 80px;
+}
+
+.ps-slider-control-web-destacadas {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 10px 10px;
+}
+.ps-slider-control-web-destacadas .control-left {
+  transform: rotateZ(-90deg);
+  cursor: pointer;
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(92%) contrast(91%);
+}
+.ps-slider-control-web-destacadas .control-right {
+  transform: rotateZ(90deg);
+  cursor: pointer;
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(92%) contrast(91%);
+}
+
+/* Menú de webs destacadas */
+.ps-menu--webs-destacadas {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  position: relative;
+}
+.ps-menu--webs-destacadas::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/globo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  position: initial;
+  transform: translateY(-2px);
+}
+@media (min-width: 912px) {
+  .ps-menu--webs-destacadas::before {
+    content: none;
+  }
+}
+.ps-menu--webs-destacadas::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #FFFFFF;
+  margin-left: 5px;
+}
+.ps-menu--webs-destacadas:hover .menu.menu-level-0 .menu-item .menu-link-contentwebs-destacadas {
+  display: block;
+}
+.ps-menu--webs-destacadas .menu.menu-level-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ps-menu--webs-destacadas .menu.menu-level-0 .menu-item > span {
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+@media (min-width: 912px) {
+  .ps-menu--webs-destacadas .menu.menu-level-0 .menu-item > span {
+    font-size: 12px;
+  }
+}
+.ps-menu--webs-destacadas .menu.menu-level-0 .menu-item .menu-link-contentwebs-destacadas {
+  position: absolute;
+  z-index: 99;
+  display: none;
+  padding-top: 18px;
+  right: 0;
+}
+.ps-menu--webs-destacadas .menu.menu-level-0 .menu-item .menu-link-contentwebs-destacadas .view-content {
+  background-color: #181818;
+}
+.ps-menu--webs-destacadas .menu.menu-level-0 .menu-item .menu-link-contentwebs-destacadas .view-content .views-row {
+  border-bottom: 1px solid #444444;
+}
+.ps-menu--webs-destacadas .menu.menu-level-0 .menu-item .menu-link-contentwebs-destacadas .view-content .views-row a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.ps-menu--webs-destacadas .menu.menu-level-0 .menu-item .menu-link-contentwebs-destacadas .view-content .views-row a:hover {
+  text-decoration: underline;
+}
+
+/* PAGES */
+/*
+    ========== BUSCADOR SOLR ==========
+
+    Estilos dedicados a los enlaces de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+
+        @mixin after-icon($size, $right, $icon)
+
+        @mixin display_flex($direction, $justify_content, $align_items)        
+
+    ------------------------- MIXINS --------------------------
+
+    after-icon = Icono posterior al texto del enlace
+
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+
+    $size = Tamaño del icono
+
+    $right = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $main_color_1 = Color principal de tipo 1
+
+    $search_icon = Icono de búsqueda
+
+    $filter_main_color_1_mod_1 = Modificación del filtro de color
+    principal
+
+*/
+.ps-buscador-solr .views-exposed-form .form-item-field-domain-access {
+  display: none;
+}
+.ps-buscador-solr .views-exposed-form .form-item-search-api-fulltext {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.ps-buscador-solr .views-exposed-form .form-item-search-api-fulltext::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #1F4968;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.ps-buscador-solr .views-exposed-form .form-item-search-api-fulltext::after {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/icono-lupa.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  position: absolute;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(62%) contrast(91%);
+}
+.ps-buscador-solr .views-exposed-form .form-item-search-api-fulltext label {
+  display: none;
+}
+.ps-buscador-solr .views-exposed-form .form-item-search-api-fulltext input {
+  width: 66%;
+  border-bottom: none;
+  padding: 10px 60px 10px 5px;
+  background-position: 90% center;
+}
+@media (max-width: 920px) {
+  .ps-buscador-solr .views-exposed-form .form-item-search-api-fulltext input {
+    background-position: 84% center;
+  }
+}
+.ps-buscador-solr .view-content {
+  padding-bottom: 30px;
+}
+.ps-buscador-solr .view-content .views-row:not(:first-child) {
+  border-top: 2px solid #ccc;
+  padding-top: 30px;
+}
+.ps-buscador-solr .view-content .views-row .media--type-imagen.media--view-mode-mitad-ancho {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+}
+.ps-buscador-solr .view-content .views-row .media--type-imagen.media--view-mode-mitad-ancho .field--name-name {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  order: 2;
+}
+.ps-buscador-solr .view-content .views-row .media--type-imagen.media--view-mode-mitad-ancho img {
+  max-width: 180px;
+  height: auto;
+  order: 1;
+  margin-right: 15px;
+}
+.ps-buscador-solr .view-content .views-row .media--type-video-remoto.media--view-mode-mitad-ancho {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+}
+.ps-buscador-solr .view-content .views-row .media--type-video-remoto.media--view-mode-mitad-ancho .field--name-name {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  order: 2;
+}
+.ps-buscador-solr .view-content .views-row .media--type-video-remoto.media--view-mode-mitad-ancho .media-oembed-content {
+  width: 100%;
+  height: 30vw;
+  order: 1;
+  margin-right: 15px;
+}
+@media (min-width: 800px) {
+  .ps-buscador-solr .view-content .views-row .media--type-video-remoto.media--view-mode-mitad-ancho .media-oembed-content {
+    width: 18vw;
+    height: 18vw;
+  }
+}
+
+/*
+    ========= HOME ==========
+    Estilos dedicados a la página Home.
+*/
+/* CONTROLES UI*/
+/*
+    ========== BOTONES ==========
+
+    Estilos dedicados a los botones.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin button_style_scnd($color, $bg_color, $boder_color)
+
+        @mixin button_style_scnd_hover($color, $bg_color, $boder_color)
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin button_icon($size, $m-left, $img, $filter)
+
+        @mixin tipografia($font,$index,$weight)
+
+
+    ------------------------- MIXINS --------------------------
+    button_style_sncd = El estilo del botón secundario
+
+    button_style_scnd_hover = El estilo del botón secundario cuando el cursor se
+    posa sobre él
+
+    display_flex = Mixin para las vistas display
+
+    button_icon = Los estilos del icono del botón
+
+    ----------------------- VARIABLES -------------------------
+    $color = Color de la letra del botón
+
+    $bg_color = Color de fondo del botón
+
+    $boder_color = Color del borde del botón
+
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $size = Tamaño del icono
+
+    $m-left = Margen izquierdo del icono con respecto al texto
+
+    $filter = Filtro aplicado al pasar el ratón por encima del
+    enlace
+
+    $font = Representa el mapa de tipo de fuente
+
+    $index = El índice del mapa $family
+
+    $weight = El índice del mapa $font
+
+    $button_font_size_mn_1 / 2 = Tamaño de fuente del botón
+    principal con estilo 1 / 2
+
+    $icon_btn_mn_1_height = Altura del icono del boton 1
+
+    $icon_btn_mn_1_width = Anchura del icono del boton 1
+
+    $icon_btn_mn_2_size = Ancho y alto del icono del boton 2
+
+    $icon_btn_mn_1 / 2_m-left = Margen izquierdo del icono
+    para el botón 1 / 2
+
+    $button_mn_1 / 2_icon = Icono del botón 1 / 2
+
+    ------------------------- MAPAS ---------------------------
+    $family:('Open Sans', 'Source Sans Pro', 'Roboto');
+
+    $Roboto:(thin:100,light:300,regular:400,medium:500,
+    bold:700, black:900)
+*/
+.ps-mn-btn-style-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  color: #444444;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+}
+.ps-mn-btn-style-1::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 9px;
+  margin-left: 8px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: none;
+}
+.ps-mn-btn-style-1:hover {
+  color: #617F95;
+}
+.ps-mn-btn-style-1:hover::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 9px;
+  margin-left: 8px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: invert(51%) sepia(10%) saturate(1126%) hue-rotate(163deg) brightness(92%) contrast(87%);
+}
+
+.ps-mn-btn-style-1-upopular {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  color: #444444;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+}
+.ps-mn-btn-style-1-upopular::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 9px;
+  margin-left: 8px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: none;
+}
+.ps-mn-btn-style-1-upopular:hover {
+  color: #970076;
+}
+.ps-mn-btn-style-1-upopular:hover::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 9px;
+  margin-left: 8px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: invert(10%) sepia(84%) saturate(7034%) hue-rotate(307deg) brightness(70%) contrast(102%);
+}
+
+.ps-mn-btn-style-1-albacete {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  color: #444444;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+}
+.ps-mn-btn-style-1-albacete::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 9px;
+  margin-left: 8px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: none;
+}
+.ps-mn-btn-style-1-albacete:hover {
+  color: #B31C46;
+}
+.ps-mn-btn-style-1-albacete:hover::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 9px;
+  margin-left: 8px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: invert(8%) sepia(48%) saturate(4546%) hue-rotate(333deg) brightness(90%) contrast(95%);
+}
+
+.ps-mn-btn-style-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  color: #444444;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+}
+.ps-mn-btn-style-2::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-left: 8px;
+  background-image: url("/sites/default/files/iconos-svg/flecha-derecha.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: none;
+}
+.ps-mn-btn-style-2:hover {
+  color: #617F95;
+}
+.ps-mn-btn-style-2:hover::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-left: 8px;
+  background-image: url("/sites/default/files/iconos-svg/flecha-derecha.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: invert(51%) sepia(10%) saturate(1126%) hue-rotate(163deg) brightness(92%) contrast(87%);
+}
+
+.ps-mn-btn-style-2-upopular {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  color: #444444;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+}
+.ps-mn-btn-style-2-upopular::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-left: 8px;
+  background-image: url("/sites/default/files/iconos-svg/flecha-derecha.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: none;
+}
+.ps-mn-btn-style-2-upopular:hover {
+  color: #970076;
+}
+.ps-mn-btn-style-2-upopular:hover::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-left: 8px;
+  background-image: url("/sites/default/files/iconos-svg/flecha-derecha.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: invert(10%) sepia(84%) saturate(7034%) hue-rotate(307deg) brightness(70%) contrast(102%);
+}
+
+.ps-mn-btn-style-2-albacete {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  color: #444444;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+}
+.ps-mn-btn-style-2-albacete::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-left: 8px;
+  background-image: url("/sites/default/files/iconos-svg/flecha-derecha.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: none;
+}
+.ps-mn-btn-style-2-albacete:hover {
+  color: #B31C46;
+}
+.ps-mn-btn-style-2-albacete:hover::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-left: 8px;
+  background-image: url("/sites/default/files/iconos-svg/flecha-derecha.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  filter: invert(8%) sepia(48%) saturate(4546%) hue-rotate(333deg) brightness(90%) contrast(95%);
+}
+
+.ps-scnd-btn-style-1 {
+  color: #181818;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  padding: 8px 24px;
+  border: 1px solid #181818;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.ps-scnd-btn-style-1:hover {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #1F4968;
+  border-color: #1F4968;
+}
+
+.ps-scnd-btn-style-1-upopular {
+  color: #181818;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  padding: 8px 24px;
+  border: 1px solid #181818;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.ps-scnd-btn-style-1-upopular:hover {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #970076;
+  border-color: #970076;
+}
+
+.ps-scnd-btn-style-1-albacete {
+  color: #181818;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  padding: 8px 24px;
+  border: 1px solid #181818;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.ps-scnd-btn-style-1-albacete:hover {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #B31C46;
+  border-color: #B31C46;
+}
+
+.ps-scnd-btn-style-2 {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #1F4968;
+  padding: 8px 24px;
+  border: 1px solid #1F4968;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.ps-scnd-btn-style-2:hover {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #617F95;
+  border-color: #617F95;
+}
+
+.ps-scnd-btn-style-2-upopular {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #181818;
+  padding: 8px 24px;
+  border: 1px solid #181818;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.ps-scnd-btn-style-2-upopular:hover {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #970076;
+  border-color: #970076;
+}
+
+.ps-scnd-btn-style-2-albacete {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #181818;
+  padding: 8px 24px;
+  border: 1px solid #181818;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.ps-scnd-btn-style-2-albacete:hover {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #B31C46;
+  border-color: #B31C46;
+}
+
+/*
+    Estilos de controles de formulario
+
+    Estilos dedicados a los controles de formulario.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin input_style($padding)
+
+        @mixin radio_style
+
+        @mixin radio_check_style
+
+    ----------------------- MIXINS -----------------------------
+    input_style = Estilo del campo del formulario
+
+    radio_style = Estilo del botón radio del formulario
+
+    radio_check_style = Estilo del botón radio cuando está
+    marcado
+    --------------------- VARIABLES ----------------------------
+    $padding = Tamaño del padding del elemento
+
+    $boder_form_input_error = Estilo de los input cuando hay
+    un error en el formulario
+
+    $main_color_1 / 2 / 5 / 6 = Color principal de tipo 1 / 2 / 5 / 6
+
+    $border_form_radio_error = Tipo de borde del botón radio
+    cuando hay errores
+
+    $form_error = Color del error en el formulario
+
+    $checkbox_shadow = Tipo de sombra del checkbox
+
+    $outline_form_check_error = Borde rojo para cuando hay error
+    en el checkbox
+*/
+.form-item input[type=text].error,
+.form-item input[type=email].error,
+.form-item input[type=password].error,
+.form-item input[type=number].error,
+.form-item textarea.error,
+.form-item select.error {
+  border: none;
+  border-bottom: 2px solid #DC0000;
+}
+
+input[type=radio] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 0.5px solid #617F95;
+}
+
+input[type=radio]:hover {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 1px solid #617F95;
+}
+
+input[type=radio]::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  margin: 3px auto;
+}
+
+input[type=radio]:checked::before {
+  background-color: #1F4968;
+}
+
+input[type=radio].error {
+  border: 1px solid #DC0000;
+}
+
+input[type=radio].error:checked:before {
+  background-color: #DC0000;
+}
+
+input[type=checkbox] {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1607843137);
+}
+
+input[type=checkbox].error {
+  outline: 1px solid #DC0000;
+}
+
+/* CHOSEN */
+.chosen-container {
+  font-size: 15px;
+  background-color: #F9F9F9;
+}
+.chosen-container .chosen-single {
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-bottom: 1px solid #181818;
+  border-radius: 0;
+}
+.chosen-container .chosen-single b {
+  filter: invert(21%) sepia(73%) saturate(489%) hue-rotate(163deg) brightness(57%) contrast(90%);
+  transform: rotateZ(270deg) translateX(4px);
+}
+.chosen-container .chosen-results {
+  display: none;
+}
+.chosen-container .chosen-results .active-result {
+  background-color: #617F95;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+.chosen-container-active.chosen-with-drop .chosen-single b {
+  transform: rotateZ(-180deg) translateX(8px);
+}
+.chosen-container-active.chosen-with-drop .chosen-results {
+  display: block;
+}
+.chosen-container.select-dark .active-result {
+  background-color: #444444;
+}
+.chosen-container.error .chosen-single {
+  border: none;
+  border-bottom: 2px solid #DC0000;
+}
+
+/*
+    ============= ACORDEÓN ==============
+
+    Estilos dedicados a los acordeones.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin before-icon($size, $left, $icon)
+
+        @mixin after-icon($size, $right, $icon)
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    before-icon = Mixin para insertar icono antes del contenido
+
+    after-icon = Inserta un icono después del contenido
+
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $size = Tamaño del icono
+
+    $right = Posición a la izquierda del icono
+
+    $left = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $main_color_1 / 3 / 4 = Color principal de tipo 1 / 3 / 4
+
+    $help_icon = Icono de ayuda
+
+    $filter_main_color_1 = Filtro del color principal
+
+    $show_more_icon = Icono de "ver más"
+
+    $file_icon = Icono de fichero
+
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+/* Módulo de acordeón */
+.ui-accordion .ui-accordion-header {
+  color: #1F4968;
+  padding: 0.5em 60px;
+}
+.ui-accordion .ui-accordion-header a {
+  color: #1F4968;
+}
+.ui-accordion .ui-accordion-header.ui-state-active {
+  background: #ededed;
+  border-color: #c5c5c5;
+  color: #1F4968;
+}
+.ui-accordion .ui-accordion-header.ui-state-active::after {
+  transform: rotate(45deg);
+}
+.ui-accordion .ui-accordion-header.ui-state-active a {
+  color: #1F4968;
+}
+.ui-accordion .ui-accordion-header::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/ayudar.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(92%) contrast(91%);
+}
+.ui-accordion .ui-accordion-header::after {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/Grupo-266.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  position: absolute;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  filter: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(92%) contrast(91%);
+  transition: all 300ms;
+  top: 8px;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  display: none;
+}
+
+/* Acordeón desde estilos (Bloque de vista) */
+.block-view-accordion {
+  margin: 10px 0;
+}
+.block-view-accordion.close-accordion h1::after {
+  transform: initial;
+}
+.block-view-accordion h1 {
+  background-color: #EEEEEE;
+  padding: 10px 10px 10px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+}
+.block-view-accordion h1::after {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/Grupo-266.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  transition: all 300ms;
+  transform: rotateZ(45deg);
+}
+.block-view-accordion.accordion-file-icon h1::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/archivo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+.block-view-accordion.accordion-link-icon h1::before {
+  content: "";
+  display: block;
+  background-image: url("/sites/default/files/iconos-svg/archivo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* CUSTOM */
+.ps-alertas-markup {
+  display: block !important;
+}
+.ps-rrss-share .view-header {
+  margin-bottom: 1em;
+}
+.ps-rrss-share .view-header .view-content {
+  padding: 0;
+  display: flex !important;
+}
+.ps-rrss-share .view-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  padding: 10px 0;
+}
+
+/* listados de contenido */
+.ps-fulltext-search-list {
+  /* ocultamos el filtro por dominio, porque si lo configuramos como no expuesto, no filtra como esperamos */
+}
+.ps-fulltext-search-list .form-item-field-domain-access {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .ps-fulltext-search-list .form-actions {
+    justify-content: center;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .node--view-mode-teaser .node__content .layout--twocol-section {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=tema_master.css.map */

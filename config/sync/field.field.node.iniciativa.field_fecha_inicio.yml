@@ -1,0 +1,21 @@
+uuid: 052c4bf0-1cd9-404f-ad9c-250f4bbe629d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.iniciativa
+  module:
+    - datetime
+id: node.iniciativa.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: iniciativa
+label: 'Fecha de inicio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,20 @@
+uuid: 189e24ff-a320-4daf-a197-580df6804f40
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.efectos_silencio_administrativo
+  module:
+    - path
+id: taxonomy_term.efectos_silencio_administrativo.path
+field_name: path
+entity_type: taxonomy_term
+bundle: efectos_silencio_administrativo
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

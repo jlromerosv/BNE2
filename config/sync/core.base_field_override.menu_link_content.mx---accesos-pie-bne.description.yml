@@ -1,0 +1,18 @@
+uuid: 57d9878b-dce7-4924-9e87-53ed298b0346
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx---accesos-pie-bne
+id: menu_link_content.mx---accesos-pie-bne.description
+field_name: description
+entity_type: menu_link_content
+bundle: mx---accesos-pie-bne
+label: Descripción
+description: 'Mostrar cuando se pase el cursor por encima del enlace de menú.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

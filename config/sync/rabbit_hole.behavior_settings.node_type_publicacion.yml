@@ -1,0 +1,14 @@
+uuid: bb6181e7-41e6-4306-8205-76dea9bb8fa3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.publicacion
+id: node_type_publicacion
+entity_type_id: node_type
+entity_id: publicacion
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

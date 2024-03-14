@@ -1,0 +1,23 @@
+uuid: 88693e53-09f8-422a-96ff-604b695194d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_no_mostrar_inverso
+    - node.type.evento
+id: node.evento.field_no_mostrar_inverso
+field_name: field_no_mostrar_inverso
+entity_type: node
+bundle: evento
+label: 'No mostrar en contenidos relacionados inverso'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

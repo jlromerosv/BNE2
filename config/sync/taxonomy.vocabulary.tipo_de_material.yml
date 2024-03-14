@@ -1,0 +1,8 @@
+uuid: 45b1da69-24d7-46ef-8633-a86fc8589dd2
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de colección'
+vid: tipo_de_material
+description: ''
+weight: 0

@@ -1,0 +1,20 @@
+uuid: bce339e7-88b0-4500-808f-172e91bc0b8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+  module:
+    - options
+id: node.documento.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: documento
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

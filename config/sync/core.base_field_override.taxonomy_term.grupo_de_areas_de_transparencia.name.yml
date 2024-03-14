@@ -1,0 +1,18 @@
+uuid: 32cedafa-bd92-4c47-8288-28d9237f0d1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.grupo_de_areas_de_transparencia
+id: taxonomy_term.grupo_de_areas_de_transparencia.name
+field_name: name
+entity_type: taxonomy_term
+bundle: grupo_de_areas_de_transparencia
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

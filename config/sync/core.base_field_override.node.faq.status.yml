@@ -1,0 +1,22 @@
+uuid: 787f89d0-e4fd-4131-a48a-28b2af2b4659
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.faq
+id: node.faq.status
+field_name: status
+entity_type: node
+bundle: faq
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

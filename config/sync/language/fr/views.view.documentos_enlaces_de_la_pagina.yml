@@ -1,0 +1,93 @@
+label: 'Documents/tu Raccordes de la page'
+description: null
+display:
+  default:
+    display_options:
+      title: 'Documents / Liens utiles'
+      fields:
+        field_media_file:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_archivos:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <a href="%7B%7B%20field_media_file%20%7D%7D%20" target="_blank">{{ field_Archives }} </a>
+            path: '{{ field_Archives }}'
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_enlaces:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Appliquer
+          reset_button_label: Rétablir
+          exposed_sorts_label: 'Ordonner par'
+      sorts:
+        created:
+          admin_label: null
+          expose:
+            label: null
+      arguments:
+        nid:
+          admin_label: null
+          title: null
+      filters:
+        field_enlaces_title:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_archivos_target_id:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        langcode:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      header:
+        area:
+          admin_label: null
+          content:
+            value: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="ps-documentos-enlaces-title">[view:title]</div>
+  block_1:
+    display_title: 'Documents/tu Raccordes de la page'
+    display_options:
+      display_description: null

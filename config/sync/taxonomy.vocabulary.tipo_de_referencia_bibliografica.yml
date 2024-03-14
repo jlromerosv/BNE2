@@ -1,0 +1,8 @@
+uuid: 8a5d2e27-140e-462e-91bb-a57c52ca9893
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de referencia bibliográfica'
+vid: tipo_de_referencia_bibliografica
+description: ''
+weight: 0

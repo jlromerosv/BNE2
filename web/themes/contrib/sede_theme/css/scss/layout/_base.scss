@@ -1,0 +1,37 @@
+.ps-content-margins {
+    @media screen and (min-width: 992px){
+        max-width: 1920px;
+        // max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+
+.ps-path-búsqueda-avanzada{
+    .ps-content-margins {
+        @media screen and (min-width: 992px){
+            // max-width: 1366px;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.ps-node-27006{
+    // .ps-encabezados-region{
+    //     @media screen and (min-width: 992px){
+    //         max-width: 1366px;
+    //         // max-width: 1920px;
+    //         margin: 0 auto;
+    //     }
+    // }
+    main{
+        @media screen and (min-width: 992px){
+            max-width: 1366px;
+            // max-width: 1920px;
+            margin: 0 auto;
+        }
+    }
+
+
+}

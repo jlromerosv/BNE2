@@ -1,0 +1,16 @@
+popup_agreed:
+  value: '<h2>Gràcies per acceptar les cookies</h2><p>Ara podeu amagar aquest missatge o informar-vos-en més.</p>'
+popup_agree_button_message: Accepta
+popup_more_info_button_message: 'Més informació'
+popup_find_more_button_message: 'Més informació'
+popup_hide_button_message: Oculta
+popup_info:
+  value: "<h2>Utilitzem cookies en aquest lloc per millorar la vostra experiència d'usuari</h2>\r\n\r\n<p>En fer clic al botó D'acord, accepta que ho fem.</p>\r\n"
+popup_link: node/2441
+disagree_button_label: 'No, gràcies'
+withdraw_message:
+  value: "<h2>Utilitzem cookies en aquest lloc per millorar la vostra experiència d'usuari</h2>\r\n\r\n<p>Heu donat el vostre consentiment perquè establim cookies.</p>\r\n"
+withdraw_action_button_label: 'Revocar consentimiento'
+withdraw_tab_button_label: 'Paràmetres de privadesa'
+save_preferences_button_label: 'Desa les preferència'
+accept_all_categories_button_label: 'Accepta totes les cookies'

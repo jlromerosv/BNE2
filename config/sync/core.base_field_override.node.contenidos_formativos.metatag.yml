@@ -1,0 +1,18 @@
+uuid: a6e36194-0b0b-4f73-b243-532c8d4c0da4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+id: node.contenidos_formativos.metatag
+field_name: metatag
+entity_type: node
+bundle: contenidos_formativos
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

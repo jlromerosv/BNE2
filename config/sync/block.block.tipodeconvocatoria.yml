@@ -1,0 +1,29 @@
+uuid: 481e5e61-dcbb-4056-a2a4-cdeed7122000
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipo_de_convocatoria_v2
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: tipodeconvocatoria
+theme: bne_theme
+region: sidebar_first
+weight: -59
+provider: null
+plugin: 'facet_block:tipo_de_convocatoria_v2'
+settings:
+  id: 'facet_block:tipo_de_convocatoria_v2'
+  label: Tipo
+  label_display: '0'
+  provider: facets
+  block_id: tipodeconvocatoria
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/3472

@@ -1,0 +1,18 @@
+uuid: 8e9a83a9-cfd7-4920-a843-5d73006ea45e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.colectivo
+id: taxonomy_term.colectivo.name
+field_name: name
+entity_type: taxonomy_term
+bundle: colectivo
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

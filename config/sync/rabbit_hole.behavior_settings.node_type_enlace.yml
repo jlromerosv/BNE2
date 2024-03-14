@@ -1,0 +1,14 @@
+uuid: 0c0f1104-34bd-4d41-ae5c-f577e3d2b585
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace
+id: node_type_enlace
+entity_type_id: node_type
+entity_id: enlace
+action: page_redirect
+allow_override: 0
+redirect: '[node:field_enlace:uri]'
+redirect_code: 301
+redirect_fallback_action: access_denied

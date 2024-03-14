@@ -1,0 +1,237 @@
+uuid: 7def4e12-b64e-4c53-92ac-7b21c58d9342
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_personalizada.body
+    - field.field.node.pagina_personalizada.field_alertas
+    - field.field.node.pagina_personalizada.field_alias_tipo_contenido
+    - field.field.node.pagina_personalizada.field_area_de_transparencia
+    - field.field.node.pagina_personalizada.field_bloquear_la_traduccion_
+    - field.field.node.pagina_personalizada.field_coleccion
+    - field.field.node.pagina_personalizada.field_contenido_generico
+    - field.field.node.pagina_personalizada.field_contenidos_genericos_2
+    - field.field.node.pagina_personalizada.field_contenidos_relacionados
+    - field.field.node.pagina_personalizada.field_contenidos_vinculados
+    - field.field.node.pagina_personalizada.field_destacados_carrousel_del_b
+    - field.field.node.pagina_personalizada.field_domain_access
+    - field.field.node.pagina_personalizada.field_domain_all_affiliates
+    - field.field.node.pagina_personalizada.field_domain_source
+    - field.field.node.pagina_personalizada.field_enlaces
+    - field.field.node.pagina_personalizada.field_filtros
+    - field.field.node.pagina_personalizada.field_formulario
+    - field.field.node.pagina_personalizada.field_icono
+    - field.field.node.pagina_personalizada.field_id_externo
+    - field.field.node.pagina_personalizada.field_iframe
+    - field.field.node.pagina_personalizada.field_imagen_cabecera
+    - field.field.node.pagina_personalizada.field_imagen_destacada
+    - field.field.node.pagina_personalizada.field_imagen_representativa
+    - field.field.node.pagina_personalizada.field_meta_tags
+    - field.field.node.pagina_personalizada.field_publicaciones
+    - field.field.node.pagina_personalizada.field_rede
+    - field.field.node.pagina_personalizada.field_subtitulo
+    - field.field.node.pagina_personalizada.field_widget
+    - field.field.node.pagina_personalizada.layout_builder__layout
+    - node.type.pagina_personalizada
+  module:
+    - iframe
+    - link
+    - metatag
+    - text
+    - user
+    - webform
+id: node.pagina_personalizada.default
+targetEntityType: node
+bundle: pagina_personalizada
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_alertas:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_alias_tipo_contenido:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_area_de_transparencia:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_bloquear_la_traduccion_:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_coleccion:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_contenido_generico:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_contenidos_genericos_2:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_destacados_carrousel_del_b:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_enlaces:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_filtros:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_formulario:
+    type: webform_entity_reference_entity_view
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_icono:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_id_externo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_iframe:
+    type: iframe_default
+    label: above
+    settings:
+      url: ''
+      title: ''
+      class: ''
+      frameborder: '0'
+      scrolling: ''
+      transparency: '0'
+      allowfullscreen: '0'
+      tokensupport: '0'
+      width: ''
+      height: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen_cabecera:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_publicaciones:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_rede:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_widget:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_imagen_destacada: true
+  field_imagen_representativa: true
+  field_subtitulo: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

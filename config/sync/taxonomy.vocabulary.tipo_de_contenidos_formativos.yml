@@ -1,0 +1,8 @@
+uuid: 9f028b7d-5e35-4172-9aef-11d231606812
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de curso/formación'
+vid: tipo_de_contenidos_formativos
+description: ''
+weight: 0

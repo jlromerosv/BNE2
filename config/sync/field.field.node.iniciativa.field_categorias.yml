@@ -1,0 +1,29 @@
+uuid: 09061d32-e8c7-4fc5-ab5e-d8db9f1df985
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorias
+    - node.type.iniciativa
+    - taxonomy.vocabulary.categoria_de_iniciativa
+id: node.iniciativa.field_categorias
+field_name: field_categorias
+entity_type: node
+bundle: iniciativa
+label: 'Categorías de iniciativa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_de_iniciativa: categoria_de_iniciativa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

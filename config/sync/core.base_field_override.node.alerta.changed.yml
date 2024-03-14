@@ -1,0 +1,18 @@
+uuid: 73f6f0c1-d404-497c-96b2-f157c1e29cd2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.alerta
+id: node.alerta.changed
+field_name: changed
+entity_type: node
+bundle: alerta
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

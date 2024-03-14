@@ -1,0 +1,34 @@
+uuid: ae38ec2e-8601-4053-86bd-23920179fe58
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloques_imagenes_de_cabecera
+  module:
+    - system
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloques_imagenes_de_cabecera_block_4
+theme: bne_theme
+region: breadcrumb
+weight: -56
+provider: null
+plugin: 'views_block:bloques_imagenes_de_cabecera-block_4'
+settings:
+  id: 'views_block:bloques_imagenes_de_cabecera-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/2681\r\n/referencias-bibliograficas/*\r\n/colecciones/*\r\n/collections/*\r\n/colleccions/*\r\n/coleccions/*\r\n/bilduma/*\r\n"

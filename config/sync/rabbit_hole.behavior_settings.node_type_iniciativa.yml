@@ -1,0 +1,14 @@
+uuid: 6db1350a-f32f-4d43-993f-6bafb5d03042
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iniciativa
+id: node_type_iniciativa
+entity_type_id: node_type
+entity_id: iniciativa
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

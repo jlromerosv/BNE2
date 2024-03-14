@@ -1,0 +1,27 @@
+uuid: b13d7de4-2863-4880-a797-d179b798cd06
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidad
+    - node.type.entidad
+id: node.entidad.field_entidad
+field_name: field_entidad
+entity_type: node
+bundle: entidad
+label: 'Depende de'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

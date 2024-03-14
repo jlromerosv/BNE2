@@ -1,0 +1,7 @@
+uuid: 62da2f69-bf3d-42ee-a417-5222712be700
+langcode: es
+status: false
+dependencies: {  }
+formId: node_red_social_form
+captchaType: default
+label: node_red_social_form

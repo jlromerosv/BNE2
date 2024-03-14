@@ -1,0 +1,28 @@
+uuid: 429c7c26-0412-4b37-8b7f-edb2da914fda
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidades_subvencionadoras
+    - node.type.entidad
+    - node.type.exposicion
+id: node.exposicion.field_entidades_subvencionadoras
+field_name: field_entidades_subvencionadoras
+entity_type: node
+bundle: exposicion
+label: Subvenciona
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

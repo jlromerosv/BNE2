@@ -1,0 +1,14 @@
+uuid: c39704fa-a671-43f8-abc4-8a707887190d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contenidos_formativos
+id: taxonomy_vocabulary_tipo_de_contenidos_formativos
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_contenidos_formativos
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

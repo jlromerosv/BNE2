@@ -1,0 +1,28 @@
+uuid: fee6beef-6a59-4f82-8c0c-218dafbec6c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_galeria_de_documentos
+    - node.type.convocatoria
+    - node.type.galeria_de_documentos
+id: node.convocatoria.field_galeria_de_documentos
+field_name: field_galeria_de_documentos
+entity_type: node
+bundle: convocatoria
+label: 'Grupo de documentos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      galeria_de_documentos: galeria_de_documentos
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

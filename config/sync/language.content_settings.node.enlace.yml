@@ -1,0 +1,18 @@
+uuid: cb2aa39a-e5db-4fd0-be64-0f4112018130
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.enlace
+target_entity_type_id: node
+target_bundle: enlace
+default_langcode: site_default
+language_alterable: true

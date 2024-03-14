@@ -1,0 +1,18 @@
+uuid: aa464ed2-7875-4cff-be1d-6c0b6db7d460
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.dossier
+id: node.dossier.title
+field_name: title
+entity_type: node
+bundle: dossier
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

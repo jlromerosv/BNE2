@@ -1,0 +1,7 @@
+uuid: 4e2a35f7-2037-43bb-8bc6-e88e3e759f46
+langcode: es
+status: false
+dependencies: {  }
+formId: node_galeria_de_videos_form
+captchaType: default
+label: node_galeria_de_videos_form

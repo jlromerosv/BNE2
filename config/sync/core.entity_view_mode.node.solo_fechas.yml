@@ -1,0 +1,10 @@
+uuid: f5f7d9b7-257b-4dd3-99cb-2a0c64b3d299
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.solo_fechas
+label: 'Solo fechas'
+targetEntityType: node
+cache: true

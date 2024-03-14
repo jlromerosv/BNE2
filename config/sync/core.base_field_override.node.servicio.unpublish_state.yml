@@ -1,0 +1,20 @@
+uuid: e59b6e1d-055a-4455-a375-3f219d6a1966
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.servicio
+  module:
+    - options
+id: node.servicio.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: servicio
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

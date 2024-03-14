@@ -1,0 +1,22 @@
+uuid: bb010115-46ec-43ab-b3a2-4a006f5f4ae5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: iniciativas
+label: Iniciativas
+type: 'canonical_entities:node'
+pattern: '/iniciativas-proyectos/[node:title]'
+selection_criteria:
+  3f1bcff8-95b1-4c45-bb6b-85191ab9687c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3f1bcff8-95b1-4c45-bb6b-85191ab9687c
+    context_mapping:
+      node: node
+    bundles:
+      iniciativa: iniciativa
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,0 +1,18 @@
+uuid: e1b27604-9c03-4da1-aafe-7de97cb91681
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad
+id: node.entidad.title
+field_name: title
+entity_type: node
+bundle: entidad
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

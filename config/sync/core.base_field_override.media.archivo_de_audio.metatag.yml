@@ -1,0 +1,18 @@
+uuid: 6cbd5049-0cde-4a74-ade8-716773f448a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo_de_audio
+id: media.archivo_de_audio.metatag
+field_name: metatag
+entity_type: media
+bundle: archivo_de_audio
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

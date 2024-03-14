@@ -1,0 +1,29 @@
+uuid: df58ec10-c8be-404b-bd64-c754ce62a91b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipos
+    - node.type.faq
+    - taxonomy.vocabulary.categoria_de_faq
+id: node.faq.field_tipos
+field_name: field_tipos
+entity_type: node
+bundle: faq
+label: 'Tipo de pregunta frecuente'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_de_faq: categoria_de_faq
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

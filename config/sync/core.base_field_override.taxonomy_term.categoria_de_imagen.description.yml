@@ -1,0 +1,20 @@
+uuid: d5ddd5c0-3642-4b12-8410-2e9b96330a93
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_imagen
+  module:
+    - text
+id: taxonomy_term.categoria_de_imagen.description
+field_name: description
+entity_type: taxonomy_term
+bundle: categoria_de_imagen
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

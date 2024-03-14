@@ -1,0 +1,20 @@
+uuid: b860adf0-30fa-4fcb-8379-e1789175422d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_entidad
+  module:
+    - text
+id: taxonomy_term.tipo_entidad.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_entidad
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

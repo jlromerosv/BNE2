@@ -1,0 +1,33 @@
+uuid: ea42de80-5c81-41ab-b01a-080394cd072d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipos
+    - node.type.campana
+    - taxonomy.vocabulary.tipo_de_campana
+  content:
+    - 'taxonomy_term:tipo_de_campana:6aea5e4b-7bf2-45a8-a8dc-cb5d9d69487c'
+id: node.campana.field_tipos
+field_name: field_tipos
+entity_type: node
+bundle: campana
+label: 'Tipo de ciclo'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 6aea5e4b-7bf2-45a8-a8dc-cb5d9d69487c
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_campana: tipo_de_campana
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

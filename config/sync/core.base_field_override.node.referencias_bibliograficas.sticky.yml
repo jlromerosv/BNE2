@@ -1,0 +1,22 @@
+uuid: 19b69ac5-312b-4ee9-bf3a-d31bdf73178e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.referencias_bibliograficas
+id: node.referencias_bibliograficas.sticky
+field_name: sticky
+entity_type: node
+bundle: referencias_bibliograficas
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

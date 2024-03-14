@@ -1,0 +1,20 @@
+uuid: 56500b29-7d89-4358-86dc-9bbd3101b8a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_servicio
+  module:
+    - text
+id: taxonomy_term.categoria_de_servicio.description
+field_name: description
+entity_type: taxonomy_term
+bundle: categoria_de_servicio
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,18 @@
+uuid: 88f25d82-686e-40e1-b7dc-9687c207f550
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+id: node.enlace_a_web_archivada.created
+field_name: created
+entity_type: node
+bundle: enlace_a_web_archivada
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

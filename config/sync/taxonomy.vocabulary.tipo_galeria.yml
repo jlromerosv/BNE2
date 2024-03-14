@@ -1,0 +1,8 @@
+uuid: ca9ee0b1-9e3f-48a3-98ae-cb4793121f61
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de galería multimedia'
+vid: tipo_galeria
+description: ''
+weight: 0

@@ -1,0 +1,35 @@
+uuid: 634827c3-6924-4a8d-9260-82d07adfa80e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.grupo_de_temas.domain_access
+    - field.field.taxonomy_term.grupo_de_temas.field_icono_svg_
+    - taxonomy.vocabulary.grupo_de_temas
+  module:
+    - text
+id: taxonomy_term.grupo_de_temas.default
+targetEntityType: taxonomy_term
+bundle: grupo_de_temas
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icono_svg_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  domain_access: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

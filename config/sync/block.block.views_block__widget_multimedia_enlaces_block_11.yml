@@ -1,0 +1,37 @@
+uuid: b6f650bf-cb42-4db7-95fe-c00aa7a86f91
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - node
+    - views
+  theme:
+    - bne_theme
+id: views_block__widget_multimedia_enlaces_block_11
+theme: bne_theme
+region: content
+weight: -53
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-block_11'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-block_11'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      entrada_de_blog: entrada_de_blog

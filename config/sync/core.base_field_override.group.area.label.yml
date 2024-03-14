@@ -1,0 +1,18 @@
+uuid: 9cff8063-67e9-4311-a214-ece0b372c024
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+id: group.area.label
+field_name: label
+entity_type: group
+bundle: area
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

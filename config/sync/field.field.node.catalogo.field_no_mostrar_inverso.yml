@@ -1,0 +1,23 @@
+uuid: 16c803bc-327d-42d7-8293-f2d9d325565a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_no_mostrar_inverso
+    - node.type.catalogo
+id: node.catalogo.field_no_mostrar_inverso
+field_name: field_no_mostrar_inverso
+entity_type: node
+bundle: catalogo
+label: 'No mostrar en contenidos relacionados inverso'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

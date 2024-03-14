@@ -1,0 +1,22 @@
+uuid: c624fdb7-b0fb-462d-8e76-1e131528f4d6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: dossieres
+label: Dossieres
+type: 'canonical_entities:node'
+pattern: '/dossieres/[node:title]'
+selection_criteria:
+  c9ca96ab-f7ab-404b-a065-050abb9fa216:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c9ca96ab-f7ab-404b-a065-050abb9fa216
+    context_mapping:
+      node: node
+    bundles:
+      dossier: dossier
+selection_logic: and
+weight: -4
+relationships: {  }

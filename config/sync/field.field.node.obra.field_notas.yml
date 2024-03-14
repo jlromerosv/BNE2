@@ -1,0 +1,19 @@
+uuid: 774ee550-4d08-4041-90d3-0a1027cb3244
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notas
+    - node.type.obra
+id: node.obra.field_notas
+field_name: field_notas
+entity_type: node
+bundle: obra
+label: Notas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

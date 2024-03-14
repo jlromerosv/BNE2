@@ -1,0 +1,29 @@
+uuid: b80f6b7b-a9e2-41d2-8f1d-48c0046d9f7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipos
+    - node.type.dossier
+    - taxonomy.vocabulary.tipo_de_dossier_boletin
+id: node.dossier.field_tipos
+field_name: field_tipos
+entity_type: node
+bundle: dossier
+label: 'Tipo de dossier'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_dossier_boletin: tipo_de_dossier_boletin
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

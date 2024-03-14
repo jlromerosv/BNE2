@@ -1,0 +1,18 @@
+uuid: 76454b50-bab5-4ada-82a1-46d42730b210
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.hito
+id: node.hito.title
+field_name: title
+entity_type: node
+bundle: hito
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

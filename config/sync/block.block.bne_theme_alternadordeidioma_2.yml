@@ -1,0 +1,29 @@
+uuid: a923d345-7906-458f-9b71-4b5a6189094a
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - system
+  theme:
+    - bne_theme
+id: bne_theme_alternadordeidioma_2
+theme: bne_theme
+region: header_izquierdo_1_2
+weight: -14
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Alternador de idioma'
+  label_display: '0'
+  provider: language
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/*\r\n/taxonomy/*"

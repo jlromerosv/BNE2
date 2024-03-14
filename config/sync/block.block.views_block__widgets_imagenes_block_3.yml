@@ -1,0 +1,60 @@
+uuid: 6df76526-984b-440b-afa8-fedd4d076320
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widgets_imagenes
+  module:
+    - node
+    - views
+  theme:
+    - bne_theme
+id: views_block__widgets_imagenes_block_3
+theme: bne_theme
+region: multimedia
+weight: -65
+provider: null
+plugin: 'views_block:widgets_imagenes-block_3'
+settings:
+  id: 'views_block:widgets_imagenes-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      autor: autor
+      campana: campana
+      catalogo: catalogo
+      coleccion: coleccion
+      contenido_generico: contenido_generico
+      convocatoria: convocatoria
+      dossier: dossier
+      entidad: entidad
+      entidad_referencia_: entidad_referencia_
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      faq: faq
+      galeria_de_documentos: galeria_de_documentos
+      galeria_de_videos: galeria_de_videos
+      horarios: horarios
+      iniciativa: iniciativa
+      lugar: lugar
+      noticia: noticia
+      obra: obra
+      pagina_basica: pagina_basica
+      pagina_personalizada: pagina_personalizada
+      persona: persona
+      publicacion: publicacion
+      red_social: red_social
+      referencias_bibliograficas: referencias_bibliograficas
+      seccion_nivel_1_estandar: seccion_nivel_1_estandar
+      servicio: servicio
+      sesion_de_actividad: sesion_de_actividad

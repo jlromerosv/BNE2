@@ -1,0 +1,18 @@
+uuid: a943c20b-d4d2-45b2-9e84-0a8852003adb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+id: node.exposicion.changed
+field_name: changed
+entity_type: node
+bundle: exposicion
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

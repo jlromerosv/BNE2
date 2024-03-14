@@ -1,0 +1,18 @@
+uuid: 57b1ed1b-3f74-43a4-8a02-5b1c0638c13e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+id: node.exposicion.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: exposicion
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

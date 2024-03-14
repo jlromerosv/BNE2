@@ -1,0 +1,17 @@
+uuid: d1b88b51-1bbf-4f87-8fac-60a02e9f4fa4
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.recorte_libre
+  module:
+    - crop
+name: recorte_libre
+label: 'Recorte libre'
+effects:
+  94ef4f98-aaa8-451a-9e44-01404cb0518b:
+    uuid: 94ef4f98-aaa8-451a-9e44-01404cb0518b
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: recorte_libre

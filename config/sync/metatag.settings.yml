@@ -1,0 +1,135 @@
+entity_type_groups:
+  node:
+    autor:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    campana:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    catalogo:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    coleccion:
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    convocatoria:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    documento:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    dossier:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    enlace:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    enlace_a_web_archivada:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    entidad:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    entidad_referencia_:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    entrada_de_blog:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    evento:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    faq:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    galeria_de_documentos:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    galeria_de_imagenes:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    horarios:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    iniciativa:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    lugar:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    noticia:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    obra:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    pagina_basica:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    pagina_personalizada:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    persona:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    publicacion:
+      open_graph_products: open_graph_products
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    red_social:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    referencias_bibliograficas:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    seccion_nivel_1_estandar:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    servicio:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+    webform:
+      basic: basic
+      open_graph: open_graph
+      twitter_cards: twitter_cards
+tag_trim_method: beforeValue
+tag_trim_maxlength:
+  metatag_maxlength_abstract: null
+  metatag_maxlength_description: null
+  metatag_maxlength_title: null
+  metatag_maxlength_og_description: null
+  metatag_maxlength_og_site_name: null
+  metatag_maxlength_og_title: null
+  metatag_maxlength_twitter_cards_description: null
+  metatag_maxlength_twitter_cards_label1: null
+  metatag_maxlength_twitter_cards_label2: null
+  metatag_maxlength_twitter_cards_title: null
+tag_scroll_max_height: ''

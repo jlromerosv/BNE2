@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function bne_busquedas_theme($existing, $type, $theme, $path)
+{
+    return [
+        'bdh_plantilla' => [
+            'variables' => [
+                'resultado_bdh' => NULL,
+                'resultado_bdpi' => NULL,
+                'resultado_hemeroteca' => NULL,
+                'resultado_datos' => NULL,
+                'parametro' => NULL,
+            ]
+        ]
+    ];
+}
+

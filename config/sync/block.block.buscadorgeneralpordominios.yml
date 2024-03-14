@@ -1,0 +1,30 @@
+uuid: 86011b8a-1fce-4e2b-9436-7d86c89cc531
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:html:99997a4d-4c44-47fe-aff5-25db42d4154a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bne_theme
+id: buscadorgeneralpordominios
+theme: bne_theme
+region: breadcrumb
+weight: -34
+provider: null
+plugin: 'block_content:99997a4d-4c44-47fe-aff5-25db42d4154a'
+settings:
+  id: 'block_content:99997a4d-4c44-47fe-aff5-25db42d4154a'
+  label: 'Buscador general por dominios'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/15327\r\n/node/18794"

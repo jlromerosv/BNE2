@@ -1,0 +1,23 @@
+uuid: 6f8459fa-fc48-4b52-b110-ad03196bd2d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.feeds_item
+    - taxonomy.vocabulary.provincias
+  module:
+    - feeds
+id: taxonomy_term.provincias.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+bundle: provincias
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

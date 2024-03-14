@@ -1,0 +1,20 @@
+uuid: 189686bd-d619-43e5-97e3-01b49cfe13f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+  module:
+    - path
+id: node.cargo.path
+field_name: path
+entity_type: node
+bundle: cargo
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

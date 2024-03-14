@@ -1,0 +1,29 @@
+uuid: 5a1eff0a-293c-4442-a191-0dced23c739a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area_tematica
+    - node.type.exposicion
+    - taxonomy.vocabulary.area_tematica
+id: node.exposicion.field_area_tematica
+field_name: field_area_tematica
+entity_type: node
+bundle: exposicion
+label: 'Área temática'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_tematica: area_tematica
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

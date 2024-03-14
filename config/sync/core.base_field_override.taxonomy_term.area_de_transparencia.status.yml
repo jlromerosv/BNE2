@@ -1,0 +1,22 @@
+uuid: 4eca5bc8-8bc7-432e-b099-98fb32b9f791
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_de_transparencia
+id: taxonomy_term.area_de_transparencia.status
+field_name: status
+entity_type: taxonomy_term
+bundle: area_de_transparencia
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

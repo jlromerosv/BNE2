@@ -1,0 +1,156 @@
+.page-node-type-dossier {
+  #block-fundacion-theme-contenidoprincipaldelapagina > h1 {
+    display: none;
+  }
+  #block-fundacion-theme-contenidoprincipaldelapagina {
+    h1 {
+      .field--name-title {
+        display: none;
+      }
+    }
+    article {
+      .node__content {
+        .layout--onecol .layout__region {
+          width: auto;
+        }
+        .layout--onecol {
+          .layout__region {
+            .block-field-blocknodedossierfield-tipos {
+              display: inline-block;
+
+              .field--name-field-tipos {
+
+                display: flex;
+                flex-wrap: wrap;
+                .field__item {
+                  @include etiqueta();
+                  margin: 0 10px 5px 0;
+
+                }
+              }
+            }
+            .block-field-blocknodedossiertitle {
+              margin: 0.5em 0 0.9em 0;
+              .field--name-title {
+                @include estilo_h1();
+              }
+            }
+            .block-field-blocknodedossierfield-fecha-inicio {
+              margin-bottom: 1.9em;
+              .field--type-datetime {
+                time {
+                  font-size: 16px;
+                  color: $bne_color_1;
+                  font-weight: 400;
+                  line-height: 30px;
+                  letter-spacing: 0.48px;
+                }
+              }
+            }
+            .block-field-blocknodedossierfield-imagen-representativa {
+              margin: 1.9em 0;
+              .field--type-image {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .field__item {
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  picture {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                  }
+                }
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+            .block-field-blocknodedossierbody {
+              margin: 1.9em 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ps-path-dossieres {
+  #block-fundacion-theme-contenidoprincipaldelapagina {
+    padding: 4em 0 0 1em !important;
+    @media (max-width: 991.98px) {
+      padding: 2em 0 0 0 !important;
+    }
+    h1 {
+      .field--name-title {
+        display: none;
+      }
+    }
+    .ps-listado-dossieres {
+      .view-filters {
+        padding: 0 50px;
+        min-height: 126px;
+        @media (max-width: 991.98px) {
+          padding: 0 15px;
+        }
+        .form--inline {
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .view-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        @media (min-width: 768px) {
+          grid-template-columns: 1fr 1fr;
+        }
+        @media (min-width: 1200px) {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .views-row {
+          border: 0.5px solid $bne_color_3;
+          cursor: pointer;
+          article {
+            h2 {
+              display: none;
+            }
+            .node__content {
+              .layout {
+                .layout__region {
+                  .block-field-blocknodedossiertitle {
+                    margin-bottom: 1em;
+                    margin-top: 1em;
+                    .field--name-title {
+                      a {
+                        font-size: 24px;
+                        font-family: $dm-serif;
+                        font-weight: $dm-serif-regular;
+                        color: $negro;
+                        line-height: 36px;
+                      }
+                    }
+                  }
+                  .block-field-blocknodedossierbody {
+                    .field--name-body {
+                      p {
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.42px;
+                        color: $bne_color_2;
+                        letter-spacing: 0.48px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

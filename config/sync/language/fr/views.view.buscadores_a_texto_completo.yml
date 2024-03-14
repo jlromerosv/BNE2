@@ -1,0 +1,3528 @@
+label: 'Moteurs de recherche contenu à texte complet'
+description: 'il seulement montre des documents qu''estan explicitamente dans la domination. il ne montre pas ceux qui ils ne l''ont pas sélectionné '
+display:
+  default:
+    display_options:
+      title: 'Moteur de recherche de nouvelles à texte complet'
+      fields:
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              field_autor_entrada_blog:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+              field_etiquetas_busqueda_1:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'ils ne se sont pas trouvé des résultats.'
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      use_more_text: 'Voir plus'
+  block_1:
+    display_title: 'Cycles de la domination'
+    display_options:
+      title: Convocations
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'il n''y a pas des convocations en vigueur actuellement. Desactive Le filtre de Date limite pour voir convocations antérieures'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        search_api_language:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_10:
+    display_title: 'Bourses de la domination'
+    display_options:
+      title: 'Bourses de travail'
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'ils ne se sont pas trouvé des résultats.'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_11:
+    display_title: 'Blog de la domination'
+    display_options:
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_autor_entrada_blog:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        created:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categoria:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              field_autor_entrada_blog:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+              field_etiquetas_busqueda_1:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        field_autor_entrada_blog:
+          admin_label: null
+          expose:
+            label: Auteur
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_etiquetas_busqueda_1:
+          admin_label: null
+          expose:
+            label: Étiquette
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_blog:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_12:
+    display_title: Transparence
+    display_options:
+      title: null
+      fields:
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          tags:
+            next: Suivant
+            previous: Antérieur
+            first: Premier
+            last: Dernier
+      empty:
+        view:
+          admin_label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        name_8:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        search_api_language:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_13:
+    display_title: 'Documents de la domination'
+    display_options:
+      title: Nouvelles
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'ils ne se sont pas trouvé des résultats'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        bundle:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        domain_access_1:
+          admin_label: null
+          expose:
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        domain_access_1_1:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_14:
+    display_options:
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categoria:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_autor_entrada_blog:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        created:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          tags:
+            next: Suivant
+            previous: Antérieur
+            first: Premier
+            last: Dernier
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'ils ne se sont pas trouvé des résultats'
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      arguments:
+        field_texto_url:
+          admin_label: null
+          title: null
+      filters:
+        field_autor_entrada_blog:
+          admin_label: null
+          expose:
+            label: Auteur
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_etiquetas_busqueda_1:
+          admin_label: null
+          expose:
+            label: Étiquette
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_15:
+    display_title: 'Convocations v2 de la domination'
+    display_options:
+      title: Convocations
+      pager:
+        options:
+          tags:
+            next: Suivant
+            previous: Antérieur
+            first: Premier
+            last: Dernier
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_16:
+    display_title: 'Initiatives d''Urbanisme'
+    display_options:
+      title: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'ils ne se sont pas trouvé des résultats'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_17:
+    display_title: 'Galeries d''images'
+    display_options:
+      title: 'Galeries d''images'
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        field_fecha_galeria:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_18:
+    display_title: 'Dossieres De la domination'
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_19:
+    display_title: 'Publications de la domination listée'
+    display_options:
+      title: Publications
+      fields:
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'ils ne se sont pas trouvé des résultats'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_2:
+    display_title: 'Tu raccordes de la domination'
+    display_options:
+      title: 'Tu raccordes'
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'ils ne se sont pas trouvé des résultats'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_20:
+    display_title: 'Directoire v2'
+    display_options:
+      title: Directoire
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        title:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: 'Il INTRODUISE LE MOT DE RECHERCHE...'
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_language:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_telefonos:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_21:
+    display_title: 'Blog de la domination periodicomania'
+    display_options:
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_autor_entrada_blog:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        created:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categoria:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        field_etiquetas_busqueda_1:
+          admin_label: null
+          expose:
+            label: Étiquette
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_blog:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_22:
+    display_title: 'Blog de la domination biblioteconomía'
+    display_options:
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_autor_entrada_blog:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        created:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categoria:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        field_etiquetas_busqueda_1:
+          admin_label: null
+          expose:
+            label: Étiquette
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_blog:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_23:
+    display_title: 'Prochains exposés'
+    display_options:
+      title: null
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="ps-fecha-inicio" style="display: none">{{ field_Date_accueil_1 }}</div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="header">
+              {{ field_Moyenne_image }} 
+              {% if field_marque_de l'eau|length > 0 %}
+              <div class="marca-agua">
+              {{ field_Marque_de l'eau }}
+              </div>
+              {% endif %}
+              {% Manche date = "now"|donne-toi("m/d/Et") %}
+              {% if date == field_date_crée_1|striptags|trim %}
+              <div class="ps-today">{{ "Aujourd'hui"|trans }}</div>
+              {% endif %}
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: 'Jusqu''à'
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="container">
+              <div class="etiqueta">{{ field_Type }}</div>
+              <div class="titulo">{{ title }}</div>
+              <div class="horario">
+              {% if  field_Type_visualizacion_f|render|striptags|trim == 10164 %}
+              <div class="fecha-anio">{{ field_Date_accueil_5 }}</div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10162 %}
+              {% endif %}
+
+              {% if field_type_visualizacion_f|render|striptags|trim == 10161 %}
+              <div class="fecha-desde-hasta">{{ field_Date_accueil_2 }}{{ field_date_fin_1 }} </div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10163 %}
+              <div class="fecha-dia">{{ field_Date_accueil_3 }} </div>
+              <div class="fecha-hora">
+              <span class="hora-inicio">{{ field_Date_accueil_4 }}</span>-<span class="hora-fin">{{ field_date_fin_2 }} </span>
+              </div>
+              {% endif %}
+
+              </div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Rétablir des filtres'
+          exposed_sorts_label: 'Ordonner par'
+          sort_asc_label: Ascendant
+          sort_desc_label: Descendant
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: 'Date d''accueil'
+      filters:
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        name_6:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_24:
+    display_title: 'Oeuvres de la domination'
+    display_options:
+      title: Oeuvres
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_language:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_25:
+    display_title: 'Tu raccordes de la domination v2'
+    display_options:
+      title: null
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="etiqueta">{{ field_Type }} </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categorias:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="etiqueta">{{ field_categorias }} </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="container">
+              {{ field_Type }}
+              <div class="titulo">{{ title }}</div>
+              <div class="descripcion">{{ body }}</div>
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          tags:
+            next: Suivant
+            previous: Antérieur
+            first: Premier
+            last: Dernier
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        sticky:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_26:
+    display_title: 'Webs archivés'
+    display_options:
+      title: null
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="etiqueta">{{ field_Type }} </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categorias:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="etiqueta">{{ field_categorias }} </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="container">
+              {{ field_Type }}
+              <div class="titulo">{{ title }}</div>
+              <div class="descripcion">{{ body }}</div>
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          tags:
+            next: Suivant
+            previous: Antérieur
+            first: Premier
+            last: Dernier
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        sticky:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            label: Domination
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_27:
+    display_title: 'Mais Événements'
+    display_options:
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="ps-fecha-inicio" style="display: none">{{ field_Date_accueil_1 }}</div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_6:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="header rs_skip">
+              {{ field_Moyenne_image }} 
+              {% if field_marque_de l'eau|length > 0 %}
+              <div class="marca-agua">
+              {{ field_Marque_de l'eau }}
+              </div>
+              {% endif %}
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: 'Jusqu''à'
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_titulo_listado_agenda:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_subtitulo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="container">
+              {% if  field_Type|length %}
+              <div class="etiqueta"><span>{{ field_Type }}</span></div>
+              {% endif %}
+              {% if  field_Intitule_listée_agenda|length %}
+              <div class="titulo-oculto">{{ title }}</div>
+              <div class="titulo">{{ field_Intitule_listée_agenda }}</div>
+              {% else %}
+              <div class="titulo">{{ title }}</div>
+              {% endif %}
+
+              <div class="subtitulo">{{ field_subtitulo }}</div>
+
+              <div class="horario">
+              {% if  field_Type_visualizacion_f|render|striptags|trim == 10164 %}
+              <div class="fecha-anio">{{ field_Date_accueil_5 }}</div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10162 %}
+
+              {% endif %}
+
+              {% if field_type_visualizacion_f|render|striptags|trim == 10161 %}
+              <div class="fecha-desde-hasta">{{ field_Date_accueil_2 }}{{ field_date_fin_1 }} </div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10163 %}
+              <div class="fecha-dia">{{ field_Date_accueil_3 }} </div>
+              <div class="fecha-hora">
+              <span class="hora-inicio">{{ field_Date_accueil_4 }}</span>-<span class="hora-fin">{{ field_date_fin_2 }} </span>
+              </div>
+              {% endif %}
+
+              </div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Rétablir des filtres'
+          exposed_sorts_label: 'Ordonner par'
+          sort_asc_label: Ascendant
+          sort_desc_label: Descendant
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        field_orden:
+          admin_label: null
+          expose:
+            label: Soulignés
+        field_fecha_fin:
+          admin_label: 'Date de fin'
+          expose:
+            label: 'Date de fin'
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: 'Date d''accueil'
+      filters:
+        field_fecha_fin:
+          admin_label: 'Il date fin >= Depuis'
+          expose:
+            label: 'Date de fin'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_28:
+    display_title: 'Busqueda Événements'
+    display_options:
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="ps-fecha-inicio" style="display: none">{{ field_Date_accueil_1 }}</div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_6:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="header rs_skip">
+              {{ field_Moyenne_image }} 
+              {% if field_marque_de l'eau|length > 0 %}
+              <div class="marca-agua">
+              {{ field_Marque_de l'eau }}
+              </div>
+              {% endif %}
+              {% Manche date = "now"|donne-toi('Et/m/d') %}
+              {% if (fecha == field_fecha_inicio_6|striptags|trim|date('Y/m/d') or (field_fecha_inicio_6|striptags|trim|date('Y/m/d') = fecha)) %}
+              {% if field_type_visualizacion_f|render|striptags|trim != 10162 %}
+              <div class="ps-today">{{ "Aujourd'hui"|trans }}</div>
+              {% endif %}
+              {% endif %}
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: 'Jusqu''à'
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_titulo_listado_agenda:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_subtitulo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="container">
+              {% if  field_Type|length %}
+              <div class="etiqueta"><span>{{ field_Type }}</span></div>
+              {% endif %}
+              {% if  field_Intitule_listée_agenda|length %}
+              <div class="titulo-oculto">{{ title }}</div>
+              <div class="titulo">{{ field_Intitule_listée_agenda }}</div>
+              {% else %}
+              <div class="titulo">{{ title }}</div>
+              {% endif %}
+
+              <div class="subtitulo">{{ field_subtitulo }}</div>
+
+              <div class="horario">
+              {% if  field_Type_visualizacion_f|render|striptags|trim == 10164 %}
+              <div class="fecha-anio">{{ field_Date_accueil_5 }}</div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10162 %}
+
+              {% endif %}
+
+              {% if field_type_visualizacion_f|render|striptags|trim == 10161 %}
+              <div class="fecha-desde-hasta">{{ field_Date_accueil_2 }}{{ field_date_fin_1 }} </div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10163 %}
+              <div class="fecha-dia">{{ field_Date_accueil_3 }} </div>
+              <div class="fecha-hora">
+              <span class="hora-inicio">{{ field_Date_accueil_4 }}</span>-<span class="hora-fin">{{ field_date_fin_2 }} </span>
+              </div>
+              {% endif %}
+
+              </div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Rétablir des filtres'
+          exposed_sorts_label: 'Ordonner par'
+          sort_asc_label: Ascendant
+          sort_desc_label: Descendant
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            sort:
+              advanced:
+                combine_rewrite: null
+                reset_label: 'Rétablir mandat'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: Importance
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: 'Date d''accueil'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: 'Il INTRODUISE LE MOT DE RECHERCHE...'
+          group_info:
+            label: null
+            description: null
+        field_fecha_fin:
+          admin_label: 'Il date fin >= Depuis'
+          expose:
+            label: 'À partir de'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_3:
+    display_title: 'Nouvelles de la domination'
+    display_options:
+      title: Nouvelles
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: 'Il INTRODUISE LE MOT DE RECHERCHE...'
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_4:
+    display_title: Directoire
+    display_options:
+      title: Directoire
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Nettoyer des filtres'
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'il n''y a pas des convocations en vigueur actuellement. Desactive Le filtre de Date limite pour voir convocations antérieures'
+      sorts:
+        title:
+          admin_label: null
+          expose:
+            label: null
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_email:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_telefonos:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_5:
+    display_title: 'Formalités de la domination'
+    display_options:
+      title: Formalités
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'il n''y a pas des formalités en vigueur actuellement.'
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        title:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_6:
+    display_title: 'FAQs De la domination'
+    display_options:
+      title: 'FAQs De la domination'
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        field_orden:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_7:
+    display_title: 'Initiatives de la domination'
+    display_options:
+      title: 'Initiatives et projets'
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categorias:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="etiqueta">{{ field_categorias }} </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="container">
+              {{ field_categorias }} 
+              <div class="titulo">{{ title }}</div>
+              <div class="descripcion">{{ body }}</div>
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        sticky:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_8:
+    display_title: 'Publications de la domination'
+    display_options:
+      title: Publications
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_9:
+    display_title: 'Proximos Événements'
+    display_options:
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="ps-fecha-inicio" style="display: none">{{ field_Date_accueil_1 }}</div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_6:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="header rs_skip">
+              {{ field_Moyenne_image }} 
+              {% if field_marque_de l'eau|length > 0 %}
+              <div class="marca-agua">
+              {{ field_Marque_de l'eau }}
+              </div>
+              {% endif %}
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: 'Jusqu''à'
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_titulo_listado_agenda:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_subtitulo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="container">
+              {% if  field_Type|length %}
+              <div class="etiqueta"><span>{{ field_Type }}</span></div>
+              {% endif %}
+              {% if  field_Intitule_listée_agenda|length %}
+              <div class="titulo-oculto">{{ title }}</div>
+              <div class="titulo">{{ field_Intitule_listée_agenda }}</div>
+              {% else %}
+              <div class="titulo">{{ title }}</div>
+              {% endif %}
+
+              <div class="subtitulo">{{ field_subtitulo }}</div>
+
+              <div class="horario">
+              {% if  field_Type_visualizacion_f|render|striptags|trim == 10164 %}
+              <div class="fecha-anio">{{ field_Date_accueil_5 }}</div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10162 %}
+
+              {% endif %}
+
+              {% if field_type_visualizacion_f|render|striptags|trim == 10161 %}
+              <div class="fecha-desde-hasta">{{ field_Date_accueil_2 }}{{ field_date_fin_1 }} </div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10163 %}
+              <div class="fecha-dia">{{ field_Date_accueil_3 }} </div>
+              <div class="fecha-hora">
+              <span class="hora-inicio">{{ field_Date_accueil_4 }}</span>-<span class="hora-fin">{{ field_date_fin_2 }} </span>
+              </div>
+              {% endif %}
+
+              </div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Rétablir des filtres'
+          exposed_sorts_label: 'Ordonner par'
+          sort_asc_label: Ascendant
+          sort_desc_label: Descendant
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        field_orden:
+          admin_label: null
+          expose:
+            label: Soulignés
+        field_fecha_fin:
+          admin_label: 'Date de fin'
+          expose:
+            label: 'Date de fin'
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: 'Date d''accueil'
+      filters:
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_fecha_fin:
+          admin_label: 'Il date fin >= Depuis'
+          expose:
+            label: 'Date de fin'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  bloque_expuesto:
+    display_title: 'Nouvelles de la domination formulaire exposé'
+    display_options:
+      title: Nouvelles
+      pager:
+        options:
+          tags:
+            next: Suivant
+            previous: Antérieur
+            first: Premier
+            last: Dernier
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Rétablir des filtres'
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Options devancées'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'il n''y a pas des convocations en vigueur actuellement. Desactive Le filtre de Date limite pour voir convocations antérieures'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Chercher
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Date depuis'
+          expose:
+            label: Depuis
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Date jusqu''à'
+          expose:
+            label: 'Jusqu''à'
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+  block_29:
+    display_title: 'Historique d''exposés'
+    display_options:
+      title: null
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="ps-fecha-inicio" style="display: none">{{ field_Date_accueil_1 }}</div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="header">
+              {{ field_Moyenne_image }} 
+              {% if field_marque_de l'eau|length > 0 %}
+              <div class="marca-agua">
+              {{ field_Marque_de l'eau }}
+              </div>
+              {% endif %}
+              {% Manche date = "now"|donne-toi("m/d/Et") %}
+              {% if date == field_date_crée_1|striptags|trim %}
+              <div class="ps-today">{{ "Aujourd'hui"|trans }}</div>
+              {% endif %}
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: 'Jusqu''à'
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+              <div class="container">
+              <div class="etiqueta">{{ field_Type }}</div>
+              <div class="titulo">{{ title }}</div>
+              <div class="horario">
+              {% if  field_Type_visualizacion_f|render|striptags|trim == 10164 %}
+              <div class="fecha-anio">{{ field_Date_accueil_5 }}</div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10162 %}
+              {% endif %}
+
+              {% if field_type_visualizacion_f|render|striptags|trim == 10161 %}
+              <div class="fecha-desde-hasta">{{ field_Date_accueil_2 }}{{ field_date_fin_1 }} </div>
+              {% endif %}
+
+              {% if field_Type_visualizacion_f|render|striptags|trim == 10163 %}
+              <div class="fecha-dia">{{ field_Date_accueil_3 }} </div>
+              <div class="fecha-hora">
+              <span class="hora-inicio">{{ field_Date_accueil_4 }}</span>-<span class="hora-fin">{{ field_date_fin_2 }} </span>
+              </div>
+              {% endif %}
+
+              </div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Chercher
+          reset_button_label: 'Rétablir des filtres'
+          exposed_sorts_label: 'Ordonner par'
+          sort_asc_label: Ascendant
+          sort_desc_label: Descendant
+          text_input_required: 'Sélectionnez n''importe quel filtre et il appuye sur Appliquer pour voir les résultats'
+          bef:
+            general:
+              secondary_label: 'Plus filtres'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: 'Date d''accueil'
+      filters:
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        name_6:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null

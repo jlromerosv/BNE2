@@ -1,0 +1,63 @@
+uuid: db4fe384-d58a-42f4-9650-ba2416653624
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.bloque_colecciones_home_md
+    - image.style.bloque_colecciones_home_sm
+    - image.style.bloque_colecciones_home_xl
+    - image.style.bloque_colecciones_home_xs
+    - image.style.bloque_colecciones_home_xxl
+    - image.style.bloque_colecciones_lg
+  theme:
+    - bne_theme
+id: bloque_colecciones_home
+label: 'EAI Bloque colecciones home'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_home_xxl
+    breakpoint_id: bne_theme.4xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_home_xxl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_home_xxl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_home_xl
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_lg
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_home_md
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_home_sm
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_home_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_home_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: bloque_colecciones_home_xxl

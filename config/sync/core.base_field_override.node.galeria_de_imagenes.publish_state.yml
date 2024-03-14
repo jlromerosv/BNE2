@@ -1,0 +1,20 @@
+uuid: 086d90ab-228f-4e5b-bb95-cf26d4e77d5f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+  module:
+    - options
+id: node.galeria_de_imagenes.publish_state
+field_name: publish_state
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

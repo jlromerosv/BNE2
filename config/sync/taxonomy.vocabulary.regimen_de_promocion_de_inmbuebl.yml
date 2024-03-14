@@ -1,0 +1,8 @@
+uuid: 0cb1049d-cfd7-45a9-8709-19a66a2647cb
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Régimen de promoción de inmuebles'
+vid: regimen_de_promocion_de_inmbuebl
+description: ''
+weight: 0

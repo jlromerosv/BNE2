@@ -1,0 +1,22 @@
+uuid: 40357658-4f19-47fc-a8dd-49437b3798ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_generico
+id: node.contenido_generico.promote
+field_name: promote
+entity_type: node
+bundle: contenido_generico
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

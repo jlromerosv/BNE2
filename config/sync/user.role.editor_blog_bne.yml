@@ -1,0 +1,12 @@
+uuid: 5e110016-478f-4eff-8f79-5798a8b61d11
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: editor_blog_bne
+label: 'Editor Blog BNE'
+weight: 7
+is_admin: null
+permissions:
+  - 'access content'

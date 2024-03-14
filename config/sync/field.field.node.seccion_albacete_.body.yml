@@ -1,0 +1,23 @@
+uuid: 28646bbb-642b-4e79-b549-c4af46d8f1a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.seccion_albacete_
+  module:
+    - text
+id: node.seccion_albacete_.body
+field_name: body
+entity_type: node
+bundle: seccion_albacete_
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

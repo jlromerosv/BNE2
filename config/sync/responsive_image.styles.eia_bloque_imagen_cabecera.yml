@@ -1,0 +1,64 @@
+uuid: 6e7eb989-8e6d-4e62-ba44-1f1cf6bc9367
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.bloque_cabecera_xxl
+    - image.style.bloque_imagen_cabecera_extra_xs
+    - image.style.bloque_imagen_cabecera_lg
+    - image.style.bloque_imagen_cabecera_md
+    - image.style.bloque_imagen_cabecera_sm
+    - image.style.bloque_imagen_cabecera_xl
+    - image.style.bloque_imagen_cabecera_xs
+  theme:
+    - bne_theme
+id: eia_bloque_imagen_cabecera
+label: 'EIA Bloque Imagen Cabecera'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_cabecera_xxl
+    breakpoint_id: bne_theme.4xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_cabecera_xxl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_cabecera_xxl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_xl
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_lg
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_md
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_sm
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_extra_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: bloque_imagen_cabecera_xl

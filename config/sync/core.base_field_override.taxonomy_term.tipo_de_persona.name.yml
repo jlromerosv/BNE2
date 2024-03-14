@@ -1,0 +1,18 @@
+uuid: ba867e35-6a6c-4b3c-b7fb-a30df8d9b481
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_persona
+id: taxonomy_term.tipo_de_persona.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_de_persona
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

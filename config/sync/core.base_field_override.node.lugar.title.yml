@@ -1,0 +1,18 @@
+uuid: 7a67b98a-fcf3-4e79-b62e-650faec03b74
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.lugar
+id: node.lugar.title
+field_name: title
+entity_type: node
+bundle: lugar
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

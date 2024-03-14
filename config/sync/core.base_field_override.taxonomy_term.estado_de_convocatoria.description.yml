@@ -1,0 +1,20 @@
+uuid: b8da4226-80d4-49a8-a449-73344a0b7563
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_de_convocatoria
+  module:
+    - text
+id: taxonomy_term.estado_de_convocatoria.description
+field_name: description
+entity_type: taxonomy_term
+bundle: estado_de_convocatoria
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

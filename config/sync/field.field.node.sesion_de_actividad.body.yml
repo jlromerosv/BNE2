@@ -1,0 +1,28 @@
+uuid: c6dc5ce7-511f-4ed8-a74c-ed29b25a1556
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.sesion_de_actividad
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.sesion_de_actividad.body
+field_name: body
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Información adicional'
+description: 'Información adicional a la de la actividad principal'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

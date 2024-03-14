@@ -1,0 +1,8 @@
+uuid: c1acc320-2227-462b-bb0f-0bcdf8704af6
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría de actualidad'
+vid: categoria_actualidad
+description: 'Categorías de blog BNE y noticias'
+weight: 0

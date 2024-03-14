@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      title: Activités
+      header:
+        area:
+          content:
+            value: "<h2>[view:title]</h2>\r\n"
+            format: html_full
+      footer:
+        area:
+          content:
+            value: "<p><a href=\"/node/3057\">Ver todas las actividades de la BNE</a></p>\r\n"
+            format: html_full

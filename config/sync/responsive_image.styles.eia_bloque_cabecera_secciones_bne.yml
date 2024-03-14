@@ -1,0 +1,63 @@
+uuid: cc534f00-3ca8-47ba-a8e5-89060b6de4e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.cabecera_seccion_bne_lg
+    - image.style.cabecera_seccion_bne_md
+    - image.style.cabecera_seccion_bne_sm
+    - image.style.cabecera_seccion_bne_xl
+    - image.style.cabecera_seccion_bne_xs
+    - image.style.cabecera_seccion_bne_xxl
+  theme:
+    - bne_theme
+id: eia_bloque_cabecera_secciones_bne
+label: 'EIA Bloque Cabecera Secciones BNE'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: cabecera_seccion_bne_xxl
+    breakpoint_id: bne_theme.4xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: cabecera_seccion_bne_xxl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: cabecera_seccion_bne_xxl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: cabecera_seccion_bne_xl
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: cabecera_seccion_bne_lg
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: cabecera_seccion_bne_md
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: cabecera_seccion_bne_sm
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: cabecera_seccion_bne_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: cabecera_seccion_bne_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: cabecera_seccion_bne_xl

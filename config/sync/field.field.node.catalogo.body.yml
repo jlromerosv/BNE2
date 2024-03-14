@@ -1,0 +1,28 @@
+uuid: 1c00b248-8df6-429a-b41f-dd15669b2acd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.catalogo
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.catalogo.body
+field_name: body
+entity_type: node
+bundle: catalogo
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

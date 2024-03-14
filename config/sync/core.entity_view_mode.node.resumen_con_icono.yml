@@ -1,0 +1,10 @@
+uuid: 7f2c43d5-5e81-4824-b313-8180e63afa45
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.resumen_con_icono
+label: 'Resumen con icono'
+targetEntityType: node
+cache: true

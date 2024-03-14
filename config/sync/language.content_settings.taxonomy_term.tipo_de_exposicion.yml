@@ -1,0 +1,18 @@
+uuid: 1a64a17f-f6f2-48c1-8ca2-c565198110b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_exposicion
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tipo_de_exposicion
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_exposicion
+default_langcode: site_default
+language_alterable: true

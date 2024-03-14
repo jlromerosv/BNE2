@@ -1,0 +1,5 @@
+name: Lotura-mota
+url_alias: '_ _ lotura-mota'
+widget:
+  config:
+    reset_text: 'Erakutsi dena'

@@ -1,0 +1,20 @@
+uuid: 1a239ba2-db4e-4b45-9e30-9cf61c2f5b41
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+  module:
+    - path
+id: node.imagen_svg_.path
+field_name: path
+entity_type: node
+bundle: imagen_svg_
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

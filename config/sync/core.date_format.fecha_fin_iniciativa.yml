@@ -1,0 +1,8 @@
+uuid: 464b7346-7c6c-432b-98a2-69ae8ca9e344
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_fin_iniciativa
+label: 'Fecha fin iniciativa'
+locked: false
+pattern: '\H\a\s\t\a \e\l j \d\e F \d\e Y'

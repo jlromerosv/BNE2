@@ -1,0 +1,14 @@
+uuid: 1faac6f9-f21f-418c-94d8-d391ca3a8ab0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.servicio
+id: node_type_servicio
+entity_type_id: node_type
+entity_id: servicio
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

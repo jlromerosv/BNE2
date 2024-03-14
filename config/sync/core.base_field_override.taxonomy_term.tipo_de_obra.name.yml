@@ -1,0 +1,18 @@
+uuid: 55a898df-da4f-4247-a497-74581f7764eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_obra
+id: taxonomy_term.tipo_de_obra.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_de_obra
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

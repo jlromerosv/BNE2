@@ -1,0 +1,22 @@
+uuid: 60e9b236-7939-41a2-bff7-5522c07bb672
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ruta_especifica_del_menu_obras
+label: 'Ruta específica del menú: Obras'
+type: 'canonical_entities:node'
+pattern: '/obras/[node:title]'
+selection_criteria:
+  1588edcb-7ce7-4803-bf69-3ae0d7fa58a3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1588edcb-7ce7-4803-bf69-3ae0d7fa58a3
+    context_mapping:
+      node: node
+    bundles:
+      obra: obra
+selection_logic: and
+weight: -9
+relationships: {  }

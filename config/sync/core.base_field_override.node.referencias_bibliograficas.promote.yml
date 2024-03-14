@@ -1,0 +1,22 @@
+uuid: d2b06a0f-0a8f-4615-a40c-abfe71559098
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.referencias_bibliograficas
+id: node.referencias_bibliograficas.promote
+field_name: promote
+entity_type: node
+bundle: referencias_bibliograficas
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

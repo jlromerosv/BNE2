@@ -1,0 +1,5 @@
+name: 'Blog kategoria bibliotekonomia'
+url_alias: 'kategoria _ blog _ bibliotekonomia'
+widget:
+  config:
+    default_option_label: Hautatu

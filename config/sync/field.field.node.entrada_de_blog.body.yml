@@ -1,0 +1,28 @@
+uuid: 92ba5122-348b-4c62-ba86-08b11ec034af
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.entrada_de_blog
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.entrada_de_blog.body
+field_name: body
+entity_type: node
+bundle: entrada_de_blog
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

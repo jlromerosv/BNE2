@@ -1,0 +1,27 @@
+_core:
+  default_config_hash: IhwTepsVwtbtbcT5GzQKhCXDCRvbk3MNkWqPiuiZ10s
+langcode: es
+theme: current
+defaults:
+  sender: swiftmailer
+  formatter: htmlmail
+modules:
+  htmlmail:
+    none:
+      sender: swiftmailer
+      formatter: htmlmail
+  user:
+    none:
+      sender: swiftmailer
+      formatter: webform_php_mail
+  system: {  }
+  rules: {  }
+  webform:
+    none:
+      sender: swiftmailer
+      formatter: webform_php_mail
+  smtp: {  }
+  swiftmailer:
+    none:
+      sender: swiftmailer
+      formatter: swiftmailer

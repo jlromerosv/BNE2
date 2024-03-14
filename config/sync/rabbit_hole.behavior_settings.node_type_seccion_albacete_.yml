@@ -1,0 +1,14 @@
+uuid: b67c99de-3b62-4e63-b12c-16514075576a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node_type_seccion_albacete_
+entity_type_id: node_type
+entity_id: seccion_albacete_
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

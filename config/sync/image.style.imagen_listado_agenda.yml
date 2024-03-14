@@ -1,0 +1,15 @@
+uuid: 18d634f7-18f7-4be4-9303-0b7c7e7b622f
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_listado_agenda
+label: 'Imagen Listado Agenda'
+effects:
+  b02c6300-4062-4503-a9e2-7b00b36626c6:
+    uuid: b02c6300-4062-4503-a9e2-7b00b36626c6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 341
+      height: 300
+      anchor: center-center

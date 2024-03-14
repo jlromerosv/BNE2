@@ -1,0 +1,130 @@
+.block-views-blockdocumentos-enlaces-de-la-pagina-block-1{
+  padding: 0 15px;
+}
+.view-documentos-enlaces-de-la-pagina {
+  padding: 30px;
+  background: $bne_color_4;
+  border: none;
+  margin-bottom: 60px;
+
+
+  .view-header {
+
+      div{
+        margin-bottom: 1em;
+        font-size: 1.25em !important;
+        color: $negro !important;
+        line-height: 24px;
+        font-family: $dm-serif !important;
+        font-weight: $dm-serif-regular !important;
+        letter-spacing: 0;
+      }
+    .ps-documentos-enlaces-title {
+      margin-bottom: 1em;
+      font-size: 1.25em;
+      color: $negro;
+      line-height: 24px;
+      font-family: $dm-serif;
+      font-weight: $dm-serif-regular;
+      letter-spacing: 0;
+      &::after {
+        display: none;
+        font-size: $h3_font_size;
+      }
+    }
+    h3 {
+      font-size: 1.25em;
+      color: $negro;
+      line-height: 24px;
+      font-family: $dm-serif;
+      font-weight: $dm-serif-regular;
+      letter-spacing: 0;
+      &::after {
+        display: none;
+        font-size: $h3_font_size;
+      }
+    }
+  }
+  .view-content {
+    .views-row {
+      .views-field-field-enlaces,
+      .views-field-field-archivos {
+        ul {
+          margin: 0;
+          li {
+            list-style: none;
+            margin: 0 0 15px 0;
+            // display: flex;
+            // align-items: center;
+            display: grid;
+            grid-template-columns: 30px 1fr;
+
+            a {
+              font-size: 16px;
+              color: $bne_color_6;
+              font-weight: 400;
+              word-break: break-word;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      .views-field-field-archivos {
+        ul {
+          li {
+            &::before {
+              content: "";
+              height: 17px;
+              display: block;
+              width: 15px;
+              background: url(/themes/contrib/bne_theme/recursos/descarga.svg)
+                no-repeat center;
+              background-size: 15px;
+              padding-right: 15px;
+            }
+            // article{
+            //   position: relative;
+            //   .field--name-name{
+            //     position: relative;
+            //   }
+            //   .field--name-field-media-file{
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     display: block;
+            //     width: 100%;
+            //     .file--application-pdf{
+            //       display: block;
+            //       a{
+            //         display: block;
+            //         width: 100%;
+            //       }
+
+            //     }
+            //   }
+            // }
+          }
+        }
+      }
+      .views-field-field-enlaces {
+        ul {
+          li {
+            &::before {
+              content: "";
+              height: 17px;
+              display: block;
+              width: 15px;
+              background: url(/themes/contrib/bne_theme/recursos/External_Link.svg)
+                no-repeat center;
+              background-size: 15px;
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

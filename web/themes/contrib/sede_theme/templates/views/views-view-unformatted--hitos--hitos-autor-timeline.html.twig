@@ -1,0 +1,71 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+<div class="ps-timeline-container">
+<div class="ps-timeline">
+
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+
+<div class="odd">
+{% set counter = 1 %}
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+
+  {% if counter is odd %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+  <div class="timeline-line"></div>
+  <span class="timeline-marker"></span>
+    {{- row.content -}}
+  </div>
+  {% endif %}
+  {% set counter = counter + 1 %}
+{% endfor %}
+
+</div>
+
+
+
+<div class="even">
+
+{% set counter2 = 1 %}
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+
+  {% if counter2 is even %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+  <div class="timeline-line"></div>
+  <span class="timeline-marker"></span>
+    {{- row.content -}}
+
+  </div>
+  {% endif %}
+  {% set counter2 = counter2 + 1 %}
+{% endfor %}
+</div>
+
+</div>
+</div>

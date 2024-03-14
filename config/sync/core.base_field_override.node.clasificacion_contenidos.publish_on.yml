@@ -1,0 +1,18 @@
+uuid: 01455ac6-2fc1-45a1-b681-8a34c3c7a31d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+id: node.clasificacion_contenidos.publish_on
+field_name: publish_on
+entity_type: node
+bundle: clasificacion_contenidos
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

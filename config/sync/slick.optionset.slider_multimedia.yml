@@ -1,0 +1,54 @@
+uuid: 3013699f-56f1-4f45-833b-b7aeee8d8b6f
+langcode: es
+status: true
+dependencies: {  }
+id: slider_multimedia
+name: slider_multimedia
+weight: 0
+label: 'Slider Multimedia'
+group: ''
+skin: ''
+breakpoints: 3
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    lazyLoad: ondemand
+    slidesPerRow: 4
+    slidesToShow: 4
+  responsives:
+    responsive:
+      -
+        breakpoint: 578
+        unslick: false
+        settings:
+          arrows: false
+          draggable: false
+          infinite: false
+          swipe: false
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: 992
+        unslick: false
+        settings:
+          arrows: false
+          draggable: false
+          infinite: false
+          slidesPerRow: 2
+          slidesToShow: 2
+          swipe: false
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: 1920
+        unslick: false
+        settings:
+          arrows: false
+          draggable: false
+          infinite: false
+          slidesPerRow: 4
+          slidesToShow: 4
+          swipe: false
+          touchMove: false
+          waitForAnimate: false

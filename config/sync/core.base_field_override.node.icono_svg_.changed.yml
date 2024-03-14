@@ -1,0 +1,18 @@
+uuid: 99489ded-cac0-4881-be7a-f531e2607501
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.icono_svg_
+id: node.icono_svg_.changed
+field_name: changed
+entity_type: node
+bundle: icono_svg_
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

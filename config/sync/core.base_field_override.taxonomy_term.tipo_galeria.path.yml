@@ -1,0 +1,20 @@
+uuid: 9a7c9a44-1fd8-4554-8223-7fb3f0f498ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_galeria
+  module:
+    - path
+id: taxonomy_term.tipo_galeria.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_galeria
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

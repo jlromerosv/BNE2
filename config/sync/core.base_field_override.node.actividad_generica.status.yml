@@ -1,0 +1,22 @@
+uuid: 636b21ad-785c-4459-b209-5f53f690aa0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad_generica
+id: node.actividad_generica.status
+field_name: status
+entity_type: node
+bundle: actividad_generica
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

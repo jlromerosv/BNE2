@@ -1,0 +1,24 @@
+uuid: 015f03e4-ac18-4548-afff-af099c615e30
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget
+  module:
+    - views
+  theme:
+    - bne_theme
+id: views_block__widget_block_4
+theme: bne_theme
+region: footer_central_1_2
+weight: -52
+provider: null
+plugin: 'views_block:widget-block_4'
+settings:
+  id: 'views_block:widget-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

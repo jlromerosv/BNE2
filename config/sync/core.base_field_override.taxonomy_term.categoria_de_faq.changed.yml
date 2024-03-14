@@ -1,0 +1,18 @@
+uuid: d0e25a4a-6965-4a16-bdda-30f2a2f600bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_faq
+id: taxonomy_term.categoria_de_faq.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: categoria_de_faq
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

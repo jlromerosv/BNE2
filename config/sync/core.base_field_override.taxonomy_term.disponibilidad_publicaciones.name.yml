@@ -1,0 +1,18 @@
+uuid: bfe7a107-0304-4022-89ca-294183d4a5f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.disponibilidad_publicaciones
+id: taxonomy_term.disponibilidad_publicaciones.name
+field_name: name
+entity_type: taxonomy_term
+bundle: disponibilidad_publicaciones
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

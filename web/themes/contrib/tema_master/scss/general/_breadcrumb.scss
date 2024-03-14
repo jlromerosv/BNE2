@@ -1,0 +1,42 @@
+/*
+    ========== BREADCRUMB ==========
+
+    Estilos dedicados al breadcrumb.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin before-icon($size, $left, $icon)
+
+    ------------------------- MIXINS --------------------------    
+    before-icon = Mixin para insertar icono antes del contenido
+
+    ----------------------- VARIABLES -------------------------
+    $main_color_4 = Color principal de tipo 4
+
+    $size = Tamaño del icono
+
+    $left = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $home_icon = Icono de la home
+
+*/
+
+.breadcrumb{
+    position: relative;
+    background-color: $main_color_4;
+    padding: 10px;
+    li {
+        &:before {
+            content: " | ";
+        }
+
+        &:first-child {
+            padding-left: 35px;
+            &::before {
+                @include before-icon(19px, 10px, $home_icon);
+            }
+        }
+    } 
+}

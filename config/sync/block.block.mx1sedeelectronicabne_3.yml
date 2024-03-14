@@ -1,0 +1,37 @@
+uuid: 7f949ab8-d162-44e7-a300-432cb9a85811
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---sede-electronica-bne
+  module:
+    - block_class
+    - system
+  theme:
+    - sede_theme
+third_party_settings:
+  block_class:
+    classes: ps-content-margins
+id: mx1sedeelectronicabne_3
+theme: sede_theme
+region: content
+weight: -27
+provider: null
+plugin: 'system_menu_block:mx1---sede-electronica-bne'
+settings:
+  id: 'system_menu_block:mx1---sede-electronica-bne'
+  label: 'MX1 - Sede electrónica BNE'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/mapa-web\r\n/node/27322"

@@ -1,0 +1,29 @@
+uuid: 52d950d1-5076-4b2a-a23d-b59ceedcf066
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:html:12ab9ceb-70aa-43d6-939f-0bdc8a377a4b'
+  module:
+    - block_content
+  theme:
+    - sede_theme
+id: contactosede
+theme: sede_theme
+region: footer_inferior
+weight: -31
+provider: null
+plugin: 'block_content:12ab9ceb-70aa-43d6-939f-0bdc8a377a4b'
+settings:
+  id: 'block_content:12ab9ceb-70aa-43d6-939f-0bdc8a377a4b'
+  label: 'Contacto sede'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

@@ -1,0 +1,33 @@
+uuid: 87f3de9f-2142-4ae4-876c-52368e2f6817
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - node
+    - views
+  theme:
+    - bne_theme
+id: views_block__widget_multimedia_enlaces_block_6
+theme: bne_theme
+region: pre_content_full_width
+weight: -60
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-block_6'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-block_6'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      seccion_nivel_1_estandar: seccion_nivel_1_estandar

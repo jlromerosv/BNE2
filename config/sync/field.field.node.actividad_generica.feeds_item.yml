@@ -1,0 +1,23 @@
+uuid: 7583031a-2401-4013-8cf3-159295dfeaae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.actividad_generica
+  module:
+    - feeds
+id: node.actividad_generica.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: actividad_generica
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

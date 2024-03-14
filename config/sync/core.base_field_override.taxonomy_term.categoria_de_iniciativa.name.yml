@@ -1,0 +1,18 @@
+uuid: 4fc004de-3f62-48ae-b060-3b3bd8553468
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_iniciativa
+id: taxonomy_term.categoria_de_iniciativa.name
+field_name: name
+entity_type: taxonomy_term
+bundle: categoria_de_iniciativa
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

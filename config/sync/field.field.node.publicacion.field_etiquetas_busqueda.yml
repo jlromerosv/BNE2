@@ -1,0 +1,85 @@
+uuid: 07a09749-3329-4b5b-9e53-17b4a3de8684
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas_busqueda
+    - node.type.publicacion
+    - taxonomy.vocabulary.area_de_transparencia
+    - taxonomy.vocabulary.area_tematica
+    - taxonomy.vocabulary.categoria_actualidad
+    - taxonomy.vocabulary.categoria_de_faq
+    - taxonomy.vocabulary.categoria_de_servicio
+    - taxonomy.vocabulary.categorias_evento
+    - taxonomy.vocabulary.colectivo
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+    - taxonomy.vocabulary.genero
+    - taxonomy.vocabulary.modalidad
+    - taxonomy.vocabulary.tematica_de_catalogo
+    - taxonomy.vocabulary.tipo_convocatoria
+    - taxonomy.vocabulary.tipo_de_campana
+    - taxonomy.vocabulary.tipo_de_catalogo
+    - taxonomy.vocabulary.tipo_de_contenidos_formativos
+    - taxonomy.vocabulary.tipo_de_documento_institucional
+    - taxonomy.vocabulary.tipo_de_enlace
+    - taxonomy.vocabulary.tipo_de_exposicion
+    - taxonomy.vocabulary.tipo_de_lugar
+    - taxonomy.vocabulary.tipo_de_material
+    - taxonomy.vocabulary.tipo_de_persona
+    - taxonomy.vocabulary.tipo_de_publicacion
+    - taxonomy.vocabulary.tipo_de_referencia_bibliografica
+    - taxonomy.vocabulary.tipo_de_servicio
+    - taxonomy.vocabulary.tipo_entidad
+    - taxonomy.vocabulary.tipo_evento
+    - taxonomy.vocabulary.tipo_galeria
+    - taxonomy.vocabulary.tipo_iniciativa
+    - taxonomy.vocabulary.tipo_tramite
+id: node.publicacion.field_etiquetas_busqueda
+field_name: field_etiquetas_busqueda
+entity_type: node
+bundle: publicacion
+label: 'Etiquetas de búsqueda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_actualidad: categoria_actualidad
+      categoria_de_faq: categoria_de_faq
+      categoria_de_servicio: categoria_de_servicio
+      categorias_evento: categorias_evento
+      colectivo: colectivo
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+      genero: genero
+      modalidad: modalidad
+      tematica_de_catalogo: tematica_de_catalogo
+      tipo_de_lugar: tipo_de_lugar
+      tipo_de_campana: tipo_de_campana
+      tipo_de_catalogo: tipo_de_catalogo
+      tipo_de_contenidos_formativos: tipo_de_contenidos_formativos
+      tipo_convocatoria: tipo_convocatoria
+      tipo_de_documento_institucional: tipo_de_documento_institucional
+      tipo_de_enlace: tipo_de_enlace
+      tipo_entidad: tipo_entidad
+      tipo_evento: tipo_evento
+      tipo_de_exposicion: tipo_de_exposicion
+      tipo_galeria: tipo_galeria
+      tipo_iniciativa: tipo_iniciativa
+      tipo_de_material: tipo_de_material
+      tipo_de_persona: tipo_de_persona
+      tipo_de_publicacion: tipo_de_publicacion
+      tipo_de_referencia_bibliografica: tipo_de_referencia_bibliografica
+      tipo_de_servicio: tipo_de_servicio
+      tipo_tramite: tipo_tramite
+      area_de_transparencia: area_de_transparencia
+      area_tematica: area_tematica
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: categoria_actualidad
+field_type: entity_reference

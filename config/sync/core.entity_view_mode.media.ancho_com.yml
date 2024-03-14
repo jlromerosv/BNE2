@@ -1,0 +1,10 @@
+uuid: 332efb60-4447-4773-a7df-4ed366a44914
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.ancho_com
+label: 'Ancho completo'
+targetEntityType: media
+cache: true

@@ -1,0 +1,20 @@
+uuid: 94cd601b-8244-4db5-8c77-43a70659097c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_torrevieja_
+  module:
+    - options
+id: node.seccion_torrevieja_.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: seccion_torrevieja_
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

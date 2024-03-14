@@ -1,0 +1,61 @@
+uuid: 1a511ca9-7567-47b8-ab1f-57d6809f6243
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.enlace_archivo
+    - field.field.media.archivo.domain_access
+    - field.field.media.archivo.feeds_item
+    - field.field.media.archivo.field_area_tematica
+    - field.field.media.archivo.field_area_transparencia
+    - field.field.media.archivo.field_descripcion_con_formato
+    - field.field.media.archivo.field_etiquetas_busqueda
+    - field.field.media.archivo.field_id_externo
+    - field.field.media.archivo.field_media_file
+    - field.field.media.archivo.field_tipo
+    - field.field.media.archivo.field_urlanterior
+    - media.type.archivo
+  module:
+    - file
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.archivo.enlace_archivo
+targetEntityType: media
+bundle: archivo
+mode: enlace_archivo
+content:
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  domain_access: true
+  feeds_item: true
+  field_area_tematica: true
+  field_area_transparencia: true
+  field_descripcion_con_formato: true
+  field_etiquetas_busqueda: true
+  field_id_externo: true
+  field_tipo: true
+  field_urlanterior: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
+  uuid: true

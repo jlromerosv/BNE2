@@ -1,0 +1,25 @@
+uuid: e8ba870e-d794-40c2-b62e-f16c491c5e6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_formulario
+    - node.type.pagina_personalizada
+  module:
+    - webform
+id: node.pagina_personalizada.field_formulario
+field_name: field_formulario
+entity_type: node
+bundle: pagina_personalizada
+label: Formulario
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

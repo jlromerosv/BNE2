@@ -1,0 +1,14 @@
+uuid: e27e236e-022a-40cc-9f7a-d6d35dad5647
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero_autor
+id: taxonomy_vocabulary_genero_autor
+entity_type_id: taxonomy_vocabulary
+entity_id: genero_autor
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

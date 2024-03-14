@@ -1,0 +1,18 @@
+uuid: 74c6f502-7337-42be-a863-0a656dc76261
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.coleccion
+id: node.coleccion.publish_on
+field_name: publish_on
+entity_type: node
+bundle: coleccion
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

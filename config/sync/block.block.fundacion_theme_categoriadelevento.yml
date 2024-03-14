@@ -1,0 +1,29 @@
+uuid: 0ef87cb5-e65d-47e9-bea1-5cdf49842102
+langcode: es
+status: false
+dependencies:
+  config:
+    - facets.facet.categoria_del_evento
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_categoriadelevento
+theme: fundacion_theme
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:categoria_del_evento'
+settings:
+  id: 'facet_block:categoria_del_evento'
+  label: 'Categoría del evento'
+  label_display: '0'
+  provider: facets
+  block_id: categoriadelevento
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/3057

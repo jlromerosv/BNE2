@@ -1,0 +1,20 @@
+uuid: 0415c625-1003-4c31-a5f2-38ff15256645
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_basica
+  module:
+    - path
+id: node.pagina_basica.path
+field_name: path
+entity_type: node
+bundle: pagina_basica
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

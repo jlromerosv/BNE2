@@ -1,0 +1,57 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+          tags:
+            previous: '‹ anterior'
+            next: 'seguinte ›'
+            first: '« primeira'
+            last: 'última »'
+      fields:
+        state:
+          label: Estado
+        label:
+          label: Etiqueta
+        type:
+          label: Tipo
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Etiquetas
+          separator: ', '
+        changed:
+          label: Cambiado
+        operations:
+          label: Operacións
+      arguments:
+        tjid:
+          exception:
+            title: Todo
+  checkout:
+    display_title: 'Node Checkout'
+    display_options:
+      fields:
+        label:
+          label: Etiqueta
+        type:
+          label: Tipo
+        word_count:
+          separator: ', '
+        changed:
+          label: Cambiado
+          separator: ', '
+  submitted:
+    display_title: Enviado

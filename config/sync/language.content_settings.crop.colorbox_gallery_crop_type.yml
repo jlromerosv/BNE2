@@ -1,0 +1,11 @@
+uuid: 77b365c0-1c6b-4e44-95e6-b9ebefb8050c
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.colorbox_gallery_crop_type
+id: crop.colorbox_gallery_crop_type
+target_entity_type_id: crop
+target_bundle: colorbox_gallery_crop_type
+default_langcode: site_default
+language_alterable: false

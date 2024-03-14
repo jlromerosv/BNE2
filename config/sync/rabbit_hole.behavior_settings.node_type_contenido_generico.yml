@@ -1,0 +1,14 @@
+uuid: 7aa10552-0c7c-40dd-b5bb-0bf9887aba5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_generico
+id: node_type_contenido_generico
+entity_type_id: node_type
+entity_id: contenido_generico
+action: page_redirect
+allow_override: 0
+redirect: '[node:field_enlace:uri]'
+redirect_code: 301
+redirect_fallback_action: page_not_found

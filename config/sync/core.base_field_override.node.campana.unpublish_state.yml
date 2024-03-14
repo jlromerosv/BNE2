@@ -1,0 +1,20 @@
+uuid: b0b6465e-76fb-4347-9134-797458c0759b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.campana
+  module:
+    - options
+id: node.campana.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: campana
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

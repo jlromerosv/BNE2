@@ -1,0 +1,18 @@
+uuid: ad2f18de-b993-47f1-8923-0d8b429f8d9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_exposicion
+id: taxonomy_term.tipo_de_exposicion.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_exposicion
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

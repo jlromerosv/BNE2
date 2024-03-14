@@ -1,0 +1,90 @@
+uuid: b606096c-f461-44f3-b835-48800521db23
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.area_de_transparencia.domain_access
+    - field.field.taxonomy_term.area_de_transparencia.field_destacados_manuales
+    - field.field.taxonomy_term.area_de_transparencia.field_grupo_de_temas
+    - taxonomy.vocabulary.area_de_transparencia
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - path
+    - text
+id: taxonomy_term.area_de_transparencia.default
+targetEntityType: taxonomy_term
+bundle: area_de_transparencia
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  domain_access:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_destacados_manuales:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  field_grupo_de_temas:
+    type: options_buttons
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,19 @@
+uuid: bfa91cfc-a196-481c-b003-4486c445953d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_valor
+    - node.type.serie_estadistica
+id: node.serie_estadistica.field_valor
+field_name: field_valor
+entity_type: node
+bundle: serie_estadistica
+label: Valor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

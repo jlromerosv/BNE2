@@ -1,0 +1,18 @@
+uuid: 65536321-0af5-4df4-9832-388f652ae135
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+id: node.pagina_avanzada.changed
+field_name: changed
+entity_type: node
+bundle: pagina_avanzada
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

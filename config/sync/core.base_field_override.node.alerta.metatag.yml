@@ -1,0 +1,18 @@
+uuid: efe57bd7-4378-4d24-a366-a1ab74a24b1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.alerta
+id: node.alerta.metatag
+field_name: metatag
+entity_type: node
+bundle: alerta
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

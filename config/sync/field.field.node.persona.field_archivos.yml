@@ -1,0 +1,28 @@
+uuid: 7870c7c6-52a3-4b9b-8974-c6c8977b9d1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivos
+    - media.type.archivo
+    - node.type.persona
+id: node.persona.field_archivos
+field_name: field_archivos
+entity_type: node
+bundle: persona
+label: Archivos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo: archivo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

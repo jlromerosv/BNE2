@@ -1,0 +1,18 @@
+uuid: 9cba3737-f6ba-4b51-af2f-7e8ed1f0ff2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_dossier_boletin
+id: taxonomy_term.tipo_de_dossier_boletin.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_de_dossier_boletin
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

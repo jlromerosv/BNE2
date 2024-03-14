@@ -1,0 +1,29 @@
+uuid: 917908ab-2d2b-4845-98b0-ec358d477a9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accesibilidad
+    - node.type.lugar
+    - taxonomy.vocabulary.accesibilidad
+id: node.lugar.field_accesibilidad
+field_name: field_accesibilidad
+entity_type: node
+bundle: lugar
+label: Accesibilidad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      accesibilidad: accesibilidad
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

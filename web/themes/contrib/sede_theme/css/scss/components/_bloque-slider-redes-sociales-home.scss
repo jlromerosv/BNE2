@@ -1,0 +1,229 @@
+.view-bloque-slider-redes-sociales-home {
+  position: relative;
+  .view-content {
+    .slick {
+      .slick__slider {
+        position: relative;
+        margin-bottom: 0;
+        .slick-list {
+          .slick-track {
+            .slide {
+              position: relative;
+              .views-field-nothing {
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: 14%;
+                left: 0;
+                padding: 0 9%;
+                @media (min-width: 300px) and (max-width: 767.98px) {
+                  top: 7%;
+                }
+                @media (min-width: 768px) and (max-width: 992px) {
+                  top: 10%;
+                }
+                .field-content {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  font-size: $h6_home_block;
+                  color: $negro;
+                  line-height: 26px;
+                  letter-spacing: 1.08px;
+                  a {
+                    margin-top: 1.6em;
+                    font-size: $h4_home_block;
+                    color: $bne_color_1;
+                    line-height: 48px;
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    letter-spacing: 0;
+                    text-align: center;
+                    @media (min-width: 300px) {
+                      font-size: 1em;
+                      line-height: 22px;
+                      margin-top: 0.3em;
+                    }
+                    @media (min-width: 450px) {
+                      font-size: 1em;
+                      line-height: 28px;
+                      margin-top: 0.3em;
+                    }
+                    @media (min-width: 768px) {
+                      font-size: 1.3em;
+                      line-height: 30px;
+                      margin-top: 0.5em;
+                    }
+                    @media (min-width: 992px) {
+                      font-size: 1.6em;
+                      line-height: 38px;
+                      margin-top: 0.9em;
+                    }
+                    @media (min-width: 1200px) {
+                      font-size: 1.9em;
+                      line-height: 48px;
+                      margin-top: 1.6em;
+                    }
+                  }
+                }
+              }
+              .views-field-body{
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: 14%;
+                left: 0;
+                padding: 0 9%;
+                @media (min-width: 300px) and (max-width: 767.98px) {
+                  top: 7%;
+                }
+                @media (min-width: 768px) and (max-width: 992px) {
+                  top: 10%;
+                }
+                .field-content {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  font-size: $h6_home_block;
+                  color: $negro;
+                  line-height: 26px;
+                  letter-spacing: 1.08px;
+                  a {
+                    margin-top: 1.6em;
+                    font-size: $h4_home_block;
+                    color: $bne_color_1;
+                    line-height: 48px;
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    letter-spacing: 0;
+                    text-align: center;
+                    @media (min-width: 300px) {
+                      font-size: 1em;
+                      line-height: 22px;
+                      margin-top: 0.3em;
+                    }
+                    @media (min-width: 450px) {
+                      font-size: 1em;
+                      line-height: 28px;
+                      margin-top: 0.3em;
+                    }
+                    @media (min-width: 768px) {
+                      font-size: 1.3em;
+                      line-height: 30px;
+                      margin-top: 0.5em;
+                    }
+                    @media (min-width: 992px) {
+                      font-size: 1.6em;
+                      line-height: 38px;
+                      margin-top: 0.9em;
+                    }
+                    @media (min-width: 1200px) {
+                      font-size: 1.9em;
+                      line-height: 48px;
+                      margin-top: 1.6em;
+                    }
+                  }
+                }
+
+              }
+              .views-field-field-media-image {
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+        .slick-dots {
+          position: absolute;
+          bottom: 20%;
+          z-index: 20;
+          @media (min-width: 300px) {
+            bottom: 25%;
+          }
+          @media (min-width: 576px) {
+            bottom: 25%;
+          }
+          @media (min-width: 768px) {
+            bottom: 25%;
+          }
+          @media (min-width: 992px) {
+            bottom: 22%;
+          }
+          @media (min-width: 1200px) {
+            bottom: 20%;
+          }
+          @media (min-width: 1366px) {
+            bottom: 25%;
+          }
+        }
+      }
+    }
+  }
+  .view-footer {
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    .ps-social-block {
+      // &:before {
+      //   content: "SÍGUENOS";
+      //   display: block;
+      //   text-align: center;
+      //   margin-bottom: 1em;
+      //   font-size: 14px;
+      //   line-height: 20px;
+      //   letter-spacing: 0.42px;
+      //   color: $bne_color_1;
+      // }
+      .view-header{
+        p{
+          display: block;
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.42px;
+        color: $bne_color_1;
+        }
+      }
+      .view-content {
+
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        .views-field-field-icono-svg- {
+          margin: 0 20px !important;
+          .field-content {
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 30px;
+              height: 30px;
+              //background: $bne_color_6;
+              border-radius: 50%;
+
+
+              svg {
+                width: 30px;
+                height: 30px;
+                filter: none;
+                .a{
+                    fill: $bne_color_6;;
+                }
+                path{
+                  fill: $bne_color_6;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

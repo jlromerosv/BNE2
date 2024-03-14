@@ -1,0 +1,28 @@
+uuid: 38044459-81ed-4fb8-b375-60e7902e07b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.seccion_estandar
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.seccion_estandar.body
+field_name: body
+entity_type: node
+bundle: seccion_estandar
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

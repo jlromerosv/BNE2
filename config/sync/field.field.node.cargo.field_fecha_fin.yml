@@ -1,0 +1,21 @@
+uuid: c487d55b-030c-472a-85e0-b54671828775
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_fin
+    - node.type.cargo
+  module:
+    - datetime
+id: node.cargo.field_fecha_fin
+field_name: field_fecha_fin
+entity_type: node
+bundle: cargo
+label: 'Fecha baja'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,18 @@
+uuid: 48bfd59b-4b7c-471f-98f1-ffe1837b63eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-de-gestion-del-usuario
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.menu-de-gestion-del-usuario
+target_entity_type_id: menu_link_content
+target_bundle: menu-de-gestion-del-usuario
+default_langcode: site_default
+language_alterable: false

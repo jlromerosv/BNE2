@@ -1,0 +1,62 @@
+/*
+    ========= SIDEBAR-FIRST ==========
+    Estilos dedicados al Sidebar First de la web.
+
+	----------------------- VARIABLES -------------------------
+	$blanco = Color blanco
+*/
+
+.region.region-sidebar-first {
+    background: $blanco;
+	a{
+	    font-weight: 400;
+		font-size: 1.1em;
+		letter-spacing: 1px;
+	}
+
+	.menu {
+		&-level-0 > li {
+			&:not(:first-child) {
+				margin-top: 15px;
+			}
+			& > span,
+			& > a {
+				// font-size: 18px;
+				// color: $main_color_1;
+				// display: block;
+				&::after {
+					content: '';
+					display: block;
+					height: 2px;
+					background-color: $main_color_1;
+					display: none;
+
+				}
+			}
+		}
+
+		&-level-1 > li {
+			margin-top: 15px;
+			a {
+				font-size: 16px;
+				color: $negro;
+				font-weight: 500;
+			}
+		}
+
+		&-level-2 > li{
+			margin-top: 15px;
+			transform: translateX(20px);
+			a {
+				font-weight: 400;
+				color: $main_color_2;
+			}
+		}
+		li {
+			&::marker {
+				content: '';
+			}
+		}
+	}
+}
+

@@ -1,0 +1,329 @@
+.ps-path-hazte-amigo{
+
+    .view-header h2, .field--name-field-subtitulo{
+        font-size: 28px;
+        color: $negro;
+        font-weight: 500;
+    }
+
+    // ENLACES DE LA PÁGINA
+    a {
+        color: #825314;
+        font-weight: 500;
+    }
+
+    // 01 - COMO COLABORAR
+    .block-views-blockpagina-hazte-amigo-block-1{
+        // ¿Como colaborar?
+        .view-content{
+            display: grid;
+            grid-template-columns: repeat(4,25%);
+
+            @media (max-width: 992px) {
+
+            }
+
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(2,50%);
+            }
+
+            @media (max-width: 576px) {
+                grid-template-columns: repeat(1,100%);
+            }
+
+            .views-row{
+                height: 160px;
+                padding: 20px;
+                border: 1px solid $bne_color_3;
+
+                @media (max-width: 576px) {
+                    height: auto;
+                }
+
+                // separación de los campos
+                .views-field{
+                    margin-bottom: 8px;
+                }
+
+                // título
+                .views-field-title{
+                    margin-bottom: 15px;
+                    font-family: "DM Serif Text", serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $negro;
+                }
+
+                // subtítulo
+                .views-field-field-subtitulo{
+                    color: $bne_color_2;
+                }
+                &:hover{
+                    @include box-hover-effect();
+                }
+
+            }
+        }
+    }
+
+    // 02 - VENTAJAS (COLAPSABLES)
+    .view-pagina-hazte-amigo.view-id-pagina_hazte_amigo.view-display-id-block_2{
+
+        .view-content{
+            padding: 0px 0 60px 0px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .views-row{
+                .views-field-title{
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    // 03 - CAJAS x3 PARTICULARES, EMPRESAS y REGALA UN CARNET
+    .block-views-blockpagina-hazte-amigo-block-3{
+        .view-content{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(1,100%);
+            }
+
+            @media (max-width: 576px) {
+
+            }
+
+            .views-row{
+                height: 240px;
+                border: 1px solid $bne_color_3;
+
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                @media (max-width: 576px) {
+                    height: 180px;
+                }
+
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 35px;
+
+                    font-family: "DM Serif Text", serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: $negro;
+
+                    img{
+                        width: 63px;
+                    }
+                }
+
+                &:hover{
+                    @include box-hover-effect();
+                }
+
+            }
+        }
+    }
+
+}
+
+// FORMULARIO ESPECÍFICO PARA LA PÁGINA:
+// HAZTE AMIGO / PARTICULARES
+.webform-submission-hazte-amigo--form{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .js-form-item{
+        float: left;
+        width: 100%;
+    }
+
+    .form-actions{
+        float: left;
+        width: 100%;
+    }
+
+    // OCUPA LA MITAD
+    .form-item-pais, .form-item-codigo-postal, .form-item-nif-nie-pasaporte, .form-item-fecha-nacimiento, .form-item-telefono, .form-item-movil, .form-item-poblacion-2, .form-item-direccion-2{
+        width: 49%;
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+
+    // ELEMENTOS A LA DERECHA
+    .form-item-codigo-postal, .form-item-fecha-nacimiento, .form-item-movil, .form-item-direccion-2{
+        float: right;
+    }
+
+    // FECHA NACIMIENTO
+    .form-item-fecha-nacimiento{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media (max-width: 576px) {
+            display: block;
+        }
+
+        label{
+            @media (max-width: 576px) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    // TITULO
+    .webform-section-title{
+        margin: 0 10px 0;
+        @include h1_style($negro, 18px)
+    }
+
+    // TEXTO
+    .js-form-type-processed-text {
+        margin: 0 0px 20px;
+        line-height: 2;
+    }
+
+    // MODALIDADES DE PAGO
+    .form-item-modalidades-de-pago-radio-1{
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+
+
+
+
+}
+
+// FORMILARIO EMPRESAS
+// ========================================================
+.webform-submission-hazte-amigo-empresas-form{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .js-form-item{
+        float: left;
+        width: 100%;
+    }
+
+    .form-actions{
+        float: left;
+        width: 100%;
+    }
+
+    // OCUPA LA MITAD
+    .form-item-poblacion, .form-item-pais, .form-item-codigo-postal, .form-item-c-i-f-, .form-item-telefono, .form-item-fax
+    , .form-item-nombre-y-apellidos, .form-item-cargo, .form-item-nombre-y-apellidos-2, .form-item-cargo-2
+    , .form-item-direccion-2, .form-item-poblacion-2{
+        width: 49%;
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+
+    // ELEMENTOS A LA DERECHA
+    .form-item-pais, .form-item-codigo-postal, .form-item-fax, .form-item-cargo, .form-item-cargo-2, .form-item-poblacion-2{
+        float: right;
+    }
+
+    // MODALIDADES DE PAGO
+    .form-item-modalidades-de-pago-radio-1{
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+
+
+}
+
+
+// FORMULARIO REGALA UN CARNET
+// ===============================================================
+.webform-submission-hazte-amigo-regala-un-carne-form{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .js-form-item{
+        float: left;
+        width: 100%;
+    }
+
+    .form-actions{
+        float: left;
+        width: 100%;
+    }
+
+    // OCUPA LA MITAD
+    .form-item-apellidos, .form-item-nombre, .form-item-direccion, .form-item-poblacion, .form-item-pais, .form-item-codigo-postal
+    , .form-item-nif-nie-pasaporte, .form-item-fecha-nacimiento, .form-item-telefono, .form-item-movil
+    , .form-item-apellidos-2, .form-item-nombre-2, .form-item-telefono-2, .form-item-movil-2 {
+        width: 49%;
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+
+    // ELEMENTOS A LA DERECHA
+    .form-item-nombre, .form-item-poblacion, .form-item-codigo-postal, .form-item-fecha-nacimiento, .form-item-movil
+    , .form-item-nombre-2, .form-item-movil-2{
+        float: right;
+    }
+
+    // FECHA NACIMIENTO (1) DATOS PERSONALES
+    .form-item-fecha-nacimiento{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media (max-width: 576px) {
+            display: block;
+        }
+
+        label{
+            @media (max-width: 576px) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    // FECHA NACIMIENTO (2) DATOS PERSONALES (NUEVO AMIGO)
+    .form-item-fecha-nacimiento-2{
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 62px);
+
+        label{
+                margin-bottom: 10px;
+        }
+    }
+
+
+    // MODALIDADES DE PAGO
+    .form-item-modalidades-de-pago-radio-1{
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+
+
+}

@@ -1,0 +1,18 @@
+uuid: bbaf9255-c223-44b2-b93f-3ffe0ac210d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.campana
+id: node.campana.created
+field_name: created
+entity_type: node
+bundle: campana
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

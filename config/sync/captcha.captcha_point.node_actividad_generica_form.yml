@@ -1,0 +1,7 @@
+uuid: fff23a2d-db6f-40c4-9327-ef044e3ebb3e
+langcode: es
+status: false
+dependencies: {  }
+formId: node_actividad_generica_form
+captchaType: default
+label: node_actividad_generica_form

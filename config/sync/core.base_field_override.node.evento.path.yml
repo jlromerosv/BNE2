@@ -1,0 +1,20 @@
+uuid: 17241374-cd65-46db-aa3f-ec4b66afa516
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.evento
+  module:
+    - path
+id: node.evento.path
+field_name: path
+entity_type: node
+bundle: evento
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

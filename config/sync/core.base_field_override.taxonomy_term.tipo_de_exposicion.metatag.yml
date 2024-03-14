@@ -1,0 +1,18 @@
+uuid: bb6367a3-983b-44b3-9cb6-dbffbd6a6231
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_exposicion
+id: taxonomy_term.tipo_de_exposicion.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: tipo_de_exposicion
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

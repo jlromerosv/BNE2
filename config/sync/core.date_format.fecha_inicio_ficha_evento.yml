@@ -1,0 +1,8 @@
+uuid: a581c844-f1f0-4014-bd67-16ea317b95aa
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_inicio_ficha_evento
+label: 'Fecha inicio ficha evento'
+locked: false
+pattern: '\D\e\l\  j \d\e F \d\e Y'

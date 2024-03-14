@@ -1,0 +1,19 @@
+uuid: aa190c3d-4f6e-4ee3-b86b-62f7e4bc993c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fax
+    - node.type.entidad
+id: node.entidad.field_fax
+field_name: field_fax
+entity_type: node
+bundle: entidad
+label: Fax
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

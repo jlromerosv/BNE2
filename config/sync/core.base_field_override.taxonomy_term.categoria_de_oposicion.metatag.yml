@@ -1,0 +1,18 @@
+uuid: 03400efb-1a21-46d6-a45b-53e35a55700a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_oposicion
+id: taxonomy_term.categoria_de_oposicion.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: categoria_de_oposicion
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

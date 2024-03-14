@@ -1,0 +1,20 @@
+uuid: 114fa51f-504e-48c7-a919-66aa3eed0932
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+  module:
+    - path
+id: node.ubicacion.path
+field_name: path
+entity_type: node
+bundle: ubicacion
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

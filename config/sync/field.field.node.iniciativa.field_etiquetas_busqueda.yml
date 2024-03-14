@@ -1,0 +1,50 @@
+uuid: b173a3a8-b663-4d76-b0d8-fde5a60e49b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas_busqueda
+    - node.type.iniciativa
+    - taxonomy.vocabulary.area_de_transparencia
+    - taxonomy.vocabulary.area_organizativa
+    - taxonomy.vocabulary.area_tematica
+    - taxonomy.vocabulary.categorias_evento
+    - taxonomy.vocabulary.colectivo
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+    - taxonomy.vocabulary.tipo_de_lugar
+    - taxonomy.vocabulary.tipo_de_servicio
+    - taxonomy.vocabulary.tipo_tramite
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.iniciativa.field_etiquetas_busqueda
+field_name: field_etiquetas_busqueda
+entity_type: node
+bundle: iniciativa
+label: 'Etiquetas de búsqueda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_de_transparencia: area_de_transparencia
+      categorias_evento: categorias_evento
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+      tipo_de_lugar: tipo_de_lugar
+      colectivo: colectivo
+      tipo_de_servicio: tipo_de_servicio
+      area_tematica: area_tematica
+      tipo_tramite: tipo_tramite
+      area_organizativa: area_organizativa
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: etiquetas_de_busqueda
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: 35297a6c-41f6-4652-a8f6-f12e97e7f9c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mostrar_autores_home_block
+    - node.type.autor
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.autor.field_mostrar_autores_home_block
+field_name: field_mostrar_autores_home_block
+entity_type: node
+bundle: autor
+label: 'Mostrar en bloque autores de la pagina inicial'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

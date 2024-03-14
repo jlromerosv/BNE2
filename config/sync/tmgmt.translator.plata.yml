@@ -1,0 +1,22 @@
+uuid: 58ea3304-896d-41fa-82b6-8ffb9e6d8de8
+langcode: es
+status: true
+dependencies:
+  module:
+    - tmgmt_plata
+name: plata
+label: Plata
+description: 'Plata Translator service.'
+auto_accept: true
+weight: null
+plugin: plata
+settings:
+  url: ''
+  api_key: '123'
+remote_languages_mappings:
+  es: es
+  ca: ca
+  gl: gl
+  eu: ''
+  en: ''
+  fr: fr

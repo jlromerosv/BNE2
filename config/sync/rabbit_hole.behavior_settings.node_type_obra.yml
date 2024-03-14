@@ -1,0 +1,14 @@
+uuid: 98a5b7ad-52d4-4b6f-abe9-e6e4cff6ad2c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+id: node_type_obra
+entity_type_id: node_type
+entity_id: obra
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,8 @@
+uuid: 4e08bfc3-2c9e-463c-96d2-61881028498b
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de portal web'
+vid: tipo_de_portal_web
+description: ''
+weight: 0

@@ -1,0 +1,21 @@
+uuid: 3669470d-c434-4206-8f57-8c5ec5c842bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clave_valor_plano
+    - node.type.serie_estadistica
+  module:
+    - key_value_field
+id: node.serie_estadistica.field_clave_valor_plano
+field_name: field_clave_valor_plano
+entity_type: node
+bundle: serie_estadistica
+label: Clave_valor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: key_value

@@ -1,0 +1,28 @@
+uuid: b91a1dc6-99a5-4b52-a8a6-b3a3e721c564
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audios
+    - media.type.archivo_de_audio
+    - node.type.noticia
+id: node.noticia.field_audios
+field_name: field_audios
+entity_type: node
+bundle: noticia
+label: Audios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo_de_audio: archivo_de_audio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

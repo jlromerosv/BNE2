@@ -1,0 +1,18 @@
+uuid: 09013e51-bec2-4d4f-abf0-50debcfccbfa
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sesion_de_actividad
+id: node.sesion_de_actividad.metatag
+field_name: metatag
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

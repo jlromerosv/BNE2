@@ -1,0 +1,20 @@
+uuid: 14e2d699-428e-423a-ae6a-17a12371ee2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_exposicion
+  module:
+    - text
+id: taxonomy_term.tipo_de_exposicion.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_exposicion
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

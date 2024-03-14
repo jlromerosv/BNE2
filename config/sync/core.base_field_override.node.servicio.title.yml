@@ -1,0 +1,18 @@
+uuid: 0bb7719c-beba-42f7-95f3-641bc81423a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.servicio
+id: node.servicio.title
+field_name: title
+entity_type: node
+bundle: servicio
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

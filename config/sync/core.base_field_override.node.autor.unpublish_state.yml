@@ -1,0 +1,20 @@
+uuid: cd07a1dd-4510-416c-af5b-ee36b26edc2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autor
+  module:
+    - options
+id: node.autor.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: autor
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

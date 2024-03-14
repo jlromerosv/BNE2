@@ -1,0 +1,27 @@
+uuid: eab5ea4d-460a-46ae-8d37-349e9a207032
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_audio_file
+    - media.type.archivo_de_audio
+  module:
+    - file
+id: media.archivo_de_audio.field_media_audio_file
+field_name: field_media_audio_file
+entity_type: media
+bundle: archivo_de_audio
+label: 'Archivo de audio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: repositorio-audio
+  file_extensions: 'mp3 wav aac'
+  max_filesize: ''
+  description_field: false
+field_type: file

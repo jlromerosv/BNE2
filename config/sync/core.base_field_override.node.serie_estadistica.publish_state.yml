@@ -1,0 +1,20 @@
+uuid: 5c83ca16-f3f1-4109-b97a-6f2b78ef499e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.serie_estadistica
+  module:
+    - options
+id: node.serie_estadistica.publish_state
+field_name: publish_state
+entity_type: node
+bundle: serie_estadistica
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

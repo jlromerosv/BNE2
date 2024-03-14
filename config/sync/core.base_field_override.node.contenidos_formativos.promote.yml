@@ -1,0 +1,22 @@
+uuid: c116d9b4-d952-4d82-ba82-75644b98b059
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+id: node.contenidos_formativos.promote
+field_name: promote
+entity_type: node
+bundle: contenidos_formativos
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

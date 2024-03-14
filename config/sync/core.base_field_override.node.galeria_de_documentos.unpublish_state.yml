@@ -1,0 +1,20 @@
+uuid: 58f10e84-f1e8-4097-9c1c-e9e88496b5ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_documentos
+  module:
+    - options
+id: node.galeria_de_documentos.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

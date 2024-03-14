@@ -1,0 +1,14 @@
+uuid: 95ab5c76-d143-4733-b1e1-c0ed1fc08760
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.catalogo
+id: node_type_catalogo
+entity_type_id: node_type
+entity_id: catalogo
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

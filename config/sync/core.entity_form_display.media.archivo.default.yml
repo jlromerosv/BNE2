@@ -1,0 +1,93 @@
+uuid: 024a45c1-e223-4847-b613-a79c6ccb9e46
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.archivo.domain_access
+    - field.field.media.archivo.feeds_item
+    - field.field.media.archivo.field_area_tematica
+    - field.field.media.archivo.field_area_transparencia
+    - field.field.media.archivo.field_descripcion_con_formato
+    - field.field.media.archivo.field_etiquetas_busqueda
+    - field.field.media.archivo.field_id_externo
+    - field.field.media.archivo.field_media_file
+    - field.field.media.archivo.field_tipo
+    - field.field.media.archivo.field_urlanterior
+    - media.type.archivo
+  module:
+    - field_group
+    - file
+    - path
+third_party_settings:
+  field_group:
+    group_cl:
+      children: {  }
+      label: Clasificación
+      region: hidden
+      parent_name: ''
+      weight: 16
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: media.archivo.default
+targetEntityType: media
+bundle: archivo
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_id_externo:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_file:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  domain_access: true
+  feeds_item: true
+  field_area_tematica: true
+  field_area_transparencia: true
+  field_descripcion_con_formato: true
+  field_etiquetas_busqueda: true
+  field_tipo: true
+  field_urlanterior: true
+  langcode: true
+  uid: true

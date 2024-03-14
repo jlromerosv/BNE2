@@ -1,0 +1,7 @@
+uuid: b5c9ed7a-9c50-4ac5-8fcb-ef7fee271854
+langcode: es
+status: false
+dependencies: {  }
+formId: node_galeria_de_documentos_form
+captchaType: default
+label: node_galeria_de_documentos_form

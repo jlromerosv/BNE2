@@ -1,0 +1,37 @@
+uuid: 226d3715-2433-4f29-93c1-cffeb4eff84c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne
+  module:
+    - block_class
+    - system
+  theme:
+    - bne_theme
+third_party_settings:
+  block_class:
+    classes: ps-menu-niveles2
+id: mx1bne_4
+theme: bne_theme
+region: content
+weight: -57
+provider: null
+plugin: 'system_menu_block:mx1---bne'
+settings:
+  id: 'system_menu_block:mx1---bne'
+  label: 'MX1 - BNE, niveles 4 y 5'
+  label_display: '0'
+  provider: system
+  level: 4
+  depth: 5
+  expand_all_items: false
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/32186\r\n/node/2995\r\n/node/3047\r\n/node/4303\r\n/node/4309\r\n/node/3591\r\n/node/7606\r\n/node/20764\r\n/node/3015\r\n/node/4318\r\n/node/3017\r\n/node/3047"

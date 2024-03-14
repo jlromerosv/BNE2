@@ -1,0 +1,29 @@
+uuid: c9389d92-88d2-4b88-b03a-793c6e87c562
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_efectos_silencio_administr
+    - node.type.tramite
+    - taxonomy.vocabulary.efectos_silencio_administrativo
+id: node.tramite.field_efectos_silencio_administr
+field_name: field_efectos_silencio_administr
+entity_type: node
+bundle: tramite
+label: 'Efectos del silencio administrativo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      efectos_silencio_administrativo: efectos_silencio_administrativo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

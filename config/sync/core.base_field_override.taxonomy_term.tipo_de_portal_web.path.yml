@@ -1,0 +1,20 @@
+uuid: fd3e18cb-59ab-46d4-a3bd-f0eabe5138b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_portal_web
+  module:
+    - path
+id: taxonomy_term.tipo_de_portal_web.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_portal_web
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

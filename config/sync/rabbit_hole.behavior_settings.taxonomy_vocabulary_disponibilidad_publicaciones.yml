@@ -1,0 +1,14 @@
+uuid: c08315ab-cdf5-4d5f-ba27-942af559960d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.disponibilidad_publicaciones
+id: taxonomy_vocabulary_disponibilidad_publicaciones
+entity_type_id: taxonomy_vocabulary
+entity_id: disponibilidad_publicaciones
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

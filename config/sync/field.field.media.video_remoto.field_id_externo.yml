@@ -1,0 +1,19 @@
+uuid: 6f4e2b71-38f1-4ff4-b240-b76da9a56669
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_id_externo
+    - media.type.video_remoto
+id: media.video_remoto.field_id_externo
+field_name: field_id_externo
+entity_type: media
+bundle: video_remoto
+label: Id_externo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

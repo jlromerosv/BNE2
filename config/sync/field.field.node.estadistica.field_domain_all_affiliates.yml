@@ -1,0 +1,21 @@
+uuid: 43e02757-0b37-45f4-89b1-8e8768d58439
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.estadistica
+id: node.estadistica.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: estadistica
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

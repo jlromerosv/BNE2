@@ -1,0 +1,34 @@
+uuid: a208fbc4-919f-4229-b355-f8f0a8f86ecc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_destacada
+    - media.type.imagen
+    - node.type.autor
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.autor.field_imagen_destacada
+field_name: field_imagen_destacada
+entity_type: node
+bundle: autor
+label: 'Imagen Destacada'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

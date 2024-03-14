@@ -1,0 +1,141 @@
+www_albacete_pulsia_es:
+  site_name: Albacete
+  site_slogan: 'Pulsia Technology development team'
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2928
+  site_403: ''
+  site_404: ''
+langcode: es
+cdm_albacete_pulsia_es:
+  site_name: 'Consejo Municipal de Personas con Discapacidad de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2626
+  site_403: /node/2438
+  site_404: /node/2439
+jmoreno_albacete_pulsia_es:
+  site_name: 'Ayuntamiento de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2675
+  site_403: /node/2438
+  site_404: /node/2439
+escuelas_infantiles_pulsia_es:
+  site_name: 'Patronato Municipal de Escuelas Infantiles de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2607
+  site_403: /node/2438
+  site_404: /node/2439
+urvial_albacete_pulsia_es:
+  site_name: 'Ayuntamiento de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2609
+  site_403: /node/2438
+  site_404: /node/2439
+transparencia_participacion_albacete_pulsia_es:
+  site_name: 'Transparencia y Participación Ciudadana del Ayuntamiento de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2617
+  site_403: /node/2438
+  site_404: /node/2439
+universidad_popular_albacete_pulsia_es:
+  site_name: 'Universidad Popular'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2618
+  site_403: /node/2438
+  site_404: /node/2439
+turismo_albacete_pulsia_es:
+  site_name: 'Turismo de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2619
+  site_403: /node/2438
+  site_404: /node/2439
+medio_ambiente_albacete_pulsia_es:
+  site_name: 'Portal de Medio Ambiente del Ayuntamiento de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2620
+  site_403: /node/2438
+  site_404: /node/2439
+imd_albacete_pulsia_es:
+  site_name: 'Instituto Municipal de Deportes de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2621
+  site_403: /node/2438
+  site_404: /node/2439
+gerencia_urbanismo_albacete_pulsia_es:
+  site_name: 'Gerencia de Urbanismo y Vivienda del Ayuntamiento de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2622
+  site_403: /node/2438
+  site_404: /node/2439
+fondoseuropeos_albacete_pulsia_es:
+  site_name: 'Fondos Europeos del Ayuntamiento de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2624
+  site_403: /node/2438
+  site_404: /node/2439
+escuela_tauromaquia_pulsia_es:
+  site_name: 'Escuela Taurina del Ayuntamiento de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2625
+  site_403: /node/2438
+  site_404: /node/2439
+desarrollo_ermua_pulsia_es:
+  site_name: 'Ayuntamiento de Ermua'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2824
+  site_403: /node/2438
+  site_404: /node/2439
+antzokia_ermua_pulsia_es:
+  site_name: Antzokia
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2843
+  site_403: /node/2438
+  site_404: /node/2439
+centrojoven_albacete_pulsia_es:
+  site_name: 'Ayuntamiento de Albacete'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/2977
+  site_403: /node/2438
+  site_404: /node/2439
+desarrollo_torrevieja_pulsia_es:
+  site_name: 'Ayuntamiento de Torrevieja'
+  site_slogan: ''
+  site_mail: jesusmoreno@dev.pulsia.es
+  site_frontpage: /node/3292
+  site_403: /node/2438
+  site_404: /node/3436
+desarrollo_bne_pulsia_es:
+  site_name: 'Biblioteca Nacional de España'
+  site_slogan: ''
+  site_mail: formularios@bne.es
+  site_frontpage: /node/3392
+  site_403: /node/2438
+  site_404: /node/2439
+amigos_bne_es:
+  site_name: 'Fundación de Amigos de la BNE'
+  site_slogan: ''
+  site_mail: formularios@bne.es
+  site_frontpage: /node/23380
+  site_403: /node/2438
+  site_404: /node/2439
+sede_bne:
+  site_name: 'Biblioteca Nacional de España'
+  site_slogan: ''
+  site_mail: formularios@bne.es
+  site_frontpage: /node/27006
+  site_403: /node/2438
+  site_404: /node/2439

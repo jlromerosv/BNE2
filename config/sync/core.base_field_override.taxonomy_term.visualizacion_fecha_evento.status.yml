@@ -1,0 +1,22 @@
+uuid: 7d56d079-5033-4dec-a3fa-76249bba7f26
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visualizacion_fecha_evento
+id: taxonomy_term.visualizacion_fecha_evento.status
+field_name: status
+entity_type: taxonomy_term
+bundle: visualizacion_fecha_evento
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

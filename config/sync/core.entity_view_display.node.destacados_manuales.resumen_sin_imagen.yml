@@ -1,0 +1,44 @@
+uuid: 6f545e37-6b45-4ed1-8f05-7f1fbe3117a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.resumen_sin_imagen
+    - field.field.node.destacados_manuales.field_contenidos_relacionados
+    - field.field.node.destacados_manuales.field_contenidos_vinculados
+    - field.field.node.destacados_manuales.field_domain_source
+    - field.field.node.destacados_manuales.field_imagen_cabecera
+    - field.field.node.destacados_manuales.field_imagen_destacada
+    - field.field.node.destacados_manuales.field_rede
+    - node.type.destacados_manuales
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.destacados_manuales.resumen_sin_imagen
+targetEntityType: node
+bundle: destacados_manuales
+mode: resumen_sin_imagen
+content:
+  field_contenidos_vinculados:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: minificha
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_contenidos_relacionados: true
+  field_domain_source: true
+  field_imagen_cabecera: true
+  field_imagen_destacada: true
+  field_rede: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,20 @@
+uuid: 665d24cc-ec13-4fd0-810d-9a3f3d4a00fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_videos
+  module:
+    - options
+id: node.galeria_de_videos.publish_state
+field_name: publish_state
+entity_type: node
+bundle: galeria_de_videos
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

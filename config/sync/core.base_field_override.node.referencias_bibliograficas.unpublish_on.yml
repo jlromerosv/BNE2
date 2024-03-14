@@ -1,0 +1,18 @@
+uuid: 996bbe8c-c49a-4a2f-a5a7-20287c891a98
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.referencias_bibliograficas
+id: node.referencias_bibliograficas.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: referencias_bibliograficas
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

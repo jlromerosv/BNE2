@@ -1,0 +1,33 @@
+uuid: d9289124-3e94-4850-8349-eb423dfb68f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.etiquetas_autores.field_icono_svg_
+    - taxonomy.vocabulary.etiquetas_autores
+  module:
+    - text
+id: taxonomy_term.etiquetas_autores.default
+targetEntityType: taxonomy_term
+bundle: etiquetas_autores
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icono_svg_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

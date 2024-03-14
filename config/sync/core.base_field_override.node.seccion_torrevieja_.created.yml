@@ -1,0 +1,18 @@
+uuid: a36d9dca-7517-4966-9408-a93121b1853f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_torrevieja_
+id: node.seccion_torrevieja_.created
+field_name: created
+entity_type: node
+bundle: seccion_torrevieja_
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

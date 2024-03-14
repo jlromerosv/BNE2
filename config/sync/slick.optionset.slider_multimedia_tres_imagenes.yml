@@ -1,0 +1,53 @@
+uuid: 2b44cd02-f6bc-4fbb-b175-27197317723e
+langcode: es
+status: true
+dependencies: {  }
+id: slider_multimedia_tres_imagenes
+name: slider_multimedia_tres_imagenes
+weight: 0
+label: 'Slider multimedia tres imagenes'
+group: ''
+skin: ''
+breakpoints: 3
+optimized: true
+options:
+  options__active_tab: edit-options-responsives
+  settings:
+    mobileFirst: true
+    lazyLoad: ondemand
+    slidesToShow: 1
+  responsives:
+    responsive:
+      -
+        breakpoint: 576
+        unslick: false
+        settings:
+          arrows: false
+          draggable: false
+          slidesPerRow: 2
+          slidesToShow: 2
+          swipe: false
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: 992
+        unslick: false
+        settings:
+          arrows: false
+          draggable: false
+          slidesPerRow: 3
+          slidesToShow: 3
+          swipe: false
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: 1600
+        unslick: false
+        settings:
+          arrows: false
+          draggable: false
+          slidesPerRow: 4
+          slidesToShow: 4
+          swipe: false
+          touchMove: false
+          waitForAnimate: false

@@ -1,0 +1,26 @@
+uuid: 4fe4fdc6-6764-477d-85db-d4d8d25b72c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_descripcion_con_formato
+    - media.type.archivo
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: media.archivo.field_descripcion_con_formato
+field_name: field_descripcion_con_formato
+entity_type: media
+bundle: archivo
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

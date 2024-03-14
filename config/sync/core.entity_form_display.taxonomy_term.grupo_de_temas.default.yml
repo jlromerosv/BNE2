@@ -1,0 +1,65 @@
+uuid: 9de82f81-9528-4c03-958c-d9f4f8d097c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.grupo_de_temas.domain_access
+    - field.field.taxonomy_term.grupo_de_temas.field_icono_svg_
+    - taxonomy.vocabulary.grupo_de_temas
+  module:
+    - path
+    - text
+id: taxonomy_term.grupo_de_temas.default
+targetEntityType: taxonomy_term
+bundle: grupo_de_temas
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  domain_access:
+    type: options_buttons
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icono_svg_:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

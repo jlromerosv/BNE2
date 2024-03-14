@@ -1,0 +1,227 @@
+uuid: 1cdfd9c6-9f65-4e29-982c-8e6e1d290c32
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.pagina_avanzada.body
+    - field.field.node.pagina_avanzada.field_contenido_generico
+    - field.field.node.pagina_avanzada.field_contenidos_relacionados
+    - field.field.node.pagina_avanzada.field_contenidos_vinculados
+    - field.field.node.pagina_avanzada.field_domain_access
+    - field.field.node.pagina_avanzada.field_domain_all_affiliates
+    - field.field.node.pagina_avanzada.field_domain_source
+    - field.field.node.pagina_avanzada.field_galeria_de_imagenes
+    - field.field.node.pagina_avanzada.field_imagen_destacada
+    - field.field.node.pagina_avanzada.field_meta_tags
+    - field.field.node.pagina_avanzada.field_rede
+    - field.field.node.pagina_avanzada.field_videos
+    - field.field.node.pagina_avanzada.field_yoast_seo
+    - node.type.pagina_avanzada
+    - views.view.bloques_de_noticias
+    - views.view.widget_multimedia_enlaces
+    - views.view.widgets_contenido_manual_de_la_home
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          6f965698-6388-4dc6-8cd0-37d035c463d8:
+            uuid: 6f965698-6388-4dc6-8cd0-37d035c463d8
+            region: content
+            configuration:
+              id: 'views_block:bloques_de_noticias-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 12
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: ps-noticias-destacadas-block
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+          f2149297-11f5-42fa-aafe-bf5cb839ddc3:
+            uuid: f2149297-11f5-42fa-aafe-bf5cb839ddc3
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_10'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 7
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: ps-destacados-block
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+          96e45639-536c-4675-8531-c7bb2215144d:
+            uuid: 96e45639-536c-4675-8531-c7bb2215144d
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_14'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 8
+            additional: {  }
+          95bc49b8-6bf8-4df3-b70e-de5dbc5689b7:
+            uuid: 95bc49b8-6bf8-4df3-b70e-de5dbc5689b7
+            region: content
+            configuration:
+              id: 'views_block:buscadores_a_texto_completo-block_14'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 14
+            additional: {  }
+          6cad0dd0-b6ad-4927-9854-d0962dbb1ec0:
+            uuid: 6cad0dd0-b6ad-4927-9854-d0962dbb1ec0
+            region: content
+            configuration:
+              id: 'views_block:widgets_contenido_manual_de_la_home-block_17'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 15
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Redes sociales y enlaces'
+          context_mapping: {  }
+        components:
+          fb0e9e94-b7d7-44cd-89f6-64c1849d9811:
+            uuid: fb0e9e94-b7d7-44cd-89f6-64c1849d9811
+            region: content
+            configuration:
+              id: 'views_block:widgets_contenido_manual_de_la_home-block_15'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          b1abe1a4-c180-419d-9ba4-8c879edcf3dd:
+            uuid: b1abe1a4-c180-419d-9ba4-8c879edcf3dd
+            region: content
+            configuration:
+              id: 'views_block:widgets_contenido_manual_de_la_home-block_16'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Modelacion
+          context_mapping: {  }
+        components:
+          48f4d84f-53eb-4647-8d1f-2a2747531ebf:
+            uuid: 48f4d84f-53eb-4647-8d1f-2a2747531ebf
+            region: content
+            configuration:
+              id: 'extra_field_block:node:pagina_avanzada:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.pagina_avanzada.full
+targetEntityType: node
+bundle: pagina_avanzada
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_galeria_de_imagenes: true
+  field_imagen_destacada: true
+  field_meta_tags: true
+  field_rede: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true
+  uuid: true

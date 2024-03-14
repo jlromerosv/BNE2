@@ -1,0 +1,14 @@
+uuid: b91a7f41-714b-4486-8479-4fcd3fd4eb78
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_formularios
+  module:
+    - user
+id: user_remove_role_action.administrador_formularios
+label: 'Elimina el rol Administrador formularios al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrador_formularios

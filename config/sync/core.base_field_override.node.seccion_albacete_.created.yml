@@ -1,0 +1,18 @@
+uuid: aa7e3ae1-a21d-447c-87b0-0821630928d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.created
+field_name: created
+entity_type: node
+bundle: seccion_albacete_
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

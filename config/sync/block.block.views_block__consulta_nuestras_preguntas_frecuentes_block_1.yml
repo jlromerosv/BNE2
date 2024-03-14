@@ -1,0 +1,33 @@
+uuid: 48377543-e5f0-4b0c-b5f5-a3b2155729bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.consulta_nuestras_preguntas_frecuentes
+  module:
+    - system
+    - views
+  theme:
+    - bne_theme
+id: views_block__consulta_nuestras_preguntas_frecuentes_block_1
+theme: bne_theme
+region: post_contenido
+weight: -66
+provider: null
+plugin: 'views_block:consulta_nuestras_preguntas_frecuentes-block_1'
+settings:
+  id: 'views_block:consulta_nuestras_preguntas_frecuentes-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/3209

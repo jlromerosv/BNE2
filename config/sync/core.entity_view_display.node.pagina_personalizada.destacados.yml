@@ -1,0 +1,103 @@
+uuid: 65194466-bb90-4538-9e5b-7f0e2869bb27
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.destacados
+    - field.field.node.pagina_personalizada.body
+    - field.field.node.pagina_personalizada.field_alertas
+    - field.field.node.pagina_personalizada.field_alias_tipo_contenido
+    - field.field.node.pagina_personalizada.field_area_de_transparencia
+    - field.field.node.pagina_personalizada.field_bloquear_la_traduccion_
+    - field.field.node.pagina_personalizada.field_coleccion
+    - field.field.node.pagina_personalizada.field_contenido_generico
+    - field.field.node.pagina_personalizada.field_contenidos_genericos_2
+    - field.field.node.pagina_personalizada.field_contenidos_relacionados
+    - field.field.node.pagina_personalizada.field_contenidos_vinculados
+    - field.field.node.pagina_personalizada.field_destacados_carrousel_del_b
+    - field.field.node.pagina_personalizada.field_domain_access
+    - field.field.node.pagina_personalizada.field_domain_all_affiliates
+    - field.field.node.pagina_personalizada.field_domain_source
+    - field.field.node.pagina_personalizada.field_enlaces
+    - field.field.node.pagina_personalizada.field_filtros
+    - field.field.node.pagina_personalizada.field_formulario
+    - field.field.node.pagina_personalizada.field_icono
+    - field.field.node.pagina_personalizada.field_id_externo
+    - field.field.node.pagina_personalizada.field_iframe
+    - field.field.node.pagina_personalizada.field_imagen_cabecera
+    - field.field.node.pagina_personalizada.field_imagen_destacada
+    - field.field.node.pagina_personalizada.field_imagen_representativa
+    - field.field.node.pagina_personalizada.field_meta_tags
+    - field.field.node.pagina_personalizada.field_publicaciones
+    - field.field.node.pagina_personalizada.field_rede
+    - field.field.node.pagina_personalizada.field_subtitulo
+    - field.field.node.pagina_personalizada.field_widget
+    - field.field.node.pagina_personalizada.layout_builder__layout
+    - node.type.pagina_personalizada
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.pagina_personalizada.destacados
+targetEntityType: node
+bundle: pagina_personalizada
+mode: destacados
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_alertas: true
+  field_alias_tipo_contenido: true
+  field_area_de_transparencia: true
+  field_bloquear_la_traduccion_: true
+  field_coleccion: true
+  field_contenido_generico: true
+  field_contenidos_genericos_2: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_destacados_carrousel_del_b: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_filtros: true
+  field_formulario: true
+  field_icono: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_cabecera: true
+  field_imagen_representativa: true
+  field_meta_tags: true
+  field_publicaciones: true
+  field_rede: true
+  field_subtitulo: true
+  field_widget: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

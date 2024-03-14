@@ -1,0 +1,21 @@
+uuid: 13e6a1c5-1622-42fa-bfbb-911d3e877215
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.galeria_de_documentos
+  module:
+    - metatag
+id: node.galeria_de_documentos.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

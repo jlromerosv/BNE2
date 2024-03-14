@@ -1,0 +1,103 @@
+.bloque-destacados-home {
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    .views-row {
+      position: relative;
+      .views-field-field-media-image {
+        picture {
+          display: block;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .views-field-title {
+        background: rgba(29, 29, 29, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        display: block;
+        height: 100%;
+        width: 100%;
+        .field-content {
+          display: block;
+          height: 100%;
+          padding: 0 30px;
+          @media (min-width: 992px) {
+            padding: 0 60px;
+          }
+          .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            .subtitulo {
+              margin-bottom: 1em;
+              font-size: 14px;
+              color: $bne_color_4;
+              line-height: 20px;
+              letter-spacing: 0.42px;
+              text-align: center;
+            }
+            .titulo {
+              font-size: $h5_home_block;
+              font-family: $dm-serif;
+              font-weight: $dm-serif-regular;
+              color: $blanco;
+              line-height: 48px;
+              letter-spacing: 0.6px;
+              text-align: center;
+              @media (min-width: 568px) {
+                font-size: $h2_home_block;
+              }
+            }
+            .descripcion {
+              overflow: hidden;
+              @media (max-width: 568px) {
+                display: none;
+              }
+              p {
+                font-size: 18px;
+                color: $bne_color_4;
+                line-height: 26px;
+                letter-spacing: 0.54px;
+              }
+              a {
+                color: $bne_color_4;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .views-field-view-node {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        display: block;
+        height: 100%;
+        span {
+          display: block;
+          height: 100%;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+          }
+        }
+      }
+    }
+  }
+}

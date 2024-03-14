@@ -1,0 +1,69 @@
+.ps-path-memorias-y-cuentas-anuales{
+    #block-fundacion-theme-contenidoprincipaldelapagina{
+        .block-views-blockmemorias-y-cuentas-anuales-block-1{
+            .view-content{
+                display: grid;
+                grid-template-columns: repeat(3,33%);
+
+                // Ocultar los títulos
+                h3{
+                    font-family: "DM Serif Text", serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $negro;
+                }
+
+                @media (max-width: 992px) {
+                }
+
+                @media (max-width: 768px) {
+                    grid-template-columns: repeat(2,49%);
+                }
+
+                @media (max-width: 576px) {
+                    grid-template-columns: repeat(1,100%);
+                }
+
+
+
+                .row-group-container{
+                    height: 160px;
+                    padding: 20px;
+                    border: 1px solid $bne_color_3;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    @media (max-width: 576px) {
+                        height: auto;
+
+                    }
+
+                    h3{
+                        order: -1;
+                        margin: 0px 0px 10px;
+                    }
+
+
+                    .views-row{
+
+                        a{
+                            color: $enlace_color;
+                            font-weight: 500;
+                            @include display_flex(row, initial, center);
+                            padding-left: 20px;
+                            position: relative;
+                        }
+                        a::before{
+                            @include before-icon(15px, 0, $descarga-blanco);
+                            filter: invert(39%) sepia(84%) saturate(7167%) hue-rotate(44deg) brightness(89%) contrast(84%);
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+}

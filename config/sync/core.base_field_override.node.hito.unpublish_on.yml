@@ -1,0 +1,18 @@
+uuid: 841821bd-5542-4831-ad3b-524ae8c9ad9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.hito
+id: node.hito.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: hito
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

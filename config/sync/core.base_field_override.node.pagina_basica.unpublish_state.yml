@@ -1,0 +1,20 @@
+uuid: 1c98d5f5-7906-4458-a559-b85fe8166e67
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_basica
+  module:
+    - options
+id: node.pagina_basica.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: pagina_basica
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

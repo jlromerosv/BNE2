@@ -1,0 +1,20 @@
+uuid: 608bfdb1-f94b-4a4d-8eb5-1ba045ebd597
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+id: node.bolsa_de_trabajo.menu_link
+field_name: menu_link
+entity_type: node
+bundle: bolsa_de_trabajo
+label: 'Enlace del menu'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

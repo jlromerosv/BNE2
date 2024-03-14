@@ -1,0 +1,19 @@
+uuid: faccf787-8e2a-46a8-833f-c9cbe7c9646d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_texto_libre_
+    - node.type.obra
+id: node.obra.field_tipo_texto_libre_
+field_name: field_tipo_texto_libre_
+entity_type: node
+bundle: obra
+label: 'Tipo de Documento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

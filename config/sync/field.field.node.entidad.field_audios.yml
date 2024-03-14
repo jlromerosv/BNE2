@@ -1,0 +1,28 @@
+uuid: eb938a6b-84e4-4376-a954-98cf30133519
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audios
+    - media.type.archivo_de_audio
+    - node.type.entidad
+id: node.entidad.field_audios
+field_name: field_audios
+entity_type: node
+bundle: entidad
+label: Audios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo_de_audio: archivo_de_audio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

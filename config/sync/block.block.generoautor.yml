@@ -1,0 +1,33 @@
+uuid: 437eb361-a6bf-47c9-8b34-1610c10e49aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.genero_autor
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: generoautor
+theme: bne_theme
+region: sidebar_first
+weight: -32
+provider: null
+plugin: 'facet_block:genero_autor'
+settings:
+  id: 'facet_block:genero_autor'
+  label: 'Género autor'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: generoautor
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/26819

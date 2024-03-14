@@ -1,0 +1,28 @@
+uuid: 806c72ae-0075-4de0-90f3-1c85ed76543a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.actividad_generica
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.actividad_generica.body
+field_name: body
+entity_type: node
+bundle: actividad_generica
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

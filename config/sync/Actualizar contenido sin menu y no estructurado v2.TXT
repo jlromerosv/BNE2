@@ -1,0 +1,69 @@
+uuid: f93008f8-bf72-4b9b-ae51-75aa16d8b428
+langcode: es
+status: true
+dependencies: {  }
+id: alias_de_paginas_sin_menu_y_sin_tipo_de_contenido_estructurado
+label: 'Actualizar contenido: alias de páginas sin menú y sin tipo de contenido estructurado v2'
+events:
+  -
+    event_name: 'rules_entity_update:node'
+description: ''
+tags:
+  - alias
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 36f5d209-fd6e-40cc-b354-1a64c97fd82a
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: c396f2a6-263f-4fc0-90f9-656941b0e8c2
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: b7501a86-5b63-49d8-90ea-f553d3abd1a5
+        weight: 0
+        context_values: {  }
+        context_mapping:
+          data: node.path.alias
+        context_processors: {  }
+        provides_mapping: {  }
+        condition_id: rules_data_is_empty
+        negate: false
+      -
+        id: rules_condition
+        uuid: f2ae0381-9074-4bad-915e-0bff9c7734c1
+        weight: 0
+        context_values:
+          types:
+            - pagina_personalizada
+            - pagina_basica
+            - pagina_avanzada
+            - seccion_nivel_1_estandar
+        context_mapping:
+          node: node
+        context_processors:
+          types:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        condition_id: rules_node_is_of_type
+        negate: false
+  actions:
+    id: rules_action_set
+    uuid: f603d4bb-926b-4783-ba34-6c070b0e1353
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 4aea17b9-ee99-4d12-a5d1-b6a229d4eade
+        weight: 0
+        context_values:
+          alias: '/{{ node.title.value | lower | replace('' '', ''-'') | replace(''á'', ''a'') | replace(''é'', ''e'') | replace(''ó'', ''o'') | replace(''í'', ''i'') | replace(''ú'', ''u'') }}'
+        context_mapping:
+          entity: node
+        context_processors:
+          alias:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: 'rules_entity_path_alias_create:entity:node'

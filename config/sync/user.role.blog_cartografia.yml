@@ -1,0 +1,82 @@
+uuid: 71274f2b-6a72-4523-bf39-f2f628883309
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.html_full
+    - filter.format.html_sencillo
+    - media.type.imagen
+    - node.type.entrada_de_blog
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+    - workflows.workflow.editorial
+  module:
+    - comment
+    - content_moderation
+    - domain_access
+    - domain_content
+    - domain_theme_switch
+    - entity_browser
+    - field_permissions
+    - filter
+    - media
+    - node
+    - taxonomy
+    - taxonomy_manager
+    - yoast_seo
+id: blog_cartografia
+label: 'Editor de blog'
+weight: -5
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access content overview'
+  - 'access content_browser entity browser pages'
+  - 'access domain content'
+  - 'access domain content editors'
+  - 'access explorador_autores_y_entradas_de_block entity browser pages'
+  - 'access explorador_de_categoria_de_actualidad entity browser pages'
+  - 'access explorador_de_iconos entity browser pages'
+  - 'access explorador_de_svg entity browser pages'
+  - 'access media overview'
+  - 'access taxonomy manager list'
+  - 'access taxonomy overview'
+  - 'administer nodes'
+  - 'administer yoast seo'
+  - 'create entrada_de_blog content'
+  - 'create entrada_de_blog content on assigned domains'
+  - 'create field_blog'
+  - 'create imagen media'
+  - 'create terms in etiquetas_de_busqueda'
+  - 'delete all revisions'
+  - 'delete entrada_de_blog revisions'
+  - 'delete media'
+  - 'delete own entrada_de_blog content'
+  - 'delete own imagen media'
+  - 'domain administration theme'
+  - 'edit any entrada_de_blog content'
+  - 'edit own comments'
+  - 'edit own entrada_de_blog content'
+  - 'edit own field_blog'
+  - 'edit own imagen media'
+  - 'edit terms in etiquetas_de_busqueda'
+  - 'post comments'
+  - 'revert all revisions'
+  - 'revert entrada_de_blog revisions'
+  - 'skip comment approval'
+  - 'update entrada_de_blog content on assigned domains'
+  - 'use editorial transition despublicar'
+  - 'use editorial transition editar_borrador'
+  - 'use editorial transition publish'
+  - 'use text format html_full'
+  - 'use text format html_sencillo'
+  - 'use yoast seo'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view entrada_de_blog revisions'
+  - 'view field_blog'
+  - 'view latest version'
+  - 'view media'
+  - 'view own field_blog'
+  - 'view own unpublished content'
+  - 'view own unpublished media'

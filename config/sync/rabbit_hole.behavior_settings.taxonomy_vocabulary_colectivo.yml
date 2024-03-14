@@ -1,0 +1,14 @@
+uuid: 0a4252f3-9128-43d3-9b2a-65707dadebe7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.colectivo
+id: taxonomy_vocabulary_colectivo
+entity_type_id: taxonomy_vocabulary
+entity_id: colectivo
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

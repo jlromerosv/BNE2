@@ -1,0 +1,8 @@
+uuid: 21a96507-1010-4fb9-a99e-58fa5d5def17
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría de iniciativa'
+vid: categoria_de_iniciativa
+description: ''
+weight: 0

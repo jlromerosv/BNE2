@@ -1,0 +1,21 @@
+uuid: 86296a6e-033b-4e5f-a371-479a3dc41c19
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_precio
+    - node.type.exposicion
+  module:
+    - text
+id: node.exposicion.field_precio
+field_name: field_precio
+entity_type: node
+bundle: exposicion
+label: Precio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

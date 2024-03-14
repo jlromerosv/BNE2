@@ -1,0 +1,27 @@
+uuid: cd58d2ee-40a5-4200-b599-9170dda5f4d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_video_file
+    - media.type.archivo_de_video
+  module:
+    - file
+id: media.archivo_de_video.field_media_video_file
+field_name: field_media_video_file
+entity_type: media
+bundle: archivo_de_video
+label: 'Archivo de vídeo'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: repositorio-videos
+  file_extensions: mp4
+  max_filesize: ''
+  description_field: false
+field_type: file

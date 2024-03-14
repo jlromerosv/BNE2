@@ -1,0 +1,12 @@
+uuid: 72a073f3-c6c9-40ab-883d-18290637f25e
+langcode: es
+status: true
+dependencies: {  }
+label: 'Detalle Colecciones'
+id: detalle_colecciones
+description: ''
+aspect_ratio: '2:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

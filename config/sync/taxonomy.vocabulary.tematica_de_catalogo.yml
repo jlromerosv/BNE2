@@ -1,0 +1,8 @@
+uuid: 19a6ca2b-076d-4f8f-ae4b-5d8aacff8274
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Temática de catálogo'
+vid: tematica_de_catalogo
+description: ''
+weight: 0

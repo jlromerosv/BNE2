@@ -1,0 +1,15 @@
+uuid: fcab3558-fd3c-46b1-b0ab-91d6fb0fe8ce
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_destacada_contenido_xs
+label: 'Imagen Destacada Contenido XS'
+effects:
+  1c2e6ec4-cf88-4aae-9b5c-7eac49b55caa:
+    uuid: 1c2e6ec4-cf88-4aae-9b5c-7eac49b55caa
+    id: image_scale
+    weight: 1
+    data:
+      width: 576
+      height: null
+      upscale: false

@@ -1,0 +1,28 @@
+uuid: c936a8ce-967d-4736-afba-a4063111335d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_obras
+    - node.type.coleccion
+    - node.type.obra
+id: node.coleccion.field_obras
+field_name: field_obras
+entity_type: node
+bundle: coleccion
+label: Obras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      obra: obra
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: 72ee83e0-c5a1-4b98-84a7-b3718e174909
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.editor_contenidos
+id: area-515fe3cfb
+label: 'x_Editor Contenidos'
+weight: 4
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

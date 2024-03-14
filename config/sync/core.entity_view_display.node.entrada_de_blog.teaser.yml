@@ -1,0 +1,127 @@
+uuid: a240b76d-ad68-4b63-9d39-84665a068922
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.entrada_de_blog.body
+    - field.field.node.entrada_de_blog.feeds_item
+    - field.field.node.entrada_de_blog.field_alias_tipo_contenido
+    - field.field.node.entrada_de_blog.field_archivos
+    - field.field.node.entrada_de_blog.field_audios
+    - field.field.node.entrada_de_blog.field_autor_entrada_blog
+    - field.field.node.entrada_de_blog.field_blog
+    - field.field.node.entrada_de_blog.field_categoria
+    - field.field.node.entrada_de_blog.field_colectivo
+    - field.field.node.entrada_de_blog.field_comentarios
+    - field.field.node.entrada_de_blog.field_contenido_generico
+    - field.field.node.entrada_de_blog.field_contenidos_relacionados
+    - field.field.node.entrada_de_blog.field_contenidos_vinculados
+    - field.field.node.entrada_de_blog.field_domain_access
+    - field.field.node.entrada_de_blog.field_domain_all_affiliates
+    - field.field.node.entrada_de_blog.field_domain_source
+    - field.field.node.entrada_de_blog.field_enlaces
+    - field.field.node.entrada_de_blog.field_etiquetas_busqueda
+    - field.field.node.entrada_de_blog.field_fecha_inicio
+    - field.field.node.entrada_de_blog.field_galeria_de_imagenes
+    - field.field.node.entrada_de_blog.field_id_externo
+    - field.field.node.entrada_de_blog.field_iframe
+    - field.field.node.entrada_de_blog.field_imagen_destacada
+    - field.field.node.entrada_de_blog.field_imagenes
+    - field.field.node.entrada_de_blog.field_meta_tags
+    - field.field.node.entrada_de_blog.field_no_mostrar_inverso
+    - field.field.node.entrada_de_blog.field_videos
+    - field.field.node.entrada_de_blog.field_yoast_seo
+    - node.type.entrada_de_blog
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          38c7295f-5a05-4262-bba4-f959da4d764e:
+            uuid: 38c7295f-5a05-4262-bba4-f959da4d764e
+            region: content
+            configuration:
+              id: 'field_block:node:entrada_de_blog:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ecd04883-0c67-4bb4-84a8-0583e2c63fad:
+            uuid: ecd04883-0c67-4bb4-84a8-0583e2c63fad
+            region: content
+            configuration:
+              id: 'extra_field_block:node:entrada_de_blog:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.entrada_de_blog.teaser
+targetEntityType: node
+bundle: entrada_de_blog
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_audios: true
+  field_autor_entrada_blog: true
+  field_blog: true
+  field_categoria: true
+  field_colectivo: true
+  field_comentarios: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_etiquetas_busqueda: true
+  field_fecha_inicio: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

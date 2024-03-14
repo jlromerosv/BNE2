@@ -1,0 +1,15 @@
+uuid: 06b8fd8e-d016-4cc9-8b73-d0817011ac80
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_imagen_cabecera_ficha_coleccion_sm
+label: 'Bloque Imagen Cabecera ficha colección SM'
+effects:
+  96aab292-cc29-4905-8c73-935c30af2d97:
+    uuid: 96aab292-cc29-4905-8c73-935c30af2d97
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 240
+      anchor: center-center

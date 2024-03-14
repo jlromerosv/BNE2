@@ -1,0 +1,41 @@
+display:
+  block_1:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h2>[view:title]</h2>\r\n"
+            format: html_full
+  block_10:
+    display_options:
+      title: Featured
+  block_11:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h2>[view:title]</h2>\r\n"
+            format: html_full
+  block_2:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h2>[view:title]</h2>\r\n"
+            format: html_full
+      title: "Take a look\r\n"
+    display_title: 'Take a look'
+  block_3:
+    display_title: 'Related contents'
+    display_options:
+      title: 'Related contents'
+      header:
+        area_text_custom:
+          content: '<div class="ps-titulo">Related contents</div>'
+  block_34:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<h2>Links of interest</h2>'
+            format: html_full

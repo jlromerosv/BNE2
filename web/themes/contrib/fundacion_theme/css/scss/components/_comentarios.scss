@@ -1,0 +1,345 @@
+.ps-comentarios {
+
+  padding: 15px 15px 0.9em 15px;
+  @media (min-width: 992px) {
+    padding: 0px 5em 1.9em 5em;
+  }
+
+
+  // max-width: 1920px;
+  // margin: 0 auto;
+  // padding: 15px;
+  .view-header {
+    // max-width: 1100px;
+    //   margin: 0 auto;
+    @media (min-width: 993px) {
+
+      // max-width: 1100px;
+      // margin: 0 auto;
+    }
+    h2 {
+      font-size: 32px;
+      font-family: $dm-serif;
+      font-weight: $dm-serif-regular;
+      color: $negro;
+      line-height: 48px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .view-content {
+    @media (min-width: 993px) {
+      //padding: 0 169px;
+    }
+    .views-row {
+      .views-field-field-comentarios {
+        .field-content {
+          article {
+            display: flex;
+            margin-bottom: 3em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid $bne_color_3;
+            // max-width: 1100px;
+            //   margin: 0 auto;
+            &::before {
+              content: "";
+              height: 30px;
+              display: block;
+              width: 45px;
+              background: url(/themes/contrib/bne_theme/recursos/usuario_comentario.svg)
+                no-repeat center;
+              background-size: 30px;
+              margin-right: 10px;
+            }
+            footer {
+              display: none;
+            }
+            .content {
+                width: 100%;
+              h3 {
+                display: none;
+              }
+              .field--name-field-nombre-comentario {
+                font-size: 16px;
+                color: $bne_color_1;
+                line-height: 28px;
+                letter-spacing: 0.72px;
+              }
+              .field--name-field-fecha-comentario {
+                time {
+                  font-size: 13px;
+                  color: $bne_color_2;
+                  line-height: 28px;
+                  letter-spacing: 0.58px;
+                }
+              }
+              .field--name-comment-body {
+                padding-left: 1em 0;
+                @include estilos_body();
+                p {
+                  font-size: 18px;
+                  color: $bne_color_2;
+                  line-height: 36px;
+                  letter-spacing: 0.43px;
+                }
+              }
+              ul.links {
+                display: flex;
+                justify-content: flex-end;
+                li {
+                  a {
+                    font-size: 16px;
+                    color: $bne_color_6;
+                    line-height: 24px;
+                    letter-spacing: 0.96px;
+                  }
+                }
+              }
+            }
+          }
+          form {
+              // max-width: 1100px;
+              // margin: 0 auto;
+            .field--name-field-nombre-comentario {
+              .form-type-textfield {
+                label {
+                  display: none;
+                }
+                input {
+                  height: 60px;
+                  border: 0.5px solid $bne_color_3;
+                  background-color: $blanco;
+                  padding: 0 30px;
+                  &::placeholder {
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 24px;
+                    letter-spacing: 0.96px;
+                  }
+                }
+              }
+            }
+            .field--name-field-email-comentario {
+              .form-type-email {
+                label {
+                  display: none;
+                }
+                input {
+                    height: 60px;
+                    border: 0.5px solid $bne_color_3;
+                    background-color: $blanco;
+                    padding: 0 30px;
+                    &::placeholder{
+                      font-size: 16px;
+                      color: $bne_color_2;
+                      line-height: 24px;
+                      letter-spacing: 0.96px;
+                  }
+                  }
+              }
+            }
+            .field--name-comment-body {
+              .text-format-wrapper {
+                .form-type-textarea {
+                  label {
+                    display: none;
+                  }
+                  .form-textarea-wrapper {
+                    border: 0.5px solid $bne_color_3;
+
+                    textarea {
+                      padding: 15px 30px;
+                      background-color: $blanco;
+                      border-bottom: none;
+                      min-height: 200px;
+                      &::placeholder {
+                        font-size: 16px;
+                        color: $bne_color_2;
+                        line-height: 24px;
+                        letter-spacing: 0.96px;
+                      }
+                    }
+                  }
+                }
+                .filter-wrapper {
+                  display: none;
+                }
+              }
+            }
+            .form-item-name {
+              //display: none;
+            }
+            .field--name-field-fecha-comentario {
+              //display: none;
+            }
+            .form-actions {
+              input {
+                height: 60px;
+                background: $bne_color_4;
+                border: 0.5px solid $bne_color_3;
+                font-size: 16px;
+                color: $bne_color_2;
+                min-width: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.path-comment{
+    #block-fundacion-theme-contenidoprincipaldelapagina{
+        padding: 30px 15px;
+        max-width: 1366px;
+        margin: 0 auto;
+        h1{
+            display: none;
+        }
+        article {
+            display: flex;
+            margin-bottom: 3em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid $bne_color_3;
+            &::before {
+              content: "";
+              height: 30px;
+              display: block;
+              width: 45px;
+              background: url(/themes/contrib/bne_theme/recursos/usuario_comentario.svg)
+                no-repeat center;
+              background-size: 30px;
+              margin-right: 10px;
+            }
+            footer {
+              display: none;
+            }
+            .content {
+                width: 100%;
+              h3 {
+                display: none;
+              }
+              .field--name-field-nombre-comentario {
+                font-size: 16px;
+                color: $bne_color_1;
+                line-height: 28px;
+                letter-spacing: 0.72px;
+              }
+              .field--name-field-fecha-comentario {
+                time {
+                  font-size: 13px;
+                  color: $bne_color_2;
+                  line-height: 28px;
+                  letter-spacing: 0.58px;
+                }
+              }
+              .field--name-comment-body {
+                padding-left: 1em 0;
+                p {
+                  font-size: 18px;
+                  color: $bne_color_2;
+                  line-height: 36px;
+                  letter-spacing: 0.43px;
+                }
+              }
+              ul.links {
+                display: flex;
+                justify-content: flex-end;
+                li {
+                  a {
+                    font-size: 16px;
+                    color: $bne_color_6;
+                    line-height: 24px;
+                    letter-spacing: 0.96px;
+                  }
+                }
+              }
+            }
+          }
+          form {
+            .field--name-field-nombre-comentario {
+              .form-type-textfield {
+                label {
+                  display: none;
+                }
+                input {
+                  height: 60px;
+                  border: 0.5px solid $bne_color_3;
+                  background-color: $blanco;
+                  padding: 0 30px;
+                  &::placeholder {
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 24px;
+                    letter-spacing: 0.96px;
+                  }
+                }
+              }
+            }
+            .field--name-field-email-comentario {
+              .form-type-email {
+                label {
+                  display: none;
+                }
+                input {
+                    height: 60px;
+                    border: 0.5px solid $bne_color_3;
+                    background-color: $blanco;
+                    padding: 0 30px;
+                    &::placeholder{
+                      font-size: 16px;
+                      color: $bne_color_2;
+                      line-height: 24px;
+                      letter-spacing: 0.96px;
+                  }
+                  }
+              }
+            }
+            .field--name-comment-body {
+              .text-format-wrapper {
+                .form-type-textarea {
+                  label {
+                    display: none;
+                  }
+                  .form-textarea-wrapper {
+                    border: 0.5px solid $bne_color_3;
+
+                    textarea {
+                      padding: 15px 30px;
+                      background-color: $blanco;
+                      border-bottom: none;
+                      min-height: 200px;
+                      &::placeholder {
+                        font-size: 16px;
+                        color: $bne_color_2;
+                        line-height: 24px;
+                        letter-spacing: 0.96px;
+                      }
+                    }
+                  }
+                }
+                .filter-wrapper {
+                  display: none;
+                }
+              }
+            }
+            .form-item-name {
+              //display: none;
+            }
+            .field--name-field-fecha-comentario {
+              //display: none;
+            }
+            .form-actions {
+              input {
+                height: 60px;
+                background: $bne_color_4;
+                border: 0.5px solid $bne_color_3;
+                font-size: 16px;
+                color: $bne_color_2;
+                min-width: 200px;
+              }
+            }
+          }
+    }
+}

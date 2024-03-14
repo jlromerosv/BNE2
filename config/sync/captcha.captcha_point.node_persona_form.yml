@@ -1,0 +1,7 @@
+uuid: 12a75735-403d-43ee-ab18-a3dc3b11511e
+langcode: es
+status: false
+dependencies: {  }
+formId: node_persona_form
+captchaType: default
+label: node_persona_form

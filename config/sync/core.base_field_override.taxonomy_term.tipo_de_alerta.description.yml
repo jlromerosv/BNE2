@@ -1,0 +1,20 @@
+uuid: 39f44304-eebb-401b-95cd-4fc373b2433f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_alerta
+  module:
+    - text
+id: taxonomy_term.tipo_de_alerta.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_alerta
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

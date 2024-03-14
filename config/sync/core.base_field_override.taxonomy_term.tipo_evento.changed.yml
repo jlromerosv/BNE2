@@ -1,0 +1,18 @@
+uuid: a4b8008b-513d-4087-be38-3c55db84e152
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_evento
+id: taxonomy_term.tipo_evento.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_evento
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,21 @@
+uuid: 3408445f-a0d2-4e0c-a2b7-50aef036d3c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.sesion_de_actividad
+id: node.sesion_de_actividad.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

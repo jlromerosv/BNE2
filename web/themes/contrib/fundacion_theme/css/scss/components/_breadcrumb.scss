@@ -1,0 +1,57 @@
+.ps-breadcrumb-region {
+  
+  // Se muestra por JS cuando exista #block-fundacion-theme-enlacesdeayudaalanavegacion
+  display: none;
+
+  background: $bne_color_5;
+  height: 48px;
+  justify-content: flex-start;
+  align-items: center;
+
+
+  @media (max-width: 992px) {
+    display: none !important;
+    #block-bne-theme-enlacesdeayudaalanavegacion{
+      display: none !important;
+    }
+    //display: none !important;
+  }
+  .breadcrumb-block {
+    width: 100%;
+    height: 100%;
+
+    .region-pre-content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 0 30px;
+    }
+    .breadcrumb {
+      background: $bne_color_5 !important;
+      ol {
+        li {
+          &:first-child {
+            &::before {
+              display: none;
+            }
+          }
+          color: $blanco;
+          font-size: 13px;
+          font-weight: 500;
+          &:first-child {
+            padding-left: 0;
+          }
+          a {
+            font-size: 13px;
+            color: $blanco;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    #block-bne-theme-page-title {
+      display: none;
+    }
+  }
+}

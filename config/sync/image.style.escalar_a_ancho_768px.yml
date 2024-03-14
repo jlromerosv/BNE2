@@ -1,0 +1,15 @@
+uuid: 9efd4596-611b-43d0-87a7-890abeff72d8
+langcode: es
+status: true
+dependencies: {  }
+name: escalar_a_ancho_768px
+label: 'Escalar a ancho 768px'
+effects:
+  198122e4-8e04-4c47-acd6-1726779b6524:
+    uuid: 198122e4-8e04-4c47-acd6-1726779b6524
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

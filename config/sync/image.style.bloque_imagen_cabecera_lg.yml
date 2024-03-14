@@ -1,0 +1,26 @@
+uuid: 8e6b0691-62b5-46bc-890f-c76a2ffeae4b
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point_banner
+  module:
+    - crop
+name: bloque_imagen_cabecera_lg
+label: 'Bloque Imagen cabecera LG'
+effects:
+  de3f0f5a-561a-47f6-8b55-ecb0bd2f5c55:
+    uuid: de3f0f5a-561a-47f6-8b55-ecb0bd2f5c55
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1200
+      height: 140
+      anchor: center-center
+  2aefbbd4-326c-4672-b5b4-72407b6d66a2:
+    uuid: 2aefbbd4-326c-4672-b5b4-72407b6d66a2
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: focal_point_banner
+      automatic_crop_provider: null

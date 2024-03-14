@@ -1,0 +1,21 @@
+/*
+        ========= RED SOCIAL ==========
+    Estilos dedicados a las redes sociales.
+
+*/
+
+.node--type-red-social.node--view-mode-teaser {
+    .node__content {
+        .field--name-field-icono {
+            .node--type-icono-svg- {
+                h2 {
+                    display: none;
+                }
+                img {
+                    max-width: 50px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

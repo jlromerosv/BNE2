@@ -1,0 +1,8 @@
+uuid: f7cf4f37-8c9f-44b6-b589-6e9ea29d2543
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de alerta'
+vid: tipo_de_alerta
+description: ''
+weight: 0

@@ -1,0 +1,47 @@
+.block-views-blockwidget-multimedia-enlaces-block-34 .ps-enlace-view {
+    padding-bottom: 60px;
+    .view-header{
+        h2{
+            font-size: 24px;
+            font-family: "DM Serif Text", serif;
+            font-weight: 400;
+
+        }
+    }
+    .view-content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px 40px;
+        padding-left: 20px;
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .views-field-field-enlaces {
+            .field-content {
+                a {
+                    position: relative;
+                    color: $negro;
+                    //line-height: 1.6;
+
+                    @include display_flex(row, initial, center);
+                    &::before {
+                        @include before-icon(13px, -20px, $doble_flecha);
+                        top: 3px;
+                    }
+                }
+                a:hover{
+
+                    //line-height: 1.6;
+                    text-decoration: 2px underline;
+                    text-decoration-color: $bne_color_5;
+                    text-underline-offset: 0.3em;
+
+                }
+
+            }
+        }
+    }
+}

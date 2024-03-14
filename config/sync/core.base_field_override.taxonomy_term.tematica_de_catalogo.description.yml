@@ -1,0 +1,20 @@
+uuid: 2a24cf01-0463-48a0-9e59-a2e4589abde4
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tematica_de_catalogo
+  module:
+    - text
+id: taxonomy_term.tematica_de_catalogo.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tematica_de_catalogo
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

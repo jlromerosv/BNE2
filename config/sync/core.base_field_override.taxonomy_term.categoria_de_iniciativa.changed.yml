@@ -1,0 +1,18 @@
+uuid: cc2464e8-39c1-4934-a551-d1fa0be5ade5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_iniciativa
+id: taxonomy_term.categoria_de_iniciativa.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: categoria_de_iniciativa
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: a55f2ccb-10f5-45f9-bb2d-04f2a1b51048
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

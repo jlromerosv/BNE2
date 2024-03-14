@@ -1,0 +1,8 @@
+uuid: 51d83d4b-42df-43cb-bf45-da0de5cff719
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría Postal'
+vid: categoria_postal
+description: ''
+weight: 0

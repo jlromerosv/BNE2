@@ -1,0 +1,18 @@
+uuid: 048e6c67-2e6f-47dd-b365-68132c49ecee
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_referencia_bibliografica
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.tipo_de_referencia_bibliografica
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_referencia_bibliografica
+default_langcode: site_default
+language_alterable: true

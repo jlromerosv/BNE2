@@ -1,0 +1,22 @@
+uuid: 1ed55afe-9bd6-4364-8cac-0aad739dd943
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: campanas
+label: Campañas
+type: 'canonical_entities:node'
+pattern: '/agenda-eventos-actividades/[node:field_tipos:0:entity:url:path]/[node:title]'
+selection_criteria:
+  a51a007c-632e-4a25-9d78-a368777c02eb:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a51a007c-632e-4a25-9d78-a368777c02eb
+    context_mapping:
+      node: node
+    bundles:
+      campana: campana
+selection_logic: and
+weight: -6
+relationships: {  }

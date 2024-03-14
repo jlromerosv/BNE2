@@ -1,0 +1,23 @@
+uuid: b1a5cda0-bfe9-4cf3-be6b-0fb2f0a65548
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contenido_generico
+  module:
+    - text
+id: node.contenido_generico.body
+field_name: body
+entity_type: node
+bundle: contenido_generico
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

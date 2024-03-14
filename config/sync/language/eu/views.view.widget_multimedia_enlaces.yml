@@ -1,0 +1,9 @@
+display:
+  block_3:
+    display_title: 'Zerikusia duten edukiak'
+    display_options:
+      title: 'Zerikusia duten edukiak'
+  block_2:
+    display_title: 'Interesgarria izan daiteke'
+    display_options:
+      title: 'Interesgarria izan daiteke'

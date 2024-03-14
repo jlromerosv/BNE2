@@ -1,0 +1,22 @@
+uuid: a8e37b34-92f7-41cd-b31b-234b4d3ad9d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.serie_estadistica
+id: node.serie_estadistica.status
+field_name: status
+entity_type: node
+bundle: serie_estadistica
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

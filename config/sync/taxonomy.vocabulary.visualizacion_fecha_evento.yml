@@ -1,0 +1,8 @@
+uuid: 8df72dfe-39d9-4023-88e4-852267967876
+langcode: es
+status: true
+dependencies: {  }
+name: 'Visualización fecha evento'
+vid: visualizacion_fecha_evento
+description: ''
+weight: 0

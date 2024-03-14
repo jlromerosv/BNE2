@@ -1,0 +1,12 @@
+uuid: ff1f9bce-e68b-44ba-b0a2-4cf2118170da
+langcode: es
+status: true
+dependencies: {  }
+id: boton
+label: Botón
+image: ''
+description: ''
+html:
+  value: '<span class="ck-boton" style="border-width: 1px; border-style: dotted; border-color: red; padding: 1em">&nbsp;</span>'
+  format: html_full
+weight: 6

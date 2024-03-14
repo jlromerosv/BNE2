@@ -1,0 +1,20 @@
+uuid: 90feddb4-ce2e-49a8-85f0-12983dc5918c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+  module:
+    - path
+id: node.seccion_nivel_1_estandar.path
+field_name: path
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

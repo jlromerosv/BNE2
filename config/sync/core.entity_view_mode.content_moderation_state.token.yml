@@ -1,0 +1,10 @@
+uuid: 6bffb026-9a74-4b53-83f0-5bf28b5089e0
+langcode: es
+status: true
+dependencies:
+  module:
+    - content_moderation
+id: content_moderation_state.token
+label: Comodín
+targetEntityType: content_moderation_state
+cache: true

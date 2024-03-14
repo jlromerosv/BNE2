@@ -1,0 +1,32 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      ../tema_master/tema_master.css: {}
+      css/bne_theme.css: {}
+      css/bne_entorno.css: {}
+  js:
+    js/load.js: {}
+    js/buscador-general.js: {}
+    js/organigrama.js: {}
+    js/archivo-web.js: {}
+    js/scroll-to-top.js: {}
+    js/stacktable.js: {}
+    js/menu.js: {}
+    js/ciclos.js: {}
+    js/alertas.js: {}
+    js/asistente-lectura.js: {}
+    js/home.js: {}
+    js/footer.js: {}
+    js/login.js: {}
+    js/multimedia.js: {}
+    js/contenidos.js: {}
+    js/autores.js: {}
+    js/formularios.js: {}
+    js/select2.min.js: {}
+    js/te-puede-interesar.js: {}
+  dependencies:
+    - core/jquery
+
+
+

@@ -1,0 +1,12 @@
+tmgmt_plata_eu_test.languages:
+  path: '/tmgmt_plata_eu_test/languages'
+  defaults:
+    _controller: '\Drupal\tmgmt_plata_eu_test\Controller\PlataEuTranslatorTestController::availableLanguages'
+  requirements:
+    _access: 'TRUE'
+tmgmt_plata_eu_test.translate:
+  path: '/tmgmt_plata_eu_test'
+  defaults:
+     _controller: '\Drupal\tmgmt_plata_eu_test\Controller\PlataEuTranslatorTestController::translate'
+  requirements:
+    _access: 'TRUE'

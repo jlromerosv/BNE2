@@ -1,0 +1,52 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ezarri
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+          tags:
+            previous: '‹ aurrekoa'
+            next: 'hurrengoa ›'
+            first: '« lehenengoa'
+            last: 'azkena »'
+      fields:
+        state:
+          label: Egoera
+          separator: ', '
+        label:
+          label: Etiketa
+        source_language_1:
+          label: Nondik
+          separator: ', '
+        target_language:
+          label: Nori
+          separator: ', '
+        translator:
+          label: Hornitzailea
+        tags_count:
+          label: Etiketak
+        changed:
+          label: Aldatuta
+        operations:
+          label: Eragiketak
+      filters:
+        state:
+          expose:
+            label: Egoera
+        source_language:
+          expose:
+            label: 'Jatorrizko hizkuntza'
+        translator:
+          expose:
+            label: Hornitzailea
+  page_1:
+    display_title: Orria

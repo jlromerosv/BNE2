@@ -1,0 +1,12 @@
+uuid: 34c55cbb-b064-4d96-9c1d-6ae0c2338e3b
+langcode: es
+status: true
+dependencies: {  }
+label: 'Carrousel autores'
+id: carrousel_autores
+description: ''
+aspect_ratio: '3:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

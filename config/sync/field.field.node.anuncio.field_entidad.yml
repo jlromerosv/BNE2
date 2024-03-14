@@ -1,0 +1,28 @@
+uuid: 1de06163-71c9-411c-a17a-1a9921dcac06
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidad
+    - node.type.anuncio
+    - node.type.entidad
+id: node.anuncio.field_entidad
+field_name: field_entidad
+entity_type: node
+bundle: anuncio
+label: Organismo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: d2eb351e-a2c0-4590-b1d7-93267591c89b
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.crop_libre_con_pie_de_foto
+label: 'Crop libre con pie de foto'
+targetEntityType: media
+cache: true

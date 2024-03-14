@@ -1,0 +1,18 @@
+uuid: f135968d-5786-41e1-b2b2-ed4eb5ebd06c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_generico
+id: node.contenido_generico.publish_on
+field_name: publish_on
+entity_type: node
+bundle: contenido_generico
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

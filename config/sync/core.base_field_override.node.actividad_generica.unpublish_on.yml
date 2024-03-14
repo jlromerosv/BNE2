@@ -1,0 +1,18 @@
+uuid: 0219fb48-51ea-4059-bbbb-50ec2fd262f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad_generica
+id: node.actividad_generica.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: actividad_generica
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

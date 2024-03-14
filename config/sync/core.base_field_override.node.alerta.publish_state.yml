@@ -1,0 +1,20 @@
+uuid: d9b02c91-c783-4daf-8528-1e6192a5e496
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.alerta
+  module:
+    - options
+id: node.alerta.publish_state
+field_name: publish_state
+entity_type: node
+bundle: alerta
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

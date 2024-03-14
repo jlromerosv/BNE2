@@ -1,0 +1,22 @@
+uuid: b951b825-c96e-412b-bd06-4d66016e8689
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_basica
+id: node.pagina_basica.status
+field_name: status
+entity_type: node
+bundle: pagina_basica
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

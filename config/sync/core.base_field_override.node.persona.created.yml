@@ -1,0 +1,18 @@
+uuid: f3e6962c-a88c-440f-8874-a6c8c98dcea1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.persona
+id: node.persona.created
+field_name: created
+entity_type: node
+bundle: persona
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

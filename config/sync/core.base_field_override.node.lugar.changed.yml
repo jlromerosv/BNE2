@@ -1,0 +1,18 @@
+uuid: c5a9953e-066a-430a-9330-9013e6f31aa0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.lugar
+id: node.lugar.changed
+field_name: changed
+entity_type: node
+bundle: lugar
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

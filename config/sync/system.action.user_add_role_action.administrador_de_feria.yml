@@ -1,0 +1,14 @@
+uuid: 07616a32-20ce-4d5e-8216-7166e9861b3c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_de_feria
+  module:
+    - user
+id: user_add_role_action.administrador_de_feria
+label: 'Añade el rol Administrador de feria al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrador_de_feria

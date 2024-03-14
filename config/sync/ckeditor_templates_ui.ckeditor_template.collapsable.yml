@@ -1,0 +1,12 @@
+uuid: c00102fc-3150-4295-8afc-54564e5ce0fd
+langcode: es
+status: true
+dependencies: {  }
+id: collapsable
+label: Collapsable
+image: ''
+description: ''
+html:
+  value: "<div class=\"ckeditor-collapsable rs_preserve\" style=\"border-width: 1px;border-color: red;border-style: solid;\">\r\n<div class=\"title\" style=\"border-bottom: 1px;border-color: red;border-bottom-style: solid;\">Título del collapsable</div>\r\n\r\n<div class=\"contenido\">contenido del collapsable</div>\r\n</div>\r\n"
+  format: html_full
+weight: -12

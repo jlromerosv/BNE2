@@ -1,0 +1,110 @@
+uuid: 8a1708ce-78d3-4a46-b519-1add8d6136d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.minificha
+    - field.field.node.ubicacion.field_codigo_postal
+    - field.field.node.ubicacion.field_direccion
+    - field.field.node.ubicacion.field_domain_access
+    - field.field.node.ubicacion.field_domain_all_affiliates
+    - field.field.node.ubicacion.field_domain_source
+    - field.field.node.ubicacion.field_municipio
+    - field.field.node.ubicacion.field_ubicacion
+    - node.type.ubicacion
+  module:
+    - layout_builder
+    - leaflet
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.ubicacion.minificha
+targetEntityType: node
+bundle: ubicacion
+mode: minificha
+content:
+  field_ubicacion:
+    type: leaflet_formatter_default
+    label: hidden
+    settings:
+      multiple_map: false
+      leaflet_map: 'OSM Mapnik'
+      height: 200
+      height_unit: px
+      hide_empty_map: false
+      gesture_handling: false
+      disable_wheel: false
+      reset_map:
+        control: false
+        position: topright
+      popup: false
+      popup_content: ''
+      map_position:
+        force: false
+        center:
+          lat: !!float 0
+          lon: !!float 0
+        zoom: 14
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+      icon:
+        iconType: marker
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+        include_path: false
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers:
+            arcgisonline:
+              weight: 0
+              checked: false
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      weight: ''
+      fullscreen_control: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_codigo_postal: true
+  field_direccion: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_municipio: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

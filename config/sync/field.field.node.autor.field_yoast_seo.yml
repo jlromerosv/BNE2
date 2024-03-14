@@ -1,0 +1,21 @@
+uuid: 130b8087-7562-44b1-acce-78f47b5ffac7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.autor
+  module:
+    - yoast_seo
+id: node.autor.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: autor
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

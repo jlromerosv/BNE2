@@ -1,0 +1,23 @@
+uuid: 9599f28b-e523-4477-a35d-30e779098ec7
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - menu_link_content
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: menu_link_content.field_descripcion_enlace
+field_name: field_descripcion_enlace
+entity_type: menu_link_content
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

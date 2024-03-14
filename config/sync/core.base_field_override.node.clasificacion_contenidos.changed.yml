@@ -1,0 +1,18 @@
+uuid: 0df805a6-f937-444d-9414-dbd65949d2c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+id: node.clasificacion_contenidos.changed
+field_name: changed
+entity_type: node
+bundle: clasificacion_contenidos
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

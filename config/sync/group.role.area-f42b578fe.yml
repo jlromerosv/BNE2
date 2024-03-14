@@ -1,0 +1,17 @@
+uuid: cfd33e6e-cf90-4e12-8ef2-678a4edc58df
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.administrador_contenidos
+id: area-f42b578fe
+label: 'Administrador Contenidos'
+weight: 3
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

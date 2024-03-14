@@ -1,0 +1,14 @@
+uuid: 8526e69f-5143-41dd-b909-fb41526dd2cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero
+id: taxonomy_vocabulary_genero
+entity_type_id: taxonomy_vocabulary
+entity_id: genero
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

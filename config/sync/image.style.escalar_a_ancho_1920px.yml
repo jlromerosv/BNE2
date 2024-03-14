@@ -1,0 +1,15 @@
+uuid: 89d2fa40-527c-4a17-b0e3-4bca27bbbea3
+langcode: es
+status: true
+dependencies: {  }
+name: escalar_a_ancho_1920px
+label: 'Escalar a ancho 1920px'
+effects:
+  50a83962-c02a-48ed-b33a-583afa4ca4e0:
+    uuid: 50a83962-c02a-48ed-b33a-583afa4ca4e0
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

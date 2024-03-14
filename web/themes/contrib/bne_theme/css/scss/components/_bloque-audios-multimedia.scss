@@ -1,0 +1,74 @@
+.bloque-audios {
+  margin-bottom: 2.5em;
+
+  .view-content {
+
+    border-left: 0.5px solid $bne_color_2;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .views-row {
+      border-right: 0.5px solid $bne_color_2;
+      border-bottom: 0.5px solid $bne_color_2;
+      border-top: 0.5px solid $bne_color_2;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+
+      .views-field-name-1 {
+        margin-bottom: 1em;
+
+        .field-content {
+          font-size: $h5_home_block;
+          color: $blanco;
+          line-height: 36px;
+          letter-spacing: 0px;
+          font-family: $dm-serif;
+          font-weight: $dm-serif-regular;
+
+          @media (max-width: 576px) {
+            font-size: $h6_home_block;
+          }
+
+        }
+      }
+
+      .views-field-field-descripcion {
+        margin-bottom: 4em;
+
+        .field-content {
+          font-size: 1em;
+          color: $bne_color_3;
+          line-height: 24px;
+          letter-spacing: 0.48px;
+
+        }
+      }
+
+      .views-field-field-media-audio-file {
+        margin-top: auto;
+
+        .field-content {
+          text-align: center;
+
+          audio {
+            width: 100%;
+            min-width: 200px;
+          }
+
+          audio::-internal-media-controls-download-button {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

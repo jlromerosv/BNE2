@@ -1,0 +1,12 @@
+uuid: 3c8a6a43-4e8d-45db-8aeb-bb6469047f6d
+langcode: es
+status: true
+dependencies: {  }
+id: linea_continua_50_izquierda
+label: 'Linea continua 50% izquierda'
+image: ''
+description: ''
+html:
+  value: '<div class="linea-continua-50-izquierda" style="width: 50%; border-bottom-style: solid; border-bottom-color: #444444; border-bottom-width: 1px; margin-right: auto">&nbsp;</div>'
+  format: html_full
+weight: 3

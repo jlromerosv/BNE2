@@ -1,0 +1,19 @@
+uuid: 45a7f6fc-4111-411d-ab63-9c28d1824081
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informacion_plazo_solicitu
+    - node.type.tramite
+id: node.tramite.field_informacion_plazo_solicitu
+field_name: field_informacion_plazo_solicitu
+entity_type: node
+bundle: tramite
+label: 'Información plazo solicitudes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

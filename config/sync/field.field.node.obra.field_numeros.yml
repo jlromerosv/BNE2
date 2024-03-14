@@ -1,0 +1,19 @@
+uuid: c92d0360-799a-4266-912f-1126178911d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_numeros
+    - node.type.obra
+id: node.obra.field_numeros
+field_name: field_numeros
+entity_type: node
+bundle: obra
+label: Números
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

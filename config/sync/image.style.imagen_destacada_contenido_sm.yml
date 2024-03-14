@@ -1,0 +1,15 @@
+uuid: 205a82dd-561b-4fb5-a38e-4a85a54e6cae
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_destacada_contenido_sm
+label: 'Imagen Destacada Contenido SM'
+effects:
+  2ffbce86-f775-4e51-addf-a618900f49b4:
+    uuid: 2ffbce86-f775-4e51-addf-a618900f49b4
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

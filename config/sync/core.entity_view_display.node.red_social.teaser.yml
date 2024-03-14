@@ -1,0 +1,133 @@
+uuid: f7f79d42-55c0-44d2-ace7-f93425045d93
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.red_social.title
+    - core.entity_view_mode.node.teaser
+    - field.field.node.red_social.body
+    - field.field.node.red_social.field_alias_tipo_contenido
+    - field.field.node.red_social.field_domain_access
+    - field.field.node.red_social.field_domain_all_affiliates
+    - field.field.node.red_social.field_domain_source
+    - field.field.node.red_social.field_enlace
+    - field.field.node.red_social.field_icono
+    - field.field.node.red_social.field_meta_tags
+    - field.field.node.red_social.field_yoast_seo
+    - node.type.red_social
+  module:
+    - layout_builder
+    - link
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          03c21727-15ff-402b-99a5-4b75571f20b5:
+            uuid: 03c21727-15ff-402b-99a5-4b75571f20b5
+            region: first
+            configuration:
+              id: 'field_block:node:red_social:field_icono'
+              label: Icono
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d26941a5-726b-4abe-8965-bce425c99d9a:
+            uuid: d26941a5-726b-4abe-8965-bce425c99d9a
+            region: second
+            configuration:
+              id: 'field_block:node:red_social:field_enlace'
+              label: Enlace
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          44e01b76-e01b-47f2-bd4c-9767b605b748:
+            uuid: 44e01b76-e01b-47f2-bd4c-9767b605b748
+            region: second
+            configuration:
+              id: 'field_block:node:red_social:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.red_social.teaser
+targetEntityType: node
+bundle: red_social
+mode: teaser
+content:
+  field_enlace:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icono:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_alias_tipo_contenido: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_meta_tags: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

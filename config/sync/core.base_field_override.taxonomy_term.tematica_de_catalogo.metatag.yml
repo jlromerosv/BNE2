@@ -1,0 +1,18 @@
+uuid: 2be9b836-7a66-47cf-bf5f-6cd6a25a057e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tematica_de_catalogo
+id: taxonomy_term.tematica_de_catalogo.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: tematica_de_catalogo
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

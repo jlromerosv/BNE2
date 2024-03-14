@@ -1,0 +1,18 @@
+uuid: 75fb359b-08f6-48dd-9666-97f7a5295445
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.hito
+id: node.hito.created
+field_name: created
+entity_type: node
+bundle: hito
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

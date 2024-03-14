@@ -1,0 +1,14 @@
+uuid: ce454910-5a72-427b-a8b4-044c049c0171
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+id: node_type_pagina_avanzada
+entity_type_id: node_type
+entity_id: pagina_avanzada
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

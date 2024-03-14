@@ -1,0 +1,22 @@
+uuid: ed6841ac-b200-48e5-96a4-af86428a1d8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.html
+id: block_content.html.status
+field_name: status
+entity_type: block_content
+bundle: html
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

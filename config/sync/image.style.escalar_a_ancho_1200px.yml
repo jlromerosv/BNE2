@@ -1,0 +1,15 @@
+uuid: 1eac3d67-ddf0-442c-aab4-9c409588afa9
+langcode: es
+status: true
+dependencies: {  }
+name: escalar_a_ancho_1200px
+label: 'Escalar a ancho 1200px'
+effects:
+  e1c93efa-3f58-438f-8d1c-ae903a4e8c4b:
+    uuid: e1c93efa-3f58-438f-8d1c-ae903a4e8c4b
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false

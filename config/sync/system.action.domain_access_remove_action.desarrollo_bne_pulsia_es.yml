@@ -1,0 +1,14 @@
+uuid: 0fb4902d-24c1-437d-85d4-0aac68eca147
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.desarrollo_bne_pulsia_es
+  module:
+    - domain_access
+id: domain_access_remove_action.desarrollo_bne_pulsia_es
+label: 'Remove selected content from the BNE domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id: desarrollo_bne_pulsia_es

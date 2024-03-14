@@ -1,0 +1,14 @@
+uuid: 778fe8be-96fd-4d20-976e-6f0308b646cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_fabne
+  module:
+    - user
+id: user_add_role_action.editor_fabne
+label: 'Añade el rol Editor FABNE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor_fabne

@@ -1,0 +1,929 @@
+uuid: 39d924f7-317d-41f3-884a-b730f34eb68b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - field.storage.node.field_alias_tipo_contenido
+    - field.storage.node.field_archivos
+    - field.storage.node.field_autores
+    - field.storage.node.field_defuncion
+    - field.storage.node.field_imagen_representativa
+    - field.storage.node.field_mostrar_en_portal_escritor
+    - field.storage.node.field_nacimiento
+    - field.storage.node.field_blog
+    - field.storage.taxonomy_term.field_texto_url
+    - field.storage.node.body
+    - field.storage.node.field_categoria
+    - field.storage.node.field_categorias
+    - field.storage.node.field_colectivo
+    - field.storage.node.field_domain_access
+    - field.storage.node.field_dominio_publico
+    - field.storage.node.field_email
+    - field.storage.node.field_email_texto
+    - field.storage.node.field_enlace
+    - field.storage.node.field_autor_entrada_blog
+    - field.storage.node.field_estado
+    - field.storage.node.field_etiqueta_blog
+    - field.storage.node.field_etiquetas_busqueda
+    - field.storage.node.field_ano
+    - field.storage.node.field_fecha_actualizacion_visibl
+    - field.storage.node.field_fecha_de_defuncion
+    - field.storage.node.field_fecha_fin
+    - field.storage.node.field_fecha_inicio
+    - field.storage.node.field_fecha_galeria
+    - field.storage.node.field_filtros
+    - field.storage.node.field_galeria_de_documentos
+    - field.storage.node.field_area_de_transparencia
+    - field.storage.taxonomy_term.field_grupo_de_temas
+    - field.storage.node.field_genero_autor
+    - field.storage.node.field_marca_agua
+    - field.storage.node.field_orden
+    - field.storage.node.field_tipos
+    - field.storage.node.field_domain_all_affiliates
+    - field.storage.node.field_sesiones
+    - field.storage.node.field_subtitulo
+    - field.storage.node.field_telefonos
+    - field.storage.node.field_requisitos
+    - field.storage.node.field_tipo
+    - field.storage.node.field_tipo_asistencia_event
+    - field.storage.node.field_titulo_listado_agenda
+    - field.storage.node.field_area_tematica
+    - search_api.server.servidor_solr
+  module:
+    - search_api_solr
+    - media
+    - file
+    - node
+    - taxonomy
+    - search_api
+    - search_api_attachments
+    - search_api_exclude_entity
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    debug_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: true
+      include_language_independent: false
+      specific_languages: {  }
+id: solr_index
+name: 'Solr Index'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.body
+  bundle:
+    label: 'Media type'
+    datasource_id: 'entity:media'
+    property_path: bundle
+    type: string
+    dependencies:
+      module:
+        - media
+  changed:
+    label: Changed
+    datasource_id: 'entity:media'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - media
+  changed_1:
+    label: Changed
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - node
+  created_1:
+    label: Fecha
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_alias_tipo_contenido:
+    label: 'Alias de tipo de contenido'
+    datasource_id: 'entity:node'
+    property_path: field_alias_tipo_contenido
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_alias_tipo_contenido
+  field_ano:
+    label: Fecha
+    datasource_id: 'entity:node'
+    property_path: field_ano
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_ano
+  field_area_de_transparencia:
+    label: 'Área de transparencia'
+    datasource_id: 'entity:node'
+    property_path: field_area_de_transparencia
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_area_de_transparencia
+  field_autor_entrada_blog:
+    label: 'Escrito por:'
+    datasource_id: 'entity:node'
+    property_path: field_autor_entrada_blog
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_autor_entrada_blog
+  field_blog:
+    label: Blog
+    datasource_id: 'entity:node'
+    property_path: field_blog
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_blog
+  field_categoria:
+    label: Categoría
+    datasource_id: 'entity:node'
+    property_path: field_categoria
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_categoria
+  field_categorias:
+    label: Categorías
+    datasource_id: 'entity:node'
+    property_path: field_categorias
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_categorias
+  field_categorias_1:
+    label: 'Categorías de iniciativa'
+    datasource_id: 'entity:node'
+    property_path: field_categorias
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_categorias
+  field_colectivo:
+    label: Colectivo
+    datasource_id: 'entity:node'
+    property_path: field_colectivo
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_colectivo
+  field_defuncion:
+    label: Defunción
+    datasource_id: 'entity:node'
+    property_path: field_defuncion
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_defuncion
+  field_defuncion_1:
+    label: 'Autores » Contenido » Defunción'
+    datasource_id: 'entity:node'
+    property_path: 'field_autores:entity:field_defuncion'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_autores
+        - field.storage.node.field_defuncion
+      module:
+        - node
+  field_domain_access:
+    label: 'Domain Access'
+    datasource_id: 'entity:node'
+    property_path: field_domain_access
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_domain_access
+  field_domain_all_affiliates:
+    label: 'Send to all affiliates'
+    datasource_id: 'entity:node'
+    property_path: field_domain_all_affiliates
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_domain_all_affiliates
+  field_dominio_publico:
+    label: 'Dominio público'
+    datasource_id: 'entity:node'
+    property_path: field_dominio_publico
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_dominio_publico
+  field_email:
+    label: Email
+    datasource_id: 'entity:node'
+    property_path: field_email
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_email
+  field_email_texto:
+    label: Email_texto
+    datasource_id: 'entity:node'
+    property_path: field_email_texto
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_email_texto
+  field_enlace:
+    label: 'Enlace a buscador online'
+    datasource_id: 'entity:node'
+    property_path: field_enlace
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_enlace
+  field_estado:
+    label: Estado
+    datasource_id: 'entity:node'
+    property_path: field_estado
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_estado
+  field_etiqueta_blog:
+    label: 'Etiqueta de autor'
+    datasource_id: 'entity:node'
+    property_path: field_etiqueta_blog
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_etiqueta_blog
+  field_etiquetas_busqueda_1:
+    label: 'Etiquetas de búsqueda de contenido'
+    datasource_id: 'entity:node'
+    property_path: field_etiquetas_busqueda
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_etiquetas_busqueda
+  field_fecha_actualizacion_visibl:
+    label: 'Fecha de actualización'
+    datasource_id: 'entity:node'
+    property_path: field_fecha_actualizacion_visibl
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_fecha_actualizacion_visibl
+  field_fecha_de_defuncion:
+    label: 'Fecha de defunción'
+    datasource_id: 'entity:node'
+    property_path: field_fecha_de_defuncion
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_fecha_de_defuncion
+  field_fecha_fin:
+    label: 'Fecha de fin'
+    datasource_id: 'entity:node'
+    property_path: field_fecha_fin
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_fecha_fin
+  field_fecha_galeria:
+    label: 'Fecha Galeria'
+    datasource_id: 'entity:node'
+    property_path: field_fecha_galeria
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_fecha_galeria
+  field_fecha_inicio:
+    label: 'Fecha de inicio'
+    datasource_id: 'entity:node'
+    property_path: field_fecha_inicio
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_fecha_inicio
+  field_filtros:
+    label: 'Filtros de taxonomía'
+    datasource_id: 'entity:node'
+    property_path: field_filtros
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_filtros
+  field_genero_autor:
+    label: 'Género autor'
+    datasource_id: 'entity:node'
+    property_path: field_genero_autor
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_genero_autor
+  field_imagen_representativa:
+    label: 'Autores » Contenido » Imagen representativa'
+    datasource_id: 'entity:node'
+    property_path: 'field_autores:entity:field_imagen_representativa'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_autores
+        - field.storage.node.field_imagen_representativa
+      module:
+        - node
+  field_imagen_representativa_1:
+    label: 'Imagen representativa'
+    datasource_id: 'entity:node'
+    property_path: field_imagen_representativa
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_imagen_representativa
+  field_marca_agua:
+    label: 'Marca de agua'
+    datasource_id: 'entity:node'
+    property_path: field_marca_agua
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_marca_agua
+  field_mostrar_en_portal_escritor:
+    label: 'Autores » Contenido » Mostrar en portal escritores'
+    datasource_id: 'entity:node'
+    property_path: 'field_autores:entity:field_mostrar_en_portal_escritor'
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_autores
+        - field.storage.node.field_mostrar_en_portal_escritor
+      module:
+        - node
+  field_mostrar_en_portal_escritor_1:
+    label: 'Mostrar en portal escritores'
+    datasource_id: 'entity:node'
+    property_path: field_mostrar_en_portal_escritor
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_mostrar_en_portal_escritor
+  field_nacimiento:
+    label: 'Autores » Contenido » Nacimiento'
+    datasource_id: 'entity:node'
+    property_path: 'field_autores:entity:field_nacimiento'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_autores
+        - field.storage.node.field_nacimiento
+      module:
+        - node
+  field_orden:
+    label: Orden
+    datasource_id: 'entity:node'
+    property_path: field_orden
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_orden
+  field_requisitos:
+    label: 'Texto introductorio'
+    datasource_id: 'entity:node'
+    property_path: field_requisitos
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_requisitos
+  field_sesiones:
+    label: Sesiones
+    datasource_id: 'entity:node'
+    property_path: field_sesiones
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_sesiones
+  field_sesiones_fecha_fin_1:
+    label: 'Sesiones » Fecha de fin'
+    datasource_id: 'entity:node'
+    property_path: 'field_sesiones:entity:field_fecha_fin'
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_fecha_fin
+        - field.storage.node.field_sesiones
+      module:
+        - node
+  field_sesiones_fecha_inicio_1:
+    label: 'Sesiones » Fecha de inicio'
+    datasource_id: 'entity:node'
+    property_path: 'field_sesiones:entity:field_fecha_inicio'
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_fecha_inicio
+        - field.storage.node.field_sesiones
+      module:
+        - node
+  field_subtitulo:
+    label: Subtítulo
+    datasource_id: 'entity:node'
+    property_path: field_subtitulo
+    type: 'solr_text_custom:ngram'
+    boost: !!float 5
+    dependencies:
+      config:
+        - field.storage.node.field_subtitulo
+  field_telefonos:
+    label: Teléfono
+    datasource_id: 'entity:node'
+    property_path: field_telefonos
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_telefonos
+  field_texto_url:
+    label: 'Blog » Término de la taxonomía » texto_url'
+    datasource_id: 'entity:node'
+    property_path: 'field_blog:entity:field_texto_url'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_blog
+        - field.storage.taxonomy_term.field_texto_url
+      module:
+        - taxonomy
+  field_tipo:
+    label: Tipo
+    datasource_id: 'entity:node'
+    property_path: field_tipo
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tipo
+  field_tipo_1:
+    label: 'Tipo de convocatoria'
+    datasource_id: 'entity:node'
+    property_path: field_tipo
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tipo
+  field_tipo_asistencia_event:
+    label: 'Tipo de asistencia a evento'
+    datasource_id: 'entity:node'
+    property_path: field_tipo_asistencia_event
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tipo_asistencia_event
+  field_tipos:
+    label: Tipos
+    datasource_id: 'entity:node'
+    property_path: field_tipos
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tipos
+  field_titulo_listado_agenda:
+    label: 'Título listado agenda'
+    datasource_id: 'entity:node'
+    property_path: field_titulo_listado_agenda
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_titulo_listado_agenda
+  filename:
+    label: Filename
+    datasource_id: 'entity:media'
+    property_path: 'field_media_file:entity:filename'
+    type: 'solr_text_custom:ngram'
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.media.field_media_file
+      module:
+        - file
+  filename_1:
+    label: 'Grupo de documentos » Contenido » Archivos » Multimedia » Archivo » Archivo » Nombre de archivo'
+    datasource_id: 'entity:node'
+    property_path: 'field_galeria_de_documentos:entity:field_archivos:entity:field_media_file:entity:filename'
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.media.field_media_file
+        - field.storage.node.field_archivos
+        - field.storage.node.field_galeria_de_documentos
+      module:
+        - file
+        - media
+        - node
+  langcode:
+    label: Idioma
+    datasource_id: 'entity:node'
+    property_path: langcode
+    type: string
+    dependencies:
+      module:
+        - node
+  name:
+    label: 'Colectivo » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_colectivo:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_colectivo
+      module:
+        - taxonomy
+  name_1:
+    label: 'Área temática » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_area_tematica:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_area_tematica
+      module:
+        - taxonomy
+  name_2:
+    label: 'Media Name'
+    datasource_id: 'entity:media'
+    property_path: name
+    type: 'solr_text_custom:ngram'
+    boost: !!float 5
+    dependencies:
+      module:
+        - media
+  name_3:
+    label: 'Archivos » Multimedia » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_archivos:entity:name'
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_archivos
+      module:
+        - media
+  name_4:
+    label: 'Grupo de áreas de transparencia » Nombre'
+    datasource_id: 'entity:node'
+    property_path: 'field_area_de_transparencia:entity:field_grupo_de_temas:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_area_de_transparencia
+        - field.storage.taxonomy_term.field_grupo_de_temas
+      module:
+        - taxonomy
+  name_5:
+    label: 'Tipos » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_tipos:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tipos
+      module:
+        - taxonomy
+  name_6:
+    label: 'Tipo » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_tipo:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tipo
+      module:
+        - taxonomy
+  name_8:
+    label: 'Área de transparencia » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_area_de_transparencia:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_area_de_transparencia
+      module:
+        - taxonomy
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  node_grants:
+    label: 'Información de acceso al nodo'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  promote:
+    label: 'Promocionado a la página principal'
+    datasource_id: 'entity:node'
+    property_path: promote
+    type: boolean
+    dependencies:
+      module:
+        - node
+  saa_field_archivo:
+    label: 'Search api attachments: Archivo'
+    property_path: saa_field_archivo
+    type: text
+  saa_field_archivos:
+    label: 'Search api attachments: Archivos'
+    property_path: saa_field_archivos
+    type: text
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  sticky:
+    label: 'Fijo al comienzo de las listas'
+    datasource_id: 'entity:node'
+    property_path: sticky
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: 'solr_text_custom:ngram'
+    boost: !!float 21
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  weight:
+    label: 'Peso de tipos'
+    datasource_id: 'entity:node'
+    property_path: 'field_tipos:entity:weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tipos
+      module:
+        - taxonomy
+datasource_settings:
+  'entity:media':
+    bundles:
+      default: true
+      selected:
+        - imagen
+    languages:
+      default: true
+      selected: {  }
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - actividad_generica
+        - alerta
+        - anuncio
+        - bolsa_de_trabajo
+        - cargo
+        - clasificacion_contenidos
+        - contenido_generico
+        - contenidos_formativos
+        - destacados_manuales
+        - entidad_referencia_
+        - estadistica
+        - exposicion
+        - galeria_de_videos
+        - hito
+        - icono_svg_
+        - imagen_svg_
+        - pagina_avanzada
+        - red_social
+        - seccion_albacete_
+        - seccion_estandar
+        - seccion_torrevieja_
+        - serie_estadistica
+        - sesion_de_actividad
+        - tramite
+        - ubicacion
+        - webform
+        - widget
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  entity_status: {  }
+  entity_type: {  }
+  file_attachments:
+    excluded_extensions: 'aif art avi bmp gif ico mov oga ogv png psd ra ram rgb flv'
+    number_indexed: 0
+    number_first_bytes: '1 MB'
+    max_filesize: '0'
+    excluded_private: 1
+    excluded_mimes: 'audio/x-aiff image/x-jg video/x-msvideo image/x-ms-bmp image/gif image/vnd.microsoft.icon video/quicktime audio/ogg video/ogg image/png image/x-photoshop audio/x-realaudio audio/x-pn-realaudio image/x-rgb video/x-flv'
+  hierarchy:
+    weights:
+      preprocess_index: -45
+    fields:
+      field_tipo: taxonomy_term-parent
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_always: false
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: true
+  html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+    all_fields: false
+    fields:
+      - body
+    title: false
+    alt: false
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+  ignore_character:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: false
+    fields:
+      - body
+      - bundle
+      - field_categoria
+      - field_categorias
+      - field_domain_access
+      - field_email
+      - field_enlace
+      - field_filtros
+      - field_requisitos
+      - field_subtitulo
+      - field_telefonos
+      - field_texto_url
+      - field_tipo
+      - field_titulo_listado_agenda
+      - filename
+      - langcode
+      - name
+      - name_1
+      - name_2
+      - name_4
+      - name_5
+      - name_6
+      - name_8
+      - saa_field_archivo
+      - saa_field_archivos
+      - title
+      - type
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+  language_with_fallback: {  }
+  rendered_item: {  }
+  search_api_exclude_entity_processor:
+    fields:
+      media: {  }
+      node:
+        - field_search_api_exclude_entity
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+  type_boost:
+    weights:
+      preprocess_index: 0
+    boosts:
+      'entity:media':
+        datasource_boost: !!float 0
+        bundle_boosts:
+          archivo: !!float 1
+          archivo_de_audio: !!float 1
+          archivo_de_video: !!float 1
+          video_remoto: !!float 1
+      'entity:node':
+        datasource_boost: !!float 0
+        bundle_boosts:
+          autor: !!float 1
+          campana: !!float 1
+          catalogo: !!float 1
+          coleccion: !!float 1
+          convocatoria: !!float 1
+          documento: !!float 1
+          dossier: !!float 1
+          enlace: !!float 1
+          enlace_a_web_archivada: !!float 0
+          entidad: !!float 1
+          entrada_de_blog: !!float 1
+          evento: !!float 1
+          faq: !!float 1
+          galeria_de_documentos: !!float 1
+          galeria_de_imagenes: !!float 1
+          horarios: !!float 1
+          iniciativa: !!float 1
+          lugar: !!float 1
+          noticia: !!float 1
+          obra: !!float 1
+          pagina_basica: !!float 1
+          pagina_personalizada: !!float 1
+          persona: !!float 1
+          publicacion: !!float 1
+          referencias_bibliograficas: !!float 1
+          seccion_nivel_1_estandar: !!float 1
+          servicio: !!float 1
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: servidor_solr

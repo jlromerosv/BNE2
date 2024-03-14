@@ -1,0 +1,33 @@
+uuid: 039b61d8-ce1e-4610-94d4-59be771b8a97
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_municipio
+    - node.type.ubicacion
+    - taxonomy.vocabulary.municipio
+  content:
+    - 'taxonomy_term:municipio:fd6d8ee4-3e89-46b9-b048-b7abe04fa323'
+id: node.ubicacion.field_municipio
+field_name: field_municipio
+entity_type: node
+bundle: ubicacion
+label: Municipio
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: fd6d8ee4-3e89-46b9-b048-b7abe04fa323
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      municipio: municipio
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

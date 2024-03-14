@@ -1,0 +1,8 @@
+uuid: 53831b77-3b31-490d-b5e4-86f36b074906
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_transparencia
+label: 'Fecha transparencia'
+locked: false
+pattern: d/m/Y

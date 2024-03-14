@@ -1,0 +1,30 @@
+uuid: e70a6cbd-b72c-4d22-87dc-6ab9678b0f06
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.iniciativa
+  module:
+    - iframe
+id: node.iniciativa.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: iniciativa
+label: Iframes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '0'
+  tokensupport: null
+  width: null
+  height: null
+field_type: iframe

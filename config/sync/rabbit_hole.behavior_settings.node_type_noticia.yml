@@ -1,0 +1,14 @@
+uuid: 7d9e8f4e-363a-4c79-a3cf-85045950e8b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.noticia
+id: node_type_noticia
+entity_type_id: node_type
+entity_id: noticia
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

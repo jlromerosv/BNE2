@@ -1,0 +1,334 @@
+.path-user {
+  .ps_microsite_container .region #block-bne-theme-local-tasks nav {
+    display: none;
+  }
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .ps-full-width-margins {
+      nav.breadcrumb {
+        margin-top: 0;
+      }
+    }
+    main {
+      margin: auto 0;
+      .ps_post_contenido {
+        margin-bottom: 0px;
+      }
+      .ps-main.ps-content-margins,
+      .ps_layout {
+        max-width: 778px;
+        margin: 0 auto;
+        width: 100%;
+        .layout-content {
+          .region {
+            padding: 15px;
+            #block-bne-theme-contenidoprincipaldelapagina {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              h1 {
+                font-size: 38px;
+                line-height: 40px;
+                font-family: $dm-serif;
+                font-weight: $dm-serif-regular;
+                color: $negro;
+                letter-spacing: 0px;
+              }
+            }
+            #block-bne-theme-contenidoprincipaldelapagina {
+              .user-login-form,
+              .user-pass {
+                .form-type-textfield,
+                .form-type-password,
+                .form-type-email {
+                  position: relative;
+                  label {
+                    display: none;
+                  }
+                  input {
+                    height: 54px;
+                    padding: 0 25px;
+                    border: 0.5px solid $bne_color_3;
+                    font-size: 16px;
+                    color: $main_color_6;
+                    line-height: 22px;
+                    display: block;
+                    background-color: transparent;
+                    width: 100%;
+                    box-sizing: border-box;
+                    &::placeholder {
+                      color: $bne_color_2;
+                      font-size: 1em;
+                      line-height: 24px;
+                    }
+                  }
+                  .description {
+                    display: none;
+                  }
+                  svg {
+                    cursor: pointer;
+                    position: absolute;
+                    right: 15px;
+                    top: 20px;
+                    width: 24px;
+                    height: 14px;
+                    z-index: 500;
+                    .a {
+                      stroke: none;
+                      stroke-width: 0;
+                    }
+                    path {
+                      fill: $bne_color_2;
+                    }
+                  }
+                }
+
+                .form-type-password {
+                  input {
+                    padding: 0 50px 0 25px;
+                  }
+                }
+
+                .form-actions {
+                  display: block;
+                  .form-submit {
+                    height: 58px;
+                    background-color: $bne_color_4;
+                    border: 0.5px solid $bne_color_3;
+                    display: block;
+                    width: 100%;
+                    color: $bne_color_2;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: 0.96px;
+                  }
+                  li {
+                    display: none;
+                    text-align: center;
+                    margin-top: 1.5em;
+                    list-style: none;
+                    &::before {
+                      content: "¿No tienes cuenta?";
+                      font-size: 16px;
+                      color: $bne_color_2;
+                      line-height: 24px;
+                      letter-spacing: 0.96px;
+                    }
+                    a {
+                      font-size: 16px;
+                      color: $bne_color_6;
+                      line-height: 24px;
+                      letter-spacing: 0.94px;
+                      margin-left: 5px;
+                      // font-family: $family;
+                      &:hover {
+                        color: $main_color_2;
+                      }
+                    }
+                  }
+                  .acceso-privado {
+                    margin-top: 1em;
+                    div {
+                      color: $bne_color_2;
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 24px;
+                      letter-spacing: 0.96px;
+                      text-align: center;
+                      span {
+                        color: $bne_color_2;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0.96px;
+                        margin-right: 5px;
+                      }
+                      a {
+                        color: $bne_color_6;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0.96px;
+                      }
+                    }
+                  }
+                }
+                .form-item,
+                .form-actions {
+                  margin-top: 1.5em;
+                  margin-bottom: 1.5em;
+                }
+              }
+
+              .user-login-form {
+                .form-type-password {
+                  li {
+                    display: block;
+                    list-style: none;
+                    text-align: right;
+                    margin-top: 1.2em;
+                    a {
+                      font-size: 16px;
+                      color: $bne_color_6;
+                      line-height: 24px;
+                      letter-spacing: 0.96px;
+                      margin-left: 5px;
+                      // font-family: $family;
+                    }
+                  }
+                  a {
+                    display: block;
+                    list-style: none;
+                    text-align: right;
+                    margin-top: 1.2em;
+                    font-size: 16px;
+                    color: $bne_color_6;
+                    line-height: 24px;
+                    letter-spacing: 0.96px;
+                    margin-left: 5px;
+                  }
+                }
+              }
+
+              .user-register-form {
+                .form-type-textfield,
+                .form-type-password,
+                .form-type-email {
+                  position: relative;
+                  label {
+                    display: none;
+                  }
+                  input {
+                    height: 54px;
+                    padding: 0 25px;
+                    border: 0.5px solid $bne_color_3;
+                    background: $blanco;
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 24px;
+                    display: block;
+                    letter-spacing: 0.96px;
+                    width: 100%;
+                    box-sizing: border-box;
+
+                    &::placeholder {
+                      font-size: 16px;
+                      color: $bne_color_2;
+                      line-height: 24px;
+                      letter-spacing: 0.96px;
+                    }
+                  }
+                  .description {
+                    display: block;
+                    margin-top: 1em;
+                  }
+                }
+
+                .form-type-password {
+                  input {
+                    padding: 0 50px 0 25px;
+                  }
+                }
+
+                .form-actions {
+                  display: flex;
+                  flex-direction: column;
+                  .registerInfo {
+                    .informacion {
+                      font-size: 16px;
+                      line-height: 34px;
+                      color: $bne_color_2;
+                      letter-spacing: 0.48px;
+                      margin: 1em 0;
+                    }
+                    .consentimiento {
+                      display: flex;
+                      justify-content: center;
+                      input {
+                        margin-top: 5px;
+                      }
+                      span {
+                        display: block;
+                        margin-left: 10px;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $bne_color_2;
+                        letter-spacing: 0.84px;
+                      }
+                    }
+                  }
+                  .form-submit {
+                    height: 58px;
+                    background-color: $bne_color_4;
+                    display: block;
+                    width: 100%;
+                    border: 0.5px solid $bne_color_3;
+                    color: $bne_color_2;
+                    font-size: 1em;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: 0.96px;
+                    margin: 2em 0;
+                  }
+                }
+                .form-item,
+                .form-actions {
+                  margin-top: 1.5em;
+                  margin-bottom: 1.5em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      margin-top: auto;
+    }
+  }
+}
+
+//estilos bloque cabecera login
+.view-bloque-imagen-cabecera-login {
+  .view-content {
+    .views-row {
+      position: relative;
+      .views-field-field-subtitulo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $fondo-transparencia;
+        .field-content {
+          display: inline;
+          font-size: $h3_home_block;
+          color: $blanco;
+          line-height: 52px;
+          letter-spacing: 0.54px;
+          font-family: $dm-serif;
+          font-weight: $dm-serif-regular;
+        }
+      }
+      .views-field-field-media-image {
+        picture {
+          display: flex;
+        }
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+uuid: db45f96d-3357-4201-aabb-9f32032f2965
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_iniciativa
+id: taxonomy_vocabulary_categoria_de_iniciativa
+entity_type_id: taxonomy_vocabulary
+entity_id: categoria_de_iniciativa
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

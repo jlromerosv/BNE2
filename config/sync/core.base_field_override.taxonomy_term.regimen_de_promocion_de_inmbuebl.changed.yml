@@ -1,0 +1,18 @@
+uuid: ac1a83e6-3f29-4059-9730-64d28d912be5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regimen_de_promocion_de_inmbuebl
+id: taxonomy_term.regimen_de_promocion_de_inmbuebl.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: regimen_de_promocion_de_inmbuebl
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

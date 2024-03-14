@@ -1,0 +1,23 @@
+/*
+    ========= HEADER ==========
+    Estilos dedicados al header de la web.
+
+   Se ha hecho uso de los siguientes MIXINS:
+    
+        
+
+    ------------------------- MIXINS --------------------------
+    
+    ----------------------- VARIABLES -------------------------
+   
+*/
+
+header{
+	.ps_header_2_col {
+		background-color: $main_color_2;
+		a {
+			color: $blanco;
+		}
+	}
+}
+

@@ -1,0 +1,21 @@
+uuid: 0971d31b-4a94-4b8b-835d-8d55fd26fbd4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informacion_tramite_presen
+    - node.type.tramite
+  module:
+    - text
+id: node.tramite.field_informacion_tramite_presen
+field_name: field_informacion_tramite_presen
+entity_type: node
+bundle: tramite
+label: 'Información trámite presencial'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

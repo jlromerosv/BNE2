@@ -1,0 +1,18 @@
+uuid: 71160ba0-b735-4b29-b915-2bcae34e6208
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.persona
+id: node.persona.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: persona
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

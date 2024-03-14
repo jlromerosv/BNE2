@@ -1,0 +1,28 @@
+uuid: 9c9b5230-55c8-48b8-874f-a06f413486b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rede
+    - node.type.entidad
+    - node.type.red_social
+id: node.entidad.field_rede
+field_name: field_rede
+entity_type: node
+bundle: entidad
+label: 'Redes Sociales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      red_social: red_social
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

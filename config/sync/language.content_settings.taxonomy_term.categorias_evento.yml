@@ -1,0 +1,18 @@
+uuid: e12a7563-ce74-4e46-b446-d52e27b7420a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorias_evento
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.categorias_evento
+target_entity_type_id: taxonomy_term
+target_bundle: categorias_evento
+default_langcode: site_default
+language_alterable: true

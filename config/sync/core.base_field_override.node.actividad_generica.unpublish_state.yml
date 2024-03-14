@@ -1,0 +1,20 @@
+uuid: e9a15c67-587a-4f0c-bc02-a63401b57221
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad_generica
+  module:
+    - options
+id: node.actividad_generica.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: actividad_generica
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

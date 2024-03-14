@@ -1,0 +1,32 @@
+uuid: caa467ac-3130-41eb-bede-70faaf1c0b7f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: '_Imagen (SVG)'
+type: imagen_svg_
+description: 'Tipo de contenido auxiliar para cargar imágenes en formato SVG para ser utilizadas en otros tipos de contenido.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

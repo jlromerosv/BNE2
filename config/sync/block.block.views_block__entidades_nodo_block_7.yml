@@ -1,0 +1,37 @@
+uuid: 421ae6a1-b3b9-485a-9b78-62cd0f00e648
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.entidades_nodo
+  module:
+    - block_class
+    - node
+    - views
+  theme:
+    - bne_theme
+third_party_settings:
+  block_class:
+    classes: ps-slider-colecciones-lugar
+id: views_block__entidades_nodo_block_7
+theme: bne_theme
+region: pre_multimedia
+weight: -64
+provider: null
+plugin: 'views_block:entidades_nodo-block_7'
+settings:
+  id: 'views_block:entidades_nodo-block_7'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      lugar: lugar

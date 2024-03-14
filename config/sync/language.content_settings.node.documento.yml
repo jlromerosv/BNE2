@@ -1,0 +1,18 @@
+uuid: b4a020f0-d8eb-48e8-9a7f-18f093ef1706
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.documento
+target_entity_type_id: node
+target_bundle: documento
+default_langcode: site_default
+language_alterable: true

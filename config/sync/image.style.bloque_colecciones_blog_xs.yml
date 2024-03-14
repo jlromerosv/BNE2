@@ -1,0 +1,15 @@
+uuid: 2e3c1d68-cc43-4d99-94de-2b3d26f9e592
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_colecciones_blog_xs
+label: 'Bloque colecciones blog XS'
+effects:
+  bfa7dc62-425f-48df-b349-d23f009bcc0d:
+    uuid: bfa7dc62-425f-48df-b349-d23f009bcc0d
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 595
+      height: 395
+      anchor: center-center

@@ -1,0 +1,8 @@
+uuid: 8f9793d6-a839-4327-bb37-718d03688edc
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de persona'
+vid: tipo_de_persona
+description: ''
+weight: 0

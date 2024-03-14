@@ -1,0 +1,69 @@
+uuid: f745c602-51c9-4b8b-8bf6-8e84d66bce98
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.destacados_manuales.field_contenidos_relacionados
+    - field.field.node.destacados_manuales.field_contenidos_vinculados
+    - field.field.node.destacados_manuales.field_domain_source
+    - field.field.node.destacados_manuales.field_imagen_cabecera
+    - field.field.node.destacados_manuales.field_imagen_destacada
+    - field.field.node.destacados_manuales.field_rede
+    - node.type.destacados_manuales
+  module:
+    - user
+id: node.destacados_manuales.default
+targetEntityType: node
+bundle: destacados_manuales
+mode: default
+content:
+  field_contenidos_relacionados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_contenidos_vinculados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_imagen_cabecera:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_rede:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_source: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

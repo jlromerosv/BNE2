@@ -1,0 +1,18 @@
+uuid: 98c4414b-f815-4977-8935-aa1b5d79099e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+id: node.destacados_manuales.publish_on
+field_name: publish_on
+entity_type: node
+bundle: destacados_manuales
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

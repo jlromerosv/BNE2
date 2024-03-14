@@ -1,0 +1,21 @@
+uuid: 590953b5-f14d-4af8-bfd2-a99f79688c63
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_info_documentacion
+    - node.type.tramite
+  module:
+    - text
+id: node.tramite.field_info_documentacion
+field_name: field_info_documentacion
+entity_type: node
+bundle: tramite
+label: 'Documentación a aportar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

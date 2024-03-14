@@ -1,0 +1,19 @@
+uuid: e4abcf84-f24b-49a0-ab34-a2532a33ad2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion_sin_formato
+    - node.type.publicacion
+id: node.publicacion.field_descripcion_sin_formato
+field_name: field_descripcion_sin_formato
+entity_type: node
+bundle: publicacion
+label: Medidas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

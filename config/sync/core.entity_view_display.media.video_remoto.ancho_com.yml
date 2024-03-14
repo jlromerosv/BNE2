@@ -1,0 +1,43 @@
+uuid: f2584f9c-4e84-40d1-8b75-bf20704c54c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.ancho_com
+    - field.field.media.video_remoto.domain_access
+    - field.field.media.video_remoto.feeds_item
+    - field.field.media.video_remoto.field_id_externo
+    - field.field.media.video_remoto.field_media_oembed_video
+    - media.type.video_remoto
+  module:
+    - layout_builder
+    - media
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.video_remoto.ancho_com
+targetEntityType: media
+bundle: video_remoto
+mode: ancho_com
+content:
+  field_media_oembed_video:
+    type: oembed
+    label: visually_hidden
+    settings:
+      max_width: 1366
+      max_height: 400
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  domain_access: true
+  feeds_item: true
+  field_id_externo: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
+  uuid: true

@@ -1,0 +1,28 @@
+uuid: 89f0fafa-d933-4764-bac9-bc18243de980
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icono_svg_
+    - node.type.icono_svg_
+    - taxonomy.vocabulary.grupo_de_temas
+id: taxonomy_term.grupo_de_temas.field_icono_svg_
+field_name: field_icono_svg_
+entity_type: taxonomy_term
+bundle: grupo_de_temas
+label: 'Icono (SVG)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      icono_svg_: icono_svg_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 63e64554-c428-4fdb-a8f6-3bf09ad59607
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-de-gestion-del-usuario
+  module:
+    - menu_item_extras
+id: menu_link_content.menu-de-gestion-del-usuario.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: menu-de-gestion-del-usuario
+label: 'Modo de vista'
+description: 'Per item view mode selector.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

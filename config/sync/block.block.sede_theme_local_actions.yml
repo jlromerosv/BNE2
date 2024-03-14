@@ -1,0 +1,20 @@
+uuid: cad68f72-cd3e-487a-9632-5d3964e0f2c3
+langcode: es
+status: true
+dependencies:
+  theme:
+    - sede_theme
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: sede_theme_local_actions
+theme: sede_theme
+region: pre_content
+weight: -25
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de la administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

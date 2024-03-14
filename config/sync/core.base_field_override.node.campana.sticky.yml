@@ -1,0 +1,22 @@
+uuid: c611d4fe-0cc5-4e90-9c6e-32c29f54331b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.campana
+id: node.campana.sticky
+field_name: sticky
+entity_type: node
+bundle: campana
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

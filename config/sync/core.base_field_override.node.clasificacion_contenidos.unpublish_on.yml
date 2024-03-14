@@ -1,0 +1,18 @@
+uuid: cca17195-8c8f-4e3f-add9-3870333f0c95
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+id: node.clasificacion_contenidos.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: clasificacion_contenidos
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

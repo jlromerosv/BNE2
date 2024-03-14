@@ -1,0 +1,29 @@
+uuid: cb3f39c9-a66f-47f8-b337-df7705fef2bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - views
+  theme:
+    - fundacion_theme
+id: views_block__widget_multimedia_enlaces_videos_de_la_pagina_2
+theme: fundacion_theme
+region: multimedia
+weight: -26
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-videos_de_la_pagina'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-videos_de_la_pagina'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

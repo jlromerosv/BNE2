@@ -1,0 +1,34 @@
+uuid: 85eb1bdd-0eca-4819-ad8a-e6a3f80ede42
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:html:7a79ae27-46b6-4db7-a089-63b348ea4974'
+  module:
+    - block_content
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_bloquedenavegacionsidebarmovilbne
+theme: sede_theme
+region: breadcrumb
+weight: -30
+provider: null
+plugin: 'block_content:7a79ae27-46b6-4db7-a089-63b348ea4974'
+settings:
+  id: 'block_content:7a79ae27-46b6-4db7-a089-63b348ea4974'
+  label: 'Bloque de navegación sidebar móvil (BNE)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

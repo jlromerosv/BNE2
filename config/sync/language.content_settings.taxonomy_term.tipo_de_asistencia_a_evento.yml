@@ -1,0 +1,18 @@
+uuid: f6aac278-bb49-4231-a68d-eb6bed60fc36
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_asistencia_a_evento
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tipo_de_asistencia_a_evento
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_asistencia_a_evento
+default_langcode: site_default
+language_alterable: false

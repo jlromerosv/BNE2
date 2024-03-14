@@ -1,0 +1,22 @@
+uuid: 1f5ca368-110a-4432-83ca-15c07347bc3e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: entradas_de_blog
+label: 'Entradas de blog'
+type: 'canonical_entities:node'
+pattern: '/blog/[node:field_blog:entity:field_texto_url]/[node:title]'
+selection_criteria:
+  f65016c6-62c6-4eba-b063-c29532d9f28a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f65016c6-62c6-4eba-b063-c29532d9f28a
+    context_mapping:
+      node: node
+    bundles:
+      entrada_de_blog: entrada_de_blog
+selection_logic: and
+weight: -3
+relationships: {  }

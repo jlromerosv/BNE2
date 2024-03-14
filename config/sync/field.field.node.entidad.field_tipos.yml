@@ -1,0 +1,29 @@
+uuid: ae6af153-8743-4316-9876-fbbaea8565fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipos
+    - node.type.entidad
+    - taxonomy.vocabulary.tipo_entidad
+id: node.entidad.field_tipos
+field_name: field_tipos
+entity_type: node
+bundle: entidad
+label: 'Tipos de entidad'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_entidad: tipo_entidad
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

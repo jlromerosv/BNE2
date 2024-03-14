@@ -1,0 +1,19 @@
+uuid: 5059fd74-de3b-43b4-8a6b-a8313092b2de
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cif
+    - node.type.entidad
+id: node.entidad.field_cif
+field_name: field_cif
+entity_type: node
+bundle: entidad
+label: CIF
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

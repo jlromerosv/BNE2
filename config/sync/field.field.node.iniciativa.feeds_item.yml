@@ -1,0 +1,23 @@
+uuid: ebd42b2c-65ed-4809-b954-864e52fec3df
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.iniciativa
+  module:
+    - feeds
+id: node.iniciativa.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: iniciativa
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

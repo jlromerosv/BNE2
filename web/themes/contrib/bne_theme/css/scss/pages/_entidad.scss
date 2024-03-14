@@ -1,0 +1,276 @@
+.page-node-type-entidad {
+  #block-bne-theme-contenidoprincipaldelapagina {
+    h1 {
+      margin: 0.5em 0 0.9em 0;
+      .field--name-title {
+
+        @include estilo_h1();
+      }
+    }
+    article {
+      .node__content {
+        .layout {
+          &:nth-child(1) {
+            .layout__region {
+              .block-field-blocknodeentidadfield-subtitulo {
+                margin-bottom: 1.9em;
+                .field--name-field-subtitulo {
+                  .field__label {
+                    font-size: 18px;
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    color: $negro;
+                    line-height: 24px;
+                    padding-right: 10px;
+                  }
+                  .field__item {
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 24px;
+                    letter-spacing: 0.48px;
+                  }
+                }
+              }
+              .block-field-blocknodeentidadfield-imagen-destacada {
+                .field--name-field-imagen-destacada {
+                  picture {
+                    img {
+                      width: 100%;
+                      height: auto;
+                      object-fit: cover;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:nth-child(2) {
+            border: 0.5px solid $bne_color_3;
+            margin: 1.9em 0;
+            padding: 30px;
+            .layout__region {
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-column-gap: 1.9em;
+              grid-row-gap: 1.9em;
+              @media (min-width: 576px) {
+                grid-template-columns: 1fr 1fr;
+              }
+              @media (min-width: 992px) {
+                grid-template-columns: 1fr 1fr 1fr;
+              }
+              .block-field-blocknodeentidadfield-imagen-representativa {
+                img {
+                  width: 100%;
+                  max-width: 150px;
+                  height: auto;
+                  object-fit: cover;
+                }
+                .field--name-field-id-externo{
+                  display: none;
+                }
+                .field--name-field-tipo{
+                  display: none;
+                }
+              }
+              .block-field-blocknodeentidadfield-rede {
+                .field--name-field-rede {
+                  .field__items {
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .field__item {
+                      article {
+                        h2 {
+                          display: none;
+                        }
+                        .node__content {
+                          .field--name-field-enlace {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 20;
+                            a {
+                              display: block;
+                              width: 100%;
+                              height: 100%;
+                              font-size: 0;
+                            }
+                          }
+                          .field--name-field-icono {
+                            //padding-right: 1.2em;
+                            width: 45px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            svg {
+                              width: 25px;
+                              height: 25px;
+                              path {
+                                fill: $bne_color_6;
+                              }
+                              polygon{
+                                fill: $blanco;
+                              }
+                              circle {
+                                fill: $bne_color_6;
+                              }
+                              .a {
+                                stroke: none;
+                                stroke-width: 0;
+                              }
+                            }
+                          }
+                          .field--name-field-alias-tipo-contenido{
+                            display: none;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .field--name-body{
+                p {
+                  font-size: 16px;
+                  color: $bne_color_2;
+                  line-height: 24px;
+                  letter-spacing: 0.48px;
+                  margin-block-start: 0;
+                  margin-block-end: 0;
+                }
+              }
+              .field {
+                .field__label {
+                  font-size: 18px;
+                  font-family: $dm-serif;
+                  font-weight: $dm-serif-regular;
+                  color: $negro;
+                  line-height: 24px;
+                  margin-bottom: 0.5em;
+                }
+                .field__item {
+                  p {
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 24px;
+                    letter-spacing: 0.48px;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                  }
+                  a {
+                    font-size: 16px;
+                    color: $bne_color_6;
+                    line-height: 24px;
+                    letter-spacing: 0.48px;
+                    font-weight: 400;
+                    &:hover{
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+              .node--type-horarios {
+                h2 {
+                  margin-block-start: 0px;
+                  margin-block-end: 0px;
+                  &::after {
+                    display: none;
+                  }
+                  a {
+                    pointer-events: none;
+                    .field--name-title {
+                      display: none;
+                      font-size: 18px;
+                      font-family: $dm-serif;
+                      font-weight: $dm-serif-regular;
+                      color: $negro;
+                      line-height: 24px;
+                      margin-bottom: 0.7em;
+                    }
+                  }
+                }
+                .node__content {
+                  .field--name-field-nombre{
+                    font-size: 18px;
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    color: $negro;
+                    line-height: 24px;
+                    margin-bottom: 0.7em;
+                  }
+                }
+              }
+            }
+          }
+          &:nth-child(3) {
+            .layout__region {
+              .block-field-blocknodeentidadfield-entidades-viewfield {
+                  margin: 1.9em 0;
+                .field {
+                  .field__label {
+                    font-size: 20px;
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    color: $negro;
+                    line-height: 24px;
+                    margin-bottom: 1em;
+                  }
+                  .field__item {
+                    .view-entidades-nodo {
+                      .view-content {
+                          display: grid;
+                          grid-template-columns: 1fr;
+                          @media (min-width: 576px) {
+                            grid-template-columns: 1fr 1fr;
+                          }
+                          @media (min-width: 992px) {
+                            grid-template-columns: repeat(3, 1fr);
+                          }
+                          @media (min-width: 1600px) {
+                            grid-template-columns: repeat(4, 1fr);
+                          }
+                        .views-row {
+                            border: 0.5px solid $bne_color_3;
+                            cursor: pointer;
+                            padding: 30px;
+                          .views-field-title {
+
+                            a{
+                                font-size: 18px;
+                            font-family: $dm-serif;
+                            font-weight: $dm-serif-regular;
+                            color: $negro;
+                            line-height: 22px;
+                            }
+                          }
+                          .views-field-body{
+                            margin-top: 0.83em;
+                            .field-content{
+                              @include estilos_body();
+                              line-height: 24px !important;
+                              p{
+
+                                line-height: 24px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .block-field-blocknodeentidadbody{
+                margin: 1.9em 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

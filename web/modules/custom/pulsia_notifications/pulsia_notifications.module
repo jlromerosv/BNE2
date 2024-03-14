@@ -1,0 +1,238 @@
+<?php
+
+/* <Requisitos del módulo> */
+/*
+	- Módulos:
+		- mail_system
+		- smtp
+		- hook_post_action
+*/
+/* </Requisitos del módulo> */
+
+
+/**
+ * @file
+ * Contains pulsia_notifications.module.
+ */
+
+use Drupal\Component\Render\FormattableMarkup;
+use GuzzleHttp\Exception\GuzzleException;
+use Drupal\content_moderation\Entity\ContentModerationState;
+use Drupal\group\Entity\GroupContent;
+use Drupal\node\Entity\Node;
+use Drupal\media\Entity\Media;
+use Drupal\Core\Entity\EntityStorageInterface;
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
+use Drupal\Core\Access\AccessResult;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\taxonomy\Entity\Term;
+use \Drupal\Core\Form\FormStateInterface;
+use \Drupal\views\ViewExecutable;
+
+
+/**
+ * Implements hook_help().
+ */
+
+function pulsia_notifications_help($route_name, RouteMatchInterface $route_match)
+{
+	switch ($route_name) {
+			// Main module help for the pulsia_notifications module.
+		case 'help.page.pulsia_notifications':
+			$output = '';
+			$output .= '<h3>' . t('About') . '</h3>';
+			$output .= '<p>' . t('Módulo de gestión de notificaciones') . '</p>';
+			return $output;
+		default:
+	}
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pulsia_notifications_theme()
+{
+	return [
+		'pulsia_notifications' => [
+			'render element' => 'children',
+		],
+	];
+}
+
+function pulsia_notifications_preprocess_html(&$variables)
+{
+	//https://docs.guzzlephp.org/en/stable/request-options.html
+	//$type = $node->getType();
+	//si un registrado intenta acceder a la biblioteca general se redirige a la restringida
+	$current_uri = \Drupal::request()->getRequestUri();
+	$findme   = '/contacto';
+	$pos = strpos($current_uri, $findme);
+	if ($pos !== false) {
+		//\Drupal::logger('debug_result')->notice('1');
+		/*
+		try {
+		  $method="POST";
+		  $endpoint="https://demo.ckan.org/api/3/action/package_list";
+		  $options=['timeout' => 10];
+		  $client = \Drupal::httpClient();
+		  $response = $client->request($method, $endpoint, $options);
+		  $result = json_decode($response->getBody(), TRUE);
+		  //\Drupal::logger('debug_result')->notice('Respuesta: ' . $response->getStatusCode() . ' - Result: ' . serialize($result));
+		  $variables['ps_help'] = $result['help'];
+
+		}
+		// First try to catch the GuzzleException. This indicates a failed response from the remote API.
+		catch (GuzzleException $error) {
+		  // Get the original response
+		  $response = $error->getResponse();
+		  // Get the info returned from the remote server.
+		  $response_info = $response->getBody()->getContents();
+		  // Using FormattableMarkup allows for the use of <pre/> tags, giving a more readable log item.
+		  $message = new FormattableMarkup('API connection error. Error details are as follows:<pre>@response</pre>', ['@response' => print_r(json_decode($response_info), TRUE)]);
+		  // Log the error
+		  watchdog_exception('Remote API Connection', $error, $message);
+		}
+	// A non-Guzzle error occurred. The type of exception is unknown, so a generic log item is created. catch (\Exception $error) {
+	  // Log the error.
+	}
+	*/
+
+		/*
+	\Drupal::logger('pulsia')->notice('Lanzar api de catálogos');
+	//\Drupal::logger('pulsia')->notice('value' . serialize($value));
+	try {
+
+	  $method="POST";
+	  $endpoint="http://se-apertium.redsara.es/TranslatorService_v2/Translator_v2";
+	  $options=[
+					'timeout' => 10,
+					'body' => '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:int="http://inteco.minhap.gov/">
+								   <soapenv:Header/>
+								   <soapenv:Body>
+									  <int:translate_string>
+										 <!--Optional:-->
+										 <proxyCache>false</proxyCache>
+										 <!--Optional:-->
+										 <documentBase64></documentBase64>
+										 <!--Optional:-->
+										 <translationEngine>plata</translationEngine>
+										 <!--Optional:-->
+										 <languagePair>es-ca</languagePair>
+										 <!--Optional:-->
+										 <ner>false</ner>
+										 <!--Optional:-->
+										 <contentType>txt</contentType>
+										 <!--Optional:-->
+										 <markUnknown>-u</markUnknown>
+										 <!--Optional:-->
+										 <codeTranslate>Esto es una prueba</codeTranslate>
+										 <!--Optional:-->
+										 <checksum></checksum>
+										 <!--Optional:-->
+										 <url></url>
+										 <!--Optional:-->
+										 <dirbase></dirbase>
+										 <!--Optional:-->
+										 <userName>bneusr</userName>
+										 <!--Optional:-->
+										 <userPass>sebneusr</userPass>
+									  </int:translate_string>
+								   </soapenv:Body>
+								</soapenv:Envelope>'
+		];
+
+
+	  //sobreescribimos las opciones de PLATA
+	  $method="GET";
+	  $endpoint="https://elon.es/api/feeds_ermua";
+	  //$endpoint="https://www.sevilla.org/Sevilla/eventos/eventos/RSS";
+	  $options=[
+					'timeout' => 10,
+		];
+
+
+
+	  $client = \Drupal::httpClient();
+	  $response = $client->request($method, $endpoint, $options);
+
+	  //json
+	  //$result = json_decode($response->getBody(), TRUE);
+
+
+	  //\Drupal::logger('debug_result')->notice('Respuesta: ' . $response->getStatusCode() . ' - Result: ' . serialize($response->getBody()->getContents()));
+
+	  if ($response->getStatusCode() == 200){
+		  //xml
+		  $responseXml = simplexml_load_string($response->getBody()->getContents());
+		  if ($responseXml instanceof \SimpleXMLElement){
+			//$key_value = (string)$responseXml->key_name;
+			print_r($responseXml->feed[1]->titulo);
+			die('stop');
+		  }
+	  }
+
+	}
+	// First try to catch the GuzzleException. This indicates a failed response from the remote API.
+	catch (GuzzleException $error) {
+	  \Drupal::logger('pulsia')->notice('Error');
+	  // Get the original response
+	  //$response = $error->getResponse();
+	  // Get the info returned from the remote server.
+	  //$response_info = $response->getBody()->getContents();
+	  // Using FormattableMarkup allows for the use of <pre/> tags, giving a more readable log item.
+	  //$message = new FormattableMarkup('API connection error. Error details are as follows:<pre>@response</pre>', ['@response' => print_r(json_decode($response_info), TRUE)]);
+	  // Log the error
+	  watchdog_exception('Remote API Connection', $error, $message);
+	}*/
+	}
+}
+
+/* Access Permission */
+
+function pulsia_notifications_node_access(NodeInterface $node, $op, AccountInterface $account)
+{
+}
+
+function pulsia_notifications_entity_access($entity, $operation, $account)
+{
+}
+
+// function pulsia_notifications_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+// 	if ($form_id == 'node-autor-edit-form') {
+// 		\Drupal::logger('datetime')->error("ha entrado en la funcion if");
+// 	  foreach ($form['FIELDS']['subform']['#fields'] as $field_name => &$field) {
+// 		if ($field['#type'] == 'date') {
+// 		  unset($field['#min']);
+// 		  unset($field['#max']);
+// 		}
+// 	  }
+// 	}
+// 	else{
+
+// 		foreach ($form['FIELDS']['subform']['#fields'] as $field_name => &$field) {
+// 			unset($field['#min']);
+// 			unset($field['#max']);
+// 			if ($field['#name'] == 'field_fecha_de_defuncion') {
+// 				\Drupal::logger('datetime')->error("ha entrado en la funcion else");
+// 			  unset($field['#min']);
+// 			  unset($field['#max']);
+
+// 			}
+// 		  }
+// 	}
+//   }
+
+
+/**
+ * Implements hook_form_alter().
+ * Función que modifica la fecha minima del campo fecha de defuncion del tipo de contenido autores.
+ */
+function pulsia_notifications_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+	if ($form_id == 'node_autor_edit_form') {
+		$form['field_fecha_de_defuncion']['widget']['0']['value']['#attributes']['min'] = '0001-01-01';
+	}
+}

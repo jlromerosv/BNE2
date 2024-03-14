@@ -1,0 +1,33 @@
+uuid: d3624467-d772-4868-97c6-671974ac1b2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.fecha_de_dosier
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_fechadedosier
+theme: fundacion_theme
+region: sidebar_first
+weight: -14
+provider: null
+plugin: 'facet_block:fecha_de_dosier'
+settings:
+  id: 'facet_block:fecha_de_dosier'
+  label: 'Fecha de dosier'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: fechadedosier
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/8445

@@ -1,0 +1,41 @@
+uuid: 7d0ea12d-ab1c-4cfe-a710-7febb3f548f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_vinculados
+    - node.type.contenido_generico
+    - node.type.enlace
+    - node.type.entidad
+    - node.type.entidad_referencia_
+    - node.type.horarios
+    - node.type.noticia
+    - node.type.pagina_basica
+    - node.type.tramite
+id: node.tramite.field_contenidos_vinculados
+field_name: field_contenidos_vinculados
+entity_type: node
+bundle: tramite
+label: 'Te puede interesar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contenido_generico: contenido_generico
+      enlace: enlace
+      entidad: entidad
+      entidad_referencia_: entidad_referencia_
+      horarios: horarios
+      noticia: noticia
+      pagina_basica: pagina_basica
+      tramite: tramite
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: entidad
+field_type: entity_reference

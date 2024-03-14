@@ -1,0 +1,326 @@
+uuid: eb9a867b-b658-48c5-8b97-9773abfb2093
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.area_tematica.description
+    - field.field.taxonomy_term.area_tematica.domain_access
+    - field.field.taxonomy_term.area_tematica.field_destacados_manuales
+    - field.field.taxonomy_term.area_tematica.field_entidad_representada
+    - field.field.taxonomy_term.area_tematica.field_grupo_de_temas
+    - taxonomy.vocabulary.area_tematica
+    - views.view.contenido_de_la_taxonomia
+    - views.view.destacados_manuales_de_seccion_de_taxonomia_2_
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          dc67bf0a-72f5-47b3-a769-48182d6f7187:
+            uuid: dc67bf0a-72f5-47b3-a769-48182d6f7187
+            region: content
+            configuration:
+              id: 'views_block:destacados_manuales_de_seccion_de_taxonomia_2_-block_3'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: ps-encabezado-imagen-texto
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          f4413545-fd1f-485e-9981-3bcf1dc16a3c:
+            uuid: f4413545-fd1f-485e-9981-3bcf1dc16a3c
+            region: first
+            configuration:
+              id: 'field_block:taxonomy_term:area_tematica:description'
+              label: Descripción
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f15e78ea-fc49-43e9-ad96-4450ccfebb7c:
+            uuid: f15e78ea-fc49-43e9-ad96-4450ccfebb7c
+            region: second
+            configuration:
+              id: 'field_block:taxonomy_term:area_tematica:field_entidad_representada'
+              label: Contacto
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: contacto
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          f531007a-9500-461a-a6f8-657c1bbb214f:
+            uuid: f531007a-9500-461a-a6f8-657c1bbb214f
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_4'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 14
+            additional: {  }
+          a9e1b382-efca-47d5-b8ed-0635dd445cea:
+            uuid: a9e1b382-efca-47d5-b8ed-0635dd445cea
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 16
+            additional: {  }
+          2acaa2d2-c9ef-4ce5-b990-b50d6b5e8a19:
+            uuid: 2acaa2d2-c9ef-4ce5-b990-b50d6b5e8a19
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 15
+            additional: {  }
+          3962f869-cf8a-4a9e-8c2c-5ad5298f8b95:
+            uuid: 3962f869-cf8a-4a9e-8c2c-5ad5298f8b95
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_5'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 17
+            additional: {  }
+          82eb873d-8239-4ed4-962a-4ef2b6a66470:
+            uuid: 82eb873d-8239-4ed4-962a-4ef2b6a66470
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_6'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 18
+            additional: {  }
+          fb3806fe-995c-49fe-80c4-31de211e3881:
+            uuid: fb3806fe-995c-49fe-80c4-31de211e3881
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_7'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 19
+            additional: {  }
+          98594e1a-e29f-48dc-9fd8-38b6bde5da3e:
+            uuid: 98594e1a-e29f-48dc-9fd8-38b6bde5da3e
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_9'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 20
+            additional: {  }
+          b5a08e5e-da91-474e-9379-07ff4faf6ec4:
+            uuid: b5a08e5e-da91-474e-9379-07ff4faf6ec4
+            region: content
+            configuration:
+              id: 'views_block:destacados_manuales_de_seccion_de_taxonomia_2_-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 21
+            additional: {  }
+          e4975993-36f9-498a-9306-5c1109f51009:
+            uuid: e4975993-36f9-498a-9306-5c1109f51009
+            region: content
+            configuration:
+              id: 'views_block:destacados_manuales_de_seccion_de_taxonomia_2_-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 11
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: 'ps-contenido-relacionado grid-layout-view-3-col'
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+          c0ad32ae-b0e7-45e7-b69c-20ae88332891:
+            uuid: c0ad32ae-b0e7-45e7-b69c-20ae88332891
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_8'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: '20'
+            weight: 22
+            additional: {  }
+          96614a0b-11b1-498d-9517-0c27863a705e:
+            uuid: 96614a0b-11b1-498d-9517-0c27863a705e
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_10'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 13
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 67-33
+        components: {  }
+        third_party_settings: {  }
+id: taxonomy_term.area_tematica.default
+targetEntityType: taxonomy_term
+bundle: area_tematica
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  domain_access:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_destacados_manuales:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_entidad_representada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_grupo_de_temas:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

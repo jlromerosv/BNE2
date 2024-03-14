@@ -1,0 +1,18 @@
+uuid: c19f134e-fde0-498b-a82d-26a5393fb14c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.seccion_nivel_1_estandar
+target_entity_type_id: node
+target_bundle: seccion_nivel_1_estandar
+default_langcode: site_default
+language_alterable: true

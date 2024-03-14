@@ -1,0 +1,20 @@
+uuid: 071d0ff5-2c3e-408b-9612-44233406cadb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+  module:
+    - options
+id: node.cargo.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: cargo
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

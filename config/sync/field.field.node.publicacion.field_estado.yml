@@ -1,0 +1,29 @@
+uuid: 6431bbaf-d882-4872-9537-7698e2e79701
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado
+    - node.type.publicacion
+    - taxonomy.vocabulary.disponibilidad_publicaciones
+id: node.publicacion.field_estado
+field_name: field_estado
+entity_type: node
+bundle: publicacion
+label: Disponibilidad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      disponibilidad_publicaciones: disponibilidad_publicaciones
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

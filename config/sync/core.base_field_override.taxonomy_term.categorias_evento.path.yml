@@ -1,0 +1,20 @@
+uuid: ad072065-5de7-4782-98b6-f39a337fe947
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorias_evento
+  module:
+    - path
+id: taxonomy_term.categorias_evento.path
+field_name: path
+entity_type: taxonomy_term
+bundle: categorias_evento
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

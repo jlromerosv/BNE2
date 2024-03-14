@@ -1,0 +1,58 @@
+uuid: 2fed0113-c54f-43b5-b8e0-e644bf8bd90a
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.slider_home_pantalla_completa_lg
+    - image.style.slider_home_pantalla_completa_md
+    - image.style.slider_home_pantalla_completa_sm
+    - image.style.slider_home_pantalla_completa_xl
+    - image.style.slider_home_pantalla_completa_xs
+    - image.style.slider_home_pantalla_completa_xxl
+  theme:
+    - bne_theme
+id: eai_bloque_slider_home_pantalla_completa
+label: 'EAI Bloque Slider Home Pantalla Completa'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_home_pantalla_completa_xxl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_home_pantalla_completa_xl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_home_pantalla_completa_lg
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_home_pantalla_completa_lg
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_home_pantalla_completa_md
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_home_pantalla_completa_sm
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_home_pantalla_completa_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_home_pantalla_completa_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: slider_home_pantalla_completa_xl

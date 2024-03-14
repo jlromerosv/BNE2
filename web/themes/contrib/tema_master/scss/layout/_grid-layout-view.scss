@@ -1,0 +1,37 @@
+/*
+    ========= GRID LAYOUT VIEW ==========
+    Estilos dedicados al grid layout de las vistas.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin grid-layout-view($columns, $rows)
+
+        @mixin mf-responsive-grid-layout-view ($min-width, $columns, $rows)
+
+    ------------------------- MIXINS --------------------------    
+    grid-layout-view = Convierte la estructura de la vista
+    en grid
+
+    mf-responsive-grid-layout-view = Te permite hacer 
+    responsive la estructura
+
+    ----------------------- VARIABLES -------------------------
+    $columns = Número de columnas del grid (grid-layout-view)
+
+    $rows = Número de filas (grid-layout-view)
+
+    $min-width = Mínimo de ancho para el breakpoint
+
+    $columns = Columnas en responsive (mf-responsive-grid-layout-view)
+
+    $rows = Filas en responsive (mf-responsive-grid-layout-view)
+
+*/
+
+.grid-layout-view-3-col {
+    .view-content {
+        @include grid-layout-view(1fr, initial);
+
+        @include mf-responsive-grid-layout-view(576px, repeat(3, 1fr), initial);
+    }
+}

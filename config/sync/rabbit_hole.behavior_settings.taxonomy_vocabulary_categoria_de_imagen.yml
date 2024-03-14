@@ -1,0 +1,14 @@
+uuid: fb74f322-d75a-42bf-9470-8fdc41c0ea27
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_imagen
+id: taxonomy_vocabulary_categoria_de_imagen
+entity_type_id: taxonomy_vocabulary
+entity_id: categoria_de_imagen
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

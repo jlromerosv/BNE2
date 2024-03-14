@@ -1,0 +1,12 @@
+uuid: 5197e937-2414-4951-bb41-0bd4887310f5
+langcode: es
+status: true
+dependencies: {  }
+id: imagen_y_video_100_
+label: 'Imagen y video 100%'
+image: ''
+description: ''
+html:
+  value: "<div class=\"pl-img-video-full\" style=\"border-width: 1px; border-style: dotted; border-color: red; min-height: 100px\">&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: root_formato_de_texto
+weight: 4

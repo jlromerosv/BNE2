@@ -1,0 +1,32 @@
+uuid: 016c626a-20e7-410b-a2f4-5403dfd8f018
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloque_enlaces_a_listados_de_contenido
+  module:
+    - node
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloque_enlaces_a_listados_de_contenido_block_6
+theme: bne_theme
+region: sidebar_first
+weight: -62
+provider: null
+plugin: 'views_block:bloque_enlaces_a_listados_de_contenido-block_6'
+settings:
+  id: 'views_block:bloque_enlaces_a_listados_de_contenido-block_6'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      noticia: noticia

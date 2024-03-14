@@ -1,0 +1,28 @@
+uuid: 4ad5a39f-b76a-4c80-8332-6e8c1b9ef05b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - media.type.imagen
+    - node.type.convocatoria
+id: node.convocatoria.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: convocatoria
+label: Imágenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

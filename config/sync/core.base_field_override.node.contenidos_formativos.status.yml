@@ -1,0 +1,22 @@
+uuid: adce8e19-1266-4dad-a20a-9cf226195587
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+id: node.contenidos_formativos.status
+field_name: status
+entity_type: node
+bundle: contenidos_formativos
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

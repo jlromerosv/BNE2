@@ -1,0 +1,84 @@
+uuid: dedb80fe-1c65-4423-b095-ec93b240b8d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.actividad_generica.body
+    - field.field.node.actividad_generica.feeds_item
+    - field.field.node.actividad_generica.field_archivos
+    - field.field.node.actividad_generica.field_area_tematica
+    - field.field.node.actividad_generica.field_categoria
+    - field.field.node.actividad_generica.field_colaboradores
+    - field.field.node.actividad_generica.field_colectivo
+    - field.field.node.actividad_generica.field_contenidos_vinculados
+    - field.field.node.actividad_generica.field_domain_access
+    - field.field.node.actividad_generica.field_domain_all_affiliates
+    - field.field.node.actividad_generica.field_domain_source
+    - field.field.node.actividad_generica.field_email
+    - field.field.node.actividad_generica.field_enlace_formulario_inscripc
+    - field.field.node.actividad_generica.field_entidades
+    - field.field.node.actividad_generica.field_imagen_destacada
+    - field.field.node.actividad_generica.field_imagen_representativa
+    - field.field.node.actividad_generica.field_imagenes
+    - field.field.node.actividad_generica.field_lugares
+    - field.field.node.actividad_generica.field_telefonos
+    - field.field.node.actividad_generica.field_tipo
+    - node.type.actividad_generica
+  module:
+    - link
+    - text
+    - user
+id: node.actividad_generica.default
+targetEntityType: node
+bundle: actividad_generica
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_contenidos_vinculados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_enlace_formulario_inscripc:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  feeds_item: true
+  field_archivos: true
+  field_area_tematica: true
+  field_categoria: true
+  field_colaboradores: true
+  field_colectivo: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_email: true
+  field_entidades: true
+  field_imagen_destacada: true
+  field_imagen_representativa: true
+  field_imagenes: true
+  field_lugares: true
+  field_telefonos: true
+  field_tipo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

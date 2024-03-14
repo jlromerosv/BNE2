@@ -1,0 +1,20 @@
+uuid: 29324ec3-1f34-427e-aab8-b8dce30cf7dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+  module:
+    - options
+id: node.pagina_avanzada.publish_state
+field_name: publish_state
+entity_type: node
+bundle: pagina_avanzada
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

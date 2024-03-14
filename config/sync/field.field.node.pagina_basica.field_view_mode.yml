@@ -1,0 +1,72 @@
+uuid: 33f14894-3416-4558-ae73-0c921750236a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_view_mode
+    - node.type.pagina_basica
+    - views.view.widgets_media
+  module:
+    - viewfield
+id: node.pagina_basica.field_view_mode
+field_name: field_view_mode
+entity_type: node
+bundle: pagina_basica
+label: 'Modo de visualización de documentos'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: fddb8964-d7d4-493b-9bba-7f194afbdadc
+    display_id: block_3
+    arguments: ''
+    items_to_display: ''
+    token_help: ''
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    widgets_media: widgets_media
+    bloques_de_noticias: '0'
+    buscador_de_convocatorias_a_texto_completo: '0'
+    buscador_de_noticias_a_texto_completo: '0'
+    buscador_texto_completo: '0'
+    buscador_solr_texto_completo: '0'
+    comment: '0'
+    contenidos_del_dominio: '0'
+    contenidos_filtrados_por_taxonomia: '0'
+    content: '0'
+    block_content: '0'
+    destacados_automaticos: '0'
+    entidades_nodo: '0'
+    webform_submissions: '0'
+    feeds_feed: '0'
+    files: '0'
+    fullcalendar_eventos: '0'
+    broken_links_report: '0'
+    poll_list: '0'
+    media: '0'
+    media_library: '0'
+    group_members: '0'
+    moderated_content: '0'
+    user_admin_people: '0'
+    poll_admin: '0'
+    redirect: '0'
+    scheduler_scheduled_content: '0'
+    taxonomy_term: '0'
+    transparencia: '0'
+    terminos_taxonomia: '0'
+    watchdog: '0'
+    widget_multimedia_enlaces: '0'
+    widget: '0'
+    widgets_imagenes: '0'
+  allowed_display_types:
+    block: block
+    feed: '0'
+    embed: '0'
+    default: '0'
+    page: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

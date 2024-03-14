@@ -1,0 +1,12 @@
+uuid: ea0f144b-2383-4427-894e-660ed4cbeaa4
+langcode: es
+status: true
+dependencies: {  }
+id: formulario_acumbamail
+label: 'Formulario acumbamail'
+image: ''
+description: ''
+html:
+  value: "\r\n<div class=\"template-form-acumbamail\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em; height: auto\"></div>\r\n\r\n"
+  format: html_full
+weight: 12

@@ -1,0 +1,30 @@
+uuid: d6cf90ee-585b-4aad-a02e-73aafeecc0ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.coleccion
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.coleccion.field_orden
+field_name: field_orden
+entity_type: node
+bundle: coleccion
+label: Orden
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,46 @@
+uuid: 9eb38896-735a-474b-ad97-0b0db5263662
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.tercio_de_ancho
+    - field.field.media.archivo_de_video.domain_access
+    - field.field.media.archivo_de_video.field_id_externo
+    - field.field.media.archivo_de_video.field_media_video_file
+    - media.type.archivo_de_video
+  module:
+    - file
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.archivo_de_video.tercio_de_ancho
+targetEntityType: media
+bundle: archivo_de_video
+mode: tercio_de_ancho
+content:
+  field_media_video_file:
+    type: file_video
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+      muted: false
+      width: 640
+      height: 480
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  domain_access: true
+  field_id_externo: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
+  uuid: true

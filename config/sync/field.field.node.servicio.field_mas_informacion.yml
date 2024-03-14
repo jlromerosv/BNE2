@@ -1,0 +1,21 @@
+uuid: 5452360e-a999-493e-afe5-5a7e5848eceb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.servicio
+  module:
+    - text
+id: node.servicio.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: servicio
+label: 'Más información'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

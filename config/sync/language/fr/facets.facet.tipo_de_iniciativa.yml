@@ -1,0 +1,5 @@
+name: 'Type d''initiative'
+url_alias: Type_de_initiative
+widget:
+  config:
+    reset_text: 'Montrer tout'

@@ -1,0 +1,18 @@
+uuid: 1a1e06ad-2687-4d78-9386-b6858a4c4cbb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+id: node.destacados_manuales.created
+field_name: created
+entity_type: node
+bundle: destacados_manuales
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

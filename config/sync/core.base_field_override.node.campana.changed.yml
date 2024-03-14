@@ -1,0 +1,18 @@
+uuid: ab4d33b1-b46a-4356-b941-a97486d1bb12
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.campana
+id: node.campana.changed
+field_name: changed
+entity_type: node
+bundle: campana
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

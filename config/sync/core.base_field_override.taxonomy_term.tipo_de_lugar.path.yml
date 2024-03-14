@@ -1,0 +1,20 @@
+uuid: 0c54f624-92c9-4c26-9eba-e253fb56822a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_lugar
+  module:
+    - path
+id: taxonomy_term.tipo_de_lugar.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_lugar
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,5 @@
+name: 'Types of issue'
+url_alias: 'type _ dossier'
+widget:
+  config:
+    reset_text: 'Show all'

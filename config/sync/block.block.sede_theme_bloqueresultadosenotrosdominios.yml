@@ -1,0 +1,34 @@
+uuid: 7c7d166a-df69-431c-8bf4-b9d6de68d04b
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:html:dd30f926-e958-4993-84c7-f35612fccef8'
+  module:
+    - block_content
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_bloqueresultadosenotrosdominios
+theme: sede_theme
+region: content
+weight: -24
+provider: null
+plugin: 'block_content:dd30f926-e958-4993-84c7-f35612fccef8'
+settings:
+  id: 'block_content:dd30f926-e958-4993-84c7-f35612fccef8'
+  label: 'Otros resultados'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/2785

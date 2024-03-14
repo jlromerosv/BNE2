@@ -1,0 +1,28 @@
+uuid: 683529cd-5e99-4a0f-a786-1d62df142ec0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_galeria_de_imagenes
+    - node.type.galeria_de_imagenes
+    - node.type.obra
+id: node.obra.field_galeria_de_imagenes
+field_name: field_galeria_de_imagenes
+entity_type: node
+bundle: obra
+label: 'Galería de imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      galeria_de_imagenes: galeria_de_imagenes
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

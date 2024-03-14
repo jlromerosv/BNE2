@@ -1,0 +1,26 @@
+uuid: caf7ee7e-f132-45d6-84e8-37f4d1f048e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.exposicion
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.exposicion.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: exposicion
+label: 'Más información'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

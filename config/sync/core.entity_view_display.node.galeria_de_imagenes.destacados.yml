@@ -1,0 +1,82 @@
+uuid: d57dd933-a639-4892-9a9d-dc05c587db1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.destacados
+    - field.field.node.galeria_de_imagenes.body
+    - field.field.node.galeria_de_imagenes.feeds_item
+    - field.field.node.galeria_de_imagenes.field_alias_tipo_contenido
+    - field.field.node.galeria_de_imagenes.field_archivos
+    - field.field.node.galeria_de_imagenes.field_area_tematica
+    - field.field.node.galeria_de_imagenes.field_codigo_referencia
+    - field.field.node.galeria_de_imagenes.field_colectivo
+    - field.field.node.galeria_de_imagenes.field_contenido_generico
+    - field.field.node.galeria_de_imagenes.field_contenidos_relacionados
+    - field.field.node.galeria_de_imagenes.field_domain_access
+    - field.field.node.galeria_de_imagenes.field_domain_all_affiliates
+    - field.field.node.galeria_de_imagenes.field_domain_source
+    - field.field.node.galeria_de_imagenes.field_enlace
+    - field.field.node.galeria_de_imagenes.field_etiquetas_busqueda
+    - field.field.node.galeria_de_imagenes.field_fecha_galeria
+    - field.field.node.galeria_de_imagenes.field_id_externo
+    - field.field.node.galeria_de_imagenes.field_imagen_destacada
+    - field.field.node.galeria_de_imagenes.field_imagenes
+    - field.field.node.galeria_de_imagenes.field_meta_tags
+    - field.field.node.galeria_de_imagenes.field_tipos
+    - field.field.node.galeria_de_imagenes.field_yoast_seo
+    - node.type.galeria_de_imagenes
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.galeria_de_imagenes.destacados
+targetEntityType: node
+bundle: galeria_de_imagenes
+mode: destacados
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_tematica: true
+  field_codigo_referencia: true
+  field_colectivo: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_etiquetas_busqueda: true
+  field_fecha_galeria: true
+  field_id_externo: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_tipos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

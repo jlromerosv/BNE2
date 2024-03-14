@@ -1,0 +1,5 @@
+name: Ekimen-kategoria
+url_alias: 'kategoriak _ de _ ekimena'
+widget:
+  config:
+    reset_text: 'Erakutsi dena'

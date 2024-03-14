@@ -1,0 +1,20 @@
+uuid: 53b9443f-120e-4925-9c6b-77a06ae80cb6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+id: node.destacados_manuales.menu_link
+field_name: menu_link
+entity_type: node
+bundle: destacados_manuales
+label: 'Enlace del menu'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

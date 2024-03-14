@@ -1,0 +1,17 @@
+uuid: a5c5824c-2148-45b4-b7d1-4586af53edc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.editor_contenidos_avanzado
+id: area-58f199dd7
+label: 'Editor Eventos'
+weight: 6
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

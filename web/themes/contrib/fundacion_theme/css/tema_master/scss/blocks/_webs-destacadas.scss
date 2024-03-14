@@ -1,0 +1,45 @@
+/*
+    ========== WEBS DESTACADAS ==========
+
+    Estilos dedicados a la vista de webs destacadas.
+
+    ----------------------- VARIABLES -------------------------
+    $main_color_3 = Color principal de tipo 3
+
+    $a_color = Color por defecto de los enlaces de la web
+*/
+
+
+.ps-webs-destacadas {
+    max-width: 100%;
+    overflow: auto;
+    background-color: $blanco;
+    .view-content {
+        display: flex;
+        gap: 30px;
+
+        .field-content {
+            & > div {
+
+                a {
+                    display: grid;
+                    justify-items: center;
+                    text-align: center;
+                    color: $a_color;
+                }
+                
+
+                .field__item {
+                    padding: 10px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    box-shadow: 0px 4px 4px 3px $main_color_3;
+                   img {
+                        width: auto;
+                        height: 80px;
+                    } 
+                }
+            }
+        }
+    }
+}

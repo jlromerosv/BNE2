@@ -1,0 +1,14 @@
+uuid: a2f30006-c523-48b7-bbff-4acf71d1c10c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_promocion_de_inmuebles
+id: taxonomy_vocabulary_tipo_de_promocion_de_inmuebles
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_promocion_de_inmuebles
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

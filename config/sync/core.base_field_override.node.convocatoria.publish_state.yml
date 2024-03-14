@@ -1,0 +1,20 @@
+uuid: d42e128d-85dc-4521-baf6-0a9e41673056
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.convocatoria
+  module:
+    - options
+id: node.convocatoria.publish_state
+field_name: publish_state
+entity_type: node
+bundle: convocatoria
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,20 @@
+uuid: c8afeab8-1d47-4e28-a668-38f6c42c1992
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+  module:
+    - options
+id: node.ubicacion.publish_state
+field_name: publish_state
+entity_type: node
+bundle: ubicacion
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

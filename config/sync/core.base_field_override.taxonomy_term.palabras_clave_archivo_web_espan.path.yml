@@ -1,0 +1,20 @@
+uuid: e20a4188-8e51-4646-af81-4b07ad9e204e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.palabras_clave_archivo_web_espan
+  module:
+    - path
+id: taxonomy_term.palabras_clave_archivo_web_espan.path
+field_name: path
+entity_type: taxonomy_term
+bundle: palabras_clave_archivo_web_espan
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

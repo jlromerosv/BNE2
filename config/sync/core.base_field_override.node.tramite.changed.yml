@@ -1,0 +1,18 @@
+uuid: a6b62932-7324-4404-b92f-0b718f06e37d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+id: node.tramite.changed
+field_name: changed
+entity_type: node
+bundle: tramite
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

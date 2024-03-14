@@ -1,0 +1,21 @@
+uuid: c289feb6-afb1-4c25-ac06-b0de7dcef643
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servicios_texto_
+    - node.type.lugar
+  module:
+    - text
+id: node.lugar.field_servicios_texto_
+field_name: field_servicios_texto_
+entity_type: node
+bundle: lugar
+label: 'x_Servicios (texto)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,25 @@
+uuid: 6399ec38-c85f-4617-909a-56f2a4dde9a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - views
+  theme:
+    - bne_theme
+id: views_block__widget_multimedia_enlaces_block_28
+theme: bne_theme
+region: content
+weight: -59
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-block_28'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-block_28'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

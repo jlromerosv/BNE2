@@ -1,0 +1,22 @@
+uuid: 3ab7eac8-0a34-435c-9c52-b0036f7a5bfd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sesion_de_actividad
+id: node.sesion_de_actividad.promote
+field_name: promote
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,28 @@
+uuid: 4f81ea39-ff32-4743-898d-e10581caf845
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.lugar
+  module:
+    - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
+id: node.lugar.field_url
+field_name: field_url
+entity_type: node
+bundle: lugar
+label: 'Cita previa'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

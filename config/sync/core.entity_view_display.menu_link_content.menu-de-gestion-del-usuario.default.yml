@@ -1,0 +1,30 @@
+uuid: 22b7f239-4d28-46be-9487-82b2b6aaf557
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.menu-de-gestion-del-usuario.field_icono
+    - system.menu.menu-de-gestion-del-usuario
+id: menu_link_content.menu-de-gestion-del-usuario.default
+targetEntityType: menu_link_content
+bundle: menu-de-gestion-del-usuario
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icono:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: svg
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

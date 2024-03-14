@@ -1,0 +1,22 @@
+uuid: 3fc4e669-c891-4f02-b233-30d8636f6387
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regimen_de_promocion_de_inmbuebl
+id: taxonomy_term.regimen_de_promocion_de_inmbuebl.status
+field_name: status
+entity_type: taxonomy_term
+bundle: regimen_de_promocion_de_inmbuebl
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: 28dcd3a0-5c82-4ca5-a281-71897ce3c302
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_precio
+    - node.type.tramite
+  module:
+    - text
+id: node.tramite.field_precio
+field_name: field_precio
+entity_type: node
+bundle: tramite
+label: 'Importe de la tasa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,45 @@
+.ps_multimedia_region {
+  background: $negro;
+  padding: 15px 0;
+  .ps-multimedia-region-content {
+    .ps-multimedia-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 96px;
+      h2 {
+        font-size: 32px;
+        font-family: $dm-serif;
+        font-weight: $dm-serif-regular;
+        line-height: 48px;
+        color: $blanco;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .contenido {
+      //padding-bottom: 56px;
+    }
+  }
+}
+.ps_pre-multimedia_region {
+  background: $negro;
+
+  .ps-slider-colecciones-lugar {
+    padding-bottom: 2em;
+    h1 {
+      font-size: 32px;
+      color: $blanco;
+      font-family: $dm-serif;
+      font-weight: $dm-serif-regular;
+      line-height: 48px;
+      text-align: center;
+      padding: 26px 15px;
+      margin: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

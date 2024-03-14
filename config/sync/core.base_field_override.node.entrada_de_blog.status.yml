@@ -1,0 +1,22 @@
+uuid: 9652441a-f5db-49d5-938c-41b9573aeca9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entrada_de_blog
+id: node.entrada_de_blog.status
+field_name: status
+entity_type: node
+bundle: entrada_de_blog
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

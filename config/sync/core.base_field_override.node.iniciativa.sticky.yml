@@ -1,0 +1,22 @@
+uuid: 712477a5-ea9e-4a24-849c-c98b17f7c047
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iniciativa
+id: node.iniciativa.sticky
+field_name: sticky
+entity_type: node
+bundle: iniciativa
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,15 @@
+uuid: ed6b41e1-fbc7-4ce0-938f-2c35910d860e
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_colecciones_blog_md
+label: 'Bloque colecciones blog MD'
+effects:
+  e2d181ad-77f7-4657-8329-6895e75c8df0:
+    uuid: e2d181ad-77f7-4657-8329-6895e75c8df0
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 495
+      height: 340
+      anchor: center-center

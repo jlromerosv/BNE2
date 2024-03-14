@@ -1,0 +1,20 @@
+uuid: 2a195a46-267d-4db1-8722-6c94f8b0f9d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+  module:
+    - options
+id: node.horarios.publish_state
+field_name: publish_state
+entity_type: node
+bundle: horarios
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

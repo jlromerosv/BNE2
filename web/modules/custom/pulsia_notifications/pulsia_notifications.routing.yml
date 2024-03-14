@@ -1,0 +1,8 @@
+pulsia_notifications.custom_post_controller_parametroPost:
+  path: '/pulsia_notifications'
+  defaults:
+    _controller: '\Drupal\pulsia_notifications\Controller\CustomPostController::rssFunction'
+    _title: 'Recibir parametros POST'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'

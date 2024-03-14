@@ -1,0 +1,23 @@
+uuid: 17624369-1eee-4872-baee-f30897bb6113
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_accesos
+field_name: field_accesos
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: 616c1510-c187-4a9e-a7b8-70229e77de9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.ubicacion
+target_entity_type_id: node
+target_bundle: ubicacion
+default_langcode: site_default
+language_alterable: false

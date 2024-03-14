@@ -1,0 +1,20 @@
+uuid: 4146a7c9-cce0-4921-a08f-09cf9cf1f081
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.servicio
+  module:
+    - path
+id: node.servicio.path
+field_name: path
+entity_type: node
+bundle: servicio
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

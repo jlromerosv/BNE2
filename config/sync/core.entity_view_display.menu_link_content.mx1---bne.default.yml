@@ -1,0 +1,30 @@
+uuid: 4eb832b3-3bbc-43e9-80b8-c57bde564de3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.mx1---bne.field_descripcion_enlace_menu
+    - system.menu.mx1---bne
+  module:
+    - text
+id: menu_link_content.mx1---bne.default
+targetEntityType: menu_link_content
+bundle: mx1---bne
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_descripcion_enlace_menu:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

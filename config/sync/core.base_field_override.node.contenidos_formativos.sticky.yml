@@ -1,0 +1,22 @@
+uuid: 04144305-7ffe-4254-95a4-9d8dfeedd1f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+id: node.contenidos_formativos.sticky
+field_name: sticky
+entity_type: node
+bundle: contenidos_formativos
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

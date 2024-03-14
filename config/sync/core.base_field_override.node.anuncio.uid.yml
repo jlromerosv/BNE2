@@ -1,0 +1,20 @@
+uuid: d19e97e3-8496-4fa7-91a1-4adc3a5ead45
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.anuncio
+id: node.anuncio.uid
+field_name: uid
+entity_type: node
+bundle: anuncio
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: 597afb28-08e3-4c76-9987-f7bceaa010a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coleccion
+    - node.type.coleccion
+    - node.type.referencias_bibliograficas
+id: node.referencias_bibliograficas.field_coleccion
+field_name: field_coleccion
+entity_type: node
+bundle: referencias_bibliograficas
+label: Colección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      coleccion: coleccion
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

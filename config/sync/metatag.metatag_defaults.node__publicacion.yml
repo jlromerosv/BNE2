@@ -1,0 +1,13 @@
+uuid: ec841740-fcd0-439c-a9fa-af0a2d6b8e71
+langcode: es
+status: true
+dependencies: {  }
+id: node__publicacion
+label: 'Contenido: Publicaciones'
+tags:
+  og_type: book
+  book_isbn: '[node:field_codigo_referencia]'
+  book_release_date: '[node:field_ano]'
+  product_availability: '[node:field_estado:entity:name]'
+  product_price_amount: '[node:field_precio_euros]'
+  product_price_currency: €

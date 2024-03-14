@@ -1,0 +1,18 @@
+uuid: 3a8514a3-14a5-4691-84bf-09051f34ca01
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+id: node.obra.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: obra
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

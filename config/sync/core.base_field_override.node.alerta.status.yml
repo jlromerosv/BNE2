@@ -1,0 +1,22 @@
+uuid: f4e363a9-7390-4d42-81d9-52bf3c899aa2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.alerta
+id: node.alerta.status
+field_name: status
+entity_type: node
+bundle: alerta
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

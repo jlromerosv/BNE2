@@ -1,0 +1,5 @@
+name: 'Category blog library'
+url_alias: 'categoria _ blog _ sobre biblioteconomia'
+widget:
+  config:
+    default_option_label: Select

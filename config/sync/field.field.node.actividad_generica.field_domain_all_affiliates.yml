@@ -1,0 +1,21 @@
+uuid: 2039c228-efe1-42d9-959a-0bc04c1cf4d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.actividad_generica
+id: node.actividad_generica.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: actividad_generica
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

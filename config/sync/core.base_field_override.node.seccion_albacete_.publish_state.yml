@@ -1,0 +1,20 @@
+uuid: 2f5bf705-b8ae-4fd2-8180-af0bacd28cf2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+  module:
+    - options
+id: node.seccion_albacete_.publish_state
+field_name: publish_state
+entity_type: node
+bundle: seccion_albacete_
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

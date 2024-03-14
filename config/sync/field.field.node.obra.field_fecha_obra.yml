@@ -1,0 +1,25 @@
+uuid: 8f91d596-5a22-44e4-8be5-81d714d1eef0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_obra
+    - node.type.obra
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.obra.field_fecha_obra
+field_name: field_fecha_obra
+entity_type: node
+bundle: obra
+label: 'Fecha de la obra'
+description: 'Solo sirve para ordenar las obras de un autor'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

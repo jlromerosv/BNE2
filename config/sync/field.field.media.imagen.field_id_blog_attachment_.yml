@@ -1,0 +1,24 @@
+uuid: 5464db44-ffa2-413a-9982-cda575801b2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_id_blog_attachment_
+    - media.type.imagen
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: media.imagen.field_id_blog_attachment_
+field_name: field_id_blog_attachment_
+entity_type: media
+bundle: imagen
+label: 'Id_blog_attachment '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

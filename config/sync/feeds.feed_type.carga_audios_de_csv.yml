@@ -1,0 +1,83 @@
+uuid: 22771805-6ac9-40ed-af02-5d46b3a78c44
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.archivo_de_audio.field_media_audio_file
+    - media.type.archivo_de_audio
+  module:
+    - media
+label: 'Carga Audios de CSV'
+id: carga_audios_de_csv
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:media'
+processor_configuration:
+  values:
+    bundle: archivo_de_audio
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  ruta:
+    value: Ruta
+    label: Ruta
+    machine_name: ruta
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  id:
+    value: id
+    label: id
+    machine_name: id
+    type: csv
+  creation_date:
+    value: creation_date
+    label: creation_date
+    machine_name: creation_date
+    type: csv
+  newpath:
+    value: newPath
+    label: newPath
+    machine_name: newpath
+    type: csv
+  category:
+    value: category
+    label: category
+    machine_name: category
+    type: csv
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: csv
+mappings:
+  -
+    target: field_media_audio_file
+    map:
+      target_id: ruta
+      description: title
+    settings:
+      language: ''
+      reference_by: filename
+      existing: '0'
+      autocreate: 0

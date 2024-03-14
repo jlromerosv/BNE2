@@ -1,0 +1,14 @@
+uuid: e7ca7840-b745-4f1f-9d79-d96c64bbc901
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.campana
+id: node_type_campana
+entity_type_id: node_type
+entity_id: campana
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

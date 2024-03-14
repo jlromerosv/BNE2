@@ -1,0 +1,13 @@
+uuid: 4330deb9-d1d1-4aa9-b0da-b5aec95d2c49
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail
+  theme:
+    - bne_theme
+id: ancho_completo
+label: 'Ancho completo'
+image_style_mappings: {  }
+breakpoint_group: bne_theme
+fallback_image_style: thumbnail

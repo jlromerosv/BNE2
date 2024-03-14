@@ -1,0 +1,141 @@
+/*
+    Estilos de controles de formulario
+
+    Estilos dedicados a los controles de formulario.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin input_style($padding)
+
+        @mixin radio_style
+
+        @mixin radio_check_style
+
+    ----------------------- MIXINS -----------------------------
+    input_style = Estilo del campo del formulario
+
+    radio_style = Estilo del botón radio del formulario
+
+    radio_check_style = Estilo del botón radio cuando está
+    marcado
+    --------------------- VARIABLES ----------------------------
+    $padding = Tamaño del padding del elemento
+
+    $boder_form_input_error = Estilo de los input cuando hay
+    un error en el formulario
+
+    $main_color_1 / 2 / 5 / 6 = Color principal de tipo 1 / 2 / 5 / 6
+
+    $border_form_radio_error = Tipo de borde del botón radio
+    cuando hay errores
+
+    $form_error = Color del error en el formulario
+
+    $checkbox_shadow = Tipo de sombra del checkbox
+
+    $outline_form_check_error = Borde rojo para cuando hay error
+    en el checkbox
+*/
+
+
+
+
+.form-item input[type="text"].error,
+.form-item input[type="email"].error,
+.form-item input[type="password"].error,
+.form-item input[type="number"].error,
+.form-item textarea.error,
+.form-item select.error {
+    border: none;
+    border-bottom: $border_form_input_error;
+}
+
+
+input[type='radio'] {
+    @include radio_style(15px, 0.5px);
+}
+
+input[type='radio']:hover {
+    @include radio_style(15px, 1px);
+}
+
+input[type='radio']::before {
+    @include radio_check_style(7px, 3px);
+}
+
+input[type='radio']:checked::before {
+    background-color: $main_color_1;
+}
+
+input[type='radio'].error {
+    border: $border_form_radio_error;
+}
+
+input[type='radio'].error:checked:before {
+    background-color: $form_error;
+}
+
+
+input[type="checkbox"] {
+    box-shadow: $checkbox_shadow;
+}
+
+input[type="checkbox"].error {
+    outline: $outline_form_check_error;
+}
+
+
+/* CHOSEN */
+
+.chosen-container {
+    font-size: 15px;
+    background-color: $main_color_4;
+    .chosen-single {
+        border: none;
+        background: none;
+        box-shadow: none;
+        border-bottom: $border_bottom_input;
+        border-radius: 0;
+        b {
+            filter: invert(21%) sepia(73%) saturate(489%) hue-rotate(163deg) brightness(57%) contrast(90%);
+            transform: rotateZ(270deg) translateX(4px);
+        }
+    }
+
+    .chosen-results {
+        display: none;
+        .active-result {
+            background-color: $main_color_5;
+            color: $blanco;
+            border-bottom: 1px solid $blanco;
+        }
+    }
+
+    &-active.chosen-with-drop {
+        .chosen-single {
+            border: none;
+            background: none;
+            box-shadow: none;
+            b {
+                transform: rotateZ(-180deg) translateX(8px);
+            }
+        }
+
+        .chosen-results {
+            display: block;
+        }
+    }
+
+    &.select-dark {
+        .active-result {
+            background-color: $main_color_6;
+        }
+    }
+
+    &.error {
+        .chosen-single {
+            border: none;
+            border-bottom: $border_form_input_error;
+        }
+    }
+}

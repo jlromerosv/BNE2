@@ -1,0 +1,45 @@
+uuid: 94dab6b4-4ecd-4214-b7d8-ce09a01a528e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tipo_de_alerta.field_color
+    - field.field.taxonomy_term.tipo_de_alerta.field_color_texto
+    - taxonomy.vocabulary.tipo_de_alerta
+  module:
+    - color_field
+    - text
+id: taxonomy_term.tipo_de_alerta.default
+targetEntityType: taxonomy_term
+bundle: tipo_de_alerta
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_color_texto:
+    type: color_field_formatter_text
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

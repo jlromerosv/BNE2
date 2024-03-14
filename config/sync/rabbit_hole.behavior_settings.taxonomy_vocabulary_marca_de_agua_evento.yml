@@ -1,0 +1,14 @@
+uuid: 61cfce72-b998-4a9d-ab40-5f5b47d9ff5f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.marca_de_agua_evento
+id: taxonomy_vocabulary_marca_de_agua_evento
+entity_type_id: taxonomy_vocabulary
+entity_id: marca_de_agua_evento
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

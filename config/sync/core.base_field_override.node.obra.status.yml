@@ -1,0 +1,22 @@
+uuid: 966e9121-8dae-47d6-a663-e627331cc90d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+id: node.obra.status
+field_name: status
+entity_type: node
+bundle: obra
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

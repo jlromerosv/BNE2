@@ -1,0 +1,18 @@
+uuid: 514098a8-6eb3-44c4-8f5f-5f74a8e362fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad_generica
+id: node.actividad_generica.title
+field_name: title
+entity_type: node
+bundle: actividad_generica
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,4 @@
+services:
+  bne_busquedas.consultas:
+    class: 'Drupal\bne_busquedas\Services\Consultas'
+

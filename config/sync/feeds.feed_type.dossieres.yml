@@ -1,0 +1,260 @@
+uuid: 248c04b2-3452-4728-b9ed-15e943ec5f09
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.dossier.created
+    - core.base_field_override.node.dossier.path
+    - core.base_field_override.node.dossier.title
+    - field.field.node.dossier.body
+    - field.field.node.dossier.field_archivos
+    - field.field.node.dossier.field_contenidos_relacionados
+    - field.field.node.dossier.field_domain_access
+    - field.field.node.dossier.field_enlaces
+    - field.field.node.dossier.field_galeria_de_imagenes
+    - field.field.node.dossier.field_id_externo
+    - field.field.node.dossier.field_tipos
+    - field.field.node.dossier.field_videos
+    - node.type.dossier
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      85f13df1-2b2a-4881-83e3-18440a062803:
+        invert: false
+        uuid: 85f13df1-2b2a-4881-83e3-18440a062803
+        plugin: required
+        source: id_externo
+        weight: 0
+        label: Obligatorio
+      8807b7bc-0b96-490b-a478-e1812df4142b:
+        separator: '}'
+        limit: null
+        uuid: 8807b7bc-0b96-490b-a478-e1812df4142b
+        plugin: explode
+        source: rutaarchivo
+        weight: 0
+        label: Explode
+      19193de0-d963-43ac-a538-e8cd5c3aa882:
+        separator: '}'
+        limit: null
+        uuid: 19193de0-d963-43ac-a538-e8cd5c3aa882
+        plugin: explode
+        source: enlacesexternostexto
+        weight: 0
+        label: Explode
+      bd293494-e000-4f7a-9341-573c959f7c87:
+        separator: '}'
+        limit: null
+        uuid: bd293494-e000-4f7a-9341-573c959f7c87
+        plugin: explode
+        source: enlacesexternosurl
+        weight: 0
+        label: Explode
+      78ba939e-394b-41d0-87b0-d6d43e5c7e58:
+        separator: '}'
+        limit: null
+        uuid: 78ba939e-394b-41d0-87b0-d6d43e5c7e58
+        plugin: explode
+        source: listacontenidosrelacionados
+        weight: 0
+        label: Explode
+      e279b5b2-1824-463a-9016-407e77ca9b17:
+        default_value: 'Dossier exposiciones'
+        only_if_empty: false
+        uuid: e279b5b2-1824-463a-9016-407e77ca9b17
+        plugin: default_value
+        source: tipo_dossier_por_tamper
+        weight: 0
+        label: 'Set value or default value: Dossier'
+label: Dossieres
+id: dossieres
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: dossier
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  alias:
+    value: Alias
+    label: Alias
+    machine_name: alias
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  rutaarchivo:
+    value: RutaArchivo
+    label: RutaArchivo
+    machine_name: rutaarchivo
+    type: csv
+  enlacesexternosurl:
+    value: EnlacesExternosURL
+    label: EnlacesExternosURL
+    machine_name: enlacesexternosurl
+    type: csv
+  enlacesexternostexto:
+    value: EnlacesExternosTexto
+    label: EnlacesExternosTexto
+    machine_name: enlacesexternostexto
+    type: csv
+  rutavideo:
+    value: RutaVideo
+    label: RutaVideo
+    machine_name: rutavideo
+    type: csv
+  linkgaleriaimagenes:
+    value: LinkGaleriaImagenes
+    label: LinkGaleriaImagenes
+    machine_name: linkgaleriaimagenes
+    type: csv
+  listacontenidosrelacionados:
+    value: ListaContenidosRelacionados
+    label: ListaContenidosRelacionados
+    machine_name: listacontenidosrelacionados
+    type: csv
+  tipo_dossier_por_tamper:
+    value: Tipo_dossier_por_tamper
+    label: Tipo_dossier_por_tamper
+    machine_name: tipo_dossier_por_tamper
+    type: csv
+mappings:
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: path
+    map:
+      alias: alias
+      pathauto: ''
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_archivos
+    map:
+      target_id: rutaarchivo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_enlaces
+    map:
+      uri: enlacesexternosurl
+      title: enlacesexternostexto
+    settings:
+      language: null
+  -
+    target: field_videos
+    map:
+      target_id: rutavideo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_galeria_de_imagenes
+    map:
+      target_id: linkgaleriaimagenes
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_contenidos_relacionados
+    map:
+      target_id: listacontenidosrelacionados
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_tipos
+    map:
+      target_id: tipo_dossier_por_tamper
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false

@@ -1,0 +1,14 @@
+uuid: 73a168f2-b13b-4fed-90db-b31ae4c01781
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.amigos_bne_es
+  module:
+    - domain_access
+id: domain_access_add_editor_action.amigos_bne_es
+label: 'Add editors to the Fundación de Amigos de la BNE domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: amigos_bne_es

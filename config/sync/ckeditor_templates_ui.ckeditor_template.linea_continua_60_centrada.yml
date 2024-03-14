@@ -1,0 +1,12 @@
+uuid: 93683632-9565-452e-a506-6dc33cf9dc4f
+langcode: es
+status: true
+dependencies: {  }
+id: linea_continua_60_centrada
+label: 'Linea continua 60% centrada'
+image: ''
+description: ''
+html:
+  value: '<div class="linea-continua-60-izquierda" style="width: 60%; border-bottom-style: solid; border-bottom-color: #444444; border-bottom-width: 1px; margin-left: auto; margin-right: auto">&nbsp;</div>'
+  format: html_full
+weight: 1

@@ -1,0 +1,18 @@
+uuid: bb5453c3-1e02-425a-90fb-349bf546308d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.accesibilidad
+id: taxonomy_term.accesibilidad.name
+field_name: name
+entity_type: taxonomy_term
+bundle: accesibilidad
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

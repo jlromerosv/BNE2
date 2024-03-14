@@ -1,0 +1,28 @@
+uuid: da15ca0a-e129-4e3d-9ad8-bc384cad2a5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icono_svg_
+    - node.type.icono_svg_
+    - taxonomy.vocabulary.colectivo
+id: taxonomy_term.colectivo.field_icono_svg_
+field_name: field_icono_svg_
+entity_type: taxonomy_term
+bundle: colectivo
+label: 'Icono (SVG)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      icono_svg_: icono_svg_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

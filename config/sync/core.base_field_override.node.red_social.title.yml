@@ -1,0 +1,18 @@
+uuid: b9bf0eb1-ae9f-462e-8b1f-c3bd261baae5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+id: node.red_social.title
+field_name: title
+entity_type: node
+bundle: red_social
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

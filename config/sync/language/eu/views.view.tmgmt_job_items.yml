@@ -1,0 +1,54 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ezarri
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+          tags:
+            previous: '‹ aurrekoa'
+            next: 'hurrengoa ›'
+            first: '« lehenengoa'
+            last: 'azkena »'
+      fields:
+        state:
+          label: Egoera
+        label:
+          label: Etiketa
+        type:
+          label: Mota
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Etiketak
+          separator: ', '
+        changed:
+          label: Aldatuta
+        operations:
+          label: Eragiketak
+      arguments:
+        tjid:
+          exception:
+            title: Guztiak
+  checkout:
+    display_options:
+      fields:
+        label:
+          label: Etiketa
+        type:
+          label: Mota
+        word_count:
+          separator: ', '
+        changed:
+          label: Aldatuta
+          separator: ', '
+  submitted:
+    display_title: Bidalia

@@ -1,0 +1,126 @@
+.enlace-destacado {
+  // padding: 15px;
+  // border: 0.5px solid $bne_color_3;
+  // background-color: $bne_color_4;
+  // cursor: pointer;
+  .view-content {
+    .views-row {
+      padding: 20px;
+      border: 0.5px solid $bne_color_3;
+      background-color: $bne_color_4;
+      cursor: pointer;
+      margin-bottom: 2em;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .views-field-field-contenido-generico {
+        .field-content {
+          article {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            h2 {
+              a {
+                pointer-events: none;
+                font-size: 16px;
+                color: $bne_color_2;
+                line-height: 24px;
+                letter-spacing: 0.96px;
+                padding-left: 10px;
+              }
+              &::after {
+                display: none;
+              }
+            }
+            .node__content {
+              svg {
+                width: 24px;
+                height: 24px;
+                .a {
+                  stroke: none;
+                  stroke-width: 0;
+                  fill: $bne_color_2;
+                }
+              }
+            }
+          }
+        }
+      }
+      .views-field-field-icono { 
+          margin-right: 10px;
+          h2{
+              a{
+                  display: none; 
+                  pointer-events: none; 
+              }
+          }
+        .node__content {
+            svg {
+              width: 24px;
+              height: 24px;
+              .a {
+                stroke: none;
+                stroke-width: 0;
+                fill: $bne_color_2;
+              }
+              path{
+                fill: $bne_color_2
+              }
+            }
+          }
+      }
+      .views-field-title {
+          .field-content{
+            font-size: 16px;
+            color: $bne_color_2;
+            line-height: 24px;
+            letter-spacing: 0.96px;
+          }
+      }
+      .views-field-field-enlace {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        .field-content {
+          display: block;
+          width: 100%;
+          height: 100%;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+          }
+        }
+      }
+    }
+    // HOVER ENLACE DESTACADO
+    .views-row:hover {
+      background-color: $bne_color_5;
+      .views-field-field-icono { 
+      .node__content {
+          svg {
+            .a {
+              fill: $blanco;
+            }
+            path{
+              fill: $blanco
+            }
+          }
+        }
+    }
+      .views-field-title {
+          .field-content{
+            color: $blanco;
+          }
+      }
+      
+    }
+    
+  }
+}

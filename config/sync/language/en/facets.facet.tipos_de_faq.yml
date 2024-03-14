@@ -1,0 +1,5 @@
+name: 'Types of FAQ'
+url_alias: 'types _ of _ faq'
+widget:
+  config:
+    reset_text: 'Show all'

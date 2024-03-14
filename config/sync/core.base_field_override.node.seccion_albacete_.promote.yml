@@ -1,0 +1,22 @@
+uuid: d918c118-054d-459b-93c9-19a939cc82c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.promote
+field_name: promote
+entity_type: node
+bundle: seccion_albacete_
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

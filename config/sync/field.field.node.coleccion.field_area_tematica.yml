@@ -1,0 +1,29 @@
+uuid: 21229930-f2d4-4c7f-ac0b-a088102dc6d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area_tematica
+    - node.type.coleccion
+    - taxonomy.vocabulary.tematica_de_catalogo
+id: node.coleccion.field_area_tematica
+field_name: field_area_tematica
+entity_type: node
+bundle: coleccion
+label: 'x_Temática de catálogo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tematica_de_catalogo: tematica_de_catalogo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 0a12ac0f-24c9-4495-97b0-0be7eee677d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_servicio
+id: taxonomy_term.categoria_de_servicio.status
+field_name: status
+entity_type: taxonomy_term
+bundle: categoria_de_servicio
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

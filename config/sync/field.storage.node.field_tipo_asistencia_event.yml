@@ -1,0 +1,24 @@
+uuid: 96d3c4e4-2d78-4bde-9f07-10115bd50de0
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_tipo_asistencia_event
+field_name: field_tipo_asistencia_event
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

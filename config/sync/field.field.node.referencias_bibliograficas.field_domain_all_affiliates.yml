@@ -1,0 +1,21 @@
+uuid: 41fa2b96-e009-4cae-b126-721684e8e220
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.referencias_bibliograficas
+id: node.referencias_bibliograficas.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: referencias_bibliograficas
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

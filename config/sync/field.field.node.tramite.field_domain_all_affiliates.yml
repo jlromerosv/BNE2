@@ -1,0 +1,21 @@
+uuid: d58853f2-cd88-4311-b3db-171859799152
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.tramite
+id: node.tramite.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: tramite
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

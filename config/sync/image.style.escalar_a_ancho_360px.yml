@@ -1,0 +1,15 @@
+uuid: 27c7c85f-7992-4590-a94b-7a6325795e6b
+langcode: es
+status: true
+dependencies: {  }
+name: escalar_a_ancho_360px
+label: 'Escalar a ancho 360px'
+effects:
+  715f61db-d14e-4c6f-9958-f79616618ade:
+    uuid: 715f61db-d14e-4c6f-9958-f79616618ade
+    id: image_scale
+    weight: 1
+    data:
+      width: 360
+      height: null
+      upscale: false

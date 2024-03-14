@@ -1,0 +1,10 @@
+uuid: 428e0d77-aa6b-4b99-a49d-278a67240db3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.listado_noticias
+label: 'Listado Noticias'
+targetEntityType: node
+cache: true

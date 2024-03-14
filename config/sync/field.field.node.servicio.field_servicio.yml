@@ -1,0 +1,27 @@
+uuid: 7bddba67-30aa-4cc8-af22-f967d84a5149
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servicio
+    - node.type.servicio
+id: node.servicio.field_servicio
+field_name: field_servicio
+entity_type: node
+bundle: servicio
+label: 'Servicio principal'
+description: 'Servicio principal'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      servicio: servicio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

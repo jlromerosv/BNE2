@@ -1,0 +1,21 @@
+uuid: abff17d8-86a2-46e6-af06-f9c9d72f599a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.obra
+  module:
+    - text
+id: node.obra.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: obra
+label: 'Datos de edición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

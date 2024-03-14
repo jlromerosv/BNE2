@@ -1,0 +1,14 @@
+uuid: 36d24a38-95ec-40a8-94b3-ed3ed3e5c5e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_documento_institucional
+id: taxonomy_vocabulary_tipo_de_documento_institucional
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_documento_institucional
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

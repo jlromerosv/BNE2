@@ -1,0 +1,391 @@
+uuid: e95b1e04-0eee-43fc-8de8-e2c9b70ef24a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.coleccion.body
+    - field.field.node.coleccion.feeds_item
+    - field.field.node.coleccion.field_alias_tipo_contenido
+    - field.field.node.coleccion.field_archivos
+    - field.field.node.coleccion.field_area_tematica
+    - field.field.node.coleccion.field_audios
+    - field.field.node.coleccion.field_bloquear_la_traduccion_
+    - field.field.node.coleccion.field_catalogos
+    - field.field.node.coleccion.field_coleccion
+    - field.field.node.coleccion.field_contenidos_vinculados
+    - field.field.node.coleccion.field_domain_access
+    - field.field.node.coleccion.field_domain_all_affiliates
+    - field.field.node.coleccion.field_domain_source
+    - field.field.node.coleccion.field_enlace
+    - field.field.node.coleccion.field_enlaces
+    - field.field.node.coleccion.field_enlaces_otros_recursos
+    - field.field.node.coleccion.field_etiqueta_blog
+    - field.field.node.coleccion.field_etiquetas_busqueda
+    - field.field.node.coleccion.field_galeria_de_documentos
+    - field.field.node.coleccion.field_galeria_de_imagenes
+    - field.field.node.coleccion.field_id_externo
+    - field.field.node.coleccion.field_iframe
+    - field.field.node.coleccion.field_imagen_destacada
+    - field.field.node.coleccion.field_imagenes
+    - field.field.node.coleccion.field_lugares
+    - field.field.node.coleccion.field_meta_tags
+    - field.field.node.coleccion.field_obras
+    - field.field.node.coleccion.field_orden
+    - field.field.node.coleccion.field_otros_recursos
+    - field.field.node.coleccion.field_publicaciones
+    - field.field.node.coleccion.field_requisitos
+    - field.field.node.coleccion.field_tipos
+    - field.field.node.coleccion.field_videos
+    - field.field.node.coleccion.field_yoast_seo
+    - node.type.coleccion
+    - views.view.leer_texto_completo_de_la_coleccion
+    - views.view.widget_multimedia_enlaces
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - metatag
+    - text
+    - user
+    - views
+    - yoast_seo
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: DESCRIPCION
+          context_mapping: {  }
+        components:
+          ebbb0c2f-6988-4ace-96e4-ea1d84d0181f:
+            uuid: ebbb0c2f-6988-4ace-96e4-ea1d84d0181f
+            region: content
+            configuration:
+              id: 'views_block:leer_texto_completo_de_la_coleccion-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: OBRAS
+          context_mapping: {  }
+        components:
+          02f74ce6-9dcf-4785-8dde-c96d1f48d974:
+            uuid: 02f74ce6-9dcf-4785-8dde-c96d1f48d974
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_21'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          6755e3c7-ab93-487f-8c14-0f069efa7551:
+            uuid: 6755e3c7-ab93-487f-8c14-0f069efa7551
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_22'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          415597a9-5ac8-4b6d-b284-3255ee859147:
+            uuid: 415597a9-5ac8-4b6d-b284-3255ee859147
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_23'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          3fc7eb01-a654-4f13-83bc-84d6586e1d2f:
+            uuid: 3fc7eb01-a654-4f13-83bc-84d6586e1d2f
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_25'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: SUBCOLECCIONES
+          context_mapping: {  }
+        components:
+          2e1fe0e9-4cd9-4782-ba65-727249955540:
+            uuid: 2e1fe0e9-4cd9-4782-ba65-727249955540
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_24'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'BLOQUE MULTIPLE'
+          context_mapping: {  }
+        components:
+          1c73d817-b182-4bf5-bef4-715ae7f7b065:
+            uuid: 1c73d817-b182-4bf5-bef4-715ae7f7b065
+            region: content
+            configuration:
+              id: 'field_block:node:coleccion:field_lugares'
+              label: 'Donde consultar'
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a4651011-7e75-42d9-868b-f0828dabb32d:
+            uuid: a4651011-7e75-42d9-868b-f0828dabb32d
+            region: content
+            configuration:
+              id: 'field_block:node:coleccion:field_publicaciones'
+              label: 'Publicaciones y bibliografía'
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b165c939-b0d3-450c-837c-e6711ab023a5:
+            uuid: b165c939-b0d3-450c-837c-e6711ab023a5
+            region: content
+            configuration:
+              id: 'field_block:node:coleccion:field_catalogos'
+              label: Catálogos
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          1a5b8066-7f61-4bef-be15-4039afa3dd08:
+            uuid: 1a5b8066-7f61-4bef-be15-4039afa3dd08
+            region: content
+            configuration:
+              id: 'field_block:node:coleccion:field_otros_recursos'
+              label: 'Otros recursos'
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          11a3d093-f153-405c-a7fc-cf1326082dd0:
+            uuid: 11a3d093-f153-405c-a7fc-cf1326082dd0
+            region: content
+            configuration:
+              id: 'field_block:node:coleccion:field_enlaces_otros_recursos'
+              label: 'Enlaces a otros recursos'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.coleccion.full
+targetEntityType: node
+bundle: coleccion
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_area_tematica:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_catalogos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_coleccion:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_enlace:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_etiquetas_busqueda:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_lugares:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_obras:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_tipos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_yoast_seo:
+    type: yoastseo_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_audios: true
+  field_bloquear_la_traduccion_: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_enlaces_otros_recursos: true
+  field_etiqueta_blog: true
+  field_galeria_de_documentos: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagenes: true
+  field_orden: true
+  field_otros_recursos: true
+  field_publicaciones: true
+  field_requisitos: true
+  field_videos: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,18 @@
+uuid: 8b192d44-5c4e-45bd-bb3d-4eeae4e93ad1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+id: node.destacados_manuales.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: destacados_manuales
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

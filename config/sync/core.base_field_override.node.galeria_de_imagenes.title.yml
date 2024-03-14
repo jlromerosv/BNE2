@@ -1,0 +1,18 @@
+uuid: d835f2bc-9764-428f-af76-149414e370d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.title
+field_name: title
+entity_type: node
+bundle: galeria_de_imagenes
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

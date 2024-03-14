@@ -1,0 +1,21 @@
+uuid: 60aae5f2-ff99-4473-8628-601af6271566
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.tramite
+  module:
+    - datetime
+id: node.tramite.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: tramite
+label: 'Fecha inicio solicitudes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

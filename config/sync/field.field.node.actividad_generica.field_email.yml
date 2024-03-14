@@ -1,0 +1,19 @@
+uuid: 52677cc7-df43-4e7b-8e91-7b2b4f294bcb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.actividad_generica
+id: node.actividad_generica.field_email
+field_name: field_email
+entity_type: node
+bundle: actividad_generica
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

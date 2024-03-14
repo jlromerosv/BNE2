@@ -1,0 +1,15 @@
+uuid: ae352cff-1d48-42c1-b133-b2a81d987a4d
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_obras_imagenes_md
+label: 'Bloque obras imagenes MD'
+effects:
+  43de39a7-7065-4173-ae77-f73fa4a6b17f:
+    uuid: 43de39a7-7065-4173-ae77-f73fa4a6b17f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 736
+      anchor: center-center

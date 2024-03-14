@@ -1,0 +1,18 @@
+uuid: c41c5b68-979d-46a0-a715-d7cc05de3600
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---fabne---sidebar---hazte-am
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.mx1---fabne---sidebar---hazte-am
+target_entity_type_id: menu_link_content
+target_bundle: mx1---fabne---sidebar---hazte-am
+default_langcode: site_default
+language_alterable: false

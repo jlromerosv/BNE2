@@ -1,0 +1,15 @@
+uuid: 01064b45-955f-4be3-898e-d908b32a8e19
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_publicaciones_home_md
+label: 'Bloque publicaciones home MD'
+effects:
+  cf5e8b2b-522e-4ee4-a7f4-00273ee1f0a5:
+    uuid: cf5e8b2b-522e-4ee4-a7f4-00273ee1f0a5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 383
+      height: 507
+      anchor: center-center

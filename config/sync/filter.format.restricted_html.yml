@@ -1,0 +1,19 @@
+uuid: 751bcf7e-1890-415a-9863-a28fef3667e3
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+name: 'Restricted html'
+format: restricted_html
+weight: 0
+filters:
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types: {  }

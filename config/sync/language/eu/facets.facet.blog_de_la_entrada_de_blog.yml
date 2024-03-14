@@ -1,0 +1,5 @@
+name: 'Hautatu bloga'
+url_alias: bloga
+widget:
+  config:
+    reset_text: 'Erakutsi dena'

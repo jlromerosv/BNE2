@@ -1,0 +1,185 @@
+uuid: ce93dbbd-0de9-4ab8-8f1a-3810f15f0d72
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.persona.body
+    - field.field.node.persona.field_alias_tipo_contenido
+    - field.field.node.persona.field_archivos
+    - field.field.node.persona.field_area_de_transparencia
+    - field.field.node.persona.field_audios
+    - field.field.node.persona.field_contenidos_relacionados
+    - field.field.node.persona.field_contenidos_vinculados
+    - field.field.node.persona.field_domain_access
+    - field.field.node.persona.field_domain_all_affiliates
+    - field.field.node.persona.field_domain_source
+    - field.field.node.persona.field_enlaces
+    - field.field.node.persona.field_etiquetas_busqueda
+    - field.field.node.persona.field_galeria_de_imagenes
+    - field.field.node.persona.field_iframe
+    - field.field.node.persona.field_imagen_cabecera
+    - field.field.node.persona.field_imagen_destacada
+    - field.field.node.persona.field_imagen_representativa
+    - field.field.node.persona.field_imagenes
+    - field.field.node.persona.field_meta_tags
+    - field.field.node.persona.field_no_mostrar_inverso
+    - field.field.node.persona.field_subtitulo
+    - field.field.node.persona.field_tipos
+    - field.field.node.persona.field_valor
+    - field.field.node.persona.field_videos
+    - node.type.persona
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          1ad5aa53-af01-42f1-aa3d-0b6dcaa0dc11:
+            uuid: 1ad5aa53-af01-42f1-aa3d-0b6dcaa0dc11
+            region: first
+            configuration:
+              id: 'field_block:node:persona:field_imagen_representativa'
+              label: 'Imagen representativa'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: imagen_ficha_persona
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          bf2a3673-4ffc-4a04-8ccf-f943c73f3b06:
+            uuid: bf2a3673-4ffc-4a04-8ccf-f943c73f3b06
+            region: second
+            configuration:
+              id: 'field_block:node:persona:field_tipos'
+              label: 'Tipos de persona'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0a2102e5-fc3c-49ac-bbcc-d7f0926b54a4:
+            uuid: 0a2102e5-fc3c-49ac-bbcc-d7f0926b54a4
+            region: second
+            configuration:
+              id: 'field_block:node:persona:field_valor'
+              label: Cargo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          f981719f-b031-4487-911a-d03572081075:
+            uuid: f981719f-b031-4487-911a-d03572081075
+            region: second
+            configuration:
+              id: 'field_block:node:persona:body'
+              label: Descripción
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.persona.full
+targetEntityType: node
+bundle: persona
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_imagen_representativa:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subtitulo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tipos:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_de_transparencia: true
+  field_audios: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_imagenes: true
+  field_iframe: true
+  field_imagen_cabecera: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_valor: true
+  field_videos: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

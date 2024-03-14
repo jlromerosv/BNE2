@@ -1,0 +1,8 @@
+uuid: d84b5b29-1b7d-4886-bbc0-aa519e455f1b
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría contacto'
+vid: categoria_contacto
+description: ''
+weight: 0

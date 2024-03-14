@@ -1,0 +1,77 @@
+/*
+    ========== LAYOUT BUILDER ==========
+
+    Estilos generales aplicados al layout builder
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    responsive-img = Hace que las imágenes sean adaptables
+
+    ----------------------- VARIABLES -------------------------
+    $label_layout_builder = Tamaño de fuente del label de
+    layout builder
+
+    $border_layout_builder_separator_item = Estilos que forman
+    un separador de los diferentes ítems que se muestran
+*/
+.layout--twocol-section {
+    @media (min-width: 992px) {
+        flex-wrap: nowrap;   
+    }
+    .layout__region {
+        @media (min-width: 992px) {
+            margin: 0 7.5px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        .block-layout-builder {
+            margin: 20px 0;
+            .field__label {
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .field__items {
+                & > .field__item:not(:first-child) {
+                    border-top: $border_layout_builder_separator_item;
+                }
+                & > .field__item {
+                    padding: 15px;
+                    h2 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Layout de 67-33 */
+.layout--twocol-section--67-33 {
+    .layout__region--second {
+        .field--name-field-imagen-representativa {
+            img {
+                @include responsive-img;
+            }
+        }
+    }
+}
+
+
+/* Layout de 25-75 */
+.layout--twocol-section--25-75 {
+    .layout__region--first {
+        .field--name-field-imagen-representativa {
+            img {
+                @include responsive-img;
+            }
+        }
+    }
+}

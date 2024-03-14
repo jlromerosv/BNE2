@@ -1,0 +1,21 @@
+uuid: 4c9479bb-0d13-42be-8e07-5ab20aa49128
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informacion_adicional
+    - node.type.evento
+  module:
+    - text
+id: node.evento.field_informacion_adicional
+field_name: field_informacion_adicional
+entity_type: node
+bundle: evento
+label: 'Información adicional'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: ea1addf2-e73f-405a-a115-ee5d4772f169
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.convocatoria
+  module:
+    - path
+id: node.convocatoria.path
+field_name: path
+entity_type: node
+bundle: convocatoria
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

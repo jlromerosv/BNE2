@@ -1,0 +1,29 @@
+uuid: c2037af6-2bb8-4dc9-9a84-934c2f010884
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bne_theme
+id: bne_theme_enlacesdeayudaalanavegacion
+theme: bne_theme
+region: pre_content
+weight: -61
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/user/register\r\n/user/login\r\n/user/password\r\n/node/26823\r\n/node/31856\r\n"

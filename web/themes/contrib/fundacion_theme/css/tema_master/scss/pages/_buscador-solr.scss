@@ -1,0 +1,87 @@
+/*
+    ========== BUSCADOR SOLR ==========
+    
+    Estilos dedicados a los enlaces de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+
+        @mixin after-icon($size, $right, $icon)
+
+        @mixin display_flex($direction, $justify_content, $align_items)        
+
+    ------------------------- MIXINS --------------------------
+
+    after-icon = Icono previo al texto del enlace
+
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+
+    $size = Tamaño del icono
+
+    $right = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+
+.ps-buscador-solr {
+    .views-exposed-form {
+        .form-item{
+            &-field-domain-access {
+                display: none;
+            }
+
+            &-search-api-fulltext {
+                width: 100%;
+                @include display_flex(row, flex-end, center);
+                position: relative;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    background-color: $main_color_1;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+
+                &::after {
+                    @include after-icon(18px, 8px, $search_icon);
+                    filter: $filter_main_color_1_mod_1;
+                }
+
+                label {
+                    display: none;
+                }
+
+                input {
+                    padding-right: 30px;
+                    width: 40%;
+                    border-bottom: none;
+                    padding: 10px 5px;
+                }
+            }
+        }
+    }
+
+    .view-content {
+        padding-bottom: 30px;
+        .views-row {
+            &:not(:first-child) {
+                border-top: 2px solid #ccc;
+                margin-top: 30px;
+                padding-top: 30px;
+            }
+        }
+    }
+}

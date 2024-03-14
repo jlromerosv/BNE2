@@ -1,0 +1,12 @@
+uuid: b0022b74-e456-4b65-aa83-6d3f07529708
+langcode: es
+status: true
+dependencies: {  }
+id: tabla_autoajustable
+label: 'Tabla AutoAjustable'
+image: ''
+description: ''
+html:
+  value: "<p>&nbsp;</p>\r\n\r\n<div class=\"ck-tabla-autoajustable\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\">&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: root_formato_de_texto
+weight: 9

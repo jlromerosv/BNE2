@@ -1,0 +1,20 @@
+uuid: 3eaf655b-e77c-40d3-bd71-4b3371e5d7f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_campana
+  module:
+    - path
+id: taxonomy_term.tipo_de_campana.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_campana
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

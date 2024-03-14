@@ -1,0 +1,49 @@
+/*
+    ========== LANGUAGE SWITCHER ==========
+
+    Estilos dedicados a la vista social block.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $blanco = Hace referencia al color blanco
+
+*/
+
+.language-switcher-language-url {
+    margin-right: 20px;
+    .links {
+        @include display_flex(row, initial, initial);
+        list-style: none;
+
+        li {
+            &:not(:first-child) {
+                &::before {
+                    content: '|';
+                    color: $blanco;
+                    margin: 0 5px;
+                }
+            }
+
+            .is-active {
+                color: $blanco;
+                text-decoration: underline;
+            }
+
+            a {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

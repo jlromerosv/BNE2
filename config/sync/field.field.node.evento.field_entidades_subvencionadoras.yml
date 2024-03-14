@@ -1,0 +1,30 @@
+uuid: e768972b-5807-4289-bbaf-7f7bf01a66b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidades_subvencionadoras
+    - node.type.entidad
+    - node.type.entidad_referencia_
+    - node.type.evento
+id: node.evento.field_entidades_subvencionadoras
+field_name: field_entidades_subvencionadoras
+entity_type: node
+bundle: evento
+label: Subvenciona
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+      entidad_referencia_: entidad_referencia_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: entidad
+field_type: entity_reference

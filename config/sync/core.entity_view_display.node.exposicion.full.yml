@@ -1,0 +1,552 @@
+uuid: 851ebbd2-8cec-400a-b09b-e683811dcd89
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.exposicion.title
+    - core.entity_view_display.comment.comentario.default
+    - core.entity_view_mode.node.full
+    - field.field.node.exposicion.body
+    - field.field.node.exposicion.field_alertas
+    - field.field.node.exposicion.field_archivos
+    - field.field.node.exposicion.field_area_tematica
+    - field.field.node.exposicion.field_audios
+    - field.field.node.exposicion.field_colaboradores
+    - field.field.node.exposicion.field_comentarios
+    - field.field.node.exposicion.field_contenidos_relacionados
+    - field.field.node.exposicion.field_domain_access
+    - field.field.node.exposicion.field_domain_all_affiliates
+    - field.field.node.exposicion.field_domain_source
+    - field.field.node.exposicion.field_email
+    - field.field.node.exposicion.field_enlace
+    - field.field.node.exposicion.field_enlace_formulario_inscripc
+    - field.field.node.exposicion.field_entidades
+    - field.field.node.exposicion.field_entidades_subvencionadoras
+    - field.field.node.exposicion.field_etiquetas_busqueda
+    - field.field.node.exposicion.field_fecha_fin
+    - field.field.node.exposicion.field_fecha_inicio
+    - field.field.node.exposicion.field_galeria_de_imagenes
+    - field.field.node.exposicion.field_horarios
+    - field.field.node.exposicion.field_horarios_especificos
+    - field.field.node.exposicion.field_imagen_destacada
+    - field.field.node.exposicion.field_imagenes
+    - field.field.node.exposicion.field_informacion_adicional
+    - field.field.node.exposicion.field_intervalo_add_to_cal
+    - field.field.node.exposicion.field_lugar
+    - field.field.node.exposicion.field_marca_agua
+    - field.field.node.exposicion.field_mas_informacion
+    - field.field.node.exposicion.field_meta_tags
+    - field.field.node.exposicion.field_patrocinadores
+    - field.field.node.exposicion.field_precio
+    - field.field.node.exposicion.field_telefonos
+    - field.field.node.exposicion.field_tipo
+    - field.field.node.exposicion.field_tipos
+    - field.field.node.exposicion.field_url
+    - field.field.node.exposicion.field_videos
+    - field.field.node.exposicion.field_yoast_seo
+    - node.type.exposicion
+  module:
+    - comment
+    - datetime
+    - layout_builder
+    - layout_discovery
+    - link
+    - metatag
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          b94d500d-a9a5-448d-b31b-b0b9b9f4f041:
+            uuid: b94d500d-a9a5-448d-b31b-b0b9b9f4f041
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_fecha_inicio'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          32273965-8bff-481a-8b04-7e31c8ea29a9:
+            uuid: 32273965-8bff-481a-8b04-7e31c8ea29a9
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_fecha_fin'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          13805648-3abb-4c42-80d2-5762ce7ea79d:
+            uuid: 13805648-3abb-4c42-80d2-5762ce7ea79d
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          79d9c044-b3f8-48be-ae8f-0e10816cb3c3:
+            uuid: 79d9c044-b3f8-48be-ae8f-0e10816cb3c3
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_horarios'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: true
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          7e98d4a1-2b81-4e31-b409-489e5367ae7f:
+            uuid: 7e98d4a1-2b81-4e31-b409-489e5367ae7f
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_precio'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          f866aa2a-42dd-4e18-848d-e7a8e0c738c9:
+            uuid: f866aa2a-42dd-4e18-848d-e7a8e0c738c9
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_lugar'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: true
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          85ad49a1-5da8-483d-9c82-8c06391ffdb9:
+            uuid: 85ad49a1-5da8-483d-9c82-8c06391ffdb9
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_telefonos'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+          9993a21e-8aea-4eb9-9a65-5344030c67d5:
+            uuid: 9993a21e-8aea-4eb9-9a65-5344030c67d5
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_enlace'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 12
+            additional: {  }
+          84f6ab91-e4e0-4c7a-86ed-a61f5984cb0e:
+            uuid: 84f6ab91-e4e0-4c7a-86ed-a61f5984cb0e
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_url'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 13
+            additional: {  }
+          b99dd36a-eb41-410a-83b6-0bd776266a6d:
+            uuid: b99dd36a-eb41-410a-83b6-0bd776266a6d
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_email'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 14
+            additional: {  }
+          b27f1a5c-0409-4efb-8677-62d3fe3d55b9:
+            uuid: b27f1a5c-0409-4efb-8677-62d3fe3d55b9
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_patrocinadores'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: true
+                third_party_settings: {  }
+            weight: 15
+            additional: {  }
+          1d6d202d-ce94-4d64-b110-854449c40e3e:
+            uuid: 1d6d202d-ce94-4d64-b110-854449c40e3e
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_entidades_subvencionadoras'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: true
+                third_party_settings: {  }
+            weight: 16
+            additional: {  }
+          84bef8c1-d979-4eb4-b7a8-f0d0ff2de1b9:
+            uuid: 84bef8c1-d979-4eb4-b7a8-f0d0ff2de1b9
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_colaboradores'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: true
+                third_party_settings: {  }
+            weight: 17
+            additional: {  }
+          e83b6914-053c-4a06-8cd5-cdfd1739f4eb:
+            uuid: e83b6914-053c-4a06-8cd5-cdfd1739f4eb
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_meta_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: metatag_empty_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 19
+            additional: {  }
+          5ee8525b-d336-4d86-b84c-066a9128884c:
+            uuid: 5ee8525b-d336-4d86-b84c-066a9128884c
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_tipos'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          946bd045-d596-486f-aabe-40e6aa468489:
+            uuid: 946bd045-d596-486f-aabe-40e6aa468489
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          fc7708c8-e1af-4354-8abc-538c1b91cf0b:
+            uuid: fc7708c8-e1af-4354-8abc-538c1b91cf0b
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_intervalo_add_to_cal'
+              label: 'Añadir a Calendario'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: addtocal_view
+                label: above
+                settings:
+                  timezone_override: ''
+                  date_format: 'l, j F Y | H:i'
+                  event_title: '[node:title]'
+                  location: ''
+                  description: '[node:url]'
+                  past_events: true
+                  separator: '-'
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          c5eda3d8-84cc-4efa-aa2f-42300367e527:
+            uuid: c5eda3d8-84cc-4efa-aa2f-42300367e527
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: crop_libre
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.exposicion.full
+targetEntityType: node
+bundle: exposicion
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_colaboradores:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_comentarios:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_enlace:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_entidades_subvencionadoras:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_horarios:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_lugar:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_patrocinadores:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_precio:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_telefonos:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_tipos:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+hidden:
+  field_alertas: true
+  field_archivos: true
+  field_area_tematica: true
+  field_audios: true
+  field_contenidos_relacionados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace_formulario_inscripc: true
+  field_entidades: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_imagenes: true
+  field_horarios_especificos: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_informacion_adicional: true
+  field_intervalo_add_to_cal: true
+  field_marca_agua: true
+  field_mas_informacion: true
+  field_tipo: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

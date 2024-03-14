@@ -1,0 +1,8 @@
+uuid: af79096e-bbbf-4224-ac55-07c1500fe69e
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Tipo de anuncio'
+vid: tipo_de_anuncio
+description: ''
+weight: 0

@@ -1,0 +1,9 @@
+uuid: d2420dee-3636-439b-a982-e1e8b8a45552
+langcode: es
+status: true
+dependencies: {  }
+id: administrador_de_feria
+label: 'x_Administrador temporal'
+weight: 3
+is_admin: null
+permissions: {  }

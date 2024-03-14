@@ -1,0 +1,24 @@
+uuid: 539d16ee-822c-4cac-a913-3a399ef35ba1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bloquear_la_traduccion_
+    - node.type.coleccion
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.coleccion.field_bloquear_la_traduccion_
+field_name: field_bloquear_la_traduccion_
+entity_type: node
+bundle: coleccion
+label: 'Bloquear la traducción '
+description: 'Para bloquear la traduccción automática, escribir bloqueartraduccion'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

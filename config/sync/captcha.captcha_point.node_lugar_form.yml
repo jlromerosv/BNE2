@@ -1,0 +1,7 @@
+uuid: bc0d92e4-756c-4d73-bfd8-2cdff78067e7
+langcode: es
+status: false
+dependencies: {  }
+formId: node_lugar_form
+captchaType: default
+label: node_lugar_form

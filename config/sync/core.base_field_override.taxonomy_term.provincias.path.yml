@@ -1,0 +1,20 @@
+uuid: e8c409a4-aa0a-4831-9b88-61c48978f8fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.provincias
+  module:
+    - path
+id: taxonomy_term.provincias.path
+field_name: path
+entity_type: taxonomy_term
+bundle: provincias
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: 6bcd7452-8045-4ac5-a2a3-36d2298ee63a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autor
+id: node.autor.publish_on
+field_name: publish_on
+entity_type: node
+bundle: autor
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

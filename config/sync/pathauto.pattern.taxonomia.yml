@@ -1,0 +1,29 @@
+uuid: 8ee9651d-c1ad-420c-94a3-ee529b879c22
+langcode: es
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomia
+label: Taxonomía
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:name]'
+selection_criteria:
+  50e276a2-7c6b-49fc-8730-82ab25ab9c60:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 50e276a2-7c6b-49fc-8730-82ab25ab9c60
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      area_de_transparencia: area_de_transparencia
+      area_tematica: area_tematica
+      colectivo: colectivo
+      tipo_convocatoria: tipo_convocatoria
+      tipo_de_campana: tipo_de_campana
+      tipo_de_lugar: tipo_de_lugar
+      tipo_iniciativa: tipo_iniciativa
+selection_logic: and
+weight: 2
+relationships: {  }

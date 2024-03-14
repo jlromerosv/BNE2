@@ -1,0 +1,10 @@
+uuid: cda7d6f9-65ae-48fe-9534-9e2a385bb52c
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.imagen_con_pie_de_foto
+label: 'Imagen con pié de foto'
+targetEntityType: media
+cache: true

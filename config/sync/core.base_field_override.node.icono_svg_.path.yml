@@ -1,0 +1,20 @@
+uuid: 35c15301-7f0f-4527-bae8-dc2e21e110a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.icono_svg_
+  module:
+    - path
+id: node.icono_svg_.path
+field_name: path
+entity_type: node
+bundle: icono_svg_
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,29 @@
+uuid: 948663fd-a2f1-4d94-b83b-10120e6f2ef6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipos
+    - node.type.exposicion
+    - taxonomy.vocabulary.tipo_de_exposicion
+id: node.exposicion.field_tipos
+field_name: field_tipos
+entity_type: node
+bundle: exposicion
+label: 'Tipo de exposición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_exposicion: tipo_de_exposicion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

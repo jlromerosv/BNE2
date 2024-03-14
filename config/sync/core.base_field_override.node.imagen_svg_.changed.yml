@@ -1,0 +1,18 @@
+uuid: 0b421b90-dfa8-4130-bfc2-85227f02a094
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+id: node.imagen_svg_.changed
+field_name: changed
+entity_type: node
+bundle: imagen_svg_
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

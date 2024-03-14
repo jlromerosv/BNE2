@@ -1,0 +1,28 @@
+uuid: cdd0e7d3-55f8-4b40-8b0e-ce26610f9f3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_galeria_de_imagenes
+    - node.type.entrada_de_blog
+    - node.type.galeria_de_imagenes
+id: node.entrada_de_blog.field_galeria_de_imagenes
+field_name: field_galeria_de_imagenes
+entity_type: node
+bundle: entrada_de_blog
+label: 'Galería de imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      galeria_de_imagenes: galeria_de_imagenes
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

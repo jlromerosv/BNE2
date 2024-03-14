@@ -1,0 +1,22 @@
+uuid: 59a96b10-57b6-455d-856b-c9dd56161072
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.buzones_de_envio
+id: taxonomy_term.buzones_de_envio.status
+field_name: status
+entity_type: taxonomy_term
+bundle: buzones_de_envio
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

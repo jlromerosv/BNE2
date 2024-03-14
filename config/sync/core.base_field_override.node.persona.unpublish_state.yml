@@ -1,0 +1,20 @@
+uuid: 1ef3ad42-629f-4a2d-9f6a-1dd5000d35a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.persona
+  module:
+    - options
+id: node.persona.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: persona
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

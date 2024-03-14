@@ -1,0 +1,4 @@
+title: Kontaktatu
+settings:
+  confirmation_message: 'Zure mezua bidali da.'
+  confirmation_url: node/2441

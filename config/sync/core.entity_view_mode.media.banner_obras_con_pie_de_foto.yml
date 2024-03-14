@@ -1,0 +1,10 @@
+uuid: d435618a-5e34-465e-8a66-c935433a717e
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.banner_obras_con_pie_de_foto
+label: 'Banner obras con pie de foto'
+targetEntityType: media
+cache: true

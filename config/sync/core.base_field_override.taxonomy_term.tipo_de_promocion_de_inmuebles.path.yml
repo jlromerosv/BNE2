@@ -1,0 +1,20 @@
+uuid: c5272163-493b-47ed-992b-7018b37035a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_promocion_de_inmuebles
+  module:
+    - path
+id: taxonomy_term.tipo_de_promocion_de_inmuebles.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_promocion_de_inmuebles
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,20 @@
+uuid: dd902dc6-94fc-4bc4-98ca-750bcd15b9be
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_contacto
+  module:
+    - text
+id: taxonomy_term.categoria_contacto.description
+field_name: description
+entity_type: taxonomy_term
+bundle: categoria_contacto
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: eef0b3de-5c6c-49ca-90b5-512002f46c85
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area_tematica
+    - node.type.campana
+    - taxonomy.vocabulary.area_tematica
+id: node.campana.field_area_tematica
+field_name: field_area_tematica
+entity_type: node
+bundle: campana
+label: 'Área temática'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_tematica: area_tematica
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

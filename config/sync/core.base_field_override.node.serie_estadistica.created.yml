@@ -1,0 +1,18 @@
+uuid: 00990212-70d0-4359-8046-7691019bac5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.serie_estadistica
+id: node.serie_estadistica.created
+field_name: created
+entity_type: node
+bundle: serie_estadistica
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

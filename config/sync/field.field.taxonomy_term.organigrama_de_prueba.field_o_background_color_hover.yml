@@ -1,0 +1,19 @@
+uuid: ffbae7dc-071b-4921-a447-e3c73474a976
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_o_background_color_hover
+    - taxonomy.vocabulary.organigrama_de_prueba
+id: taxonomy_term.organigrama_de_prueba.field_o_background_color_hover
+field_name: field_o_background_color_hover
+entity_type: taxonomy_term
+bundle: organigrama_de_prueba
+label: 'Background color hover'
+description: 'Specify the background color of this organigram item when hovering over it if it has a URL.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

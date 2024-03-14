@@ -1,0 +1,22 @@
+uuid: ff51dfeb-f885-4af9-a683-bd9a7eb05e95
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contenido_generico
+id: taxonomy_term.tipo_de_contenido_generico.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_contenido_generico
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

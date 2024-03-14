@@ -1,0 +1,38 @@
+uuid: 9a4441c4-af1a-47fd-a055-3d5ceec7ce3a
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: eventos
+label: Eventos
+type: 'canonical_entities:node'
+pattern: '/agenda/[node:title]'
+selection_criteria:
+  bc1a41f6-7c4f-4e71-96fc-44706c5a4728:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: bc1a41f6-7c4f-4e71-96fc-44706c5a4728
+    context_mapping:
+      node: node
+    bundles:
+      evento: evento
+  a6a92c4d-6701-41db-afee-e53151ad0200:
+    id: language
+    negate: false
+    uuid: a6a92c4d-6701-41db-afee-e53151ad0200
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+      ca: ca
+      gl: gl
+      eu: eu
+      en: en
+      fr: fr
+selection_logic: and
+weight: -2
+relationships:
+  'node:langcode:language':
+    label: Language

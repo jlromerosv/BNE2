@@ -1,0 +1,7 @@
+uuid: da227f50-536b-4ad4-8830-708f6e0b8851
+langcode: es
+status: false
+dependencies: {  }
+formId: node_enlace_form
+captchaType: default
+label: node_enlace_form

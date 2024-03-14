@@ -1,0 +1,8 @@
+uuid: 893a1c01-66ce-438f-a2e3-cc73980e75e6
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Categoría de servicio'
+vid: categoria_de_servicio
+description: ''
+weight: 0

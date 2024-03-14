@@ -1,0 +1,22 @@
+uuid: 89ca411e-7ce0-4b64-9391-ad6edabadec0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_menu
+id: taxonomy_term.tipo_de_menu.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_menu
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

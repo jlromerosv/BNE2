@@ -1,0 +1,21 @@
+uuid: bd843098-6a36-49ad-9661-005c98b54657
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.domain_access
+    - media.type.video_remoto
+id: media.video_remoto.domain_access
+field_name: domain_access
+entity_type: media
+bundle: video_remoto
+label: 'Domain Access'
+description: 'Select the affiliate domain(s). If nothing was selected: Affiliated to all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: domain_entity_field_default_domains
+settings:
+  handler: 'default:domain'
+  handler_settings: {  }
+field_type: entity_reference

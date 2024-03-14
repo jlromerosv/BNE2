@@ -1,0 +1,29 @@
+uuid: 21e1cd63-7e38-4f0b-ae09-b9c866eee92c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiqueta_blog
+    - node.type.coleccion
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+id: node.coleccion.field_etiqueta_blog
+field_name: field_etiqueta_blog
+entity_type: node
+bundle: coleccion
+label: 'Etiqueta del blog'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

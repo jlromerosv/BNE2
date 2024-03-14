@@ -1,0 +1,14 @@
+uuid: 8a0f1d6a-37e0-47cc-ba11-72c23eb104d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+id: node_type_seccion_nivel_1_estandar
+entity_type_id: node_type
+entity_id: seccion_nivel_1_estandar
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,20 @@
+uuid: 77e8c5f3-5d78-4e4d-9eb2-959329be2d4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero_autor
+  module:
+    - path
+id: taxonomy_term.genero_autor.path
+field_name: path
+entity_type: taxonomy_term
+bundle: genero_autor
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

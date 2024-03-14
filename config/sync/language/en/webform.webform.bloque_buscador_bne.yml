@@ -1,0 +1,5 @@
+elements: |
+  search_api_fulltext:
+    '#title': 'Search '
+    '#help_title': Search
+    '#placeholder': 'Enter the search text'

@@ -1,0 +1,22 @@
+uuid: 8b241f86-aaf0-4561-bd97-d560d053f54c
+langcode: es
+status: true
+dependencies:
+  theme:
+    - sede_theme
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: sede_theme_local_tasks
+theme: sede_theme
+region: header_seccion
+weight: -30
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

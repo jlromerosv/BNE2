@@ -1,0 +1,29 @@
+uuid: 00f1ebea-9e3d-4e12-9a4f-fea742e1a1a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area_de_transparencia
+    - node.type.pagina_personalizada
+    - taxonomy.vocabulary.area_de_transparencia
+id: node.pagina_personalizada.field_area_de_transparencia
+field_name: field_area_de_transparencia
+entity_type: node
+bundle: pagina_personalizada
+label: 'Área de transparencia'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_de_transparencia: area_de_transparencia
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

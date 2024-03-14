@@ -1,0 +1,29 @@
+uuid: 67f44337-ba61-4e00-abae-2d67d1836071
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor_entrada_blog
+    - node.type.entrada_de_blog
+    - taxonomy.vocabulary.autores_del_blog
+id: node.entrada_de_blog.field_autor_entrada_blog
+field_name: field_autor_entrada_blog
+entity_type: node
+bundle: entrada_de_blog
+label: 'Escrito por:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      autores_del_blog: autores_del_blog
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

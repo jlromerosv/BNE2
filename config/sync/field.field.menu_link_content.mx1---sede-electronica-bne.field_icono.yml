@@ -1,0 +1,34 @@
+uuid: cec38319-0056-4be3-a5fb-e73eb9f55f97
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_icono
+    - node.type.icono_svg_
+    - system.menu.mx1---sede-electronica-bne
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: menu_link_content.mx1---sede-electronica-bne.field_icono
+field_name: field_icono
+entity_type: menu_link_content
+bundle: mx1---sede-electronica-bne
+label: Icono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      icono_svg_: icono_svg_
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

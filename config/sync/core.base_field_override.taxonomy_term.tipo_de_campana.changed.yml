@@ -1,0 +1,18 @@
+uuid: 22d20233-6aca-4a7c-95ec-63d1e2f407dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_campana
+id: taxonomy_term.tipo_de_campana.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_campana
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

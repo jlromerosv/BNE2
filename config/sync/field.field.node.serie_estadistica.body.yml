@@ -1,0 +1,23 @@
+uuid: 1451a201-63ff-4b40-b887-b2c2c8236d85
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.serie_estadistica
+  module:
+    - text
+id: node.serie_estadistica.body
+field_name: body
+entity_type: node
+bundle: serie_estadistica
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

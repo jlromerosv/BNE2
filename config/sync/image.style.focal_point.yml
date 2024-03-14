@@ -1,0 +1,17 @@
+uuid: 8999137e-fb0c-4972-80ac-cbdfffb30aea
+langcode: es
+status: true
+dependencies:
+  module:
+    - focal_point
+name: focal_point
+label: 'Focal point 360x360'
+effects:
+  ad747806-80e0-4919-a25d-410ac8ac1856:
+    uuid: ad747806-80e0-4919-a25d-410ac8ac1856
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 360
+      height: 360
+      crop_type: focal_point

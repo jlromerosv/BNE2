@@ -1,0 +1,8 @@
+uuid: 540b2bcd-5250-4dd4-8449-cf78b2e239d0
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_dia_hora_evento
+label: 'Fecha Dia-hora evento'
+locked: false
+pattern: 'l,  j \d\e F \d\e Y\.'

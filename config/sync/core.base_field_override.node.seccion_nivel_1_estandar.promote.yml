@@ -1,0 +1,22 @@
+uuid: 5822bcae-2c11-47d4-a417-8d9e20ac2099
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+id: node.seccion_nivel_1_estandar.promote
+field_name: promote
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

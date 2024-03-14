@@ -1,0 +1,21 @@
+uuid: 7b6997e1-0509-4c9a-b64c-fe050ee83adf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.pagina_basica
+  module:
+    - yoast_seo
+id: node.pagina_basica.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: pagina_basica
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

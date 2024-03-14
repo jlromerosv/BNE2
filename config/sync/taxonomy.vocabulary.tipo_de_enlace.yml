@@ -1,0 +1,8 @@
+uuid: a1b9a847-1e66-4561-8e29-4561791a1920
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de enlace'
+vid: tipo_de_enlace
+description: ''
+weight: 0

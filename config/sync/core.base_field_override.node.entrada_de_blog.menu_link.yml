@@ -1,0 +1,20 @@
+uuid: 63f7bb88-ca86-4e18-9d9f-2fff2d26d751
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entrada_de_blog
+id: node.entrada_de_blog.menu_link
+field_name: menu_link
+entity_type: node
+bundle: entrada_de_blog
+label: 'Enlace del menu'
+description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

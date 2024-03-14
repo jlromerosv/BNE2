@@ -1,0 +1,37 @@
+uuid: b773b27d-b293-4b15-83fb-51b156bc1a19
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_genericos_2
+    - node.type.contenido_generico
+    - node.type.entidad
+    - node.type.iniciativa
+    - node.type.pagina_basica
+    - node.type.pagina_personalizada
+    - node.type.servicio
+id: node.pagina_personalizada.field_contenidos_genericos_2
+field_name: field_contenidos_genericos_2
+entity_type: node
+bundle: pagina_personalizada
+label: 'Enlaces Destacados 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contenido_generico: contenido_generico
+      entidad: entidad
+      iniciativa: iniciativa
+      pagina_basica: pagina_basica
+      pagina_personalizada: pagina_personalizada
+      servicio: servicio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: contenido_generico
+field_type: entity_reference

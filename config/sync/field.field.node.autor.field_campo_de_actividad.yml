@@ -1,0 +1,19 @@
+uuid: 14494d3c-2dbc-443e-9043-9e67b9a4ac34
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_campo_de_actividad
+    - node.type.autor
+id: node.autor.field_campo_de_actividad
+field_name: field_campo_de_actividad
+entity_type: node
+bundle: autor
+label: 'Campo de actividad'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

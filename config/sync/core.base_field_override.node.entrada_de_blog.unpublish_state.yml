@@ -1,0 +1,20 @@
+uuid: e2fcb22d-755d-422f-943f-0372b0c866ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entrada_de_blog
+  module:
+    - options
+id: node.entrada_de_blog.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: entrada_de_blog
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

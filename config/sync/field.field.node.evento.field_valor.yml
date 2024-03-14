@@ -1,0 +1,19 @@
+uuid: a7aa1db9-a70b-4266-b128-ea6d0bf27370
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_valor
+    - node.type.evento
+id: node.evento.field_valor
+field_name: field_valor
+entity_type: node
+bundle: evento
+label: Aforo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

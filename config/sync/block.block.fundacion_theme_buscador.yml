@@ -1,0 +1,25 @@
+uuid: 573e1899-3cf3-40d6-a7a2-6998012bef79
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:html:e8f52a25-255e-4e17-b82a-a985b11523fe'
+  module:
+    - block_content
+  theme:
+    - fundacion_theme
+id: fundacion_theme_buscador
+theme: fundacion_theme
+region: header_site_2_2
+weight: -19
+provider: null
+plugin: 'block_content:e8f52a25-255e-4e17-b82a-a985b11523fe'
+settings:
+  id: 'block_content:e8f52a25-255e-4e17-b82a-a985b11523fe'
+  label: Buscador
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

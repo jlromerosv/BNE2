@@ -1,0 +1,19 @@
+uuid: 1c125969-1308-48e9-b4b1-4459141d3dad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codigo_referencia
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.field_codigo_referencia
+field_name: field_codigo_referencia
+entity_type: node
+bundle: galeria_de_imagenes
+label: Referencia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

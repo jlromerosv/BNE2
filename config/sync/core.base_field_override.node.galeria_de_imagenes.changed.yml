@@ -1,0 +1,18 @@
+uuid: 23d18f55-9c2c-4078-a68b-39f3d166c39e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.changed
+field_name: changed
+entity_type: node
+bundle: galeria_de_imagenes
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

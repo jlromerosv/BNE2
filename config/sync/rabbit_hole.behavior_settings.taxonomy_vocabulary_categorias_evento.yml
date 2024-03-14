@@ -1,0 +1,14 @@
+uuid: ef02934e-0d77-456b-acf5-7d4fc5450161
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorias_evento
+id: taxonomy_vocabulary_categorias_evento
+entity_type_id: taxonomy_vocabulary
+entity_id: categorias_evento
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,20 @@
+uuid: 147cdea7-4fa0-4c0e-938f-a0a5df5e19cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_galeria_de_documentos
+  module:
+    - path
+id: taxonomy_term.tipo_de_galeria_de_documentos.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_galeria_de_documentos
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

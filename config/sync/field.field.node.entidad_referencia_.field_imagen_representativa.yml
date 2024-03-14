@@ -1,0 +1,28 @@
+uuid: de2f2f33-6688-4f9d-ae7a-471b15c7fafe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_representativa
+    - media.type.imagen
+    - node.type.entidad_referencia_
+id: node.entidad_referencia_.field_imagen_representativa
+field_name: field_imagen_representativa
+entity_type: node
+bundle: entidad_referencia_
+label: 'Imagen representativa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

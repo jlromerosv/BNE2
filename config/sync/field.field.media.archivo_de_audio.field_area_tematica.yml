@@ -1,0 +1,29 @@
+uuid: adde8836-5a77-495c-8599-9afaf4a0be51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_area_tematica
+    - media.type.archivo_de_audio
+    - taxonomy.vocabulary.area_tematica
+id: media.archivo_de_audio.field_area_tematica
+field_name: field_area_tematica
+entity_type: media
+bundle: archivo_de_audio
+label: 'Área temática'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_tematica: area_tematica
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

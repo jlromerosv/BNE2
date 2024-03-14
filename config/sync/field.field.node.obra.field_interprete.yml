@@ -1,0 +1,19 @@
+uuid: ae510e18-c3ed-478d-bf50-24e01f199044
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interprete
+    - node.type.obra
+id: node.obra.field_interprete
+field_name: field_interprete
+entity_type: node
+bundle: obra
+label: Intérprete
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

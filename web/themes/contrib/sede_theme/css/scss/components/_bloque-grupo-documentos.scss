@@ -1,0 +1,115 @@
+.page-node-type-pagina-basica {
+  .ps-grupo-documentos {
+    padding: 15px 15px 80px 15px;
+    @media (min-width: 992px) {
+      padding: 0px 15px 80px 0px;
+    }
+  }
+  .ps-main{
+    .ps-grupo-documentos {
+      padding: 0px 15px 80px 15px;
+
+    }
+  }
+}
+
+.ps-grupo-documentos {
+  padding: 0px 5em 1.9em 5em;
+
+  @media (max-width: 992px) {
+    padding: 0 15px;
+  }
+  .view-content {
+    .views-row {
+      .views-field-field-galeria-de-documentos {
+        .field-content {
+          margin: 0.9em 0;
+          article {
+            h2 {
+              border: 0.5px solid $bne_color_3;
+              padding: 15px 10px 15px 30px;
+              display: block;
+              margin: 0;
+              cursor: pointer;
+              &::after {
+                display: none;
+              }
+              a {
+                cursor: pointer;
+                font-family: $dm-serif;
+                font-weight: $dm-serif-regular;
+                font-size: 18px;
+                font-weight: 500;
+                color: $negro;
+                line-height: 24px;
+                letter-spacing: 0px;
+                // display: flex;
+                // justify-content: space-between;
+                // align-items: center;
+                pointer-events: none;
+                display: grid;
+                grid-template-columns: 1fr 40px;
+                &::after {
+                  content: "";
+                  height: 15px;
+                  width: 15px;
+                  background: url(/themes/contrib/sede_theme/recursos/signo-mas.svg)
+                    no-repeat center;
+                  background-size: 15px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  transition: all 0.5s ease;
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+            .change-collapsable-icon {
+              &::after {
+                content: "";
+                height: 15px;
+                width: 15px;
+                background: url(/themes/contrib/sede_theme/recursos/signo-menos.svg)
+                  no-repeat center;
+                background-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                transition: all 0.5s ease;
+                height: 100%;
+                width: 100%;
+              }
+            }
+            .node__content {
+              border: 0.5px solid $bne_color_3;
+              border-top: none;
+              display: none;
+              padding: 30px 15px;
+
+              .field--name-field-archivos {
+                .field__item {
+                  margin: 0;
+                  border: none;
+                  //padding-bottom: 1em;
+                  article {
+                    cursor: pointer;
+                    .field--name-name p {
+                      padding: 0;
+                      color: $bne_color_5;
+                      margin-block-start: 1.3em;
+                      margin-block-end: 1.3em;
+                    }
+                    .field--name-field-media-file {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

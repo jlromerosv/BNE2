@@ -1,0 +1,12 @@
+uuid: 4bcc9f01-ea83-44ff-a7c9-939c4153c03c
+langcode: es
+status: true
+dependencies: {  }
+id: plantilla_1
+label: 'Dos columnas 50%'
+image: ''
+description: ''
+html:
+  value: "<div class=\"template-two-colums-50-50\" style=\"display: grid; grid-template-columns: 1fr 1fr; padding-bottom: 2em\">\r\n<div class=\"colum-1\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em; height: auto\">\r\n<p></p>\r\n</div>\r\n<div class=\"colum-2\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em; height: auto\">\r\n<p></p>\r\n</div>\r\n</div>\r\n"
+  format: html_full
+weight: -11

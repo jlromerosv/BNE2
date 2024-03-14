@@ -1,0 +1,28 @@
+.ir-arriba {
+	//display:none;
+	background:$bne_color_5;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:80px;
+	right:10px;
+    width: 50px;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+    bottom: 20px;
+    }
+    svg{
+        padding: 10px 0;
+        width: 30px;
+        height: 30px;
+        transform: rotate(-180deg);
+        path{
+            fill: $blanco;
+        }
+    }
+}

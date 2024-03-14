@@ -1,0 +1,28 @@
+uuid: f441b4e6-0739-4a66-8ffa-80c6fbdc8b1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audios
+    - media.type.archivo_de_audio
+    - node.type.lugar
+id: node.lugar.field_audios
+field_name: field_audios
+entity_type: node
+bundle: lugar
+label: Audios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo_de_audio: archivo_de_audio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

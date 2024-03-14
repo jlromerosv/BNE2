@@ -1,0 +1,18 @@
+uuid: 84b3c292-d709-4611-aa6a-6917a2255d14
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+id: node.imagen_svg_.title
+field_name: title
+entity_type: node
+bundle: imagen_svg_
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

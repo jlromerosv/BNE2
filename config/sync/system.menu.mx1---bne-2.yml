@@ -1,0 +1,8 @@
+uuid: 9f7c224f-b2e7-42a0-9e5a-5c716f5715ba
+langcode: es
+status: true
+dependencies: {  }
+id: mx1---bne-2
+label: 'MX1 - BNE - Selecciona tu perfil'
+description: ''
+locked: false

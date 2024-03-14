@@ -1,0 +1,18 @@
+uuid: 08c6ac30-ecea-4ae0-b995-b15a15fed9e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.coleccion
+id: node.coleccion.metatag
+field_name: metatag
+entity_type: node
+bundle: coleccion
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,45 @@
+/*
+    ========== NOTICIA ==========
+
+    Estilos dedicados a la vista de noticias.
+
+    ----------------------- VARIABLES -------------------------
+    $main_color_2 / 6 = Color principal de tipo 2 / 6
+*/
+
+
+.node--type-noticia.node--view-mode-teaser {
+    h2 {
+        display: none;
+    }
+
+    .block {
+        &-layout-builder {
+            margin: 0;
+            margin-bottom: 15px;
+
+            .field--name-title {
+                font-size: 22px;
+                color: $main_color_2;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .field--name-body {
+                p {
+                    margin: 0;
+                    color: $main_color_6;
+                    font-size: 14px;
+                }
+            }
+
+            .field--name-created {
+                color: #ccc;
+            }
+
+            .node__links {
+                text-align: end;
+            }
+        }
+    }
+}

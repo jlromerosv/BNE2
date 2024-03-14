@@ -1,0 +1,18 @@
+uuid: 896b279b-0267-4f9f-aa4a-0a1698c576cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.hito
+id: node.hito.metatag
+field_name: metatag
+entity_type: node
+bundle: hito
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

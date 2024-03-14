@@ -1,0 +1,19 @@
+uuid: 8a54b345-4fc4-4782-92ad-d7c7a2e28d9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plazo_de_resolucion
+    - node.type.tramite
+id: node.tramite.field_plazo_de_resolucion
+field_name: field_plazo_de_resolucion
+entity_type: node
+bundle: tramite
+label: 'Plazo de resolución'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

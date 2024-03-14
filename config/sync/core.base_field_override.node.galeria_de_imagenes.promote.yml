@@ -1,0 +1,22 @@
+uuid: a7ccb17a-677b-444c-96fd-30732d4be154
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.promote
+field_name: promote
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

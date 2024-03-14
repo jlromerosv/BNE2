@@ -1,0 +1,27 @@
+uuid: 49a1654f-e2f5-4cbc-919c-ed46ab343e48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_galeria
+    - node.type.galeria_de_imagenes
+  module:
+    - datetime
+id: node.galeria_de_imagenes.field_fecha_galeria
+field_name: field_fecha_galeria
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Fecha Galeria'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    field_defaults:
+      update_defaults: 0
+      no_overwrite: 0
+default_value_callback: ''
+settings: {  }
+field_type: datetime

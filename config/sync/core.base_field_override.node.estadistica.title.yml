@@ -1,0 +1,18 @@
+uuid: 726badf9-944c-420d-9e47-12ed9bab15f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estadistica
+id: node.estadistica.title
+field_name: title
+entity_type: node
+bundle: estadistica
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

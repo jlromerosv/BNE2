@@ -1,0 +1,22 @@
+uuid: 2bfe11dd-25d8-4c4d-a541-c42e21307d71
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.modalidad
+id: taxonomy_term.modalidad.status
+field_name: status
+entity_type: taxonomy_term
+bundle: modalidad
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 889e6039-a273-4c60-a64a-b2d67131ce22
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+  module:
+    - path
+id: node.documento.path
+field_name: path
+entity_type: node
+bundle: documento
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

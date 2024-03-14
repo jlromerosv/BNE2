@@ -1,0 +1,18 @@
+uuid: 7e32578f-48b3-4df1-aded-8c523573fc9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_enlace
+id: taxonomy_term.tipo_de_enlace.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_de_enlace
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 0253e694-c426-4690-85dd-8c6c2a70071a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_personalizada
+  module:
+    - options
+id: node.pagina_personalizada.publish_state
+field_name: publish_state
+entity_type: node
+bundle: pagina_personalizada
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

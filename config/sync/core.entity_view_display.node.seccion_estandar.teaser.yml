@@ -1,0 +1,45 @@
+uuid: 2a37d531-200d-43af-a37f-73b8092c7b44
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.seccion_estandar.body
+    - field.field.node.seccion_estandar.field_contenidos_relacionados
+    - field.field.node.seccion_estandar.field_contenidos_vinculados
+    - field.field.node.seccion_estandar.field_domain_access
+    - field.field.node.seccion_estandar.field_domain_all_affiliates
+    - field.field.node.seccion_estandar.field_domain_source
+    - field.field.node.seccion_estandar.field_rede
+    - node.type.seccion_estandar
+  module:
+    - text
+    - user
+id: node.seccion_estandar.teaser
+targetEntityType: node
+bundle: seccion_estandar
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_rede: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

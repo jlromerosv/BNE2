@@ -1,0 +1,18 @@
+uuid: b736df57-bed6-4f37-a330-785b2e9e01cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iniciativa
+id: node.iniciativa.title
+field_name: title
+entity_type: node
+bundle: iniciativa
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

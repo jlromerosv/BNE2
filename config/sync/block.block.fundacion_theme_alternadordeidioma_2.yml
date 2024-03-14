@@ -1,0 +1,29 @@
+uuid: f4ead21e-7fd5-46b8-8a3f-251edefc99fc
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_alternadordeidioma_2
+theme: fundacion_theme
+region: header_izquierdo_1_2
+weight: -18
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Alternador de idioma'
+  label_display: '0'
+  provider: language
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/*\r\n/taxonomy/*"

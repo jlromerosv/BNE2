@@ -1,0 +1,18 @@
+uuid: 8f91c6be-d217-4172-ab8c-c0690e925235
+langcode: es
+status: true
+dependencies:
+  module:
+    - poll
+id: poll.field_writein_multiple
+field_name: field_writein_multiple
+entity_type: poll
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

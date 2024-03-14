@@ -1,0 +1,20 @@
+uuid: ec93980f-267d-4361-9b1c-f7eefea726e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.faq
+  module:
+    - options
+id: node.faq.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: faq
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

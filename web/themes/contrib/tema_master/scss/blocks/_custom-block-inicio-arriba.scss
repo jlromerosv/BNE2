@@ -1,0 +1,75 @@
+/*
+    ========== BLOQUE INICIO-ARRIBA ==========
+
+    Estilos dedicados a la vista del bloque inicio-arriba.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $filter_white = Filtro de color blanco
+
+    $main_color_3 = Color principal de tipo 3
+
+*/
+
+.custom-block-inicio-arriba {
+    padding: 10px;
+    @include ps-content-margins(992px, 1763px);
+    .view-content {
+        @include display_flex(row, space-between, center);
+
+        div {
+            .views-field-field-icono-svg {
+                a {
+                    @include display_flex(row, initial, center);
+                    img {
+                        filter: $filter_white;
+                        margin-right: 10px;
+                        &.home-svg {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $main_color_3;
+        margin-top: 10px;
+        @media (min-width: 768px) {
+            content: none;
+        }
+    }
+}
+
+/* Bloque Inicio / Arriba */
+.custom-block--bloque-inicio,
+.cusotm-block--bloque-arriba {
+    .views-field-field-icono-svg {
+        a {
+            @include display_flex(row, initial, center);
+            img {
+                filter: $filter_white;
+                margin-right: 10px;
+                &.home-svg {
+                    width: 25px;
+                }
+            }
+        }
+    }
+}

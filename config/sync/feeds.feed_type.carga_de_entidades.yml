@@ -1,0 +1,37 @@
+uuid: 474c684d-1556-4e82-88f7-a57322eafba8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad
+  module:
+    - node
+label: 'x_Carga de entidades'
+id: carga_de_entidades
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: entidad
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources: {  }
+mappings: {  }

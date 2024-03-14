@@ -1,0 +1,33 @@
+uuid: ed05f308-8f08-4240-897e-9ae8121c4c3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.horarios-de-salas-servicios-y-ex.field_listado_vista
+    - system.menu.horarios-de-salas-servicios-y-ex
+  module:
+    - viewfield
+id: menu_link_content.horarios-de-salas-servicios-y-ex.default
+targetEntityType: menu_link_content
+bundle: horarios-de-salas-servicios-y-ex
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_listado_vista:
+    type: viewfield_default
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: false
+      empty_view_title: hidden
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

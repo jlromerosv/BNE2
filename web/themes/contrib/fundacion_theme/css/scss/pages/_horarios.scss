@@ -1,0 +1,926 @@
+.page-node-type-horarios {
+  .region-content {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+}
+
+
+
+.ps-path-horarios,
+.ps-node-2680 {
+  #block-fundacion-theme-contenidoprincipaldelapagina {
+    h1 {
+      display: none;
+    }
+  }
+}
+
+.ps-sedes-horarios {
+  .view-content {
+    .views-row {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+        height: 425px;
+      }
+
+      .views-field-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $negro;
+
+        .field-content {
+          display: block;
+          max-width: 600px;
+          padding: 30px;
+
+          .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .subtitle {
+              font-size: 16px;
+              color: $blanco;
+              line-height: 24px;
+              letter-spacing: 0.96px;
+              margin-bottom: 1em;
+            }
+
+            .title {
+              font-size: 44px;
+              font-family: $dm-serif;
+              font-weight: $dm-serif-regular;
+              color: $blanco;
+              line-height: 52px;
+              letter-spacing: 0.66px;
+              margin-bottom: 1em;
+              text-align: center;
+            }
+
+            .descripcion {
+              font-size: 16px;
+              color: $blanco;
+              line-height: 28px;
+              letter-spacing: 0.48px;
+              margin-bottom: 1em;
+              padding: 0 15px 2em 15px;
+              border-bottom: 0.5px solid $bne_color_2;
+
+              p {
+                font-size: 16px;
+                color: $blanco;
+                line-height: 28px;
+                letter-spacing: 0.48px;
+                text-align: center;
+              }
+            }
+
+            .address {
+              font-size: 16px;
+              color: $bne_color_3;
+              line-height: 24px;
+              letter-spacing: 0.48px;
+              text-align: center;
+
+              p {
+                font-size: 16px;
+                color: $bne_color_3;
+                line-height: 24px;
+                letter-spacing: 0.48px;
+                margin-block-end: 0.2em;
+              }
+            }
+
+            .municipio {
+              .localidad {
+                padding-right: 10px;
+                font-size: 16px;
+                color: $bne_color_3;
+                line-height: 24px;
+                letter-spacing: 0.48px;
+              }
+
+              .cp {
+                font-size: 16px;
+                color: $bne_color_3;
+                line-height: 24px;
+                letter-spacing: 0.48px;
+              }
+            }
+          }
+        }
+      }
+
+      .views-field-field-ubicacion {
+        @media (max-width: 992px) {}
+
+        @media (min-width: 300px) and (max-width: 575.98px) {
+          padding: 45px;
+        }
+
+        @media (min-width: 576px) and (max-width: 991.98px) {
+          padding: 65px;
+        }
+
+        .geofield-google-map {
+          @media (min-width: 992px) {
+            height: 597px !important;
+          }
+        }
+
+        .leaflet-container {
+          @media (min-width: 250px) and (max-width: 575.98px) {
+            height: 250px !important;
+          }
+
+          @media (min-width: 576px) and (max-width: 767.98px) {
+            height: 500px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ps-sede-central-recoletos {
+  .view-header {
+    p {
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+    }
+  }
+
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0px 1px 4px #00000029;
+    padding: 0 15px;
+
+    @media (min-width: 250px) and (max-width: 576px) {
+      grid-gap: 2em;
+      padding: 1em;
+    }
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .views-row {
+      padding: 0 15px;
+
+      .field-content {
+        height: 145px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0em;
+
+        @media (max-width: 768px) {
+          padding: 0em;
+
+          img {
+            width: 200px;
+            //padding: 1em;
+
+          }
+        }
+        @media (max-width: 450px) {
+          padding: 0em;
+
+          img {
+            width: 200px;
+            //padding: 1em;
+
+          }
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        padding: 0;
+
+        .field-content {
+          height: 75px;
+        }
+      }
+
+      @media (max-width: 450px) {
+        padding: 0;
+
+        .field-content {
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+
+.ps-sede-alcala {
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 0 15px;
+    box-shadow: 0px 1px 4px #00000029;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .views-row {
+      padding: 15px;
+
+      .field-content {
+        height: 145px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media (max-width: 767.98px) {
+        padding: 0;
+
+        .field-content {
+          height: 95px;
+        }
+      }
+    }
+  }
+}
+
+.ps-path-horarios,
+.ps-node-2680 {
+  #block-fundacion-theme-contenidoprincipaldelapagina {
+    article {
+      .node__content {
+        .layout {
+          &:nth-child(2) {
+            margin: 4em 0 6em 0;
+            padding: 0 15px;
+
+            .layout__region--first {
+              @media (max-width: 991.98px) {
+                flex: 0 1 100% !important;
+              }
+            }
+
+            .layout__region--second {
+              @media (max-width: 991.98px) {
+                flex: 0 1 100% !important;
+              }
+
+              .ps-horarios-sede-central {
+                .view-header {
+                  .views-field-title {
+
+                    .field-content{
+                      border-bottom: 2px solid #a02424;
+                      font-size: 16px !important;
+                      color: $bne_color_1 !important;
+                      line-height: 24px;
+                      letter-spacing: 0.48px;
+                      cursor: pointer;
+
+                    }
+                  }
+
+                  @media (min-width: 992px) {
+                    display: none;
+                  }
+
+                  .views-field-title {
+                    text-align: center;
+                    margin-bottom: 1em;
+                    cursor: pointer;
+
+                    .field-content {
+                      //border-bottom: 2px solid $bne_color_5;
+                      padding-bottom: 5px;
+                      font-size: 14px;
+                      color: $bne_color_2;
+                      line-height: 22px;
+                      letter-spacing: 0.42px;
+                    }
+                  }
+                }
+
+                .view-filters {
+                  display: none;
+                }
+
+                .view-content {
+                  .views-row {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 1em;
+
+                    a {
+                      font-family: "Roboto";
+                      font-weight: 400;
+                      color: $bne_color_6;
+
+                      &:hover {
+                        text-decoration: underline;
+                      }
+                    }
+
+                    @media (min-width: 576px) {
+                      grid-template-columns: 1fr 1fr;
+                    }
+
+                    @media (min-width: 992px) {
+                      grid-template-columns: repeat(4, 1fr);
+                    }
+
+                    .views-field-field-horarios-especificos {
+                      .field-content {
+                        h2 {
+                          font-size: 24px;
+                          color: $negro;
+                          font-family: $dm-serif;
+                          font-weight: $dm-serif-regular;
+                          line-height: 36px;
+
+                          &::after {
+                            display: none;
+                          }
+                        }
+
+                        p {
+                          font-size: 16px;
+                          color: $bne_color_2;
+                          line-height: 24px;
+                          letter-spacing: 0.48px;
+                        }
+
+                        a {
+                          color: $bne_color_6;
+
+                          &:hover {
+                            text-decoration: underline;
+                          }
+                        }
+                      }
+                    }
+
+                    article {
+                      h2 {
+                        font-size: 24px;
+                        color: $negro;
+                        font-family: $dm-serif;
+                        font-weight: $dm-serif-regular;
+                        line-height: 36px;
+                        margin-block-end: 0;
+                        margin-block-start: 0;
+
+                        &::after {
+                          display: none;
+                        }
+
+                        a {
+                          pointer-events: none;
+                          font-size: 24px;
+                          color: $negro;
+                          font-family: $dm-serif;
+                          font-weight: $dm-serif-regular;
+                          line-height: 36px;
+                        }
+
+                        .field--name-title {
+                          display: none;
+                        }
+                      }
+
+                      p {
+                        font-size: 16px;
+                        color: $bne_color_2;
+                        line-height: 24px;
+                        letter-spacing: 0.48px;
+                      }
+
+                      .node__content {
+                        .field--name-field-nombre {
+                          font-size: 24px;
+                          color: $negro;
+                          font-family: $dm-serif;
+                          font-weight: $dm-serif-regular;
+                          line-height: 36px;
+                          margin-block-start: 0.83em;
+                          margin-block-end: 0.83em;
+                        }
+                      }
+                    }
+
+                    .views-field-field-telefonos {
+                      .field-content {
+                        .contacto {
+                          h2 {
+                            font-size: 24px;
+                            color: $negro;
+                            font-family: $dm-serif;
+                            font-weight: $dm-serif-regular;
+                            line-height: 36px;
+                            margin-block-end: 0.83em;
+
+                            &::after {
+                              display: none;
+                            }
+                          }
+
+                          .telefonos {
+                            font-size: 16px;
+                            color: $bne_color_2;
+                            line-height: 24px;
+                            letter-spacing: 0.48px;
+                            margin-bottom: 0.5em;
+                          }
+
+                          .email {
+                            font-size: 16px;
+                            color: $bne_color_2;
+                            line-height: 24px;
+                            letter-spacing: 0.48px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &:nth-child(4) {
+            margin: 4em 0 6em 0;
+            padding: 0 15px;
+
+            .layout__region--first {
+              @media (max-width: 991.98px) {
+                flex: 0 1 100% !important;
+              }
+
+              .block-views-blockhorarios-block-menu-alcala {
+                margin-bottom: 2em;
+
+                h1 {
+                  height: 60px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border: 0.5px solid $bne_color_3;
+                  background: $bne_color_4;
+                  margin-block-end: 0px;
+                  padding-right: 0px;
+                  // font-size: 16px;
+                  // color: #333333;
+                  // line-height: 24px;
+                  // letter-spacing: 0.96px;
+
+                  font-size: 16px;
+                  // font-family: $dm-serif;
+                  // font-weight: $dm-serif-regular;
+                  font-family: "Roboto";
+                  font-weight: 500;
+                  color: $bne_color_1;
+                  line-height: 24px;
+                  letter-spacing: 0.96px;
+                  text-align: right;
+                  padding-right: 20px;
+
+                  &::after {
+                    display: none;
+                    content: "";
+
+                    height: 10px;
+                    width: 6px;
+                    background: url(/themes/contrib/bne_theme/recursos/layer1.svg) no-repeat center;
+                    background-size: 10px;
+                    padding-left: 20px;
+                    transform: rotate(-90deg);
+                    transition: all 0.5s ease;
+                  }
+
+                  @media (min-width: 300px) and (max-width: 991.98px) {
+                    display: flex !important;
+                  }
+
+                  @media (min-width: 992px) {
+                    display: none;
+                  }
+                }
+
+                h1.rotate {
+                  &::after {
+                    content: "";
+                    display: block;
+                    height: 10px;
+                    width: 6px;
+                    background: url(/themes/contrib/bne_theme/recursos/layer1.svg) no-repeat center;
+                    background-size: 10px;
+                    padding-left: 20px;
+                    transform: rotate(-0deg);
+                    transition: all 0.5s ease;
+                  }
+                }
+
+                .view-horarios {
+                  .view-content {
+                    .views-row {
+                      @media (max-width: 991.98px) {
+                        display: none;
+                        padding: 30px 15px;
+                        border-left: 0.5px solid $bne_color_3;
+                        border-right: 0.5px solid $bne_color_3;
+                        border-bottom: 0.5px solid $bne_color_3;
+                      }
+
+                      @media (min-width: 992px) {
+                        display: block !important;
+                      }
+
+                      .views-field-title {
+                        @media (min-width: 992px) {
+                          display: flex;
+                          justify-content: flex-end;
+                          margin: 1em 0;
+                          padding: 0em 3em 0 15px;
+                        }
+
+                        .field-content {
+                          font-size: 16px;
+                          color: $bne_color_1;
+                          line-height: 24px;
+                          letter-spacing: 0.96px;
+                          //border-bottom: 4px solid $bne_color_5;
+                          font-family: "Roboto";
+                          font-weight: 500;
+                          text-transform: uppercase;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .layout__region--second {
+              @media (max-width: 991.98px) {
+                flex: 0 1 100% !important;
+              }
+
+              .ps-horarios-sede-alcala {
+                .view-filters {
+                  display: none;
+                }
+
+                .view-content {
+                  .views-row {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 1em;
+
+                    @media (min-width: 576px) {
+                      grid-template-columns: 1fr 1fr;
+                    }
+
+                    @media (min-width: 992px) {
+                      grid-template-columns: repeat(4, 1fr);
+                    }
+
+                    a {
+                      font-family: "Roboto";
+                      font-weight: 400;
+                      color: $bne_color_6;
+
+                      &:hover {
+                        text-decoration: underline;
+                      }
+                    }
+
+                    .views-field-field-horarios-especificos {
+                      .field-content {
+                        h2 {
+                          font-size: 24px;
+                          color: $negro;
+                          font-family: $dm-serif;
+                          font-weight: $dm-serif-regular;
+                          line-height: 36px;
+
+                          &::after {
+                            display: none;
+                          }
+                        }
+
+                        p {
+                          font-size: 16px;
+                          color: $bne_color_2;
+                          line-height: 24px;
+                          letter-spacing: 0.48px;
+                        }
+
+                      }
+                    }
+
+                    article {
+                      h2 {
+                        font-size: 24px;
+                        color: $negro;
+                        font-family: $dm-serif;
+                        font-weight: $dm-serif-regular;
+                        line-height: 36px;
+
+                        &::after {
+                          display: none;
+                        }
+
+                        a {
+                          pointer-events: none;
+                          font-size: 24px;
+                          color: $negro;
+                          font-family: $dm-serif;
+                          font-weight: $dm-serif-regular;
+                          line-height: 36px;
+
+                          .field--name-title {
+                            display: none;
+                          }
+                        }
+                      }
+
+                      .node__content {
+                        .field--name-field-nombre {
+                          font-size: 24px;
+                          color: $negro;
+                          font-family: $dm-serif;
+                          font-weight: $dm-serif-regular;
+                          line-height: 36px;
+                          margin-block-end: 0.83em;
+                        }
+                      }
+
+                      p {
+                        font-size: 16px;
+                        color: $bne_color_2;
+                        line-height: 24px;
+                        letter-spacing: 0.48px;
+                      }
+                    }
+
+                    .views-field-field-telefonos {
+                      .field-content {
+                        .contacto {
+                          h2 {
+                            font-size: 24px;
+                            color: $negro;
+                            font-family: $dm-serif;
+                            font-weight: $dm-serif-regular;
+                            line-height: 36px;
+                            margin-block-end: 0.83em;
+
+                            &::after {
+                              display: none;
+                            }
+                          }
+
+                          .telefonos {
+                            font-size: 16px;
+                            color: $bne_color_2;
+                            line-height: 24px;
+                            letter-spacing: 0.48px;
+                            margin-bottom: 0.5em;
+                          }
+
+                          .email {
+                            font-size: 16px;
+                            color: $bne_color_2;
+                            line-height: 24px;
+                            letter-spacing: 0.48px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu--horarios-de-salas-servicios-y-ex {
+  padding: 0 3em 0 15px;
+
+  h2 {
+    // font-family: $dm-serif;
+    // font-weight: $dm-serif-regular;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    color: $bne_color_1;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    text-align: right;
+    padding-right: 20px;
+
+    //cursor: pointer;
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    h2 {
+      display: block;
+
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.5px solid $bne_color_3;
+      background: $bne_color_4;
+      margin-block-end: 0px;
+      padding-right: 0px;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 10px;
+        width: 6px;
+        background: url(/themes/contrib/bne_theme/recursos/layer1.svg) no-repeat center;
+        background-size: 10px;
+        padding-left: 20px;
+        transform: rotate(-90deg);
+        transition: all 0.5s ease;
+      }
+    }
+
+    h2.rotate {
+      &::after {
+        content: "";
+        display: block;
+        height: 10px;
+        width: 6px;
+        background: url(/themes/contrib/bne_theme/recursos/layer1.svg) no-repeat center;
+        background-size: 10px;
+        padding-left: 20px;
+        transform: rotate(-0deg);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  .menu-level-0 {
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 1em;
+
+      a {
+        font-weight: 400;
+      }
+
+      span {
+        font-size: 16px;
+        color: $bne_color_1;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 10px;
+          width: 6px;
+          background: url(/themes/contrib/bne_theme/recursos/layer1.svg) no-repeat center;
+          background-size: 10px;
+          padding-left: 20px;
+          transform: rotate(-90deg);
+          transition: all 0.5s ease;
+        }
+      }
+
+      span.rotate {
+        &::after {
+          content: "";
+          display: block;
+          height: 10px;
+          width: 6px;
+          background: url(/themes/contrib/bne_theme/recursos/layer1.svg) no-repeat center;
+          background-size: 10px;
+          padding-left: 20px;
+          transform: rotate(-0deg);
+          transition: all 0.5s ease;
+        }
+      }
+
+      a {
+        font-size: 16px;
+        color: $bne_color_1;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+        cursor: pointer;
+        margin-right: 25px;
+      }
+
+      a.is-active {
+        border-bottom: 2px solid $bne_color_5;
+      }
+
+      .menu_link_content {
+        display: none;
+        margin-top: 1em;
+
+        .field--name-field-listado-vista {
+          .ps-menu-sidebar-horarios {
+            .view-content {
+              .views-row {
+                .views-field {
+                  text-align: right;
+                  padding-right: 2em;
+                  margin-bottom: 0.8em;
+
+                  @media (max-width: 992px) {
+                    text-align: left;
+                  }
+
+                  span {
+                    a {
+                      font-size: 14px;
+                      color: $bne_color_2;
+                      line-height: 22px;
+                      letter-spacing: 0.42px;
+                    }
+
+                    &::after {
+                      display: none;
+                    }
+
+                    .active {
+                      border-bottom: 2px solid $bne_color_5;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .menu-item--active-trail {
+      //padding-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .menu--horarios-de-salas-servicios-y-ex {
+    padding: 0;
+    margin-bottom: 2em;
+
+    .menu-level-0 {
+      display: none;
+      padding: 15px;
+      border-left: 0.5px solid $bne_color_3;
+      border-right: 0.5px solid $bne_color_3;
+      border-bottom: 0.5px solid $bne_color_3;
+      margin-block-start: 0px;
+
+      .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .menu--horarios-de-salas-servicios-y-ex {
+    .menu-level-0 {
+      display: block !important;
+    }
+  }
+}

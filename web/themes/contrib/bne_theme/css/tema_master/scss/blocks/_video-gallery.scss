@@ -1,0 +1,32 @@
+/*
+    ========== GALERÍA DE VÍDEOS ==========
+
+    Estilos dedicados a la vista de galería de vídeos.
+
+    ----------------------- VARIABLES -------------------------
+    $repeat_column_num_gallery_video = Número de columnas
+    de la galería de vídeo
+
+    $column_width_gallery_video = Ancho de las columnas de la
+    gelería de vídeo
+
+    $grid-gap_gallery_video = Espacio entre las rejillas de
+    la galería de vídeo
+*/
+
+
+.node--type-galeria-de-videos {
+    .field--name-field-videos {
+        display: grid;
+        grid-template-columns: repeat($repeat_column_num_gallery_video, $column_width_gallery_video);
+        gap: $grid-gap_gallery_video;
+        & > .field__item {
+            .field__item {
+                & > iframe {
+                    width: 100%;
+                    height: 13vw;
+                }
+            }
+        }
+    }
+}

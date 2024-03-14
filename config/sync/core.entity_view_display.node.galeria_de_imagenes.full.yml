@@ -1,0 +1,173 @@
+uuid: 7c02e536-2489-473c-86d2-d24964899789
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.galeria_de_imagenes.title
+    - core.entity_view_mode.node.full
+    - field.field.node.galeria_de_imagenes.body
+    - field.field.node.galeria_de_imagenes.feeds_item
+    - field.field.node.galeria_de_imagenes.field_alias_tipo_contenido
+    - field.field.node.galeria_de_imagenes.field_archivos
+    - field.field.node.galeria_de_imagenes.field_area_tematica
+    - field.field.node.galeria_de_imagenes.field_codigo_referencia
+    - field.field.node.galeria_de_imagenes.field_colectivo
+    - field.field.node.galeria_de_imagenes.field_contenido_generico
+    - field.field.node.galeria_de_imagenes.field_contenidos_relacionados
+    - field.field.node.galeria_de_imagenes.field_domain_access
+    - field.field.node.galeria_de_imagenes.field_domain_all_affiliates
+    - field.field.node.galeria_de_imagenes.field_domain_source
+    - field.field.node.galeria_de_imagenes.field_enlace
+    - field.field.node.galeria_de_imagenes.field_etiquetas_busqueda
+    - field.field.node.galeria_de_imagenes.field_fecha_galeria
+    - field.field.node.galeria_de_imagenes.field_id_externo
+    - field.field.node.galeria_de_imagenes.field_imagen_destacada
+    - field.field.node.galeria_de_imagenes.field_imagenes
+    - field.field.node.galeria_de_imagenes.field_meta_tags
+    - field.field.node.galeria_de_imagenes.field_tipos
+    - field.field.node.galeria_de_imagenes.field_yoast_seo
+    - node.type.galeria_de_imagenes
+    - views.view.widgets_imagenes
+  module:
+    - layout_builder
+    - layout_discovery
+    - metatag
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          c177578b-1737-4175-b7b3-abe51bd3fcb2:
+            uuid: c177578b-1737-4175-b7b3-abe51bd3fcb2
+            region: content
+            configuration:
+              id: 'field_block:node:galeria_de_imagenes:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          23cdfe28-d0d1-4b49-8b56-797ec4ed6a96:
+            uuid: 23cdfe28-d0d1-4b49-8b56-797ec4ed6a96
+            region: content
+            configuration:
+              id: 'field_block:node:galeria_de_imagenes:field_meta_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: metatag_empty_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          a97aae8f-b321-46f3-a936-22bbf5d3e85a:
+            uuid: a97aae8f-b321-46f3-a936-22bbf5d3e85a
+            region: content
+            configuration:
+              id: 'field_block:node:galeria_de_imagenes:field_tipos'
+              label: 'Tipo de galería'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f94fe36a-d91e-4c65-9c50-ef127fcb9900:
+            uuid: f94fe36a-d91e-4c65-9c50-ef127fcb9900
+            region: content
+            configuration:
+              id: 'field_block:node:galeria_de_imagenes:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          e5844057-dce7-4856-b004-39fc911c7c95:
+            uuid: e5844057-dce7-4856-b004-39fc911c7c95
+            region: content
+            configuration:
+              id: 'views_block:widgets_imagenes-block_4'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.galeria_de_imagenes.full
+targetEntityType: node
+bundle: galeria_de_imagenes
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_tematica: true
+  field_codigo_referencia: true
+  field_colectivo: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_etiquetas_busqueda: true
+  field_fecha_galeria: true
+  field_id_externo: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_tipos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

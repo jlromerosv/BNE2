@@ -1,0 +1,18 @@
+uuid: 60074263-2f46-4d6a-95e8-16d5d2191f77
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+id: node.bolsa_de_trabajo.created
+field_name: created
+entity_type: node
+bundle: bolsa_de_trabajo
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

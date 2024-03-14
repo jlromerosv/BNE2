@@ -1,0 +1,43 @@
+uuid: b837ec95-1b5d-41e5-9173-78c4ab00c747
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.estadistica.body
+    - field.field.node.estadistica.field_domain_access
+    - field.field.node.estadistica.field_domain_all_affiliates
+    - field.field.node.estadistica.field_domain_source
+    - field.field.node.estadistica.field_imagen_destacada
+    - field.field.node.estadistica.field_serie_estadistica
+    - node.type.estadistica
+  module:
+    - text
+    - user
+id: node.estadistica.teaser
+targetEntityType: node
+bundle: estadistica
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_imagen_destacada: true
+  field_serie_estadistica: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

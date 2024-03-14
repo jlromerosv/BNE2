@@ -1,0 +1,10 @@
+uuid: 34b9e643-1f81-4566-acc6-71d896d17b77
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.acordeon
+label: Acordeón
+targetEntityType: node
+cache: true

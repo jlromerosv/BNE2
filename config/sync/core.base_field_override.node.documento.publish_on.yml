@@ -1,0 +1,18 @@
+uuid: a75b45c7-f007-4df1-9295-bc0227e763e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+id: node.documento.publish_on
+field_name: publish_on
+entity_type: node
+bundle: documento
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

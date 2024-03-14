@@ -1,0 +1,29 @@
+uuid: 14fa11d6-5ba5-4b58-8749-aca877b94748
+langcode: es
+status: true
+dependencies:
+  module:
+    - domain
+    - field_permissions
+    - node
+  enforced:
+    module:
+      - domain_source
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: JIYj5R0JuOltWKuyvtCxx0MJz5pqFUapUbkRgGLPano
+id: node.field_domain_source
+field_name: field_domain_source
+entity_type: node
+type: entity_reference
+settings:
+  target_type: domain
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

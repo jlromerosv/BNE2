@@ -1,0 +1,34 @@
+uuid: e117ff14-f895-4e9c-81ad-2cd09707f291
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-de-gestion-del-usuario
+  module:
+    - block_class
+    - system
+  theme:
+    - sede_theme
+third_party_settings:
+  block_class:
+    classes: ps-panel-gestion-usuario
+id: sede_theme_menupaneldegestiondelusuario
+theme: sede_theme
+region: content
+weight: -31
+provider: null
+plugin: 'system_menu_block:menu-de-gestion-del-usuario'
+settings:
+  id: 'system_menu_block:menu-de-gestion-del-usuario'
+  label: 'Menú Panel de Gestión del Usuario'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/user/*'

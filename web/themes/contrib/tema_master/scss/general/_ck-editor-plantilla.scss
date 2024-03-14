@@ -1,0 +1,132 @@
+.ck-tabla {
+    border: none !important;
+    padding: 0 !important;
+    overflow: scroll;
+    width: 90vw;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: green;
+    @media (min-width: 992px) {
+        overflow: unset;
+        width: 100%;
+    }
+    table {
+        width: 1100px !important;
+        border: none !important;
+        caption {
+            padding: 1em 0;
+            color: #005172;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        thead {
+            border: none !important;
+            tr,
+            th {
+                border: none !important;
+            }
+            th {
+                font-family: "Montserrat";
+                font-weight: 600 !important;
+                line-height: 22px;
+                font-size: 16px !important;
+                color: green !important;
+                background: #F5F5F5;
+                padding: 1em !important;
+                text-align: left;
+            }
+        }
+        tbody {
+            border: none !important;
+            tr {
+                border-bottom: 1px solid green !important;
+            }
+            td {
+                border: none !important;
+                font-family: "Montserrat";
+                font-weight: 400 !important;
+                line-height: 19px;
+                font-size: 16px !important;
+            }
+            th {
+                font-family: "Montserrat";
+                font-weight: 600 !important;
+                line-height: 22px;
+                font-size: 18px !important;
+                color: green !important;
+                background: #F5F5F5;
+                padding: 1em !important;
+                text-align: left;
+            }
+        }
+    }
+}
+
+// .ck-tabla-autoajustable {
+//     border: none !important;
+//     padding: 0 !important;
+//     overflow: scroll;
+//     width: 90vw;
+//     border-bottom-style: solid;
+//     border-bottom-width: 1px;
+//     border-bottom-color: green;
+//     @media (min-width: 992px) {
+//         overflow: unset;
+//         width: 100%;
+//     }
+//     table {
+//         width: auto !important;
+//         border: none !important;
+//         caption {
+//             padding: 1em 0;
+//             color: #005172;
+//             font-weight: 600;
+//             font-size: 16px;
+//         }
+//         thead {
+//             border: none !important;
+//             tr,
+//             th {
+//                 border: none !important;
+
+//             }
+//             th {
+//                 font-family: "Montserrat";
+//                 font-weight: 600 !important;
+//                 line-height: 22px;
+//                 font-size: 16px !important;
+//                 color: green !important;
+//                 background: #F5F5F5;
+//                 padding: 1em !important;
+//                 text-align: left;
+
+
+//             }
+//         }
+//         tbody {
+//             border: none !important;
+//             tr {
+//                 border-bottom: 1px solid green !important;
+
+//             }
+//             td {
+//                 border: none !important;
+//                 font-family: "Montserrat";
+//                 font-weight: 400 !important;
+//                 line-height: 19px;
+//                 font-size: 16px !important;
+//                 min-width: 180px;
+//             }
+//             th {
+//                 font-family: "Montserrat";
+//                 font-weight: 600 !important;
+//                 line-height: 22px;
+//                 font-size: 18px !important;
+//                 color: green !important;
+//                 background: #F5F5F5;
+//                 padding: 1em !important;
+//                 text-align: left;
+//             }
+//         }
+//     }
+// }

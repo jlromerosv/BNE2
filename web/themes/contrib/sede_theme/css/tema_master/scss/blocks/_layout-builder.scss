@@ -1,0 +1,30 @@
+/*
+    ========== LAYOUT BUILDER ==========
+
+    Estilos generales aplicados al layout builder
+
+    ----------------------- VARIABLES -------------------------
+    $label_layout_builder = Tamaño de fuente del label de
+    layout builder
+
+    $border_layout_builder_separator_item = Estilos que forman
+    un separador de los diferentes ítems que se muestran
+*/
+
+.block-layout-builder {
+    margin: 20px 0;
+    .field__label {
+        font-size: $label_layout_builder;
+    }
+    .field__items {
+        & > .field__item:not(:first-child) {
+            border-top: $border_layout_builder_separator_item;
+        }
+        & > .field__item {
+            padding: 15px;
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+}

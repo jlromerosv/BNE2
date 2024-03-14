@@ -1,0 +1,18 @@
+uuid: 6866f50c-fc3c-413d-a2d4-263322ba943a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.evento
+id: node.evento.publish_on
+field_name: publish_on
+entity_type: node
+bundle: evento
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

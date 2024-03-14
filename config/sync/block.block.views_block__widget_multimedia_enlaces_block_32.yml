@@ -1,0 +1,33 @@
+uuid: f2430b27-478c-45e9-b4e6-73e7eef96982
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - node
+    - views
+  theme:
+    - bne_theme
+id: views_block__widget_multimedia_enlaces_block_32
+theme: bne_theme
+region: content
+weight: -55
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-block_32'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-block_32'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      evento: evento

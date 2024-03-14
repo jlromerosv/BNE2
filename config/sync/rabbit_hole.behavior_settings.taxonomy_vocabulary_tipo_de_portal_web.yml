@@ -1,0 +1,14 @@
+uuid: 5851f88c-57de-4144-b8fa-25c65dbb04e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_portal_web
+id: taxonomy_vocabulary_tipo_de_portal_web
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_portal_web
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

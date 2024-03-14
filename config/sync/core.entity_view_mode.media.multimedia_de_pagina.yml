@@ -1,0 +1,10 @@
+uuid: 22722339-5a05-4f2e-bee5-fd9c6b18784a
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.multimedia_de_pagina
+label: 'Multimedia de página'
+targetEntityType: media
+cache: true

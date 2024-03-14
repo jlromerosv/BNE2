@@ -1,0 +1,28 @@
+uuid: 8877cb5b-4be2-4808-86bd-c0035bdde1d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.municipio.feeds_item
+    - field.field.taxonomy_term.municipio.field_provincia
+    - taxonomy.vocabulary.municipio
+  module:
+    - text
+id: taxonomy_term.municipio.default
+targetEntityType: taxonomy_term
+bundle: municipio
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_provincia: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

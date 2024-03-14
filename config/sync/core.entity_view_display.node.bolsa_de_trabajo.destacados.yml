@@ -1,0 +1,46 @@
+uuid: 5ece2fa4-c2b6-48d7-9a49-279ed2502e61
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.destacados
+    - field.field.node.bolsa_de_trabajo.body
+    - field.field.node.bolsa_de_trabajo.field_archivos
+    - field.field.node.bolsa_de_trabajo.field_convocatorias_de_esta_pagi
+    - field.field.node.bolsa_de_trabajo.field_domain_access
+    - field.field.node.bolsa_de_trabajo.field_domain_all_affiliates
+    - field.field.node.bolsa_de_trabajo.field_domain_source
+    - field.field.node.bolsa_de_trabajo.field_fecha_actualizacion_visibl
+    - node.type.bolsa_de_trabajo
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.bolsa_de_trabajo.destacados
+targetEntityType: node
+bundle: bolsa_de_trabajo
+mode: destacados
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_archivos: true
+  field_convocatorias_de_esta_pagi: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_fecha_actualizacion_visibl: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

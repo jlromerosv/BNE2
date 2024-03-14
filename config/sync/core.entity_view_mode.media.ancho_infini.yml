@@ -1,0 +1,10 @@
+uuid: 75f43e22-7085-418f-af20-5b952e184037
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.ancho_infini
+label: 'Ancho infinito'
+targetEntityType: media
+cache: true

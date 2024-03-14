@@ -1,0 +1,28 @@
+uuid: 6b7e4429-db8d-48a8-8cd3-7307fe683bd5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_img_colectivo
+    - media.type.imagen
+    - taxonomy.vocabulary.colectivo
+id: taxonomy_term.colectivo.field_img_colectivo
+field_name: field_img_colectivo
+entity_type: taxonomy_term
+bundle: colectivo
+label: 'Imagen colectivo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

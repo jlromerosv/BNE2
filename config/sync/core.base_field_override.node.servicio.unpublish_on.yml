@@ -1,0 +1,18 @@
+uuid: 4cf65397-658a-4915-a652-e0d7cc723042
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.servicio
+id: node.servicio.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: servicio
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

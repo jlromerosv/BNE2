@@ -1,0 +1,21 @@
+uuid: 7ceeb620-9a0e-4480-a38a-5c06cec157d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_relacionados
+    - node.type.dossier
+id: node.dossier.field_contenidos_relacionados
+field_name: field_contenidos_relacionados
+entity_type: node
+bundle: dossier
+label: 'Contenidos relacionados'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

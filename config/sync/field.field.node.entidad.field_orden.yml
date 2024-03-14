@@ -1,0 +1,23 @@
+uuid: 44981d06-5ff1-469e-b464-bda112ef0ef0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.entidad
+id: node.entidad.field_orden
+field_name: field_orden
+entity_type: node
+bundle: entidad
+label: Orden
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

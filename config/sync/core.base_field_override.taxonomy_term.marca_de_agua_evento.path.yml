@@ -1,0 +1,20 @@
+uuid: 8520dfd8-33e2-4d97-ab39-921ea6a6947f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.marca_de_agua_evento
+  module:
+    - path
+id: taxonomy_term.marca_de_agua_evento.path
+field_name: path
+entity_type: taxonomy_term
+bundle: marca_de_agua_evento
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,14 @@
+uuid: ff024481-5b30-45ff-9cb6-1aef0a6f3daf
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+id: node_type_red_social
+entity_type_id: node_type
+entity_id: red_social
+action: page_redirect
+allow_override: 1
+redirect: '[node:field_enlace:uri]'
+redirect_code: 301
+redirect_fallback_action: access_denied

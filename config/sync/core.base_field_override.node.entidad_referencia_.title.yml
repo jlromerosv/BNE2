@@ -1,0 +1,18 @@
+uuid: 27f35309-c821-43b4-92b6-316be1f946ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad_referencia_
+id: node.entidad_referencia_.title
+field_name: title
+entity_type: node
+bundle: entidad_referencia_
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: b3528db9-6048-4991-92e0-7a281bcd75c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+id: node_type_cargo
+entity_type_id: node_type
+entity_id: cargo
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

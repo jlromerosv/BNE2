@@ -1,0 +1,18 @@
+uuid: eaf13fcc-16b2-48f0-89d2-b799192cd9c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_documentos
+id: node.galeria_de_documentos.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

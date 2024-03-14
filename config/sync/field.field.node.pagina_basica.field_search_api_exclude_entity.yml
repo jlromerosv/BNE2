@@ -1,0 +1,23 @@
+uuid: c6bb1a62-0941-458f-9375-2d338fe4c800
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_search_api_exclude_entity
+    - node.type.pagina_basica
+  module:
+    - search_api_exclude_entity
+id: node.pagina_basica.field_search_api_exclude_entity
+field_name: field_search_api_exclude_entity
+entity_type: node
+bundle: pagina_basica
+label: 'Search API Exclude Entity'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: false
+default_value_callback: ''
+settings: {  }
+field_type: search_api_exclude_entity

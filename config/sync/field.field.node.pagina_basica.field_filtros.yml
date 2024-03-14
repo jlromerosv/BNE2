@@ -1,0 +1,102 @@
+uuid: 7f0b1a6b-5afd-4217-ac4e-93b6e217f854
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_filtros
+    - node.type.pagina_basica
+    - taxonomy.vocabulary.area_de_transparencia
+    - taxonomy.vocabulary.area_organizativa
+    - taxonomy.vocabulary.area_tematica
+    - taxonomy.vocabulary.categoria_actualidad
+    - taxonomy.vocabulary.categoria_de_faq
+    - taxonomy.vocabulary.categoria_de_servicio
+    - taxonomy.vocabulary.categorias_evento
+    - taxonomy.vocabulary.colectivo
+    - taxonomy.vocabulary.estado_iniciativa
+    - taxonomy.vocabulary.estado_promocion_inmuebles
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+    - taxonomy.vocabulary.provincias
+    - taxonomy.vocabulary.regimen_de_promocion_de_inmbuebl
+    - taxonomy.vocabulary.tematica_de_catalogo
+    - taxonomy.vocabulary.tipo_convocatoria
+    - taxonomy.vocabulary.tipo_de_campana
+    - taxonomy.vocabulary.tipo_de_catalogo
+    - taxonomy.vocabulary.tipo_de_contenidos_formativos
+    - taxonomy.vocabulary.tipo_de_documento_institucional
+    - taxonomy.vocabulary.tipo_de_dossier_boletin
+    - taxonomy.vocabulary.tipo_de_enlace
+    - taxonomy.vocabulary.tipo_de_exposicion
+    - taxonomy.vocabulary.tipo_de_galeria_de_documentos
+    - taxonomy.vocabulary.tipo_de_lugar
+    - taxonomy.vocabulary.tipo_de_material
+    - taxonomy.vocabulary.tipo_de_obra
+    - taxonomy.vocabulary.tipo_de_persona
+    - taxonomy.vocabulary.tipo_de_publicacion
+    - taxonomy.vocabulary.tipo_de_referencia_bibliografica
+    - taxonomy.vocabulary.tipo_de_servicio
+    - taxonomy.vocabulary.tipo_entidad
+    - taxonomy.vocabulary.tipo_evento
+    - taxonomy.vocabulary.tipo_galeria
+    - taxonomy.vocabulary.tipo_iniciativa
+    - taxonomy.vocabulary.tipo_tramite
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.pagina_basica.field_filtros
+field_name: field_filtros
+entity_type: node
+bundle: pagina_basica
+label: 'Filtros de taxonomía'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_de_transparencia: area_de_transparencia
+      categoria_actualidad: categoria_actualidad
+      categorias_evento: categorias_evento
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+      provincias: provincias
+      tipo_de_lugar: tipo_de_lugar
+      tipo_de_campana: tipo_de_campana
+      tipo_de_catalogo: tipo_de_catalogo
+      tipo_de_material: tipo_de_material
+      tipo_convocatoria: tipo_convocatoria
+      tipo_de_contenidos_formativos: tipo_de_contenidos_formativos
+      tipo_de_dossier_boletin: tipo_de_dossier_boletin
+      tipo_de_enlace: tipo_de_enlace
+      tipo_entidad: tipo_entidad
+      tipo_evento: tipo_evento
+      tipo_de_galeria_de_documentos: tipo_de_galeria_de_documentos
+      tipo_galeria: tipo_galeria
+      tipo_iniciativa: tipo_iniciativa
+      tipo_de_obra: tipo_de_obra
+      tipo_de_persona: tipo_de_persona
+      tipo_de_publicacion: tipo_de_publicacion
+      colectivo: colectivo
+      tipo_de_referencia_bibliografica: tipo_de_referencia_bibliografica
+      tipo_de_servicio: tipo_de_servicio
+      categoria_de_faq: categoria_de_faq
+      categoria_de_servicio: categoria_de_servicio
+      estado_iniciativa: estado_iniciativa
+      estado_promocion_inmuebles: estado_promocion_inmuebles
+      regimen_de_promocion_de_inmbuebl: regimen_de_promocion_de_inmbuebl
+      area_tematica: area_tematica
+      tematica_de_catalogo: tematica_de_catalogo
+      tipo_de_documento_institucional: tipo_de_documento_institucional
+      tipo_de_exposicion: tipo_de_exposicion
+      tipo_tramite: tipo_tramite
+      area_organizativa: area_organizativa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: categorias_evento
+field_type: entity_reference

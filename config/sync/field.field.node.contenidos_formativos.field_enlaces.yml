@@ -1,0 +1,28 @@
+uuid: 358d9355-02e3-4327-82ff-01c8212f629d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlaces
+    - node.type.contenidos_formativos
+  module:
+    - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
+id: node.contenidos_formativos.field_enlaces
+field_name: field_enlaces
+entity_type: node
+bundle: contenidos_formativos
+label: Enlaces
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

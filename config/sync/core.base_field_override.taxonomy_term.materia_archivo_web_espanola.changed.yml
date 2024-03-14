@@ -1,0 +1,18 @@
+uuid: c27fb47c-43fd-4c5b-959e-004c823d9063
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.materia_archivo_web_espanola
+id: taxonomy_term.materia_archivo_web_espanola.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: materia_archivo_web_espanola
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

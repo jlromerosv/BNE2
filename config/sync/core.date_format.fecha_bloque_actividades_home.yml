@@ -1,0 +1,8 @@
+uuid: 3ce2a114-11bc-44b9-8f9b-ac398d39124a
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_bloque_actividades_home
+label: 'fecha bloque actividades home'
+locked: false
+pattern: 'l,  j \d\e F.'

@@ -1,0 +1,20 @@
+uuid: bde4ccc0-40a5-499e-ac62-00f0f89028f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad_referencia_
+  module:
+    - options
+id: node.entidad_referencia_.publish_state
+field_name: publish_state
+entity_type: node
+bundle: entidad_referencia_
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

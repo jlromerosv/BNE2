@@ -1,0 +1,28 @@
+uuid: f8653c59-4294-418c-aaca-2218cf87f8fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_videos
+    - media.type.video_remoto
+    - node.type.tramite
+id: node.tramite.field_videos
+field_name: field_videos
+entity_type: node
+bundle: tramite
+label: Vídeos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video_remoto: video_remoto
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

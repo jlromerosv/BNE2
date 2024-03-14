@@ -1,0 +1,22 @@
+uuid: 5e578c1a-6296-4694-b7cd-9e0ca75c727f
+langcode: es
+status: true
+dependencies:
+  theme:
+    - fundacion_theme
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: fundacion_theme_local_tasks
+theme: fundacion_theme
+region: header_seccion
+weight: -21
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

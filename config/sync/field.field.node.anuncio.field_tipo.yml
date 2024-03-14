@@ -1,0 +1,29 @@
+uuid: 417c1478-3a01-4584-add5-b0bdf5bf0f33
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo
+    - node.type.anuncio
+    - taxonomy.vocabulary.tipo_de_anuncio
+id: node.anuncio.field_tipo
+field_name: field_tipo
+entity_type: node
+bundle: anuncio
+label: 'Tipo de anuncio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_anuncio: tipo_de_anuncio
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

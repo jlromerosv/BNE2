@@ -1,0 +1,34 @@
+uuid: a4e62fce-20f8-4c3f-b823-e35ddb94822a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coleccion
+    - node.type.coleccion
+    - node.type.enlace_a_web_archivada
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.enlace_a_web_archivada.field_coleccion
+field_name: field_coleccion
+entity_type: node
+bundle: enlace_a_web_archivada
+label: Colección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      coleccion: coleccion
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 74dd5f56-b0bc-4288-8841-a595f97fbf30
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_color
+    - taxonomy.vocabulary.tipo_de_alerta
+  module:
+    - color_field
+id: taxonomy_term.tipo_de_alerta.field_color
+field_name: field_color
+entity_type: taxonomy_term
+bundle: tipo_de_alerta
+label: Color
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

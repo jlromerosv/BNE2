@@ -1,0 +1,14 @@
+uuid: 0178f04a-996c-4f70-80fb-1b3b686ac575
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_contenidos_admin
+  module:
+    - user
+id: user_remove_role_action.editor_contenidos_admin
+label: 'Elimina el rol Editor contenidos admin al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor_contenidos_admin

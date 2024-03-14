@@ -1,0 +1,26 @@
+uuid: c853b8a0-7822-42b5-8af2-a5e1ab947640
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horarios_especificos
+    - node.type.exposicion
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.exposicion.field_horarios_especificos
+field_name: field_horarios_especificos
+entity_type: node
+bundle: exposicion
+label: Horario
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

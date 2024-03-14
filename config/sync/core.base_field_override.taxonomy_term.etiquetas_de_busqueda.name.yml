@@ -1,0 +1,18 @@
+uuid: cfb1a871-8aac-4ea3-a879-0f726703dd0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+id: taxonomy_term.etiquetas_de_busqueda.name
+field_name: name
+entity_type: taxonomy_term
+bundle: etiquetas_de_busqueda
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+uuid: 26b7d69d-deaa-4995-b30d-c21e8641aaca
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_enlaces_destacados_home_lg
+label: 'Bloque Enlaces Destacados Home LG'
+effects:
+  b4787879-dba5-4438-94a9-c536719028a1:
+    uuid: b4787879-dba5-4438-94a9-c536719028a1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 600
+      anchor: center-center

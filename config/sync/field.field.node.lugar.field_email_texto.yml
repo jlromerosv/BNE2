@@ -1,0 +1,19 @@
+uuid: 57ce4ca9-d18f-4389-9923-663ee226659c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_texto
+    - node.type.lugar
+id: node.lugar.field_email_texto
+field_name: field_email_texto
+entity_type: node
+bundle: lugar
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

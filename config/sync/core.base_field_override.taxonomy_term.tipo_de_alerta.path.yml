@@ -1,0 +1,20 @@
+uuid: 8317c982-50d1-41ac-847a-0e04b93ccf0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_alerta
+  module:
+    - path
+id: taxonomy_term.tipo_de_alerta.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_alerta
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

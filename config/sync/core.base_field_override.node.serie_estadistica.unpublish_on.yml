@@ -1,0 +1,18 @@
+uuid: c1d85934-d270-4a96-84a3-57badc8fdc24
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.serie_estadistica
+id: node.serie_estadistica.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: serie_estadistica
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

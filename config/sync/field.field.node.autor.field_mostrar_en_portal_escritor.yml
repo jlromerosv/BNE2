@@ -1,0 +1,28 @@
+uuid: b29c5330-afcf-41c0-a889-20c9c95c3017
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mostrar_en_portal_escritor
+    - node.type.autor
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.autor.field_mostrar_en_portal_escritor
+field_name: field_mostrar_en_portal_escritor
+entity_type: node
+bundle: autor
+label: 'Mostrar en portal escritores'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: a9f33786-98e2-4c5c-bc25-56e5000a6b0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_organizativa
+  module:
+    - text
+id: taxonomy_term.area_organizativa.description
+field_name: description
+entity_type: taxonomy_term
+bundle: area_organizativa
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

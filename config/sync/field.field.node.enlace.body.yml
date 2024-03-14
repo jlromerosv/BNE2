@@ -1,0 +1,28 @@
+uuid: ee09c0b0-8f9c-4b5f-8f7f-265d78eab190
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.enlace
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.enlace.body
+field_name: body
+entity_type: node
+bundle: enlace
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

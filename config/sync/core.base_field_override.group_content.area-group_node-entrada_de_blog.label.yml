@@ -1,0 +1,18 @@
+uuid: 00d857e6-75ce-4c0a-9f3c-0a14bf9b0a59
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.area-group_node-entrada_de_blog
+id: group_content.area-group_node-entrada_de_blog.label
+field_name: label
+entity_type: group_content
+bundle: area-group_node-entrada_de_blog
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

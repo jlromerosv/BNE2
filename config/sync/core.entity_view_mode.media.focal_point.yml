@@ -1,0 +1,10 @@
+uuid: 7064df3a-908b-4163-a38d-4e3695f7263f
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.focal_point
+label: 'Crop banner'
+targetEntityType: media
+cache: true

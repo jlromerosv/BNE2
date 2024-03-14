@@ -1,0 +1,22 @@
+uuid: 42c41683-f13a-4f68-8a95-5331faac4b15
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.persona
+id: node.persona.status
+field_name: status
+entity_type: node
+bundle: persona
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

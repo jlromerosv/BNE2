@@ -1,0 +1,29 @@
+uuid: 26bc0d5e-e435-46ab-ba37-488510c526c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado
+    - node.type.convocatoria
+    - taxonomy.vocabulary.estado_de_convocatoria
+id: node.convocatoria.field_estado
+field_name: field_estado
+entity_type: node
+bundle: convocatoria
+label: 'Estado de convocatoria'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      estado_de_convocatoria: estado_de_convocatoria
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

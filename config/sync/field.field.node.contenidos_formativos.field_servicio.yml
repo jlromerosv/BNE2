@@ -1,0 +1,28 @@
+uuid: 0a48b502-db93-400c-a9c8-1df460e699d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servicio
+    - node.type.contenidos_formativos
+    - node.type.servicio
+id: node.contenidos_formativos.field_servicio
+field_name: field_servicio
+entity_type: node
+bundle: contenidos_formativos
+label: 'Contacto (Servicio de formación)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      servicio: servicio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

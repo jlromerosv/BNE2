@@ -1,0 +1,31 @@
+uuid: a3ed2197-1e2b-4d67-b5ce-3a484d8c798f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.content_browser
+  module:
+    - views
+name: explorador_de_iconos
+label: 'Explorador de iconos'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: Seleccione
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  9481a926-7f2e-4102-8db8-07b0f6695500:
+    id: view
+    uuid: 9481a926-7f2e-4102-8db8-07b0f6695500
+    label: view
+    weight: 1
+    settings:
+      submit_text: Aceptar
+      auto_select: true
+      view: content_browser
+      view_display: entity_browser_3

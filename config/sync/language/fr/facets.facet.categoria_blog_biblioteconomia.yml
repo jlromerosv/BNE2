@@ -1,0 +1,5 @@
+name: 'Catégorie blog biblioteconomía'
+url_alias: categoria_Blog_biblioteconomia
+widget:
+  config:
+    default_option_label: Sélectionner

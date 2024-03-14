@@ -1,0 +1,4 @@
+title: Contacto
+settings:
+  confirmation_message: 'A súa mensaxe foi enviada.'
+  confirmation_url: node/2441

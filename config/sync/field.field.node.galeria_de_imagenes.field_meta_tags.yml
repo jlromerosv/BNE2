@@ -1,0 +1,21 @@
+uuid: c41286fe-4b5a-4a9f-af8b-75e08c797c11
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.galeria_de_imagenes
+  module:
+    - metatag
+id: node.galeria_de_imagenes.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

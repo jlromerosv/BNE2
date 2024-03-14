@@ -1,0 +1,28 @@
+uuid: 7dca0741-5274-422c-a447-8488a4d2651c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - media.type.imagen
+    - node.type.contenido_generico
+id: node.contenido_generico.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: contenido_generico
+label: Imágenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

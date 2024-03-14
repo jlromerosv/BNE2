@@ -1,0 +1,519 @@
+uuid: 4a0b6628-1949-42a9-9790-c41526dbea2f
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.html_full
+    - filter.format.html_sencillo
+    - media.type.archivo
+    - media.type.archivo_de_audio
+    - media.type.archivo_de_video
+    - media.type.imagen
+    - media.type.video_remoto
+    - node.type.alerta
+    - node.type.autor
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.coleccion
+    - node.type.contenido_generico
+    - node.type.convocatoria
+    - node.type.documento
+    - node.type.dossier
+    - node.type.enlace
+    - node.type.enlace_a_web_archivada
+    - node.type.entidad
+    - node.type.entidad_referencia_
+    - node.type.entrada_de_blog
+    - node.type.evento
+    - node.type.faq
+    - node.type.galeria_de_documentos
+    - node.type.galeria_de_imagenes
+    - node.type.hito
+    - node.type.horarios
+    - node.type.icono_svg_
+    - node.type.imagen_svg_
+    - node.type.iniciativa
+    - node.type.lugar
+    - node.type.noticia
+    - node.type.obra
+    - node.type.pagina_basica
+    - node.type.pagina_personalizada
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.red_social
+    - node.type.referencias_bibliograficas
+    - node.type.seccion_nivel_1_estandar
+    - node.type.servicio
+    - node.type.webform
+    - node.type.widget
+    - taxonomy.vocabulary.area_de_transparencia
+    - taxonomy.vocabulary.area_tematica
+    - taxonomy.vocabulary.autores_del_blog
+    - taxonomy.vocabulary.buzones_de_envio
+    - taxonomy.vocabulary.categoria_actualidad
+    - taxonomy.vocabulary.categoria_contacto
+    - taxonomy.vocabulary.categoria_de_faq
+    - taxonomy.vocabulary.categoria_de_imagen
+    - taxonomy.vocabulary.categoria_de_iniciativa
+    - taxonomy.vocabulary.categorias_evento
+    - taxonomy.vocabulary.colectivo
+    - taxonomy.vocabulary.disponibilidad_publicaciones
+    - taxonomy.vocabulary.estado_de_convocatoria
+    - taxonomy.vocabulary.estado_iniciativa
+    - taxonomy.vocabulary.etiquetas_autores
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+    - taxonomy.vocabulary.genero_autor
+    - taxonomy.vocabulary.marca_de_agua_evento
+    - taxonomy.vocabulary.materia_archivo_web_espanola
+    - taxonomy.vocabulary.modalidad
+    - taxonomy.vocabulary.municipio
+    - taxonomy.vocabulary.palabras_clave_archivo_web_espan
+    - taxonomy.vocabulary.provincias
+    - taxonomy.vocabulary.tipo_convocatoria
+    - taxonomy.vocabulary.tipo_de_alerta
+    - taxonomy.vocabulary.tipo_de_campana
+    - taxonomy.vocabulary.tipo_de_catalogo
+    - taxonomy.vocabulary.tipo_de_contenido_generico
+    - taxonomy.vocabulary.tipo_de_contenidos_formativos
+    - taxonomy.vocabulary.tipo_de_dossier_boletin
+    - taxonomy.vocabulary.tipo_de_enlace
+    - taxonomy.vocabulary.tipo_de_galeria_de_documentos
+    - taxonomy.vocabulary.tipo_de_lugar
+    - taxonomy.vocabulary.tipo_de_material
+    - taxonomy.vocabulary.tipo_de_obra
+    - taxonomy.vocabulary.tipo_de_persona
+    - taxonomy.vocabulary.tipo_de_portal_web
+    - taxonomy.vocabulary.tipo_de_publicacion
+    - taxonomy.vocabulary.tipo_de_referencia_bibliografica
+    - taxonomy.vocabulary.tipo_de_servicio
+    - taxonomy.vocabulary.tipo_entidad
+    - taxonomy.vocabulary.tipo_evento
+    - taxonomy.vocabulary.tipo_galeria
+    - taxonomy.vocabulary.tipo_iniciativa
+    - workflows.workflow.editorial
+  module:
+    - block
+    - comment
+    - content_moderation
+    - content_translation
+    - contextual
+    - domain_access
+    - domain_content
+    - domain_theme_switch
+    - entity_browser
+    - eu_cookie_compliance
+    - feeds
+    - field_permissions
+    - file
+    - file_delete
+    - filter
+    - layout_builder
+    - media
+    - menu_link_attributes
+    - menu_link_content
+    - node
+    - path
+    - pathauto
+    - rabbit_hole
+    - redirect
+    - replicate_ui
+    - scheduler
+    - system
+    - taxonomy
+    - tmgmt
+    - yoast_seo
+id: administrador_contenidos
+label: 'Administrador Contenidos'
+weight: -7
+is_admin: null
+permissions:
+  - 'accept translation jobs'
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access content_browser entity browser pages'
+  - 'access contextual links'
+  - 'access domain content'
+  - 'access explorador_autores_y_entradas_de_block entity browser pages'
+  - 'access explorador_de_iconos entity browser pages'
+  - 'access explorador_de_svg entity browser pages'
+  - 'access feed overview'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access taxonomy overview'
+  - 'administer blocks'
+  - 'administer comment types'
+  - 'administer comments'
+  - 'administer media'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer redirects'
+  - 'administer url aliases'
+  - 'configure any layout'
+  - 'create alerta content'
+  - 'create alerta content on assigned domains'
+  - 'create and edit custom blocks'
+  - 'create archivo media'
+  - 'create archivo_de_audio media'
+  - 'create archivo_de_video media'
+  - 'create autor content'
+  - 'create autor content on assigned domains'
+  - 'create campana content'
+  - 'create campana content on assigned domains'
+  - 'create catalogo content'
+  - 'create catalogo content on assigned domains'
+  - 'create coleccion content'
+  - 'create coleccion content on assigned domains'
+  - 'create contenido_generico content'
+  - 'create contenido_generico content on assigned domains'
+  - 'create content translations'
+  - 'create convocatoria content'
+  - 'create convocatoria content on assigned domains'
+  - 'create documento content'
+  - 'create documento content on assigned domains'
+  - 'create dossier content'
+  - 'create dossier content on assigned domains'
+  - 'create enlace content'
+  - 'create enlace content on assigned domains'
+  - 'create enlace_a_web_archivada content'
+  - 'create entidad content'
+  - 'create entidad content on assigned domains'
+  - 'create entidad_referencia_ content'
+  - 'create entidad_referencia_ content on assigned domains'
+  - 'create entrada_de_blog content'
+  - 'create entrada_de_blog content on assigned domains'
+  - 'create evento content'
+  - 'create evento content on assigned domains'
+  - 'create faq content'
+  - 'create faq content on assigned domains'
+  - 'create field_alias_tipo_contenido'
+  - 'create field_blog'
+  - 'create galeria_de_documentos content'
+  - 'create galeria_de_documentos content on assigned domains'
+  - 'create galeria_de_imagenes content'
+  - 'create galeria_de_imagenes content on assigned domains'
+  - 'create hito content'
+  - 'create hito content on assigned domains'
+  - 'create horarios content'
+  - 'create horarios content on assigned domains'
+  - 'create icono_svg_ content'
+  - 'create icono_svg_ content on assigned domains'
+  - 'create imagen media'
+  - 'create imagen_svg_ content'
+  - 'create imagen_svg_ content on assigned domains'
+  - 'create iniciativa content'
+  - 'create iniciativa content on assigned domains'
+  - 'create lugar content'
+  - 'create lugar content on assigned domains'
+  - 'create media'
+  - 'create noticia content'
+  - 'create noticia content on assigned domains'
+  - 'create obra content'
+  - 'create obra content on assigned domains'
+  - 'create pagina_basica content'
+  - 'create pagina_basica content on assigned domains'
+  - 'create pagina_personalizada content'
+  - 'create pagina_personalizada content on assigned domains'
+  - 'create persona content'
+  - 'create persona content on assigned domains'
+  - 'create publicacion content'
+  - 'create publicacion content on assigned domains'
+  - 'create red_social content'
+  - 'create red_social content on assigned domains'
+  - 'create referencias_bibliograficas content'
+  - 'create referencias_bibliograficas content on assigned domains'
+  - 'create seccion_nivel_1_estandar content'
+  - 'create seccion_nivel_1_estandar content on assigned domains'
+  - 'create servicio content'
+  - 'create servicio content on assigned domains'
+  - 'create terms in area_de_transparencia'
+  - 'create terms in autores_del_blog'
+  - 'create terms in buzones_de_envio'
+  - 'create terms in categoria_actualidad'
+  - 'create terms in categoria_contacto'
+  - 'create terms in categoria_de_faq'
+  - 'create terms in categoria_de_imagen'
+  - 'create terms in categoria_de_iniciativa'
+  - 'create terms in categorias_evento'
+  - 'create terms in colectivo'
+  - 'create terms in disponibilidad_publicaciones'
+  - 'create terms in estado_de_convocatoria'
+  - 'create terms in etiquetas_autores'
+  - 'create terms in etiquetas_de_busqueda'
+  - 'create terms in genero_autor'
+  - 'create terms in marca_de_agua_evento'
+  - 'create terms in materia_archivo_web_espanola'
+  - 'create terms in modalidad'
+  - 'create terms in municipio'
+  - 'create terms in palabras_clave_archivo_web_espan'
+  - 'create terms in provincias'
+  - 'create terms in tipo_convocatoria'
+  - 'create terms in tipo_de_alerta'
+  - 'create terms in tipo_de_campana'
+  - 'create terms in tipo_de_catalogo'
+  - 'create terms in tipo_de_contenido_generico'
+  - 'create terms in tipo_de_contenidos_formativos'
+  - 'create terms in tipo_de_dossier_boletin'
+  - 'create terms in tipo_de_enlace'
+  - 'create terms in tipo_de_galeria_de_documentos'
+  - 'create terms in tipo_de_lugar'
+  - 'create terms in tipo_de_material'
+  - 'create terms in tipo_de_obra'
+  - 'create terms in tipo_de_persona'
+  - 'create terms in tipo_de_portal_web'
+  - 'create terms in tipo_de_publicacion'
+  - 'create terms in tipo_de_referencia_bibliografica'
+  - 'create terms in tipo_de_servicio'
+  - 'create terms in tipo_entidad'
+  - 'create terms in tipo_evento'
+  - 'create terms in tipo_galeria'
+  - 'create terms in tipo_iniciativa'
+  - 'create translation jobs'
+  - 'create ubicacion content on assigned domains'
+  - 'create url aliases'
+  - 'create video_remoto media'
+  - 'create webform content'
+  - 'create widget content'
+  - 'delete all revisions'
+  - 'delete any alerta content'
+  - 'delete any archivo media'
+  - 'delete any archivo_de_audio media'
+  - 'delete any archivo_de_video media'
+  - 'delete any entrada_de_blog content'
+  - 'delete any hito content'
+  - 'delete any imagen media'
+  - 'delete any video_remoto media'
+  - 'delete autor content on assigned domains'
+  - 'delete campana content on assigned domains'
+  - 'delete catalogo content on assigned domains'
+  - 'delete coleccion content on assigned domains'
+  - 'delete contenido_generico content on assigned domains'
+  - 'delete convocatoria content on assigned domains'
+  - 'delete documento content on assigned domains'
+  - 'delete dossier content on assigned domains'
+  - 'delete enlace content on assigned domains'
+  - 'delete entidad content on assigned domains'
+  - 'delete entidad_referencia_ content on assigned domains'
+  - 'delete entrada_de_blog content on assigned domains'
+  - 'delete entrada_de_blog revisions'
+  - 'delete evento content on assigned domains'
+  - 'delete faq content on assigned domains'
+  - 'delete files'
+  - 'delete galeria_de_documentos content on assigned domains'
+  - 'delete galeria_de_imagenes content on assigned domains'
+  - 'delete hito content on assigned domains'
+  - 'delete hito revisions'
+  - 'delete horarios content on assigned domains'
+  - 'delete iniciativa content on assigned domains'
+  - 'delete lugar content on assigned domains'
+  - 'delete media'
+  - 'delete noticia content on assigned domains'
+  - 'delete obra content on assigned domains'
+  - 'delete own archivo media'
+  - 'delete own archivo_de_audio media'
+  - 'delete own archivo_de_video media'
+  - 'delete own contenido_generico content'
+  - 'delete own entrada_de_blog content'
+  - 'delete own hito content'
+  - 'delete own imagen media'
+  - 'delete own seccion_nivel_1_estandar content'
+  - 'delete own video_remoto media'
+  - 'delete pagina_basica content on assigned domains'
+  - 'delete persona content on assigned domains'
+  - 'delete publicacion content on assigned domains'
+  - 'delete red_social content on assigned domains'
+  - 'delete referencias_bibliograficas content on assigned domains'
+  - 'delete servicio content on assigned domains'
+  - 'delete terms in area_de_transparencia'
+  - 'delete terms in buzones_de_envio'
+  - 'delete terms in categoria_actualidad'
+  - 'delete terms in categoria_contacto'
+  - 'delete terms in categoria_de_faq'
+  - 'delete terms in categoria_de_imagen'
+  - 'delete terms in categoria_de_iniciativa'
+  - 'delete terms in categorias_evento'
+  - 'delete terms in disponibilidad_publicaciones'
+  - 'delete terms in estado_de_convocatoria'
+  - 'delete terms in etiquetas_autores'
+  - 'delete terms in etiquetas_de_busqueda'
+  - 'delete terms in genero_autor'
+  - 'delete terms in marca_de_agua_evento'
+  - 'delete terms in materia_archivo_web_espanola'
+  - 'delete terms in modalidad'
+  - 'delete terms in palabras_clave_archivo_web_espan'
+  - 'delete terms in tipo_de_alerta'
+  - 'delete terms in tipo_de_campana'
+  - 'delete terms in tipo_de_contenido_generico'
+  - 'delete terms in tipo_de_contenidos_formativos'
+  - 'delete terms in tipo_de_dossier_boletin'
+  - 'delete terms in tipo_de_enlace'
+  - 'delete terms in tipo_de_galeria_de_documentos'
+  - 'delete terms in tipo_de_lugar'
+  - 'delete terms in tipo_de_material'
+  - 'delete terms in tipo_de_obra'
+  - 'delete terms in tipo_de_persona'
+  - 'delete terms in tipo_de_portal_web'
+  - 'delete terms in tipo_de_publicacion'
+  - 'delete terms in tipo_de_referencia_bibliografica'
+  - 'delete terms in tipo_de_servicio'
+  - 'delete terms in tipo_entidad'
+  - 'delete terms in tipo_evento'
+  - 'delete terms in tipo_galeria'
+  - 'delete terms in tipo_iniciativa'
+  - 'delete translation jobs'
+  - 'display eu cookie compliance popup'
+  - 'domain administration theme'
+  - 'edit any archivo media'
+  - 'edit any archivo_de_audio media'
+  - 'edit any archivo_de_video media'
+  - 'edit any coleccion content'
+  - 'edit any contenido_generico content'
+  - 'edit any entrada_de_blog content'
+  - 'edit any hito content'
+  - 'edit any imagen media'
+  - 'edit any pagina_personalizada content'
+  - 'edit any seccion_nivel_1_estandar content'
+  - 'edit any video_remoto media'
+  - 'edit domain content'
+  - 'edit field_alias_tipo_contenido'
+  - 'edit field_blog'
+  - 'edit own archivo media'
+  - 'edit own archivo_de_audio media'
+  - 'edit own archivo_de_video media'
+  - 'edit own comments'
+  - 'edit own contenido_generico content'
+  - 'edit own field_alias_tipo_contenido'
+  - 'edit own field_blog'
+  - 'edit own hito content'
+  - 'edit own imagen media'
+  - 'edit own pagina_personalizada content'
+  - 'edit own seccion_nivel_1_estandar content'
+  - 'edit own video_remoto media'
+  - 'edit terms in area_de_transparencia'
+  - 'edit terms in area_tematica'
+  - 'edit terms in autores_del_blog'
+  - 'edit terms in buzones_de_envio'
+  - 'edit terms in categoria_actualidad'
+  - 'edit terms in categoria_contacto'
+  - 'edit terms in categoria_de_faq'
+  - 'edit terms in categoria_de_imagen'
+  - 'edit terms in categoria_de_iniciativa'
+  - 'edit terms in categorias_evento'
+  - 'edit terms in colectivo'
+  - 'edit terms in disponibilidad_publicaciones'
+  - 'edit terms in estado_de_convocatoria'
+  - 'edit terms in estado_iniciativa'
+  - 'edit terms in etiquetas_autores'
+  - 'edit terms in etiquetas_de_busqueda'
+  - 'edit terms in genero_autor'
+  - 'edit terms in marca_de_agua_evento'
+  - 'edit terms in materia_archivo_web_espanola'
+  - 'edit terms in modalidad'
+  - 'edit terms in palabras_clave_archivo_web_espan'
+  - 'edit terms in tipo_convocatoria'
+  - 'edit terms in tipo_de_alerta'
+  - 'edit terms in tipo_de_campana'
+  - 'edit terms in tipo_de_catalogo'
+  - 'edit terms in tipo_de_contenido_generico'
+  - 'edit terms in tipo_de_contenidos_formativos'
+  - 'edit terms in tipo_de_dossier_boletin'
+  - 'edit terms in tipo_de_enlace'
+  - 'edit terms in tipo_de_galeria_de_documentos'
+  - 'edit terms in tipo_de_lugar'
+  - 'edit terms in tipo_de_material'
+  - 'edit terms in tipo_de_obra'
+  - 'edit terms in tipo_de_persona'
+  - 'edit terms in tipo_de_portal_web'
+  - 'edit terms in tipo_de_publicacion'
+  - 'edit terms in tipo_de_referencia_bibliografica'
+  - 'edit terms in tipo_de_servicio'
+  - 'edit terms in tipo_entidad'
+  - 'edit terms in tipo_evento'
+  - 'edit terms in tipo_galeria'
+  - 'edit terms in tipo_iniciativa'
+  - 'post comments'
+  - 'publish to any assigned domain'
+  - 'publish to any domain'
+  - 'rabbit hole administer node'
+  - 'replicate entities'
+  - 'revert all revisions'
+  - 'revert entrada_de_blog revisions'
+  - 'revert seccion_nivel_1_estandar revisions'
+  - 'schedule publishing of nodes'
+  - 'skip comment approval'
+  - 'submit translation jobs'
+  - 'translate any entity'
+  - 'translate editable entities'
+  - 'translate menu_link_content'
+  - 'update actividad_generica content on assigned domains'
+  - 'update alerta content on assigned domains'
+  - 'update anuncio content on assigned domains'
+  - 'update any media'
+  - 'update autor content on assigned domains'
+  - 'update campana content on assigned domains'
+  - 'update catalogo content on assigned domains'
+  - 'update coleccion content on assigned domains'
+  - 'update contenido_generico content on assigned domains'
+  - 'update content translations'
+  - 'update convocatoria content on assigned domains'
+  - 'update documento content on assigned domains'
+  - 'update dossier content on assigned domains'
+  - 'update enlace content on assigned domains'
+  - 'update entidad content on assigned domains'
+  - 'update entidad_referencia_ content on assigned domains'
+  - 'update entrada_de_blog content on assigned domains'
+  - 'update evento content on assigned domains'
+  - 'update faq content on assigned domains'
+  - 'update galeria_de_documentos content on assigned domains'
+  - 'update galeria_de_imagenes content on assigned domains'
+  - 'update hito content on assigned domains'
+  - 'update horarios content on assigned domains'
+  - 'update icono_svg_ content on assigned domains'
+  - 'update imagen_svg_ content on assigned domains'
+  - 'update iniciativa content on assigned domains'
+  - 'update lugar content on assigned domains'
+  - 'update media'
+  - 'update noticia content on assigned domains'
+  - 'update obra content on assigned domains'
+  - 'update pagina_basica content on assigned domains'
+  - 'update pagina_personalizada content on assigned domains'
+  - 'update persona content on assigned domains'
+  - 'update publicacion content on assigned domains'
+  - 'update red_social content on assigned domains'
+  - 'update referencias_bibliograficas content on assigned domains'
+  - 'update seccion_nivel_1_estandar content on assigned domains'
+  - 'update servicio content on assigned domains'
+  - 'update ubicacion content on assigned domains'
+  - 'update webform content on assigned domains'
+  - 'update widget content on assigned domains'
+  - 'use editorial transition conceder_publicacion'
+  - 'use editorial transition conceder_publicacion_admin'
+  - 'use editorial transition despublicar'
+  - 'use editorial transition despublicar_admin'
+  - 'use editorial transition editar_borrador'
+  - 'use editorial transition nuevo_borrador'
+  - 'use editorial transition publish'
+  - 'use editorial transition rechazar_publicacion'
+  - 'use editorial transition republicar'
+  - 'use editorial transition restablecer_publicacion'
+  - 'use editorial transition solicitar_publicacion'
+  - 'use menu link attributes'
+  - 'use text format html_full'
+  - 'use text format html_sencillo'
+  - 'use yoast seo'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view entrada_de_blog revisions'
+  - 'view field_alias_tipo_contenido'
+  - 'view field_blog'
+  - 'view latest version'
+  - 'view media'
+  - 'view own field_alias_tipo_contenido'
+  - 'view own field_blog'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view scheduled content'
+  - 'view seccion_nivel_1_estandar revisions'
+  - 'view unpublished domain content'

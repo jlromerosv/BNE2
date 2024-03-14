@@ -1,0 +1,25 @@
+uuid: c66d55ca-80c0-4cdd-a310-c3aa238386c0
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_enlacesdeayudaalanavegacion
+theme: fundacion_theme
+region: pre_content
+weight: -61
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/user/register\r\n/user/login\r\n/user/password\r\n"

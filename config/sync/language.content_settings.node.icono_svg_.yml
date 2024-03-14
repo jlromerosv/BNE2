@@ -1,0 +1,18 @@
+uuid: d9a8cc66-9bb5-43b5-b6e5-9ed7a049e0fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.icono_svg_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.icono_svg_
+target_entity_type_id: node
+target_bundle: icono_svg_
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: 385ef32d-ff20-4a75-979f-a458547f3c88
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intervalo_add_to_cal
+    - node.type.evento
+  module:
+    - datetime_range
+id: node.evento.field_intervalo_add_to_cal
+field_name: field_intervalo_add_to_cal
+entity_type: node
+bundle: evento
+label: 'Intervalo Añadir a Calendario'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

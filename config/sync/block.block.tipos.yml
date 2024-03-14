@@ -1,0 +1,33 @@
+uuid: 06582c91-e8bb-491b-bdef-61ef7cc5445e
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipos_de_publicaciones
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: tipos
+theme: fundacion_theme
+region: sidebar_first
+weight: -18
+provider: null
+plugin: 'facet_block:tipos_de_publicaciones'
+settings:
+  id: 'facet_block:tipos_de_publicaciones'
+  label: 'Tipo de publicación'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: tipos
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/3050

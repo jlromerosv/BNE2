@@ -1,0 +1,18 @@
+uuid: 78e1d5c2-b5cf-48ba-adbf-81113ebc0ce3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+id: node.horarios.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: horarios
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

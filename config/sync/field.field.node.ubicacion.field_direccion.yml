@@ -1,0 +1,21 @@
+uuid: 35ad8cdd-d513-4819-ad8a-7ad0ab3bf739
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_direccion
+    - node.type.ubicacion
+  module:
+    - text
+id: node.ubicacion.field_direccion
+field_name: field_direccion
+entity_type: node
+bundle: ubicacion
+label: Dirección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

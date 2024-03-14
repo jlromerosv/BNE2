@@ -1,0 +1,18 @@
+uuid: 0ce4c9fb-a194-4870-b697-4fa379db63c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.campana
+id: node.campana.title
+field_name: title
+entity_type: node
+bundle: campana
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

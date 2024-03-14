@@ -1,0 +1,291 @@
+.ps-node-3001 {
+  #block-fundacion-theme-contenidoprincipaldelapagina {
+    padding-top: 5em !important;
+    // @media (min-width: 992px) {
+    //   margin-top: 3em;
+    // }
+
+    h1 {
+      .field--name-title {
+        display: none;
+      }
+    }
+  }
+}
+.ps-faqs-list {
+  .view-filters {
+
+    min-height: 126px;
+    .form--inline {
+      display: grid;
+      grid-template-columns: 1fr 225px;
+      padding-bottom: 3em;
+      .form-type-textfield {
+        margin: 0;
+        width: 100%;
+        height: 60px;
+
+        label {
+          display: none;
+        }
+        input {
+          height: 60px;
+          padding: 0 15px 0 35px;
+          border: 0.5px solid $bne_color_3;
+          background-color: $blanco;
+          width: 100%;
+          box-sizing: border-box;
+          &::placeholder {
+            font-size: 14px;
+            color: $bne_color_2;
+          }
+        }
+      }
+      .form-item-field-domain-access {
+        display: none;
+      }
+      .form-actions {
+        margin: 0;
+        height: 60px;
+
+        width: 100%;
+        max-width: 225px;
+        // display: grid;
+        // grid-template-columns: 1fr;
+        grid-column: 2/3;
+        grid-row: 1;
+        input {
+
+          &:nth-child(1) {
+            width: 100%;
+            min-width: 150px;
+          }
+          &:nth-child(2) {
+            width: 65px;
+            margin: 0 0 0 1px;
+            background-image: url(/themes/contrib/bne_theme/recursos/reload.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 25px;
+            font-size: 0;
+          }
+          //width: 100%;
+          background-color: $bne_color_5;
+          height: 60px;
+          font-size: 16px;
+          color: $blanco;
+          letter-spacing: 0.96px;
+          line-height: 24px;
+          border: none;
+          padding: 0;
+        }
+        .ps-reload {
+          position: relative;
+          input {
+            color: $bne_color_5;
+            background-color: transparent;
+            text-align: right;
+            padding-right: 25px;
+          }
+          &::after {
+            content: "";
+            height: 18px;
+            display: block;
+            width: 18px;
+            background: url(/themes/contrib/bne_theme/recursos/reload.svg)
+              no-repeat center;
+            background-size: 18px;
+            position: absolute;
+            right: 0;
+            top: 21px;
+            z-index: -10;
+          }
+        }
+      }
+      @media (max-width: 650px) {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-gap: 1em;
+
+
+        .form-type-textfield {
+          grid-column: span 2;
+          input {
+            padding: 0 15px;
+            width: 100%;
+            box-sizing: border-box;
+          }
+        }
+        .form-actions {
+          // display: grid;
+          // grid-template-columns: 1fr;
+          // grid-gap: 1em;
+          width: 100%;
+          max-width: 100%;
+          padding-bottom: 3em;
+          grid-row: 2;
+          grid-column: span 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          input {
+            width: 100%;
+            background-color: $bne_color_5;
+            height: 60px;
+            font-size: 16px;
+            color: $blanco;
+            letter-spacing: 0.96px;
+            line-height: 24px;
+            border: none;
+            &:nth-child(2) {
+              margin-left: 0;
+              margin-bottom: 3em;
+            }
+          }
+        }
+      }
+    }
+  }
+  .view-content {
+    .views-row {
+      article {
+        min-height: 60px;
+        border-bottom: 1px solid $bne_color_3;
+        h2 {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            pointer-events: none;
+            font-size: 24px;
+            color: $bne_color_1;
+            line-height: 36px;
+            font-family: $dm-serif;
+            font-weight: $dm-serif-regular;
+            max-width: 90%;
+          }
+          &::after {
+            margin-left: 15px;
+            content: "";
+            height: 15px;
+            width: 15px;
+            background: url(/themes/contrib/bne_theme/recursos/signo-mas-gris.svg)
+              no-repeat center;
+            background-size: 15px;
+            display: flex;
+            align-items: center;
+            transition: all 0.5s ease;
+          }
+        }
+        .change-collapsable-icon {
+          &::after {
+            margin-left: 15px;
+            content: "";
+            height: 15px;
+            width: 15px;
+            background: url(/themes/contrib/bne_theme/recursos/signo-menos-gris.svg)
+              no-repeat center;
+            background-size: 15px;
+            display: flex;
+            align-items: center;
+            transition: all 0.5s ease;
+          }
+        }
+        .node__content {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+//estilos ficha faqs
+
+.page-node-type-faq {
+  .layout__region--first {
+    display: flex;
+    justify-content: center;
+    .views-field-field-enlace {
+      margin-bottom: 1em;
+      a {
+        font-size: 1em;
+        color: $bne_color_1;
+        line-height: 24px;
+        letter-spacing: 0.96px;
+      }
+    }
+    @media (max-width: 991.98px) {
+      flex: 0 1 100% !important;
+    }
+  }
+  .layout__region--second {
+    padding: 0 15px;
+    .field--name-title {
+      font-size: 38px;
+      color: $negro;
+      line-height: 52px;
+      font-family: $dm-serif;
+      font-weight: $dm-serif-regular;
+      margin-bottom: 1em;
+    }
+    @media (max-width: 991.98px) {
+      flex: 0 1 100% !important;
+    }
+  }
+}
+
+.view-y-si-todavia-te-queda-alguna-duda- {
+  padding: 33px 15px;
+  background: $bne_color_4;
+
+  .views-field-title {
+    text-align: center;
+    margin-bottom: 1em;
+    span {
+      font-size: 44px;
+      color: $negro;
+      line-height: 52px;
+      letter-spacing: 0.66px;
+      font-family: $dm-serif;
+      font-weight: $dm-serif-regular;
+    }
+  }
+  .views-field-body {
+    text-align: center;
+    @include estilos_body();
+    a {
+      font-family: "Roboto";
+      font-weight: 500;
+      color: $bne_color_6;
+    }
+  }
+}
+
+
+
+.view-consulta-nuestras-preguntas-frecuentes {
+  padding: 33px 15px;
+  background: $bne_color_4;
+  .views-field-body {
+    text-align: center;
+    // @include estilos_body();
+    p{
+      font-size: 32px;
+      color: $negro;
+      line-height: 48px;
+      letter-spacing: 0.66px;
+      font-family: $dm-serif;
+      font-weight: $dm-serif-regular;
+      a {
+
+        font-weight: 500;
+        color: $bne_color_6;
+      }
+    }
+
+
+
+  }
+}
+

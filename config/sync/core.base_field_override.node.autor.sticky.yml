@@ -1,0 +1,22 @@
+uuid: 66012313-e6c3-44bb-ae24-81fd58589ccc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autor
+id: node.autor.sticky
+field_name: sticky
+entity_type: node
+bundle: autor
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

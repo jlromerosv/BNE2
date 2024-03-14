@@ -1,0 +1,20 @@
+uuid: 837a2a01-7cba-4810-9f1e-01058099c582
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.hito
+  module:
+    - path
+id: node.hito.path
+field_name: path
+entity_type: node
+bundle: hito
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

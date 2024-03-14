@@ -1,0 +1,18 @@
+uuid: d4f42214-af1b-4ae7-a9f9-833990c9920b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.autores_del_blog
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.autores_del_blog
+target_entity_type_id: taxonomy_term
+target_bundle: autores_del_blog
+default_langcode: site_default
+language_alterable: false

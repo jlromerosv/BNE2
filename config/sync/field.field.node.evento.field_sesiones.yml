@@ -1,0 +1,28 @@
+uuid: 196e5a18-5ce2-479e-b835-9d0e9bf9bbb6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sesiones
+    - node.type.evento
+    - node.type.sesion_de_actividad
+id: node.evento.field_sesiones
+field_name: field_sesiones
+entity_type: node
+bundle: evento
+label: Sesiones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sesion_de_actividad: sesion_de_actividad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,551 @@
+uuid: 2628f3f8-d919-4280-9b0c-899c529c2d62
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.content_browser
+    - field.field.node.exposicion.body
+    - field.field.node.exposicion.field_alertas
+    - field.field.node.exposicion.field_archivos
+    - field.field.node.exposicion.field_area_tematica
+    - field.field.node.exposicion.field_audios
+    - field.field.node.exposicion.field_colaboradores
+    - field.field.node.exposicion.field_comentarios
+    - field.field.node.exposicion.field_contenidos_relacionados
+    - field.field.node.exposicion.field_domain_access
+    - field.field.node.exposicion.field_domain_all_affiliates
+    - field.field.node.exposicion.field_domain_source
+    - field.field.node.exposicion.field_email
+    - field.field.node.exposicion.field_enlace
+    - field.field.node.exposicion.field_enlace_formulario_inscripc
+    - field.field.node.exposicion.field_entidades
+    - field.field.node.exposicion.field_entidades_subvencionadoras
+    - field.field.node.exposicion.field_etiquetas_busqueda
+    - field.field.node.exposicion.field_fecha_fin
+    - field.field.node.exposicion.field_fecha_inicio
+    - field.field.node.exposicion.field_galeria_de_imagenes
+    - field.field.node.exposicion.field_horarios
+    - field.field.node.exposicion.field_horarios_especificos
+    - field.field.node.exposicion.field_imagen_destacada
+    - field.field.node.exposicion.field_imagenes
+    - field.field.node.exposicion.field_informacion_adicional
+    - field.field.node.exposicion.field_intervalo_add_to_cal
+    - field.field.node.exposicion.field_lugar
+    - field.field.node.exposicion.field_marca_agua
+    - field.field.node.exposicion.field_mas_informacion
+    - field.field.node.exposicion.field_meta_tags
+    - field.field.node.exposicion.field_patrocinadores
+    - field.field.node.exposicion.field_precio
+    - field.field.node.exposicion.field_telefonos
+    - field.field.node.exposicion.field_tipo
+    - field.field.node.exposicion.field_tipos
+    - field.field.node.exposicion.field_url
+    - field.field.node.exposicion.field_videos
+    - field.field.node.exposicion.field_yoast_seo
+    - node.type.exposicion
+  module:
+    - comment
+    - conditional_fields
+    - content_moderation
+    - datetime
+    - datetime_range
+    - entity_browser
+    - field_group
+    - inline_entity_form
+    - link
+    - media_library
+    - metatag
+    - path
+    - text
+    - yoast_seo
+third_party_settings:
+  field_group:
+    group_datos_de_contacto:
+      children:
+        - field_url
+        - field_enlace_formulario_inscripc
+        - field_telefonos
+        - field_alertas
+        - field_email
+        - field_lugar
+        - field_informacion_adicional
+      label: 'Datos de contacto'
+      region: content
+      parent_name: ''
+      weight: 7
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_cla:
+      children:
+        - field_tipos
+        - field_area_tematica
+        - field_etiquetas_busqueda
+      label: Clasificación
+      region: content
+      parent_name: ''
+      weight: 9
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_multimedia:
+      children:
+        - field_imagen_destacada
+        - field_imagenes
+        - field_galeria_de_imagenes
+        - field_archivos
+        - field_videos
+        - field_audios
+      label: Multimedia
+      region: content
+      parent_name: ''
+      weight: 10
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_entidades:
+      children:
+        - field_entidades
+        - field_patrocinadores
+        - field_colaboradores
+        - field_entidades_subvencionadoras
+      label: Entidades
+      region: content
+      parent_name: ''
+      weight: 11
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_datos_principales:
+      children:
+        - body
+        - field_enlace
+        - field_precio
+      label: 'Datos principales'
+      region: content
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_seo:
+      children:
+        - field_yoast_seo
+      label: SEO
+      region: content
+      parent_name: ''
+      weight: 14
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+        weight: 0
+    group_contenidos:
+      children:
+        - field_comentarios
+        - field_contenidos_relacionados
+      label: 'Contenidos extra'
+      region: content
+      parent_name: ''
+      weight: 12
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: node.exposicion.default
+targetEntityType: node
+bundle: exposicion
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 5
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_alertas:
+    type: inline_entity_form_complex
+    weight: 9
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_archivos:
+    type: media_library_widget
+    weight: 25
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_area_tematica:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_audios:
+    type: media_library_widget
+    weight: 27
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_colaboradores:
+    type: entity_reference_autocomplete_tags
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_comentarios:
+    type: comment_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contenidos_relacionados:
+    type: entity_browser_entity_reference
+    weight: 8
+    region: content
+    settings:
+      entity_browser: content_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    weight: 18
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_domain_source:
+    type: options_select
+    weight: 42
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 10
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_enlace:
+    type: link_default
+    weight: 7
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_enlace_formulario_inscripc:
+    type: link_default
+    weight: 7
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_entidades:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_entidades_subvencionadoras:
+    type: entity_reference_autocomplete_tags
+    weight: 21
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_etiquetas_busqueda:
+    type: entity_reference_autocomplete
+    weight: 16
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fecha_fin:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fecha_inicio:
+    type: datetime_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_galeria_de_imagenes:
+    type: entity_reference_autocomplete
+    weight: 23
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_horarios:
+    type: inline_entity_form_complex
+    weight: 5
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_horarios_especificos:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_imagen_destacada:
+    type: media_library_widget
+    weight: 21
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_imagenes:
+    type: media_library_widget
+    weight: 22
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_informacion_adicional:
+    type: text_textarea
+    weight: 12
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_intervalo_add_to_cal:
+    type: daterange_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields: {  }
+  field_lugar:
+    type: inline_entity_form_complex
+    weight: 11
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_marca_agua:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_mas_informacion:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 15
+    region: content
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+  field_patrocinadores:
+    type: entity_reference_autocomplete_tags
+    weight: 18
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_precio:
+    type: text_textarea
+    weight: 9
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_telefonos:
+    type: string_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_tipos:
+    type: options_select
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_url:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_videos:
+    type: media_library_widget
+    weight: 26
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 9
+    region: content
+    settings:
+      body: body
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_tipo: true
+  langcode: true
+  promote: true
+  publish_on: true
+  publish_state: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
+  url_redirects: true

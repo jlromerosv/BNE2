@@ -1,0 +1,29 @@
+uuid: 051af485-ee8b-4e7e-aa4e-7b4e15c72b6f
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_alternadordeidioma_2
+theme: sede_theme
+region: header_site_2_2
+weight: -23
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Alternador de idioma'
+  label_display: '0'
+  provider: language
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/*\r\n/taxonomy/*"

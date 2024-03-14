@@ -1,0 +1,29 @@
+uuid: a4cd288d-ae5e-462c-8967-667b274fc283
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.evento
+  module:
+    - datetime
+id: node.evento.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: evento
+label: 'Desde el'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    field_defaults:
+      update_defaults: 0
+      update_defaults_lang:
+        en: 0
+      no_overwrite: 0
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,32 @@
+uuid: 444ebc86-0318-44b7-8540-71b2881bd8ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ano_ingresos
+    - node.type.serie_estadistica
+  module:
+    - key_value_field
+id: node.serie_estadistica.field_ano_ingresos
+field_name: field_ano_ingresos
+entity_type: node
+bundle: serie_estadistica
+label: Año_ingresos
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "484843\r\n"
+    key: '2013'
+    format: html_full
+    description: ''
+  -
+    value: "<p>486884</p>\r\n"
+    key: '2014'
+    format: html_full
+    description: ''
+default_value_callback: ''
+settings:
+  default_format: plain_text
+field_type: key_value_long

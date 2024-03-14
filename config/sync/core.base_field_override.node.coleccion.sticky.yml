@@ -1,0 +1,22 @@
+uuid: 782eb025-f5da-484f-a4f1-0c0001956715
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.coleccion
+id: node.coleccion.sticky
+field_name: sticky
+entity_type: node
+bundle: coleccion
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

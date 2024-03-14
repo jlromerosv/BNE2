@@ -1,0 +1,5 @@
+name: Motak
+url_alias: '_ _ (e) ko argitalpenak'
+widget:
+  config:
+    reset_text: 'Erakutsi dena'

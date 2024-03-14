@@ -1,0 +1,20 @@
+uuid: 653af8e2-ea16-4dc9-a343-aa736106b743
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regimen_de_promocion_de_inmbuebl
+  module:
+    - text
+id: taxonomy_term.regimen_de_promocion_de_inmbuebl.description
+field_name: description
+entity_type: taxonomy_term
+bundle: regimen_de_promocion_de_inmbuebl
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

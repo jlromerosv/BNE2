@@ -1,0 +1,31 @@
+uuid: 4baaca44-708e-4bcb-8237-60878deeb3fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.content_browser
+  module:
+    - views
+name: explorador_de_svg
+label: 'Explorador de SVG'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: Seleccione
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  3f92fa9a-38c7-46d1-83e5-27a1aed322f2:
+    id: view
+    uuid: 3f92fa9a-38c7-46d1-83e5-27a1aed322f2
+    label: view
+    weight: 1
+    settings:
+      submit_text: Aceptar
+      auto_select: true
+      view: content_browser
+      view_display: entity_browser_3

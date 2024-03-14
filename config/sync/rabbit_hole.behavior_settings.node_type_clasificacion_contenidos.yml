@@ -1,0 +1,14 @@
+uuid: 8c217311-2a00-4d32-9324-5df25e3b2e9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+id: node_type_clasificacion_contenidos
+entity_type_id: node_type
+entity_id: clasificacion_contenidos
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

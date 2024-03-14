@@ -1,0 +1,26 @@
+uuid: 5a7adbc8-25cd-454c-8165-558eae156b2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.colorbox_gallery_crop_type
+  module:
+    - crop
+name: imagen_slider_galeria_imagenes
+label: 'Imagen slider galería imágenes'
+effects:
+  49f30edb-f018-49bc-894e-a4241c3e3840:
+    uuid: 49f30edb-f018-49bc-894e-a4241c3e3840
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: colorbox_gallery_crop_type
+      automatic_crop_provider: null
+  3460e207-ad67-4577-a5e4-5737f56ac7dd:
+    uuid: 3460e207-ad67-4577-a5e4-5737f56ac7dd
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 650
+      height: 475
+      anchor: center-center

@@ -1,0 +1,18 @@
+uuid: a1fdf213-eb6a-47bb-9ea7-d086fea3a909
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_documentos
+id: node.galeria_de_documentos.created
+field_name: created
+entity_type: node
+bundle: galeria_de_documentos
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

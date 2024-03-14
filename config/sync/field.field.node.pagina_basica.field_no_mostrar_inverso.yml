@@ -1,0 +1,23 @@
+uuid: eabfd319-b0b5-4a30-a8b6-0889e8b00b62
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_no_mostrar_inverso
+    - node.type.pagina_basica
+id: node.pagina_basica.field_no_mostrar_inverso
+field_name: field_no_mostrar_inverso
+entity_type: node
+bundle: pagina_basica
+label: 'No mostrar en contenidos relacionados inverso'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

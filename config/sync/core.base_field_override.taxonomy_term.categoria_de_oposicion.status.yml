@@ -1,0 +1,22 @@
+uuid: f6c9d8b7-70b2-40d0-a0f8-bf726ba5def9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_oposicion
+id: taxonomy_term.categoria_de_oposicion.status
+field_name: status
+entity_type: taxonomy_term
+bundle: categoria_de_oposicion
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

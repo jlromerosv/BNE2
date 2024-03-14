@@ -1,0 +1,26 @@
+uuid: e29f40e4-83e2-49f2-bd67-ecc276e54bdd
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point_banner
+  module:
+    - crop
+name: bloque_imagen_cabecera_sm
+label: 'Bloque Imagen cabecera SM'
+effects:
+  b2c19956-44c4-4353-8a35-262184803863:
+    uuid: b2c19956-44c4-4353-8a35-262184803863
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 768
+      height: 150
+      anchor: center-center
+  656b0c0a-c096-4bd0-a5a5-4dc56dfef76a:
+    uuid: 656b0c0a-c096-4bd0-a5a5-4dc56dfef76a
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: focal_point_banner
+      automatic_crop_provider: null

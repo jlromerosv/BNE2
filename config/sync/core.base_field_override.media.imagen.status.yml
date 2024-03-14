@@ -1,0 +1,22 @@
+uuid: ebf4294d-4d20-4e71-819e-0298c5ae6c1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.imagen
+id: media.imagen.status
+field_name: status
+entity_type: media
+bundle: imagen
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

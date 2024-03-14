@@ -1,0 +1,18 @@
+uuid: 83c0da6f-5ca2-48b0-a013-7d572370ee90
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_de_transparencia
+id: taxonomy_term.area_de_transparencia.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: area_de_transparencia
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

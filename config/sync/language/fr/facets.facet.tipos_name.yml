@@ -1,0 +1,7 @@
+name: 'Type (taxonomía)'
+url_alias: Types_name
+widget:
+  config:
+    reset_text: 'Montrer tout'
+empty_behavior:
+  text: 'il n''y a pas des facettes de type (taxonomía)'

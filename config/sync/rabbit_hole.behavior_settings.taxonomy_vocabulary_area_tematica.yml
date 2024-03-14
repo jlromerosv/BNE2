@@ -1,0 +1,14 @@
+uuid: cb15168f-67f9-44e1-9076-f6eef1207ca6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_tematica
+id: taxonomy_vocabulary_area_tematica
+entity_type_id: taxonomy_vocabulary
+entity_id: area_tematica
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

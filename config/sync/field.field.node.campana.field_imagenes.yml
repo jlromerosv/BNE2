@@ -1,0 +1,28 @@
+uuid: f39e8747-5f54-4e37-8ff7-a1a730e6dea4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - media.type.imagen
+    - node.type.campana
+id: node.campana.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: campana
+label: Imágenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

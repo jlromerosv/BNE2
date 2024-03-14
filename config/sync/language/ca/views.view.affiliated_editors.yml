@@ -1,0 +1,105 @@
+description: 'Trobeu i gestioneu la gent que interacciona amb el vostre lloc.'
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Següent ›'
+            first: '« Primer'
+            last: 'Últim »'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      fields:
+        user_bulk_form:
+          label: 'Actualització massiva'
+        name:
+          label: 'Nom d''usuari'
+        status:
+          label: Estat
+          settings:
+            format_custom_true: Actiu
+            format_custom_false: Bloquejat
+        roles_target_id:
+          label: Rols
+        field_domain_access:
+          separator: ', '
+        field_domain_all_affiliates:
+          separator: ', '
+        created:
+          label: 'Membre des de fa'
+        access:
+          label: 'Darrer accés'
+        operations:
+          label: Operacions
+        mail:
+          separator: ', '
+      filters:
+        combine:
+          expose:
+            label: 'Nom o correu electrònic conté'
+        roles_target_id:
+          expose:
+            label: Rol
+        permission:
+          expose:
+            label: Permís
+        status:
+          group_info:
+            label: Estat
+            group_items:
+              1:
+                title: Actiu
+              2:
+                title: Bloquejat
+      title: Gent
+      empty:
+        area_text_custom:
+          content: 'No hi ha gent disponible.'
+      use_more_text: més
+  page_1:
+    display_options:
+      menu:
+        title: Llista
+        description: 'Trobeu i gestioneu la gent que interacciona amb el vostre lloc.'
+      tab_options:
+        title: Gent
+        description: 'Gestioneu els comptes d''usuari, els rols i els permisos.'
+      arguments:
+        field_domain_access_target_id:
+          exception:
+            title: Tot
+  page_2:
+    display_options:
+      filters:
+        combine:
+          expose:
+            label: 'Nom o correu electrònic conté'
+        roles_target_id:
+          expose:
+            label: Rol
+        permission:
+          expose:
+            label: Permís
+        status:
+          group_info:
+            label: Estat
+            group_items:
+              1:
+                title: Actiu
+              2:
+                title: Bloquejat
+        field_domain_access_target_id:
+          expose:
+            label: Domini

@@ -1,0 +1,18 @@
+uuid: c3e259cb-5c7c-4d0d-85c0-9354b00c005b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iniciativa
+id: node.iniciativa.changed
+field_name: changed
+entity_type: node
+bundle: iniciativa
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

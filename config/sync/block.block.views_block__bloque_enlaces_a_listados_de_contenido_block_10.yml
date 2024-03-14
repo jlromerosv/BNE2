@@ -1,0 +1,30 @@
+uuid: c27c176c-0d5a-4ee3-a96d-af5105c72404
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloque_enlaces_a_listados_de_contenido
+  module:
+    - system
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloque_enlaces_a_listados_de_contenido_block_10
+theme: bne_theme
+region: sidebar_first
+weight: -67
+provider: null
+plugin: 'views_block:bloque_enlaces_a_listados_de_contenido-block_10'
+settings:
+  id: 'views_block:bloque_enlaces_a_listados_de_contenido-block_10'
+  label: 'Bloque Enlaces a listados de contenido: Portada Blog'
+  label_display: '0'
+  provider: views
+  views_label: 'Bloque Enlaces a listados de contenido: Portada Blog'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/3244

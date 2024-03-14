@@ -1,0 +1,20 @@
+uuid: 400dca30-df7a-4900-9e8a-a9ba11eb8cfe
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.disponibilidad_publicaciones
+  module:
+    - text
+id: taxonomy_term.disponibilidad_publicaciones.description
+field_name: description
+entity_type: taxonomy_term
+bundle: disponibilidad_publicaciones
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

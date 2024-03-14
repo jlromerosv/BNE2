@@ -1,0 +1,14 @@
+uuid: 75d42584-fcda-4cb2-91f7-ff47dccb81b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_periodicotomia
+  module:
+    - user
+id: user_remove_role_action.editor_periodicotomia
+label: 'Elimina el rol Editor periodicotomía al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor_periodicotomia

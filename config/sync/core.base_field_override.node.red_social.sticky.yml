@@ -1,0 +1,22 @@
+uuid: 338ba8c9-793b-4ac4-ba66-918b9f1685ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+id: node.red_social.sticky
+field_name: sticky
+entity_type: node
+bundle: red_social
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

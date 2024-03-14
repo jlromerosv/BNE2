@@ -1,0 +1,49 @@
+/*
+    ========== WEBFORM DE BÚSQUEDA ==========
+
+    Estilos dedicados al webform de la búsqueda.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $main_color_4 = Color principal de tipo 4
+
+*/
+
+.webform-submission-bloque-buscador-form {
+    position: absolute;
+    width: 100%;
+    z-index: 8;
+    background-color: $main_color_4;
+    @include display_flex(row, initial,center);
+    box-sizing: border-box;
+    padding: 0 80px;
+
+    .form-type-textfield {
+        margin: 0;
+        width: 100%;
+        label {
+            display: none;
+        }
+
+        input {
+            border: none;
+            font-size: 18px;
+        }
+    }
+
+    .close-form-icon {
+        cursor: pointer;
+    }
+}

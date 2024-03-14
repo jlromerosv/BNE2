@@ -1,0 +1,14 @@
+uuid: d0b13891-342a-4871-bd2b-4b5eb2c435bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.root
+  module:
+    - user
+id: user_remove_role_action.root
+label: 'Elimina el rol Root al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: root

@@ -1,0 +1,5 @@
+elements: |
+  search_api_fulltext:
+    '#title': 'Moteur de recherche général'
+    '#help_title': 'Moteur de recherche général'
+    '#placeholder': 'Entrez le texte de recherche'

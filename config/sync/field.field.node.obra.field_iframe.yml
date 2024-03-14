@@ -1,0 +1,30 @@
+uuid: e212d75e-70ad-4084-a182-dcfee865a2f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.obra
+  module:
+    - iframe
+id: node.obra.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: obra
+label: Iframes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '0'
+  tokensupport: null
+  width: null
+  height: null
+field_type: iframe

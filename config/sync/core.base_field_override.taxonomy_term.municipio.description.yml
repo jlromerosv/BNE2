@@ -1,0 +1,20 @@
+uuid: 53f96061-2bd2-4409-a9b3-a200e3c3fdd0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.municipio
+  module:
+    - text
+id: taxonomy_term.municipio.description
+field_name: description
+entity_type: taxonomy_term
+bundle: municipio
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

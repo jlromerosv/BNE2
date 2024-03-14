@@ -1,0 +1,39 @@
+uuid: 8087e2ea-e86a-469e-8441-2e3ffbe1afac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_destacada
+    - media.type.imagen
+    - node.type.coleccion
+  content:
+    - 'media:imagen:9444816d-7ff3-453e-9b7e-53ea2675ea28'
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.coleccion.field_imagen_destacada
+field_name: field_imagen_destacada
+entity_type: node
+bundle: coleccion
+label: 'Imagen Destacada'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 9444816d-7ff3-453e-9b7e-53ea2675ea28
+    weight: 0
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 4d9654ea-073e-4652-b149-7858e4036b5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.evento
+  module:
+    - options
+id: node.evento.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: evento
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

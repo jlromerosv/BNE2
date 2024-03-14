@@ -1,0 +1,20 @@
+uuid: ebf06f79-7dd2-43e1-abdf-b60472287993
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+  module:
+    - path
+id: node.pagina_avanzada.path
+field_name: path
+entity_type: node
+bundle: pagina_avanzada
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

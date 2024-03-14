@@ -1,0 +1,21 @@
+uuid: 4ce1f444-ac81-4273-9f90-2c689e4ee035
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.convocatoria
+  module:
+    - datetime
+id: node.convocatoria.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: convocatoria
+label: 'Fecha inicio solicitudes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

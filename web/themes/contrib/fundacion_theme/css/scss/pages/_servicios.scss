@@ -1,0 +1,553 @@
+.page-node-type-servicio {
+  .ps-main {
+    padding: 15px;
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+  #block-fundacion-theme-contenidoprincipaldelapagina {
+    h1 {
+      margin: 0.5em 0 0.9em 0;
+      .field--name-title {
+        @include estilo_h1();
+      }
+    }
+    article {
+      .node__content {
+        .layout--onecol {
+          &:nth-child(1) {
+            .layout__region {
+            }
+          }
+          &:nth-child(2) {
+            margin: 1.9em 0 0;
+            padding: 30px;
+            border: 0.5px solid $bne_color_3;
+            .layout__region {
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-column-gap: 1.9em;
+              grid-row-gap: 1.9em;
+              @media (min-width: 576px) {
+                grid-template-columns: 1fr 1fr;
+              }
+              @media (min-width: 992px) {
+                grid-template-columns: 1fr 1fr 1fr;
+              }
+              .block {
+                .field__label {
+                  margin: 0 0 0.5em 0;
+                  font-size: 18px;
+                  color: $negro;
+                  font-family: $dm-serif;
+                  font-weight: $dm-serif-regular;
+                  line-height: 24px;
+                  letter-spacing: 0px;
+                }
+                .field__item {
+                  font-size: 16px;
+                  color: $bne_color_2;
+                  line-height: 24px;
+                  letter-spacing: 0.48px;
+                  p {
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 24px;
+                    letter-spacing: 0.48px;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                  }
+                  a {
+                    font-family: "Roboto";
+                    font-weight: 400;
+                    color: $bne_color_6;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+              article {
+                h2 {
+
+                  margin-block-start: 0;
+                  margin-block-end: 0;
+                  &::after {
+                    display: none;
+                  }
+                  a {
+
+                    pointer-events: none;
+                    font-size: 18px;
+                    color: $negro;
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    .field--name-title{
+                      display: none;
+                    }
+                  }
+                }
+                .node__content {
+                  .field--name-field-nombre {
+                    pointer-events: none;
+                    font-size: 18px;
+                    color: $negro;
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    margin-bottom: 0.5em;
+                  }
+                }
+                .field__item {
+                  font-size: 16px;
+                  color: $bne_color_2;
+                  line-height: 24px;
+                  letter-spacing: 0.48px;
+                  p {
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 24px;
+                    letter-spacing: 0.48px;
+                  }
+                }
+              }
+            }
+          }
+
+          &:nth-child(3) {
+            .layout__region {
+              display: flex;
+              @media (max-width: 575.98px) {
+                display: block;
+              }
+
+              .block-field-blocknodeserviciofield-formulario-de-solicitud {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: $bne_color_4;
+                border: 0.5px solid $bne_color_3;
+                .field--name-field-formulario-de-solicitud {
+                  display: block;
+                  width: 100%;
+                }
+
+                .field {
+                  .field__label {
+                    display: none;
+                    // &::before {
+                    //   content: "";
+                    //   height: 15px;
+                    //   display: block;
+                    //   width: 20px;
+                    //   background: url(/themes/contrib/bne_theme/recursos/sobre-formulario.svg)
+                    //     no-repeat center;
+                    //   background-size: 18px;
+                    //   margin-right: 10px;
+                    // }
+                  }
+                  .field__items {
+                    display: block;
+                    width: 100%;
+                  }
+                  .field__item {
+                    min-height: 60px;
+                    width: 100%;
+                    position: relative;
+                    border-bottom: 0.5px solid $bne_color_3;
+                    &:last-child {
+                      border-bottom: none;
+                    }
+
+                    a {
+                      position: absolute;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+
+                      font-size: 16px;
+                      color: $bne_color_2;
+                      line-height: 24px;
+                      letter-spacing: 0.96px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:nth-child(4) {
+            .layout__region {
+              .block-field-blocknodeserviciobody{
+                margin: 1.9em 0;
+              }
+              .block-field-blocknodeserviciofield-requisitos {
+                margin: 1.9em 0;
+                .field__label {
+                  font-size: 16px;
+                  font-weight: 500;
+                  color: $bne_color_1;
+                  line-height: 34px;
+                  letter-spacing: 0.48px;
+                }
+                .field__item {
+                  h1 {
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    font-size: 38px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h2 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 28px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h3 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h4 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h5 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h6 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  p {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 34px;
+                    letter-spacing: 0.48px;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                  }
+                  a {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    color: $bne_color_6;
+                  }
+                }
+              }
+              .block-field-blocknodeserviciofield-mas-informacion {
+                margin: 1.9em 0;
+                border: 0.5px solid $bne_color_3;
+
+                .field__label {
+                  padding: 15px 30px 15px 30px;
+                  font-family: $dm-serif;
+                  font-weight: $dm-serif-regular;
+                  font-size: 18px;
+                  font-weight: 500;
+                  color: $negro;
+                  line-height: 24px;
+                  letter-spacing: 0px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  &::after {
+                    content: "";
+                    height: 15px;
+                    width: 15px;
+                    background: url(/themes/contrib/bne_theme/recursos/signo-mas.svg)
+                      no-repeat center;
+                    background-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.5s ease;
+                  }
+                }
+                .change-collapsable-icon {
+                  &::after {
+                    content: "";
+                    height: 15px;
+                    width: 15px;
+                    background: url(/themes/contrib/bne_theme/recursos/signo-menos.svg)
+                      no-repeat center;
+                    background-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.5s ease;
+                  }
+                }
+                .field__item {
+                  display: none;
+                  padding: 15px 30px 15px 30px;
+                  border-top: 0.5px solid $bne_color_3;
+
+                  //   transition: all 0.5s ease;
+                  //   overflow: hidden;
+
+                  h1 {
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    font-size: 38px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h2 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 28px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h3 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h4 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h5 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  h6 {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $negro;
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  p {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $bne_color_2;
+                    line-height: 34px;
+                    letter-spacing: 0.48px;
+                  }
+                  a {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    color: $bne_color_6;
+                  }
+                }
+              }
+              .block-field-blocknodeserviciofield-lugares-referencian {
+                margin: 2.5em 0;
+                .field--name-field-lugares-referencian {
+                  .field__label {
+                    font-size: 18px;
+                    font-family: $dm-serif;
+                    font-weight: $dm-serif-regular;
+                    color: $negro;
+                    line-height: 24px;
+                    letter-spacing: 0;
+                    margin-bottom: 1em;
+                  }
+                  .field__item {
+                    .view-content {
+                      display: grid;
+                      grid-template-columns: 1fr;
+                      margin-bottom: 1.9em;
+
+                      @media (min-width: 576px) {
+                        grid-template-columns: 1fr 1fr;
+                      }
+
+                      @media (min-width: 992px) {
+                        grid-template-columns: repeat(3, 1fr);
+                      }
+
+                      @media (min-width: 1600px) {
+                        grid-template-columns: repeat(4, 1fr);
+                      }
+
+                      border-left: 0.5px solid $bne_color_3;
+                      .views-row {
+                        border-top: 0.5px solid $bne_color_3;
+                        border-right: 0.5px solid $bne_color_3;
+                        border-bottom: 0.5px solid $bne_color_3;
+                        padding: 30px;
+                        position: relative;
+                        .views-field-title {
+                          font-size: 18px;
+                          color: $negro;
+                          line-height: 22px;
+                          font-family: $dm-serif;
+                          font-weight: $dm-serif-regular;
+                          letter-spacing: 0px;
+                          span {
+                            font-size: 18px;
+                            color: $negro;
+                            line-height: 22px;
+                            font-family: $dm-serif;
+                            font-weight: $dm-serif-regular;
+                            letter-spacing: 0px;
+                          }
+                        }
+                        .views-field-body {
+                          padding-top: 1em;
+                          .field-content {
+                            font-family: "Roboto";
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: $bne_color_2;
+                            line-height: 24px;
+                            letter-spacing: 0.48px;
+                            @include estilos_body();
+                            // h1 {
+                            //   font-family: $dm-serif;
+                            //   font-weight: $dm-serif-regular;
+                            //   font-size: 38px;
+                            //   color: $negro;
+                            //   &::after {
+                            //     display: none;
+                            //   }
+                            // }
+                            // h2 {
+                            //   font-family: "Roboto";
+                            //   font-weight: 500;
+                            //   font-size: 28px;
+                            //   color: $negro;
+                            //   &::after {
+                            //     display: none;
+                            //   }
+                            // }
+                            // h3 {
+                            //   font-family: "Roboto";
+                            //   font-weight: 500;
+                            //   font-size: 24px;
+                            //   color: $negro;
+                            //   &::after {
+                            //     display: none;
+                            //   }
+                            // }
+                            // h4 {
+                            //   font-family: "Roboto";
+                            //   font-weight: 500;
+                            //   font-size: 20px;
+                            //   color: $negro;
+                            //   &::after {
+                            //     display: none;
+                            //   }
+                            // }
+                            // h5 {
+                            //   font-family: "Roboto";
+                            //   font-weight: 500;
+                            //   font-size: 18px;
+                            //   color: $negro;
+                            //   &::after {
+                            //     display: none;
+                            //   }
+                            // }
+                            // h6 {
+                            //   font-family: "Roboto";
+                            //   font-weight: 500;
+                            //   font-size: 16px;
+                            //   color: $negro;
+                            //   &::after {
+                            //     display: none;
+                            //   }
+                            // }
+                            // p {
+                            //   font-family: "Roboto";
+                            //   font-weight: 500;
+                            //   font-size: 16px;
+                            //   color: $bne_color_2;
+                            //   line-height: 34px;
+                            //   letter-spacing: 0.48px;
+                            // }
+                            // a {
+                            //   font-family: "Roboto";
+                            //   font-weight: 500;
+                            //   color: $bne_color_6;
+                            // }
+                          }
+                        }
+                        .views-field-view-node {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          display: block;
+                          height: 100%;
+                          width: 100%;
+                          .field-content {
+                            width: 100%;
+                            height: 100%;
+                            a {
+                              display: block;
+                              width: 100%;
+                              height: 100%;
+                              font-size: 0;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

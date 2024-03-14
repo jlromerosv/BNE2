@@ -1,0 +1,21 @@
+uuid: f8de85fd-bdd8-4e10-968c-3fdcdbdb0947
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.galeria_de_videos
+  module:
+    - metatag
+id: node.galeria_de_videos.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: galeria_de_videos
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

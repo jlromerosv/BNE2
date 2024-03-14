@@ -1,0 +1,22 @@
+uuid: 6b6d5301-50e1-4ffa-b3ec-af43d3861018
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.sticky
+field_name: sticky
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

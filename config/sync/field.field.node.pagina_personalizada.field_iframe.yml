@@ -1,0 +1,30 @@
+uuid: b3761432-55c8-4d73-86cd-73fdc69af8b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.pagina_personalizada
+  module:
+    - iframe
+id: node.pagina_personalizada.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: pagina_personalizada
+label: Iframes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '0'
+  tokensupport: null
+  width: null
+  height: null
+field_type: iframe

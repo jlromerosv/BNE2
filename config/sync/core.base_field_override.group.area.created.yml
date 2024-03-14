@@ -1,0 +1,18 @@
+uuid: 98d6a79d-6d02-432d-abc4-758527a4c914
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+id: group.area.created
+field_name: created
+entity_type: group
+bundle: area
+label: 'Creado en'
+description: 'The time that the group was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

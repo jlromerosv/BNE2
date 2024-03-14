@@ -1,0 +1,81 @@
+uuid: 99ac2539-68a9-44b8-9953-87bd8859805f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.autor.title
+    - field.field.node.autor.field_defuncion
+    - field.field.node.autor.field_nacimiento
+    - node.type.autor
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers: {  }
+label: 'Cargar Autores desde CSV'
+id: cargar_autores_desde_csv
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: autor
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  autor:
+    value: Autor
+    label: Autor
+    machine_name: autor
+    type: csv
+  nacimiento:
+    value: Nacimiento
+    label: Nacimiento
+    machine_name: nacimiento
+    type: csv
+  defuncion:
+    value: Defunción
+    label: Defunción
+    machine_name: defuncion
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: autor
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_nacimiento
+    map:
+      value: nacimiento
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_defuncion
+    map:
+      value: defuncion
+    settings:
+      language: null
+    unique: {  }

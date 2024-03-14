@@ -1,0 +1,18 @@
+uuid: 7a4d6f40-7f9f-46ee-9ed4-be2b4d7f8a94
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_actualidad
+id: taxonomy_term.categoria_actualidad.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: categoria_actualidad
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

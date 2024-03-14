@@ -1,0 +1,61 @@
+/*
+    ========== TÍTULOS ==========
+    
+    Estilos dedicados a los títulos de la web. 
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin h1_style
+        
+        @mixin h2_style
+        
+        @mixin h3_style
+        
+        @mixin h4_style
+        
+        @mixin h5_style
+        
+        @mixin h6_style
+        
+        @mixin underline_view_title
+
+    ------------------------- MIXINS --------------------------
+    h1 / h2 / h3 / h4 / h5 / h6_style = Estilos para los
+    diferentes títulos
+
+    underline_view_title = Estilo para crear una línea debajo
+    del título
+    ----------------------- VARIABLES -------------------------
+    $main_color_1 = Color principal de tipo 1
+
+*/
+
+h1 {
+    @include h1_style;
+    &::after {
+        @include underline_view_title($main_color_1, 2px, 35px);
+    }
+}
+
+h2 {
+    @include h2_style;
+    &::after {
+        @include underline_view_title($main_color_1, 2px, 35px);
+    }
+}
+
+h3 {
+    @include h3_style;
+}
+
+h4 {
+    @include h4_style;
+}
+
+h5 {
+    @include h5_style;
+}
+
+h6 {
+    @include h6_style;
+}

@@ -1,0 +1,18 @@
+uuid: fd9853fa-a599-4636-9844-fcf148069c55
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+id: node.obra.metatag
+field_name: metatag
+entity_type: node
+bundle: obra
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

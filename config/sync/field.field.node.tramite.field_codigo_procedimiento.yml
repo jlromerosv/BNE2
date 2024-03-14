@@ -1,0 +1,19 @@
+uuid: d84eb3c5-7003-4833-a877-8f5713414668
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codigo_procedimiento
+    - node.type.tramite
+id: node.tramite.field_codigo_procedimiento
+field_name: field_codigo_procedimiento
+entity_type: node
+bundle: tramite
+label: 'Código de procedimiento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

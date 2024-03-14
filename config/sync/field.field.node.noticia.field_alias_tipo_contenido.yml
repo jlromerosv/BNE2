@@ -1,0 +1,38 @@
+uuid: 44caf35c-ef5f-4738-8f9f-aa762fe801a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alias_tipo_contenido
+    - node.type.noticia
+    - taxonomy.vocabulary.alias_de_tipo_de_contenido
+  content:
+    - 'taxonomy_term:alias_de_tipo_de_contenido:5fd8f159-6dd7-4a6d-bb69-68d1e4797ac1'
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.noticia.field_alias_tipo_contenido
+field_name: field_alias_tipo_contenido
+entity_type: node
+bundle: noticia
+label: 'Alias de tipo de contenido'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 5fd8f159-6dd7-4a6d-bb69-68d1e4797ac1
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alias_de_tipo_de_contenido: alias_de_tipo_de_contenido
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

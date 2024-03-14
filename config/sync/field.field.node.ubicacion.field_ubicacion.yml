@@ -1,0 +1,21 @@
+uuid: b5eb413e-c399-46ac-80b7-4c6e79b2bcee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ubicacion
+    - node.type.ubicacion
+  module:
+    - geofield
+id: node.ubicacion.field_ubicacion
+field_name: field_ubicacion
+entity_type: node
+bundle: ubicacion
+label: Ubicación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

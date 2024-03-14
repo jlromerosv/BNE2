@@ -1,0 +1,28 @@
+uuid: a84cd73e-90b6-473d-b0a1-b3ccb8c7b9a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - media.type.imagen
+    - node.type.obra
+id: node.obra.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: obra
+label: Imágenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

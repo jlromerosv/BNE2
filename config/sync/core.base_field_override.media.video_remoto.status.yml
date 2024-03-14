@@ -1,0 +1,22 @@
+uuid: 66a3000d-47e9-4830-9afe-f62df2d9fbee
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.video_remoto
+id: media.video_remoto.status
+field_name: status
+entity_type: media
+bundle: video_remoto
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

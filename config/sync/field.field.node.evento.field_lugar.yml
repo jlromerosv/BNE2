@@ -1,0 +1,28 @@
+uuid: 3e8f3ab3-8ce5-405a-bf25-8ab1b13940ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugar
+    - node.type.evento
+    - node.type.lugar
+id: node.evento.field_lugar
+field_name: field_lugar
+entity_type: node
+bundle: evento
+label: Lugar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lugar: lugar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

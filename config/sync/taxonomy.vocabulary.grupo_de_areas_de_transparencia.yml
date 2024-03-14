@@ -1,0 +1,8 @@
+uuid: 98231d44-90c2-46ed-9aef-913955104342
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Grupo de Áreas de Transparencia'
+vid: grupo_de_areas_de_transparencia
+description: ''
+weight: 0

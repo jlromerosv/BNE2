@@ -1,0 +1,11 @@
+uuid: 2dd76988-bb74-4279-a84d-0ab3078f2f5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.banner_obras
+id: crop.banner_obras
+target_entity_type_id: crop
+target_bundle: banner_obras
+default_langcode: site_default
+language_alterable: false

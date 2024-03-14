@@ -1,0 +1,18 @@
+uuid: 76c22a58-0ca7-4b49-83e1-b9e1f8e065ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_personalizada
+id: node.pagina_personalizada.created
+field_name: created
+entity_type: node
+bundle: pagina_personalizada
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

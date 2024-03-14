@@ -1,0 +1,20 @@
+uuid: 771f241c-0f83-41ad-8b64-23e9e7d6021c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.dossier
+  module:
+    - options
+id: node.dossier.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: dossier
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

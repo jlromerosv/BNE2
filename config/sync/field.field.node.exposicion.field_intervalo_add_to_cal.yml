@@ -1,0 +1,21 @@
+uuid: 1a6bf8d2-9a27-4840-9bd1-0434c08f8bc3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intervalo_add_to_cal
+    - node.type.exposicion
+  module:
+    - datetime_range
+id: node.exposicion.field_intervalo_add_to_cal
+field_name: field_intervalo_add_to_cal
+entity_type: node
+bundle: exposicion
+label: 'Añadir a Calendario'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

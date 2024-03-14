@@ -1,0 +1,15 @@
+uuid: ad14db9c-fc72-4277-a575-f64f01915339
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_bloque_slider
+label: 'Imagen bloque slider'
+effects:
+  ac77180d-6adb-4a44-8366-d64b102b1524:
+    uuid: ac77180d-6adb-4a44-8366-d64b102b1524
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 395
+      height: 395
+      anchor: center-center

@@ -1,0 +1,10 @@
+uuid: 66051b9e-fcea-44d5-8355-a28dcb339d1f
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.enlace_archivo
+label: 'Enlace archivo'
+targetEntityType: media
+cache: true

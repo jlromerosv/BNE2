@@ -1,0 +1,128 @@
+uuid: 7364519f-93cd-42e9-887a-58f55c003ef5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.minificha
+    - field.field.node.lugar.body
+    - field.field.node.lugar.field_accesibilidad
+    - field.field.node.lugar.field_accesos
+    - field.field.node.lugar.field_alertas
+    - field.field.node.lugar.field_alias_tipo_contenido
+    - field.field.node.lugar.field_archivos
+    - field.field.node.lugar.field_area_tematica
+    - field.field.node.lugar.field_atributos
+    - field.field.node.lugar.field_audios
+    - field.field.node.lugar.field_bloquear_la_traduccion_
+    - field.field.node.lugar.field_colecciones_referencia
+    - field.field.node.lugar.field_colectivo
+    - field.field.node.lugar.field_contenido_generico
+    - field.field.node.lugar.field_contenidos_relacionados
+    - field.field.node.lugar.field_contenidos_vinculados
+    - field.field.node.lugar.field_domain_access
+    - field.field.node.lugar.field_domain_all_affiliates
+    - field.field.node.lugar.field_domain_source
+    - field.field.node.lugar.field_email
+    - field.field.node.lugar.field_email_texto
+    - field.field.node.lugar.field_enlace
+    - field.field.node.lugar.field_enlaces
+    - field.field.node.lugar.field_estado
+    - field.field.node.lugar.field_etiquetas_busqueda
+    - field.field.node.lugar.field_galeria_de_imagenes
+    - field.field.node.lugar.field_horarios
+    - field.field.node.lugar.field_horarios_especificos
+    - field.field.node.lugar.field_id_externo
+    - field.field.node.lugar.field_iframe
+    - field.field.node.lugar.field_imagen_destacada
+    - field.field.node.lugar.field_imagen_representativa
+    - field.field.node.lugar.field_imagenes
+    - field.field.node.lugar.field_informacion_adicional
+    - field.field.node.lugar.field_mas_informacion
+    - field.field.node.lugar.field_meta_tags
+    - field.field.node.lugar.field_no_mostrar_inverso
+    - field.field.node.lugar.field_orden
+    - field.field.node.lugar.field_rede
+    - field.field.node.lugar.field_regimen_promocion_inmueble
+    - field.field.node.lugar.field_servicio_texto_
+    - field.field.node.lugar.field_servicios
+    - field.field.node.lugar.field_servicios_texto_
+    - field.field.node.lugar.field_telefonos
+    - field.field.node.lugar.field_tipos
+    - field.field.node.lugar.field_ubicacion_
+    - field.field.node.lugar.field_url
+    - field.field.node.lugar.field_videos
+    - field.field.node.lugar.field_yoast_seo
+    - node.type.lugar
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.lugar.minificha
+targetEntityType: node
+bundle: lugar
+mode: minificha
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 60
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_accesibilidad: true
+  field_accesos: true
+  field_alertas: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_tematica: true
+  field_atributos: true
+  field_audios: true
+  field_bloquear_la_traduccion_: true
+  field_colecciones_referencia: true
+  field_colectivo: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_email: true
+  field_email_texto: true
+  field_enlace: true
+  field_enlaces: true
+  field_estado: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_imagenes: true
+  field_horarios: true
+  field_horarios_especificos: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_destacada: true
+  field_imagen_representativa: true
+  field_imagenes: true
+  field_informacion_adicional: true
+  field_mas_informacion: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_orden: true
+  field_rede: true
+  field_regimen_promocion_inmueble: true
+  field_servicio_texto_: true
+  field_servicios: true
+  field_servicios_texto_: true
+  field_telefonos: true
+  field_tipos: true
+  field_ubicacion_: true
+  field_url: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

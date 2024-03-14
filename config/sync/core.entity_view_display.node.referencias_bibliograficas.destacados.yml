@@ -1,0 +1,54 @@
+uuid: 2b9f16df-b523-48ff-bec8-683fe5f8072f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.destacados
+    - field.field.node.referencias_bibliograficas.body
+    - field.field.node.referencias_bibliograficas.field_alias_tipo_contenido
+    - field.field.node.referencias_bibliograficas.field_coleccion
+    - field.field.node.referencias_bibliograficas.field_contenidos_relacionados
+    - field.field.node.referencias_bibliograficas.field_domain_access
+    - field.field.node.referencias_bibliograficas.field_domain_all_affiliates
+    - field.field.node.referencias_bibliograficas.field_domain_source
+    - field.field.node.referencias_bibliograficas.field_etiquetas_busqueda
+    - field.field.node.referencias_bibliograficas.field_meta_tags
+    - field.field.node.referencias_bibliograficas.field_no_mostrar_inverso
+    - field.field.node.referencias_bibliograficas.field_tipos
+    - node.type.referencias_bibliograficas
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.referencias_bibliograficas.destacados
+targetEntityType: node
+bundle: referencias_bibliograficas
+mode: destacados
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_alias_tipo_contenido: true
+  field_coleccion: true
+  field_contenidos_relacionados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_etiquetas_busqueda: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_tipos: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

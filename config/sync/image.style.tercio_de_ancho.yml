@@ -1,0 +1,15 @@
+uuid: 1a1fd182-0801-446a-bb7b-31e92e5e722b
+langcode: es
+status: true
+dependencies: {  }
+name: tercio_de_ancho
+label: 'Tercio de ancho'
+effects:
+  55d95db5-4c94-4cf1-9e19-26073b025135:
+    uuid: 55d95db5-4c94-4cf1-9e19-26073b025135
+    id: image_scale
+    weight: 1
+    data:
+      width: 640
+      height: null
+      upscale: false

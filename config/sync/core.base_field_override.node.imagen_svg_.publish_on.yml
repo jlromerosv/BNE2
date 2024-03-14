@@ -1,0 +1,18 @@
+uuid: 27a2125a-2c19-4d01-917d-3e8853b88506
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+id: node.imagen_svg_.publish_on
+field_name: publish_on
+entity_type: node
+bundle: imagen_svg_
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

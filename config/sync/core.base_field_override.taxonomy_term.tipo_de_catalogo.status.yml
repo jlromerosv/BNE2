@@ -1,0 +1,22 @@
+uuid: 047ef791-8315-475a-874e-2914ca296478
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_catalogo
+id: taxonomy_term.tipo_de_catalogo.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_catalogo
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

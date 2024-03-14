@@ -1,0 +1,22 @@
+uuid: 746c1d4e-f0ec-4b70-8b8f-8b2ed00c1af1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.icono_svg_
+id: node.icono_svg_.status
+field_name: status
+entity_type: node
+bundle: icono_svg_
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

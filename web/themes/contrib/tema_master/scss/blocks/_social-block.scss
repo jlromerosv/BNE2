@@ -1,0 +1,75 @@
+/*
+    ========== SOCIAL BLOCK ==========
+
+    Estilos dedicados a la vista social block.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin h1_style ($color, $size)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    h1_style = Estilos para los diferentes títulos
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $filter_white = Filtro para convertir a blanco
+
+    $color = Color de la fuente
+
+    $size = Tamaño de la fuente
+
+*/
+
+.ps-social-block {
+    .view-content {
+        @include display_flex(row, initial, center);
+        & > div {
+            margin: 0 8px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &.white-icon {
+        .view-content {
+            & > div {
+                svg {
+                    filter: $filter_white;
+                }
+            }
+        }
+    }
+}
+
+.ps-social-block-footer {
+    & > h1 {
+        text-align: center;
+        @include h1_style($blanco, 16px);
+    }
+}
+
+
+/* Iconos de menú superior */
+
+.ps-social-block-menu-superior {
+    img {
+        max-height: 15px;
+        width: auto;
+    }
+    &.login-user-menu {
+        margin-left: 16px;
+    }
+}

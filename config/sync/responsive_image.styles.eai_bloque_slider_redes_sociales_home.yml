@@ -1,0 +1,63 @@
+uuid: 17661ed1-828f-454b-bc1c-bbe3ba1ff165
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.eai_slider_redes_sociales_home_xxl
+    - image.style.slider_redes_sociales_home_lg
+    - image.style.slider_redes_sociales_home_md
+    - image.style.slider_redes_sociales_home_sm
+    - image.style.slider_redes_sociales_home_xl
+    - image.style.slider_redes_sociales_home_xs
+  theme:
+    - bne_theme
+id: eai_bloque_slider_redes_sociales_home
+label: 'EAI Bloque Slider Redes Sociales Home'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: eai_slider_redes_sociales_home_xxl
+    breakpoint_id: bne_theme.4xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: eai_slider_redes_sociales_home_xxl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: eai_slider_redes_sociales_home_xxl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_redes_sociales_home_xl
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_redes_sociales_home_lg
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_redes_sociales_home_md
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_redes_sociales_home_sm
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_redes_sociales_home_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_redes_sociales_home_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: eai_slider_redes_sociales_home_xxl

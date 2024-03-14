@@ -1,0 +1,23 @@
+uuid: acbe3119-d026-4708-8de9-beff60982961
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_o_bold_border
+    - taxonomy.vocabulary.organigrama_de_prueba
+id: taxonomy_term.organigrama_de_prueba.field_o_bold_border
+field_name: field_o_bold_border
+entity_type: taxonomy_term
+bundle: organigrama_de_prueba
+label: 'Bold border'
+description: 'Add an extra border to emphasize this organigram item.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

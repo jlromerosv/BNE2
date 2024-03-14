@@ -1,0 +1,21 @@
+uuid: 671d19a8-ceb6-4a89-b9e6-f779b1c950d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.dossier
+  module:
+    - metatag
+id: node.dossier.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: dossier
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

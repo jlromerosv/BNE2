@@ -1,0 +1,25 @@
+uuid: e8c828aa-f41d-44f6-beb1-20dc0b4225fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.colorbox_gallery_crop_type
+  module:
+    - crop
+name: colorbox_576_4_3
+label: 'Colorbox 576 - 4:3'
+effects:
+  28f1226e-853c-43e8-af81-e72fad9eb005:
+    uuid: 28f1226e-853c-43e8-af81-e72fad9eb005
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: colorbox_gallery_crop_type
+  e60ff670-e554-4ec7-8a68-4006b1741683:
+    uuid: e60ff670-e554-4ec7-8a68-4006b1741683
+    id: image_scale
+    weight: 2
+    data:
+      width: 576
+      height: null
+      upscale: false

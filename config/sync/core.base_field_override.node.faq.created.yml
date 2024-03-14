@@ -1,0 +1,18 @@
+uuid: a61fe357-b477-4b77-aa88-c0c09b966542
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.faq
+id: node.faq.created
+field_name: created
+entity_type: node
+bundle: faq
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

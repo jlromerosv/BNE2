@@ -1,0 +1,100 @@
+
+//Subencabezado FEDER
+div#block-albaceteprincipal-cabecerafeder{
+   background-color: #617f95; 
+    h1{
+        color: white; 
+    }:after{
+        display: none;
+    }
+    .field--name-body.field--type-text-with-summary.field--label-hidden.field__item{
+        display: flex;
+        flex-direction: column;
+        h4{
+            align-self: center;
+            margin:0px; 
+        }
+        p{
+            align-self: center;
+            margin:0px; 
+        }
+    }
+}
+
+
+//Subencabezado EDUSI
+div#block-albaceteprincipal-cabeceraedusi{
+    display: flex;
+    justify-content: center; 
+    .field--type-image.field--label-hidden.field__item{
+        margin-bottom: 30px;
+        img{
+            height:80px;
+        }      
+    }
+    .media-library-item__attributes{
+        display: none;
+    }
+    h4{
+        justify-content: center;
+        margin:0px; 
+        display: flex;
+    } 
+    p{
+        justify-content: center;
+        margin:0px 0px 10px 0px; 
+    }
+}
+
+//Subencabezado Urbanitas
+div#block-albaceteprincipal-cabeceraurbanitas{
+    display: flex;
+    justify-content: center; 
+    .field--type-image.field--label-hidden.field__item{
+        margin-bottom: 30px;   
+    }
+    .media-library-item__attributes{
+        display: none;
+    }
+    h4{
+        justify-content: center;
+        margin:0px; 
+        display: flex;
+    } 
+    p{
+        justify-content: center;
+        margin:0px 0px 10px 0px; 
+    }
+}
+
+
+//Subencabezado Fondo Social Europeo FSE
+div#block-fondosocialeuropeofse{
+    h1{
+        color: white; 
+        font-size: 35px;
+        position: absolute;
+        margin: 3% 0% 0% 8%;
+    }:after{
+        display: none; 
+    }
+    img{
+        width: 100%;
+    }
+}
+
+//Bloque "Una manera de hacer Europa"
+div#block-albaceteprincipal-cabeceraunamaneradehacereuropa{
+    background-color:$main_color_1;
+    display: flex;
+    justify-content: center;
+    margin-top:-5px; 
+    h4{
+        color: white;
+        margin: 1em 0em;  
+    }
+}
+
+
+
+

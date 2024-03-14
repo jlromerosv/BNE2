@@ -1,0 +1,273 @@
+uuid: 6c69c160-78c2-4d42-85fe-e6a6bd50e5da
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.entrada_de_blog.created
+    - core.base_field_override.node.entrada_de_blog.title
+    - core.entity_view_mode.node.full
+    - field.field.node.entrada_de_blog.body
+    - field.field.node.entrada_de_blog.feeds_item
+    - field.field.node.entrada_de_blog.field_alias_tipo_contenido
+    - field.field.node.entrada_de_blog.field_archivos
+    - field.field.node.entrada_de_blog.field_audios
+    - field.field.node.entrada_de_blog.field_autor_entrada_blog
+    - field.field.node.entrada_de_blog.field_blog
+    - field.field.node.entrada_de_blog.field_categoria
+    - field.field.node.entrada_de_blog.field_colectivo
+    - field.field.node.entrada_de_blog.field_comentarios
+    - field.field.node.entrada_de_blog.field_contenido_generico
+    - field.field.node.entrada_de_blog.field_contenidos_relacionados
+    - field.field.node.entrada_de_blog.field_contenidos_vinculados
+    - field.field.node.entrada_de_blog.field_domain_access
+    - field.field.node.entrada_de_blog.field_domain_all_affiliates
+    - field.field.node.entrada_de_blog.field_domain_source
+    - field.field.node.entrada_de_blog.field_enlaces
+    - field.field.node.entrada_de_blog.field_etiquetas_busqueda
+    - field.field.node.entrada_de_blog.field_fecha_inicio
+    - field.field.node.entrada_de_blog.field_galeria_de_imagenes
+    - field.field.node.entrada_de_blog.field_id_externo
+    - field.field.node.entrada_de_blog.field_iframe
+    - field.field.node.entrada_de_blog.field_imagen_destacada
+    - field.field.node.entrada_de_blog.field_imagenes
+    - field.field.node.entrada_de_blog.field_meta_tags
+    - field.field.node.entrada_de_blog.field_no_mostrar_inverso
+    - field.field.node.entrada_de_blog.field_videos
+    - field.field.node.entrada_de_blog.field_yoast_seo
+    - node.type.entrada_de_blog
+    - views.view.entidades_nodo
+  module:
+    - layout_builder
+    - layout_discovery
+    - metatag
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: cabecera
+          context_mapping: {  }
+        components:
+          31cd5e8d-01c2-4348-a4c2-792bdd9473c2:
+            uuid: 31cd5e8d-01c2-4348-a4c2-792bdd9473c2
+            region: content
+            configuration:
+              id: 'field_block:node:entrada_de_blog:body'
+              label: Descripción
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          ea202f85-1627-4c5b-8bfe-c246cf24951d:
+            uuid: ea202f85-1627-4c5b-8bfe-c246cf24951d
+            region: content
+            configuration:
+              id: 'field_block:node:entrada_de_blog:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          47bbcb0e-041a-40b8-97fd-3b4161632375:
+            uuid: 47bbcb0e-041a-40b8-97fd-3b4161632375
+            region: content
+            configuration:
+              id: 'field_block:node:entrada_de_blog:created'
+              label: Fecha
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: hidden
+                settings:
+                  date_format: fecha_bloque_noticias_home
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          dc990118-2fb5-46ff-a5a2-68133db44a8b:
+            uuid: dc990118-2fb5-46ff-a5a2-68133db44a8b
+            region: content
+            configuration:
+              id: 'field_block:node:entrada_de_blog:field_autor_entrada_blog'
+              label: Autor
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: token
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          c8b7fc0f-b9b8-44e3-a0a9-27fbaa29bbe1:
+            uuid: c8b7fc0f-b9b8-44e3-a0a9-27fbaa29bbe1
+            region: content
+            configuration:
+              id: 'field_block:node:entrada_de_blog:field_categoria'
+              label: 'Categoría de actualidad'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0c8d14f2-db1e-42b3-b350-14ee16ef5684:
+            uuid: 0c8d14f2-db1e-42b3-b350-14ee16ef5684
+            region: content
+            configuration:
+              id: 'field_block:node:entrada_de_blog:field_etiquetas_busqueda'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          72ca2a9a-23e5-4f69-9c20-343171e86329:
+            uuid: 72ca2a9a-23e5-4f69-9c20-343171e86329
+            region: content
+            configuration:
+              id: 'views_block:entidades_nodo-block_11'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          470315ad-4a06-4a5d-a54b-b1411fbed86f:
+            uuid: 470315ad-4a06-4a5d-a54b-b1411fbed86f
+            region: content
+            configuration:
+              id: 'views_block:entidades_nodo-block_12'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.entrada_de_blog.full
+targetEntityType: node
+bundle: entrada_de_blog
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_categoria:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_colectivo:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_etiquetas_busqueda:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_audios: true
+  field_autor_entrada_blog: true
+  field_blog: true
+  field_comentarios: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_fecha_inicio: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_no_mostrar_inverso: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

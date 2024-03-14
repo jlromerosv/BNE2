@@ -1,0 +1,35 @@
+uuid: 4e629122-9daf-4881-85c1-b2ffec8de940
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas_busqueda
+    - node.type.convocatoria
+    - taxonomy.vocabulary.area_organizativa
+    - taxonomy.vocabulary.area_tematica
+    - taxonomy.vocabulary.colectivo
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+id: node.convocatoria.field_etiquetas_busqueda
+field_name: field_etiquetas_busqueda
+entity_type: node
+bundle: convocatoria
+label: 'Etiquetas de búsqueda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      colectivo: colectivo
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+      area_tematica: area_tematica
+      area_organizativa: area_organizativa
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: etiquetas_de_busqueda
+field_type: entity_reference

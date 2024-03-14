@@ -1,0 +1,20 @@
+uuid: cf0c8e85-acc4-4ec0-9281-a464175a44a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.buzones_de_envio
+  module:
+    - path
+id: taxonomy_term.buzones_de_envio.path
+field_name: path
+entity_type: taxonomy_term
+bundle: buzones_de_envio
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

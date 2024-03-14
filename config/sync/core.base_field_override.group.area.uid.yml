@@ -1,0 +1,20 @@
+uuid: 68aadc22-2e96-4132-9c2a-a840a2cd9af7
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+id: group.area.uid
+field_name: uid
+entity_type: group
+bundle: area
+label: 'Group creator'
+description: 'The username of the group creator.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\group\Entity\Group::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

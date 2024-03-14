@@ -1,0 +1,4 @@
+services:
+  archivo_web.consultas:
+    class: 'Drupal\archivo_web\Services\Consultas'
+

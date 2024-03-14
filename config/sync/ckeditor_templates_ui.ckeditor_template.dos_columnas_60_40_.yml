@@ -1,0 +1,12 @@
+uuid: ed8e76dc-c87a-446b-bdb3-b1e6fcfde8b6
+langcode: es
+status: true
+dependencies: {  }
+id: dos_columnas_60_40_
+label: 'Dos columnas 60% - 40%'
+image: ''
+description: ''
+html:
+  value: "<div class=\"template-two-colums-60-40\" style=\"display: grid; grid-template-columns: 6fr 4fr\">\r\n<div class=\"colum-1\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\"><p>&nbsp;</p></div>\r\n\r\n<div class=\"colum-2\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\"><p>&nbsp;</p></div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: html_full
+weight: -9

@@ -1,0 +1,29 @@
+uuid: 7ecfc46b-0247-464c-8ef7-c32c3ad32b5b
+langcode: es
+status: true
+dependencies:
+  module:
+    - archivo_web
+    - system
+  theme:
+    - bne_theme
+id: bloqueresultadosarchivosdelaweb_2
+theme: bne_theme
+region: content
+weight: 0
+provider: null
+plugin: archivo_web
+settings:
+  id: archivo_web
+  label: 'Bloque Resultados archivos de la web'
+  label_display: '0'
+  provider: archivo_web
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/26939

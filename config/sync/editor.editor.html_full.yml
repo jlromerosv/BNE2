@@ -1,0 +1,89 @@
+uuid: 406b48f7-de94-4a0b-8d72-a7d8361c9dd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.html_full
+  module:
+    - ckeditor
+format: html_full
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formato
+          items:
+            - Bold
+            - Underline
+            - Italic
+            - '-'
+            - Undo
+            - Redo
+            - '-'
+            - Cut
+            - Copy
+            - RemoveFormat
+            - Paste
+            - PasteText
+            - Table
+            - DrupalMediaLibrary
+        -
+          name: Enlaces
+          items:
+            - DrupalLink
+            - '-'
+            - '-'
+            - DrupalUnlink
+            - Anchor
+        -
+          name: Listas
+          items:
+            - '-'
+            - '-'
+            - BulletedList
+            - NumberedList
+            - '-'
+            - Outdent
+            - Indent
+        -
+          name: Multimedia
+          items:
+            - Blockquote
+        -
+          name: Alineación
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+        -
+          name: Estilos
+          items:
+            - Format
+            - Styles
+        -
+          name: Tools
+          items:
+            - ShowBlocks
+            - Templates
+            - Source
+            - Maximize
+  plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
+    stylescombo:
+      styles: ''
+    templates:
+      template_path: ''
+      replace_content: 0
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: '2 MB'
+  max_dimensions:
+    width: 1000
+    height: 800

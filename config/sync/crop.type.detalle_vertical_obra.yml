@@ -1,0 +1,12 @@
+uuid: 8d54e1e3-eeee-4ca2-8e30-26744277007c
+langcode: es
+status: true
+dependencies: {  }
+label: 'Detalle vertical obra'
+id: detalle_vertical_obra
+description: ''
+aspect_ratio: '5:6'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

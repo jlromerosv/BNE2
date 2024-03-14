@@ -1,0 +1,20 @@
+uuid: c4382f41-2956-4183-8b8e-ebac0419fce4
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne---contacto
+  module:
+    - menu_item_extras
+id: menu_link_content.mx1---bne---contacto.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: mx1---bne---contacto
+label: 'Modo de vista'
+description: 'Per item view mode selector.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

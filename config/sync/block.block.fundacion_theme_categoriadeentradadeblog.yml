@@ -1,0 +1,29 @@
+uuid: 375f0310-196f-47bc-b205-70008ffc236c
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.categoria_de_entrada_de_blog
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_categoriadeentradadeblog
+theme: fundacion_theme
+region: sidebar_first
+weight: -23
+provider: null
+plugin: 'facet_block:categoria_de_entrada_de_blog'
+settings:
+  id: 'facet_block:categoria_de_entrada_de_blog'
+  label: 'Categoría de entrada de blog'
+  label_display: '0'
+  provider: facets
+  block_id: categoriadeentradadeblog
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/3244\r\n/node/15360\r\n/node/15362\r\n"

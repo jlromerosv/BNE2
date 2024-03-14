@@ -1,0 +1,18 @@
+uuid: bf95d655-a8dc-434c-a6a0-b82c8ae98458
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.lugar
+id: node.lugar.publish_on
+field_name: publish_on
+entity_type: node
+bundle: lugar
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

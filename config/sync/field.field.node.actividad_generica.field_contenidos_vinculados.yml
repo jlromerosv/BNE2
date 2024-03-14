@@ -1,0 +1,30 @@
+uuid: a7b3c2f8-8107-43cf-a130-b3a7ae0befe7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_vinculados
+    - node.type.actividad_generica
+    - node.type.lugar
+    - node.type.pagina_basica
+id: node.actividad_generica.field_contenidos_vinculados
+field_name: field_contenidos_vinculados
+entity_type: node
+bundle: actividad_generica
+label: 'Te puede interesar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lugar: lugar
+      pagina_basica: pagina_basica
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: lugar
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: fc14b578-3252-40e3-ac7b-b3b1db31792e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+  module:
+    - options
+id: node.contenidos_formativos.publish_state
+field_name: publish_state
+entity_type: node
+bundle: contenidos_formativos
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

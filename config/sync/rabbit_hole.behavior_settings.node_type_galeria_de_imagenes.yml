@@ -1,0 +1,14 @@
+uuid: 5cda8286-5924-466b-9df5-56f1ac3c2355
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+id: node_type_galeria_de_imagenes
+entity_type_id: node_type
+entity_id: galeria_de_imagenes
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

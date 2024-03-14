@@ -1,0 +1,15 @@
+uuid: adb11bc3-9d0d-4736-8c82-93f19d42ec2a
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_destacada_contenido_lg
+label: 'Imagen Destacada Contenido LG'
+effects:
+  11f02b7b-a128-4a39-9830-9a7758221e73:
+    uuid: 11f02b7b-a128-4a39-9830-9a7758221e73
+    id: image_scale
+    weight: 1
+    data:
+      width: 740
+      height: null
+      upscale: false

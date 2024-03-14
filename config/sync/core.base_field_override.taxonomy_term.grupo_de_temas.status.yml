@@ -1,0 +1,22 @@
+uuid: 2d5f43c5-e87b-4652-badb-e7cbfcc60748
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.grupo_de_temas
+id: taxonomy_term.grupo_de_temas.status
+field_name: status
+entity_type: taxonomy_term
+bundle: grupo_de_temas
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

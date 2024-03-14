@@ -1,0 +1,7 @@
+uuid: 240b7056-c8a6-4bb8-b47b-363e86afa852
+langcode: es
+status: false
+dependencies: {  }
+formId: node_destacados_manuales_form
+captchaType: default
+label: node_destacados_manuales_form

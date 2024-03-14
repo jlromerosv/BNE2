@@ -1,0 +1,61 @@
+uuid: b3bcecd7-7f6e-4844-bb42-b32df0b72a69
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.bloque_colecciones_blog_lg
+    - image.style.bloque_colecciones_blog_md
+    - image.style.bloque_colecciones_blog_xs
+    - image.style.bloque_colecciones_blog_xxl
+  theme:
+    - bne_theme
+id: eie_bloque_colecciones_blog
+label: 'EIE Bloque colecciones blog'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_blog_xxl
+    breakpoint_id: bne_theme.4xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_blog_xxl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_blog_xxl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_blog_xxl
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_blog_lg
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_blog_md
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_blog_md
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_blog_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_colecciones_blog_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: bloque_colecciones_blog_xxl

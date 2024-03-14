@@ -1,0 +1,18 @@
+uuid: 13d0e366-64b7-4506-84b7-17771e1a5622
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.enlace_a_web_archivada
+target_entity_type_id: node
+target_bundle: enlace_a_web_archivada
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: e7803a8c-8ecd-4982-8b2e-a1f7d7a0fd22
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.documento
+  module:
+    - metatag
+id: node.documento.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: documento
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

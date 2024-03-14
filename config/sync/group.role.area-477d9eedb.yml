@@ -1,0 +1,17 @@
+uuid: 04de2081-0936-4e5c-91c5-3e93d46ffa18
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.usuario_mibne
+id: area-477d9eedb
+label: 'Usuario MiBNE'
+weight: 2
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

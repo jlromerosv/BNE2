@@ -1,0 +1,18 @@
+uuid: 578fa21e-1e26-4b50-a81f-4bcb49fa55b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_menu
+id: taxonomy_term.tipo_de_menu.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_menu
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,163 @@
+.ps-rrss-share {
+  position: relative;
+
+  .view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    //margin-top: 15px;
+    @media (max-width: 576px) {
+      //display: block;
+      .ps-rrss-share-button {
+        .view-content {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      .field--name-body {
+        height: 51px;
+        display: flex;
+        align-items: center;
+        p {
+          display: block;
+        }
+      }
+    }
+    .ps-rrss-share-button {
+      height: 51px;
+      display: flex;
+      align-items: center;
+      .view-content {
+        display: block;
+        position: inherit;
+        width: 100%;
+        height: 100% !important;
+
+        .views-field-field-icono-svg- {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          cursor: pointer;
+          .field-content {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .field--name-body {
+      p {
+        a {
+          display: flex;
+          align-items: center;
+          color: $bne_color_2;
+          font-size: 14px;
+          &::before {
+            content: "";
+            height: 10px;
+            width: 15px;
+            background: url(/themes/contrib/bne_theme/recursos/Right_Arrow_3_.svg)
+              no-repeat center;
+            background-size: 15px;
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .view-content {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    width: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    padding: 0;
+    height: 51px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media (max-width: 565px) {
+      //top: 40px;
+      position: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+      right: 0px !important;
+      height: 0;
+    }
+
+    .views-row {
+      padding: 0 15px;
+      @media (max-width: 650px) {
+        padding: 15px;
+      }
+      .views-field-field-icono-svg- {
+        .field-content {
+          a {
+            display: flex;
+            align-items: center;
+            background: $bne_color_5;
+            padding: 5px;
+            border-radius: 50%;
+            svg {
+              width: 16px;
+              height: 16px;
+              path {
+                fill: $blanco;
+              }
+              .a {
+                stroke: $blanco;
+              }
+            }
+          }
+        }
+      }
+    }
+    div {
+      display: inline;
+    }
+  }
+}
+
+.show-rrss {
+  width: 400px !important;
+  transition: all 1s ease;
+  @media (max-width: 565px) {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 110px;
+  }
+}
+
+.layout-container {
+  main {
+    .ps-left-main {
+      .ps-rrss-share {
+        padding: 0px 15px 0px 15px;
+        // @media (min-width: 992px) {
+        //   padding: 0px 2em 1em 2em;
+        // }
+        @media (min-width: 992px) {
+          padding: 0px 5em 0em 5em;
+        }
+        .view-content {
+          right: 60px;
+          @media (min-width: 1200px) {
+            right: 115px;
+          }
+        }
+      }
+    }
+    .ps-main {
+      .ps-rrss-share {
+        padding: 0 15px;
+      }
+    }
+  }
+}

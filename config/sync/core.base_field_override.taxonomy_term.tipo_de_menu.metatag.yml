@@ -1,0 +1,18 @@
+uuid: 9c020ff1-68fd-4bdd-b586-e77d0e80cf9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_menu
+id: taxonomy_term.tipo_de_menu.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: tipo_de_menu
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

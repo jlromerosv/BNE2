@@ -1,0 +1,22 @@
+uuid: 336d1352-afa3-4627-bcf5-15f42b35e0af
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+id: node.obra.promote
+field_name: promote
+entity_type: node
+bundle: obra
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 95c3c082-1a4d-4c16-97a7-00f22fe184a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_enlace
+  module:
+    - text
+id: taxonomy_term.tipo_de_enlace.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_enlace
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

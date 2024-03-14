@@ -1,0 +1,5 @@
+name: Types
+url_alias: Types_de_publications
+widget:
+  config:
+    reset_text: 'Montrer tout'

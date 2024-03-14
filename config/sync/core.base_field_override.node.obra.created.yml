@@ -1,0 +1,18 @@
+uuid: d255de48-20f5-42b4-9dd1-a79d407160d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+id: node.obra.created
+field_name: created
+entity_type: node
+bundle: obra
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

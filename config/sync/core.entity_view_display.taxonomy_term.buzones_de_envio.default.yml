@@ -1,0 +1,41 @@
+uuid: 6e71b54a-07de-4e5f-98a0-84b6b137a118
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.buzones_de_envio.field_categoria
+    - field.field.taxonomy_term.buzones_de_envio.field_correo_electronico
+    - taxonomy.vocabulary.buzones_de_envio
+  module:
+    - text
+id: taxonomy_term.buzones_de_envio.default
+targetEntityType: taxonomy_term
+bundle: buzones_de_envio
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_correo_electronico:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

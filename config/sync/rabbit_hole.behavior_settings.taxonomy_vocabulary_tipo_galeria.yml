@@ -1,0 +1,14 @@
+uuid: cbcdf2d0-5f2a-4b01-bd56-8bfe86b3300b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_galeria
+id: taxonomy_vocabulary_tipo_galeria
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_galeria
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,15 @@
+uuid: 5af5a821-692d-41dc-af99-37bb0defc704
+langcode: es
+status: true
+dependencies: {  }
+name: publicacion_imagen_destacada_ficha
+label: 'Publicación Imagen destacada ficha'
+effects:
+  c987ae07-78f3-49d1-9746-5b0cd43056e1:
+    uuid: c987ae07-78f3-49d1-9746-5b0cd43056e1
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: null
+      upscale: false

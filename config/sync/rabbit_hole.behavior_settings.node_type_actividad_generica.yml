@@ -1,0 +1,14 @@
+uuid: 375d561e-cdad-49cc-92bb-82b1efe46518
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad_generica
+id: node_type_actividad_generica
+entity_type_id: node_type
+entity_id: actividad_generica
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

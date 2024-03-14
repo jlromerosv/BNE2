@@ -1,0 +1,18 @@
+uuid: 8f1bddb1-6454-498d-b8db-954ac17b5007
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.title
+field_name: title
+entity_type: node
+bundle: seccion_albacete_
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: 1d43ce8e-f6da-42f1-a3a0-3c4aaf983070
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.grupo_de_temas
+id: taxonomy_vocabulary_grupo_de_temas
+entity_type_id: taxonomy_vocabulary
+entity_id: grupo_de_temas
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

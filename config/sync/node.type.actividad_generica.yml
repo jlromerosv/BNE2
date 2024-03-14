@@ -1,0 +1,33 @@
+uuid: 1139a386-2625-4f1d-ac99-70e9c95d20fa
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - mx1---bne
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: _x_Actividades
+type: actividad_generica
+description: 'Descripción de una actividad o evento genérico <b>sin fecha<b>'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

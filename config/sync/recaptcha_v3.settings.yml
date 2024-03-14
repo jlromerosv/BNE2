@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: jv0PKCJEOq2bOwY9RspuPZCf67ifVJ4tfTk-BfZMw8k
+langcode: es
+site_key: 6LfCGkojAAAAAHy9JeyirdRai0vLwzIHqmWY7QaM
+secret_key: 6LfCGkojAAAAAIIah2GshvPaodFK_xuCcKkqIAFg
+verify_hostname: true
+default_challenge: ''
+error_message: 'Antibot verification failed.'
+cacheable: false

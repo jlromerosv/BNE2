@@ -1,0 +1,18 @@
+uuid: e3761188-aa43-4e43-aea4-0c9a0a039a7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.horarios
+target_entity_type_id: node
+target_bundle: horarios
+default_langcode: site_default
+language_alterable: true

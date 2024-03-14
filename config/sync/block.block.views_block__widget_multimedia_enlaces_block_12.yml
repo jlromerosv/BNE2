@@ -1,0 +1,34 @@
+uuid: 3103ccd5-de03-43ed-89b1-1a2a393e70e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - system
+    - views
+  theme:
+    - bne_theme
+id: views_block__widget_multimedia_enlaces_block_12
+theme: bne_theme
+region: sidebar_first
+weight: -46
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-block_12'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-block_12'
+  label: 'Widgets Contenido de la página: Enlaces destacados de la página (páginas personalizadas)'
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: 'Widgets Contenido de la página: Enlaces destacados de la página (páginas personalizadas)'
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/2821\r\n/node/3472\r\n/node/8441\r\n/node/3244\r\n/node/20006\r\n/node/15361\r\n/node/20647\r\n/node/2884\r\n/node/20941\r\n/node/3050\r\n/node/3311\r\n/node/3057\r\n/node/22002\r\n/node/22007\r\n/node/2754\r\n/node/3145\r\n/node/15363\r\n"

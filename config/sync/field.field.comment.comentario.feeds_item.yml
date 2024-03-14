@@ -1,0 +1,23 @@
+uuid: 247bc444-49a4-4a8d-8e5e-1f3ef7157ce0
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+    - field.storage.comment.feeds_item
+  module:
+    - feeds
+id: comment.comentario.feeds_item
+field_name: feeds_item
+entity_type: comment
+bundle: comentario
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

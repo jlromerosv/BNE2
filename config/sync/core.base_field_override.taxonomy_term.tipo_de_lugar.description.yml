@@ -1,0 +1,20 @@
+uuid: 8efd1cf4-0085-40bd-be31-0ef2a9d74152
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_lugar
+  module:
+    - text
+id: taxonomy_term.tipo_de_lugar.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_lugar
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

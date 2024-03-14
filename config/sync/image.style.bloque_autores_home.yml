@@ -1,0 +1,15 @@
+uuid: f90283b4-d63c-4946-8451-8d6b3ac1662c
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_autores_home
+label: 'Bloque Autores home'
+effects:
+  b2f98976-59ba-4069-ac17-3dae38451f49:
+    uuid: b2f98976-59ba-4069-ac17-3dae38451f49
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 480
+      anchor: center-center

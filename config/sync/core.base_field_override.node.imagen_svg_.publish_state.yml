@@ -1,0 +1,20 @@
+uuid: 5b91d4ed-a844-43c3-9b81-96ff16664be4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+  module:
+    - options
+id: node.imagen_svg_.publish_state
+field_name: publish_state
+entity_type: node
+bundle: imagen_svg_
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

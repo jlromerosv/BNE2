@@ -1,0 +1,29 @@
+uuid: 32c25cf1-7c75-41b2-86fa-11b4f159222a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colectivo
+    - node.type.servicio
+    - taxonomy.vocabulary.colectivo
+id: node.servicio.field_colectivo
+field_name: field_colectivo
+entity_type: node
+bundle: servicio
+label: Colectivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      colectivo: colectivo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

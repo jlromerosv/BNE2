@@ -1,0 +1,29 @@
+uuid: a3e7fbaf-687e-46a9-9fb1-e965b43e016c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---fabne
+  module:
+    - system
+  theme:
+    - fundacion_theme
+id: mx1fabne
+theme: fundacion_theme
+region: header_site_2_2
+weight: -22
+provider: null
+plugin: 'system_menu_block:mx1---fabne'
+settings:
+  id: 'system_menu_block:mx1---fabne'
+  label: Menú
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

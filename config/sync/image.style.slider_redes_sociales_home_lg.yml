@@ -1,0 +1,15 @@
+uuid: 5719ed38-e597-45d2-9a98-d1f7de4a158d
+langcode: es
+status: true
+dependencies: {  }
+name: slider_redes_sociales_home_lg
+label: 'Slider Redes Sociales Home LG'
+effects:
+  61ae5b59-add1-468a-8348-9a6f0af15678:
+    uuid: 61ae5b59-add1-468a-8348-9a6f0af15678
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 526
+      anchor: center-center

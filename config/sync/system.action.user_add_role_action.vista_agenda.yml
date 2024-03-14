@@ -1,0 +1,14 @@
+uuid: c23c08d5-be90-432f-b821-028674b546d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.vista_agenda
+  module:
+    - user
+id: user_add_role_action.vista_agenda
+label: 'Añade el rol vista agenda al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: vista_agenda

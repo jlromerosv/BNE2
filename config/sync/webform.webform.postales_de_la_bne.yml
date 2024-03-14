@@ -1,0 +1,290 @@
+uuid: c8138df8-73b3-400d-882f-4cced9e6d43d
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 771
+template: false
+archive: false
+id: postales_de_la_bne
+title: 'Postales de la BNE'
+description: ''
+category: ''
+elements: |-
+  seleccione_un_titulo_:
+    '#type': select
+    '#title': 'SELECCIONE UN TÍTULO'
+    '#options':
+      felicidades: ¡Felicidades!
+      feliz-navidad: '¡Feliz Navidad!'
+      felices-fiestas: '¡Felices Fiestas!'
+      feliz-ano-nuevo: '¡Feliz Año Nuevo!'
+    '#empty_option': Seleccionar
+  _o_escriba_el_suyo_:
+    '#type': textfield
+    '#title': 'O ESCRIBA EL SUYO'
+    '#placeholder': Título
+  mensaje_:
+    '#type': textarea
+    '#title': Mensaje
+    '#title_display': invisible
+    '#placeholder': Mensaje
+  nombre_del_remitente_:
+    '#type': textfield
+    '#title': 'NOMBRE DEL REMITENTE'
+    '#placeholder': Nombre
+  e_mail_del_remitente_:
+    '#type': email
+    '#title': 'E-MAIL DEL REMITENTE'
+    '#placeholder': Email
+  destinatario_:
+    '#type': textfield
+    '#title': 'DIRECCIONES DE E-MAIL DE LOS DESTINATARIOS'
+    '#description': |-
+      Multiples destinatarios separados por ,<br />
+      Ej: email1@email.com,email2@email.com,email3@email.com
+    '#placeholder': Email
+  img:
+    '#type': webform_computed_twig
+    '#title': img
+    '#display_on': view
+    '#template': |-
+      {% set a = path('<current>')|split('/')|last %}
+      {{ drupal_entity('node', a, 'envio_postal_correo') }}
+  direcciones_de_e_mail_de_los_destinatarios:
+    '#type': textarea
+    '#title': 'E-MAIL DE LOS DESTINATARIOS'
+    '#description': |-
+      Multiples destinatarios separados por ,<br />
+      Ej: email1@email.com,email2@email.com,email3@email.com
+    '#placeholder': Email
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#admin_notes': 'Condiciones de uso'
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: false
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: Modificar
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 1
+  preview_label: 'MODIFICAR FORMULARIO'
+  preview_title: 'VISTA PREVIA DE LA POSTAL'
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements:
+    e_mail_del_remitente_: e_mail_del_remitente_
+    destinatario_: destinatario_
+    img: img
+    direcciones_de_e_mail_de_los_destinatarios: direcciones_de_e_mail_de_los_destinatarios
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: inline
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: "<div class=\"title\">Gracias por enviar tu mensaje</div>\r\n\r\n<div class=\"imagen-postal\">&nbsp;</div>\r\n\r\n<div class=\"destinatarios-title\">Su postal se ha enviado a los siguientes destinatarios:</div>\r\n\r\n<div class=\"destinatarios-email\">[webform_submission:values:destinatario_]</div>\r\n\r\n<div class=\"enviar-otra\"><span>&iquest;Quieres&nbsp;</span><a href=\"/colecciones\">enviar otra postal electr&oacute;nica</a><span>?</span></div>"
+  confirmation_attributes: {  }
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: true
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  correo_electronico:
+    id: email
+    handler_id: correo_electronico
+    label: 'Correo electrónico'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:e_mail_del_remitente_:raw]'
+      to_options: {  }
+      bcc_mail: '[webform_submission:values:destinatario_:raw]'
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: felicitaciones@bne.es
+      from_options: {  }
+      from_name: '[webform_submission:values:nombre_del_remitente_:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:seleccione_un_titulo_] [webform_submission:values:_o_escriba_el_suyo_]'
+      body: "<div style=\"max-width: 756px;margin: 0 auto;\">\r\n<h1 style=\"font: normal normal bold 32px/48px DM Serif Text;color: #1D1D1D;letter-spacing: 0px;text-align: center;\">Postales de la Biblioteca Nacional de Espa&ntilde;a</h1>\r\n\r\n<div style=\"display: grid;max-width: 576px;height: auto;margin: 0 auto;text-align: center;font: normal normal normal 14px/28px Roboto;color: #606060;line-height: 20px;\">[webform_submission:values:img]</div>\r\n\r\n<div style=\"margin-top: 50px; font: italic normal bold 32px/48px DM Serif Text;color: #333333;letter-spacing: 0px;text-align: center;\">[webform_submission:values:seleccione_un_titulo_] [webform_submission:values:_o_escriba_el_suyo_]</div>\r\n\r\n<div style=\"font: normal normal normal 16px/34px Roboto;color: #606060;letter-spacing: 0.48px;text-align: center; margin-top: 25px;\">[webform_submission:values:mensaje_]</div>\r\n\r\n<div style=\"font: normal normal normal 16px/34px Roboto;color: #333333;letter-spacing: 0.48px;text-align: center; margin-top: 25px;\">[webform_submission:values:nombre_del_remitente_]</div>\r\n\r\n<div style=\"font: normal normal normal 16px/24px Roboto;color: #333333;letter-spacing: 0.96px;text-align: left;margin: 100px 0 25px 0;\">&iquest;Quieres <a href=\"https://www.bne.es/es/colecciones\" style=\"font: normal normal normal 16px/24px Roboto;color: #B40D04;letter-spacing: 0.96px;text-align: left;\">enviar una postal electr&oacute;nica?</a></div>\r\n\r\n<div style=\"background: #333333; text-align: center; margin: 50px 0; padding: 15px; color: #d3d3d3;\"><a href=\"https://www.bne.es/es/aviso-legal\" style=\"font: normal normal normal 13px/26px Roboto;color: #d3d3d3;margin-right: 100px;text-decoration: none;\">Aviso legal</a> <a href=\"https://www.bne.es/es/proteccion-datos\" style=\"font: normal normal normal 13px/26px Roboto;color: #d3d3d3;text-decoration: none;\">Protecci&oacute;n de datos</a></div>\r\n</div>"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: true
+      exclude_attachments: true
+      html: true
+      attachments: true
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

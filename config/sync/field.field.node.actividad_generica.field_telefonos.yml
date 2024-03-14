@@ -1,0 +1,19 @@
+uuid: e475bb08-2cff-45b8-b30a-9d5f81dcefa0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefonos
+    - node.type.actividad_generica
+id: node.actividad_generica.field_telefonos
+field_name: field_telefonos
+entity_type: node
+bundle: actividad_generica
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

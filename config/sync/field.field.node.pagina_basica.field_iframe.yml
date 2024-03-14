@@ -1,0 +1,30 @@
+uuid: 520e5e57-0bd7-46dd-a737-c0e3fc1f6c12
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.pagina_basica
+  module:
+    - iframe
+id: node.pagina_basica.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: pagina_basica
+label: Iframes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '1'
+  tokensupport: null
+  width: null
+  height: null
+field_type: iframe

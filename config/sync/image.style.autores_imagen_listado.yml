@@ -1,0 +1,15 @@
+uuid: 8a3a6fd0-297a-4aff-9866-55c0432bd7a0
+langcode: es
+status: true
+dependencies: {  }
+name: autores_imagen_listado
+label: 'Autores imagen listado'
+effects:
+  aa94f719-2a39-4827-b7d8-36ee3fa2c978:
+    uuid: aa94f719-2a39-4827-b7d8-36ee3fa2c978
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 316
+      height: 316
+      anchor: center-center

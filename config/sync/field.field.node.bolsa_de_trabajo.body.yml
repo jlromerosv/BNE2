@@ -1,0 +1,23 @@
+uuid: 464b88c9-5cc7-4dd2-84f6-9dfb7f6e7298
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bolsa_de_trabajo
+  module:
+    - text
+id: node.bolsa_de_trabajo.body
+field_name: body
+entity_type: node
+bundle: bolsa_de_trabajo
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

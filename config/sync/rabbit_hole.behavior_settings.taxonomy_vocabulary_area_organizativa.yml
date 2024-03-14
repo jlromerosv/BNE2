@@ -1,0 +1,14 @@
+uuid: 05570b7a-3589-4006-a7b5-352f91bb963a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_organizativa
+id: taxonomy_vocabulary_area_organizativa
+entity_type_id: taxonomy_vocabulary
+entity_id: area_organizativa
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

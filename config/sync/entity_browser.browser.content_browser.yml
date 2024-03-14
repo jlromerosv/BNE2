@@ -1,0 +1,31 @@
+uuid: 51be3aed-195e-4fd7-bd75-8150b4015949
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.content_browser
+  module:
+    - views
+name: content_browser
+label: 'Explorador de contenido'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: Seleccione
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  3e4266b9-1637-4e3a-a0c7-3cda772d9e74:
+    id: view
+    uuid: 3e4266b9-1637-4e3a-a0c7-3cda772d9e74
+    label: Ver
+    weight: 1
+    settings:
+      submit_text: Aceptar
+      auto_select: false
+      view: content_browser
+      view_display: entity_browser_1

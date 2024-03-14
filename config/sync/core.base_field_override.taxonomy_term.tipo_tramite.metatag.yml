@@ -1,0 +1,18 @@
+uuid: 8ba55c9e-1c1e-449b-a1b9-3c21cc005abf
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_tramite
+id: taxonomy_term.tipo_tramite.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: tipo_tramite
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

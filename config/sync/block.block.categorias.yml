@@ -1,0 +1,29 @@
+uuid: 18430ad5-1b4d-493e-ae0d-6de6f54a7262
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.categorias_noticia
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: categorias
+theme: bne_theme
+region: sidebar_first
+weight: -56
+provider: null
+plugin: 'facet_block:categorias_noticia'
+settings:
+  id: 'facet_block:categorias_noticia'
+  label: 'Categorías de noticia'
+  label_display: '0'
+  provider: facets
+  block_id: categorias
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/2821

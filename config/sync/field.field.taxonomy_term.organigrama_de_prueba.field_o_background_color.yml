@@ -1,0 +1,19 @@
+uuid: d27688ca-4e9f-4749-8706-8c3d5c2318ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_o_background_color
+    - taxonomy.vocabulary.organigrama_de_prueba
+id: taxonomy_term.organigrama_de_prueba.field_o_background_color
+field_name: field_o_background_color
+entity_type: taxonomy_term
+bundle: organigrama_de_prueba
+label: 'Background color'
+description: 'Specify the background color of this organigram item.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

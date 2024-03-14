@@ -1,0 +1,57 @@
+/*
+    ========== GALERÍA DE VÍDEOS ==========
+
+    Estilos dedicados a la vista de galería de vídeos.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin ps-content-margins($breakpoint, $max-width)
+
+        @mixin grid-layout-view($columns, $rows)
+
+        @mixin mf-responsive-grid-layout-view ($min-width, $columns, $rows)
+
+    ------------------------- MIXINS --------------------------   
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+    
+    grid-layout-view = Convierte la estructura de la vista
+    en grid
+
+    mf-responsive-grid-layout-view = Te permite hacer 
+    responsive la estructura
+
+    ----------------------- VARIABLES -------------------------
+    $breakpoints = Medida que marca el punto de ruptura
+
+    $max-width = Máximo de ancho
+
+    $columns = Número de columnas del grid (grid-layout-view / mf-responsive-grid-layout-view)
+
+    $rows = Número de filas (grid-layout-view / mf-responsive-grid-layout-view)
+
+    $min-width = Mínimo de ancho para el breakpoint
+
+*/
+
+.ps-videos-web-block {
+    @include ps-content-margins(992px, 1366px);
+    .view-content {
+        @include grid-layout-view(1fr, initial);
+        @include mf-responsive-grid-layout-view(768px, repeat(2, 1fr), initial);
+        margin-bottom: 20px;
+        .views-row {
+            margin: 0 10px 30px;
+            .media-oembed-content {
+                width: 100%;
+                height: 70vw;
+                @media (min-width: 768px) {
+                    height: 20vw;
+                }
+            }
+            .views-field-name .field-content {
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+uuid: bde95856-6fff-4e6f-b345-b098025f724b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estadistica
+id: node.estadistica.changed
+field_name: changed
+entity_type: node
+bundle: estadistica
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

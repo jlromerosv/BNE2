@@ -1,0 +1,21 @@
+uuid: c7f7463c-95e7-4382-b6e9-716103f7bc72
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: seccion_albacete_
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

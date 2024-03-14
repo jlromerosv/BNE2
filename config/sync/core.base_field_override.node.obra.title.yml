@@ -1,0 +1,18 @@
+uuid: 4825f792-505b-40fc-b4ac-77e4b9a045d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+id: node.obra.title
+field_name: title
+entity_type: node
+bundle: obra
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

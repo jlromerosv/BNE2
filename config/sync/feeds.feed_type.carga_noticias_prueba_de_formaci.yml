@@ -1,0 +1,304 @@
+uuid: 1dfed3c1-5067-4b59-a510-f0b959145053
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.noticia.created
+    - core.base_field_override.node.noticia.path
+    - core.base_field_override.node.noticia.title
+    - field.field.node.noticia.body
+    - field.field.node.noticia.field_archivos
+    - field.field.node.noticia.field_categorias
+    - field.field.node.noticia.field_colectivo
+    - field.field.node.noticia.field_contenidos_relacionados
+    - field.field.node.noticia.field_enlaces
+    - field.field.node.noticia.field_fecha_actualizacion_visibl
+    - field.field.node.noticia.field_galeria_de_imagenes
+    - field.field.node.noticia.field_id_externo
+    - field.field.node.noticia.field_subtitulo
+    - field.field.node.noticia.field_videos
+    - node.type.noticia
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      a58fdd21-99b0-4fb1-a9db-fcbbdfc9a8bb:
+        separator: '}'
+        limit: null
+        uuid: a58fdd21-99b0-4fb1-a9db-fcbbdfc9a8bb
+        plugin: explode
+        source: rutaarchivo
+        weight: 0
+        label: Explode
+      97399d58-b2bf-41ef-a479-63013074a154:
+        separator: '}'
+        limit: null
+        uuid: 97399d58-b2bf-41ef-a479-63013074a154
+        plugin: explode
+        source: enlacesexternosurl
+        weight: 0
+        label: Explode
+      7d286b7a-0662-44a2-a992-1099caf0517f:
+        invert: false
+        uuid: 7d286b7a-0662-44a2-a992-1099caf0517f
+        plugin: required
+        source: id_externo
+        weight: 0
+        label: Obligatorio
+      a8844788-6de7-484f-843f-f52954b176af:
+        separator: '}'
+        limit: null
+        uuid: a8844788-6de7-484f-843f-f52954b176af
+        plugin: explode
+        source: enlacesexternostexto
+        weight: 0
+        label: Explode
+      0977930c-aed5-47a6-8fb8-07bc2ee1b2a1:
+        separator: '}'
+        limit: null
+        uuid: 0977930c-aed5-47a6-8fb8-07bc2ee1b2a1
+        plugin: explode
+        source: listaetiquetas
+        weight: 0
+        label: Explode
+      5d479f3c-ef11-45bb-ad90-bfa54e77dbdf:
+        separator: '}'
+        limit: null
+        uuid: 5d479f3c-ef11-45bb-ad90-bfa54e77dbdf
+        plugin: explode
+        source: listacontenidosrelacionados
+        weight: 0
+        label: Explode
+label: 'Carga Noticias de CSV (nuevo)'
+id: carga_noticias_prueba_de_formaci
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: noticia
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  alias:
+    value: Alias
+    label: Alias
+    machine_name: alias
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  rutaarchivo_:
+    value: RutaArchivo|
+    label: RutaArchivo|
+    machine_name: rutaarchivo_
+    type: csv
+  rutaarchivo:
+    value: RutaArchivo
+    label: RutaArchivo
+    machine_name: rutaarchivo
+    type: csv
+  enlacesexternosurl:
+    value: EnlacesExternosURL
+    label: EnlacesExternosURL
+    machine_name: enlacesexternosurl
+    type: csv
+  enlacesexternostexto:
+    value: EnlacesExternosTexto
+    label: EnlacesExternosTexto
+    machine_name: enlacesexternostexto
+    type: csv
+  titulo_:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo_
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  titulo2:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo2
+    type: csv
+  videoexterno:
+    value: VideoExterno
+    label: VideoExterno
+    machine_name: videoexterno
+    type: csv
+  rutavideo:
+    value: RutaVideo
+    label: RutaVideo
+    machine_name: rutavideo
+    type: csv
+  listaetiquetas:
+    value: ListaEtiquetas
+    label: ListaEtiquetas
+    machine_name: listaetiquetas
+    type: csv
+  subtitulo:
+    value: Subtitulo
+    label: Subtitulo
+    machine_name: subtitulo
+    type: csv
+  colectivo:
+    value: Colectivo
+    label: Colectivo
+    machine_name: colectivo
+    type: csv
+  listacontenidosrelacionados:
+    value: ListaContenidosRelacionados
+    label: ListaContenidosRelacionados
+    machine_name: listacontenidosrelacionados
+    type: csv
+  linkgaleriaimagenes:
+    value: LinkGaleriaImagenes
+    label: LinkGaleriaImagenes
+    machine_name: linkgaleriaimagenes
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: titulo2
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: path
+    map:
+      alias: alias
+      pathauto: ''
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: subtitulo
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_archivos
+    map:
+      target_id: rutaarchivo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_enlaces
+    map:
+      uri: enlacesexternosurl
+      title: enlacesexternostexto
+    settings:
+      language: null
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_videos
+    map:
+      target_id: rutavideo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_fecha_actualizacion_visibl
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: field_categorias
+    map:
+      target_id: listaetiquetas
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_subtitulo
+    map:
+      value: subtitulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_colectivo
+    map:
+      target_id: colectivo
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_contenidos_relacionados
+    map:
+      target_id: listacontenidosrelacionados
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_galeria_de_imagenes
+    map:
+      target_id: linkgaleriaimagenes
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0

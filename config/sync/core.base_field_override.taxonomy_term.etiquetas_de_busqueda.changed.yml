@@ -1,0 +1,18 @@
+uuid: 1ce452ee-c11f-43d7-b0cf-7f3e7875c696
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+id: taxonomy_term.etiquetas_de_busqueda.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: etiquetas_de_busqueda
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

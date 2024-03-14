@@ -1,0 +1,20 @@
+uuid: 54cd37a3-3184-4c81-9349-22505201a58c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regimen_de_promocion_de_inmbuebl
+  module:
+    - path
+id: taxonomy_term.regimen_de_promocion_de_inmbuebl.path
+field_name: path
+entity_type: taxonomy_term
+bundle: regimen_de_promocion_de_inmbuebl
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

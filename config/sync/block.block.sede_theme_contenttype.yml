@@ -1,0 +1,33 @@
+uuid: f86b049b-7c2c-404d-b9d5-9001be5af1b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipo_contenido
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_contenttype
+theme: sede_theme
+region: sidebar_first
+weight: -24
+provider: null
+plugin: 'facet_block:tipo_contenido'
+settings:
+  id: 'facet_block:tipo_contenido'
+  label: 'Content type del buscador general'
+  label_display: '0'
+  provider: facets
+  block_id: contenttype
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/22877

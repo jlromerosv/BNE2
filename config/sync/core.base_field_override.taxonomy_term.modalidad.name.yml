@@ -1,0 +1,18 @@
+uuid: 60ff6250-c4bf-427e-b6b2-8bc0238edf85
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.modalidad
+id: taxonomy_term.modalidad.name
+field_name: name
+entity_type: taxonomy_term
+bundle: modalidad
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,326 @@
+.ps_microsite_container .ps_header_site_2_col {
+  z-index: 1000;
+}
+
+.ps_content_margins.ps_header_site_2_col.ps_header_site_2_col-left-right {
+  background-color: white;
+  align-items: center;
+  box-shadow: none;
+}
+
+.region.region-header-izquierdo-1-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.views-field.views-field-field-imagen-representativa {
+  .field__item {
+    img {
+      height: 90px;
+      width: auto;
+      max-width: none;
+    }
+  }
+}
+
+.ps-logo-bne-header {
+  .view-content {
+    .ps-row {
+      a {
+        svg {
+          width: 70px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+// LOGO SEDE ELECTRONICA
+#block-views-block-widget-block-22-2 {
+  svg {
+    width: 100%;
+  }
+}
+
+///////////////////// MENÚ HEADER 1 ////////////////////////
+nav#block-mx1bne2 {
+  padding: 10px 0px;
+  align-items: center;
+  h2 {
+    background: black;
+    color: white;
+  }
+
+  ul.menu {
+    display: flex;
+    flex-direction: row;
+
+    a {
+      color: #f9f9f9;
+      font-size: 14px;
+      @include tipografia($Roboto, 3, regular);
+    }
+  }
+
+  .menu-item {
+    margin-right: 25px;
+    list-style: none;
+  }
+}
+
+///////////////////// MENÚ HEADER 2 ////////////////////////
+.ps_header_site_2_col.ps_header_site_2_col-left-right {
+  justify-content: space-between;
+  display: flex;
+
+  .header_site_left {
+    margin-left: 25px;
+    padding: 5px;
+    .region-header-site-1-2 {
+      .ps-logo-sede-electronica{
+        svg{
+          path{
+            fill: $bne_color_5;
+          }
+        }
+      }
+      .view-content {
+        display: flex;
+        max-width: 400px;
+        .ps-row {
+
+          // @media (min-width: 300px) and (max-width: 992px) {
+          //   &:first-child {
+          //     display: none !important;
+          //   }
+          //   &:last-child {
+          //     display: block !important;
+          //     img {
+          //       width: auto;
+          //       width: 75px;
+          //     }
+          //   }
+          // }
+          // @media (min-width: 993px) {
+          //   &:last-child {
+          //     display: none;
+          //     img {
+          //       width: auto;
+          //       height: 60px;
+          //     }
+          //   }
+          // }
+        }
+      }
+    }
+  }
+
+  .header_site_right {
+    ul.menu {
+      display: flex;
+      flex-direction: row;
+
+      li.menu-item {
+        padding: 0px 40px 0px 0px;
+
+        a {
+          color: #1d1d1d;
+          font-size: 16px;
+          @include tipografia($Roboto, 3, regular);
+        }
+      }
+
+      ::marker {
+        display: none;
+      }
+    }
+  }
+
+  .menu-item--collapsed {
+    //Quitar Iconos del menú desplegable
+    list-style-type: none;
+    list-style-image: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ps_header_site_2_col-left-right .ps_header_site_2_col_content {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0 0 15px !important;
+  }
+}
+
+.ps_header_site_2_col.ps_header_site_2_col-left-right .header_site_left {
+  margin-left: 0px;
+  padding: 10px 0px;
+  @media (max-width: 1366px) {
+    // margin-left: 20px;
+    //padding-left: 20px;
+    // margin-right: 50px;
+  }
+  .region-header-site-1-2 {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.ps_header_site_2_col_content {
+  .header_site_right {
+    height: 100%;
+    width: 100%;
+
+    .region-header-site-2-2 {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: flex-end;
+      @media (max-width: 992px) {
+        justify-content: flex-end;
+      }
+
+      #block-sede-theme-buscador {
+        border: 1px solid $bne_color_2;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.ps_microsite_container .ps_header_site_2_col .ps_header_site_2_col_content {
+  justify-content: space-between;
+  padding: 0 0 0 15px;
+  width: 100%;
+  height: auto;
+
+  @media (max-width: 576px) {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 0px;
+  }
+}
+
+.ps_header_site_2_col.ps_header_site_2_col-left-right
+  .header_site_right
+  ul.menu
+  li.menu-item
+  a {
+  color: $negro;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  padding-bottom: 4px;
+
+  &:hover {
+    border-bottom: 4px solid $bne_color_5;
+  }
+  li.menu-item--active-trail {
+    a {
+      border-bottom: 4px solid $bne_color_5;
+    }
+  }
+}
+.ps_header_site_2_col.ps_header_site_2_col-left-right
+  .header_site_right
+  ul.menu {
+  li.menu-item--active-trail {
+    a {
+      border-bottom: 4px solid $bne_color_5;
+    }
+  }
+}
+
+.region-header-izquierdo-1-2 {
+  .ps-social-block {
+    .view-content {
+      margin-right: 50px;
+      @media (min-width: 300px) and (max-width: 992px) {
+        display: block !important;
+        margin-right: 30px;
+      }
+      .views-field-field-icono-svg- {
+        a {
+          display: flex;
+          align-items: center;
+          img {
+            width: 14px;
+            height: 14px;
+            @media (min-width: 300px) and (max-width: 992px) {
+              display: none;
+            }
+          }
+          .subtitle {
+            margin-left: 5px;
+            font-size: 14px;
+          }
+          // &::after {
+          //   content: "Mi BNE";
+          //   color: $bne_color_4;
+          //   margin-left: 5px;
+          //   font-size: 14px;
+          // }
+        }
+      }
+    }
+  }
+}
+.ps_header_2_col {
+  height: 48px;
+  background-color: $negro;
+  padding: 0;
+
+  .ps_header_2_col_content {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 48px;
+    padding: 0 0 0 15px;
+    .header_col_left {
+      height: 48px;
+      .region-header-izquierdo-1-2 {
+        height: 48px;
+      }
+    }
+  }
+}
+
+.ps-alert {
+  background: $alerta_color;
+}
+
+.ps-rotulo-sede-movil {
+  .view-content {
+    background-color: $bne_color_1;
+    .ps-row {
+      .views-field-title {
+        .field-content {
+          display: block;
+
+          a {
+            font-family: $dm-serif;
+            font-size: 18px;
+            color: $blanco;
+            display: flex;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 576px) {
+  display: none;
+  }
+}
+
+// .ps-logo-sede-escritorio{
+//   @media (max-width: 575.98px) {
+//   display: none;
+//   }
+// }

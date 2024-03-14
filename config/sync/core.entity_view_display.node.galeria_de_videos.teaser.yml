@@ -1,0 +1,117 @@
+uuid: bc9f4b74-7697-49a3-8fea-f02118884797
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.galeria_de_videos.title
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galeria_de_videos.body
+    - field.field.node.galeria_de_videos.field_area_tematica
+    - field.field.node.galeria_de_videos.field_colectivo
+    - field.field.node.galeria_de_videos.field_contenidos_vinculados
+    - field.field.node.galeria_de_videos.field_domain_access
+    - field.field.node.galeria_de_videos.field_domain_all_affiliates
+    - field.field.node.galeria_de_videos.field_domain_source
+    - field.field.node.galeria_de_videos.field_imagen_destacada
+    - field.field.node.galeria_de_videos.field_meta_tags
+    - field.field.node.galeria_de_videos.field_videos
+    - field.field.node.galeria_de_videos.field_yoast_seo
+    - node.type.galeria_de_videos
+  module:
+    - layout_builder
+    - media
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          2b18031d-8483-4749-8d54-11f31a3828e3:
+            uuid: 2b18031d-8483-4749-8d54-11f31a3828e3
+            region: first
+            configuration:
+              id: 'field_block:node:galeria_de_videos:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: tercio_de_ancho
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          89486393-44f3-4d2f-b0de-4621d9475583:
+            uuid: 89486393-44f3-4d2f-b0de-4621d9475583
+            region: second
+            configuration:
+              id: 'extra_field_block:node:galeria_de_videos:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          ad898a80-45e4-4db0-9f64-ab38c694df10:
+            uuid: ad898a80-45e4-4db0-9f64-ab38c694df10
+            region: second
+            configuration:
+              id: 'field_block:node:galeria_de_videos:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.galeria_de_videos.teaser
+targetEntityType: node
+bundle: galeria_de_videos
+mode: teaser
+content:
+  field_imagen_destacada:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_area_tematica: true
+  field_colectivo: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_meta_tags: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

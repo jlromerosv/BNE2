@@ -1,0 +1,37 @@
+uuid: 885b95a2-2201-4b35-a373-aefbb428f3be
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---fabne
+  module:
+    - block_class
+    - system
+  theme:
+    - fundacion_theme
+third_party_settings:
+  block_class:
+    classes: ps-mapa-web
+id: mx1fabne_2
+theme: fundacion_theme
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:mx1---fabne'
+settings:
+  id: 'system_menu_block:mx1---fabne'
+  label: 'MX1 - FABNE'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/29849

@@ -1,0 +1,45 @@
+uuid: 2a23bd6f-3bd9-4b3f-bd86-2edd01a49bad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.mx1---bne---contacto.field_descripcion_enlace
+    - system.menu.mx1---bne---contacto
+  module:
+    - link
+    - menu_item_extras
+id: menu_link_content.mx1---bne---contacto.default
+targetEntityType: menu_link_content
+bundle: mx1---bne---contacto
+mode: default
+content:
+  field_descripcion_enlace:
+    type: string_textarea
+    weight: 21
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

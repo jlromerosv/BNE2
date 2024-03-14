@@ -1,0 +1,21 @@
+uuid: 928c0f80-4b17-400a-be70-8cf25de190da
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.iniciativa
+id: node.iniciativa.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: iniciativa
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 3bc9a76c-2572-45d9-8785-b634f576b0f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_catalogo
+  module:
+    - text
+id: taxonomy_term.tipo_de_catalogo.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_catalogo
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

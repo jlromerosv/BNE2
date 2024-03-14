@@ -1,0 +1,29 @@
+uuid: eeb9be9e-31ed-4ec0-8587-bfc254a71ce1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colectivo
+    - node.type.galeria_de_documentos
+    - taxonomy.vocabulary.colectivo
+id: node.galeria_de_documentos.field_colectivo
+field_name: field_colectivo
+entity_type: node
+bundle: galeria_de_documentos
+label: Colectivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      colectivo: colectivo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: colectivo
+field_type: entity_reference

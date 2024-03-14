@@ -1,0 +1,23 @@
+uuid: e8aae0a6-bf75-45e3-93d6-fd220b0cf3c1
+langcode: es
+status: false
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: blogs
+label: Blogs
+type: 'canonical_entities:taxonomy_term'
+pattern: '/blog/entradas-blog/[term:name]'
+selection_criteria:
+  3ddc44ea-d836-4720-8ffe-7c6bd0f8ade7:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 3ddc44ea-d836-4720-8ffe-7c6bd0f8ade7
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      blogs: blogs
+selection_logic: and
+weight: 4
+relationships: {  }

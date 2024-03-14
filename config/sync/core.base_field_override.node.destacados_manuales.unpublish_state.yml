@@ -1,0 +1,20 @@
+uuid: 4463e0dd-691a-42b6-9f34-ea25e6ac675f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+  module:
+    - options
+id: node.destacados_manuales.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: destacados_manuales
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

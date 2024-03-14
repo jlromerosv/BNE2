@@ -1,0 +1,108 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - resultado: Array con los resultados de archivos de la web2.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+
+
+<div id="bloque-filtros-archivos-web">
+   {% set site_url = url("<current>") %}
+
+	<div class="quitar-filtros"><a href="{{site_url}}">Quitar filtros</a></div>
+
+	<div class="block-facets-web">
+		<div class="facets-widget-checkbox">
+			<span class="facet-title">Colecciones</span>
+			{% for key,coleccion in resultado['colecciones'] %}
+				<ul class="colecciones-checkbox-list facet-inactive js-facets-checkbox-links item-list__checkbox js-facets-widget">
+					<li class="facet-item facet-item-principal">
+						<input type="checkbox" value="" class="facets-checkbox" id="mat-{{ key|striptags|trim|lower|replace({" ": " -"}) }}">
+						<span class="check"></span>
+						<label for="mat-{{ key|striptags|trim|lower|replace({" ": " -"}) }} onclick="return false;"">
+
+							<span class="facet-item__value">{{ key }}</span>
+						</label>
+						<span class="facet-item__count"></span>
+						<span class="collapse-button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40.116" height="23.568" viewbox="0 0 40.116 23.568">
+								<title>Icono Flecha abajo</title>
+								<g data-name="flecha-correcta" transform="translate(40.116) rotate(90)">
+									<g data-name="Grupo 34">
+										<path data-name="Trazado 91" d="M22.928,18.493,5.076.641a2.2,2.2,0,0,0-3.1,0L.658,1.955a2.2,2.2,0,0,0,0,3.1L15.648,20.05.641,35.057a2.2,2.2,0,0,0,0,3.1l1.315,1.314a2.2,2.2,0,0,0,3.1,0L22.928,21.607a2.215,2.215,0,0,0,0-3.114Z"/>
+									</g>
+								</g>
+							</svg>
+						</span>
+					</li>
+					<div class="subcolecciones">
+						{% for key,subcoleccion in coleccion %}
+							<li class="facet-item">
+								<input type="checkbox" value="{{ subcoleccion.id }}" class="facets-checkbox" id="c{{subcoleccion.uid}}{{ subcoleccion.id }}">
+								<span class="check"></span>
+								<label for="c{{subcoleccion.uid}}{{ subcoleccion.id }} onclick="return false;"">
+
+									<span class="facet-item__value">{{subcoleccion.name}}</span>
+								</label>
+							</li>
+						{% endfor %}
+					</div>
+				</ul>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="block-facets-web">
+		<div class="facets-widget-checkbox">
+			<span class="facet-title">Materias</span>
+			{% for key,materia in resultado['materias'] %}
+				<ul class="materias-checkbox-list facet-inactive js-facets-checkbox-links item-list__checkbox js-facets-widget">
+
+					<li class="facet-item facet-item-principal">
+						<input type="checkbox" value="" class="facets-checkbox" id="mat-{{ key|split(' ')|join('-') }}">
+						<span class="check"></span>
+						<label for="mat-{{ key|split(' ')|join('-') }}" onclick="return false;">
+
+							<span class="facet-item__value">{{ key }}</span>
+
+						</label>
+						<span class="facet-item__count"></span>
+						<span class="collapse-button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40.116" height="23.568" viewbox="0 0 40.116 23.568">
+								<title>Icono Flecha abajo</title>
+								<g data-name="flecha-correcta" transform="translate(40.116) rotate(90)">
+									<g data-name="Grupo 34">
+										<path data-name="Trazado 91" d="M22.928,18.493,5.076.641a2.2,2.2,0,0,0-3.1,0L.658,1.955a2.2,2.2,0,0,0,0,3.1L15.648,20.05.641,35.057a2.2,2.2,0,0,0,0,3.1l1.315,1.314a2.2,2.2,0,0,0,3.1,0L22.928,21.607a2.215,2.215,0,0,0,0-3.114Z"/>
+									</g>
+								</g>
+							</svg>
+						</span>
+					</li>
+					<div class="submaterias">
+						{% for submaterias in materia %}
+							<li class="facet-item">
+								<input type="checkbox" value="{{ submaterias.id }}" class="facets-checkbox" id="m{{submaterias.uid}}{{ submaterias.id }}">
+								<span class="check"></span>
+								<label for="m{{submaterias.uid}}{{ submaterias.id }}" onclick="return false;">
+
+									<span class="facet-item__value">{{submaterias.name}}</span>
+								</label>
+
+							</li>
+						{% endfor %}
+					</div>
+				</ul>
+			{% endfor %}
+		</div>
+	</div>
+
+</div>
+
+
+
+

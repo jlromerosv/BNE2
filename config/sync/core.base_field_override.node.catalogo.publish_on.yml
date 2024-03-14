@@ -1,0 +1,18 @@
+uuid: 064f6cf3-2b23-49fb-80d3-664cf2861c40
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.catalogo
+id: node.catalogo.publish_on
+field_name: publish_on
+entity_type: node
+bundle: catalogo
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,28 @@
+uuid: 1f6c71b3-5a81-43c7-a743-675055b05015
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_videos
+    - media.type.video_remoto
+    - node.type.pagina_avanzada
+id: node.pagina_avanzada.field_videos
+field_name: field_videos
+entity_type: node
+bundle: pagina_avanzada
+label: Vídeos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video_remoto: video_remoto
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

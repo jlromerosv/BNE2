@@ -1,0 +1,9 @@
+uuid: 48195560-9765-4434-b0a7-c5253fe1e310
+langcode: es
+status: true
+dependencies: {  }
+id: search_api__views_block__buscadores_a_texto_completo__block_33
+name: 'search_api:views_block__buscadores_a_texto_completo__block_33'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

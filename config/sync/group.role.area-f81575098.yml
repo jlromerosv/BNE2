@@ -1,0 +1,17 @@
+uuid: eece467f-9df4-43aa-9b92-9990cf4fe114
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.editor_blog_bne
+id: area-f81575098
+label: 'Editor Blog BNE'
+weight: 7
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,30 @@
+uuid: 8cd99bb0-012e-4c6b-8b91-520b2f718c0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.lugar
+  module:
+    - iframe
+id: node.lugar.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: lugar
+label: Iframes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '0'
+  tokensupport: null
+  width: null
+  height: null
+field_type: iframe

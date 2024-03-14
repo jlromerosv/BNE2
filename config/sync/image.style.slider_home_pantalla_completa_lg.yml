@@ -1,0 +1,15 @@
+uuid: d55caa89-8f17-4bd8-b8b7-a0765af179b6
+langcode: es
+status: true
+dependencies: {  }
+name: slider_home_pantalla_completa_lg
+label: 'Slider home pantalla completa LG'
+effects:
+  fae9e4a4-6cba-488f-9210-8c9566c5c397:
+    uuid: fae9e4a4-6cba-488f-9210-8c9566c5c397
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1366
+      height: 450
+      anchor: center-center

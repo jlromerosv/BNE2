@@ -1,0 +1,29 @@
+uuid: 6afe5f3d-94a8-4e5d-af7a-ae1b619f3f11
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_provincia
+    - taxonomy.vocabulary.municipio
+    - taxonomy.vocabulary.provincias
+id: taxonomy_term.municipio.field_provincia
+field_name: field_provincia
+entity_type: taxonomy_term
+bundle: municipio
+label: Provincia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      provincias: provincias
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

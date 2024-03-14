@@ -1,0 +1,24 @@
+uuid: c0fc46c3-ecef-4177-b5d3-676244d5408a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_externo
+    - node.type.enlace
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.enlace.field_id_externo
+field_name: field_id_externo
+entity_type: node
+bundle: enlace
+label: Id_externo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

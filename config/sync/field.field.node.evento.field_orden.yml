@@ -1,0 +1,30 @@
+uuid: f66fff05-24a1-4a51-9932-4a572766582b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.evento
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.evento.field_orden
+field_name: field_orden
+entity_type: node
+bundle: evento
+label: Orden
+description: "En la Agenda se ordena por:\r\nBloque 1: Eventos activos hoy\r\n-Orden (ascendente). Por defecto, los eventos se crean con valor -10 . Si se quiere poner un evento el primero de la lista (exposiciones por ejemplo), se le pone un valor menor que -10 (-20 por ejemplo). \r\n-Fecha fin (asc) \r\n-Fecha inicio (asc)\r\nBloque 2: Eventos con fecha de inicio a partir de mañana"
+required: false
+translatable: false
+default_value:
+  -
+    value: -10
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

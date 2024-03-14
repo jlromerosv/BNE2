@@ -1,0 +1,33 @@
+uuid: 45f737f9-bb34-4dff-8cd9-073dda92a153
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidades
+    - node.type.entidad
+    - node.type.entidad_referencia_
+    - node.type.tramite
+id: node.tramite.field_entidades
+field_name: field_entidades
+entity_type: node
+bundle: tramite
+label: Gestiona
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: a49f9fba-f855-45bf-9325-3a28e30c9607
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+      entidad_referencia_: entidad_referencia_
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: entidad
+field_type: entity_reference

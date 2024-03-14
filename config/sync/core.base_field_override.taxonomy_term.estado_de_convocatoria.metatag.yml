@@ -1,0 +1,18 @@
+uuid: efd133e0-c314-44d5-ba87-9ec3fa34895f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_de_convocatoria
+id: taxonomy_term.estado_de_convocatoria.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: estado_de_convocatoria
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,20 @@
+uuid: 00a01a20-9d86-49df-860f-fce2be0efdc1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_documentos
+  module:
+    - options
+id: node.galeria_de_documentos.publish_state
+field_name: publish_state
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

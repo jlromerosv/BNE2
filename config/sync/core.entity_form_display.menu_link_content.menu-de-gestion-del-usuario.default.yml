@@ -1,0 +1,47 @@
+uuid: 866a9f5d-b922-4451-aa78-0a125b60bff3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.menu-de-gestion-del-usuario.field_icono
+    - system.menu.menu-de-gestion-del-usuario
+  module:
+    - link
+    - menu_item_extras
+id: menu_link_content.menu-de-gestion-del-usuario.default
+targetEntityType: menu_link_content
+bundle: menu-de-gestion-del-usuario
+mode: default
+content:
+  field_icono:
+    type: entity_reference_autocomplete
+    weight: 21
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

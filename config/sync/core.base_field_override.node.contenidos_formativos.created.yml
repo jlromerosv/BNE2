@@ -1,0 +1,18 @@
+uuid: 3b9f2f7c-dea6-4d71-b127-d084bc15547b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+id: node.contenidos_formativos.created
+field_name: created
+entity_type: node
+bundle: contenidos_formativos
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

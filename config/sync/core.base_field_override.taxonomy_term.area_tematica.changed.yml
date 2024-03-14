@@ -1,0 +1,18 @@
+uuid: 7053fd36-5932-4bdd-8fe1-959dd7e11faa
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_tematica
+id: taxonomy_term.area_tematica.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: area_tematica
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

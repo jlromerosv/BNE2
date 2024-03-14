@@ -1,0 +1,9 @@
+uuid: d4135963-e91a-4db4-af2d-eaab6c92b8ec
+langcode: es
+status: true
+dependencies: {  }
+id: politica_de_cookies
+label: 'Política de cookies'
+description: 'Elimina el mensaje de cookies una vez aceptado'
+checkbox_default_state: required
+weight: -9

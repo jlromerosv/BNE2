@@ -1,0 +1,27 @@
+uuid: 6f7513a8-8661-4c05-aaf0-ed9fd36a8efe
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+    - field.storage.comment.field_fecha_comentario
+  module:
+    - datetime
+id: comment.comentario.field_fecha_comentario
+field_name: field_fecha_comentario
+entity_type: comment
+bundle: comentario
+label: 'Fecha comentario'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    field_defaults:
+      update_defaults: 0
+      no_overwrite: 0
+default_value_callback: ''
+settings: {  }
+field_type: datetime

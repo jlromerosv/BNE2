@@ -1,0 +1,24 @@
+uuid: a93a6c39-d346-456d-a864-1d288bec8f62
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion_corta
+    - node.type.obra
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.obra.field_descripcion_corta
+field_name: field_descripcion_corta
+entity_type: node
+bundle: obra
+label: Notas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,10 @@
+uuid: 1ac4c0da-1875-49d9-a959-96b5c5309ba0
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.imagen_ficha_persona
+label: 'Imagen ficha persona'
+targetEntityType: media
+cache: true

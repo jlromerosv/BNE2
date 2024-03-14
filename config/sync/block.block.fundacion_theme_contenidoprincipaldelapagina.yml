@@ -1,0 +1,20 @@
+uuid: 7c7ce9ae-7a6f-4eac-af39-81becde96331
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_contenidoprincipaldelapagina
+theme: fundacion_theme
+region: content
+weight: -22
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: visible
+  provider: system
+visibility: {  }

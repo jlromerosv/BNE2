@@ -1,0 +1,18 @@
+uuid: 810f1774-4679-4c36-b99c-20363a00aa07
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autor
+id: node.autor.title
+field_name: title
+entity_type: node
+bundle: autor
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

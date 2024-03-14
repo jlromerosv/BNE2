@@ -1,0 +1,18 @@
+uuid: ed5e35cc-2730-4e6a-a26a-7281702f0eb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.modalidad
+id: taxonomy_term.modalidad.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: modalidad
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

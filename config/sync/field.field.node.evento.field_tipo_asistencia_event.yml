@@ -1,0 +1,33 @@
+uuid: ec03af46-44ee-42aa-9a83-f2497f40c2bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_asistencia_event
+    - node.type.evento
+    - taxonomy.vocabulary.tipo_de_asistencia_a_evento
+  content:
+    - 'taxonomy_term:tipo_de_asistencia_a_evento:ad9390d7-66a9-4305-b70a-945914c597eb'
+id: node.evento.field_tipo_asistencia_event
+field_name: field_tipo_asistencia_event
+entity_type: node
+bundle: evento
+label: 'Tipo de asistencia a evento'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: ad9390d7-66a9-4305-b70a-945914c597eb
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_asistencia_a_evento: tipo_de_asistencia_a_evento
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

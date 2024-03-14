@@ -1,0 +1,14 @@
+uuid: 37b7e856-56da-4481-bc4e-1181a880966b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo
+id: media_type_archivo
+entity_type_id: media_type
+entity_id: archivo
+action: display_page
+allow_override: 0
+redirect: 'http://www.google.es'
+redirect_code: 301
+redirect_fallback_action: page_not_found

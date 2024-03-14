@@ -1,0 +1,22 @@
+uuid: 73434253-6239-4f6e-bdca-06a472842c80
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_postal
+id: taxonomy_term.categoria_postal.status
+field_name: status
+entity_type: taxonomy_term
+bundle: categoria_postal
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

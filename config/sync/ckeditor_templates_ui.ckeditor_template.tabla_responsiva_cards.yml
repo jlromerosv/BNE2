@@ -1,0 +1,12 @@
+uuid: aabbeda1-35ad-4620-aa46-ebe8ea7020e1
+langcode: es
+status: true
+dependencies: {  }
+id: tabla_responsiva_cards
+label: Tabla-responsiva-cards
+image: ''
+description: ''
+html:
+  value: "<p>&nbsp;</p>\r\n\r\n<div class=\"ck-tabla-responsiva-cards\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\">&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: html_full
+weight: 11

@@ -1,0 +1,28 @@
+uuid: 5bddc9b4-02cf-4c0a-a963-0ea25cd37794
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.documento
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.documento.body
+field_name: body
+entity_type: node
+bundle: documento
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

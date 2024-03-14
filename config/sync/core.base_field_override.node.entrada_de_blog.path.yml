@@ -1,0 +1,20 @@
+uuid: 0bac2dd3-cc77-41a1-a9c6-76b763013dc3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entrada_de_blog
+  module:
+    - path
+id: node.entrada_de_blog.path
+field_name: path
+entity_type: node
+bundle: entrada_de_blog
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

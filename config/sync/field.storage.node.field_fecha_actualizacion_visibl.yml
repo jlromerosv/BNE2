@@ -1,0 +1,24 @@
+uuid: 675cfff9-04aa-4515-a913-364ff2fe3825
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_fecha_actualizacion_visibl
+field_name: field_fecha_actualizacion_visibl
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

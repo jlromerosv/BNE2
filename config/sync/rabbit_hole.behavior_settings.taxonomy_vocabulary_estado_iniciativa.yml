@@ -1,0 +1,14 @@
+uuid: 401e55c3-be00-42cb-a236-ea46b5dfe4c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_iniciativa
+id: taxonomy_vocabulary_estado_iniciativa
+entity_type_id: taxonomy_vocabulary
+entity_id: estado_iniciativa
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

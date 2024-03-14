@@ -1,0 +1,5 @@
+name: 'Catégories d''initiative'
+url_alias: categorias_De_initiative
+widget:
+  config:
+    reset_text: 'Montrer tout'

@@ -1,0 +1,29 @@
+uuid: 705670d6-5679-4dd3-9de3-7a60a4bc4a60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_patrocinadores
+    - node.type.campana
+    - node.type.entidad_referencia_
+id: node.campana.field_patrocinadores
+field_name: field_patrocinadores
+entity_type: node
+bundle: campana
+label: Patrocina
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad_referencia_: entidad_referencia_
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

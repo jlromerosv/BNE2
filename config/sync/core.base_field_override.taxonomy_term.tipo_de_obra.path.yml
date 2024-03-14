@@ -1,0 +1,20 @@
+uuid: 537155fc-0a11-4ae4-94b2-002d5d35f204
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_obra
+  module:
+    - path
+id: taxonomy_term.tipo_de_obra.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_obra
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

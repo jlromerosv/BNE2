@@ -1,0 +1,18 @@
+uuid: dce5a41c-c1e3-442e-b8ef-e8ee04b51793
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.area-group_node-entrada_de_blog
+id: group_content.area-group_node-entrada_de_blog.changed
+field_name: changed
+entity_type: group_content
+bundle: area-group_node-entrada_de_blog
+label: 'Changed on'
+description: 'The time that the group content was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

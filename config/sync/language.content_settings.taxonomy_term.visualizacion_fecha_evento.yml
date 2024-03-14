@@ -1,0 +1,18 @@
+uuid: c9815fb7-b5ee-4a20-9f2d-a1ea79272867
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visualizacion_fecha_evento
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.visualizacion_fecha_evento
+target_entity_type_id: taxonomy_term
+target_bundle: visualizacion_fecha_evento
+default_langcode: site_default
+language_alterable: false

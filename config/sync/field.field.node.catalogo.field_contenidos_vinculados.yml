@@ -1,0 +1,59 @@
+uuid: 38ad2c19-8013-470d-8556-932eb17db6df
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_vinculados
+    - node.type.autor
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.convocatoria
+    - node.type.enlace
+    - node.type.entidad
+    - node.type.evento
+    - node.type.faq
+    - node.type.horarios
+    - node.type.iniciativa
+    - node.type.noticia
+    - node.type.pagina_basica
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.red_social
+    - node.type.servicio
+    - node.type.tramite
+id: node.catalogo.field_contenidos_vinculados
+field_name: field_contenidos_vinculados
+entity_type: node
+bundle: catalogo
+label: 'Te puede interesar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      autor: autor
+      campana: campana
+      catalogo: catalogo
+      convocatoria: convocatoria
+      enlace: enlace
+      entidad: entidad
+      evento: evento
+      horarios: horarios
+      iniciativa: iniciativa
+      noticia: noticia
+      persona: persona
+      faq: faq
+      publicacion: publicacion
+      pagina_basica: pagina_basica
+      red_social: red_social
+      servicio: servicio
+      tramite: tramite
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: autor
+field_type: entity_reference

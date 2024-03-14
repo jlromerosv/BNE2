@@ -1,0 +1,14 @@
+uuid: cbfd46fe-daa8-46d8-bf1f-848bd17e1d1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+id: area-outsider
+label: Forastero
+weight: -101
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: true
+permissions: {  }

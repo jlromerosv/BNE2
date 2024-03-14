@@ -1,0 +1,9 @@
+uuid: 52aa1d1f-bdc8-4f66-9e0d-86a71f680d65
+langcode: es
+status: true
+dependencies: {  }
+id: root
+label: Root
+weight: -8
+is_admin: true
+permissions: {  }

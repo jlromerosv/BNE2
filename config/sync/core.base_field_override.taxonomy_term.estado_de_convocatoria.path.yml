@@ -1,0 +1,20 @@
+uuid: 06953311-193c-4055-98ec-74271ec93525
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_de_convocatoria
+  module:
+    - path
+id: taxonomy_term.estado_de_convocatoria.path
+field_name: path
+entity_type: taxonomy_term
+bundle: estado_de_convocatoria
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

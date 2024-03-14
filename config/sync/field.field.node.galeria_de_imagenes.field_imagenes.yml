@@ -1,0 +1,28 @@
+uuid: 8dbbdc1c-93d2-4e74-8d5c-92141f7cc68e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - media.type.imagen
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: galeria_de_imagenes
+label: Imágenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

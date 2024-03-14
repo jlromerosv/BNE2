@@ -1,0 +1,30 @@
+uuid: daa5fef4-1af9-43e0-9222-6d0005c84f94
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colaboradores
+    - node.type.entidad
+    - node.type.entidad_referencia_
+    - node.type.evento
+id: node.evento.field_colaboradores
+field_name: field_colaboradores
+entity_type: node
+bundle: evento
+label: Colabora
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+      entidad_referencia_: entidad_referencia_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: entidad
+field_type: entity_reference

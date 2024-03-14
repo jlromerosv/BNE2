@@ -1,0 +1,34 @@
+uuid: cc536899-0ba9-4a87-b32b-c30fed43ccb8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas_busqueda
+    - node.type.enlace_a_web_archivada
+    - taxonomy.vocabulary.palabras_clave_archivo_web_espan
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.enlace_a_web_archivada.field_etiquetas_busqueda
+field_name: field_etiquetas_busqueda
+entity_type: node
+bundle: enlace_a_web_archivada
+label: 'Palabras Clave'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      palabras_clave_archivo_web_espan: palabras_clave_archivo_web_espan
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

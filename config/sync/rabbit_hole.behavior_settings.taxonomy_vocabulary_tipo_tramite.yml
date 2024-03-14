@@ -1,0 +1,14 @@
+uuid: 363d47c9-f403-4d3b-826f-d703417f4716
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_tramite
+id: taxonomy_vocabulary_tipo_tramite
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_tramite
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

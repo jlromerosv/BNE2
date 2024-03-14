@@ -1,0 +1,25 @@
+uuid: 00463525-3fad-4484-ba9f-5e3b3109ea08
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widgets_imagenes
+  module:
+    - views
+  theme:
+    - bne_theme
+id: views_block__widgets_imagenes_block_1_2
+theme: bne_theme
+region: multimedia
+weight: -64
+provider: null
+plugin: 'views_block:widgets_imagenes-block_1'
+settings:
+  id: 'views_block:widgets_imagenes-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

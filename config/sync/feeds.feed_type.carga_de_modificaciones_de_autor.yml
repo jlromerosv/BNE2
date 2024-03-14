@@ -1,0 +1,138 @@
+uuid: a93532a9-e674-4df4-9e10-bd7a270ea0dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.autor.field_id_externo
+    - field.field.node.autor.field_mostrar_en_portal_escritor
+    - node.type.autor
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers: {  }
+label: 'Carga de modificaciones de autores'
+id: carga_de_modificaciones_de_autor
+description: 'Se cargan los datos perdidos de la última semana que se habían hecho manualmente.'
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: autor
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_id_externo:
+    value: field_id_externo
+    label: field_id_externo
+    machine_name: field_id_externo
+    type: csv
+  field_lugar_de_nacimiento:
+    value: field_lugar_de_nacimiento
+    label: field_lugar_de_nacimiento
+    machine_name: field_lugar_de_nacimiento
+    type: csv
+  field_lugar_de_fallecimiento:
+    value: field_lugar_de_fallecimiento
+    label: field_lugar_de_fallecimiento
+    machine_name: field_lugar_de_fallecimiento
+    type: csv
+  field_fecha_de_defuncion:
+    value: field_fecha_de_defuncion
+    label: field_fecha_de_defuncion
+    machine_name: field_fecha_de_defuncion
+    type: csv
+  field_dominio_publico:
+    value: field_dominio_publico
+    label: field_dominio_publico
+    machine_name: field_dominio_publico
+    type: csv
+  field_autoras:
+    value: field_autoras
+    label: field_autoras
+    machine_name: field_autoras
+    type: csv
+  field_etiqueta_blog:
+    value: field_etiqueta_blog
+    label: field_etiqueta_blog
+    machine_name: field_etiqueta_blog
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  field_requisitos:
+    value: field_requisitos
+    label: field_requisitos
+    machine_name: field_requisitos
+    type: csv
+  field_mostrar_autores_home_block:
+    value: field_mostrar_autores_home_block
+    label: field_mostrar_autores_home_block
+    machine_name: field_mostrar_autores_home_block
+    type: csv
+  field_mostrar_en_portal_escritor:
+    value: field_mostrar_en_portal_escritor
+    label: field_mostrar_en_portal_escritor
+    machine_name: field_mostrar_en_portal_escritor
+    type: csv
+  descripcion:
+    value: descripcion
+    label: descripcion
+    machine_name: descripcion
+    type: csv
+  enlacesexternosurl:
+    value: EnlacesExternosURL
+    label: EnlacesExternosURL
+    machine_name: enlacesexternosurl
+    type: csv
+  enlacesexternostexto:
+    value: EnlacesExternosTexto
+    label: EnlacesExternosTexto
+    machine_name: enlacesexternostexto
+    type: csv
+  resumen:
+    value: resumen
+    label: resumen
+    machine_name: resumen
+    type: csv
+mappings:
+  -
+    target: field_id_externo
+    map:
+      value: field_id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_mostrar_en_portal_escritor
+    map:
+      value: field_mostrar_en_portal_escritor
+    settings:
+      language: null

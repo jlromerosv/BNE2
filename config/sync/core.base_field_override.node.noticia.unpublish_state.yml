@@ -1,0 +1,20 @@
+uuid: ecdd5cfc-1862-454f-a775-584557cb07ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.noticia
+  module:
+    - options
+id: node.noticia.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: noticia
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

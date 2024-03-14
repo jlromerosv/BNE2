@@ -1,0 +1,15 @@
+uuid: 1328a65d-bb1e-434c-835c-e46f93ab348e
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_publicaciones_home_sm
+label: 'Bloque publicaciones home SM'
+effects:
+  86b0b754-edc0-4cfa-a08f-a6c08f3affa1:
+    uuid: 86b0b754-edc0-4cfa-a08f-a6c08f3affa1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 574
+      height: 760
+      anchor: center-center

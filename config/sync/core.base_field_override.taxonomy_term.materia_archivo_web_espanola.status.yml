@@ -1,0 +1,22 @@
+uuid: e7266759-ad49-45fa-a86c-47cf84809330
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.materia_archivo_web_espanola
+id: taxonomy_term.materia_archivo_web_espanola.status
+field_name: status
+entity_type: taxonomy_term
+bundle: materia_archivo_web_espanola
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

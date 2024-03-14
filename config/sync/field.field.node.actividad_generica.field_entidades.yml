@@ -1,0 +1,28 @@
+uuid: 7c599a19-02b0-489a-b690-d8254f82c9a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidades
+    - node.type.actividad_generica
+    - node.type.entidad
+id: node.actividad_generica.field_entidades
+field_name: field_entidades
+entity_type: node
+bundle: actividad_generica
+label: Organiza
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

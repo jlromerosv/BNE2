@@ -1,0 +1,28 @@
+uuid: 8f757f05-c520-4ce6-ac01-22c06633418b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.referencias_bibliograficas
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.referencias_bibliograficas.body
+field_name: body
+entity_type: node
+bundle: referencias_bibliograficas
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

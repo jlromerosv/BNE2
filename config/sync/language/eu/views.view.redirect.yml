@@ -1,0 +1,40 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Iragazkia
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      pager:
+        options:
+          tags:
+            previous: '‹ aurrekoa'
+            next: 'hurrengoa ›'
+            first: '« lehenengoa'
+            last: 'azkena »'
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+      fields:
+        redirect_bulk_form:
+          action_title: Aukeraketarekin
+        redirect_source__path:
+          label: Nondik
+          separator: ', '
+        created:
+          label: Sortua
+      filters:
+        redirect_source__path:
+          expose:
+            label: Nondik
+        redirect_redirect__uri:
+          expose:
+            label: Nori
+        language:
+          expose:
+            label: 'Jatorrizko hizkuntza'
+  page_1:
+    display_title: Orria

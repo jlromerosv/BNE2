@@ -1,0 +1,18 @@
+uuid: dd1df0b3-bfb3-41c6-a025-9fec82beb603
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_asistencia_a_evento
+id: taxonomy_term.tipo_de_asistencia_a_evento.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_de_asistencia_a_evento
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

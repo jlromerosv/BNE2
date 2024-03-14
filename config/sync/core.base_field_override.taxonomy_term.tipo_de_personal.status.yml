@@ -1,0 +1,22 @@
+uuid: a5b3d532-0df7-44eb-9e89-d99738bf2b25
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_personal
+id: taxonomy_term.tipo_de_personal.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_personal
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

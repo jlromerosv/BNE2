@@ -1,0 +1,29 @@
+uuid: f78fd55c-d91f-4ccd-81be-926dce8193f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_actualizacion_visibl
+    - node.type.noticia
+  module:
+    - datetime
+id: node.noticia.field_fecha_actualizacion_visibl
+field_name: field_fecha_actualizacion_visibl
+entity_type: node
+bundle: noticia
+label: 'Fecha de actualización'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    field_defaults:
+      update_defaults: 0
+      update_defaults_lang:
+        en: 0
+      no_overwrite: 0
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,20 @@
+uuid: a5154ce4-7055-485a-accf-887ca575026d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_promocion_inmuebles
+  module:
+    - path
+id: taxonomy_term.estado_promocion_inmuebles.path
+field_name: path
+entity_type: taxonomy_term
+bundle: estado_promocion_inmuebles
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

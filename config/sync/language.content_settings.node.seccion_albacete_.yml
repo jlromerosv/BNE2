@@ -1,0 +1,18 @@
+uuid: 845835f4-d20c-4c0f-ba4a-a8596ae7aed7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.seccion_albacete_
+target_entity_type_id: node
+target_bundle: seccion_albacete_
+default_langcode: site_default
+language_alterable: false

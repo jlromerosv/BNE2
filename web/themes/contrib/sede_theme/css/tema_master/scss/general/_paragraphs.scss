@@ -1,0 +1,19 @@
+/*
+    ========== PÁRRAFOS ==========
+    
+    Estilos dedicados a los párrafos de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin p_style($p_color)
+
+    ------------------------- MIXINS --------------------------
+    p_style = Estilo del párrafo
+    ----------------------- VARIABLES -------------------------
+    p_$color = Representa el color del párrafo
+*/
+
+
+p {
+    @include p_style($p_color);
+}

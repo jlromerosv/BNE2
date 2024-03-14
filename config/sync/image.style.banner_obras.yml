@@ -1,0 +1,26 @@
+uuid: 0175a496-c70d-4a6e-9007-9574ef270b84
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.banner_obras
+  module:
+    - crop
+name: banner_obras
+label: 'Banner obras'
+effects:
+  f45ece3f-7d9a-4aa9-856f-35a707ff9bba:
+    uuid: f45ece3f-7d9a-4aa9-856f-35a707ff9bba
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: banner_obras
+      automatic_crop_provider: null
+  6597673f-c3cd-4185-8940-68c16ba74ca1:
+    uuid: 6597673f-c3cd-4185-8940-68c16ba74ca1
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1366
+      height: 420
+      anchor: center-center

@@ -1,0 +1,15 @@
+uuid: a4ff39aa-e0e0-43ec-8777-db846c083633
+langcode: es
+status: true
+dependencies: {  }
+name: slider_home_pantalla_completa_xxl
+label: 'Slider home pantalla completa XXL'
+effects:
+  5df338b7-9280-4d51-8747-d65ddeba8bb3:
+    uuid: 5df338b7-9280-4d51-8747-d65ddeba8bb3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 700
+      anchor: center-center

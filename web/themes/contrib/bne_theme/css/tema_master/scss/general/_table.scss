@@ -1,0 +1,71 @@
+/*
+    ========== TABLAS ==========
+
+    Estilos dedicados a las tablas.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin table_style
+
+        @mixin table_thead_th
+
+        @mixin table_thead_filter
+
+        @mxin table_thead_filter_icon
+
+    ------------------------- MIXINS --------------------------
+    table_style = Estilo general de la tabla
+
+    table_thead_th = Estilo de los títulos de cabecera de la
+    tabla
+
+    table_thead_filter = Estilo de las columnas con filtro
+
+    table_thead_filter_icon = Estilo del icono del filtro
+    ----------------------- VARIABLES -------------------------
+    $border_tbody_tr = Borde para las filas de la tabla
+
+    $main_color_3 = Tipo 3 de colores principales
+
+    $tbody_td_padding = Padding de cada celda perteneciente
+    a una columna
+
+    $tbody_td_height = Altura de cada celda perteneciente
+    a una columna
+*/
+
+table {
+    @include table_style;
+    thead {
+        th {
+            @include table_thead_th;
+            a {
+                @include table_thead_filter;
+                &::after {
+                    @include table_thead_filter_icon;
+                }
+            }
+        } 
+    }
+    tbody {
+        tr {
+            border-bottom: $border_tbody_tr;
+            &:hover {
+                background-color: $main_color_3;
+            }
+            td {
+                padding: $tbody_td_padding;
+                height: $tbody_td_height;
+            }
+        }
+    }
+}
+
+.table-responsive {
+    .view-content {
+        overflow-x: auto;
+        thead th {
+            min-width: 150px;
+        }
+    }
+}

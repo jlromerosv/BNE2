@@ -1,0 +1,23 @@
+uuid: f9f6f066-826b-4c25-8114-c887c7dde036
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.hito
+id: node.hito.field_orden
+field_name: field_orden
+entity_type: node
+bundle: hito
+label: Orden
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

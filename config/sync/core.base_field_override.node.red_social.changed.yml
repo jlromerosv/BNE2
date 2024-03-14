@@ -1,0 +1,18 @@
+uuid: 9f12d633-7e1c-4138-aa3d-e6cfb49894a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+id: node.red_social.changed
+field_name: changed
+entity_type: node
+bundle: red_social
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

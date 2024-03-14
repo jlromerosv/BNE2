@@ -1,0 +1,128 @@
+uuid: ba059c0a-4ff5-47fe-9680-455b31f9b269
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.destacados
+    - field.field.node.autor.body
+    - field.field.node.autor.feeds_item
+    - field.field.node.autor.field_alias_tipo_contenido
+    - field.field.node.autor.field_apellidos
+    - field.field.node.autor.field_archivos
+    - field.field.node.autor.field_audios
+    - field.field.node.autor.field_campo_de_actividad
+    - field.field.node.autor.field_categoria
+    - field.field.node.autor.field_contenidos_relacionados
+    - field.field.node.autor.field_contenidos_vinculados
+    - field.field.node.autor.field_defuncion
+    - field.field.node.autor.field_domain_access
+    - field.field.node.autor.field_domain_all_affiliates
+    - field.field.node.autor.field_domain_source
+    - field.field.node.autor.field_dominio_publico
+    - field.field.node.autor.field_enlace
+    - field.field.node.autor.field_enlaces
+    - field.field.node.autor.field_etiqueta_blog
+    - field.field.node.autor.field_etiquetas_busqueda
+    - field.field.node.autor.field_fecha_de_defuncion
+    - field.field.node.autor.field_fecha_fin
+    - field.field.node.autor.field_fecha_inicio
+    - field.field.node.autor.field_galeria_de_imagenes
+    - field.field.node.autor.field_genero_autor
+    - field.field.node.autor.field_generos
+    - field.field.node.autor.field_id_externo
+    - field.field.node.autor.field_iframe
+    - field.field.node.autor.field_imagen_cabecera
+    - field.field.node.autor.field_imagen_destacada
+    - field.field.node.autor.field_imagen_representativa
+    - field.field.node.autor.field_imagenes
+    - field.field.node.autor.field_lugar_de_fallecimiento
+    - field.field.node.autor.field_lugar_de_nacimiento
+    - field.field.node.autor.field_meta_tags
+    - field.field.node.autor.field_mostrar_autores_home_block
+    - field.field.node.autor.field_mostrar_en_portal_escritor
+    - field.field.node.autor.field_nacimiento
+    - field.field.node.autor.field_no_mostrar_inverso
+    - field.field.node.autor.field_nombre
+    - field.field.node.autor.field_requisitos
+    - field.field.node.autor.field_subtitulo
+    - field.field.node.autor.field_url_2
+    - field.field.node.autor.field_videos
+    - field.field.node.autor.field_yoast_seo
+    - node.type.autor
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.autor.destacados
+targetEntityType: node
+bundle: autor
+mode: destacados
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen_representativa:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_apellidos: true
+  field_archivos: true
+  field_audios: true
+  field_campo_de_actividad: true
+  field_categoria: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_defuncion: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_dominio_publico: true
+  field_enlace: true
+  field_enlaces: true
+  field_etiqueta_blog: true
+  field_etiquetas_busqueda: true
+  field_fecha_de_defuncion: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_galeria_de_imagenes: true
+  field_genero_autor: true
+  field_generos: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_cabecera: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_lugar_de_fallecimiento: true
+  field_lugar_de_nacimiento: true
+  field_meta_tags: true
+  field_mostrar_autores_home_block: true
+  field_mostrar_en_portal_escritor: true
+  field_nacimiento: true
+  field_no_mostrar_inverso: true
+  field_nombre: true
+  field_requisitos: true
+  field_subtitulo: true
+  field_url_2: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

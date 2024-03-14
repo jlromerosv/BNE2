@@ -1,0 +1,20 @@
+uuid: 7d38b9af-8c7f-48e4-b3a3-db2a8a8666dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_promocion_inmuebles
+  module:
+    - text
+id: taxonomy_term.estado_promocion_inmuebles.description
+field_name: description
+entity_type: taxonomy_term
+bundle: estado_promocion_inmuebles
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

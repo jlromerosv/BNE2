@@ -1,0 +1,23 @@
+uuid: f607aa1f-88c1-468d-9fc3-1ce2aad81a04
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlace
+    - node.type.contenido_generico
+  module:
+    - link
+id: node.contenido_generico.field_enlace
+field_name: field_enlace
+entity_type: node
+bundle: contenido_generico
+label: Enlace
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

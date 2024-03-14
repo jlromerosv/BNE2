@@ -1,0 +1,22 @@
+uuid: 3ad0a8a2-9b2a-4ef4-914a-481bcf976f43
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+id: node.ubicacion.status
+field_name: status
+entity_type: node
+bundle: ubicacion
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

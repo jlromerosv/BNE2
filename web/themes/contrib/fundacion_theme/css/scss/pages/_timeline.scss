@@ -1,0 +1,98 @@
+.ui-accordion {
+  .ui-accordion-header {
+    border: none;
+    border-bottom: 1px solid $bne_color_3;
+    height: 70px;
+    background: $blanco;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: $bne_color_1;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 60px 0 0;
+    margin-top: 2em;
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(/themes/contrib/bne_theme/recursos/signo-mas-gris.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: initial;
+      position: absolute;
+      right: 15px;
+      width: 20px;
+      height: 20px;
+      filter: none;
+      transition: all 300ms;
+      top: 25px;
+    }
+    &::before {
+      display: none;
+    }
+  }
+
+  .ui-accordion-header.ui-state-active {
+    background: $blanco;
+    color: $bne_color_1;
+    border-color: $bne_color_3;
+    border-bottom: none;
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(/themes/contrib/bne_theme/recursos/signo-menos-gris.svg);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: initial;
+      position: absolute;
+      right: 15px;
+      width: 20px;
+      height: 2px;
+      filter: none;
+      transition: all 300ms;
+      top: 34px;
+      transform: rotate(0deg);
+    }
+  }
+  .ui-widget-content {
+    border: none;
+    border-bottom: 1px solid $bne_color_3;
+    height: auto !important;
+    .timeline-list {
+      .views-field-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: $bne_color_1;
+        line-height: 34px;
+        letter-spacing: 0.48px;
+        .field-content {
+          font-size: 16px;
+          font-weight: 500;
+          color: $bne_color_1;
+          line-height: 34px;
+          letter-spacing: 0.48px;
+        }
+      }
+     
+      .views-field-body {
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: $bne_color_2;
+          line-height: 20px;
+          letter-spacing: 0.42px;
+        }
+        img {
+          max-width: 200px !important;
+          height: auto !important;
+        }
+        a{
+          color: $bne_color_6;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

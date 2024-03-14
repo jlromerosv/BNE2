@@ -1,0 +1,18 @@
+uuid: 8fea71d6-88e0-4058-bb66-59d049d2ffc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_documento_institucional
+id: taxonomy_term.tipo_de_documento_institucional.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: tipo_de_documento_institucional
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

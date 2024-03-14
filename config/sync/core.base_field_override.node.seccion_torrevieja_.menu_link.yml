@@ -1,0 +1,20 @@
+uuid: dc64a7b1-78d3-448f-8d01-93c2abe54040
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_torrevieja_
+id: node.seccion_torrevieja_.menu_link
+field_name: menu_link
+entity_type: node
+bundle: seccion_torrevieja_
+label: 'Enlace del menu'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

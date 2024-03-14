@@ -1,0 +1,12 @@
+uuid: 449d6402-3a18-42c2-99fe-b8eb73eb60d1
+langcode: es
+status: true
+dependencies: {  }
+id: tabla_responsiva
+label: Tabla-responsiva
+image: ''
+description: ''
+html:
+  value: "<p>&nbsp;</p>\r\n\r\n<div class=\"ck-tabla-responsiva\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\">&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: html_full
+weight: 10

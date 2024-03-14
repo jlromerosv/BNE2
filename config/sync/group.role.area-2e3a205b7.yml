@@ -1,0 +1,17 @@
+uuid: e88ae092-06b3-47de-9dfd-3b923fea862c
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.editor_periodicotomia
+id: area-2e3a205b7
+label: 'Editor periodicotomía'
+weight: 5
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

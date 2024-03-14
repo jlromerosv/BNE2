@@ -1,0 +1,18 @@
+uuid: 5bc08663-4870-47d6-9b9d-36f752fbbf14
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.accesibilidad
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.accesibilidad
+target_entity_type_id: taxonomy_term
+target_bundle: accesibilidad
+default_langcode: site_default
+language_alterable: false

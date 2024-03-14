@@ -1,0 +1,20 @@
+uuid: e91b6e35-8fc7-46a5-8862-3ba569ef87af
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+  module:
+    - path
+id: node.horarios.path
+field_name: path
+entity_type: node
+bundle: horarios
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

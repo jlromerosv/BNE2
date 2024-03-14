@@ -1,0 +1,14 @@
+uuid: 730748d9-7c7f-45ef-b74d-3173a769baac
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.autores_del_blog
+id: taxonomy_vocabulary_autores_del_blog
+entity_type_id: taxonomy_vocabulary
+entity_id: autores_del_blog
+action: page_redirect
+allow_override: 1
+redirect: '/node/3244?autor_entrada_blog=[term:name]'
+redirect_code: 301
+redirect_fallback_action: access_denied

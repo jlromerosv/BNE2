@@ -1,0 +1,29 @@
+uuid: 8f0683be-fe3d-4182-a33b-2ab21de6c956
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_grupo_de_temas
+    - taxonomy.vocabulary.area_de_transparencia
+    - taxonomy.vocabulary.grupo_de_areas_de_transparencia
+id: taxonomy_term.area_de_transparencia.field_grupo_de_temas
+field_name: field_grupo_de_temas
+entity_type: taxonomy_term
+bundle: area_de_transparencia
+label: 'Grupo de áreas de transparencia'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grupo_de_areas_de_transparencia: grupo_de_areas_de_transparencia
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

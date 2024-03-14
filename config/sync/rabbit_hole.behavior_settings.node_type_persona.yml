@@ -1,0 +1,14 @@
+uuid: b6d698eb-d881-4d3c-9c4e-6cb03194e1b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.persona
+id: node_type_persona
+entity_type_id: node_type
+entity_id: persona
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

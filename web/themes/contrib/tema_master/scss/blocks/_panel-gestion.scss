@@ -1,0 +1,40 @@
+/*
+    ========== PANEL GESTIÓN ==========
+
+    Estilos dedicados a la vista para el panel de gestión.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+
+
+.ps-panel-gestion {
+    .menu.menu-level-0 {
+        @include display_flex(row, center, center);
+
+        .menu-item {
+            @include display_flex(column-reverse, initial, center);
+            min-width: 120px;
+            margin: 10px;
+            a {
+                margin-top: 5px;
+            }
+            svg {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}

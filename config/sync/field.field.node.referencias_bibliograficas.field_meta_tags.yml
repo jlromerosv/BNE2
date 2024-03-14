@@ -1,0 +1,21 @@
+uuid: 24d34fb5-0ecf-4ff5-a4bc-9be58e657373
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.referencias_bibliograficas
+  module:
+    - metatag
+id: node.referencias_bibliograficas.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: referencias_bibliograficas
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

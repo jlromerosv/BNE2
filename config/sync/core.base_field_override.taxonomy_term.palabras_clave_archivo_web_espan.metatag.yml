@@ -1,0 +1,18 @@
+uuid: e06187db-7c64-4a5d-8a42-e789a36d7835
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.palabras_clave_archivo_web_espan
+id: taxonomy_term.palabras_clave_archivo_web_espan.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: palabras_clave_archivo_web_espan
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

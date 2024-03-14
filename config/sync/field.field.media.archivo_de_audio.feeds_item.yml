@@ -1,0 +1,23 @@
+uuid: 33b7ee08-4160-4713-93f4-2edcf01ebcc5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.feeds_item
+    - media.type.archivo_de_audio
+  module:
+    - feeds
+id: media.archivo_de_audio.feeds_item
+field_name: feeds_item
+entity_type: media
+bundle: archivo_de_audio
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

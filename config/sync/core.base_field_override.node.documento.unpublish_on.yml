@@ -1,0 +1,18 @@
+uuid: f8dcf1f5-1782-4d47-a1e5-e975395b3d95
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+id: node.documento.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: documento
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

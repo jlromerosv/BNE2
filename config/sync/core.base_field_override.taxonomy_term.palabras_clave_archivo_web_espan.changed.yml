@@ -1,0 +1,18 @@
+uuid: a4868fd2-d575-41dd-987e-fa712684c6bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.palabras_clave_archivo_web_espan
+id: taxonomy_term.palabras_clave_archivo_web_espan.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: palabras_clave_archivo_web_espan
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

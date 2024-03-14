@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: es
+uuid: 7f8acf51-9760-483e-bc81-1e88a27b1bbc
+name: 'Biblioteca Nacional de España'
+mail: formularios@bne.es
+slogan: ''
+page:
+  403: /node/2438
+  404: /node/2439
+  front: /node/27006
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
+mail_notification: ''

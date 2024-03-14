@@ -1,0 +1,29 @@
+uuid: 03590159-2286-4b7b-9b0d-9d9e86708ea4
+langcode: es
+status: true
+dependencies:
+  module:
+    - archivo_web
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_bloquefiltrosarchivosdelaweb_3
+theme: sede_theme
+region: sidebar_first
+weight: -7
+provider: null
+plugin: archivo_web2
+settings:
+  id: archivo_web2
+  label: 'Bloque filtros archivos de la web'
+  label_display: '0'
+  provider: archivo_web
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/26939

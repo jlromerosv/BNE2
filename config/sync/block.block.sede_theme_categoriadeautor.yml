@@ -1,0 +1,33 @@
+uuid: 5155d08e-355e-4589-aace-711bea1e4a94
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.categoria_autor
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_categoriadeautor
+theme: sede_theme
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:categoria_autor'
+settings:
+  id: 'facet_block:categoria_autor'
+  label: CATEGORÍAS
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: categoriadeautor
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/26819

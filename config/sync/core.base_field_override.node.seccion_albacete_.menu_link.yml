@@ -1,0 +1,20 @@
+uuid: f4b7ec7b-a7a3-4025-be44-3d1df940040d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.menu_link
+field_name: menu_link
+entity_type: node
+bundle: seccion_albacete_
+label: 'Enlace del menu'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

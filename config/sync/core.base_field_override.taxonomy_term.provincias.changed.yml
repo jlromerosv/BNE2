@@ -1,0 +1,18 @@
+uuid: 491ad384-5511-4c75-a6c9-01d644425f3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.provincias
+id: taxonomy_term.provincias.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: provincias
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,22 @@
+uuid: a498b2cb-fb34-4fe0-9130-a9989122290c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.anuncio
+id: node.anuncio.promote
+field_name: promote
+entity_type: node
+bundle: anuncio
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

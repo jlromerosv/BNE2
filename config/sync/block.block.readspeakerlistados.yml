@@ -1,0 +1,46 @@
+uuid: 54f8cc76-9eb2-4e8f-95f6-0aa2f255ddbf
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:html:f52a299d-bfe9-4098-9a58-4e395759cdc4'
+  module:
+    - block_content
+    - language
+    - node
+    - system
+  theme:
+    - bne_theme
+id: readspeakerlistados
+theme: bne_theme
+region: content
+weight: -64
+provider: null
+plugin: 'block_content:f52a299d-bfe9-4098-9a58-4e395759cdc4'
+settings:
+  id: 'block_content:f52a299d-bfe9-4098-9a58-4e395759cdc4'
+  label: 'ReadSpeaker listados'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/3392\r\n/node/8442\r\n/node/6422\r\n/node/15305\r\n/node/15301\r\n/node/3506\r\n"
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      pagina_personalizada: pagina_personalizada
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es

@@ -1,0 +1,44 @@
+/*
+    ========== BLOQUE UNIÓN EURPOEA FOOTER ==========
+
+    Estilos dedicados a la vista del bloque unión europea del footer.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+
+.ps-eu-footer {
+    margin-top: 20px;
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
+    .view-content {
+        & > div {
+            @include display_flex(column, initial, center);
+
+            @media (min-width: 768px) {
+                @include display_flex(row, initial, center);
+            }
+
+            .views-field-body {
+                text-align: center;
+            }
+
+            .views-field-field-imagen-destacada {
+                margin-right: 10px;
+            }
+        }
+    }
+}

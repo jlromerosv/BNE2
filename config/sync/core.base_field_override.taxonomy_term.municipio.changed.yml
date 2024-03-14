@@ -1,0 +1,18 @@
+uuid: 3b5d8749-d1d3-4cce-8641-69f300ac1c1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.municipio
+id: taxonomy_term.municipio.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: municipio
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

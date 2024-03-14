@@ -1,0 +1,14 @@
+uuid: 4d111371-ebb4-4cf2-bb2b-63738c3f1427
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_faq
+id: taxonomy_vocabulary_categoria_de_faq
+entity_type_id: taxonomy_vocabulary
+entity_id: categoria_de_faq
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

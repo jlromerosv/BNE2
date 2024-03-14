@@ -1,0 +1,29 @@
+uuid: 8ecb0f9f-1f03-4015-94c9-c1e67484ffda
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorias
+    - node.type.servicio
+    - taxonomy.vocabulary.categoria_de_servicio
+id: node.servicio.field_categorias
+field_name: field_categorias
+entity_type: node
+bundle: servicio
+label: Categorías
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_de_servicio: categoria_de_servicio
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

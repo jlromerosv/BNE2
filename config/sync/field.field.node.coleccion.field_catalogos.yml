@@ -1,0 +1,30 @@
+uuid: 80fbf220-cf5c-4056-a013-bcd7c0468a21
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_catalogos
+    - node.type.catalogo
+    - node.type.coleccion
+    - node.type.contenido_generico
+id: node.coleccion.field_catalogos
+field_name: field_catalogos
+entity_type: node
+bundle: coleccion
+label: Catálogos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      catalogo: catalogo
+      contenido_generico: contenido_generico
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: catalogo
+field_type: entity_reference

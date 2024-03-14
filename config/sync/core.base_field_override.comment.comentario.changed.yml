@@ -1,0 +1,18 @@
+uuid: d0dfcb8d-d99d-4c0c-8fbf-b7fc88de2c25
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+id: comment.comentario.changed
+field_name: changed
+entity_type: comment
+bundle: comentario
+label: Modificado
+description: 'Fecha en que el comentario fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,31 @@
+uuid: b0356303-82e6-4d18-8531-c9c33f8a5ad2
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - system
+    - views
+  theme:
+    - sede_theme
+id: sede_theme_views_block__widget_multimedia_enlaces_block_3
+theme: sede_theme
+region: content
+weight: -26
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-block_3'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/selecciona-tu-perfil/*\r\n/blog"

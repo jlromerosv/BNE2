@@ -1,0 +1,20 @@
+uuid: 0103e45e-bc84-44a9-9b71-9385284e7580
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.buzones_de_envio
+  module:
+    - text
+id: taxonomy_term.buzones_de_envio.description
+field_name: description
+entity_type: taxonomy_term
+bundle: buzones_de_envio
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

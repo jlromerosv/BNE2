@@ -1,0 +1,20 @@
+uuid: a4daa8c2-bc89-479c-86b1-7f034f8462e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_basica
+  module:
+    - options
+id: node.pagina_basica.publish_state
+field_name: publish_state
+entity_type: node
+bundle: pagina_basica
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

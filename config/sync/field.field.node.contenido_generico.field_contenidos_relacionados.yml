@@ -1,0 +1,32 @@
+uuid: 1bbb159d-6890-4e8f-a620-8559b60580e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_relacionados
+    - node.type.contenido_generico
+    - node.type.entidad
+    - node.type.lugar
+    - node.type.servicio
+id: node.contenido_generico.field_contenidos_relacionados
+field_name: field_contenidos_relacionados
+entity_type: node
+bundle: contenido_generico
+label: 'Contenidos relacionados'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+      lugar: lugar
+      servicio: servicio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: entidad
+field_type: entity_reference

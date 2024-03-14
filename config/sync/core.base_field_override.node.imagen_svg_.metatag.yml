@@ -1,0 +1,18 @@
+uuid: ee127120-b5e4-429f-8f7c-c4b2b038a0a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+id: node.imagen_svg_.metatag
+field_name: metatag
+entity_type: node
+bundle: imagen_svg_
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

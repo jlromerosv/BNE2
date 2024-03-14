@@ -1,0 +1,94 @@
+/*
+    ========== BLOQUE DESTACADOS ==========
+
+    Estilos dedicados a la vista del bloque destacados.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+         @mixin ps-content-margins($breakpoint, $max-width)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $blanco = Color blanco
+
+    $breakpoint = Breakpoint hasta el cuál el margen tendrá
+    efecto
+
+    $max-width = EL máximo de ancho que tendrá el contenedor al
+    que se le aplique.
+
+*/
+.ps-destacados-block {
+    @include ps-content-margins(992px, 1526px);
+    .node--view-mode-destacados {
+        &.node--type-evento .node__content{
+            img {
+                display: initial;
+            }
+        }
+        .node__content {
+            position: relative;
+            overflow: hidden;
+            min-height: 275px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 5px;
+            img {
+                display: none;
+            }
+    
+            &:hover {
+                .related-content-banner {
+                    bottom: 0;
+                }
+            }
+    
+            .related-content-banner {
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                bottom: -180px;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: all 300ms;
+                a {
+                    display: block;
+                    height: 100%;
+                    h3 {
+                        color: $blanco;
+                        height: 59px;
+                        @include display_flex(column, center, initial);
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 40px;
+                            height: 2px;
+                            background-color: $blanco;
+                            margin: 10px auto 0 auto;
+                        }
+                    }
+                    .field--name-body h2 {
+                        display: none;
+                    }
+                    p {
+                        color: $blanco;
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+}

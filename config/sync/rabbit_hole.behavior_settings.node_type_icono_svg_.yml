@@ -1,0 +1,14 @@
+uuid: 79b1c87e-c981-4509-a7bd-0fd0be4f3821
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.icono_svg_
+id: node_type_icono_svg_
+entity_type_id: node_type
+entity_id: icono_svg_
+action: page_redirect
+allow_override: 1
+redirect: '[site:url]'
+redirect_code: 301
+redirect_fallback_action: access_denied

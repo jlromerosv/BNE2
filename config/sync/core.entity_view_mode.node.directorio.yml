@@ -1,0 +1,10 @@
+uuid: c3825bdf-5ba1-4887-8a5f-5d5ae61ae634
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.directorio
+label: Directorio
+targetEntityType: node
+cache: true

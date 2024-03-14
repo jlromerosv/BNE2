@@ -1,0 +1,19 @@
+uuid: a200d0fb-6375-4f6c-8184-2b99846d8875
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_descripcion_sin_formato
+field_name: field_descripcion_sin_formato
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

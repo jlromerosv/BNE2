@@ -1,0 +1,20 @@
+uuid: 03b90914-3830-4e9b-a9e5-6c816d606aa9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_personal
+  module:
+    - path
+id: taxonomy_term.tipo_de_personal.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_personal
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

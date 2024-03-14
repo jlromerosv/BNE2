@@ -1,0 +1,5 @@
+name: Categories
+url_alias: 'categories _ news'
+widget:
+  config:
+    reset_text: 'Show all'

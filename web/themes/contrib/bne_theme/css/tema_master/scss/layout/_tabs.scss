@@ -1,0 +1,23 @@
+/*
+    ========= TABS ==========
+    Estilos dedicados al menú de pestañas de la web.
+
+    ----------------------- VARIABLES -------------------------
+	$main_color_1 / 6 = Color principal de tipo 1 / 6
+
+	$blanco = Color blanco
+*/
+
+.tabs {
+    .tabs {
+        border-bottom: 1px solid $main_color_6;
+        li{
+            margin-left: auto;
+            a.is-active,
+            a:hover {
+                border-bottom: 1px solid $main_color_1;
+                background-color: $blanco;
+            } 
+        }
+    }
+}

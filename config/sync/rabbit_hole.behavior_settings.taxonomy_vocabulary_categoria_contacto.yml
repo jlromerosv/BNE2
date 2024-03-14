@@ -1,0 +1,14 @@
+uuid: fbef9438-2eeb-45e9-bea1-853395f145c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_contacto
+id: taxonomy_vocabulary_categoria_contacto
+entity_type_id: taxonomy_vocabulary
+entity_id: categoria_contacto
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

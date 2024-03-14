@@ -1,0 +1,10 @@
+uuid: c666f297-4f6c-48d9-b6ae-a5a5a272c2b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.menu_niveles
+label: Menu-niveles
+targetEntityType: menu_link_content
+cache: true

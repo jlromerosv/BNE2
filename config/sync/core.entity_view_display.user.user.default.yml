@@ -1,0 +1,60 @@
+uuid: 7f3b2777-8706-4306-ab5c-eb31c822ee07
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_apellidos
+    - field.field.user.user.field_domain_access
+    - field.field.user.user.field_domain_admin
+    - field.field.user.user.field_domain_all_affiliates
+    - field.field.user.user.field_editor_de_blog
+    - field.field.user.user.field_last_password_reset
+    - field.field.user.user.field_nombre
+    - field.field.user.user.field_password_expiration
+    - field.field.user.user.field_pending_expire_sent
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_apellidos:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_editor_de_blog:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_nombre:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_admin: true
+  field_domain_all_affiliates: true
+  field_last_password_reset: true
+  field_password_expiration: true
+  field_pending_expire_sent: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

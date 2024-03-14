@@ -1,0 +1,29 @@
+uuid: 7116c03b-8b49-4dc3-a51b-8c5a816b66ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiqueta_blog
+    - node.type.autor
+    - taxonomy.vocabulary.etiquetas_autores
+id: node.autor.field_etiqueta_blog
+field_name: field_etiqueta_blog
+entity_type: node
+bundle: autor
+label: 'Etiqueta de autor'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      etiquetas_autores: etiquetas_autores
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

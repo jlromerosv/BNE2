@@ -1,0 +1,8 @@
+uuid: 9d9d35bc-05e3-45e8-9e2c-0bf7a13a0db0
+langcode: es
+status: true
+dependencies: {  }
+id: mx1---bne---contacto-enlace-supe
+label: 'MX1 - BNE - Contacto enlace superior'
+description: ''
+locked: false

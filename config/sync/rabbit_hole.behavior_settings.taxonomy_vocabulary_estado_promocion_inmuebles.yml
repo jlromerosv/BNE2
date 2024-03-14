@@ -1,0 +1,14 @@
+uuid: afd22aba-4aa4-4fb0-a807-dfb2affe0985
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_promocion_inmuebles
+id: taxonomy_vocabulary_estado_promocion_inmuebles
+entity_type_id: taxonomy_vocabulary
+entity_id: estado_promocion_inmuebles
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

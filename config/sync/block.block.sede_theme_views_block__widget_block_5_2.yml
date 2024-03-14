@@ -1,0 +1,24 @@
+uuid: 5df7bf22-0be4-40c0-9ee0-4bf977c84085
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget
+  module:
+    - views
+  theme:
+    - sede_theme
+id: sede_theme_views_block__widget_block_5_2
+theme: sede_theme
+region: footer_inferior
+weight: -29
+provider: null
+plugin: 'views_block:widget-block_5'
+settings:
+  id: 'views_block:widget-block_5'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

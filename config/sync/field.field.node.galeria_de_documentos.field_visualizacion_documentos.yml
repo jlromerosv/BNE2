@@ -1,0 +1,129 @@
+uuid: 71c644b5-341b-4f18-b08d-258d67833b6b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visualizacion_documentos
+    - node.type.galeria_de_documentos
+    - views.view.widgets_media
+  module:
+    - viewfield
+id: node.galeria_de_documentos.field_visualizacion_documentos
+field_name: field_visualizacion_documentos
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Visualización de documentos'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: fddb8964-d7d4-493b-9bba-7f194afbdadc
+    display_id: block_1
+    arguments: ''
+    items_to_display: ''
+    token_help: ''
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    widgets_media: widgets_media
+    analisis_de_enlaces_rotos_de_body: '0'
+    files: '0'
+    media_library: '0'
+    blogs_con_acceso_por_el_editor_del_contenido: '0'
+    entradas_de_blog_de_la_coleccion: '0'
+    bloque_agenda_actividades_home: '0'
+    bloque_enlace_preguntas_frecuentes: '0'
+    bloque_enlaces_a_listados_de_contenido: '0'
+    bloque_imagenes_horarios: '0'
+    bloque_mostrar_ocultar_buscador_bne: '0'
+    bloque_no_hay_resultados_vista: '0'
+    bloques_de_noticias: '0'
+    bloque_sedes_horarios: '0'
+    bloque_selector_tipo_de_coleccion: '0'
+    bloques_imagenes_de_cabecera: '0'
+    bloque_slider_home_pantalla_completa: '0'
+    bloque_slider_redes_sociales_home: '0'
+    bloques_portada_block: '0'
+    bloque_suscripcion_boletin_bne: '0'
+    buscador_alias: '0'
+    buscadores_a_texto_completo: '0'
+    buscador_solr_texto_completo: '0'
+    buzon_envios_contactos: '0'
+    categorias_actualidad: '0'
+    colecciones: '0'
+    colecciones_del_blog: '0'
+    colectivos: '0'
+    comment: '0'
+    comentarios_de_la_pagina: '0'
+    content: '0'
+    contenido_de_la_taxonomia: '0'
+    moderated_content: '0'
+    affiliated_content: '0'
+    contenidos_de_la_misma_taxonomia: '0'
+    contenidos_filtrados_por_taxonomia: '0'
+    entidades_nodo: '0'
+    contenidos_relacionados: '0'
+    content_browser: '0'
+    descarga_imagenes_multimedia: '0'
+    destacados_automaticos: '0'
+    destacados_manuales_de_seccion_de_taxonomia_2_: '0'
+    documentos_enlaces: '0'
+    documentos_enlaces_de_la_pagina: '0'
+    duplicado_de_buscador_general_a_texto_completo: '0'
+    affiliated_editors: '0'
+    webform_submissions: '0'
+    feeds_feed: '0'
+    group_nodes: '0'
+    hitos: '0'
+    horarios: '0'
+    broken_links_report: '0'
+    leer_texto_completo_de_la_coleccion: '0'
+    block_content: '0'
+    listado_colecciones: '0'
+    listados_estandar: '0'
+    poll_list: '0'
+    content_recent: '0'
+    group_members: '0'
+    media: '0'
+    mx1_bne_niveles: '0'
+    obras_de_un_autor: '0'
+    obras_y_autores: '0'
+    paginas_basicas_con_listado: '0'
+    poll_admin: '0'
+    proximos_eventos: '0'
+    redirecciones_de_taxonomia_rabbit_hole_: '0'
+    redirect: '0'
+    resultados_de_busqueda_en_catalogos: '0'
+    rrss: '0'
+    scheduler_scheduled_content: '0'
+    taxonomy_browser: '0'
+    test_jaime_2: '0'
+    textos_fijos_para_maquetacion: '0'
+    transparencia: '0'
+    taxonomy_term: '0'
+    terminos_taxonomia: '0'
+    user_admin_people: '0'
+    watchdog: '0'
+    widget_multimedia_enlaces: '0'
+    widgets_contenido_manual_de_la_home: '0'
+    widgets_destacados_manuales_home: '0'
+    widget: '0'
+    widgets_imagenes: '0'
+    widgets_multimedia: '0'
+    y_si_todavia_te_queda_alguna_duda_: '0'
+    arbol_de_entidades: '0'
+    arbol_de_taxonomia: '0'
+  allowed_display_types:
+    block: block
+    attachment: '0'
+    feed: '0'
+    entity_browser: '0'
+    embed: '0'
+    default: '0'
+    page: '0'
+    entity_reference: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

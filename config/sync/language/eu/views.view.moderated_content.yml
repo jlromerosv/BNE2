@@ -1,0 +1,52 @@
+label: 'Neurridun edukina'
+display:
+  default:
+    display_title: Lehenetsia
+    display_options:
+      title: 'Neurridun edukina'
+      fields:
+        title:
+          label: Izenburua
+          separator: ', '
+        type:
+          label: 'Eduki mota'
+          separator: ', '
+        name:
+          label: Egilea
+          separator: ', '
+        moderation_state:
+          separator: ', '
+        changed:
+          label: Eguneratuta
+          separator: ', '
+        operations:
+          label: Eragiketak
+      pager:
+        options:
+          tags:
+            next: 'Hurrengoak ›'
+            previous: '‹ Aurrekoak'
+            first: '« Lehenengoa'
+            last: 'Azkena »'
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+      exposed_form:
+        options:
+          submit_button: Iragazkia
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      filters:
+        title:
+          expose:
+            label: Izenburua
+        type:
+          expose:
+            label: 'Eduki mota'
+        langcode:
+          expose:
+            label: Hizkuntza
+  moderated_content:
+    display_title: 'Neurridun edukina'

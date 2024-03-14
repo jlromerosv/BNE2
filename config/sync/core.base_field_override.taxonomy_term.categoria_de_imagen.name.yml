@@ -1,0 +1,18 @@
+uuid: 2cedf19d-5293-4abb-a1b1-2ea762032bbc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_imagen
+id: taxonomy_term.categoria_de_imagen.name
+field_name: name
+entity_type: taxonomy_term
+bundle: categoria_de_imagen
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

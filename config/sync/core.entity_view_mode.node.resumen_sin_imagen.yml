@@ -1,0 +1,10 @@
+uuid: d9fa9539-f1f5-478c-bb97-892344b8dbb8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.resumen_sin_imagen
+label: 'Resumen sin imagen'
+targetEntityType: node
+cache: true

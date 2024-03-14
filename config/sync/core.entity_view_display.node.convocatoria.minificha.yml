@@ -1,0 +1,116 @@
+uuid: 367885b0-ecdf-4741-85d7-1413c5b8bb79
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.minificha
+    - field.field.node.convocatoria.body
+    - field.field.node.convocatoria.field_alertas
+    - field.field.node.convocatoria.field_alias_tipo_contenido
+    - field.field.node.convocatoria.field_archivos
+    - field.field.node.convocatoria.field_area_organizativa
+    - field.field.node.convocatoria.field_area_tematica
+    - field.field.node.convocatoria.field_audios
+    - field.field.node.convocatoria.field_bolsas_de_trabajo
+    - field.field.node.convocatoria.field_categoria
+    - field.field.node.convocatoria.field_codigo_referencia
+    - field.field.node.convocatoria.field_colectivo
+    - field.field.node.convocatoria.field_contenidos_relacionados
+    - field.field.node.convocatoria.field_contenidos_vinculados
+    - field.field.node.convocatoria.field_domain_access
+    - field.field.node.convocatoria.field_domain_all_affiliates
+    - field.field.node.convocatoria.field_domain_source
+    - field.field.node.convocatoria.field_email
+    - field.field.node.convocatoria.field_email_texto
+    - field.field.node.convocatoria.field_enlace
+    - field.field.node.convocatoria.field_enlaces
+    - field.field.node.convocatoria.field_entidad
+    - field.field.node.convocatoria.field_estado
+    - field.field.node.convocatoria.field_etiquetas_busqueda
+    - field.field.node.convocatoria.field_fecha_fin
+    - field.field.node.convocatoria.field_fecha_inicio
+    - field.field.node.convocatoria.field_galeria_de_documentos
+    - field.field.node.convocatoria.field_galeria_de_imagenes
+    - field.field.node.convocatoria.field_idioma
+    - field.field.node.convocatoria.field_iframe
+    - field.field.node.convocatoria.field_imagen_destacada
+    - field.field.node.convocatoria.field_imagenes
+    - field.field.node.convocatoria.field_mas_informacion
+    - field.field.node.convocatoria.field_meta_tags
+    - field.field.node.convocatoria.field_no_mostrar_inverso
+    - field.field.node.convocatoria.field_requisitos
+    - field.field.node.convocatoria.field_search_api_exclude_entity
+    - field.field.node.convocatoria.field_subtitulo
+    - field.field.node.convocatoria.field_telefonos
+    - field.field.node.convocatoria.field_tipo
+    - field.field.node.convocatoria.field_tipo_personal
+    - field.field.node.convocatoria.field_videos
+    - field.field.node.convocatoria.field_yoast_seo
+    - node.type.convocatoria
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.convocatoria.minificha
+targetEntityType: node
+bundle: convocatoria
+mode: minificha
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_alertas: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_organizativa: true
+  field_area_tematica: true
+  field_audios: true
+  field_bolsas_de_trabajo: true
+  field_categoria: true
+  field_codigo_referencia: true
+  field_colectivo: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_email: true
+  field_email_texto: true
+  field_enlace: true
+  field_enlaces: true
+  field_entidad: true
+  field_estado: true
+  field_etiquetas_busqueda: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_galeria_de_documentos: true
+  field_galeria_de_imagenes: true
+  field_idioma: true
+  field_iframe: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_mas_informacion: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_requisitos: true
+  field_search_api_exclude_entity: true
+  field_subtitulo: true
+  field_telefonos: true
+  field_tipo: true
+  field_tipo_personal: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

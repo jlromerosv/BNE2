@@ -1,0 +1,25 @@
+uuid: 40a82d23-c0e9-40b7-995b-4f40fd7299f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_source
+    - node.type.seccion_torrevieja_
+id: node.seccion_torrevieja_.field_domain_source
+field_name: field_domain_source
+entity_type: node
+bundle: seccion_torrevieja_
+label: 'Domain Source'
+description: 'Select the canonical domain for this content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

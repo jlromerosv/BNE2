@@ -1,0 +1,20 @@
+uuid: d573cebb-b4ba-4fd9-8fa4-6ff7e3a23f43
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.imagen
+id: media.imagen.name
+field_name: name
+entity_type: media
+bundle: imagen
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

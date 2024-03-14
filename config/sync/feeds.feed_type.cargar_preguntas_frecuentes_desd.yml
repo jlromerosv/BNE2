@@ -1,0 +1,105 @@
+uuid: 6b580bf2-ae4c-4b17-9a76-1ae9f2ec5725
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.faq.title
+    - field.field.node.faq.body
+    - field.field.node.faq.field_domain_access
+    - field.field.node.faq.field_id_externo
+    - field.field.node.faq.field_tipos
+    - node.type.faq
+  module:
+    - node
+label: 'Cargar Preguntas Frecuentes desde CSV'
+id: cargar_preguntas_frecuentes_desd
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: faq
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  pregunta:
+    value: Pregunta
+    label: Pregunta
+    machine_name: pregunta
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  tipopregunta:
+    value: TipoPregunta
+    label: TipoPregunta
+    machine_name: tipopregunta
+    type: csv
+  respuesta:
+    value: Respuesta
+    label: Respuesta
+    machine_name: respuesta
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: pregunta
+    settings:
+      language: es
+    unique: {  }
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: field_tipos
+    map:
+      target_id: tipopregunta
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: body
+    map:
+      value: respuesta
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'

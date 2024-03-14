@@ -1,0 +1,20 @@
+uuid: 27e6b2e1-55d2-440e-afce-b82b1efc9788
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+id: node.cargo.uid
+field_name: uid
+entity_type: node
+bundle: cargo
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: a0b2a7d9-d34d-45c9-abaf-b6cfd970862a
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.ficha_publicacion
+label: 'Ficha publicación'
+targetEntityType: media
+cache: true

@@ -1,0 +1,22 @@
+uuid: a7534b45-8b40-48c4-a396-32096df9a2c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+id: node.cargo.sticky
+field_name: sticky
+entity_type: node
+bundle: cargo
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

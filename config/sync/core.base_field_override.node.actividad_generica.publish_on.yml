@@ -1,0 +1,18 @@
+uuid: c7557f54-2cae-4bc8-b594-5a782eabec32
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad_generica
+id: node.actividad_generica.publish_on
+field_name: publish_on
+entity_type: node
+bundle: actividad_generica
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

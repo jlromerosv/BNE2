@@ -1,0 +1,5 @@
+name: Catégories
+url_alias: categorias_Nouvelle
+widget:
+  config:
+    reset_text: 'Montrer tout'

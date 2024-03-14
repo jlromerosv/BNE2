@@ -1,0 +1,11 @@
+display:
+  block_11:
+    display_options:
+      title: Segueix-nos
+  block_20:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<p>[view:title]</p>\r\n"
+            format: html_full

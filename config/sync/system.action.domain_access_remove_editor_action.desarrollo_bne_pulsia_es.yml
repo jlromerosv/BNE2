@@ -1,0 +1,14 @@
+uuid: 077bfb6c-41d8-4465-b910-e49c39031816
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.desarrollo_bne_pulsia_es
+  module:
+    - domain_access
+id: domain_access_remove_editor_action.desarrollo_bne_pulsia_es
+label: 'Remove editors from the BNE domain'
+type: user
+plugin: domain_access_remove_editor_action
+configuration:
+  domain_id: desarrollo_bne_pulsia_es

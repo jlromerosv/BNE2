@@ -1,0 +1,18 @@
+uuid: 686b408d-756c-4d62-b95e-3b5252b91a5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.area-group_node-entrada_de_blog
+id: group_content.area-group_node-entrada_de_blog.created
+field_name: created
+entity_type: group_content
+bundle: area-group_node-entrada_de_blog
+label: 'Created on'
+description: 'The time that the group content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

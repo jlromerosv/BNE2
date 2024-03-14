@@ -1,0 +1,22 @@
+uuid: 3e6443db-10ba-4a20-b550-02c7530dbb64
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorias_evento
+id: taxonomy_term.categorias_evento.status
+field_name: status
+entity_type: taxonomy_term
+bundle: categorias_evento
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

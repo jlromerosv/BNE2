@@ -1,0 +1,25 @@
+uuid: 6c6a66ab-2a8d-419b-a895-677b0aef4566
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_access
+    - node.type.hito
+id: node.hito.field_domain_access
+field_name: field_domain_access
+entity_type: node
+bundle: hito
+label: 'Domain Access'
+description: 'Select the affiliate domain(s) for this content'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\domain_access\DomainAccessManager::getDefaultValue'
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

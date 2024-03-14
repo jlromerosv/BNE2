@@ -1,0 +1,18 @@
+uuid: c1f8d95f-4b1f-4562-b380-be5393333805
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.serie_estadistica
+id: node.serie_estadistica.title
+field_name: title
+entity_type: node
+bundle: serie_estadistica
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

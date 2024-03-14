@@ -1,0 +1,22 @@
+uuid: 67163519-8807-4b2a-aeff-13b965a62054
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+id: node.cargo.promote
+field_name: promote
+entity_type: node
+bundle: cargo
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

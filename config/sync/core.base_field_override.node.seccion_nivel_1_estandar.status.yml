@@ -1,0 +1,22 @@
+uuid: fb2d8c8a-938e-46ce-a210-f566377b4b3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+id: node.seccion_nivel_1_estandar.status
+field_name: status
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

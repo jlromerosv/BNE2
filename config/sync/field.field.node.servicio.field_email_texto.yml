@@ -1,0 +1,19 @@
+uuid: b916596d-4f7d-45b5-a5cb-cb0ce18f6723
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_texto
+    - node.type.servicio
+id: node.servicio.field_email_texto
+field_name: field_email_texto
+entity_type: node
+bundle: servicio
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

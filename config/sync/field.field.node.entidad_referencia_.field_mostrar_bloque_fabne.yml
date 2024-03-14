@@ -1,0 +1,28 @@
+uuid: 10a34557-83df-40a8-8c41-833b86865bf0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mostrar_bloque_fabne
+    - node.type.entidad_referencia_
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.entidad_referencia_.field_mostrar_bloque_fabne
+field_name: field_mostrar_bloque_fabne
+entity_type: node
+bundle: entidad_referencia_
+label: 'Mostrar en bloque colaboradores fundación de amigos'
+description: 'Marque ésta opción para que aparezca en el bloque de colaboradores de la página de inicio de la fundación de amigos.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

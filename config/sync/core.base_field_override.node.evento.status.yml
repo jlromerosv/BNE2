@@ -1,0 +1,22 @@
+uuid: e00b3ad0-2cc4-4493-aaa6-b1e7cf5ea801
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.evento
+id: node.evento.status
+field_name: status
+entity_type: node
+bundle: evento
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

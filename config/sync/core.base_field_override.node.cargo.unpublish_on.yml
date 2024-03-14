@@ -1,0 +1,18 @@
+uuid: 1af5cdf4-7eb7-4e49-86af-3a9e7fbc9919
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+id: node.cargo.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: cargo
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,522 @@
+uuid: edeaa8d4-c4cf-410d-8fcc-e361479126b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.content_browser
+    - field.field.node.convocatoria.body
+    - field.field.node.convocatoria.field_alertas
+    - field.field.node.convocatoria.field_alias_tipo_contenido
+    - field.field.node.convocatoria.field_archivos
+    - field.field.node.convocatoria.field_area_organizativa
+    - field.field.node.convocatoria.field_area_tematica
+    - field.field.node.convocatoria.field_audios
+    - field.field.node.convocatoria.field_bolsas_de_trabajo
+    - field.field.node.convocatoria.field_categoria
+    - field.field.node.convocatoria.field_codigo_referencia
+    - field.field.node.convocatoria.field_colectivo
+    - field.field.node.convocatoria.field_contenidos_relacionados
+    - field.field.node.convocatoria.field_contenidos_vinculados
+    - field.field.node.convocatoria.field_domain_access
+    - field.field.node.convocatoria.field_domain_all_affiliates
+    - field.field.node.convocatoria.field_domain_source
+    - field.field.node.convocatoria.field_email
+    - field.field.node.convocatoria.field_email_texto
+    - field.field.node.convocatoria.field_enlace
+    - field.field.node.convocatoria.field_enlaces
+    - field.field.node.convocatoria.field_entidad
+    - field.field.node.convocatoria.field_estado
+    - field.field.node.convocatoria.field_etiquetas_busqueda
+    - field.field.node.convocatoria.field_fecha_fin
+    - field.field.node.convocatoria.field_fecha_inicio
+    - field.field.node.convocatoria.field_galeria_de_documentos
+    - field.field.node.convocatoria.field_galeria_de_imagenes
+    - field.field.node.convocatoria.field_idioma
+    - field.field.node.convocatoria.field_iframe
+    - field.field.node.convocatoria.field_imagen_destacada
+    - field.field.node.convocatoria.field_imagenes
+    - field.field.node.convocatoria.field_mas_informacion
+    - field.field.node.convocatoria.field_meta_tags
+    - field.field.node.convocatoria.field_no_mostrar_inverso
+    - field.field.node.convocatoria.field_requisitos
+    - field.field.node.convocatoria.field_search_api_exclude_entity
+    - field.field.node.convocatoria.field_subtitulo
+    - field.field.node.convocatoria.field_telefonos
+    - field.field.node.convocatoria.field_tipo
+    - field.field.node.convocatoria.field_tipo_personal
+    - field.field.node.convocatoria.field_videos
+    - field.field.node.convocatoria.field_yoast_seo
+    - node.type.convocatoria
+  module:
+    - conditional_fields
+    - content_moderation
+    - datetime
+    - entity_browser
+    - entity_browser_entity_form
+    - field_group
+    - iframe
+    - inline_entity_form
+    - link
+    - media_library
+    - metatag
+    - path
+    - search_api_exclude_entity
+    - text
+    - yoast_seo
+third_party_settings:
+  field_group:
+    group_cla:
+      children: {  }
+      label: Clasificación
+      region: hidden
+      parent_name: ''
+      weight: 45
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_multimedia:
+      children:
+        - field_imagen_destacada
+        - field_archivos
+        - field_enlaces
+        - field_imagenes
+        - field_galeria_de_imagenes
+        - field_videos
+        - field_audios
+        - field_iframe
+        - field_galeria_de_documentos
+      label: Multimedia
+      region: content
+      parent_name: ''
+      weight: 9
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_seo:
+      children:
+        - field_yoast_seo
+      label: SEO
+      region: content
+      parent_name: ''
+      weight: 11
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+        weight: 0
+    group_descripci:
+      children: {  }
+      label: Descripción
+      region: hidden
+      parent_name: ''
+      weight: 44
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_contacto:
+      children:
+        - field_email_texto
+        - field_telefonos
+        - field_alertas
+      label: Contacto
+      region: content
+      parent_name: ''
+      weight: 8
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_contenidos_extra:
+      children:
+        - field_contenidos_relacionados
+        - field_no_mostrar_inverso
+        - field_contenidos_vinculados
+      label: 'Contenidos extra'
+      region: content
+      parent_name: ''
+      weight: 10
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: node.convocatoria.default
+targetEntityType: node
+bundle: convocatoria
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: true
+    third_party_settings: {  }
+  field_alertas:
+    type: entity_reference_autocomplete
+    weight: 13
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_alias_tipo_contenido:
+    type: entity_reference_autocomplete
+    weight: 21
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_archivos:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_audios:
+    type: media_library_widget
+    weight: 8
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_contenidos_relacionados:
+    type: entity_browser_entity_reference
+    weight: 13
+    region: content
+    settings:
+      entity_browser: content_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_contenidos_vinculados:
+    type: entity_browser_entity_reference
+    weight: 15
+    region: content
+    settings:
+      entity_browser: content_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_domain_source:
+    type: options_select
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_email_texto:
+    type: string_textarea
+    weight: 11
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_enlace:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_enlaces:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_entidad:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_etiquetas_busqueda:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fecha_fin:
+    type: datetime_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        b0b03af2-1bce-470a-bdec-550fdb911af7:
+          entity_type: node
+          bundle: convocatoria
+          dependee: field_estado
+          settings:
+            state: '!required'
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '9408'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_fecha_inicio:
+    type: datetime_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        36f84443-88d6-487d-832d-fefe7a6ce0e9:
+          entity_type: node
+          bundle: convocatoria
+          dependee: field_estado
+          settings:
+            state: '!visible'
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '9408'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_galeria_de_documentos:
+    type: inline_entity_form_complex
+    weight: 11
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  field_galeria_de_imagenes:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_iframe:
+    type: iframe_urlwidthheight
+    weight: 10
+    region: content
+    settings:
+      headerlevel: '3'
+      class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      allowfullscreen: '0'
+      tokensupport: '0'
+      width: ''
+      height: ''
+      expose_class: false
+    third_party_settings: {  }
+  field_imagen_destacada:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_imagenes:
+    type: media_library_widget
+    weight: 5
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 13
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_no_mostrar_inverso:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_requisitos:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_search_api_exclude_entity:
+    type: search_api_exclude_entity_widget
+    weight: 18
+    region: content
+    settings:
+      field_label: 'Yes, exclude this entity from the search indexes.'
+    third_party_settings: {  }
+  field_telefonos:
+    type: string_textarea
+    weight: 12
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_tipo:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_videos:
+    type: media_library_widget
+    weight: 7
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 30
+    region: content
+    settings:
+      body: body
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_area_organizativa: true
+  field_area_tematica: true
+  field_bolsas_de_trabajo: true
+  field_categoria: true
+  field_codigo_referencia: true
+  field_colectivo: true
+  field_email: true
+  field_estado: true
+  field_idioma: true
+  field_mas_informacion: true
+  field_subtitulo: true
+  field_tipo_personal: true
+  langcode: true
+  promote: true
+  publish_on: true
+  publish_state: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
+  url_redirects: true

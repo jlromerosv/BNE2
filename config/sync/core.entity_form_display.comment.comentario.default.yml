@@ -1,0 +1,55 @@
+uuid: 18951849-e233-421d-b4bc-768e752b8bd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+    - field.field.comment.comentario.comment_body
+    - field.field.comment.comentario.feeds_item
+    - field.field.comment.comentario.field_email_comentario
+    - field.field.comment.comentario.field_fecha_comentario
+    - field.field.comment.comentario.field_id_externo
+    - field.field.comment.comentario.field_nombre_comentario
+  module:
+    - text
+id: comment.comentario.default
+targetEntityType: comment
+bundle: comentario
+mode: default
+content:
+  comment_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: Comentario
+    third_party_settings: {  }
+  field_email_comentario:
+    type: email_default
+    weight: 1
+    region: content
+    settings:
+      placeholder: 'Correo electrónico'
+      size: 60
+    third_party_settings: {  }
+  field_nombre_comentario:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: Nombre
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  author: true
+  feeds_item: true
+  field_fecha_comentario: true
+  field_id_externo: true
+  langcode: true
+  subject: true

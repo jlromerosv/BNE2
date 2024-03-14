@@ -1,0 +1,17 @@
+uuid: 92065ee1-4bcd-4b84-9b20-cb121901b282
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.ficha_persona
+  module:
+    - crop
+name: imagen_ficha_persona
+label: 'Imagen ficha persona'
+effects:
+  71b31591-6973-48e8-8e48-9bee20cc0ce4:
+    uuid: 71b31591-6973-48e8-8e48-9bee20cc0ce4
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: ficha_persona

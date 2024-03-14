@@ -1,0 +1,26 @@
+uuid: d714d589-061a-49b1-84b9-f54de3df9042
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horarios_especificos
+    - node.type.evento
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.evento.field_horarios_especificos
+field_name: field_horarios_especificos
+entity_type: node
+bundle: evento
+label: Horario
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 05fcf8b9-2853-4df7-bd2c-339b5a316fa0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_externo
+    - node.type.noticia
+id: node.noticia.field_id_externo
+field_name: field_id_externo
+entity_type: node
+bundle: noticia
+label: Id_externo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

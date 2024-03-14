@@ -1,0 +1,18 @@
+uuid: fd315745-a6fc-43f4-81b9-e0b2d61324b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero
+id: taxonomy_term.genero.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: genero
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

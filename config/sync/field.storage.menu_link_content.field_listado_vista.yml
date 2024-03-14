@@ -1,0 +1,25 @@
+uuid: c37130eb-8955-4995-abc4-8cb3adcd0c5f
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - menu_link_content
+    - viewfield
+    - views
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: menu_link_content.field_listado_vista
+field_name: field_listado_vista
+entity_type: menu_link_content
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

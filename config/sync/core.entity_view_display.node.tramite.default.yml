@@ -1,0 +1,365 @@
+uuid: 038b9091-9163-4632-83cb-9cc514b892c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.tramite.body
+    - field.field.node.tramite.field_archivos
+    - field.field.node.tramite.field_area_organizativa
+    - field.field.node.tramite.field_area_tematica
+    - field.field.node.tramite.field_codigo_procedimiento
+    - field.field.node.tramite.field_codigo_referencia
+    - field.field.node.tramite.field_colectivo
+    - field.field.node.tramite.field_contenidos_relacionados
+    - field.field.node.tramite.field_contenidos_vinculados
+    - field.field.node.tramite.field_criterios
+    - field.field.node.tramite.field_destinatarios
+    - field.field.node.tramite.field_domain_access
+    - field.field.node.tramite.field_domain_all_affiliates
+    - field.field.node.tramite.field_domain_source
+    - field.field.node.tramite.field_efectos_silencio_administr
+    - field.field.node.tramite.field_enlace
+    - field.field.node.tramite.field_enlaces
+    - field.field.node.tramite.field_entidades
+    - field.field.node.tramite.field_fecha_fin
+    - field.field.node.tramite.field_fecha_inicio
+    - field.field.node.tramite.field_imagen_destacada
+    - field.field.node.tramite.field_imagenes
+    - field.field.node.tramite.field_importe_ayuda
+    - field.field.node.tramite.field_info_documentacion
+    - field.field.node.tramite.field_informacion_plazo_solicitu
+    - field.field.node.tramite.field_informacion_tramite_online
+    - field.field.node.tramite.field_informacion_tramite_presen
+    - field.field.node.tramite.field_marco_legal
+    - field.field.node.tramite.field_mas_informacion
+    - field.field.node.tramite.field_meta_tags
+    - field.field.node.tramite.field_modalidad
+    - field.field.node.tramite.field_plazo_de_resolucion
+    - field.field.node.tramite.field_plazo_presentacion_permane
+    - field.field.node.tramite.field_precio
+    - field.field.node.tramite.field_preguntas_frecuentes
+    - field.field.node.tramite.field_requisitos
+    - field.field.node.tramite.field_tipo
+    - field.field.node.tramite.field_videos
+    - field.field.node.tramite.field_yoast_seo
+    - node.type.tramite
+  module:
+    - datetime
+    - link
+    - metatag
+    - text
+    - user
+    - yoast_seo
+id: node.tramite.default
+targetEntityType: node
+bundle: tramite
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_archivos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 25
+    region: content
+  field_area_organizativa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_codigo_procedimiento:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_codigo_referencia:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_contenidos_relacionados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 28
+    region: content
+  field_contenidos_vinculados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 36
+    region: content
+  field_criterios:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_destinatarios:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_domain_access:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  field_domain_all_affiliates:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_efectos_silencio_administr:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_enlace:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_enlaces:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_entidades:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 33
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 34
+    region: content
+  field_imagenes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_importe_ayuda:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_info_documentacion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_informacion_plazo_solicitu:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_informacion_tramite_online:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_informacion_tramite_presen:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_lugar_presentacion_:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_marco_legal:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_mas_informacion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  field_modalidad:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_plazo_de_resolucion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_plazo_presentacion_permane:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_precio:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_preguntas_frecuentes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 27
+    region: content
+  field_requisitos:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_tipo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 35
+    region: content
+  field_videos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  field_yoast_seo:
+    type: yoastseo_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 32
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_area_tematica: true
+  field_colectivo: true
+  field_domain_source: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,23 @@
+uuid: e28b3fce-fd26-4659-8410-dc091e4f4947
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.obra
+  module:
+    - feeds
+id: node.obra.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: obra
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

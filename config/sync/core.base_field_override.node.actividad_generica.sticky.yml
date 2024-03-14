@@ -1,0 +1,22 @@
+uuid: 989bd401-580f-4d7d-961a-73f4c35f2dec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad_generica
+id: node.actividad_generica.sticky
+field_name: sticky
+entity_type: node
+bundle: actividad_generica
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

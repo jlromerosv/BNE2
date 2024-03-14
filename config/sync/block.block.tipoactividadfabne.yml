@@ -1,0 +1,33 @@
+uuid: 83344a6a-57a0-495c-93a4-edcda9498d4f
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipo
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: tipoactividadfabne
+theme: fundacion_theme
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'facet_block:tipo'
+settings:
+  id: 'facet_block:tipo'
+  label: 'Tipo actividad FABNE'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: tipoactividadfabne
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/26918\r\n/node/26911"

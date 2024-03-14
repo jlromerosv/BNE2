@@ -1,0 +1,63 @@
+uuid: dcd679c9-f6c0-417e-bc3d-61c7bd02af2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.bloque_enlaces_destacados_home_lg
+    - image.style.bloque_enlaces_destacados_home_md
+    - image.style.bloque_enlaces_destacados_home_sm
+    - image.style.bloque_enlaces_destacados_home_xl
+    - image.style.bloque_enlaces_destacados_home_xs
+    - image.style.bloque_enlaces_destacados_home_xxl
+  theme:
+    - bne_theme
+id: eia_bloque_enlaces_destacados_home
+label: 'EIA Bloque Enlaces Destacados Home'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_enlaces_destacados_home_xxl
+    breakpoint_id: bne_theme.4xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_enlaces_destacados_home_xxl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_enlaces_destacados_home_xxl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_enlaces_destacados_home_xl
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_enlaces_destacados_home_lg
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_enlaces_destacados_home_md
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_enlaces_destacados_home_sm
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_enlaces_destacados_home_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_enlaces_destacados_home_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: '_original image_'

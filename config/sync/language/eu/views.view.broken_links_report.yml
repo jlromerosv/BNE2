@@ -1,0 +1,50 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ezarri
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Lehenengoa'
+            last: 'Azkena »'
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+      fields:
+        entity_field:
+          separator: ', '
+        entity_langcode:
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          separator: ', '
+        method:
+          label: Metodoa
+          separator: ', '
+        code:
+          separator: ', '
+        error:
+          label: Errorea
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Eragiketak
+      filters:
+        url:
+          expose:
+            label: URL
+  page_1:
+    display_title: Orria

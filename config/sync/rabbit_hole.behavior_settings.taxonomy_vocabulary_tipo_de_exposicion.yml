@@ -1,0 +1,14 @@
+uuid: e77f419b-7e4e-4e7e-9a60-623a339a57d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_exposicion
+id: taxonomy_vocabulary_tipo_de_exposicion
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_exposicion
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

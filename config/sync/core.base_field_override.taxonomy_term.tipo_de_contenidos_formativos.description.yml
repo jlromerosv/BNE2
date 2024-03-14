@@ -1,0 +1,20 @@
+uuid: 8cecbb48-d240-475e-9f50-84524eb6a1a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contenidos_formativos
+  module:
+    - text
+id: taxonomy_term.tipo_de_contenidos_formativos.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_contenidos_formativos
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

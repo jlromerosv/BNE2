@@ -1,0 +1,29 @@
+uuid: fbd321ad-dab0-48b2-a276-95a2957b62a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_personal
+    - node.type.convocatoria
+    - taxonomy.vocabulary.tipo_de_personal
+id: node.convocatoria.field_tipo_personal
+field_name: field_tipo_personal
+entity_type: node
+bundle: convocatoria
+label: 'Tipo de personal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_personal: tipo_de_personal
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

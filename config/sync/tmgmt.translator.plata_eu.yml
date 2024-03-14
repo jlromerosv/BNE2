@@ -1,0 +1,22 @@
+uuid: a96adede-9177-42bd-9e76-55d4fd4d161b
+langcode: es
+status: true
+dependencies:
+  module:
+    - tmgmt_plata_eu
+name: plata_eu
+label: 'Plata EU'
+description: 'Pulsia Plata EU Translator service.'
+auto_accept: true
+weight: null
+plugin: plata_eu
+settings:
+  url: ''
+  api_key: '123'
+remote_languages_mappings:
+  es: es
+  ca: ''
+  gl: ''
+  eu: eu
+  en: en
+  fr: ''

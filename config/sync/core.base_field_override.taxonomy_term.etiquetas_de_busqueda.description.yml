@@ -1,0 +1,20 @@
+uuid: 0b07e079-5e48-4a50-a976-6baa54ac66e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+  module:
+    - text
+id: taxonomy_term.etiquetas_de_busqueda.description
+field_name: description
+entity_type: taxonomy_term
+bundle: etiquetas_de_busqueda
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

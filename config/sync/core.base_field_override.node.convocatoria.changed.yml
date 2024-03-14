@@ -1,0 +1,18 @@
+uuid: 11df30df-c138-4c1e-a745-c38af3795b58
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.convocatoria
+id: node.convocatoria.changed
+field_name: changed
+entity_type: node
+bundle: convocatoria
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

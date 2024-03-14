@@ -1,0 +1,20 @@
+uuid: baaf3ac3-0a28-41aa-9652-ae18b5d0bebd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+  module:
+    - options
+id: node.seccion_nivel_1_estandar.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

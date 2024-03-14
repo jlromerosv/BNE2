@@ -1,0 +1,81 @@
+uuid: b57acf80-8029-4e8e-aa14-4fee63f2ce06
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.imagen.domain_access
+    - field.field.media.imagen.feeds_item
+    - field.field.media.imagen.field_area_tematica
+    - field.field.media.imagen.field_id_blog_attachment_
+    - field.field.media.imagen.field_id_externo
+    - field.field.media.imagen.field_media_image
+    - field.field.media.imagen.field_pie_de_foto
+    - field.field.media.imagen.field_tipo
+    - field.field.media.imagen.field_urlanterior
+    - media.type.imagen
+  module:
+    - svg_image
+id: media.imagen.default
+targetEntityType: media
+bundle: imagen
+mode: default
+content:
+  field_id_blog_attachment_:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_id_externo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pie_de_foto:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_tipo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  created: true
+  domain_access: true
+  feeds_item: true
+  field_area_tematica: true
+  field_urlanterior: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
+  uuid: true

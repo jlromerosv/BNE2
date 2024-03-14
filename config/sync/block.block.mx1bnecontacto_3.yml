@@ -1,0 +1,33 @@
+uuid: acb15be8-a139-4213-83e5-ebdf206dcd1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne---contacto
+  module:
+    - system
+  theme:
+    - bne_theme
+id: mx1bnecontacto_3
+theme: bne_theme
+region: post_contenido
+weight: -67
+provider: null
+plugin: 'system_menu_block:mx1---bne---contacto'
+settings:
+  id: 'system_menu_block:mx1---bne---contacto'
+  label: 'MX1 - BNE - Contacto'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/contacto\r\n/contacto/*"

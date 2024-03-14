@@ -1,0 +1,28 @@
+uuid: 028519ed-38c1-45f4-9982-e68a1c34a24e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - media.type.imagen
+    - node.type.dossier
+id: node.dossier.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: dossier
+label: Imágenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

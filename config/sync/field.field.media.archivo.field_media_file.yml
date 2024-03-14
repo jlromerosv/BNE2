@@ -1,0 +1,31 @@
+uuid: e37fc8dd-dbec-441f-9fae-7810e816d8e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - media.type.archivo
+  module:
+    - file
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: media.archivo.field_media_file
+field_name: field_media_file
+entity_type: media
+bundle: archivo
+label: Archivo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: repositorio-archivos
+  file_extensions: 'txt doc docx pdf jpeg jpg xls xlsx zip xml mrc'
+  max_filesize: '150 MB'
+  description_field: false
+field_type: file

@@ -1,0 +1,23 @@
+uuid: a5b209a2-d068-4c34-b523-46a94cf9d4ff
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: taxonomy_term.field_grupo_de_temas
+field_name: field_grupo_de_temas
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: 2170a29f-204e-44ce-acdb-0f6fd167a5e1
+langcode: es
+status: true
+dependencies: {  }
+name: Modalidad
+vid: modalidad
+description: ''
+weight: 0

@@ -1,0 +1,18 @@
+uuid: aa0ef0a9-c73a-4e84-b1ee-23c6033dee19
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.catalogo
+id: node.catalogo.title
+field_name: title
+entity_type: node
+bundle: catalogo
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

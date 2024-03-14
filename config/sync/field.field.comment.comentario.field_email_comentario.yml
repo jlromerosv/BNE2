@@ -1,0 +1,24 @@
+uuid: 7e308b2e-d2ff-43ff-9625-76fc57bba90f
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+    - field.storage.comment.field_email_comentario
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: comment.comentario.field_email_comentario
+field_name: field_email_comentario
+entity_type: comment
+bundle: comentario
+label: 'Correo Electrónico'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

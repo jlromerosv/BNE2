@@ -1,0 +1,28 @@
+uuid: 2790b142-a05c-49c1-8d2d-0837b30ab633
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horarios
+    - node.type.horarios
+    - node.type.servicio
+id: node.servicio.field_horarios
+field_name: field_horarios
+entity_type: node
+bundle: servicio
+label: Horarios
+description: 'Horarios de atención, calendario de festivos, horarios especiales,...'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      horarios: horarios
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

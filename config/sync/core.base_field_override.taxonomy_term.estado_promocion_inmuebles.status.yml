@@ -1,0 +1,22 @@
+uuid: 19444278-5d24-462d-ad76-a73b89f7e51c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_promocion_inmuebles
+id: taxonomy_term.estado_promocion_inmuebles.status
+field_name: status
+entity_type: taxonomy_term
+bundle: estado_promocion_inmuebles
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

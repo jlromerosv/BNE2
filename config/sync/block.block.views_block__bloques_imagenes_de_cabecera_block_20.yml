@@ -1,0 +1,29 @@
+uuid: 8b502731-da29-4b23-99aa-62168b30385a
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloques_imagenes_de_cabecera
+  module:
+    - system
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloques_imagenes_de_cabecera_block_20
+theme: bne_theme
+region: breadcrumb
+weight: -37
+provider: null
+plugin: 'views_block:bloques_imagenes_de_cabecera-block_20'
+settings:
+  id: 'views_block:bloques_imagenes_de_cabecera-block_20'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/3311

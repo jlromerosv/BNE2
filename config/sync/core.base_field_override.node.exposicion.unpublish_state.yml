@@ -1,0 +1,20 @@
+uuid: 5609f031-607c-4683-888b-682b70540fb7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+  module:
+    - options
+id: node.exposicion.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: exposicion
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

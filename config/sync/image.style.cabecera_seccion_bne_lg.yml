@@ -1,0 +1,15 @@
+uuid: 9c28ecdc-b729-4ccf-a638-41d75d8b925b
+langcode: es
+status: true
+dependencies: {  }
+name: cabecera_seccion_bne_lg
+label: 'Cabecera seccion BNE LG'
+effects:
+  df5ef3c0-6f1f-4a90-8f25-90ef11026deb:
+    uuid: df5ef3c0-6f1f-4a90-8f25-90ef11026deb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 600
+      anchor: center-center

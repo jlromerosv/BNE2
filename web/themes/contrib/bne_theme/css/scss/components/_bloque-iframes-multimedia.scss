@@ -1,0 +1,28 @@
+.ps-iframes-page {
+  padding-right: 2em 0;
+
+  .view-content {
+    .views-row {
+      .views-field-field-iframe {
+        .field-content {
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2em;
+            .iframe_title {
+              font-size: $h6_home_block;
+              color: $blanco;
+              line-height: 26px;
+              letter-spacing: 0.54px;
+              display: block;
+              width: 80%;
+            }
+            iframe {
+            }
+          }
+        }
+      }
+    }
+  }
+}

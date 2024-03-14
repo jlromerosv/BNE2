@@ -1,0 +1,23 @@
+uuid: feae3100-26ab-43aa-82c3-d2ceeca47ecc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.galeria_de_videos
+  module:
+    - text
+id: node.galeria_de_videos.body
+field_name: body
+entity_type: node
+bundle: galeria_de_videos
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: c3aaa243-0f18-4605-83a9-e0a2a53626dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_torrevieja_
+id: node.seccion_torrevieja_.sticky
+field_name: sticky
+entity_type: node
+bundle: seccion_torrevieja_
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

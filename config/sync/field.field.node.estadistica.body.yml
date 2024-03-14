@@ -1,0 +1,28 @@
+uuid: d7812e1f-e123-4bc0-8fa7-c2a747a2d94d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.estadistica
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.estadistica.body
+field_name: body
+entity_type: node
+bundle: estadistica
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

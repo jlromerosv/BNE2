@@ -1,0 +1,13 @@
+uuid: 21c1d088-a47c-4cd4-a1e6-8020a7e322ba
+langcode: es
+status: true
+dependencies: {  }
+id: buzon_de_envios
+label: 'Buzón de envios'
+category: ''
+likert: false
+options: |-
+  bernabe.asir@gmail.com: BNE
+  issuespulsia@gmail.com: Administración
+  deposito@bne.es: 'Depósito legal'
+  adquisiciones@bne.es: Adquisiciones

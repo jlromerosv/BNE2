@@ -1,0 +1,18 @@
+uuid: 827ee64c-0adf-4a4a-aacd-908e4a54d2eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.evento
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.evento
+target_entity_type_id: node
+target_bundle: evento
+default_langcode: site_default
+language_alterable: false

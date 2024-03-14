@@ -1,0 +1,32 @@
+uuid: 6890823c-50ee-44e2-99a6-8b066e73172e
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.bloques_imagenes_de_cabecera
+  module:
+    - node
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloques_imagenes_de_cabecera_block_2
+theme: bne_theme
+region: breadcrumb
+weight: -62
+provider: null
+plugin: 'views_block:bloques_imagenes_de_cabecera-block_2'
+settings:
+  id: 'views_block:bloques_imagenes_de_cabecera-block_2'
+  label: ' Bloques Imagenes de cabecera: Blog (contenidos)'
+  label_display: '0'
+  provider: views
+  views_label: ' Bloques Imagenes de cabecera: Blog (contenidos)'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      entrada_de_blog: entrada_de_blog

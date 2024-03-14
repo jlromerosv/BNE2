@@ -1,0 +1,57 @@
+uuid: a52398e0-9f85-43cf-a864-0e0b66f55fca
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.horarios_resumen_o_recortado_
+    - field.field.node.horarios.body
+    - field.field.node.horarios.field_alias_tipo_contenido
+    - field.field.node.horarios.field_domain_access
+    - field.field.node.horarios.field_domain_all_affiliates
+    - field.field.node.horarios.field_domain_source
+    - field.field.node.horarios.field_enlace
+    - field.field.node.horarios.field_meta_tags
+    - field.field.node.horarios.field_nombre
+    - field.field.node.horarios.field_yoast_seo
+    - node.type.horarios
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.horarios.horarios_resumen_o_recortado_
+targetEntityType: node
+bundle: horarios
+mode: horarios_resumen_o_recortado_
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_nombre:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_alias_tipo_contenido: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_meta_tags: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

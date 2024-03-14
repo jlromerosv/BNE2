@@ -1,0 +1,158 @@
+uuid: 4323329a-192a-4e7e-8c3e-987e34d44dd0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.campana.created
+    - core.base_field_override.node.campana.path
+    - core.base_field_override.node.campana.title
+    - field.field.node.campana.body
+    - field.field.node.campana.field_archivos
+    - field.field.node.campana.field_contenidos_relacionados
+    - field.field.node.campana.field_domain_access
+    - field.field.node.campana.field_id_externo
+    - node.type.campana
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      a4d4b70e-fa97-46d8-b332-4df0fa54b167:
+        separator: '}'
+        limit: null
+        uuid: a4d4b70e-fa97-46d8-b332-4df0fa54b167
+        plugin: explode
+        source: rutaarchivo
+        weight: 0
+        label: Explode
+label: 'Carga Ciclos'
+id: carga_ciclos
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: campana
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  alias:
+    value: Alias
+    label: Alias
+    machine_name: alias
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  rutaarchivo:
+    value: RutaArchivo
+    label: RutaArchivo
+    machine_name: rutaarchivo
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  listacontenidosrelacionados:
+    value: ListaContenidosRelacionados
+    label: ListaContenidosRelacionados
+    machine_name: listacontenidosrelacionados
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: path
+    map:
+      alias: alias
+      pathauto: ''
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_sencillo
+  -
+    target: field_archivos
+    map:
+      target_id: rutaarchivo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: field_contenidos_relacionados
+    map:
+      target_id: listacontenidosrelacionados
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'

@@ -1,0 +1,28 @@
+uuid: dd30fcd0-a8b1-46fc-a92e-202ad68d78b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_basica
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.pagina_basica.body
+field_name: body
+entity_type: node
+bundle: pagina_basica
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

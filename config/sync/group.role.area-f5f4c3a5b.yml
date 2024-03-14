@@ -1,0 +1,17 @@
+uuid: 4a3f33de-cffb-4771-baf0-b7a4e2880507
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.editor_biblioteconomia
+id: area-f5f4c3a5b
+label: 'Editor biblioteconomía'
+weight: 6
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,18 @@
+uuid: a007c143-c2ce-4ab0-b7ae-583f277991c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_imagen
+id: taxonomy_term.categoria_de_imagen.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: categoria_de_imagen
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,20 @@
+uuid: 56dd3012-2269-47bc-9b23-5a0d7a46ceb2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.coleccion
+  module:
+    - path
+id: node.coleccion.path
+field_name: path
+entity_type: node
+bundle: coleccion
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

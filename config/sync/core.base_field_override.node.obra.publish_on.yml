@@ -1,0 +1,18 @@
+uuid: 84d8b5f5-0a2f-4b31-8241-d67a9b652395
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+id: node.obra.publish_on
+field_name: publish_on
+entity_type: node
+bundle: obra
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

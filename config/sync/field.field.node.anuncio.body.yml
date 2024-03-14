@@ -1,0 +1,28 @@
+uuid: affcfad2-443b-4e6c-8ec7-c0dc29c046e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.anuncio
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.anuncio.body
+field_name: body
+entity_type: node
+bundle: anuncio
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

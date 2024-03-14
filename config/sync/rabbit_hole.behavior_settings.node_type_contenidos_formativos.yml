@@ -1,0 +1,14 @@
+uuid: 6d072e63-05c5-4ab3-9364-6fb1a8b6c187
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+id: node_type_contenidos_formativos
+entity_type_id: node_type
+entity_id: contenidos_formativos
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

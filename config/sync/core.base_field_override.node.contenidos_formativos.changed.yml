@@ -1,0 +1,18 @@
+uuid: 66f42069-1cc7-4a93-b557-7feb22cd69a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+id: node.contenidos_formativos.changed
+field_name: changed
+entity_type: node
+bundle: contenidos_formativos
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

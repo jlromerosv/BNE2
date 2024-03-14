@@ -1,0 +1,30 @@
+uuid: cca2c180-23eb-4237-8ad8-02ccb981363d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciclo_campana
+    - node.type.campana
+    - node.type.evento
+id: node.evento.field_ciclo_campana
+field_name: field_ciclo_campana
+entity_type: node
+bundle: evento
+label: 'Ciclo o programa de actividades'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      campana: campana
+      evento: evento
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: campana
+field_type: entity_reference

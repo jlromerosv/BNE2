@@ -1,0 +1,23 @@
+uuid: 249080f6-eabb-4fff-a7ea-87537d93b7cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.iniciativa
+  module:
+    - text
+id: node.iniciativa.body
+field_name: body
+entity_type: node
+bundle: iniciativa
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

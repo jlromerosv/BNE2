@@ -1,0 +1,5 @@
+elements: |
+  search_api_fulltext:
+    '#title': 'Buscador Xeral'
+    '#help_title': 'Buscador Xeral'
+    '#placeholder': 'Introduce o texto de búsqueda'

@@ -1,0 +1,31 @@
+uuid: 9f8a82f9-271c-49d2-9e76-35ac0ffcf3a3
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Entidades (referencia)'
+type: entidad_referencia_
+description: 'Similar a las Entidades, pero sin ficha de Contenido Completo. Se enlaza directamente con la url de la web de la entidad. También puede incluir un logotipo.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,197 @@
+uuid: 0b228be1-8ab6-4808-ac9c-5870c4b2e106
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+    - core.base_field_override.comment.comentario.created
+    - core.base_field_override.comment.comentario.status
+    - field.field.comment.comentario.comment_body
+    - field.field.comment.comentario.field_email_comentario
+    - field.field.comment.comentario.field_fecha_comentario
+    - field.field.comment.comentario.field_id_externo
+    - field.field.comment.comentario.field_nombre_comentario
+  module:
+    - comment
+    - feeds_tamper
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      4777ba15-e468-4222-84d1-238f5753424e:
+        default_value: node
+        only_if_empty: false
+        uuid: 4777ba15-e468-4222-84d1-238f5753424e
+        plugin: default_value
+        source: tipo_node_por_tamper
+        weight: 0
+        label: 'Set value or default value: node'
+      5f6298dd-5d07-40f4-90e0-c9087b211118:
+        default_value: '1'
+        only_if_empty: false
+        uuid: 5f6298dd-5d07-40f4-90e0-c9087b211118
+        plugin: default_value
+        source: publicado_1_por_tamper
+        weight: 0
+        label: 'Set value or default value: 1'
+      ea100554-61a9-4d4d-8ede-8a9f8bf867e3:
+        default_value: field_comentarios
+        only_if_empty: false
+        uuid: ea100554-61a9-4d4d-8ede-8a9f8bf867e3
+        plugin: default_value
+        source: field_comentarios_por_tamper
+        weight: 0
+        label: 'Set value or default value: field_comentarios'
+label: 'Carga de comentarios'
+id: carga_de_comentarios
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:comment'
+processor_configuration:
+  values:
+    comment_type: comentario
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  post_id_externo:
+    value: post_id_externo
+    label: post_id_externo
+    machine_name: post_id_externo
+    type: csv
+  comment_id_externo:
+    value: comment_id_externo
+    label: comment_id_externo
+    machine_name: comment_id_externo
+    type: csv
+  comment_author:
+    value: comment_author
+    label: comment_author
+    machine_name: comment_author
+    type: csv
+  comment_author_email:
+    value: comment_author_email
+    label: comment_author_email
+    machine_name: comment_author_email
+    type: csv
+  comment_date:
+    value: comment_date
+    label: comment_date
+    machine_name: comment_date
+    type: csv
+  comment_content:
+    value: comment_content
+    label: comment_content
+    machine_name: comment_content
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: blank
+  tipo_node_por_tamper:
+    value: Tipo_node_por_tamper
+    label: Tipo_node_por_tamper
+    machine_name: tipo_node_por_tamper
+    type: csv
+  publicado_1_por_tamper:
+    value: publicado_1_por_tamper
+    label: publicado_1_por_tamper
+    machine_name: publicado_1_por_tamper
+    type: csv
+  field_comentarios_por_tamper:
+    value: field_comentarios_por_tamper
+    label: field_comentarios_por_tamper
+    machine_name: field_comentarios_por_tamper
+    type: csv
+mappings:
+  -
+    target: entity_id
+    map:
+      target_id: post_id_externo
+    settings:
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_id_externo
+    map:
+      value: comment_id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_nombre_comentario
+    map:
+      value: comment_author
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_email_comentario
+    map:
+      value: comment_author_email
+    settings:
+      language: null
+      defuse: false
+    unique: {  }
+  -
+    target: field_fecha_comentario
+    map:
+      value: comment_date
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: created
+    map:
+      value: comment_date
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: comment_body
+    map:
+      value: comment_content
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: entity_type
+    map:
+      value: tipo_node_por_tamper
+    settings: {  }
+    unique: {  }
+  -
+    target: status
+    map:
+      value: publicado_1_por_tamper
+    settings:
+      language: null
+  -
+    target: field_name
+    map:
+      value: field_comentarios_por_tamper
+    settings: {  }
+    unique: {  }

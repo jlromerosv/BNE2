@@ -1,0 +1,14 @@
+uuid: e7b0f876-5172-4887-9572-270d67474be6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.palabras_clave_archivo_web_espan
+id: taxonomy_vocabulary_palabras_clave_archivo_web_espan
+entity_type_id: taxonomy_vocabulary
+entity_id: palabras_clave_archivo_web_espan
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

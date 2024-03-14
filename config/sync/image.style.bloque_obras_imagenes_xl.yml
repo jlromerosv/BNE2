@@ -1,0 +1,26 @@
+uuid: b0e8e966-9f29-4361-a0af-e0984f8b65be
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.detalle_vertical_obra
+  module:
+    - crop
+name: bloque_obras_imagenes_xl
+label: 'Bloque obras imagenes XL'
+effects:
+  5787edb8-f65e-4a60-8d0d-9ee01a08b196:
+    uuid: 5787edb8-f65e-4a60-8d0d-9ee01a08b196
+    id: crop_crop
+    weight: -9
+    data:
+      crop_type: detalle_vertical_obra
+      automatic_crop_provider: null
+  039ba305-a58a-4761-8b3c-7eefa8adedb0:
+    uuid: 039ba305-a58a-4761-8b3c-7eefa8adedb0
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 477
+      height: 572
+      anchor: center-center

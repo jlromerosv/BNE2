@@ -1,0 +1,19 @@
+uuid: 47df50d3-4749-44d0-a837-f040b399392d
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+    - field.storage.comment.field_id_externo
+id: comment.comentario.field_id_externo
+field_name: field_id_externo
+entity_type: comment
+bundle: comentario
+label: Id_externo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

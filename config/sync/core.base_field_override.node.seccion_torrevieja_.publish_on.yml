@@ -1,0 +1,18 @@
+uuid: c02fd3a5-b1d1-4f94-a304-288c9c16dc94
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_torrevieja_
+id: node.seccion_torrevieja_.publish_on
+field_name: publish_on
+entity_type: node
+bundle: seccion_torrevieja_
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

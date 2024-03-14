@@ -1,0 +1,22 @@
+uuid: 80de4261-4c82-47f7-a9bb-244e7cd58e33
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+id: node.clasificacion_contenidos.promote
+field_name: promote
+entity_type: node
+bundle: clasificacion_contenidos
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,431 @@
+uuid: 89394bed-b634-4afc-a064-1f7b8906bafe
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.content_browser
+    - field.field.node.noticia.body
+    - field.field.node.noticia.feeds_item
+    - field.field.node.noticia.field_alias_tipo_contenido
+    - field.field.node.noticia.field_archivos
+    - field.field.node.noticia.field_area_tematica
+    - field.field.node.noticia.field_audios
+    - field.field.node.noticia.field_categorias
+    - field.field.node.noticia.field_clasificacion_contenidos
+    - field.field.node.noticia.field_colectivo
+    - field.field.node.noticia.field_contenidos_relacionados
+    - field.field.node.noticia.field_contenidos_vinculados
+    - field.field.node.noticia.field_descripcion_corta
+    - field.field.node.noticia.field_domain_access
+    - field.field.node.noticia.field_domain_all_affiliates
+    - field.field.node.noticia.field_domain_source
+    - field.field.node.noticia.field_enlaces
+    - field.field.node.noticia.field_etiquetas_busqueda
+    - field.field.node.noticia.field_fecha_actualizacion_visibl
+    - field.field.node.noticia.field_filtros
+    - field.field.node.noticia.field_galeria_de_imagenes
+    - field.field.node.noticia.field_id_externo
+    - field.field.node.noticia.field_iframe
+    - field.field.node.noticia.field_imagen_cabecera
+    - field.field.node.noticia.field_imagen_destacada
+    - field.field.node.noticia.field_imagenes
+    - field.field.node.noticia.field_meta_tags
+    - field.field.node.noticia.field_no_mostrar_inverso
+    - field.field.node.noticia.field_subtitulo
+    - field.field.node.noticia.field_urlanterior
+    - field.field.node.noticia.field_videos
+    - field.field.node.noticia.field_yoast_seo
+    - node.type.noticia
+  module:
+    - content_moderation
+    - datetime
+    - entity_browser
+    - field_group
+    - iframe
+    - link
+    - media_library
+    - metatag
+    - path
+    - text
+    - yoast_seo
+third_party_settings:
+  field_group:
+    group_seo:
+      children:
+        - field_yoast_seo
+      label: SEO
+      region: content
+      parent_name: ''
+      weight: 10
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+        weight: 0
+    group_multimedia:
+      children:
+        - field_imagen_destacada
+        - field_pie_de_foto
+        - field_imagenes
+        - field_galeria_de_imagenes
+        - field_archivos
+        - field_enlaces
+        - field_videos
+        - field_audios
+        - field_iframe
+      label: Multimedia
+      region: content
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_cl:
+      children:
+        - field_categorias
+        - field_colectivo
+        - field_etiquetas_busqueda
+      label: Clasificación
+      region: content
+      parent_name: ''
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_filtros:
+      children:
+        - field_filtros
+      label: Filtros
+      region: content
+      parent_name: ''
+      weight: 9
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+        weight: 0
+    group_contenidos_extra:
+      children:
+        - field_contenidos_vinculados
+        - field_contenidos_relacionados
+        - field_no_mostrar_inverso
+      label: 'Contenidos extra'
+      region: content
+      parent_name: ''
+      weight: 7
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: node.noticia.default
+targetEntityType: node
+bundle: noticia
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_alias_tipo_contenido:
+    type: entity_reference_autocomplete
+    weight: 22
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_archivos:
+    type: media_library_widget
+    weight: 8
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_audios:
+    type: media_library_widget
+    weight: 11
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_categorias:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_colectivo:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contenidos_relacionados:
+    type: entity_browser_entity_reference
+    weight: 14
+    region: content
+    settings:
+      entity_browser: content_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_contenidos_vinculados:
+    type: entity_browser_entity_reference
+    weight: 13
+    region: content
+    settings:
+      entity_browser: content_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_descripcion_corta:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_domain_source:
+    type: options_select
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_enlaces:
+    type: link_default
+    weight: 9
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_etiquetas_busqueda:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fecha_actualizacion_visibl:
+    type: datetime_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_filtros:
+    type: entity_reference_autocomplete
+    weight: 21
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_galeria_de_imagenes:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_id_externo:
+    type: string_textfield
+    weight: 19
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_iframe:
+    type: iframe_urlwidthheight
+    weight: 12
+    region: content
+    settings:
+      headerlevel: '3'
+      class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      allowfullscreen: '0'
+      tokensupport: '0'
+      width: ''
+      height: ''
+      expose_class: false
+    third_party_settings: {  }
+  field_imagen_destacada:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_imagenes:
+    type: media_library_widget
+    weight: 6
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 11
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_no_mostrar_inverso:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_subtitulo:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_videos:
+    type: media_library_widget
+    weight: 10
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 27
+    region: content
+    settings:
+      body: body
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true
+  field_area_tematica: true
+  field_clasificacion_contenidos: true
+  field_imagen_cabecera: true
+  field_urlanterior: true
+  langcode: true
+  publish_on: true
+  publish_state: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
+  url_redirects: true

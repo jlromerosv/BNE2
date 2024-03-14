@@ -1,0 +1,30 @@
+uuid: 40bd9bda-f7f6-4203-a7b7-2318b768199e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.campana
+  module:
+    - iframe
+id: node.campana.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: campana
+label: Iframes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '0'
+  tokensupport: null
+  width: null
+  height: null
+field_type: iframe

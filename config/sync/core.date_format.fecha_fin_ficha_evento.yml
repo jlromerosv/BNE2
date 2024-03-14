@@ -1,0 +1,8 @@
+uuid: bf5f9c0e-de83-471f-9145-fc44c9a1b4f5
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_fin_ficha_evento
+label: 'fecha fin ficha evento'
+locked: false
+pattern: '\a\l j \d\e F \d\e Y'

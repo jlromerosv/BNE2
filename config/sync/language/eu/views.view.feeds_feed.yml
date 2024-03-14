@@ -1,0 +1,48 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ezarri
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      pager:
+        options:
+          tags:
+            previous: '‹ aurrekoa'
+            next: 'hurrengoa ›'
+            first: '« lehenengoa'
+            last: 'azkena »'
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+      fields:
+        feeds_feed_bulk_form:
+          action_title: Aukeraketarekin
+        title:
+          label: Izenburua
+          separator: ', '
+        type:
+          label: Mota
+          separator: ', '
+        name:
+          label: Egilea
+          separator: ', '
+        changed:
+          label: Eguneratuta
+          separator: ', '
+        imported:
+          separator: ', '
+        operations:
+          label: Eragiketak
+      filters:
+        title:
+          expose:
+            label: Izenburua
+        type:
+          expose:
+            label: Mota
+  page_1:
+    display_title: Orria

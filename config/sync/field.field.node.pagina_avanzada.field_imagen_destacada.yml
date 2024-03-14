@@ -1,0 +1,32 @@
+uuid: 09d69cc8-42d9-4719-999b-34c144f7c27b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_destacada
+    - media.type.imagen
+    - node.type.pagina_avanzada
+  content:
+    - 'media:imagen:f26cf78a-110a-448a-9220-9d9e926c3a82'
+id: node.pagina_avanzada.field_imagen_destacada
+field_name: field_imagen_destacada
+entity_type: node
+bundle: pagina_avanzada
+label: 'Imagen Destacada'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: f26cf78a-110a-448a-9220-9d9e926c3a82
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

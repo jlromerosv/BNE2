@@ -1,0 +1,18 @@
+uuid: 755af920-9d7a-43bf-88e6-100186a56dad
+langcode: es
+status: true
+dependencies:
+  module:
+    - poll
+id: poll.poll.metatag
+field_name: metatag
+entity_type: poll
+bundle: poll
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

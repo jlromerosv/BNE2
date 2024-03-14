@@ -1,0 +1,10 @@
+uuid: a9b76b7f-dd3c-40e9-8819-bb1c6c86e749
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.mitad_ancho
+label: 'Mitad ancho'
+targetEntityType: media
+cache: true

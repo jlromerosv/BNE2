@@ -1,0 +1,57 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ezarri
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+          tags:
+            previous: '‹ Aurrekoak'
+            next: 'Hurrengoak ›'
+            first: '« Lehenengoa'
+            last: 'Azkena »'
+      fields:
+        state:
+          label: Egoera
+        label:
+          label: Etiketa
+        type:
+          label: Mota
+        source_language:
+          label: Nondik
+          separator: ', '
+        target_language:
+          label: Nori
+          separator: ', '
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Etiketak
+          separator: ', '
+        changed:
+          label: Aldatuta
+          separator: ', '
+        operations:
+          label: Eragiketak
+      filters:
+        state:
+          group_info:
+            label: Egoera
+        source_language:
+          expose:
+            label: 'Jatorrizko hizkuntza'
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Arrunta
+  page_1:
+    display_title: Orria

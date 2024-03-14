@@ -1,0 +1,8 @@
+uuid: 57fb13f7-db77-4dd6-a8c1-288853fadcc8
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de convocatoria'
+vid: tipo_convocatoria
+description: ''
+weight: 0

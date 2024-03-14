@@ -1,0 +1,31 @@
+uuid: e8f92d07-bfe7-4824-9977-932af04d40df
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.imagen_svg_.field_domain_access
+    - field.field.node.imagen_svg_.field_domain_all_affiliates
+    - field.field.node.imagen_svg_.field_domain_source
+    - field.field.node.imagen_svg_.field_icono_svg_
+    - node.type.imagen_svg_
+  module:
+    - user
+id: node.imagen_svg_.teaser
+targetEntityType: node
+bundle: imagen_svg_
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_icono_svg_: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

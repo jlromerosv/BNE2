@@ -1,0 +1,14 @@
+uuid: 7ea1d844-9422-4abb-9b45-deed459af106
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.lugar
+id: node_type_lugar
+entity_type_id: node_type
+entity_id: lugar
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

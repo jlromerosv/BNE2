@@ -1,0 +1,18 @@
+uuid: 9ad9c60a-b27a-4803-bbcf-cd7d7fd6bed3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sesion_de_actividad
+id: node.sesion_de_actividad.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Estado de moderación'
+description: 'El estado de moderación de esta pieza de contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

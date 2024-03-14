@@ -1,0 +1,8 @@
+uuid: 30d30e5d-ba1e-4c38-8ea5-64d156c829c7
+langcode: es
+status: true
+dependencies: {  }
+id: hora_evento
+label: 'Hora evento'
+locked: false
+pattern: 'H:i\h'

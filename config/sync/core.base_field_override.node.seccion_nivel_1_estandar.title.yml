@@ -1,0 +1,18 @@
+uuid: 60f32d27-9d35-4ffc-8f13-3721d562a14e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_nivel_1_estandar
+id: node.seccion_nivel_1_estandar.title
+field_name: title
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

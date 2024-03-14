@@ -1,0 +1,34 @@
+uuid: 57d78975-1282-429b-b08e-753008aa26e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.enlace_a_web_archivada
+    - taxonomy.vocabulary.materia_archivo_web_espanola
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.enlace_a_web_archivada.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: enlace_a_web_archivada
+label: Materia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      materia_archivo_web_espanola: materia_archivo_web_espanola
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: 94c5e230-e6bb-40ec-915d-9b56c8cd613f
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.vista_agenda
+id: area-9b57c7ac1
+label: 'x_vista agenda'
+weight: 7
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

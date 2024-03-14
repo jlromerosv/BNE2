@@ -1,0 +1,20 @@
+uuid: e37fb9fc-747c-444b-b964-5c2fd1f3665a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.marca_de_agua_evento
+  module:
+    - text
+id: taxonomy_term.marca_de_agua_evento.description
+field_name: description
+entity_type: taxonomy_term
+bundle: marca_de_agua_evento
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

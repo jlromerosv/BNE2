@@ -1,0 +1,25 @@
+uuid: 700942a2-ab35-4f0a-bb6d-11bfe0b95e0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.colorbox_gallery_crop_type
+  module:
+    - crop
+name: colorbox_360_4_3
+label: 'Colorbox 360 - 4:3'
+effects:
+  3a411d07-468c-468d-b550-04a01498753d:
+    uuid: 3a411d07-468c-468d-b550-04a01498753d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: colorbox_gallery_crop_type
+  755b2462-ceb0-40f8-aa17-eea9a33b3028:
+    uuid: 755b2462-ceb0-40f8-aa17-eea9a33b3028
+    id: image_scale
+    weight: 2
+    data:
+      width: 360
+      height: null
+      upscale: false

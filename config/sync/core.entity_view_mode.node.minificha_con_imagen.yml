@@ -1,0 +1,10 @@
+uuid: 0abba74e-9fb1-457b-8bbb-573468b6819c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.minificha_con_imagen
+label: 'Minificha con imagen'
+targetEntityType: node
+cache: true

@@ -1,0 +1,148 @@
+uuid: 66fab721-a33f-48c2-a71f-1db977510075
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.seccion_torrevieja_.body
+    - field.field.node.seccion_torrevieja_.field_contenidos_relacionados
+    - field.field.node.seccion_torrevieja_.field_contenidos_vinculados
+    - field.field.node.seccion_torrevieja_.field_domain_access
+    - field.field.node.seccion_torrevieja_.field_domain_all_affiliates
+    - field.field.node.seccion_torrevieja_.field_domain_source
+    - field.field.node.seccion_torrevieja_.field_filtros
+    - field.field.node.seccion_torrevieja_.field_meta_tags
+    - field.field.node.seccion_torrevieja_.field_yoast_seo
+    - node.type.seccion_torrevieja_
+    - views.view.bloques_de_noticias
+    - views.view.contenidos_relacionados
+    - views.view.proximos_eventos
+    - views.view.widget_multimedia_enlaces
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          a253aee9-500b-4ce6-924a-1fe2e007bbc7:
+            uuid: a253aee9-500b-4ce6-924a-1fe2e007bbc7
+            region: content
+            configuration:
+              id: 'field_block:node:seccion_torrevieja_:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          3a66d720-8a1d-4d50-91ac-aad3ea58d158:
+            uuid: 3a66d720-8a1d-4d50-91ac-aad3ea58d158
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_10'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: '3'
+            weight: 2
+            additional: {  }
+          da4557b1-33db-4246-ad98-fb4bb8f37866:
+            uuid: da4557b1-33db-4246-ad98-fb4bb8f37866
+            region: content
+            configuration:
+              id: 'views_block:bloques_de_noticias-block_3'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: '3'
+            weight: 5
+            additional: {  }
+          afdb052c-0d96-45bd-84cf-aff97407881f:
+            uuid: afdb052c-0d96-45bd-84cf-aff97407881f
+            region: content
+            configuration:
+              id: 'views_block:proximos_eventos-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 9
+            additional: {  }
+          5cf28c40-5619-401b-bba6-76ffb83826be:
+            uuid: 5cf28c40-5619-401b-bba6-76ffb83826be
+            region: content
+            configuration:
+              id: 'views_block:contenidos_relacionados-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 11
+            additional: {  }
+        third_party_settings: {  }
+id: node.seccion_torrevieja_.full
+targetEntityType: node
+bundle: seccion_torrevieja_
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_contenidos_relacionados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_contenidos_vinculados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_filtros: true
+  field_meta_tags: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

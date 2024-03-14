@@ -1,0 +1,20 @@
+uuid: 2e689f52-7ccd-4a99-8aee-a11de15e849f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.noticia
+  module:
+    - path
+id: node.noticia.path
+field_name: path
+entity_type: node
+bundle: noticia
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

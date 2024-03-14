@@ -1,0 +1,33 @@
+uuid: 2f52c8af-67c2-40f6-9187-b1aaca3b8ab4
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne---contacto-enlace-supe
+  module:
+    - system
+  theme:
+    - fundacion_theme
+id: mx1bnecontactoenlacesuperior_2
+theme: fundacion_theme
+region: header_izquierdo_1_2
+weight: -19
+provider: null
+plugin: 'system_menu_block:mx1---bne---contacto-enlace-supe'
+settings:
+  id: 'system_menu_block:mx1---bne---contacto-enlace-supe'
+  label: 'MX1 - BNE - Contacto enlace superior'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/*'

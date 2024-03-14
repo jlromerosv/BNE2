@@ -1,0 +1,22 @@
+uuid: 86b8be17-bda6-4faa-aad7-9ba99ba86726
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.dossier
+id: node.dossier.promote
+field_name: promote
+entity_type: node
+bundle: dossier
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

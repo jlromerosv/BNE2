@@ -1,0 +1,63 @@
+uuid: ac55460a-2c2b-4d31-9276-1c554a98e134
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.bloque_imagen_cabecera_ficha_coleccion_lg
+    - image.style.bloque_imagen_cabecera_ficha_coleccion_md
+    - image.style.bloque_imagen_cabecera_ficha_coleccion_sm
+    - image.style.bloque_imagen_cabecera_ficha_coleccion_xl
+    - image.style.bloque_imagen_cabecera_ficha_coleccion_xs
+    - image.style.bloque_imagen_cabecera_ficha_coleccion_xxl
+  theme:
+    - bne_theme
+id: eia_bloque_imagen_cabecera_ficha_coleccion
+label: 'EIA Bloque Imagen Cabecera Ficha Colección'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_ficha_coleccion_xxl
+    breakpoint_id: bne_theme.4xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_ficha_coleccion_xxl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_ficha_coleccion_xxl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_ficha_coleccion_xl
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_ficha_coleccion_lg
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_ficha_coleccion_md
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_ficha_coleccion_sm
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_ficha_coleccion_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_imagen_cabecera_ficha_coleccion_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: bloque_imagen_cabecera_ficha_coleccion_xl

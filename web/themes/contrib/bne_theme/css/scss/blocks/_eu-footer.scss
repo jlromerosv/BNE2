@@ -1,0 +1,273 @@
+.ps-eu-footer {
+  margin-top: 0;
+  .view-content {
+    & > div {
+      @include display_flex(column, initial, center);
+
+      .views-field-body {
+        text-align: center;
+      }
+
+      .views-field-field-imagen-destacada {
+        margin-right: 0.625em;
+      }
+    }
+  }
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  padding-top: 0.625em;
+  //PRIMER BLOQUE> Hazte amigo de BNE / RRSS / Menú
+  .ps_footer_3_col.ps_footer_3_col-left-main-right {
+    max-width: 1366px;
+    display: grid;
+    column-gap: 0em;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .footer_col_left {
+    //BLOQUE IZQUIERDO ("Hazte amigo...")
+
+    .region.region-footer-izquierdo-1-3 {
+      //margin-right: 10px;
+      flex: 1;
+      .ps-row {
+        &:last-child {
+          margin-top: 0.625em;
+          .views-field.views-field-field-imagen-destacada {
+            display: none;
+          }
+        }
+      }
+      .views-field.views-field-field-imagen-destacada {
+        background-color: $bne_color_1;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-right: 0em;
+        padding-top: 1.25em;
+      }
+      .field.field--name-field-media-image.field--type-image.field--label-visually_hidden {
+        img {
+          width: 142px;
+          height: 64px;
+        }
+      }
+      .views-field.views-field-body {
+        background-color: $bne_color_1;
+        // margin-bottom: 10px;
+        h3 {
+          color: #c49c2b;
+          font-size: 0.9em;
+          @include tipografia($Roboto, 3, medium);
+
+          background-color: #333333;
+          padding: 0.9em;
+          margin: 0em;
+        }
+        p {
+          color: #d3d3d3;
+          font-size: 14px;
+          @include tipografia($Roboto, 3, regular);
+
+          padding: 0.625em;
+          background-color: #333333;
+          margin: 0px;
+          line-height: 20px;
+        }
+      }
+    }
+    .views-field.views-field-body {
+      display: flex;
+      width: 100%;
+      .field-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .testing {
+          display: flex;
+          height: 100%;
+          background-color: #333333;
+          width: 100%;
+          align-self: center;
+          justify-content: center;
+          // margin-top:10px;
+          padding: 20px 0px;
+          p {
+            background-color: #333333;
+            display: block;
+            width: 100%;
+            height: 100%;
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_col_main {
+    //BLOQUE CENTRAL (RRSS)
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .region-footer-central-2-3 {
+      display: flex;
+      flex: 1;
+      //margin-left: 5px;
+      .ps-social-block.white-icon.view.view-widget.view-id-widget.view-display-id-block_11 {
+        display: flex;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+      }
+      #block-bne-theme-views-block-widget-block-11-2 {
+        display: flex;
+        flex: 1;
+        div {
+          display: flex;
+          flex: 1;
+          width: 100%;
+          // height: 100%;
+          .ps-social-block.white-icon.view.view-widget.view-id-widget.view-display-id-block_11 {
+            display: flex !important;
+            flex: 1 !important;
+            width: 100% !important;
+            height: 100% !important;
+            .view-content {
+              display: grid !important;
+              grid-template-columns: 1fr 1fr !important;
+              //margin-right: 10px;
+              div {
+                display: flex;
+                flex: 1;
+                width: 100%;
+                align-self: center;
+                height: 100%;
+                justify-self: center;
+                .views-field.views-field-field-icono-svg- {
+                  display: flex;
+                  flex: 1;
+                  justify-content: center;
+                  align-items: center;
+                  .field-content {
+                    justify-content: center;
+                    background-color: #333333;
+                    a {
+                      display: flex;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer_col_right {
+  //BLOQUE DERECHO (Menú)
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .region-footer-derecho-3-3 {
+    //display: flex;
+    width: 100%;
+    // height: 100%;
+    flex: 2;
+    //justify-content: flex-end;
+  }
+}
+
+///////////////////////////////////LOGOS FOOTER///////////////////////////////////
+.ps_footer_2_col.ps_footer_2_col-left-right.ps_content_margins {
+  width: 100%;
+  padding: 50px 0px;
+  .footer_col_left {
+    flex: 3;
+    padding-left: 25px;
+    img {
+      height: 75px;
+      width: auto;
+      margin-right: 20px;
+    }
+  }
+  .footer_col_right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+    .region {
+      margin: 0px !important;
+    }
+  }
+  .view-widget.view-id-widget.view-display-id-block_3 {
+    .view-content {
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+}
+
+.ps_footer_2_col-left-right {
+  //display: flex !important;
+  img {
+    height: 100px;
+    width: auto;
+  }
+}
+
+////////////////////////////////////BLOQUE INFERIOR////////////////////////////////
+.ps_content_margins {
+  width: 100%;
+  .region.region-footer-inferior {
+    display: flex;
+    align-items: center;
+    background-color: #333333;
+    height: 70px;
+    nav#block-bne-theme-piedepagina {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-left: 20px;
+      padding: 0px;
+      a,
+      span {
+        color: #b4b4b4;
+        @include tipografia($Roboto, 3, regular);
+        font-size: 13px;
+      }
+      li {
+        margin: 0px 10px;
+      }
+    }
+    div#block-bne-theme-views-block-widget-block-5-2 {
+      margin-right: 15px;
+    }
+  }
+}
+
+//Modificación Bloque Redes Sociales
+// .ps-social-block {
+//   .view-content {
+//     display: grid !important;
+//     grid-template-columns: 1fr 1fr;
+//     flex: 1;
+//     gap: 10px;
+//     img {
+//       filter: $filter_white;
+//     }
+//     div {
+//       margin: 0px 0px !important;
+//     }
+//   }
+// }

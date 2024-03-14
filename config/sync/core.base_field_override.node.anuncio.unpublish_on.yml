@@ -1,0 +1,18 @@
+uuid: d35b3a2b-a05f-4c7a-bbe3-8976169806b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.anuncio
+id: node.anuncio.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: anuncio
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

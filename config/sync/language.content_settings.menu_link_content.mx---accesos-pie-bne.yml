@@ -1,0 +1,18 @@
+uuid: d4b5120e-37ce-43a6-be9c-094b860304c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx---accesos-pie-bne
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.mx---accesos-pie-bne
+target_entity_type_id: menu_link_content
+target_bundle: mx---accesos-pie-bne
+default_langcode: site_default
+language_alterable: true

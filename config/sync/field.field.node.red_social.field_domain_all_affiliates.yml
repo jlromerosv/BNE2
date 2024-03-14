@@ -1,0 +1,21 @@
+uuid: 7b1245aa-6be9-4805-ab24-562be5bb629b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.red_social
+id: node.red_social.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: red_social
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

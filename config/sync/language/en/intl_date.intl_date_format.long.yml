@@ -1,0 +1,2 @@
+label: 'Default long date'
+pattern: 'eeee, MMMM dd, yyyy - HH:mm'

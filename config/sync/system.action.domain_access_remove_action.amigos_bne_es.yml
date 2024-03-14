@@ -1,0 +1,14 @@
+uuid: 94f369ae-18ce-40af-8339-c3ad0836f304
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.amigos_bne_es
+  module:
+    - domain_access
+id: domain_access_remove_action.amigos_bne_es
+label: 'Remove selected content from the Fundación de Amigos de la BNE domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id: amigos_bne_es

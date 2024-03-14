@@ -1,0 +1,25 @@
+uuid: b4dce110-6313-4f8c-a071-0bba503a7ff5
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:html:e8f52a25-255e-4e17-b82a-a985b11523fe'
+  module:
+    - block_content
+  theme:
+    - bne_theme
+id: bne_theme_buscador
+theme: bne_theme
+region: header_site_2_2
+weight: -16
+provider: null
+plugin: 'block_content:e8f52a25-255e-4e17-b82a-a985b11523fe'
+settings:
+  id: 'block_content:e8f52a25-255e-4e17-b82a-a985b11523fe'
+  label: Buscador
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: bdffcbb5-9250-4493-bd6c-c00ed4ec8c35
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regimen_de_promocion_de_inmbuebl
+id: taxonomy_term.regimen_de_promocion_de_inmbuebl.name
+field_name: name
+entity_type: taxonomy_term
+bundle: regimen_de_promocion_de_inmbuebl
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

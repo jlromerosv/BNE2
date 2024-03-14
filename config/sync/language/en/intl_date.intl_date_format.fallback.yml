@@ -1,0 +1,2 @@
+label: 'Fallback date format'
+pattern: 'eee, MM/dd/yyyy - HH:mm'

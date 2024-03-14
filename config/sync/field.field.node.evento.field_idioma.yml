@@ -1,0 +1,29 @@
+uuid: 6ef5cba3-3d1d-4a10-8800-5ad34c23e869
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_idioma
+    - node.type.evento
+    - taxonomy.vocabulary.idioma
+id: node.evento.field_idioma
+field_name: field_idioma
+entity_type: node
+bundle: evento
+label: Idioma
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      idioma: idioma
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

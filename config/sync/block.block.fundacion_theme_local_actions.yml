@@ -1,0 +1,20 @@
+uuid: b07754b1-409e-454f-88ad-c326eeabc3c5
+langcode: es
+status: true
+dependencies:
+  theme:
+    - fundacion_theme
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: fundacion_theme_local_actions
+theme: fundacion_theme
+region: pre_content
+weight: -59
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de la administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

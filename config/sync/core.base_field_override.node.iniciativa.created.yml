@@ -1,0 +1,18 @@
+uuid: 9f72c4ec-7d65-4bf2-ba21-89295906801e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iniciativa
+id: node.iniciativa.created
+field_name: created
+entity_type: node
+bundle: iniciativa
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

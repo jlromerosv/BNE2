@@ -1,0 +1,55 @@
+uuid: 9ab968e4-1df0-4d0d-ad33-1b75c3bb2596
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.entidad_referencia_.feeds_item
+    - field.field.node.entidad_referencia_.field_domain_access
+    - field.field.node.entidad_referencia_.field_domain_all_affiliates
+    - field.field.node.entidad_referencia_.field_domain_source
+    - field.field.node.entidad_referencia_.field_enlace
+    - field.field.node.entidad_referencia_.field_id_externo
+    - field.field.node.entidad_referencia_.field_imagen_representativa
+    - field.field.node.entidad_referencia_.field_mostrar_bloque_fabne
+    - node.type.entidad_referencia_
+  module:
+    - link
+    - user
+id: node.entidad_referencia_.teaser
+targetEntityType: node
+bundle: entidad_referencia_
+mode: teaser
+content:
+  field_enlace:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_imagen_representativa:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: octavo_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  feeds_item: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_id_externo: true
+  field_mostrar_bloque_fabne: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

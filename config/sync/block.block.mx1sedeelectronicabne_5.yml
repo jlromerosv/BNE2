@@ -1,0 +1,37 @@
+uuid: 567938a7-d350-415c-ba98-ebb5bcce893b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---sede-electronica-bne
+  module:
+    - block_class
+    - system
+  theme:
+    - sede_theme
+third_party_settings:
+  block_class:
+    classes: menu-sidebar
+id: mx1sedeelectronicabne_5
+theme: sede_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:mx1---sede-electronica-bne'
+settings:
+  id: 'system_menu_block:mx1---sede-electronica-bne'
+  label: 'MX1 - Sede electrónica BNE'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/31460

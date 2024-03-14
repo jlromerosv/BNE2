@@ -1,0 +1,10 @@
+name: 'Tipus (taxonomia)'
+url_alias: tipus_name
+widget:
+  config:
+    reset_text: 'Mostrar tot'
+    soft_limit_settings:
+      show_less_label: 'Xou less'
+      show_more_label: 'Xou habiti'
+empty_behavior:
+  text: 'No hi ha facetes de tipus (taxonomia)'

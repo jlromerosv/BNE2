@@ -1,0 +1,8 @@
+uuid: 565cbd6b-488c-4baf-a5d8-b5ccb788a940
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Estado de promoción de inmuebles'
+vid: estado_promocion_inmuebles
+description: ''
+weight: 0

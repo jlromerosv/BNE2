@@ -1,0 +1,14 @@
+uuid: 1344fce9-f307-4d6d-b2d2-1be877800e34
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_galeria_de_documentos
+id: taxonomy_vocabulary_tipo_de_galeria_de_documentos
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_galeria_de_documentos
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

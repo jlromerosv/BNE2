@@ -1,0 +1,18 @@
+uuid: b57af9d8-edc8-4b80-b73f-8e65b34144b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_convocatoria
+id: taxonomy_term.tipo_convocatoria.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_convocatoria
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

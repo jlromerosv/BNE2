@@ -1,0 +1,20 @@
+uuid: b2b2d67f-1f17-472a-a322-56ee200c5983
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visualizacion_fecha_evento
+  module:
+    - text
+id: taxonomy_term.visualizacion_fecha_evento.description
+field_name: description
+entity_type: taxonomy_term
+bundle: visualizacion_fecha_evento
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

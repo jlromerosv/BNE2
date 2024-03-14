@@ -1,0 +1,30 @@
+// Codigo CSS para aplicar a las Alertas ( el "display: block !important;" no es necesario, pero si quitar el display none que puso Dani
+// que no encuentro donde se esta aplicando... (en el theme master no está "creo")
+.ps-alertas-markup {
+    display: block !important;
+    .views-row{
+       // display: none;
+    }
+} 
+
+
+// RRSS -- Bloque Compartir en mis redes sociales
+
+.ps-rrss-share{
+    .view-header{
+        margin-bottom: 1em;
+        .view-content{
+            padding: 0;
+            display: flex !important;
+        }
+    }
+    .view-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        padding: 10px 0;
+
+        
+    }
+}

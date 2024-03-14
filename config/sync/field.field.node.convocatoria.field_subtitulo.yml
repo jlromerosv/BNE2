@@ -1,0 +1,19 @@
+uuid: 9a936d23-4695-48a1-ab6e-e99a00737ab2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitulo
+    - node.type.convocatoria
+id: node.convocatoria.field_subtitulo
+field_name: field_subtitulo
+entity_type: node
+bundle: convocatoria
+label: Subtítulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,34 @@
+uuid: 49469a3b-4c50-4fb7-bb20-72892b974867
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colectivo
+    - node.type.evento
+    - taxonomy.vocabulary.colectivo
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.evento.field_colectivo
+field_name: field_colectivo
+entity_type: node
+bundle: evento
+label: 'Tipo de público'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      colectivo: colectivo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

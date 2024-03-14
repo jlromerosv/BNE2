@@ -1,0 +1,38 @@
+uuid: 23eb3cec-a1e6-4e64-bb5d-1b1eb3cdb600
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icono_svg_
+    - node.type.icono_svg_
+  module:
+    - image
+id: node.icono_svg_.field_icono_svg_
+field_name: field_icono_svg_
+entity_type: node
+bundle: icono_svg_
+label: 'Icono (SVG)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: iconos-svg
+  file_extensions: ''
+  max_filesize: '1 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

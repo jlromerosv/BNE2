@@ -1,0 +1,18 @@
+uuid: 5cb492d7-74e0-4bac-b340-666ed509be1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autor
+id: node.autor.created
+field_name: created
+entity_type: node
+bundle: autor
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,20 @@
+uuid: fca4f6db-7ff2-41be-b0aa-efae2321e4ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace
+  module:
+    - path
+id: node.enlace.path
+field_name: path
+entity_type: node
+bundle: enlace
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

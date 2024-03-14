@@ -1,0 +1,22 @@
+uuid: 225f97e6-c00f-4a42-8e7a-36712619570d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+id: node.pagina_avanzada.promote
+field_name: promote
+entity_type: node
+bundle: pagina_avanzada
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

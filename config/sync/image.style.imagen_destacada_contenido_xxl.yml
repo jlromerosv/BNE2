@@ -1,0 +1,15 @@
+uuid: dc5efa3a-3818-4c0f-b68c-d0fcbb5e91f7
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_destacada_contenido_xxl
+label: 'Imagen Destacada Contenido XXL'
+effects:
+  aa0592d7-c83d-4b02-8d06-bc77b93a5c60:
+    uuid: aa0592d7-c83d-4b02-8d06-bc77b93a5c60
+    id: image_scale
+    weight: 1
+    data:
+      width: 1280
+      height: null
+      upscale: false

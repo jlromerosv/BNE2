@@ -1,0 +1,22 @@
+uuid: f0bb8f8e-0433-4941-a22f-f2f45ab5c866
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: convocatorias
+label: Convocatorias
+type: 'canonical_entities:node'
+pattern: '/convocatorias/[node:title]'
+selection_criteria:
+  7cc02936-8e13-45dd-9621-da69f94f1151:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7cc02936-8e13-45dd-9621-da69f94f1151
+    context_mapping:
+      node: node
+    bundles:
+      convocatoria: convocatoria
+selection_logic: and
+weight: -5
+relationships: {  }

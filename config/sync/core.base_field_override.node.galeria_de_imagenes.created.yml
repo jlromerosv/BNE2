@@ -1,0 +1,18 @@
+uuid: c591ec95-b7ac-4115-96bb-4d2f048a0ebf
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.created
+field_name: created
+entity_type: node
+bundle: galeria_de_imagenes
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

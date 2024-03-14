@@ -1,0 +1,19 @@
+uuid: 5b6d9d1e-7896-4c0b-9632-93fd2d26f627
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitulo
+    - node.type.contenido_generico
+id: node.contenido_generico.field_subtitulo
+field_name: field_subtitulo
+entity_type: node
+bundle: contenido_generico
+label: Subtítulo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 2ea3894e-e7bd-441c-8f20-56a8b5d2ccb1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_responsable_y_cargo
+    - node.type.entidad
+  module:
+    - text
+id: node.entidad.field_responsable_y_cargo
+field_name: field_responsable_y_cargo
+entity_type: node
+bundle: entidad
+label: 'Responsable y cargo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

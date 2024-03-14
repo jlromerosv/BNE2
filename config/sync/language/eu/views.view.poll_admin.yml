@@ -1,0 +1,49 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ezarri
+          reset_button_label: Garbitu
+          sort_asc_label: Goraka
+          sort_desc_label: Beheraka
+      pager:
+        options:
+          tags:
+            previous: '‹ aurrekoa'
+            next: 'hurrengoa ›'
+            first: '« lehenengoa'
+            last: 'azkena »'
+          expose:
+            items_per_page_label: 'Elementuak orriak'
+            items_per_page_options_all_label: '- Dena -'
+            offset_label: Desplazamendua
+      fields:
+        question:
+          label: Galdera
+          separator: ', '
+        status_with_runtime:
+          label: Aktiboa
+        anonymous_vote_allow:
+          separator: ', '
+        created:
+          label: Sortua
+        votes:
+          label: 'Botoak osotara'
+      filters:
+        question:
+          expose:
+            label: Galdera
+        status:
+          expose:
+            label: Egiazkoa
+          group_info:
+            label: Aktiboa
+            group_items:
+              1:
+                title: Bai
+              2:
+                title: Ez
+      title: Inkesta
+  page_1:
+    display_title: Orria

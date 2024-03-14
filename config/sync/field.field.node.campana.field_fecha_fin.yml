@@ -1,0 +1,21 @@
+uuid: 2e54dada-0a7e-4ca7-9d6a-7f3bc9ad1ee1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_fin
+    - node.type.campana
+  module:
+    - datetime
+id: node.campana.field_fecha_fin
+field_name: field_fecha_fin
+entity_type: node
+bundle: campana
+label: 'Fecha de fin'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

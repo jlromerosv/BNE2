@@ -1,0 +1,7 @@
+uuid: 6e78f57b-42a0-466c-95d8-7c7f786aefe5
+langcode: es
+status: false
+dependencies: {  }
+formId: node_ubicacion_form
+captchaType: default
+label: node_ubicacion_form

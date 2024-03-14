@@ -1,0 +1,34 @@
+uuid: f3dfe258-4780-42c8-85fa-d550fb320cce
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo
+    - node.type.iniciativa
+    - taxonomy.vocabulary.tipo_iniciativa
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.iniciativa.field_tipo
+field_name: field_tipo
+entity_type: node
+bundle: iniciativa
+label: 'Tipo de iniciativa'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_iniciativa: tipo_iniciativa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

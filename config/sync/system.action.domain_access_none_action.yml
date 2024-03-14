@@ -1,0 +1,14 @@
+uuid: fc11ef8b-c742-4651-ba8a-ae8c27004ee9
+langcode: es
+status: true
+dependencies:
+  module:
+    - domain_access
+_core:
+  default_config_hash: xySFUYYaxq0BLj0-eAesthacXbTWPDJhR-SnqNhvhSg
+id: domain_access_none_action
+label: 'Quitar la asignación del contenido a Todos los dominios'
+type: node
+plugin: domain_access_none_action
+configuration:
+  domain_id: ''

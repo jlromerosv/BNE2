@@ -1,0 +1,18 @@
+uuid: 47280304-cbb4-418e-b046-678a41579a1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.bolsa_de_trabajo
+target_entity_type_id: node
+target_bundle: bolsa_de_trabajo
+default_langcode: site_default
+language_alterable: false

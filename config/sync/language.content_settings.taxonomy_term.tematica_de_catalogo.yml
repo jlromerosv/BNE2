@@ -1,0 +1,18 @@
+uuid: baa1437e-906f-46f8-bcab-754594ce1857
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tematica_de_catalogo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tematica_de_catalogo
+target_entity_type_id: taxonomy_term
+target_bundle: tematica_de_catalogo
+default_langcode: site_default
+language_alterable: false

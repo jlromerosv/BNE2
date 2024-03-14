@@ -1,0 +1,28 @@
+uuid: 8234d7e9-61e4-4edc-8e78-fcaa4cda43df
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - media.type.imagen
+    - node.type.entrada_de_blog
+id: node.entrada_de_blog.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: entrada_de_blog
+label: Imágenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

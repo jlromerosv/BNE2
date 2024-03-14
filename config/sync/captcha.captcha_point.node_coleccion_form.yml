@@ -1,0 +1,7 @@
+uuid: e0df6508-d712-46d0-93be-506e79b4f153
+langcode: es
+status: false
+dependencies: {  }
+formId: node_coleccion_form
+captchaType: default
+label: node_coleccion_form

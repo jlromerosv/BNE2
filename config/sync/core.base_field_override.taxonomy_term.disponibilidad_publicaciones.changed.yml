@@ -1,0 +1,18 @@
+uuid: c9523d85-04fb-448c-817f-381fc18a04bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.disponibilidad_publicaciones
+id: taxonomy_term.disponibilidad_publicaciones.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: disponibilidad_publicaciones
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

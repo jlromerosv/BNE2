@@ -1,0 +1,34 @@
+uuid: f7ed4cbb-b05b-435a-9930-6c1be14f0ed6
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.desarrollo_bne_pulsia_es
+    - field.storage.node.field_domain_source
+    - node.type.autor
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.autor.field_domain_source
+field_name: field_domain_source
+entity_type: node
+bundle: autor
+label: 'Domain Source'
+description: 'Select the canonical domain for this content.'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 454d93e7-e493-4801-9dc6-882b2b2ad9ba
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

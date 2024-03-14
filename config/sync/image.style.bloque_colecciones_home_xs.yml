@@ -1,0 +1,25 @@
+uuid: 8e4943af-27b9-4b62-985e-08f89c489180
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.detalle_colecciones
+  module:
+    - crop
+name: bloque_colecciones_home_xs
+label: 'Bloque colecciones home XS'
+effects:
+  301df1bb-fcd2-4062-93a6-c6d81095c349:
+    uuid: 301df1bb-fcd2-4062-93a6-c6d81095c349
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: detalle_colecciones
+  3e086e3c-7107-4b94-a7ae-546aba381734:
+    uuid: 3e086e3c-7107-4b94-a7ae-546aba381734
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 300
+      height: 150
+      anchor: center-center

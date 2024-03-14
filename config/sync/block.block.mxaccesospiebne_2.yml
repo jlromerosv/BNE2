@@ -1,0 +1,25 @@
+uuid: a3f3fbab-3e40-4b63-a717-73616e89930a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx---accesos-pie-bne
+  module:
+    - system
+  theme:
+    - bne_theme
+id: mxaccesospiebne_2
+theme: bne_theme
+region: footer_central_2_2
+weight: 0
+provider: null
+plugin: 'system_menu_block:mx---accesos-pie-bne'
+settings:
+  id: 'system_menu_block:mx---accesos-pie-bne'
+  label: 'MX - Accesos pie BNE'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 9fbf16d3-5d45-47b9-b1e7-1059451a2485
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iniciativa
+  module:
+    - options
+id: node.iniciativa.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: iniciativa
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,155 @@
+uuid: ea142b1b-fe37-49cc-afce-bd09b25a37af
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.area_de_transparencia.description
+    - field.field.taxonomy_term.area_de_transparencia.domain_access
+    - field.field.taxonomy_term.area_de_transparencia.field_destacados_manuales
+    - field.field.taxonomy_term.area_de_transparencia.field_grupo_de_temas
+    - taxonomy.vocabulary.area_de_transparencia
+    - views.view.contenido_de_la_taxonomia
+    - views.view.destacados_manuales_de_seccion_de_taxonomia_2_
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          bc90b5bc-26c6-472d-8059-f19661140e6a:
+            uuid: bc90b5bc-26c6-472d-8059-f19661140e6a
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:area_de_transparencia:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          648049c1-dc86-4b88-82f9-b72ce26263b3:
+            uuid: 648049c1-dc86-4b88-82f9-b72ce26263b3
+            region: content
+            configuration:
+              id: 'views_block:destacados_manuales_de_seccion_de_taxonomia_2_-block_3'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          481d1ef6-418e-4d32-bdb0-537fc29a1785:
+            uuid: 481d1ef6-418e-4d32-bdb0-537fc29a1785
+            region: content
+            configuration:
+              id: 'views_block:destacados_manuales_de_seccion_de_taxonomia_2_-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          aa653305-69ef-4af0-b7d9-cc0bf8716b4e:
+            uuid: aa653305-69ef-4af0-b7d9-cc0bf8716b4e
+            region: content
+            configuration:
+              id: 'views_block:contenido_de_la_taxonomia-block_8'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 3
+            additional: {  }
+          b096fcf6-0e1b-4359-9cab-35354da84e37:
+            uuid: b096fcf6-0e1b-4359-9cab-35354da84e37
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:area_de_transparencia:field_grupo_de_temas'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          bbe01b1f-62ec-490a-94dd-e48392b38675:
+            uuid: bbe01b1f-62ec-490a-94dd-e48392b38675
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:area_de_transparencia:domain_access'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.area_de_transparencia.default
+targetEntityType: taxonomy_term
+bundle: area_de_transparencia
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  domain_access:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_destacados_manuales:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_grupo_de_temas:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

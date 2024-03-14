@@ -1,0 +1,20 @@
+uuid: 4389bc51-e808-4af6-97d6-d21c17ab7136
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visualizacion_fecha_evento
+  module:
+    - path
+id: taxonomy_term.visualizacion_fecha_evento.path
+field_name: path
+entity_type: taxonomy_term
+bundle: visualizacion_fecha_evento
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

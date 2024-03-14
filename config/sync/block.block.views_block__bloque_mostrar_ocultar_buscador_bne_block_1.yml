@@ -1,0 +1,28 @@
+uuid: 6a86d360-59f0-425f-8a4b-c48df8e63477
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloque_mostrar_ocultar_buscador_bne
+  module:
+    - block_class
+    - views
+  theme:
+    - bne_theme
+third_party_settings:
+  block_class:
+    classes: ps-mostrar-ocultar-buscador
+id: views_block__bloque_mostrar_ocultar_buscador_bne_block_1
+theme: bne_theme
+region: header_site_2_2
+weight: 0
+provider: null
+plugin: 'views_block:bloque_mostrar_ocultar_buscador_bne-block_1'
+settings:
+  id: 'views_block:bloque_mostrar_ocultar_buscador_bne-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

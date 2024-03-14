@@ -1,0 +1,10 @@
+uuid: a2262b78-3c8f-4496-9a47-c4b88dd77ea1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.autor_nombre_y_fecha_
+label: 'Autor ( nombre y fecha)'
+targetEntityType: node
+cache: true

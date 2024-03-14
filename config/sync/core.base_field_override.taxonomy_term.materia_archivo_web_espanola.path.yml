@@ -1,0 +1,20 @@
+uuid: ac897d73-5bd8-4398-aca4-44e01707921f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.materia_archivo_web_espanola
+  module:
+    - path
+id: taxonomy_term.materia_archivo_web_espanola.path
+field_name: path
+entity_type: taxonomy_term
+bundle: materia_archivo_web_espanola
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

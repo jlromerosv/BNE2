@@ -1,0 +1,20 @@
+uuid: 7d623dc6-0231-4894-9c11-ada1d9695f24
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iniciativa
+  module:
+    - path
+id: node.iniciativa.path
+field_name: path
+entity_type: node
+bundle: iniciativa
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

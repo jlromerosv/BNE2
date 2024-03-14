@@ -1,0 +1,14 @@
+uuid: 5ea76d31-86ef-426d-a34d-5f0ec19a6b4b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tematica_de_catalogo
+id: taxonomy_vocabulary_tematica_de_catalogo
+entity_type_id: taxonomy_vocabulary
+entity_id: tematica_de_catalogo
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

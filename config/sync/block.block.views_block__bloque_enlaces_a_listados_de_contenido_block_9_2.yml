@@ -1,0 +1,37 @@
+uuid: b86a5f1b-5a86-4cb0-8d6c-608fa5dc4df1
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloque_enlaces_a_listados_de_contenido
+  module:
+    - node
+    - views
+  theme:
+    - fundacion_theme
+id: views_block__bloque_enlaces_a_listados_de_contenido_block_9_2
+theme: fundacion_theme
+region: sidebar_first
+weight: -29
+provider: null
+plugin: 'views_block:bloque_enlaces_a_listados_de_contenido-block_9'
+settings:
+  id: 'views_block:bloque_enlaces_a_listados_de_contenido-block_9'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      campana: campana
+      evento: evento

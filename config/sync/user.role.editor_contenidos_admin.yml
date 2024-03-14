@@ -1,0 +1,18 @@
+uuid: 490d7fc5-5021-4caa-bdd9-43283cab6dbb
+langcode: es
+status: true
+dependencies:
+  config:
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+id: editor_contenidos_admin
+label: 'x_Editor contenidos admin'
+weight: -3
+is_admin: null
+permissions:
+  - 'use editorial transition conceder_publicacion'
+  - 'use editorial transition despublicar'
+  - 'use editorial transition publish'
+  - 'use editorial transition rechazar_publicacion'
+  - 'use editorial transition republicar'

@@ -1,0 +1,12 @@
+uuid: 8edc1975-a0c3-434d-ad5d-6c0482ed9cc0
+langcode: es
+status: true
+dependencies: {  }
+id: cita_50_centrada
+label: 'Cita 50% Centrada Borde Izquierda'
+image: ''
+description: ''
+html:
+  value: "<div class=\"template-cita-50-center\" style=\"width: 50%; margin-left: auto; margin-right: auto\">\r\n<div class=\"colum\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\">&nbsp;</div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: root_formato_de_texto
+weight: -2

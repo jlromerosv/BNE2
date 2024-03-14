@@ -1,0 +1,18 @@
+uuid: 53e9990e-ef2a-40cf-803e-5db5331e10c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sesion_de_actividad
+id: node.sesion_de_actividad.title
+field_name: title
+entity_type: node
+bundle: sesion_de_actividad
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

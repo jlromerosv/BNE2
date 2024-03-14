@@ -1,0 +1,73 @@
+uuid: f3b6882e-c85c-4c52-b6f1-17f98c8cb5f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_vinculados
+    - node.type.autor
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.coleccion
+    - node.type.contenido_generico
+    - node.type.convocatoria
+    - node.type.dossier
+    - node.type.enlace
+    - node.type.entidad
+    - node.type.entidad_referencia_
+    - node.type.entrada_de_blog
+    - node.type.evento
+    - node.type.faq
+    - node.type.iniciativa
+    - node.type.lugar
+    - node.type.noticia
+    - node.type.obra
+    - node.type.pagina_basica
+    - node.type.pagina_personalizada
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.referencias_bibliograficas
+    - node.type.seccion_nivel_1_estandar
+    - node.type.servicio
+id: node.evento.field_contenidos_vinculados
+field_name: field_contenidos_vinculados
+entity_type: node
+bundle: evento
+label: 'Te puede interesar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      autor: autor
+      campana: campana
+      catalogo: catalogo
+      coleccion: coleccion
+      contenido_generico: contenido_generico
+      convocatoria: convocatoria
+      dossier: dossier
+      enlace: enlace
+      entidad: entidad
+      entidad_referencia_: entidad_referencia_
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      pagina_basica: pagina_basica
+      iniciativa: iniciativa
+      lugar: lugar
+      noticia: noticia
+      obra: obra
+      persona: persona
+      faq: faq
+      publicacion: publicacion
+      referencias_bibliograficas: referencias_bibliograficas
+      pagina_personalizada: pagina_personalizada
+      seccion_nivel_1_estandar: seccion_nivel_1_estandar
+      servicio: servicio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: autor
+field_type: entity_reference

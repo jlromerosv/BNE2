@@ -1,0 +1,21 @@
+uuid: eae0429d-399a-418c-b18d-0243c1a42f07
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rede
+    - node.type.pagina_personalizada
+id: node.pagina_personalizada.field_rede
+field_name: field_rede
+entity_type: node
+bundle: pagina_personalizada
+label: 'Redes Sociales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: 72290f8f-7a9b-47cc-a88d-42a2b56ee32a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coleccion
+    - node.type.coleccion
+id: node.coleccion.field_coleccion
+field_name: field_coleccion
+entity_type: node
+bundle: coleccion
+label: Subcolecciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      coleccion: coleccion
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

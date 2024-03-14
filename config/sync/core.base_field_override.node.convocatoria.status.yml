@@ -1,0 +1,22 @@
+uuid: 4211996d-fa41-41b9-ba37-bf900125c721
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.convocatoria
+id: node.convocatoria.status
+field_name: status
+entity_type: node
+bundle: convocatoria
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

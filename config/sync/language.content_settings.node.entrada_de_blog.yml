@@ -1,0 +1,18 @@
+uuid: a15b32e2-f9c5-4ffa-99fa-715fa1c03e7f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entrada_de_blog
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.entrada_de_blog
+target_entity_type_id: node
+target_bundle: entrada_de_blog
+default_langcode: site_default
+language_alterable: false

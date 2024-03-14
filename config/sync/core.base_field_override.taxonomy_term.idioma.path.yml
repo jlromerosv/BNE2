@@ -1,0 +1,20 @@
+uuid: 87069d7a-9555-4990-ac91-6a8419e6d05b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.idioma
+  module:
+    - path
+id: taxonomy_term.idioma.path
+field_name: path
+entity_type: taxonomy_term
+bundle: idioma
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

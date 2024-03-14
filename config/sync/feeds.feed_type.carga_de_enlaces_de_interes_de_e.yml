@@ -1,0 +1,116 @@
+uuid: 86a7ebb8-8f03-494e-8bc2-117306d5d392
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.enlace.created
+    - core.base_field_override.node.enlace.status
+    - core.base_field_override.node.enlace.title
+    - field.field.node.enlace.field_domain_access
+    - field.field.node.enlace.field_enlace
+    - field.field.node.enlace.field_tipo
+    - node.type.enlace
+  module:
+    - node
+label: 'Carga de Enlaces de Interés de Excel'
+id: carga_de_enlaces_de_interes_de_e
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: enlace
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  categoria:
+    value: Categoria
+    label: Categoria
+    machine_name: categoria
+    type: csv
+  enlace:
+    value: Enlace
+    label: Enlace
+    machine_name: enlace
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  publicado:
+    value: Publicado
+    label: Publicado
+    machine_name: publicado
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_tipo
+    map:
+      target_id: categoria
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_enlace
+    map:
+      uri: enlace
+      title: ''
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: status
+    map:
+      value: publicado
+    settings:
+      language: null

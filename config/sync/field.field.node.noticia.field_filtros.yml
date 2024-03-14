@@ -1,0 +1,53 @@
+uuid: e4e8affa-897d-40b3-9461-6fbf8c1d831d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_filtros
+    - node.type.noticia
+    - taxonomy.vocabulary.area_de_transparencia
+    - taxonomy.vocabulary.area_organizativa
+    - taxonomy.vocabulary.area_tematica
+    - taxonomy.vocabulary.categorias_evento
+    - taxonomy.vocabulary.colectivo
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+    - taxonomy.vocabulary.tipo_convocatoria
+    - taxonomy.vocabulary.tipo_de_documento_institucional
+    - taxonomy.vocabulary.tipo_entidad
+    - taxonomy.vocabulary.tipo_evento
+    - taxonomy.vocabulary.tipo_galeria
+    - taxonomy.vocabulary.tipo_iniciativa
+    - taxonomy.vocabulary.tipo_tramite
+id: node.noticia.field_filtros
+field_name: field_filtros
+entity_type: node
+bundle: noticia
+label: Filtros
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorias_evento: categorias_evento
+      colectivo: colectivo
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+      tipo_convocatoria: tipo_convocatoria
+      tipo_de_documento_institucional: tipo_de_documento_institucional
+      tipo_entidad: tipo_entidad
+      tipo_evento: tipo_evento
+      tipo_galeria: tipo_galeria
+      tipo_iniciativa: tipo_iniciativa
+      tipo_tramite: tipo_tramite
+      area_organizativa: area_organizativa
+      area_de_transparencia: area_de_transparencia
+      area_tematica: area_tematica
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: categorias_evento
+field_type: entity_reference

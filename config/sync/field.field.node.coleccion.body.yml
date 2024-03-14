@@ -1,0 +1,31 @@
+uuid: 844b5644-91e5-462b-9def-abcf861af172
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.coleccion
+  module:
+    - linkchecker
+    - text
+    - tmgmt_content
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+  tmgmt_content:
+    excluded: false
+id: node.coleccion.body
+field_name: body
+entity_type: node
+bundle: coleccion
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

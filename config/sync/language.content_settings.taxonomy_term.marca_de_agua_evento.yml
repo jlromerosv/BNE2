@@ -1,0 +1,18 @@
+uuid: fdbe4f8e-2b72-4b83-91c0-3c7a2ef24ac2
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.marca_de_agua_evento
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.marca_de_agua_evento
+target_entity_type_id: taxonomy_term
+target_bundle: marca_de_agua_evento
+default_langcode: site_default
+language_alterable: true

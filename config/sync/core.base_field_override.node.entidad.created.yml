@@ -1,0 +1,18 @@
+uuid: f056ec50-675e-4915-9cfe-17cde0d211cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad
+id: node.entidad.created
+field_name: created
+entity_type: node
+bundle: entidad
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

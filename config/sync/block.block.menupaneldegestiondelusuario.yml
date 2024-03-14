@@ -1,0 +1,34 @@
+uuid: 7d5a3b31-8fac-49c5-87de-a43b8f4354c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-de-gestion-del-usuario
+  module:
+    - block_class
+    - system
+  theme:
+    - bne_theme
+third_party_settings:
+  block_class:
+    classes: ps-panel-gestion-usuario
+id: menupaneldegestiondelusuario
+theme: bne_theme
+region: content
+weight: -62
+provider: null
+plugin: 'system_menu_block:menu-de-gestion-del-usuario'
+settings:
+  id: 'system_menu_block:menu-de-gestion-del-usuario'
+  label: 'Menú Panel de Gestión del Usuario'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/user/*'

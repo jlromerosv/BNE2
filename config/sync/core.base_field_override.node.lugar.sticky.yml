@@ -1,0 +1,22 @@
+uuid: 5d5b34f3-f14f-4986-a2a3-7e8913478128
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.lugar
+id: node.lugar.sticky
+field_name: sticky
+entity_type: node
+bundle: lugar
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

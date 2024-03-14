@@ -1,0 +1,15 @@
+uuid: 13b43d04-7e63-4d5d-b5e8-da1eaead3ba7
+langcode: es
+status: true
+dependencies: {  }
+name: cuarto_de_ancho
+label: 'Cuarto de ancho'
+effects:
+  62b6db41-a0e8-4895-b1e0-d52260c9320b:
+    uuid: 62b6db41-a0e8-4895-b1e0-d52260c9320b
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: false

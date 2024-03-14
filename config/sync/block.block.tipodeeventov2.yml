@@ -1,0 +1,32 @@
+uuid: 64eb1910-a0ac-4470-8dd6-ed91860221b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipo_de_evento_v2
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: tipodeeventov2
+theme: bne_theme
+region: sidebar_first
+weight: -41
+provider: null
+plugin: 'facet_block:tipo_de_evento_v2'
+settings:
+  id: 'facet_block:tipo_de_evento_v2'
+  label: 'Tipo de evento v2'
+  label_display: '0'
+  provider: facets
+  block_id: tipodeeventov2
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/22642

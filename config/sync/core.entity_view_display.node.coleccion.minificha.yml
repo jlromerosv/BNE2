@@ -1,0 +1,100 @@
+uuid: 79cd3021-7924-4643-827b-b7bba5696d14
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.minificha
+    - field.field.node.coleccion.body
+    - field.field.node.coleccion.feeds_item
+    - field.field.node.coleccion.field_alias_tipo_contenido
+    - field.field.node.coleccion.field_archivos
+    - field.field.node.coleccion.field_area_tematica
+    - field.field.node.coleccion.field_audios
+    - field.field.node.coleccion.field_bloquear_la_traduccion_
+    - field.field.node.coleccion.field_catalogos
+    - field.field.node.coleccion.field_coleccion
+    - field.field.node.coleccion.field_contenidos_vinculados
+    - field.field.node.coleccion.field_domain_access
+    - field.field.node.coleccion.field_domain_all_affiliates
+    - field.field.node.coleccion.field_domain_source
+    - field.field.node.coleccion.field_enlace
+    - field.field.node.coleccion.field_enlaces
+    - field.field.node.coleccion.field_enlaces_otros_recursos
+    - field.field.node.coleccion.field_etiqueta_blog
+    - field.field.node.coleccion.field_etiquetas_busqueda
+    - field.field.node.coleccion.field_galeria_de_documentos
+    - field.field.node.coleccion.field_galeria_de_imagenes
+    - field.field.node.coleccion.field_id_externo
+    - field.field.node.coleccion.field_iframe
+    - field.field.node.coleccion.field_imagen_destacada
+    - field.field.node.coleccion.field_imagenes
+    - field.field.node.coleccion.field_lugares
+    - field.field.node.coleccion.field_meta_tags
+    - field.field.node.coleccion.field_obras
+    - field.field.node.coleccion.field_orden
+    - field.field.node.coleccion.field_otros_recursos
+    - field.field.node.coleccion.field_publicaciones
+    - field.field.node.coleccion.field_requisitos
+    - field.field.node.coleccion.field_tipos
+    - field.field.node.coleccion.field_videos
+    - field.field.node.coleccion.field_yoast_seo
+    - node.type.coleccion
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.coleccion.minificha
+targetEntityType: node
+bundle: coleccion
+mode: minificha
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_tematica: true
+  field_audios: true
+  field_bloquear_la_traduccion_: true
+  field_catalogos: true
+  field_coleccion: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_enlaces: true
+  field_enlaces_otros_recursos: true
+  field_etiqueta_blog: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_documentos: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_lugares: true
+  field_meta_tags: true
+  field_obras: true
+  field_orden: true
+  field_otros_recursos: true
+  field_publicaciones: true
+  field_requisitos: true
+  field_tipos: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

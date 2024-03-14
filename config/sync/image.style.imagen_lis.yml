@@ -1,0 +1,15 @@
+uuid: aad5ebc8-eae2-4416-888b-41f038c7c088
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_lis
+label: 'Imagen listado publicaciones'
+effects:
+  a24d18df-d8af-4c49-9aff-67ac336e5995:
+    uuid: a24d18df-d8af-4c49-9aff-67ac336e5995
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 352
+      height: 507
+      anchor: center-center

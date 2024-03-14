@@ -1,0 +1,24 @@
+uuid: dc34ecdc-be87-4b7a-9d41-ef6a2c1c0f32
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_precio_oferta_euros
+field_name: field_precio_oferta_euros
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

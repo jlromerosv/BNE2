@@ -1,0 +1,3467 @@
+label: 'Bilatzaileak edukia testu osoa'
+description: 'Baino ez du erakusten duten dokumentuak berariaz. Ez du hautatutako ez '
+display:
+  default:
+    display_title: Masterra
+    display_options:
+      title: 'Berri-bilatzailea testu osoa'
+      fields:
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              field_autor_entrada_blog:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+              field_etiquetas_busqueda_1:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez da emaitzarik aurkitu.'
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      use_more_text: 'Gehiago ikusi'
+  block_1:
+    display_title: 'Jabari zikloak'
+    display_options:
+      title: Deialdiak
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez dago gaur egun indarrean dauden deialdiak. Desaktibatu azken egunaren aurreko deialdietako ikusteko iragazkia'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        search_api_language:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: Arte
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_10:
+    display_title: 'Domeinuaren poltsak'
+    display_options:
+      title: Lan-poltsak
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez da emaitzarik aurkitu.'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_11:
+    display_title: 'Domeinuaren bloga'
+    display_options:
+      title: Bloga
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_autor_entrada_blog:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        created:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categoria:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              field_autor_entrada_blog:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+              field_etiquetas_busqueda_1:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        field_autor_entrada_blog:
+          admin_label: null
+          expose:
+            label: Egilea
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_etiquetas_busqueda_1:
+          admin_label: null
+          expose:
+            label: Etiketa
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: Arte
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_blog:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_12:
+    display_title: Gardentasuna
+    display_options:
+      title: null
+      fields:
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          tags:
+            next: 'Honako hau'
+            previous: Aurreko
+            first: Lehenengoa
+            last: Azken
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      empty:
+        view:
+          admin_label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        name_8:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        search_api_language:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_13:
+    display_title: 'Domeinuaren dokumentuak'
+    display_options:
+      title: Berriak
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez da emaitzarik aurkitu'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        bundle:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        domain_access_1:
+          admin_label: null
+          expose:
+            description: '[current-domain machine-name]:'
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        domain_access_1_1:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_14:
+    display_title: 'Bloga taxonomia'
+    display_options:
+      title: Bloga
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categoria:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+          separator: ''
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_autor_entrada_blog:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        created:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          tags:
+            next: 'Honako hau'
+            previous: Aurreko
+            first: Lehenengoa
+            last: Azken
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez da emaitzarik aurkitu'
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      arguments:
+        field_texto_url:
+          admin_label: null
+          title: null
+      filters:
+        field_autor_entrada_blog:
+          admin_label: null
+          expose:
+            label: Egilea
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_etiquetas_busqueda_1:
+          admin_label: null
+          expose:
+            label: Etiketa
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: ''
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_15:
+    display_title: 'V2 deialdiak, herriko jabari'
+    display_options:
+      title: Deialdiak
+      pager:
+        options:
+          tags:
+            next: 'Noiz arte'
+            previous: Aurreko
+            first: Lehenengoa
+            last: Azken
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: Arte
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_16:
+    display_title: Hirigintza-ekimenak
+    display_options:
+      title: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez da emaitzarik aurkitu'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_17:
+    display_title: 'Argazki bilduma'
+    display_options:
+      title: 'Argazki bilduma'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        field_fecha_galeria:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: Arte
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_18:
+    display_title: 'Domeinuaren dossierrak'
+    display_options:
+      title: Dossierrak
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+          tags:
+            previous: ''
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: Arte
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_19:
+    display_title: 'Domeinuaren argitalpenak zerrenda'
+    display_options:
+      title: Argitalpenak
+      fields:
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez da emaitzarik aurkitu'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_2:
+    display_title: 'Domeinuaren loturak'
+    display_options:
+      title: Loturak
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez da emaitzarik aurkitu'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_20:
+    display_title: 'V2 direktorioa'
+    display_options:
+      title: 'Giza baliabideetako zuzendaritza'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        title:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: 'SARTU BILAKETA-HITZ...'
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_language:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_telefonos:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_21:
+    display_title: 'Jabari periodicomania bloga'
+    display_options:
+      title: ''
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_autor_entrada_blog:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        created:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categoria:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          expose:
+            items_per_page_label: ''
+            items_per_page_options_all_label: ''
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        field_etiquetas_busqueda_1:
+          admin_label: null
+          expose:
+            label: Etiketa
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: Arte
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_blog:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_22:
+    display_title: 'Jabari bibliotekonomia bloga'
+    display_options:
+      title: 'Bibliotekonomia bloga'
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_autor_entrada_blog:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        created:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categoria:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        field_etiquetas_busqueda_1:
+          admin_label: null
+          expose:
+            label: Etiketa
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: Arte
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_blog:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_23:
+    display_title: 'Hurrengo erakusketak'
+    display_options:
+      title: null
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="ps-fecha-inicio" style="display: none">{{field _ hasiera-data _ 1}}</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="header">{{field batezbestekoa _ _ image}}<div class="marca-agua">{{field _ marka _ ura}}</div>{% endif %}
+              {% set fecha = "now"|date("m/d/Y") %}
+              {% if fecha == field_fecha_inicio_1|striptags|trim %}<div class="ps-today">{{"" | trans}} Gaur</div>% {endif}%</div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: arte
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="container"><div class="etiqueta">{{field _}} mota</div><div class="titulo">{{title}}</div><div class="horario">% {if field _ mota _ _ f | | striptags | hiruhil = = 10164 bistaratzea ingeleseko render hitzetik hartu}%<div class="fecha-anio">{{field _ hasiera-data _ 5}}</div>{% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10162 %}
+              {% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10161 %}<div class="fecha-desde-hasta">{{field _ hasiera-data _ 2}} {{field _ fecha _ fin _ 1}}</div>% {endif}%<div class="fecha-dia">{{field _ hasiera-data _ 3}}</div><div class="fecha-hora"><span class="hora-inicio">{{field _ hasiera-data _ 4}}</span>-<span class="hora-fin">{{field _ fecha _ fin _ 2}}</span></div>% {endif}%</div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Iragazkiak berrezarri'
+          exposed_sorts_label: 'Ordenatu honen arabera:'
+          sort_asc_label: Goranzko
+          sort_desc_label: Beheranzko
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: Hasiera-data
+      filters:
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        name_6:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_24:
+    display_title: 'Domeinuaren obrak'
+    display_options:
+      title: Obrak
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+          sort_asc_label: ''
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        search_api_language:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_25:
+    display_title: 'Domeinuaren lotura v2'
+    display_options:
+      title: null
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="etiqueta">{{field _}} mota</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categorias:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="etiqueta">{{field _ kategoriak}}</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="container">{{field _}} mota<div class="titulo">{{title}}</div><div class="descripcion">{{body}}</div>
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          tags:
+            next: 'Honako hau'
+            previous: Aurreko
+            first: Lehenengoa
+            last: Azken
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        sticky:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_26:
+    display_title: 'Web orriak artxibatuta'
+    display_options:
+      title: null
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="etiqueta">{{field _}} mota</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categorias:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="etiqueta">{{field _ kategoriak}}</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="container">{{field _}} mota<div class="titulo">{{title}}</div><div class="descripcion">{{body}}</div>
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          tags:
+            next: 'Honako hau'
+            previous: Aurreko
+            first: Lehenengoa
+            last: Azken
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        sticky:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            label: Jabari
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_27:
+    display_title: 'Ekitaldi gehiago'
+    display_options:
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="ps-fecha-inicio" style="display: none">{{field _ hasiera-data _ 1}}</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_6:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="header rs_skip">{{field batezbestekoa _ _ image}}<div class="marca-agua">{{field _ marka _ ura}}</div>% {endif}%</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: arte
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_titulo_listado_agenda:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_subtitulo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="container">% {if field _ length%} | mota<div class="etiqueta"><span>{{field _}} mota</span></div>% {endif}%<div class="titulo-oculto">{{title}}</div><div class="titulo">{{field _ titulo _ listado _ agenda}}</div>% {else}%<div class="titulo">{{title}}</div>% {endif}%<div class="subtitulo">{{field _ subtitulo}}</div><div class="horario">% {if field _ mota _ _ f | | striptags | hiruhil = = 10164 bistaratzea ingeleseko render hitzetik hartu}%<div class="fecha-anio">{{field _ hasiera-data _ 5}}</div>{% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10162 %}
+
+              {% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10161 %}<div class="fecha-desde-hasta">{{field _ hasiera-data _ 2}} {{field _ fecha _ fin _ 1}}</div>% {endif}%<div class="fecha-dia">{{field _ hasiera-data _ 3}}</div><div class="fecha-hora"><span class="hora-inicio">{{field _ hasiera-data _ 4}}</span>-<span class="hora-fin">{{field _ fecha _ fin _ 2}}</span></div>% {endif}%</div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Iragazkiak berrezarri'
+          exposed_sorts_label: 'Ordenatu honen arabera:'
+          sort_asc_label: Goranzko
+          sort_desc_label: Beheranzko
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        field_orden:
+          admin_label: null
+          expose:
+            label: Azpimarratzekoa
+        field_fecha_fin:
+          admin_label: Amaiera-data
+          expose:
+            label: Amaiera-data
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: Hasiera-data
+      filters:
+        field_fecha_fin:
+          admin_label: '11Tik > = amaiera-data'
+          expose:
+            label: Amaiera-data
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_28:
+    display_title: 'Bilaketa Gertaerak'
+    display_options:
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="ps-fecha-inicio" style="display: none">{{field _ hasiera-data _ 1}}</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_6:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="header rs_skip">{{field batezbestekoa _ _ image}}<div class="marca-agua">{{field _ marka _ ura}}</div>{% endif %}
+              {% set fecha = "now"|date('Y/m/d') %}
+              {% if (fecha == field_fecha_inicio_6|striptags|trim|date('Y/m/d') or (field_fecha_inicio_6|striptags|trim|date('Y/m/d') < fecha and field_fecha_fin_3|striptags|trim|date('Y/m/d') >= fecha)) %}
+              {% if field_tipo_visualizacion_f|render|striptags|trim != 10162 %}<div class="ps-today">{{"" | trans}} Gaur</div>% {endif}%</div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: arte
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_titulo_listado_agenda:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_subtitulo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="container">% {if field _ length%} | mota<div class="etiqueta"><span>{{field _}} mota</span></div>% {endif}%<div class="titulo-oculto">{{title}}</div><div class="titulo">{{field _ titulo _ listado _ agenda}}</div>% {else}%<div class="titulo">{{title}}</div>% {endif}%<div class="subtitulo">{{field _ subtitulo}}</div><div class="horario">% {if field _ mota _ _ f | | striptags | hiruhil = = 10164 bistaratzea ingeleseko render hitzetik hartu}%<div class="fecha-anio">{{field _ hasiera-data _ 5}}</div>{% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10162 %}
+
+              {% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10161 %}<div class="fecha-desde-hasta">{{field _ hasiera-data _ 2}} {{field _ fecha _ fin _ 1}}</div>% {endif}%<div class="fecha-dia">{{field _ hasiera-data _ 3}}</div><div class="fecha-hora"><span class="hora-inicio">{{field _ hasiera-data _ 4}}</span>-<span class="hora-fin">{{field _ fecha _ fin _ 2}}</span></div>% {endif}%</div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: ''
+          reset_button_label: 'Iragazkiak berrezarri'
+          exposed_sorts_label: 'Ordenatu honen arabera:'
+          sort_asc_label: Goranzko
+          sort_desc_label: Beheranzko
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            sort:
+              advanced:
+                combine_rewrite: null
+                reset_label: 'Ordena berrezarri'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: Garrantzia
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: Hasiera-data
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: 'SARTU BILAKETA-HITZ...'
+          group_info:
+            label: null
+            description: null
+        field_fecha_fin:
+          admin_label: '11Tik > = amaiera-data'
+          expose:
+            label: Aurrera
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_3:
+    display_title: 'Domeinuaren albisteak'
+    display_options:
+      title: Berriak
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: 'SARTU BILAKETA-HITZ...'
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: Arte
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_4:
+    display_title: 'Giza baliabideetako zuzendaritza'
+    display_options:
+      title: 'Giza baliabideetako zuzendaritza'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Garbitu iragazkiak'
+          sort_desc_label: Deskrib
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez dago gaur egun indarrean dauden deialdiak. Desaktibatu azken egunaren aurreko deialdietako ikusteko iragazkia'
+      sorts:
+        title:
+          admin_label: null
+          expose:
+            label: null
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+            label: ''
+          group_info:
+            label: null
+            description: null
+        field_email:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_telefonos:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_5:
+    display_title: 'Domeinuaren izapideak'
+    display_options:
+      title: Izapideak
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez dago izapiderik egun indarrean dauden.'
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        title:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_access:
+          admin_label: null
+          expose:
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_6:
+    display_title: 'Ohiko galderak (faq) jabari'
+    display_options:
+      title: 'Ohiko galderak (faq) jabari'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        field_orden:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_7:
+    display_title: 'Jabari-ren ekimenak'
+    display_options:
+      title: 'Ekimen eta proiektu'
+      fields:
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        body:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_categorias:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="etiqueta">{{field _ kategoriak}}</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="container">{{field _ kategoriak}}<div class="titulo">{{title}}</div><div class="descripcion">{{body}}</div>
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        sticky:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_8:
+    display_title: 'Domeinuaren argitalpenak'
+    display_options:
+      title: Argitalpenak
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        created_1:
+          admin_label: null
+          expose:
+            label: null
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_9:
+    display_title: 'Hurrengo Jarduerak'
+    display_options:
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="ps-fecha-inicio" style="display: none">{{field _ hasiera-data _ 1}}</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_6:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="header rs_skip">{{field batezbestekoa _ _ image}}<div class="marca-agua">{{field _ marka _ ura}}</div>% {endif}%</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: arte
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_titulo_listado_agenda:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_subtitulo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="container">% {if field _ length%} | mota<div class="etiqueta"><span>{{field _}} mota</span></div>% {endif}%<div class="titulo-oculto">{{title}}</div><div class="titulo">{{field _ titulo _ listado _ agenda}}</div>% {else}%<div class="titulo">{{title}}</div>% {endif}%<div class="subtitulo">{{field _ subtitulo}}</div><div class="horario">% {if field _ mota _ _ f | | striptags | hiruhil = = 10164 bistaratzea ingeleseko render hitzetik hartu}%<div class="fecha-anio">{{field _ hasiera-data _ 5}}</div>{% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10162 %}
+
+              {% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10161 %}<div class="fecha-desde-hasta">{{field _ hasiera-data _ 2}} {{field _ fecha _ fin _ 1}}</div>% {endif}%<div class="fecha-dia">{{field _ hasiera-data _ 3}}</div><div class="fecha-hora"><span class="hora-inicio">{{field _ hasiera-data _ 4}}</span>-<span class="hora-fin">{{field _ fecha _ fin _ 2}}</span></div>% {endif}%</div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Iragazkiak berrezarri'
+          exposed_sorts_label: 'Ordenatu honen arabera:'
+          sort_asc_label: Goranzko
+          sort_desc_label: Beheranzko
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        search_api_relevance:
+          admin_label: null
+          expose:
+            label: null
+        field_orden:
+          admin_label: null
+          expose:
+            label: Azpimarratzekoa
+        field_fecha_fin:
+          admin_label: Amaiera-data
+          expose:
+            label: Amaiera-data
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: Hasiera-data
+      filters:
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_fecha_fin:
+          admin_label: '11Tik > = amaiera-data'
+          expose:
+            label: Amaiera-data
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  bloque_expuesto:
+    display_title: 'Domeinu berriak azaldutako formularioa'
+    display_options:
+      title: Berriak
+      pager:
+        options:
+          tags:
+            next: 'Honako hau'
+            previous: Aurreko
+            first: Lehenengoa
+            last: Azken
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Iragazkiak berrezarri'
+          sort_desc_label: Deskrib
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Aukera aurreratuak'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        area_text_custom:
+          admin_label: null
+          content: 'Ez dago gaur egun indarrean dauden deialdiak. Desaktibatu azken egunaren aurreko deialdietako ikusteko iragazkia'
+      filters:
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            label: Bilatu
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        created_1:
+          admin_label: 'Data honetatik'
+          expose:
+            label: Noiztik
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        created_1_1:
+          admin_label: 'Noiz arte'
+          expose:
+            label: Arte
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra
+  block_29:
+    display_title: 'Erakusketen historikoa'
+    display_options:
+      title: null
+      fields:
+        field_fecha_inicio_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_1:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_3:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_4:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin_2:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_5:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo_visualizacion_f:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio_1:
+          admin_label: null
+          label: null
+          alter:
+            text: '<div class="ps-fecha-inicio" style="display: none">{{field _ hasiera-data _ 1}}</div>'
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_marca_agua:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_media_image:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="header">{{field batezbestekoa _ _ image}}<div class="marca-agua">{{field _ marka _ ura}}</div>{% endif %}
+              {% set fecha = "now"|date("m/d/Y") %}
+              {% if fecha == field_fecha_inicio_1|striptags|trim %}<div class="ps-today">{{"" | trans}} Gaur</div>% {endif}%</div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_inicio:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_fecha_fin:
+          admin_label: null
+          label: arte
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_tipo:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        title:
+          admin_label: null
+          label: null
+          alter:
+            text: |-
+              <div class="container"><div class="etiqueta">{{field _}} mota</div><div class="titulo">{{title}}</div><div class="horario">% {if field _ mota _ _ f | | striptags | hiruhil = = 10164 bistaratzea ingeleseko render hitzetik hartu}%<div class="fecha-anio">{{field _ hasiera-data _ 5}}</div>{% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10162 %}
+              {% endif %}
+
+              {% if field_tipo_visualizacion_f|render|striptags|trim == 10161 %}<div class="fecha-desde-hasta">{{field _ hasiera-data _ 2}} {{field _ fecha _ fin _ 1}}</div>% {endif}%<div class="fecha-dia">{{field _ hasiera-data _ 3}}</div><div class="fecha-hora"><span class="hora-inicio">{{field _ hasiera-data _ 4}}</span>-<span class="hora-fin">{{field _ fecha _ fin _ 2}}</span></div>% {endif}%</div>
+
+              </div>
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Haurrak per page'
+      exposed_form:
+        options:
+          submit_button: Bilatu
+          reset_button_label: 'Iragazkiak berrezarri'
+          exposed_sorts_label: 'Ordenatu honen arabera:'
+          sort_asc_label: Goranzko
+          sort_desc_label: Beheranzko
+          text_input_required: 'Hautatu edozein iragazkia eta emaitzak ikusteko, sakatu Aplicar'
+          text_input_required_format: 'html _ full'
+          bef:
+            general:
+              secondary_label: 'Iragazkiak gehiago'
+            filter:
+              search_api_fulltext:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: null
+      empty:
+        view:
+          admin_label: null
+      sorts:
+        field_fecha_inicio:
+          admin_label: null
+          expose:
+            label: Hasiera-data
+      filters:
+        field_domain_all_affiliates:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        type:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+        name_6:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        search_api_fulltext:
+          admin_label: null
+          expose:
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+      display_description: null
+      block_category: Masterra

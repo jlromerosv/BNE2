@@ -1,0 +1,29 @@
+uuid: c365eb72-0455-480b-9d71-090b66326b7f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widgets_imagenes
+  module:
+    - views
+  theme:
+    - fundacion_theme
+id: views_block__widgets_imagenes_block_1
+theme: fundacion_theme
+region: multimedia
+weight: -27
+provider: null
+plugin: 'views_block:widgets_imagenes-block_1'
+settings:
+  id: 'views_block:widgets_imagenes-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: c27021b2-d80b-4d18-a591-d61f763148b3
+langcode: es
+status: true
+dependencies: {  }
+name: 'Etiquetas de autores'
+vid: etiquetas_autores
+description: ''
+weight: 0

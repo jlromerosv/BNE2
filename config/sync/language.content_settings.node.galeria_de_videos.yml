@@ -1,0 +1,18 @@
+uuid: 8c4a8f44-c60d-436b-a7a0-f22eb5e54526
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_videos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.galeria_de_videos
+target_entity_type_id: node
+target_bundle: galeria_de_videos
+default_langcode: site_default
+language_alterable: false

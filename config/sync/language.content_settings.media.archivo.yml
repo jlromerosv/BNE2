@@ -1,0 +1,18 @@
+uuid: c3da4fc3-083f-48ef-9ae7-ad84e24229af
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.archivo
+target_entity_type_id: media
+target_bundle: archivo
+default_langcode: site_default
+language_alterable: false

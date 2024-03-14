@@ -1,0 +1,49 @@
+uuid: 8e02265e-469b-4fa8-874a-1d1c38d78032
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.cargo.field_domain_access
+    - field.field.node.cargo.field_domain_all_affiliates
+    - field.field.node.cargo.field_domain_source
+    - field.field.node.cargo.field_fecha_fin
+    - field.field.node.cargo.field_fecha_inicio
+    - node.type.cargo
+  module:
+    - datetime
+    - user
+id: node.cargo.default
+targetEntityType: node
+bundle: cargo
+mode: default
+content:
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

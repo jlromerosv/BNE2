@@ -1,0 +1,18 @@
+uuid: 54afba42-ed9a-4a71-8cbc-977512f5ad9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorias_evento
+id: taxonomy_term.categorias_evento.name
+field_name: name
+entity_type: taxonomy_term
+bundle: categorias_evento
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

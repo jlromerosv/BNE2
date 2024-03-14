@@ -1,0 +1,22 @@
+uuid: 965f7a96-695d-4531-8cd6-ca7bf3968204
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo_de_audio
+id: media.archivo_de_audio.status
+field_name: status
+entity_type: media
+bundle: archivo_de_audio
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,125 @@
+label: 'Contenu affilié'
+description: 'Trouver et gérer le contenu.'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
+            first: '« Premier'
+            last: 'Dernier »'
+      fields:
+        node_bulk_form:
+          action_title: 'Pour la sélection'
+        title:
+          label: Titre
+        type:
+          label: 'Type de contenu'
+          separator: ', '
+        field_domain_access:
+          label: Domaine(s)
+          separator: ', '
+        field_domain_all_affiliates:
+          label: 'Tous les sites affiliés'
+          separator: ', '
+        name:
+          label: Auteur
+        status:
+          label: État
+          settings:
+            format_custom_true: Publié
+            format_custom_false: 'Non publié'
+        changed:
+          label: 'Mis à jour'
+        operations:
+          label: Actions
+      filters:
+        status:
+          expose:
+            label: État
+          group_info:
+            label: 'Statut de publication'
+            group_items:
+              1:
+                title: Publié
+              2:
+                title: 'Non publié'
+        type:
+          expose:
+            label: Type
+        title:
+          expose:
+            label: Titre
+        langcode:
+          expose:
+            label: Langue
+      empty:
+        area_text_custom:
+          content: 'Aucun contenu disponible.'
+      arguments:
+        field_domain_access_target_id:
+          exception:
+            title: Tout
+    display_title: Maître
+  page_1:
+    display_options:
+      menu:
+        title: Contenu
+      tab_options:
+        title: Contenu
+        description: 'Trouver et gérer le contenu'
+      filters:
+        status:
+          expose:
+            label: État
+          group_info:
+            label: 'Statut de publication'
+            group_items:
+              1:
+                title: Publié
+              2:
+                title: 'Non publié'
+        type:
+          expose:
+            label: Type
+        title:
+          expose:
+            label: Titre
+        langcode:
+          expose:
+            label: Langue
+      title: Contenu
+  page_2:
+    display_options:
+      filters:
+        status:
+          expose:
+            label: État
+          group_info:
+            label: 'Statut de publication'
+            group_items:
+              1:
+                title: Publié
+              2:
+                title: 'Non publié'
+        type:
+          expose:
+            label: Type
+        title:
+          expose:
+            label: Titre
+        langcode:
+          expose:
+            label: Langue
+        field_domain_access_target_id:
+          expose:
+            label: Domaine

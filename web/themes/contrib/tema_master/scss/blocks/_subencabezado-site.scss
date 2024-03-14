@@ -1,0 +1,22 @@
+/*
+    ========== SUBENCABEZADO SITE ==========
+
+    Estilos dedicados a la vista del subencabezado.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin responsive-img
+
+    ------------------------- MIXINS --------------------------
+    responsive-img = Convierte a las imágenes en responsive
+
+*/
+
+.ps-subenc-site {
+    width: 100%;
+    .field--type-image {
+        img {
+            @include responsive-img;
+        }
+    }
+}

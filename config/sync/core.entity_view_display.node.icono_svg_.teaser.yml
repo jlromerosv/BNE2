@@ -1,0 +1,42 @@
+uuid: 3822affe-5af2-4d59-bd48-0da604bcc7b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.icono_svg_.field_domain_access
+    - field.field.node.icono_svg_.field_domain_all_affiliates
+    - field.field.node.icono_svg_.field_domain_source
+    - field.field.node.icono_svg_.field_icono_svg_
+    - node.type.icono_svg_
+  module:
+    - svg_image
+    - user
+id: node.icono_svg_.teaser
+targetEntityType: node
+bundle: icono_svg_
+mode: teaser
+content:
+  field_icono_svg_:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

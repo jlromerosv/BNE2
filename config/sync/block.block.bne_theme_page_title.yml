@@ -1,0 +1,24 @@
+uuid: c0f711e7-2451-47ef-b8ba-af56d89b62f2
+langcode: es
+status: true
+dependencies:
+  theme:
+    - bne_theme
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: bne_theme_page_title
+theme: bne_theme
+region: pre_content
+weight: -58
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

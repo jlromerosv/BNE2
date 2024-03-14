@@ -1,0 +1,96 @@
+uuid: 8bdfaa1d-0e44-45df-a3a0-f3a2638bb74c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_relacionados
+    - node.type.anuncio
+    - node.type.autor
+    - node.type.bolsa_de_trabajo
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.clasificacion_contenidos
+    - node.type.coleccion
+    - node.type.contenido_generico
+    - node.type.contenidos_formativos
+    - node.type.convocatoria
+    - node.type.documento
+    - node.type.dossier
+    - node.type.enlace
+    - node.type.entidad
+    - node.type.entidad_referencia_
+    - node.type.entrada_de_blog
+    - node.type.evento
+    - node.type.faq
+    - node.type.galeria_de_documentos
+    - node.type.galeria_de_imagenes
+    - node.type.galeria_de_videos
+    - node.type.horarios
+    - node.type.iniciativa
+    - node.type.lugar
+    - node.type.noticia
+    - node.type.obra
+    - node.type.pagina_avanzada
+    - node.type.pagina_basica
+    - node.type.pagina_personalizada
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.red_social
+    - node.type.referencias_bibliograficas
+    - node.type.seccion_torrevieja_
+    - node.type.servicio
+    - node.type.tramite
+id: node.seccion_torrevieja_.field_contenidos_relacionados
+field_name: field_contenidos_relacionados
+entity_type: node
+bundle: seccion_torrevieja_
+label: Destacados
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      anuncio: anuncio
+      autor: autor
+      bolsa_de_trabajo: bolsa_de_trabajo
+      campana: campana
+      catalogo: catalogo
+      clasificacion_contenidos: clasificacion_contenidos
+      coleccion: coleccion
+      contenidos_formativos: contenidos_formativos
+      contenido_generico: contenido_generico
+      convocatoria: convocatoria
+      documento: documento
+      dossier: dossier
+      enlace: enlace
+      entidad: entidad
+      entidad_referencia_: entidad_referencia_
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      galeria_de_imagenes: galeria_de_imagenes
+      galeria_de_documentos: galeria_de_documentos
+      galeria_de_videos: galeria_de_videos
+      horarios: horarios
+      iniciativa: iniciativa
+      obra: obra
+      lugar: lugar
+      noticia: noticia
+      persona: persona
+      faq: faq
+      publicacion: publicacion
+      pagina_avanzada: pagina_avanzada
+      pagina_basica: pagina_basica
+      pagina_personalizada: pagina_personalizada
+      red_social: red_social
+      referencias_bibliograficas: referencias_bibliograficas
+      servicio: servicio
+      tramite: tramite
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: anuncio
+field_type: entity_reference

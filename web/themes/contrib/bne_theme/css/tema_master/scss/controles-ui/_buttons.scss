@@ -1,0 +1,232 @@
+/*
+    ========== BOTONES ==========
+
+    Estilos dedicados a los botones.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin button_style_scnd($color, $bg_color, $boder_color)
+
+        @mixin button_style_scnd_hover($color, $bg_color, $boder_color)
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin button_icon($size, $m-left, $img, $filter)
+
+        @mixin tipografia($font,$index,$weight)
+
+
+    ------------------------- MIXINS --------------------------
+    button_style_sncd = El estilo del botón secundario
+
+    button_style_scnd_hover = El estilo del botón secundario cuando el cursor se
+    posa sobre él
+
+    display_flex = Mixin para las vistas display
+
+    button_icon = Los estilos del icono del botón
+
+    ----------------------- VARIABLES -------------------------
+    $color = Color de la letra del botón
+
+    $bg_color = Color de fondo del botón
+
+    $boder_color = Color del borde del botón
+
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $size = Tamaño del icono
+
+    $m-left = Margen izquierdo del icono con respecto al texto
+
+    $filter = Filtro aplicado al pasar el ratón por encima del
+    enlace
+
+    $font = Representa el mapa de tipo de fuente
+
+    $index = El índice del mapa $family
+
+    $weight = El índice del mapa $font
+
+    $button_font_size_mn_1 / 2 = Tamaño de fuente del botón
+    principal con estilo 1 / 2
+
+    $icon_btn_mn_1_height = Altura del icono del boton 1
+
+    $icon_btn_mn_1_width = Anchura del icono del boton 1
+
+    $icon_btn_mn_2_size = Ancho y alto del icono del boton 2
+
+    $icon_btn_mn_1 / 2_m-left = Margen izquierdo del icono
+    para el botón 1 / 2
+
+    $button_mn_1 / 2_icon = Icono del botón 1 / 2
+
+    ------------------------- MAPAS ---------------------------
+    $family:('Open Sans', 'Source Sans Pro', 'Roboto');
+
+    $Roboto:(thin:100,light:300,regular:400,medium:500,
+    bold:700, black:900)
+*/
+
+// BOTONES PRINCIPALES
+
+//Estilo 1
+.ps-mn-btn-style-1{
+    @include display_flex(row, initial, center);
+    color: $main_color_6;
+    @include tipografia($Roboto, 3, medium);
+    font-size: $button_font_size_mn_1;
+    &::after {
+        @include button_icon($icon_btn_mn_1_height, $icon_btn_mn_1_width, $icon_btn_mn_1_m-left, $button_mn_1_icon, none);
+    }
+    &:hover {
+        color: $main_color_5;
+        &::after {
+            @include button_icon($icon_btn_mn_1_height, $icon_btn_mn_1_width, $icon_btn_mn_1_m-left, $button_mn_1_icon, invert(51%) sepia(10%) saturate(1126%) hue-rotate(163deg) brightness(92%) contrast(87%));
+        }
+    }
+}
+
+//Estilo 1 Universidad Popular
+.ps-mn-btn-style-1-upopular{
+    @include display_flex(row, initial, center);
+    color: $main_color_6;
+    @include tipografia($Roboto, 3, medium);
+    font-size: $button_font_size_mn_1;
+    &::after {
+        @include button_icon($icon_btn_mn_1_height, $icon_btn_mn_1_width, $icon_btn_mn_1_m-left, $button_mn_1_icon, none);
+    }
+    &:hover {
+        color: $color_upopular;
+        &::after {
+            @include button_icon($icon_btn_mn_1_height, $icon_btn_mn_1_width, $icon_btn_mn_1_m-left, $button_mn_1_icon, invert(10%) sepia(84%) saturate(7034%) hue-rotate(307deg) brightness(70%) contrast(102%));
+        }
+    }
+}
+
+//Estilo 1 Albacete
+.ps-mn-btn-style-1-albacete{
+    @include display_flex(row, initial, center);
+    color: $main_color_6;
+    @include tipografia($Roboto, 3, medium);
+    font-size: $button_font_size_mn_1;
+    &::after {
+        @include button_icon($icon_btn_mn_1_height, $icon_btn_mn_1_width, $icon_btn_mn_1_m-left, $button_mn_1_icon, none);
+    }
+    &:hover {
+        color: $color_albacete;
+        &::after {
+            @include button_icon($icon_btn_mn_1_height, $icon_btn_mn_1_width, $icon_btn_mn_1_m-left, $button_mn_1_icon, invert(8%) sepia(48%) saturate(4546%) hue-rotate(333deg) brightness(90%) contrast(95%));
+        }
+    }
+}
+
+//Estilo 2
+.ps-mn-btn-style-2{
+    @include display_flex(row, initial, center);
+    color: $main_color_6;
+    @include tipografia($Roboto, 3, bold);
+    font-size: $button_font_size_mn_2;
+    &::after {
+        @include button_icon($icon_btn_mn_2_size, $icon_btn_mn_2_size, $icon_btn_mn_2_m-left, $button_mn_2_icon, none)
+    }
+    &:hover {
+        color: $main_color_5;
+        &::after {
+            @include button_icon($icon_btn_mn_2_size, $icon_btn_mn_2_size, $icon_btn_mn_2_m-left, $button_mn_2_icon, invert(51%) sepia(10%) saturate(1126%) hue-rotate(163deg) brightness(92%) contrast(87%))
+        }
+    }
+}
+
+//Estilo 2 Universidad Popular
+.ps-mn-btn-style-2-upopular{
+    @include display_flex(row, initial, center);
+    color: $main_color_6;
+    @include tipografia($Roboto, 3, bold);
+    font-size: $button_font_size_mn_2;
+    &::after {
+        @include button_icon($icon_btn_mn_2_size, $icon_btn_mn_2_size, $icon_btn_mn_2_m-left, $button_mn_2_icon, none)
+    }
+    &:hover {
+        color: $color_upopular;
+        &::after {
+            @include button_icon($icon_btn_mn_2_size, $icon_btn_mn_2_size, $icon_btn_mn_2_m-left, $button_mn_2_icon, invert(10%) sepia(84%) saturate(7034%) hue-rotate(307deg) brightness(70%) contrast(102%))
+        }
+    }
+}
+
+//Estilo 2 Albacete
+.ps-mn-btn-style-2-albacete{
+    @include display_flex(row, initial, center);
+    color: $main_color_6;
+    @include tipografia($Roboto, 3, bold);
+    font-size: $button_font_size_mn_2;
+    &::after {
+        @include button_icon($icon_btn_mn_2_size, $icon_btn_mn_2_size, $icon_btn_mn_2_m-left, $button_mn_2_icon, none)
+    }
+    &:hover {
+        color: $color_albacete;
+        &::after {
+            @include button_icon($icon_btn_mn_2_size, $icon_btn_mn_2_size, $icon_btn_mn_2_m-left, $button_mn_2_icon, invert(8%) sepia(48%) saturate(4546%) hue-rotate(333deg) brightness(90%) contrast(95%))
+        }
+    }
+}
+    
+
+
+
+// BOTONES SECUNDARIOS
+
+// Estilo 1
+.ps-scnd-btn-style-1 {
+    @include button_style_scnd($button_color, $button_bg, $button_color);
+    &:hover {
+        @include button_style_scnd_hover($button_color_hover, $button_bg_hover, $button_bg_hover)
+    }
+}
+
+// Estilo 1 Universidad Popular
+.ps-scnd-btn-style-1-upopular {
+    @include button_style_scnd($button_color, $button_bg, $button_color);
+    &:hover {
+        @include button_style_scnd_hover($blanco, $button_color_upopular_hover, $button_color_upopular_hover)
+    }
+}
+
+// Estilo 1 Albacete
+.ps-scnd-btn-style-1-albacete {
+    @include button_style_scnd($button_color, $button_bg, $button_color);
+    &:hover {
+        @include button_style_scnd_hover($blanco, $button_color_albacete_hover, $button_color_albacete_hover)
+    }
+}
+
+
+// Estilo 2
+.ps-scnd-btn-style-2 {
+    @include button_style_scnd($button2_color, $button2_bg, $button2_bg);
+    &:hover {
+        @include button_style_scnd_hover($button2_color_hover, $button2_bg_hover, $button2_bg_hover)
+    }
+}
+
+// Estilo 2 Universidad Popular
+.ps-scnd-btn-style-2-upopular {
+    @include button_style_scnd($blanco, $button2_color_upopular, $button2_color_upopular);
+    &:hover {
+        @include button_style_scnd_hover($blanco, $button2_color_upopular_hover, $button2_color_upopular_hover)
+    }
+}
+
+// Estilo 2 Albacete
+.ps-scnd-btn-style-2-albacete {
+    @include button_style_scnd($blanco, $button2_color_albacete, $button2_color_albacete);
+    &:hover {
+        @include button_style_scnd_hover($blanco, $button2_color_albacete_hover, $button2_color_albacete_hover)
+    }
+}

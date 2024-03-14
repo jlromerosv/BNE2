@@ -1,0 +1,32 @@
+display:
+  block_1:
+    display_options:
+      title: 'Tous les services'
+      footer:
+        area:
+          content:
+            value: "<p><a href=\"/node/2679\">[view:title]</a></p>\r\n"
+            format: html_full
+  block_19:
+    display_options:
+      title: 'Tous les catalogues'
+      footer:
+        area:
+          content:
+            value: "<p><a href=\"/catalogos\">[view:title]</a></p>\r\n"
+            format: html_full
+  block_2:
+    display_options:
+      title: 'Découvrez toutes nos publications'
+      footer:
+        area:
+          content:
+            value: "<p><a href=\"/node/3050\">[view:title]</a></p>\r\n"
+            format: html_full
+  block_4:
+    display_options:
+      footer:
+        area:
+          content:
+            value: "<p><a href=\"/publicaciones\">[view:title]</a></p>\r\n"
+            format: html_full

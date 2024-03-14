@@ -1,0 +1,18 @@
+uuid: cd432952-b78f-4a19-bbe7-0679bbab87e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.icono_svg_
+id: node.icono_svg_.publish_on
+field_name: publish_on
+entity_type: node
+bundle: icono_svg_
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

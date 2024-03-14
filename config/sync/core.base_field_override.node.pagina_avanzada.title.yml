@@ -1,0 +1,18 @@
+uuid: ab6d0911-17de-44f3-b4da-f332bda97501
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+id: node.pagina_avanzada.title
+field_name: title
+entity_type: node
+bundle: pagina_avanzada
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

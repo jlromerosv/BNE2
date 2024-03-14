@@ -1,0 +1,20 @@
+uuid: 3652e6d6-2628-4f1c-a194-37ad5032786f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_oposicion
+  module:
+    - path
+id: taxonomy_term.categoria_de_oposicion.path
+field_name: path
+entity_type: taxonomy_term
+bundle: categoria_de_oposicion
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

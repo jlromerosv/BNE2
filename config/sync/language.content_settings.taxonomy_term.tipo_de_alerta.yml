@@ -1,0 +1,18 @@
+uuid: a6d7d4a0-6b4c-46f3-93f1-25c8ca5f535f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_alerta
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tipo_de_alerta
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_alerta
+default_langcode: site_default
+language_alterable: false

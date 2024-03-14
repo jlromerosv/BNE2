@@ -1,0 +1,314 @@
+uuid: 871a3abf-ed80-49cf-8071-9980d1a1aee0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.autor.created
+    - core.base_field_override.node.autor.status
+    - core.base_field_override.node.autor.title
+    - field.field.node.autor.body
+    - field.field.node.autor.field_apellidos
+    - field.field.node.autor.field_defuncion
+    - field.field.node.autor.field_domain_access
+    - field.field.node.autor.field_enlace
+    - field.field.node.autor.field_enlaces
+    - field.field.node.autor.field_etiqueta_blog
+    - field.field.node.autor.field_id_externo
+    - field.field.node.autor.field_imagen_cabecera
+    - field.field.node.autor.field_imagen_representativa
+    - field.field.node.autor.field_nacimiento
+    - field.field.node.autor.field_nombre
+    - field.field.node.autor.field_requisitos
+    - field.field.node.autor.field_videos
+    - node.type.autor
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      2e44d251-79f8-4922-9c74-98975aa36334:
+        separator: Ã§
+        limit: null
+        uuid: 2e44d251-79f8-4922-9c74-98975aa36334
+        plugin: explode
+        source: enlacesexternostexto
+        weight: 0
+        label: Explode
+      2682a866-d628-425b-abe2-94f1303a15af:
+        separator: '}'
+        limit: null
+        uuid: 2682a866-d628-425b-abe2-94f1303a15af
+        plugin: explode
+        source: rutavideo
+        weight: 0
+        label: Explode
+      481d6041-9da4-4252-b7fc-32b1c11e192e:
+        separator: '}'
+        limit: null
+        uuid: 481d6041-9da4-4252-b7fc-32b1c11e192e
+        plugin: explode
+        source: authorcategorylist
+        weight: 0
+        label: Explode
+      c19a0acf-3ed7-4707-84f9-5a8cbdd6b120:
+        separator: Ã§
+        limit: null
+        uuid: c19a0acf-3ed7-4707-84f9-5a8cbdd6b120
+        plugin: explode
+        source: enlacesexternosurl
+        weight: 0
+        label: Explode
+label: 'Carga de escritores'
+id: carga_de_escritores
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: autor
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  enlacesexternosurl:
+    value: EnlacesExternosURL
+    label: EnlacesExternosURL
+    machine_name: enlacesexternosurl
+    type: csv
+  enlacesexternostexto:
+    value: EnlacesExternosTexto
+    label: EnlacesExternosTexto
+    machine_name: enlacesexternostexto
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  rutavideo:
+    value: RutaVideo
+    label: RutaVideo
+    machine_name: rutavideo
+    type: csv
+  published:
+    value: Published
+    label: Published
+    machine_name: published
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  first_name:
+    value: first_name
+    label: first_name
+    machine_name: first_name
+    type: csv
+  last_name:
+    value: last_name
+    label: last_name
+    machine_name: last_name
+    type: csv
+  nacimiento:
+    value: nacimiento
+    label: nacimiento
+    machine_name: nacimiento
+    type: csv
+  defuncion:
+    value: defuncion
+    label: defuncion
+    machine_name: defuncion
+    type: csv
+  authorcategorylist:
+    value: AuthorCategoryList
+    label: AuthorCategoryList
+    machine_name: authorcategorylist
+    type: csv
+  single_author_header_image:
+    value: single_author_header_image
+    label: single_author_header_image
+    machine_name: single_author_header_image
+    type: csv
+  thumbnail_id:
+    value: thumbnail_id
+    label: thumbnail_id
+    machine_name: thumbnail_id
+    type: csv
+  show_more_works_external_link:
+    value: show_more_works_external_link
+    label: show_more_works_external_link
+    machine_name: show_more_works_external_link
+    type: csv
+  listavideos:
+    value: ListaVideos
+    label: ListaVideos
+    machine_name: listavideos
+    type: csv
+  resumen:
+    value: Resumen
+    label: Resumen
+    machine_name: resumen
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: resumen
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_enlaces
+    map:
+      uri: enlacesexternosurl
+      title: enlacesexternostexto
+    settings:
+      language: null
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: field_videos
+    map:
+      target_id: rutavideo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: status
+    map:
+      value: published
+    settings:
+      language: null
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_nombre
+    map:
+      value: first_name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_apellidos
+    map:
+      value: last_name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_nacimiento
+    map:
+      value: nacimiento
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_defuncion
+    map:
+      value: defuncion
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_etiqueta_blog
+    map:
+      target_id: authorcategorylist
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_imagen_cabecera
+    map:
+      target_id: single_author_header_image
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_imagen_representativa
+    map:
+      target_id: thumbnail_id
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_requisitos
+    map:
+      value: resumen
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_enlace
+    map:
+      uri: show_more_works_external_link
+      title: ''
+    settings:
+      language: null

@@ -1,0 +1,15 @@
+uuid: f8a76f4d-f376-4baf-91e6-6680aa4ade20
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_colecciones_blog_lg
+label: 'Bloque colecciones blog LG'
+effects:
+  4cedad34-763c-4c88-985e-887bc68d6c69:
+    uuid: 4cedad34-763c-4c88-985e-887bc68d6c69
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 300
+      height: 206
+      anchor: center-center

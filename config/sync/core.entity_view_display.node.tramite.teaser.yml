@@ -1,0 +1,245 @@
+uuid: 0d1e12f5-99ca-403d-b232-fd0f9ccae85b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.tramite.title
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tramite.body
+    - field.field.node.tramite.field_archivos
+    - field.field.node.tramite.field_area_organizativa
+    - field.field.node.tramite.field_area_tematica
+    - field.field.node.tramite.field_codigo_procedimiento
+    - field.field.node.tramite.field_codigo_referencia
+    - field.field.node.tramite.field_colectivo
+    - field.field.node.tramite.field_contenidos_relacionados
+    - field.field.node.tramite.field_contenidos_vinculados
+    - field.field.node.tramite.field_criterios
+    - field.field.node.tramite.field_destinatarios
+    - field.field.node.tramite.field_domain_access
+    - field.field.node.tramite.field_domain_all_affiliates
+    - field.field.node.tramite.field_domain_source
+    - field.field.node.tramite.field_efectos_silencio_administr
+    - field.field.node.tramite.field_enlace
+    - field.field.node.tramite.field_enlaces
+    - field.field.node.tramite.field_entidades
+    - field.field.node.tramite.field_fecha_fin
+    - field.field.node.tramite.field_fecha_inicio
+    - field.field.node.tramite.field_imagen_destacada
+    - field.field.node.tramite.field_imagenes
+    - field.field.node.tramite.field_importe_ayuda
+    - field.field.node.tramite.field_info_documentacion
+    - field.field.node.tramite.field_informacion_plazo_solicitu
+    - field.field.node.tramite.field_informacion_tramite_online
+    - field.field.node.tramite.field_informacion_tramite_presen
+    - field.field.node.tramite.field_marco_legal
+    - field.field.node.tramite.field_mas_informacion
+    - field.field.node.tramite.field_meta_tags
+    - field.field.node.tramite.field_modalidad
+    - field.field.node.tramite.field_plazo_de_resolucion
+    - field.field.node.tramite.field_plazo_presentacion_permane
+    - field.field.node.tramite.field_precio
+    - field.field.node.tramite.field_preguntas_frecuentes
+    - field.field.node.tramite.field_requisitos
+    - field.field.node.tramite.field_tipo
+    - field.field.node.tramite.field_videos
+    - field.field.node.tramite.field_yoast_seo
+    - node.type.tramite
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          eb989355-c973-424d-99ae-010dea5bbd60:
+            uuid: eb989355-c973-424d-99ae-010dea5bbd60
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          883ae2fa-48d0-4a00-91af-53732321cfc6:
+            uuid: 883ae2fa-48d0-4a00-91af-53732321cfc6
+            region: content
+            configuration:
+              id: 'extra_field_block:node:tramite:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 6
+            additional: {  }
+          e78d67b8-6209-4f34-bdde-2df25b8f298e:
+            uuid: e78d67b8-6209-4f34-bdde-2df25b8f298e
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:field_codigo_referencia'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          e860d334-4057-447a-b1ac-4a00be0f60b1:
+            uuid: e860d334-4057-447a-b1ac-4a00be0f60b1
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:field_codigo_procedimiento'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          6ae47fcf-48a0-4cff-add9-4cfe825b014a:
+            uuid: 6ae47fcf-48a0-4cff-add9-4cfe825b014a
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:field_area_organizativa'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          27eb0696-83e7-4516-a88a-9100626d0d4f:
+            uuid: 27eb0696-83e7-4516-a88a-9100626d0d4f
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+id: node.tramite.teaser
+targetEntityType: node
+bundle: tramite
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_area_organizativa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_codigo_procedimiento:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_codigo_referencia:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_archivos: true
+  field_area_tematica: true
+  field_colectivo: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_criterios: true
+  field_destinatarios: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_efectos_silencio_administr: true
+  field_enlace: true
+  field_enlaces: true
+  field_entidades: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_importe_ayuda: true
+  field_info_documentacion: true
+  field_informacion_plazo_solicitu: true
+  field_informacion_tramite_online: true
+  field_informacion_tramite_presen: true
+  field_marco_legal: true
+  field_mas_informacion: true
+  field_meta_tags: true
+  field_modalidad: true
+  field_plazo_de_resolucion: true
+  field_plazo_presentacion_permane: true
+  field_precio: true
+  field_preguntas_frecuentes: true
+  field_requisitos: true
+  field_tipo: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

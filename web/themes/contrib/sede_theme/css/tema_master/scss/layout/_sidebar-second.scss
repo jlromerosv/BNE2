@@ -1,0 +1,19 @@
+/*
+    ========= SIDEBAR-SECOND ==========
+    Estilos dedicados al Sidebar Second de la web.
+
+	----------------------- VARIABLES -------------------------
+	$main_color_5 = Color principal de tipo 5
+
+	$blanco = Color blanco
+*/
+
+.region.region-sidebar-second {
+    background-color: $blanco;
+    a{
+	    font-weight: 400;
+		font-size: 1.1em;
+		letter-spacing: 1px;
+		color: $blanco;
+	}
+}

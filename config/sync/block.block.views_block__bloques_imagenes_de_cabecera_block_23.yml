@@ -1,0 +1,33 @@
+uuid: 29902dac-c823-4c06-b36d-b4ffe6b8ceb8
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloques_imagenes_de_cabecera
+  module:
+    - system
+    - views
+  theme:
+    - bne_theme
+id: views_block__bloques_imagenes_de_cabecera_block_23
+theme: bne_theme
+region: breadcrumb
+weight: -38
+provider: null
+plugin: 'views_block:bloques_imagenes_de_cabecera-block_23'
+settings:
+  id: 'views_block:bloques_imagenes_de_cabecera-block_23'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/15363\r\n/blog/recursosprensa/*"

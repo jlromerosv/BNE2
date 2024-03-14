@@ -1,0 +1,21 @@
+uuid: 1864f04d-64ee-4f09-8712-2026babb2d90
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requisitos
+    - node.type.tramite
+  module:
+    - text
+id: node.tramite.field_requisitos
+field_name: field_requisitos
+entity_type: node
+bundle: tramite
+label: Requisitos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

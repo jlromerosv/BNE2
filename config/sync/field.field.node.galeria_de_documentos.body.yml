@@ -1,0 +1,28 @@
+uuid: 687fe79e-17a4-474e-948b-6a3bb49c4dc2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.galeria_de_documentos
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.galeria_de_documentos.body
+field_name: body
+entity_type: node
+bundle: galeria_de_documentos
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,20 @@
+uuid: d4a2aa7a-7dc4-43f7-8cc8-a7c2e661de84
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.lugar
+  module:
+    - path
+id: node.lugar.path
+field_name: path
+entity_type: node
+bundle: lugar
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

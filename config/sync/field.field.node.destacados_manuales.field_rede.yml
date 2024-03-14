@@ -1,0 +1,28 @@
+uuid: 7b2d5ae4-1b66-4be6-a8c4-4a9e1f25f3bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rede
+    - node.type.destacados_manuales
+    - node.type.red_social
+id: node.destacados_manuales.field_rede
+field_name: field_rede
+entity_type: node
+bundle: destacados_manuales
+label: 'Redes Sociales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      red_social: red_social
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

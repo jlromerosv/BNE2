@@ -1,0 +1,8 @@
+uuid: a06b5bb2-a7ba-4a87-b6a4-fbff7d2d5239
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Categoría de oposición'
+vid: categoria_de_oposicion
+description: ''
+weight: 0

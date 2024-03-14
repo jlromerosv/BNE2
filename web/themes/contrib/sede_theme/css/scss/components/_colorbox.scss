@@ -1,0 +1,76 @@
+#colorbox {
+  width: 100% !important;
+  left: 0 !important;
+  #cboxWrapper {
+    height: 100% !important;
+    width: 100% !important;
+    background: transparent !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+    #cboxContent{
+        background: transparent !important;
+        position: inherit !important;
+        #cboxLoadedContent{
+            
+        }
+        #cboxNext{
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            left: auto;
+            width: 25px;
+            height: 46px;
+            background: url(/themes/contrib/sede_theme/recursos/nex-colorbox.svg) no-repeat center;
+            background-size: 25px;
+            @media (max-width: 991.98px) { 
+              right: 10px;
+            }
+
+        }
+        #cboxPrevious{
+            position: absolute; 
+            left: 30px;
+            top: 50%;
+            width: 25px;
+            height: 46px;
+            background: url(/themes/contrib/sede_theme/recursos/previous-colorbox.svg) no-repeat center;
+            background-size: 25px;
+            @media (max-width: 991.98px) {  
+              left: 10px;
+            }
+
+        }
+        #cboxLoadingOverlay{
+            background: transparent;
+        }
+        #cboxTitle{
+          background: transparent;
+          color: $blanco;
+          text-align: center;
+          display: block !important;
+          bottom: 10px;
+          padding: 0;
+          height: auto;
+        }
+        #cboxClose{
+          position: absolute;
+          right: 30px;
+          top: 20px;
+          left: auto;
+          width: 25px;
+          height: 25px;
+          background: url(/themes/contrib/sede_theme/recursos/close-colorbox.svg) no-repeat center;
+          background-size: 25px;
+          @media (max-width: 991.98px) { 
+            right: 10px;
+          }
+
+        }
+        #cboxCurrent{
+          display: none !important;
+        }
+    }
+  }
+}

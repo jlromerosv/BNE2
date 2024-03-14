@@ -1,0 +1,8 @@
+name: 'BNE búsquedas'
+type: module
+core_version_requirement: ^9
+description: 'Modulo de busqueda portales BNE'
+version: 1.0
+package: 'Pulsia'
+dependencies:
+  - drupal:node

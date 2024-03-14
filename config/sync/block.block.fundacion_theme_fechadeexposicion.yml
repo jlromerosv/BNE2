@@ -1,0 +1,33 @@
+uuid: 965e00db-51b3-4abf-ae8f-aea426b5b3cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.fecha_de_exposicion
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_fechadeexposicion
+theme: fundacion_theme
+region: sidebar_first
+weight: -13
+provider: null
+plugin: 'facet_block:fecha_de_exposicion'
+settings:
+  id: 'facet_block:fecha_de_exposicion'
+  label: 'Fecha de exposición'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: fechadeexposicion
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/22007

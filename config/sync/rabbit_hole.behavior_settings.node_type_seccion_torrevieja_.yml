@@ -1,0 +1,14 @@
+uuid: cb1f4465-5286-4cba-8c97-95f1a57fe452
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_torrevieja_
+id: node_type_seccion_torrevieja_
+entity_type_id: node_type
+entity_id: seccion_torrevieja_
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

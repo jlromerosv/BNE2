@@ -1,0 +1,25 @@
+uuid: 828ef5d1-5313-463f-a244-a7b92eaebb1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point_banner
+  module:
+    - crop
+name: banner_768_40_5
+label: 'Banner 768 - 40:5'
+effects:
+  89c6134f-9f43-435d-afdb-a94f4c31af84:
+    uuid: 89c6134f-9f43-435d-afdb-a94f4c31af84
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point_banner
+  350906ce-b6c8-490f-8b99-63e1633b787a:
+    uuid: 350906ce-b6c8-490f-8b99-63e1633b787a
+    id: image_scale
+    weight: 2
+    data:
+      width: 768
+      height: null
+      upscale: false

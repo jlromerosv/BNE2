@@ -1,0 +1,18 @@
+uuid: eac357ce-3fef-4051-b4c4-60b5f9889bcb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.provincias
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.provincias
+target_entity_type_id: taxonomy_term
+target_bundle: provincias
+default_langcode: site_default
+language_alterable: false

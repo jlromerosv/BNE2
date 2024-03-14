@@ -1,0 +1,20 @@
+uuid: 59d8c0fd-aad7-4331-b755-886e9136ebd7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.lugar
+  module:
+    - options
+id: node.lugar.publish_state
+field_name: publish_state
+entity_type: node
+bundle: lugar
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

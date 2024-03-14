@@ -1,0 +1,20 @@
+uuid: 5648f208-bc27-4b1d-8a85-66b5864d051d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sesion_de_actividad
+id: node.sesion_de_actividad.menu_link
+field_name: menu_link
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Enlace del menu'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

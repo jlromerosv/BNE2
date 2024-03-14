@@ -1,0 +1,89 @@
+uuid: 76db6cd3-2c20-47a7-ae3e-a60e1374814e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_relacionados
+    - node.type.autor
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.coleccion
+    - node.type.contenido_generico
+    - node.type.convocatoria
+    - node.type.documento
+    - node.type.dossier
+    - node.type.enlace
+    - node.type.entidad
+    - node.type.entrada_de_blog
+    - node.type.evento
+    - node.type.faq
+    - node.type.galeria_de_documentos
+    - node.type.galeria_de_imagenes
+    - node.type.galeria_de_videos
+    - node.type.horarios
+    - node.type.iniciativa
+    - node.type.lugar
+    - node.type.noticia
+    - node.type.obra
+    - node.type.pagina_basica
+    - node.type.pagina_personalizada
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.referencias_bibliograficas
+    - node.type.seccion_nivel_1_estandar
+    - node.type.servicio
+    - node.type.tramite
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.noticia.field_contenidos_relacionados
+field_name: field_contenidos_relacionados
+entity_type: node
+bundle: noticia
+label: 'Contenidos relacionados'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      autor: autor
+      catalogo: catalogo
+      campana: campana
+      coleccion: coleccion
+      contenido_generico: contenido_generico
+      convocatoria: convocatoria
+      documento: documento
+      dossier: dossier
+      enlace: enlace
+      entidad: entidad
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      galeria_de_imagenes: galeria_de_imagenes
+      galeria_de_documentos: galeria_de_documentos
+      horarios: horarios
+      pagina_basica: pagina_basica
+      iniciativa: iniciativa
+      noticia: noticia
+      obra: obra
+      persona: persona
+      faq: faq
+      publicacion: publicacion
+      referencias_bibliograficas: referencias_bibliograficas
+      lugar: lugar
+      pagina_personalizada: pagina_personalizada
+      seccion_nivel_1_estandar: seccion_nivel_1_estandar
+      servicio: servicio
+      tramite: tramite
+      galeria_de_videos: galeria_de_videos
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: autor
+field_type: entity_reference

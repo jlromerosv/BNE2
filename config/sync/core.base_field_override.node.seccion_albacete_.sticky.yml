@@ -1,0 +1,22 @@
+uuid: 8ac15d59-e003-4418-898b-933e1361b6b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.sticky
+field_name: sticky
+entity_type: node
+bundle: seccion_albacete_
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

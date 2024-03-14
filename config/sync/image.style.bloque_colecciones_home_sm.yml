@@ -1,0 +1,25 @@
+uuid: f8a695c1-f979-447e-a055-2cf5ca51fe10
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.detalle_colecciones
+  module:
+    - crop
+name: bloque_colecciones_home_sm
+label: 'Bloque colecciones home SM'
+effects:
+  f222c95c-abc5-4bf6-a5e5-b8c78b7ccbfe:
+    uuid: f222c95c-abc5-4bf6-a5e5-b8c78b7ccbfe
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: detalle_colecciones
+  7e7ecee3-a422-4aea-8b07-84e598e09c7b:
+    uuid: 7e7ecee3-a422-4aea-8b07-84e598e09c7b
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 767
+      height: 384
+      anchor: center-center

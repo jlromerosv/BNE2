@@ -1,0 +1,20 @@
+uuid: 7a1cb04c-8224-4617-be56-0a4e2f75fa13
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.area-group_node-entrada_de_blog
+id: group_content.area-group_node-entrada_de_blog.uid
+field_name: uid
+entity_type: group_content
+bundle: area-group_node-entrada_de_blog
+label: 'Group content creator'
+description: 'The username of the group content creator.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\group\Entity\GroupContent::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

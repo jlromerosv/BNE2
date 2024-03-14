@@ -1,0 +1,33 @@
+uuid: 7fa2fb12-2f58-4fa3-8d67-4b23b6ffcbd5
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.bloque_buscador_bne
+  module:
+    - block_class
+    - webform
+  theme:
+    - fundacion_theme
+third_party_settings:
+  block_class:
+    classes: ps-bloque-buscador-bne
+id: webform
+theme: fundacion_theme
+region: header_seccion
+weight: -22
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform bloque buscador bne'
+  label_display: '0'
+  provider: webform
+  webform_id: bloque_buscador_bne
+  default_data: ''
+  redirect: false
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

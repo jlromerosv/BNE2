@@ -1,0 +1,14 @@
+uuid: d5e442f8-4309-4947-8119-1ff423a66fed
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_autores
+id: taxonomy_vocabulary_etiquetas_autores
+entity_type_id: taxonomy_vocabulary
+entity_id: etiquetas_autores
+action: page_redirect
+allow_override: 1
+redirect: '/node/26819?f%5B0%5D=categoria_autor%3A[term:tid]'
+redirect_code: 301
+redirect_fallback_action: access_denied

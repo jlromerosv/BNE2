@@ -1,0 +1,383 @@
+uuid: 87d44102-59f4-4b9c-a694-d27ee144ce4c
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.destacados
+    - node.type.actividad_generica
+    - node.type.anuncio
+    - node.type.autor
+    - node.type.bolsa_de_trabajo
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.coleccion
+    - node.type.contenido_generico
+    - node.type.contenidos_formativos
+    - node.type.convocatoria
+    - node.type.dossier
+    - node.type.enlace
+    - node.type.entidad
+    - node.type.entidad_referencia_
+    - node.type.entrada_de_blog
+    - node.type.evento
+    - node.type.exposicion
+    - node.type.faq
+    - node.type.galeria_de_documentos
+    - node.type.galeria_de_imagenes
+    - node.type.galeria_de_videos
+    - node.type.horarios
+    - node.type.iniciativa
+    - node.type.lugar
+    - node.type.noticia
+    - node.type.obra
+    - node.type.pagina_avanzada
+    - node.type.pagina_basica
+    - node.type.pagina_personalizada
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.red_social
+    - node.type.referencias_bibliograficas
+    - node.type.seccion_nivel_1_estandar
+    - node.type.servicio
+    - node.type.tramite
+  module:
+    - node
+    - user
+id: test_minificha_con_imagen
+label: 'Test minificha con imagen'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Master
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'Test minificha con imagen'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            trim: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts: {  }
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            convocatoria: convocatoria
+            evento: evento
+            exposicion: exposicion
+            iniciativa: iniciativa
+            noticia: noticia
+            publicacion: publicacion
+          group: 1
+          exposed: true
+          expose:
+            operator_id: type_op
+            label: 'Tipo de contenido'
+            description: ''
+            use_operator: false
+            operator: type_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: type
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              root: '0'
+              administrador_contenidos: '0'
+              editor_contenidos: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      style:
+        type: default
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: destacados
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: 'ps-noticias-destacadas grid-layout-view-3-col'
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_1:
+    id: page_1
+    display_title: 'Minificha con imagen'
+    display_plugin: page
+    position: 1
+    display_options:
+      display_description: ''
+      display_extenders: {  }
+      path: test-minificha-con-imagen
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_2:
+    id: page_2
+    display_title: Destacados
+    display_plugin: page
+    position: 1
+    display_options:
+      title: 'Test destacados'
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            actividad_generica: actividad_generica
+            anuncio: anuncio
+            autor: autor
+            bolsa_de_trabajo: bolsa_de_trabajo
+            campana: campana
+            catalogo: catalogo
+            coleccion: coleccion
+            contenidos_formativos: contenidos_formativos
+            contenido_generico: contenido_generico
+            convocatoria: convocatoria
+            dossier: dossier
+            enlace: enlace
+            entidad: entidad
+            entidad_referencia_: entidad_referencia_
+            entrada_de_blog: entrada_de_blog
+            evento: evento
+            exposicion: exposicion
+            galeria_de_imagenes: galeria_de_imagenes
+            galeria_de_documentos: galeria_de_documentos
+            galeria_de_videos: galeria_de_videos
+            horarios: horarios
+            iniciativa: iniciativa
+            obra: obra
+            lugar: lugar
+            noticia: noticia
+            persona: persona
+            faq: faq
+            publicacion: publicacion
+            pagina_avanzada: pagina_avanzada
+            pagina_basica: pagina_basica
+            pagina_personalizada: pagina_personalizada
+            red_social: red_social
+            referencias_bibliograficas: referencias_bibliograficas
+            seccion_nivel_1_estandar: seccion_nivel_1_estandar
+            servicio: servicio
+            tramite: tramite
+          group: 1
+          exposed: true
+          expose:
+            operator_id: type_op
+            label: 'Tipo de contenido'
+            description: ''
+            use_operator: false
+            operator: type_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: type
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              root: '0'
+              administrador_contenidos: '0'
+              editor_contenidos: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: test-destacados
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

@@ -1,0 +1,18 @@
+uuid: 68ffddbc-ed10-43bd-b5e2-e0fb8431f3a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_postal
+id: taxonomy_term.categoria_postal.name
+field_name: name
+entity_type: taxonomy_term
+bundle: categoria_postal
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

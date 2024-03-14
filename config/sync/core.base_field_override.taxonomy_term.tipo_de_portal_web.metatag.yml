@@ -1,0 +1,18 @@
+uuid: 4f53fbc7-b18c-41a9-b2ef-2182d6447271
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_portal_web
+id: taxonomy_term.tipo_de_portal_web.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: tipo_de_portal_web
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

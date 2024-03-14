@@ -1,0 +1,18 @@
+uuid: 70b9fe37-e2c5-45ce-96ef-a11a82da7294
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+id: node.ubicacion.publish_on
+field_name: publish_on
+entity_type: node
+bundle: ubicacion
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

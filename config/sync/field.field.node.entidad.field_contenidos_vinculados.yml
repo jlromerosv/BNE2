@@ -1,0 +1,89 @@
+uuid: ad325426-6e21-4e15-a7da-569598eb9ef5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_vinculados
+    - node.type.actividad_generica
+    - node.type.autor
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.coleccion
+    - node.type.contenido_generico
+    - node.type.contenidos_formativos
+    - node.type.convocatoria
+    - node.type.dossier
+    - node.type.enlace
+    - node.type.entidad
+    - node.type.entrada_de_blog
+    - node.type.evento
+    - node.type.exposicion
+    - node.type.faq
+    - node.type.galeria_de_documentos
+    - node.type.galeria_de_imagenes
+    - node.type.galeria_de_videos
+    - node.type.horarios
+    - node.type.iniciativa
+    - node.type.lugar
+    - node.type.noticia
+    - node.type.obra
+    - node.type.pagina_avanzada
+    - node.type.pagina_basica
+    - node.type.pagina_personalizada
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.red_social
+    - node.type.seccion_nivel_1_estandar
+    - node.type.servicio
+    - node.type.tramite
+id: node.entidad.field_contenidos_vinculados
+field_name: field_contenidos_vinculados
+entity_type: node
+bundle: entidad
+label: 'Te puede interesar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      autor: autor
+      campana: campana
+      catalogo: catalogo
+      coleccion: coleccion
+      contenido_generico: contenido_generico
+      convocatoria: convocatoria
+      dossier: dossier
+      enlace: enlace
+      entidad: entidad
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      galeria_de_imagenes: galeria_de_imagenes
+      galeria_de_videos: galeria_de_videos
+      galeria_de_documentos: galeria_de_documentos
+      horarios: horarios
+      iniciativa: iniciativa
+      lugar: lugar
+      noticia: noticia
+      obra: obra
+      persona: persona
+      faq: faq
+      publicacion: publicacion
+      pagina_basica: pagina_basica
+      pagina_personalizada: pagina_personalizada
+      red_social: red_social
+      seccion_nivel_1_estandar: seccion_nivel_1_estandar
+      servicio: servicio
+      actividad_generica: actividad_generica
+      contenidos_formativos: contenidos_formativos
+      exposicion: exposicion
+      pagina_avanzada: pagina_avanzada
+      tramite: tramite
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: actividad_generica
+field_type: entity_reference

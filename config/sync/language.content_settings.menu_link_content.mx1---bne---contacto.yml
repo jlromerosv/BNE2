@@ -1,0 +1,18 @@
+uuid: 11b0cca2-ff1f-484d-88a3-ce4d7ad99b2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne---contacto
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.mx1---bne---contacto
+target_entity_type_id: menu_link_content
+target_bundle: mx1---bne---contacto
+default_langcode: site_default
+language_alterable: true

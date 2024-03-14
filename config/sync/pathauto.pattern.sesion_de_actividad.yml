@@ -1,0 +1,22 @@
+uuid: ab582f7e-50c8-4832-915e-04f4cf241ac7
+langcode: es
+status: false
+dependencies:
+  module:
+    - node
+id: sesion_de_actividad
+label: 'Sesión de actividad'
+type: 'canonical_entities:node'
+pattern: '/[node:field_actividad_generica:entity:url:path]/sesion-[node:field_fecha_inicio]'
+selection_criteria:
+  f79d5ef9-9c89-4e57-900d-2e108c1ef37e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f79d5ef9-9c89-4e57-900d-2e108c1ef37e
+    context_mapping:
+      node: node
+    bundles:
+      sesion_de_actividad: sesion_de_actividad
+selection_logic: and
+weight: 6
+relationships: {  }

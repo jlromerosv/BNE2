@@ -1,0 +1,29 @@
+uuid: 3502b4b1-f211-447a-91be-3403dfe97bb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colectivo
+    - node.type.campana
+    - taxonomy.vocabulary.colectivo
+id: node.campana.field_colectivo
+field_name: field_colectivo
+entity_type: node
+bundle: campana
+label: Colectivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      colectivo: colectivo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

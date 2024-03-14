@@ -1,0 +1,14 @@
+uuid: 6b488357-fea3-40e6-83ed-42116de5b20b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.blog_periodicomania
+  module:
+    - user
+id: user_remove_role_action.blog_periodicomania
+label: 'Elimina el rol Blog Periodicomania al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: blog_periodicomania

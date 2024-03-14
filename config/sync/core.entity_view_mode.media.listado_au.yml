@@ -1,0 +1,10 @@
+uuid: ab22a1cb-0569-4e4e-bd7f-dece5b14e228
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.listado_au
+label: 'Listado autores'
+targetEntityType: media
+cache: true

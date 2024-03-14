@@ -1,0 +1,20 @@
+uuid: ff4753bd-ade5-4556-b9b7-d4be58501d9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_generico
+  module:
+    - options
+id: node.contenido_generico.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: contenido_generico
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

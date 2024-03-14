@@ -1,0 +1,15 @@
+uuid: c9757b13-f582-4d81-a6f3-7125627c4101
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_destacada_contenido_md
+label: 'Imagen Destacada Contenido MD'
+effects:
+  7ee609a0-c60c-4681-8808-899fbac1daf7:
+    uuid: 7ee609a0-c60c-4681-8808-899fbac1daf7
+    id: image_scale
+    weight: 1
+    data:
+      width: 680
+      height: null
+      upscale: false

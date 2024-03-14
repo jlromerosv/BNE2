@@ -1,0 +1,18 @@
+uuid: 9d9f96bb-6f1f-43a8-a9c5-01d4dacc840f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_publicacion
+id: taxonomy_term.tipo_de_publicacion.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_de_publicacion
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

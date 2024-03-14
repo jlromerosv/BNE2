@@ -1,0 +1,28 @@
+uuid: 36cc2b20-0a44-4e28-afc2-f1473f2d7370
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_destacados_manuales
+    - node.type.destacados_manuales
+    - taxonomy.vocabulary.area_de_transparencia
+id: taxonomy_term.area_de_transparencia.field_destacados_manuales
+field_name: field_destacados_manuales
+entity_type: taxonomy_term
+bundle: area_de_transparencia
+label: 'Destacados manuales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      destacados_manuales: destacados_manuales
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 7f662ee5-67e2-43b2-b1ca-0bd51b2f984c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: seccion_albacete_
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

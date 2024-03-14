@@ -1,0 +1,18 @@
+uuid: 99331c00-e94e-4e12-987b-66d21a3f9814
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contenidos_formativos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.tipo_de_contenidos_formativos
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_contenidos_formativos
+default_langcode: site_default
+language_alterable: true

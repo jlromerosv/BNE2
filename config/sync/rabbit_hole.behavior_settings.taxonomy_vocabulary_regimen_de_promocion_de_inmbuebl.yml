@@ -1,0 +1,14 @@
+uuid: a4f5d543-d65a-491a-9f47-759e2c0eaa75
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regimen_de_promocion_de_inmbuebl
+id: taxonomy_vocabulary_regimen_de_promocion_de_inmbuebl
+entity_type_id: taxonomy_vocabulary
+entity_id: regimen_de_promocion_de_inmbuebl
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

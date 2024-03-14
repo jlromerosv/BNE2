@@ -1,0 +1,18 @@
+uuid: 57efb002-4a07-4887-9643-8eb6d569ca4a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_estandar
+id: node.seccion_estandar.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: seccion_estandar
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

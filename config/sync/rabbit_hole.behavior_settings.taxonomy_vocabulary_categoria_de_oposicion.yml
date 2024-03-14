@@ -1,0 +1,14 @@
+uuid: b7587549-ceaf-4910-affb-3f07b07d0549
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_oposicion
+id: taxonomy_vocabulary_categoria_de_oposicion
+entity_type_id: taxonomy_vocabulary
+entity_id: categoria_de_oposicion
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

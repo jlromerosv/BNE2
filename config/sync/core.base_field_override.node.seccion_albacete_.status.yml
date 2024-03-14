@@ -1,0 +1,22 @@
+uuid: f2da8980-4a75-4a2e-9376-3a9c60822d6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.status
+field_name: status
+entity_type: node
+bundle: seccion_albacete_
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

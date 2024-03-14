@@ -1,0 +1,15 @@
+uuid: fde73462-860f-48fd-a029-9a0f8f6849f5
+langcode: es
+status: true
+dependencies: {  }
+name: escalar_a_ancho_576px
+label: 'Escalar a ancho 576px'
+effects:
+  32b436df-74ee-4960-ac67-d0c1eee29ea0:
+    uuid: 32b436df-74ee-4960-ac67-d0c1eee29ea0
+    id: image_scale
+    weight: 1
+    data:
+      width: 576
+      height: null
+      upscale: false

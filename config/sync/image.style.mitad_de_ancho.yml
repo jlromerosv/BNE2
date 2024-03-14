@@ -1,0 +1,15 @@
+uuid: 7fa3cb0f-8025-4d57-bee0-66cda784c642
+langcode: es
+status: true
+dependencies: {  }
+name: mitad_de_ancho
+label: 'Mitad de ancho'
+effects:
+  3a72c102-e985-4d0d-8fd5-c6e60d4fc577:
+    uuid: 3a72c102-e985-4d0d-8fd5-c6e60d4fc577
+    id: image_scale
+    weight: 1
+    data:
+      width: 960
+      height: null
+      upscale: false

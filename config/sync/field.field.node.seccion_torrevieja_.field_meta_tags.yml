@@ -1,0 +1,21 @@
+uuid: dd1bd00b-1faf-420e-a161-ac50deaa752b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.seccion_torrevieja_
+  module:
+    - metatag
+id: node.seccion_torrevieja_.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: seccion_torrevieja_
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

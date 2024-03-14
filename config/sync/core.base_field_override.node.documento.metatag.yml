@@ -1,0 +1,18 @@
+uuid: c722e35b-5f08-4f80-a4b7-7065a0d332a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+id: node.documento.metatag
+field_name: metatag
+entity_type: node
+bundle: documento
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

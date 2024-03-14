@@ -1,0 +1,18 @@
+uuid: 814c6a8a-b424-404f-bd62-6c1f1c306800
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.contenidos_formativos
+target_entity_type_id: node
+target_bundle: contenidos_formativos
+default_langcode: site_default
+language_alterable: false

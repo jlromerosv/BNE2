@@ -1,0 +1,14 @@
+uuid: 771af217-4fee-48c9-8514-1a6687e1445c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_campana
+id: taxonomy_vocabulary_tipo_de_campana
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_campana
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

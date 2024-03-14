@@ -1,0 +1,29 @@
+uuid: f5000730-812d-4add-9118-ed6821eb0197
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_cabecera
+    - media.type.imagen
+    - node.type.autor
+id: node.autor.field_imagen_cabecera
+field_name: field_imagen_cabecera
+entity_type: node
+bundle: autor
+label: 'Imagen Cabecera'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

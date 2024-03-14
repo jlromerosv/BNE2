@@ -1,0 +1,22 @@
+uuid: 4414d2e5-1df1-42c3-af8f-e61f1653541e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_torrevieja_
+id: node.seccion_torrevieja_.status
+field_name: status
+entity_type: node
+bundle: seccion_torrevieja_
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

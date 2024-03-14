@@ -1,0 +1,284 @@
+//Pagina del listado de Envío postal
+.ps-postal-listado {
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.ps-path-postales-de-la-biblioteca-nacional-de-españa {
+  .language-switcher-language-url{
+
+    ul{
+
+      li{
+        display: none;
+      }
+      .es{
+        display: flex;
+      }
+    }
+  }
+  main {
+    .layout-content {
+      .region-content {
+        padding: 0 15px;
+        @include ps-content-margins();
+        #block-bne-theme-contenidoprincipaldelapagina {
+          h1 {
+            @include estilo_h1();
+          }
+          .ps-postal-ficha {
+            .view-header {
+              display: none;
+            }
+            .view-content {
+              width: 100%;
+              max-width: 800px;
+              margin: 0 auto;
+
+              .views-row {
+                article {
+                  h2 {
+                    text-align: center;
+                    a {
+                      @include h2_style($negro, 20px);
+                      span {
+                        @include h2_style($negro, 20px);
+                      }
+                    }
+                  }
+                  .node__content {
+                    .field--name-field-imagen-destacada {
+                      max-width: 600px;
+                      margin: 0 auto;
+                    }
+                    .field--name-field-codigo-referencia {
+                      .field__item {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: $bne_color_2;
+                        text-align: center;
+                        margin-top: 10px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .view-footer {
+              .ps-prev-page {
+                margin-top: 2em;
+                text-align: center;
+                a {
+                  @include enlace();
+                }
+              }
+            }
+          }
+          .postal-preview {
+            .view-header {
+              display: block;
+              .titulo-obra {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                color: $negro;
+                text-align: center;
+                margin-bottom: 1em;
+              }
+              .intro-text {
+                @include estilos_body();
+                margin-bottom: 1em;
+              }
+            }
+            .view-content{
+              .field--name-field-codigo-referencia{
+                display: none;
+              }
+            }
+
+          }
+        }
+        .block-views-blockenvio-postal-block-1 {
+          margin-top: 30px;
+          h1 {
+            display: none;
+          }
+          .view-envio-postal {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 2em;
+
+            .view-content {
+              .views-row {
+                .views-field-webform {
+                  .field-content {
+                    form {
+                      .form-item-destinatario- {
+                        display: none;
+                      }
+                      .form-item-direcciones-de-e-mail-de-los-destinatarios{
+                        label{
+                          display: block !important;
+                        }
+                      }
+                      input {
+                        box-sizing: border-box;
+                        width: 100%;
+                        display: block;
+                      }
+                      display: grid;
+                      grid-template-columns: 1fr;
+                      grid-column-gap: 44px;
+                      grid-row-gap: 30px;
+                      @include estilos-formulario();
+                      @media (min-width: 576px) {
+                        grid-template-columns: 1fr 1fr;
+                        .form-type-textarea {
+                          grid-column: span 2;
+                          .description {
+                            width: 100%;
+                            margin-top: 1em;
+                            color: $bne_color_2;
+                            font-size: 14px;
+                            line-height: 20px;
+                            @include tipografia($Roboto, 3, regular);
+                          }
+                        }
+                        .form-item {
+                          margin: 0;
+                        }
+                        .form-actions {
+                          grid-column: span 2;
+                          input {
+                            width: 100%;
+                            height: 72px;
+                            border: 1px solid $bne_color_3;
+                            background-color: $bne_color_4;
+                            color: $bne_color_2;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            @include tipografia($Roboto, 3, medium);
+                          }
+                          .webform-button--submit {
+                            background-color: $bne_color_5;
+                            color: $blanco;
+                            text-transform: uppercase;
+                          }
+                        }
+                      }
+                      .webform-progress {
+                        display: none;
+                      }
+                      .webform-preview {
+                        grid-column: span 2;
+                        .webform-submission-data {
+                          .form-item-seleccione-un-titulo-,
+                          .form-item--o-escriba-el-suyo- {
+                            margin-bottom: 0.5em;
+                            font-size: 32px;
+                            font-family: $dm-serif;
+                            font-weight: $dm-serif-regular;
+                            color: $bne_color_1;
+                            line-height: 48px;
+                            text-align: center;
+                            font-style: italic;
+                            label {
+                              display: none;
+                            }
+                          }
+                          .form-item-mensaje- {
+                            margin-bottom: 1em;
+                            label {
+                              display: none;
+                            }
+                            @include estilos_body();
+                          }
+                          .form-item-nombre-del-remitente- {
+                            label {
+                              display: none;
+                            }
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $bne_color_1;
+                            line-height: 34px;
+                          }
+                        }
+                      }
+                      .webform-confirmation {
+                        .ps-postal-confirmation {
+                          .view-header {
+                            display: none;
+                          }
+                          .view-content{
+                            .field--name-field-codigo-referencia{
+                              display: none;
+                            }
+                          }
+                        }
+                        grid-column: span 2;
+                        .title {
+                          font-size: 32px;
+                          font-family: $dm-serif;
+                          font-weight: $dm-serif-regular;
+                          color: $bne_color_1;
+                          line-height: 48px;
+                          text-align: center;
+                        }
+                        .imagen-postal {
+                          .view-content {
+                            .views-row {
+                              article {
+                                h2 {
+                                  display: none;
+                                }
+                              }
+                            }
+                          }
+                          .view-footer {
+                            display: none;
+                          }
+                        }
+                        .destinatarios-email {
+                          .email {
+                            @include estilos_body();
+                            svg {
+                              transform: rotate(180deg);
+                              margin-right: 5px;
+                              width: 7px;
+                              height: auto;
+                            }
+                          }
+                        }
+                        .destinatarios-title {
+                          @include estilos_body();
+                        }
+                        .enviar-otra {
+                          margin-top: 1em;
+                          @include estilos_body();
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .view-footer {
+              .condiciones-uso {
+                text-align: right;
+                a {
+                  @include enlace();
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.path-colecciones .messages {
+  display: none;
+}

@@ -1,0 +1,10 @@
+uuid: b929119d-03fc-4425-ad30-33194bf8d4c1
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.banner_obras
+label: 'Banner obras'
+targetEntityType: media
+cache: true

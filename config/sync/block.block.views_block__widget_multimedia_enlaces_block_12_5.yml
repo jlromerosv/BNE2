@@ -1,0 +1,38 @@
+uuid: b41c1ef3-ac02-489c-813f-eb17a5f3c3a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - node
+    - views
+  theme:
+    - sede_theme
+id: views_block__widget_multimedia_enlaces_block_12_5
+theme: sede_theme
+region: sidebar_first
+weight: -27
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-block_12'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-block_12'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      pagina_basica: pagina_basica
+      pagina_personalizada: pagina_personalizada

@@ -1,0 +1,22 @@
+uuid: 0748481d-4b66-4dc2-b36b-deebc0e4c64b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_de_convocatoria
+id: taxonomy_term.estado_de_convocatoria.status
+field_name: status
+entity_type: taxonomy_term
+bundle: estado_de_convocatoria
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

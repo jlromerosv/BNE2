@@ -1,0 +1,37 @@
+uuid: d73873d2-cbd5-46a1-a687-546be2ab4040
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---fabne---sidebar---hazte-am
+  module:
+    - block_class
+    - system
+  theme:
+    - fundacion_theme
+third_party_settings:
+  block_class:
+    classes: menu-sidebar
+id: mx1fabnesidebarhazteamigo
+theme: fundacion_theme
+region: sidebar_first
+weight: -30
+provider: null
+plugin: 'system_menu_block:mx1---fabne---sidebar---hazte-am'
+settings:
+  id: 'system_menu_block:mx1---fabne---sidebar---hazte-am'
+  label: 'MX1 - FABNE - Sidebar - Hazte Amigo'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/hazte-amigo\r\n/hazte-amigo/*"

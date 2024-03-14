@@ -1,0 +1,25 @@
+uuid: 5babc85d-d895-47ff-ac10-23c97eecf68c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_source
+    - node.type.seccion_nivel_1_estandar
+id: node.seccion_nivel_1_estandar.field_domain_source
+field_name: field_domain_source
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: 'Domain Source'
+description: 'Select the canonical domain for this content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

@@ -1,0 +1,5 @@
+name: 'Link type'
+url_alias: 'type _ of _ link'
+widget:
+  config:
+    reset_text: 'Show all'

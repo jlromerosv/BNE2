@@ -1,0 +1,18 @@
+uuid: 6e5f15fe-47b9-48f0-b42f-779b7c52af82
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_documentos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.galeria_de_documentos
+target_entity_type_id: node
+target_bundle: galeria_de_documentos
+default_langcode: site_default
+language_alterable: true

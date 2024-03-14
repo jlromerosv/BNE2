@@ -1,0 +1,28 @@
+uuid: ffd1c1cd-c01d-424e-80aa-9f7872c135ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_icono
+    - node.type.icono_svg_
+    - system.menu.menu-de-gestion-del-usuario
+id: menu_link_content.menu-de-gestion-del-usuario.field_icono
+field_name: field_icono
+entity_type: menu_link_content
+bundle: menu-de-gestion-del-usuario
+label: Icono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      icono_svg_: icono_svg_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

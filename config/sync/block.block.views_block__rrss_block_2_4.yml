@@ -1,0 +1,33 @@
+uuid: d236f89e-849f-4021-88b1-fdefc584aa8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.rrss
+  module:
+    - system
+    - views
+  theme:
+    - fundacion_theme
+id: views_block__rrss_block_2_4
+theme: fundacion_theme
+region: content
+weight: -24
+provider: null
+plugin: 'views_block:rrss-block_2'
+settings:
+  id: 'views_block:rrss-block_2'
+  label: 'Bloque compartir en mis redes sociales y volver (páginas)'
+  label_display: '0'
+  provider: views
+  views_label: 'Bloque compartir en mis redes sociales y volver (páginas)'
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/23368\r\n/node/26828\r\n/node/26820\r\n/node/26825\r\n/hazte-amigo/*\r\n/node/29849"

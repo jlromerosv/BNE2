@@ -1,0 +1,5 @@
+name: 'Type of solicitation'
+url_alias: 'type _ call'
+widget:
+  config:
+    reset_text: 'Show all'

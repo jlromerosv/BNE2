@@ -1,0 +1,8 @@
+uuid: 52dad077-cd53-4510-ab9e-7e855b337844
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Tipo de documento'
+vid: tipo_de_documento_institucional
+description: ''
+weight: 0

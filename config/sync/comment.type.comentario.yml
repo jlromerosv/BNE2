@@ -1,0 +1,8 @@
+uuid: 1bc8a3c8-1bd0-4f01-9922-8c83fe685b8f
+langcode: es
+status: true
+dependencies: {  }
+id: comentario
+label: Comentario
+target_entity_type_id: node
+description: ''

@@ -1,0 +1,18 @@
+uuid: 981463df-ae82-4317-b6f0-da362a20370f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.grupo_de_areas_de_transparencia
+id: taxonomy_term.grupo_de_areas_de_transparencia.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: grupo_de_areas_de_transparencia
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

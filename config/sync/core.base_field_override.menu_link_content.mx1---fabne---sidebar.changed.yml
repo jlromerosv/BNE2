@@ -1,0 +1,18 @@
+uuid: 74bdf860-0fc1-4524-87aa-4c00c69d20c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---fabne---sidebar
+id: menu_link_content.mx1---fabne---sidebar.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: mx1---fabne---sidebar
+label: Changed
+description: 'La hora en la que el enlace del menú se editó por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

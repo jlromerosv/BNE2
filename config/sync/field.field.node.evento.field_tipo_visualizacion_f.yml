@@ -1,0 +1,33 @@
+uuid: db82acbc-968f-4ca1-b5d0-980f718ea770
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_visualizacion_f
+    - node.type.evento
+    - taxonomy.vocabulary.visualizacion_fecha_evento
+  content:
+    - 'taxonomy_term:visualizacion_fecha_evento:c84f52f3-c152-4be0-a449-05acfe410078'
+id: node.evento.field_tipo_visualizacion_f
+field_name: field_tipo_visualizacion_f
+entity_type: node
+bundle: evento
+label: 'Tipo de visualización de fecha'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: c84f52f3-c152-4be0-a449-05acfe410078
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      visualizacion_fecha_evento: visualizacion_fecha_evento
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

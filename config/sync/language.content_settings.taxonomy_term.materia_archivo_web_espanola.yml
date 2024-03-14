@@ -1,0 +1,18 @@
+uuid: 2e6f2c69-d526-40b9-aac1-98dd376b945e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.materia_archivo_web_espanola
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.materia_archivo_web_espanola
+target_entity_type_id: taxonomy_term
+target_bundle: materia_archivo_web_espanola
+default_langcode: site_default
+language_alterable: false

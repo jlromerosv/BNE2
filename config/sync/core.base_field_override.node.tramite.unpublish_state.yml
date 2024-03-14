@@ -1,0 +1,20 @@
+uuid: 15670f9a-a2bc-4a00-916b-4aa1d94b2be1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+  module:
+    - options
+id: node.tramite.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: tramite
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

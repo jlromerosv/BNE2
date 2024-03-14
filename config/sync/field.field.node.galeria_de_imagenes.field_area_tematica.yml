@@ -1,0 +1,29 @@
+uuid: 0d65159f-8f08-4bbf-8d33-f02b2d29d830
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area_tematica
+    - node.type.galeria_de_imagenes
+    - taxonomy.vocabulary.area_tematica
+id: node.galeria_de_imagenes.field_area_tematica
+field_name: field_area_tematica
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Área temática'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_tematica: area_tematica
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

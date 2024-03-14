@@ -1,0 +1,18 @@
+uuid: 95756f98-1ac1-47ea-a93a-1a356ce05cf7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_persona
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.tipo_de_persona
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_persona
+default_langcode: site_default
+language_alterable: true

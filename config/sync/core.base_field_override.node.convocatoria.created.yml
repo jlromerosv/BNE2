@@ -1,0 +1,18 @@
+uuid: 1a8d00d1-1a79-4545-9624-203c4ba968c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.convocatoria
+id: node.convocatoria.created
+field_name: created
+entity_type: node
+bundle: convocatoria
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

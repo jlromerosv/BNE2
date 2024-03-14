@@ -1,0 +1,20 @@
+uuid: 39952ed0-aa84-4852-8c16-ca78c36f0977
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_videos
+  module:
+    - path
+id: node.galeria_de_videos.path
+field_name: path
+entity_type: node
+bundle: galeria_de_videos
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

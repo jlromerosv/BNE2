@@ -1,0 +1,18 @@
+uuid: 7f4abd05-933f-4250-aa17-543a0b401750
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.materia_archivo_web_espanola
+id: taxonomy_term.materia_archivo_web_espanola.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: materia_archivo_web_espanola
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,471 @@
+uuid: 83152cb4-3a71-485e-bfb5-b189dc598406
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.evento.created
+    - core.base_field_override.node.evento.path
+    - core.base_field_override.node.evento.status
+    - core.base_field_override.node.evento.title
+    - field.field.node.evento.body
+    - field.field.node.evento.field_archivos
+    - field.field.node.evento.field_ciclo_campana
+    - field.field.node.evento.field_colaboradores
+    - field.field.node.evento.field_contenidos_relacionados
+    - field.field.node.evento.field_domain_access
+    - field.field.node.evento.field_enlace_formulario_inscripc
+    - field.field.node.evento.field_enlaces
+    - field.field.node.evento.field_fecha_fin
+    - field.field.node.evento.field_fecha_inicio
+    - field.field.node.evento.field_galeria_de_imagenes
+    - field.field.node.evento.field_horarios_especificos
+    - field.field.node.evento.field_id_externo
+    - field.field.node.evento.field_imagen_destacada
+    - field.field.node.evento.field_informacion_adicional
+    - field.field.node.evento.field_lugar
+    - field.field.node.evento.field_modalidad
+    - field.field.node.evento.field_tipo
+    - field.field.node.evento.field_tipo_asistencia_event
+    - field.field.node.evento.field_tipo_visualizacion_f
+    - field.field.node.evento.field_url
+    - field.field.node.evento.field_videos
+    - node.type.evento
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      3892326f-4ea9-497d-b224-ec1732e51685:
+        separator: '}'
+        limit: null
+        uuid: 3892326f-4ea9-497d-b224-ec1732e51685
+        plugin: explode
+        source: rutaarchivo
+        weight: 0
+        label: Explode
+      b002c790-f837-49f7-a29c-ffaeb5004211:
+        separator: '}'
+        limit: null
+        uuid: b002c790-f837-49f7-a29c-ffaeb5004211
+        plugin: explode
+        source: enlacesexternosurl
+        weight: 0
+        label: Explode
+      e8981b53-865b-4280-b25f-5c620cabd4e7:
+        separator: '}'
+        limit: null
+        uuid: e8981b53-865b-4280-b25f-5c620cabd4e7
+        plugin: explode
+        source: enlacesexternostexto
+        weight: 0
+        label: Explode
+      cc499d02-38a1-485e-825d-4162047c4974:
+        separator: '}'
+        limit: null
+        uuid: cc499d02-38a1-485e-825d-4162047c4974
+        plugin: explode
+        source: entidadesref
+        weight: 0
+        label: Explode
+      1875acbe-d39f-4238-9c61-5e87bca4c5c4:
+        invert: false
+        uuid: 1875acbe-d39f-4238-9c61-5e87bca4c5c4
+        plugin: required
+        source: id_externo
+        weight: 0
+        label: Obligatorio
+      48992594-bba0-4ade-8f12-708c8c746706:
+        separator: '}'
+        limit: null
+        uuid: 48992594-bba0-4ade-8f12-708c8c746706
+        plugin: explode
+        source: listacontenidosrelacionados
+        weight: 0
+        label: Explode
+      be49afce-2e39-49a1-bfc8-ce6c8a7a444c:
+        separator: '}'
+        limit: null
+        uuid: be49afce-2e39-49a1-bfc8-ce6c8a7a444c
+        plugin: explode
+        source: rutavideo
+        weight: 0
+        label: Explode
+      3b963ea0-15a7-4ca4-95dd-408fa5ca8683:
+        separator: '}'
+        limit: null
+        uuid: 3b963ea0-15a7-4ca4-95dd-408fa5ca8683
+        plugin: explode
+        source: modalidad
+        weight: 0
+        label: Explode
+label: 'Carga Eventos/Exposiciones/actividades'
+id: carga_exposiciones_actividades
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: evento
+  langcode: es
+  insert_new: 1
+  update_existing: 1
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  alias:
+    value: Alias
+    label: Alias
+    machine_name: alias
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  rutaarchivo:
+    value: RutaArchivo
+    label: RutaArchivo
+    machine_name: rutaarchivo
+    type: csv
+  enlacesexternosurl:
+    value: EnlacesExternosURL
+    label: EnlacesExternosURL
+    machine_name: enlacesexternosurl
+    type: csv
+  enlacesexternostexto:
+    value: EnlacesExternosTexto
+    label: EnlacesExternosTexto
+    machine_name: enlacesexternostexto
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  fechainicio:
+    value: FechaInicio
+    label: FechaInicio
+    machine_name: fechainicio
+    type: csv
+  direccion:
+    value: Direccion
+    label: Direccion
+    machine_name: direccion
+    type: csv
+  informacionadicional:
+    value: InformacionAdicional
+    label: InformacionAdicional
+    machine_name: informacionadicional
+    type: csv
+  tipo:
+    value: Tipo
+    label: Tipo
+    machine_name: tipo
+    type: csv
+  entidadesref:
+    value: EntidadesRef
+    label: EntidadesRef
+    machine_name: entidadesref
+    type: csv
+  linkgaleriaimagenes:
+    value: LinkGaleriaImagenes
+    label: LinkGaleriaImagenes
+    machine_name: linkgaleriaimagenes
+    type: csv
+  rutavideo:
+    value: RutaVideo
+    label: RutaVideo
+    machine_name: rutavideo
+    type: csv
+  tipoasistencia:
+    value: TipoAsistencia
+    label: TipoAsistencia
+    machine_name: tipoasistencia
+    type: csv
+  listacontenidosrelacionados:
+    value: ListaContenidosRelacionados
+    label: ListaContenidosRelacionados
+    machine_name: listacontenidosrelacionados
+    type: csv
+  published:
+    value: Published
+    label: Published
+    machine_name: published
+    type: csv
+  imagendestacada:
+    value: ImagenDestacada
+    label: ImagenDestacada
+    machine_name: imagendestacada
+    type: csv
+  fechafin:
+    value: FechaFin
+    label: FechaFin
+    machine_name: fechafin
+    type: csv
+  visualizacionfecha:
+    value: VisualizacionFecha
+    label: VisualizacionFecha
+    machine_name: visualizacionfecha
+    type: csv
+  modalidad:
+    value: Modalidad
+    label: Modalidad
+    machine_name: modalidad
+    type: csv
+  enlaceformulario:
+    value: EnlaceFormulario
+    label: EnlaceFormulario
+    machine_name: enlaceformulario
+    type: csv
+  enlaceretransmite:
+    value: EnlaceRetransmite
+    label: EnlaceRetransmite
+    machine_name: enlaceretransmite
+    type: csv
+  ciclo:
+    value: Ciclo
+    label: Ciclo
+    machine_name: ciclo
+    type: csv
+  horario:
+    value: Horario
+    label: Horario
+    machine_name: horario
+    type: csv
+mappings:
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: path
+    map:
+      alias: alias
+      pathauto: ''
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_archivos
+    map:
+      target_id: rutaarchivo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_enlaces
+    map:
+      uri: enlacesexternosurl
+      title: enlacesexternostexto
+    settings:
+      language: null
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_fecha_inicio
+    map:
+      value: fechainicio
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: field_lugar
+    map:
+      target_id: direccion
+    settings:
+      language: ''
+      reference_by: title
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_informacion_adicional
+    map:
+      value: informacionadicional
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_tipo
+    map:
+      target_id: tipo
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_colaboradores
+    map:
+      target_id: entidadesref
+    settings:
+      language: null
+      reference_by: title
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_galeria_de_imagenes
+    map:
+      target_id: linkgaleriaimagenes
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_videos
+    map:
+      target_id: rutavideo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_tipo_asistencia_event
+    map:
+      target_id: tipoasistencia
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_contenidos_relacionados
+    map:
+      target_id: listacontenidosrelacionados
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: status
+    map:
+      value: published
+    settings:
+      language: null
+  -
+    target: field_imagen_destacada
+    map:
+      target_id: imagendestacada
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_fecha_fin
+    map:
+      value: fechafin
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: field_tipo_visualizacion_f
+    map:
+      target_id: visualizacionfecha
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_modalidad
+    map:
+      target_id: modalidad
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_enlace_formulario_inscripc
+    map:
+      uri: enlaceformulario
+      title: ''
+    settings:
+      language: null
+  -
+    target: field_url
+    map:
+      uri: enlaceretransmite
+      title: ''
+    settings:
+      language: null
+  -
+    target: field_ciclo_campana
+    map:
+      target_id: ciclo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_horarios_especificos
+    map:
+      value: horario
+    settings:
+      language: ''
+      format: html_full

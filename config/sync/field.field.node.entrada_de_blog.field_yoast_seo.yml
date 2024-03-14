@@ -1,0 +1,27 @@
+uuid: 12adc60a-5b9b-45b8-8928-77870bbead51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.entrada_de_blog
+  module:
+    - yoast_seo
+id: node.entrada_de_blog.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: entrada_de_blog
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    yoast_seo:
+      focus_keyword: ''
+      status: ''
+    status: ''
+    focus_keyword: ''
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

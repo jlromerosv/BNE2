@@ -1,0 +1,224 @@
+.view-bloque-agenda-actividades-home {
+  .view-header {
+    padding: 0 15px;
+    @media (min-width: 768px) {
+      padding-left: 96px;
+    }
+    h2 {
+      font-size: $h4_home_block;
+      color: $negro;
+      font-family: $dm-serif;
+      font-weight: $dm-serif-regular;
+      line-height: 48px;
+      letter-spacing: 0px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-top: 0.5px solid $bne_color_3;
+    border-left: 0.5px solid $bne_color_3;
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .view-footer {
+      padding: 0 15px;
+      position: relative;
+      border-right: 0.5px solid $bne_color_3;
+      border-bottom: 0.5px solid $bne_color_3;
+      background: $bne_color_4;
+      height: 100%;
+      min-height: 250px;
+      @media (max-width: 767.98px) {
+        height: 84px !important;
+        min-height: 84px;
+      }
+      .ps-enlace-listado{
+        padding: 0;
+        height: 100%;
+      }
+      .view-content {
+        display: block;
+        border: none;
+        padding: 0;
+        height: 100%;
+        .views-row {
+          display: block;
+          border: none;
+          padding: 0;
+          height: 100%;
+          min-height: auto;
+          .views-field-title {
+            display: block;
+            height: 100%;
+            margin-bottom: 0;
+            .field-content {
+              display: block;
+              position: absolute;
+              height: 100%;
+              top: 0;
+              left: 0;
+              margin-block-start: 0;
+              margin-block-end: 0;
+              padding: 0;
+              width: 100%;
+              a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                font-size: 16px;
+                font-weight: 400;
+                color: $bne_color_2;
+                line-height: 24px;
+                letter-spacing: 0.96px;
+                text-align: center;
+                @include tipografia($Roboto, 3, regular);
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .view-content > .views-row {
+    position: relative;
+    border-right: 0.5px solid $bne_color_3;
+    border-bottom: 0.5px solid $bne_color_3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    min-height: 250px;
+    .views-field {
+      .field-content {
+        padding: 0 30px;
+      }
+    }
+
+    .views-field-field-tipo {
+      margin-bottom: 0.8em;
+      padding: 0 30px;
+      .field-content {
+        display: inline;
+        font-size: 0.875em;
+        color: $bne_color_2;
+        line-height: 16px;
+        letter-spacing: 0.07px;
+        padding: 5px 15px;
+        border: 1px solid $bne_color_3;
+        border-radius: 3px;
+      }
+    }
+    .views-field-field-subtitulo{
+      margin-bottom: 1em;
+      .field-content{
+        font-size: 1em;
+        color: $bne_color_2;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+      }
+    }
+    .views-field-field-tipo-visualizacion-f{
+      margin-bottom: 1em;
+      .field-content{
+        font-size: 1em;
+        color: $bne_color_2;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+        .fecha-dia{
+          text-transform: lowercase;
+          &::first-letter{
+            text-transform: uppercase;
+          }
+        }
+        .fecha-desde-hasta{
+          &::first-letter{
+            text-transform: uppercase;
+          }
+
+        }
+      }
+    }
+    .views-field-title {
+      margin-bottom: 2em;
+      .field-content {
+        display: block;
+        font-size: $h5_home_block;
+        color: $negro;
+        line-height: 36px;
+        letter-spacing: 0px;
+        font-family: $dm-serif;
+        font-weight: $dm-serif-regular;
+      }
+    }
+    .views-field-field-fecha-inicio,
+    .views-field-field-fecha-inicio-1 {
+      .field-content {
+        margin-bottom: 0.5em;
+        time {
+          font-size: 1em;
+          color: $bne_color_2;
+          line-height: 24px;
+          letter-spacing: 0.48px;
+        }
+        .fecha-dia {
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+    .views-field-field-tipo-visualizacion-f {
+      time {
+        font-size: 1em;
+        color: $bne_color_2;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+      }
+    }
+    .views-field-field-fecha-inicio-1 {
+      margin-bottom: 1.5em;
+    }
+    .views-field-field-marca-agua { 
+      margin-top: auto;
+      .field-content {
+        padding: 0;
+        .marca-agua {
+          background: $bne_color_1;
+          font-size: $h6_home_block;
+          color: $blanco;
+          line-height: 36px;
+          letter-spacing: 0px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .views-field-view-node {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      .field-content {
+        width: 100%;
+        height: 100%;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          font-size: 0;
+        }
+      }
+    }
+  }
+}

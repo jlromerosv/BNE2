@@ -1,0 +1,30 @@
+uuid: e816c2e2-60a1-484b-be1c-a28a0ce25ec6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:html:99997a4d-4c44-47fe-aff5-25db42d4154a'
+  module:
+    - block_content
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_buscadorgeneralpordominios
+theme: sede_theme
+region: breadcrumb
+weight: -31
+provider: null
+plugin: 'block_content:99997a4d-4c44-47fe-aff5-25db42d4154a'
+settings:
+  id: 'block_content:99997a4d-4c44-47fe-aff5-25db42d4154a'
+  label: 'Buscador general por dominios'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/15327\r\n/node/18794"

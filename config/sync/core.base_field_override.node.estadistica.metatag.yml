@@ -1,0 +1,18 @@
+uuid: d1851013-6c06-4b75-a9cc-d258889d65da
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estadistica
+id: node.estadistica.metatag
+field_name: metatag
+entity_type: node
+bundle: estadistica
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

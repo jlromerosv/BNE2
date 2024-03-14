@@ -1,0 +1,18 @@
+uuid: fa76b179-40eb-4948-97f0-7716eda59dd3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.area_tematica
+id: taxonomy_term.area_tematica.name
+field_name: name
+entity_type: taxonomy_term
+bundle: area_tematica
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

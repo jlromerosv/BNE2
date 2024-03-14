@@ -1,0 +1,18 @@
+uuid: cc8f5338-c01c-4975-8381-8ee7879b5799
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+id: node.exposicion.title
+field_name: title
+entity_type: node
+bundle: exposicion
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

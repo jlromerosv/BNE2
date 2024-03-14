@@ -1,0 +1,205 @@
+uuid: cefd0495-202d-438a-ba0f-750d14080aee
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.entidad.created
+    - core.base_field_override.node.entidad.path
+    - core.base_field_override.node.entidad.title
+    - field.field.node.entidad.body
+    - field.field.node.entidad.field_domain_access
+    - field.field.node.entidad.field_email_texto
+    - field.field.node.entidad.field_entidad
+    - field.field.node.entidad.field_imagen_representativa
+    - field.field.node.entidad.field_responsable_y_cargo
+    - field.field.node.entidad.field_tipos
+    - field.field.node.entidad.field_ubicacion_
+    - node.type.entidad
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      b8331498-1e2b-4951-a15f-cb68df28b0f0:
+        default_value: '2916'
+        only_if_empty: false
+        uuid: b8331498-1e2b-4951-a15f-cb68df28b0f0
+        plugin: default_value
+        source: logobneportamper
+        weight: 0
+        label: 'Set value or default value (logo BNE 2916)'
+label: 'Carga Entidades (Departamentos)'
+id: carga_entidades_departamentos_
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: entidad
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  email:
+    value: email
+    label: email
+    machine_name: email
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  dependenciajerarquica:
+    value: DependenciaJerarquica
+    label: DependenciaJerarquica
+    machine_name: dependenciajerarquica
+    type: csv
+  tipo:
+    value: tipo
+    label: tipo
+    machine_name: tipo
+    type: csv
+  nombreyapellidos:
+    value: NombreYApellidos
+    label: NombreYApellidos
+    machine_name: nombreyapellidos
+    type: csv
+  cargo:
+    value: Cargo
+    label: Cargo
+    machine_name: cargo
+    type: csv
+  lugar:
+    value: Lugar
+    label: Lugar
+    machine_name: lugar
+    type: csv
+  logobneportamper:
+    value: LogoBNEporTamper
+    label: LogoBNEporTamper
+    machine_name: logobneportamper
+    type: csv
+  alias:
+    value: Alias
+    label: Alias
+    machine_name: alias
+    type: csv
+mappings:
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_entidad
+    map:
+      target_id: dependenciajerarquica
+    settings:
+      language: null
+      reference_by: title
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_tipos
+    map:
+      target_id: tipo
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_ubicacion_
+    map:
+      target_id: lugar
+    settings:
+      language: null
+      reference_by: title
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_email_texto
+    map:
+      value: email
+    settings:
+      language: null
+  -
+    target: field_responsable_y_cargo
+    map:
+      value: nombreyapellidos
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_imagen_representativa
+    map:
+      target_id: logobneportamper
+    settings:
+      language: ''
+      reference_by: mid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: path
+    map:
+      alias: alias
+      pathauto: ''
+    settings:
+      language: null

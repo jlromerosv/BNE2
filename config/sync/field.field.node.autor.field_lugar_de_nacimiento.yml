@@ -1,0 +1,19 @@
+uuid: 3ae85c77-998a-4679-bfea-d04c734e652d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugar_de_nacimiento
+    - node.type.autor
+id: node.autor.field_lugar_de_nacimiento
+field_name: field_lugar_de_nacimiento
+entity_type: node
+bundle: autor
+label: 'Lugar de nacimiento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

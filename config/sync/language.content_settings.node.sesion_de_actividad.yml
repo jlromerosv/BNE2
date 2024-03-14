@@ -1,0 +1,18 @@
+uuid: cf7a5a11-3dab-41a3-a79d-ca9bcd6353f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sesion_de_actividad
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.sesion_de_actividad
+target_entity_type_id: node
+target_bundle: sesion_de_actividad
+default_langcode: site_default
+language_alterable: false

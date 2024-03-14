@@ -1,0 +1,8 @@
+uuid: 3879088e-e5ed-4134-91d2-d1e660c63cfe
+langcode: es
+status: true
+dependencies: {  }
+name: 'Estado de convocatoria'
+vid: estado_de_convocatoria
+description: ''
+weight: 0

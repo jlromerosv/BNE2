@@ -1,0 +1,18 @@
+uuid: d7f8c4c1-8795-4e40-8fd1-3f7cebede046
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.publicacion
+id: node.publicacion.changed
+field_name: changed
+entity_type: node
+bundle: publicacion
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

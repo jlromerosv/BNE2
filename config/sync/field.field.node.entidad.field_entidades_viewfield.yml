@@ -1,0 +1,117 @@
+uuid: 1b247966-e786-4d39-aa5a-f74c3c6ea853
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidades_viewfield
+    - node.type.entidad
+    - views.view.entidades_nodo
+  module:
+    - viewfield
+id: node.entidad.field_entidades_viewfield
+field_name: field_entidades_viewfield
+entity_type: node
+bundle: entidad
+label: 'Unidades organizativas'
+description: 'Unidades organizativas que dependen de mi'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: fe0e27dd-0d3b-4e24-a1dd-80c39d7c219a
+    display_id: block_8
+    arguments: ''
+    items_to_display: ''
+    token_help: ''
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    entidades_nodo: entidades_nodo
+    files: '0'
+    media_library: '0'
+    bloque_agenda_actividades_home: '0'
+    bloque_enlace_preguntas_frecuentes: '0'
+    bloque_enlaces_a_listados_de_contenido: '0'
+    bloque_imagenes_horarios: '0'
+    bloque_mostrar_ocultar_buscador_bne: '0'
+    bloque_no_hay_resultados_vista: '0'
+    bloques_de_noticias: '0'
+    bloque_sedes_horarios: '0'
+    bloque_selector_tipo_de_coleccion: '0'
+    bloques_imagenes_de_cabecera: '0'
+    bloque_slider_home_pantalla_completa: '0'
+    bloque_slider_redes_sociales_home: '0'
+    bloque_suscripcion_boletin_bne: '0'
+    buscadores_a_texto_completo: '0'
+    buscador_solr_texto_completo: '0'
+    colecciones: '0'
+    colectivos: '0'
+    comment: '0'
+    comentarios_de_la_pagina: '0'
+    content: '0'
+    contenido_de_la_taxonomia: '0'
+    moderated_content: '0'
+    affiliated_content: '0'
+    contenidos_de_la_misma_taxonomia: '0'
+    contenidos_filtrados_por_taxonomia: '0'
+    contenidos_relacionados: '0'
+    content_browser: '0'
+    descarga_imagenes_multimedia: '0'
+    destacados_automaticos: '0'
+    destacados_manuales_de_seccion_de_taxonomia_2_: '0'
+    documentos_enlaces: '0'
+    documentos_enlaces_de_la_pagina: '0'
+    duplicado_de_buscador_general_a_texto_completo: '0'
+    affiliated_editors: '0'
+    webform_submissions: '0'
+    feeds_feed: '0'
+    hitos: '0'
+    horarios: '0'
+    broken_links_report: '0'
+    leer_texto_completo_de_la_coleccion: '0'
+    block_content: '0'
+    listado_colecciones: '0'
+    listados_estandar: '0'
+    poll_list: '0'
+    content_recent: '0'
+    group_members: '0'
+    media: '0'
+    mx1_bne_niveles: '0'
+    poll_admin: '0'
+    proximos_eventos: '0'
+    redirecciones_de_taxonomia_rabbit_hole_: '0'
+    redirect: '0'
+    rrss: '0'
+    scheduler_scheduled_content: '0'
+    test_jaime: '0'
+    test_jaime_minificha: '0'
+    test_minificha_con_imagen: '0'
+    test_organigrama: '0'
+    test_page_alias_jaime: '0'
+    textos_fijos_para_maquetacion: '0'
+    transparencia: '0'
+    taxonomy_term: '0'
+    terminos_taxonomia: '0'
+    user_admin_people: '0'
+    watchdog: '0'
+    widget_multimedia_enlaces: '0'
+    widgets_contenido_manual_de_la_home: '0'
+    widgets_destacados_manuales_home: '0'
+    widgets_media: '0'
+    widget: '0'
+    widgets_imagenes: '0'
+    widgets_multimedia: '0'
+    y_si_todavia_te_queda_alguna_duda_: '0'
+    arbol_de_taxonomia: '0'
+  allowed_display_types:
+    block: block
+    attachment: '0'
+    feed: '0'
+    entity_browser: '0'
+    embed: '0'
+    default: '0'
+    page: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

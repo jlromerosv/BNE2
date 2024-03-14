@@ -1,0 +1,20 @@
+uuid: 1f5f19c3-b1e2-4ab0-bdfb-638bbec465a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.colectivo
+  module:
+    - text
+id: taxonomy_term.colectivo.description
+field_name: description
+entity_type: taxonomy_term
+bundle: colectivo
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

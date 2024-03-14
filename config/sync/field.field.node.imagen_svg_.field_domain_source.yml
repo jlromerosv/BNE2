@@ -1,0 +1,25 @@
+uuid: 38541541-361b-4f59-9ecc-71df415aecce
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_source
+    - node.type.imagen_svg_
+id: node.imagen_svg_.field_domain_source
+field_name: field_domain_source
+entity_type: node
+bundle: imagen_svg_
+label: 'Domain Source'
+description: 'Select the canonical domain for this content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

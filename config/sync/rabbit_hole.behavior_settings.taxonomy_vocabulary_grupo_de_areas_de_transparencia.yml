@@ -1,0 +1,14 @@
+uuid: d6db5e69-17fe-4b77-9ca8-b363e3f2237a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.grupo_de_areas_de_transparencia
+id: taxonomy_vocabulary_grupo_de_areas_de_transparencia
+entity_type_id: taxonomy_vocabulary
+entity_id: grupo_de_areas_de_transparencia
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

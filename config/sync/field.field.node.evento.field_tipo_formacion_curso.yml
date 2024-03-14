@@ -1,0 +1,29 @@
+uuid: fbbfeeab-2c50-4b0d-86b9-e06916dee464
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_formacion_curso
+    - node.type.evento
+    - taxonomy.vocabulary.tipo_de_contenidos_formativos
+id: node.evento.field_tipo_formacion_curso
+field_name: field_tipo_formacion_curso
+entity_type: node
+bundle: evento
+label: 'Tipo de formación/curso'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_contenidos_formativos: tipo_de_contenidos_formativos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

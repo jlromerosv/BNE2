@@ -1,0 +1,31 @@
+uuid: 63a9b025-6462-449b-8b9f-a0ae76155973
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.taxonomy_browser
+  module:
+    - views
+name: explorador_de_categoria_de_actualidad
+label: 'Explorador de categoría de actualidad'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Seleccionar entidades'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  cafed45b-f2eb-404a-9260-c126abff7ba2:
+    id: view
+    uuid: cafed45b-f2eb-404a-9260-c126abff7ba2
+    label: Ver
+    weight: 1
+    settings:
+      submit_text: 'Seleccionar entidades'
+      auto_select: false
+      view: taxonomy_browser
+      view_display: entity_browser_1

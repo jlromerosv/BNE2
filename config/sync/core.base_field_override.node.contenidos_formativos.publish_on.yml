@@ -1,0 +1,18 @@
+uuid: fb4013b4-5fe3-420a-a543-235910e90638
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_formativos
+id: node.contenidos_formativos.publish_on
+field_name: publish_on
+entity_type: node
+bundle: contenidos_formativos
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

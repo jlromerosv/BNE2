@@ -1,0 +1,29 @@
+uuid: 70479c31-16f2-4679-ac55-9651cd9b5a3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - views
+  theme:
+    - sede_theme
+id: views_block__widget_multimedia_enlaces_block_28_2
+theme: sede_theme
+region: content
+weight: -28
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-block_28'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-block_28'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: c374fbf8-f877-4665-8470-fbfdf4083f99
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de obra'
+vid: tipo_de_obra
+description: 'Clasifica las obras en tipo imagen, video o audio.'
+weight: 0

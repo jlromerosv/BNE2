@@ -1,0 +1,18 @@
+uuid: 469237ff-5849-40f4-ba53-3a8855a6ce0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_faq
+id: taxonomy_term.categoria_de_faq.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: categoria_de_faq
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

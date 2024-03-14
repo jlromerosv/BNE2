@@ -1,0 +1,29 @@
+uuid: d6930c59-27a9-4958-ad29-bcbae6d03b3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_etiquetas_busqueda
+    - media.type.archivo
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+id: media.archivo.field_etiquetas_busqueda
+field_name: field_etiquetas_busqueda
+entity_type: media
+bundle: archivo
+label: 'Etiquetas de búsqueda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 1d34a1fc-79df-42bd-91fe-9a99c1bd9a31
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plazo_de_resolucion
+    - node.type.evento
+id: node.evento.field_plazo_de_resolucion
+field_name: field_plazo_de_resolucion
+entity_type: node
+bundle: evento
+label: 'Plazo de inscripción'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 684b6bb5-9bd0-4f80-8905-a5f216f643f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_personalizada
+id: node.pagina_personalizada.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: pagina_personalizada
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

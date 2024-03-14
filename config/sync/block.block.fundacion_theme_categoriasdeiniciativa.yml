@@ -1,0 +1,34 @@
+uuid: d90f57da-a560-4404-a465-52e536b5aa2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.categorias_de_iniciativa
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_categoriasdeiniciativa
+theme: fundacion_theme
+region: sidebar_first
+weight: -24
+provider: null
+plugin: 'facet_block:categorias_de_iniciativa'
+settings:
+  id: 'facet_block:categorias_de_iniciativa'
+  label: 'Categorías de iniciativa'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: categoriasdeiniciativa
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/22875

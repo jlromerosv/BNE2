@@ -1,0 +1,23 @@
+uuid: 626931f1-77cb-45cb-9cf2-99443dfb755d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_urlanterior
+    - media.type.archivo_de_audio
+  module:
+    - link
+id: media.archivo_de_audio.field_urlanterior
+field_name: field_urlanterior
+entity_type: media
+bundle: archivo_de_audio
+label: URLanterior
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

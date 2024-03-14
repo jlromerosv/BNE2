@@ -1,0 +1,21 @@
+uuid: 8093e2dc-f721-4624-8c6a-5355bf11014d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requisitos
+    - node.type.autor
+  module:
+    - text
+id: node.autor.field_requisitos
+field_name: field_requisitos
+entity_type: node
+bundle: autor
+label: 'Texto introductorio'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

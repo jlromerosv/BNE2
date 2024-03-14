@@ -1,0 +1,15 @@
+uuid: 88398277-2774-4015-86f5-ef6c98d115cd
+langcode: es
+status: true
+dependencies: {  }
+name: slider_home_pantalla_completa_md
+label: 'Slider home pantalla completa MD'
+effects:
+  46ce7a53-5a0b-4857-852d-4c84032d3974:
+    uuid: 46ce7a53-5a0b-4857-852d-4c84032d3974
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 600
+      anchor: center-center

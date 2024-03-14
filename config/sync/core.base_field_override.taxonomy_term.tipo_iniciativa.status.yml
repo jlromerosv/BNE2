@@ -1,0 +1,22 @@
+uuid: 507fe1c3-3300-4ed9-b42c-8071b66ae4c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_iniciativa
+id: taxonomy_term.tipo_iniciativa.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_iniciativa
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,144 @@
+uuid: 2dce9c8b-057c-43ea-9aed-b08a4879e660
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.hito.title
+    - field.field.node.hito.body
+    - field.field.node.hito.field_autores
+    - field.field.node.hito.field_id_externo
+    - field.field.node.hito.field_imagen_destacada
+    - field.field.node.hito.field_orden
+    - field.field.node.hito.field_tipo_texto_libre_
+    - node.type.hito
+  module:
+    - node
+label: 'Carga Hitos Simple Timeline'
+id: carga_hitos_simple_timeline
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: hito
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titulo:
+    value: Título
+    label: Título
+    machine_name: titulo
+    type: csv
+  descripcion:
+    value: Descripción
+    label: Descripción
+    machine_name: descripcion
+    type: csv
+  tipo_de_hito:
+    value: 'Tipo de hito'
+    label: 'Tipo de hito'
+    machine_name: tipo_de_hito
+    type: csv
+  author:
+    value: author
+    label: author
+    machine_name: author
+    type: csv
+  orden:
+    value: orden
+    label: orden
+    machine_name: orden
+    type: csv
+  titulo_:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo_
+    type: csv
+  descripcion_:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion_
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  imagendestacada:
+    value: ImagenDestacada
+    label: ImagenDestacada
+    machine_name: imagendestacada
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: titulo_
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: descripcion_
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_tipo_texto_libre_
+    map:
+      value: tipo_de_hito
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_autores
+    map:
+      target_id: author
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_orden
+    map:
+      value: orden
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_imagen_destacada
+    map:
+      target_id: imagendestacada
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0

@@ -1,0 +1,211 @@
+uuid: c137776c-5ba0-42ef-929c-3ff60daae368
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.obra.created
+    - core.base_field_override.node.obra.status
+    - core.base_field_override.node.obra.title
+    - field.field.node.obra.field_autores
+    - field.field.node.obra.field_domain_access
+    - field.field.node.obra.field_id_externo
+    - field.field.node.obra.field_imagen_destacada
+    - field.field.node.obra.field_url_2
+    - node.type.obra
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      214f829a-d91d-4190-bfed-f88d278ba803:
+        default_value: page_redirect
+        only_if_empty: false
+        uuid: 214f829a-d91d-4190-bfed-f88d278ba803
+        plugin: default_value
+        source: redirect_por_tamper
+        weight: 0
+        label: 'Set value or default value: page_redirect'
+      8c1cfe75-1579-4188-aa58-1df4e9a397fc:
+        default_value: bundle_default
+        only_if_empty: false
+        uuid: 8c1cfe75-1579-4188-aa58-1df4e9a397fc
+        plugin: default_value
+        source: fallback_por_tamper
+        weight: 0
+        label: 'Set value or default value: bundle_default'
+      395838d4-0a2c-4cde-9887-df2b7f6c03fe:
+        default_value: '301'
+        only_if_empty: false
+        uuid: 395838d4-0a2c-4cde-9887-df2b7f6c03fe
+        plugin: default_value
+        source: code_por_tamper
+        weight: 0
+        label: 'Set value or default value: 301'
+label: 'Carga de obras de escritores'
+id: carga_de_obras_de_escritores
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: obra
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  published:
+    value: Published
+    label: Published
+    machine_name: published
+    type: csv
+  author:
+    value: author
+    label: author
+    machine_name: author
+    type: csv
+  thumbnail_id:
+    value: thumbnail_id
+    label: thumbnail_id
+    machine_name: thumbnail_id
+    type: csv
+  work_url:
+    value: work_url
+    label: work_url
+    machine_name: work_url
+    type: csv
+  redirect_por_tamper:
+    value: redirect_por_tamper
+    label: redirect_por_tamper
+    machine_name: redirect_por_tamper
+    type: csv
+  fallback_por_tamper:
+    value: fallback_por_tamper
+    label: fallback_por_tamper
+    machine_name: fallback_por_tamper
+    type: csv
+  code_por_tamper:
+    value: code_por_tamper
+    label: code_por_tamper
+    machine_name: code_por_tamper
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: status
+    map:
+      value: published
+    settings:
+      language: null
+  -
+    target: field_autores
+    map:
+      target_id: author
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_imagen_destacada
+    map:
+      target_id: thumbnail_id
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_url_2
+    map:
+      uri: work_url
+      title: ''
+    settings:
+      language: null
+  -
+    target: rh_redirect
+    map:
+      value: work_url
+    settings: {  }
+    unique: {  }
+  -
+    target: rh_action
+    map:
+      value: redirect_por_tamper
+    settings: {  }
+    unique: {  }
+  -
+    target: rh_redirect_fallback_action
+    map:
+      value: fallback_por_tamper
+    settings: {  }
+    unique: {  }
+  -
+    target: rh_redirect_response
+    map:
+      value: code_por_tamper
+    settings: {  }
+    unique: {  }

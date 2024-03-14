@@ -1,0 +1,21 @@
+uuid: c585cf41-ef92-4c53-b9d5-f2d64a9f5442
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_all_affiliates
+    - node.type.contenido_generico
+id: node.contenido_generico.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+bundle: contenido_generico
+label: 'Send to all affiliates'
+description: 'Make this content available on all domains.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

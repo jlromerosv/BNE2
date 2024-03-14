@@ -1,0 +1,18 @@
+uuid: 87b83263-6700-4518-932d-6567ca08bf60
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_contacto
+id: taxonomy_term.categoria_contacto.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: categoria_contacto
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

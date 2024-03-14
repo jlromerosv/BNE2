@@ -1,0 +1,19 @@
+uuid: babb2178-8a4e-4dfb-9eca-ad732ca1465e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugar_de_fallecimiento
+    - node.type.autor
+id: node.autor.field_lugar_de_fallecimiento
+field_name: field_lugar_de_fallecimiento
+entity_type: node
+bundle: autor
+label: 'Lugar de fallecimiento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

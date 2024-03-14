@@ -1,0 +1,881 @@
+uuid: ee0e4d9f-7adf-41f8-a367-2f9688906fb8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_area_transparencia
+    - field.storage.node.body
+    - field.storage.node.field_area_de_transparencia
+    - search_api.index.solr_index
+    - taxonomy.vocabulary.area_de_transparencia
+  module:
+    - search_api
+    - taxonomy
+    - text
+id: transparencia
+label: Transparencia
+module: views
+description: ''
+tag: ''
+base_table: search_api_index_solr_index
+base_field: search_api_id
+display:
+  default:
+    id: default
+    display_title: Master
+    display_plugin: default
+    position: 0
+    display_options:
+      title: Transparencia
+      fields:
+        title:
+          id: title
+          table: search_api_index_solr_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        body:
+          id: body
+          table: search_api_index_solr_index
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        field_area_de_transparencia:
+          id: field_area_de_transparencia
+          table: search_api_datasource_solr_index_entity_node
+          field: field_area_de_transparencia
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              accesibilidad:
+                display_method: label
+              area_de_transparencia:
+                display_method: label
+              area_organizativa:
+                display_method: label
+              area_tematica:
+                display_method: label
+              categoria_actualidad:
+                display_method: label
+              categoria_de_faq:
+                display_method: label
+              categoria_de_servicio:
+                display_method: label
+              categorias_evento:
+                display_method: label
+              colectivo:
+                display_method: label
+              efectos_silencio_administrativo:
+                display_method: label
+              estado_iniciativa:
+                display_method: label
+              estado_promocion_inmuebles:
+                display_method: label
+              etiquetas_de_busqueda:
+                display_method: label
+              genero:
+                display_method: label
+              idioma:
+                display_method: label
+              modalidad:
+                display_method: label
+              municipio:
+                display_method: label
+                view_mode: default
+              organigrama_de_prueba:
+                display_method: label
+                view_mode: default
+              provincias:
+                display_method: label
+                view_mode: default
+              regimen_de_promocion_de_inmbuebl:
+                display_method: label
+              tematica_de_catalogo:
+                display_method: label
+              tipo_convocatoria:
+                display_method: label
+              tipo_de_actividad_generica:
+                display_method: label
+              tipo_de_campana:
+                display_method: label
+              tipo_de_catalogo:
+                display_method: label
+              tipo_de_contenidos_formativos:
+                display_method: label
+              tipo_de_documento_institucional:
+                display_method: label
+              tipo_de_enlace:
+                display_method: label
+              tipo_de_exposicion:
+                display_method: label
+              tipo_de_lugar:
+                display_method: label
+              tipo_de_material:
+                display_method: label
+              tipo_de_persona:
+                display_method: label
+              tipo_de_promocion_de_inmuebles:
+                display_method: label
+              tipo_de_publicacion:
+                display_method: label
+              tipo_de_referencia_bibliografica:
+                display_method: label
+              tipo_de_servicio:
+                display_method: label
+              tipo_entidad:
+                display_method: label
+              tipo_evento:
+                display_method: label
+              tipo_galeria:
+                display_method: label
+              tipo_iniciativa:
+                display_method: label
+              tipo_territorial:
+                display_method: label
+              tipo_tramite:
+                display_method: label
+        field_area_transparencia:
+          id: field_area_transparencia
+          table: search_api_datasource_solr_index_entity_media
+          field: field_area_transparencia
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: media
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              accesibilidad:
+                display_method: label
+              area_de_transparencia:
+                display_method: label
+              area_organizativa:
+                display_method: label
+              area_tematica:
+                display_method: label
+              categoria_actualidad:
+                display_method: label
+              categoria_de_faq:
+                display_method: label
+              categoria_de_servicio:
+                display_method: label
+              categorias_evento:
+                display_method: label
+              colectivo:
+                display_method: label
+              efectos_silencio_administrativo:
+                display_method: label
+              estado_iniciativa:
+                display_method: label
+              estado_promocion_inmuebles:
+                display_method: label
+              etiquetas_de_busqueda:
+                display_method: label
+              genero:
+                display_method: label
+              idioma:
+                display_method: label
+              modalidad:
+                display_method: label
+              municipio:
+                display_method: label
+                view_mode: default
+              organigrama_de_prueba:
+                display_method: label
+                view_mode: default
+              provincias:
+                display_method: label
+                view_mode: default
+              regimen_de_promocion_de_inmbuebl:
+                display_method: label
+              tematica_de_catalogo:
+                display_method: label
+              tipo_convocatoria:
+                display_method: label
+              tipo_de_actividad_generica:
+                display_method: label
+              tipo_de_campana:
+                display_method: label
+              tipo_de_catalogo:
+                display_method: label
+              tipo_de_contenidos_formativos:
+                display_method: label
+              tipo_de_documento_institucional:
+                display_method: label
+              tipo_de_enlace:
+                display_method: label
+              tipo_de_exposicion:
+                display_method: label
+              tipo_de_lugar:
+                display_method: label
+              tipo_de_material:
+                display_method: label
+              tipo_de_persona:
+                display_method: label
+              tipo_de_promocion_de_inmuebles:
+                display_method: label
+              tipo_de_publicacion:
+                display_method: label
+              tipo_de_referencia_bibliografica:
+                display_method: label
+              tipo_de_servicio:
+                display_method: label
+              tipo_entidad:
+                display_method: label
+              tipo_evento:
+                display_method: label
+              tipo_galeria:
+                display_method: label
+              tipo_iniciativa:
+                display_method: label
+              tipo_territorial:
+                display_method: label
+              tipo_tramite:
+                display_method: label
+        name:
+          id: name
+          table: search_api_datasource_solr_index_entity_media
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: media
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '{{ field_area_de_transparencia }} {{ field_area_transparencia }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+      pager:
+        type: none
+        options:
+          offset: 0
+          items_per_page: null
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: none
+        options: {  }
+      empty: {  }
+      sorts: {  }
+      arguments:
+        name_4:
+          id: name_4
+          table: search_api_index_solr_index
+          field: name_4
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: taxonomy_tid
+          default_argument_options:
+            term_page: '0'
+            node: true
+            limit: true
+            vids:
+              area_de_transparencia: area_de_transparencia
+            anyall: +
+          default_argument_skip_url: false
+          summary_options: {  }
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+        field_area_transparencia:
+          id: field_area_transparencia
+          table: search_api_index_solr_index
+          field: field_area_transparencia
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: taxonomy_tid
+          default_argument_options:
+            term_page: '0'
+            node: true
+            limit: true
+            vids:
+              area_de_transparencia: area_de_transparencia
+            anyall: +
+          default_argument_skip_url: false
+          summary_options: {  }
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+      filters:
+        field_area_transparencia:
+          id: field_area_transparencia
+          table: search_api_index_solr_index
+          field: field_area_transparencia
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: 'not empty'
+          value: {  }
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: area_de_transparencia
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        name_4:
+          id: name_4
+          table: search_api_index_solr_index
+          field: name_4
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_string
+          operator: 'not empty'
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: OR
+      style:
+        type: default
+        options:
+          grouping:
+            -
+              field: nothing
+              rendered: false
+              rendered_strip: false
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: search_api_query
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
+      relationships:
+        field_area_de_transparencia:
+          id: field_area_de_transparencia
+          table: search_api_datasource_solr_index_entity_node
+          field: field_area_de_transparencia
+          relationship: none
+          group_type: group
+          admin_label: 'Área de transparencia del Contenido'
+          entity_type: node
+          plugin_id: search_api
+          required: false
+          skip_access: false
+        field_area_transparencia:
+          id: field_area_transparencia
+          table: search_api_datasource_solr_index_entity_media
+          field: field_area_transparencia
+          relationship: none
+          group_type: group
+          admin_label: 'Área de transparencia del Media'
+          entity_type: media
+          plugin_id: search_api
+          required: false
+          skip_access: false
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.media.field_area_transparencia'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_area_de_transparencia'
+        - 'config:search_api.index.solr_index'
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
+    position: 1
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.media.field_area_transparencia'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_area_de_transparencia'
+        - 'config:search_api.index.solr_index'

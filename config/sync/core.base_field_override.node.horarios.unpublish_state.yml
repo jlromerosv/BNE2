@@ -1,0 +1,20 @@
+uuid: 9fbe073a-a0a3-4116-83dd-4e574a38e2a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+  module:
+    - options
+id: node.horarios.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: horarios
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

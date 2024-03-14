@@ -1,0 +1,430 @@
+uuid: bdf25321-9de0-4a12-8ff3-da2932f0a2dc
+langcode: es
+status: closed
+dependencies:
+  enforced:
+    module:
+      - webform_templates
+_core:
+  default_config_hash: sSnWctrz2QgnrPjMmlUD_yIYnvyh_a-5XQ7bKu4K4qM
+weight: 0
+open: null
+close: null
+uid: null
+template: true
+archive: false
+id: template_medical_appointment
+title: 'Request a Medical Appointment'
+description: 'A medical appointment request webform template.'
+category: ''
+elements: |
+  introduction:
+    '#markup': 'After you submit the form, a care specialist will call you back within XX hours to schedule an appointment.'
+  hr:
+    '#type': webform_horizontal_rule
+  call:
+    '#markup': 'You may also speak with a care specialist directly by calling <a href="tel:XXX-XXX-XXXX">XXX-XXX-XXXX</a> on Monday–Friday between 8:30 am to 5:00 pm EST.'
+  general:
+    '#type': fieldset
+    '#title': 'General Information'
+    '#title_display': invisible
+    '#attributes':
+      style: 'background-color: #efefef'
+    type:
+      '#type': radios
+      '#title': 'Who are you?'
+      '#options':
+        Patient: Patient
+        Caregiver: Caregiver
+      '#options_display': buttons
+      '#required': true
+    relationship:
+      '#type': webform_select_other
+      '#title': 'What is your relationship to the patient?'
+      '#options': relationship
+      '#states':
+        visible:
+          ':input[name="type"]':
+            value: Caregiver
+        required:
+          ':input[name="type"]':
+            value: Caregiver
+  caregiver:
+    '#type': fieldset
+    '#title': 'Your Information'
+    '#states':
+      visible:
+        ':input[name="type"]':
+          value: Caregiver
+    caregiver_name:
+      '#type': webform_flexbox
+      caregiver_first_name:
+        '#title': 'Your First Name'
+        '#type': textfield
+        '#states':
+          required:
+            ':input[name="type"]':
+              value: Caregiver
+      caregiver_last_name:
+        '#title': 'Your Last Name'
+        '#type': textfield
+        '#states':
+          required:
+            ':input[name="type"]':
+              value: Caregiver
+      '#title': 'Your Name'
+    caregiver_contact:
+      '#type': webform_flexbox
+      caregiver_email:
+        '#title': 'Your Email'
+        '#type': email
+        '#states':
+          required:
+            ':input[name="type"]':
+              value: Caregiver
+      caregiver_phone:
+        '#title': 'Your Phone'
+        '#type': tel
+        '#placeholder': 000-000-0000
+        '#states':
+          required:
+            ':input[name="type"]':
+              value: Caregiver
+    caregiver_phone_preferences:
+      '#type': webform_custom_composite
+      '#title': 'Your Phone Preferences'
+      '#description': |
+        Please select the best days and times for us to call you.<br/>
+        <em>Leave blank if you have no preferences.</em>
+      '#description_display': 'before'
+      '#multiple__min_items': '3'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add_more': false
+      '#element':
+        day:
+          '#type': select
+          '#options':
+            Monday: Monday
+            Tuesday: Tuesday
+            Wednesday: Wednesday
+            Thursday: Thursday
+            Friday: Fridate
+          '#title': 'Day of the Week'
+          '#empty_option': 'Any day of the week'
+        time:
+          '#type': select
+          '#options':
+            '8am-10am EST': '8am-10am EST'
+            '10am-12pm EST': '10am-12pm EST'
+            '12pm-2pm EST': '12pm-2pm EST'
+            '2pm-4pm EST': '2pm-4pm EST'
+          '#title': 'Time of Day'
+          '#empty_option': 'Any time of the day'
+  patient:
+    '#type': fieldset
+    '#title': 'Patient Information'
+    patient_name:
+      '#type': webform_flexbox
+      patient_first_name:
+        '#title': 'Patient First Name'
+        '#type': textfield
+        '#required': true
+      patient_last_name:
+        '#title': 'Patient Last Name'
+        '#type': textfield
+        '#required': true
+    patient_contact:
+      '#type': webform_flexbox
+      patient_email:
+        '#title': 'Patient Email'
+        '#type': email
+        '#states':
+          required:
+            ':input[name="type"]':
+              '!value': Caregiver
+      patient_phone:
+        '#title': 'Patient Phone'
+        '#type': tel
+        '#required': true
+        '#placeholder': 000-000-0000
+        '#states':
+          required:
+            ':input[name="type"]':
+              '!value': Caregiver
+    patient_phone_preferences:
+      '#type': webform_custom_composite
+      '#title': 'Patient Phone Preferences'
+      '#description': |
+        Please select the best days and times for us to call the patient.<br/>
+        <em>Leave blank if the patient has no preferences.</em>'
+      '#description_display': 'before'
+      '#multiple__min_items': '3'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add_more': false
+      '#element':
+        day:
+          '#type': select
+          '#options':
+            Monday: Monday
+            Tuesday: Tuesday
+            Wednesday: Wednesday
+            Thursday: Thursday
+            Friday: Fridate
+          '#title': 'Day of the Week'
+          '#empty_option': 'Any day of the week'
+        time:
+          '#type': select
+          '#options':
+            '8am-10am EST': '8am-10am EST'
+            '10am-12pm EST': '10am-12pm EST'
+            '12pm-2pm EST': '12pm-2pm EST'
+            '2pm-4pm EST': '2pm-4pm EST'
+          '#title': 'Time of Day'
+          '#empty_option': 'Any time of the day'
+  appointment:
+    '#type': fieldset
+    '#title': 'Appointment Information (optional)'
+    medical:
+      '#type': textarea
+      '#title': 'Please provide information about your medical needs'
+      '#rows': 3
+    insurance:
+      '#type': textfield
+      '#title': 'Please provide insurance plan name information'''
+    referral:
+      '#type': checkbox
+      '#title': 'Have you been referred by a physician?'
+    physician:
+      '#type': textarea
+      '#title': 'Please provide information about the referring physician'
+      '#rows': 3
+      '#states':
+        visible:
+          ':input[name="referral"]':
+            checked: true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': 'Send Request'
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: true
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: node/2441
+  confirmation_title: 'Thank You'
+  confirmation_message: 'Your request has been sent. A care specialist will call you back within XX hours to schedule an appointment.'
+  confirmation_attributes: {  }
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email_notification:
+    id: email
+    handler_id: email_notification
+    label: 'Email notification BNE'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Biblioteca Nacional de España. Nuevo mensaje de contacto web (nº de referencia 00[webform_submission:sid]). [webform_submission:values:subject]'
+      body: "<img alt=\"Logo BNE\" height=\"75\" src=\"data:image/png;base64,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\" style=\"height:83px; width:69px\" width=\"62\" /><br />\r\nAdjunto se env&iacute;a nuevo mensaje de contacto recibido a trav&eacute;s del formulario <em>Contacto</em> de la web de la BNE.<br />\r\n________________________________________\r\n<table class=\"Table\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"background-color:#f0f0f0; padding:.100px .100px .100px .100px; width:150px\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">N&ordm; de referencia:</span></span></td>\r\n\t\t\t<td style=\"padding:.100px .100px .100px .100px\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">00[webform_submission:sid]</span></span></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"background-color:#f0f0f0; padding:.100px .100px .100px .100px; width:150px\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"color:black\">Fecha presentaci&oacute;n:</span></span></span></td>\r\n\t\t\t<td style=\"padding:.100px .100px .100px .100px\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">[webform_submission:created]</span></span></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"background-color:#f0f0f0; padding:.100px .100px .100px .100px; width:150px\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"color:black\">Correo del remitente:</span></span></span></td>\r\n\t\t\t<td style=\"padding:.100px .100px .100px .100px\">[webform_submission:values:email]</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n&nbsp;\r\n\r\n<table class=\"Table\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"background-color:#f0f0f0; padding:.100px .100px .100px .100px; width:150px\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Asunto:</span></span></td>\r\n\t\t\t<td style=\"padding:.100px .100px .100px .100px\">[webform_submission:values:subject]</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"background-color:#f0f0f0; padding:.100px .100px .100px .100px; width:150px\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"color:black\">Texto:</span></span></span></td>\r\n\t\t\t<td style=\"padding:.100px .100px .100px .100px\">[webform_submission:values:message]</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n<span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><em>P.D. Por favor, no responda a este mensaje, ya que ha sido enviado autom&aacute;ticamente y la direcci&oacute;n desde la que se env&iacute;a no es atendida.</em></span></span>"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

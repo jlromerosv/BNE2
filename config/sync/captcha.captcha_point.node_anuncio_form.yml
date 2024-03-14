@@ -1,0 +1,7 @@
+uuid: 230e52c2-8007-411a-b044-b2d368049aa2
+langcode: es
+status: false
+dependencies: {  }
+formId: node_anuncio_form
+captchaType: default
+label: node_anuncio_form

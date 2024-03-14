@@ -1,0 +1,18 @@
+uuid: 9a3ac31e-fcba-4a48-9c7e-37f22c27cada
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_portal_web
+id: taxonomy_term.tipo_de_portal_web.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_portal_web
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

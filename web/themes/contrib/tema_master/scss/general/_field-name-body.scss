@@ -1,0 +1,53 @@
+/*
+    ========== FIELD NAME BODY ==========
+
+    Estilos dedicados al campo body.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------    
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+
+.field--name-body {
+    .field--name-field-media-oembed-video {
+        @include display_flex(row, center, initial);
+    }
+
+    .media-library-item__preview {
+        img {
+            max-width: 645px;
+            height: auto;
+        }
+    }
+
+    p {
+        img {
+            max-width: 645px;
+            height: auto;
+        }
+    }
+
+    .align-center {
+        .media-library-item__preview {
+            .field--type-image {
+                display: grid;
+
+                img {
+                    justify-self: center;
+                    max-width: 645px;
+                }
+            }
+        }
+    }
+}

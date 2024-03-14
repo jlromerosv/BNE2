@@ -1,0 +1,5 @@
+name: 'Type of initiative'
+url_alias: 'type _ of _ initiative'
+widget:
+  config:
+    reset_text: 'Show all'

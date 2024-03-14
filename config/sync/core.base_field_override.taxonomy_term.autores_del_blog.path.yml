@@ -1,0 +1,20 @@
+uuid: 0b354877-c196-4fc1-bd9e-a5f6543e29de
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.autores_del_blog
+  module:
+    - path
+id: taxonomy_term.autores_del_blog.path
+field_name: path
+entity_type: taxonomy_term
+bundle: autores_del_blog
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

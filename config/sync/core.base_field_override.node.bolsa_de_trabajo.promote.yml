@@ -1,0 +1,22 @@
+uuid: fe9511c7-0398-42f4-bdcc-cd4651677b8f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+id: node.bolsa_de_trabajo.promote
+field_name: promote
+entity_type: node
+bundle: bolsa_de_trabajo
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

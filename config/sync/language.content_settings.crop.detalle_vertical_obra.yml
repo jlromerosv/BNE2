@@ -1,0 +1,11 @@
+uuid: b6388b5f-7c07-4691-a5a7-c32a8c675091
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.detalle_vertical_obra
+id: crop.detalle_vertical_obra
+target_entity_type_id: crop
+target_bundle: detalle_vertical_obra
+default_langcode: site_default
+language_alterable: false

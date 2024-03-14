@@ -1,0 +1,8 @@
+uuid: ded03952-7491-4853-9006-fd6bbae1dcf0
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipos de FAQ'
+vid: categoria_de_faq
+description: ''
+weight: 0

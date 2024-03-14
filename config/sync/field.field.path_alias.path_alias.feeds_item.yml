@@ -1,0 +1,23 @@
+uuid: ecd48104-e7e8-4325-a79f-da8428c623d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.path_alias.feeds_item
+  module:
+    - feeds
+    - path_alias
+id: path_alias.path_alias.feeds_item
+field_name: feeds_item
+entity_type: path_alias
+bundle: path_alias
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

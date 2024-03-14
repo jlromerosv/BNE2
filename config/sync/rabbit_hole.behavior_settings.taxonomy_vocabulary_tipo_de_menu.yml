@@ -1,0 +1,14 @@
+uuid: 92d393db-533f-45a9-96fa-5ae7c44cdcf6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_menu
+id: taxonomy_vocabulary_tipo_de_menu
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_menu
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

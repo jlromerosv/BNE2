@@ -1,0 +1,18 @@
+uuid: c22b79c3-6d92-4296-815d-f13ba190b096
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_de_convocatoria
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.estado_de_convocatoria
+target_entity_type_id: taxonomy_term
+target_bundle: estado_de_convocatoria
+default_langcode: site_default
+language_alterable: true

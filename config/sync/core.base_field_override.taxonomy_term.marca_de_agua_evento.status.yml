@@ -1,0 +1,22 @@
+uuid: 97be2a2d-e66f-4019-b638-2e9175900e87
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.marca_de_agua_evento
+id: taxonomy_term.marca_de_agua_evento.status
+field_name: status
+entity_type: taxonomy_term
+bundle: marca_de_agua_evento
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

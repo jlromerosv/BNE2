@@ -1,0 +1,29 @@
+uuid: 790011ae-4298-4f0a-94ef-d95c2ecbd862
+langcode: es
+status: true
+dependencies:
+  module:
+    - archivo_web
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_bloqueresultadosarchivosdelaweb_2
+theme: sede_theme
+region: content
+weight: -25
+provider: null
+plugin: archivo_web
+settings:
+  id: archivo_web
+  label: 'Bloque Resultados archivos de la web'
+  label_display: '0'
+  provider: archivo_web
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/26939

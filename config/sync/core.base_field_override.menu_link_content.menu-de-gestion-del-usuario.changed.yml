@@ -1,0 +1,18 @@
+uuid: cfaf92eb-5337-4698-9d4d-a81b37334c50
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-de-gestion-del-usuario
+id: menu_link_content.menu-de-gestion-del-usuario.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: menu-de-gestion-del-usuario
+label: Modificado
+description: 'La hora en la que el enlace del menú se editó por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,29 @@
+uuid: c62b056a-bb26-4576-b4c9-966589248a3b
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_enlacesdeayudaalanavegacion
+theme: sede_theme
+region: pre_content
+weight: -26
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/user/register\r\n/user/login\r\n/user/password\r\n/node/26823\r\n"

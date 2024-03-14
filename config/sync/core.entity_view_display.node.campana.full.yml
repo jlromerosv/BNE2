@@ -1,0 +1,300 @@
+uuid: fba351fc-c435-4bf9-b904-7b8948708605
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.campana.title
+    - core.entity_view_mode.node.full
+    - field.field.node.campana.body
+    - field.field.node.campana.feeds_item
+    - field.field.node.campana.field_actividades
+    - field.field.node.campana.field_alias_tipo_contenido
+    - field.field.node.campana.field_archivos
+    - field.field.node.campana.field_area_tematica
+    - field.field.node.campana.field_audios
+    - field.field.node.campana.field_colectivo
+    - field.field.node.campana.field_contenido_generico
+    - field.field.node.campana.field_contenidos_relacionados
+    - field.field.node.campana.field_contenidos_vinculados
+    - field.field.node.campana.field_domain_access
+    - field.field.node.campana.field_domain_all_affiliates
+    - field.field.node.campana.field_domain_source
+    - field.field.node.campana.field_email
+    - field.field.node.campana.field_enlaces
+    - field.field.node.campana.field_fecha_fin
+    - field.field.node.campana.field_fecha_inicio
+    - field.field.node.campana.field_galeria_de_imagenes
+    - field.field.node.campana.field_id_externo
+    - field.field.node.campana.field_iframe
+    - field.field.node.campana.field_imagen_destacada
+    - field.field.node.campana.field_imagen_representativa
+    - field.field.node.campana.field_imagenes
+    - field.field.node.campana.field_lugares
+    - field.field.node.campana.field_meta_tags
+    - field.field.node.campana.field_no_mostrar_inverso
+    - field.field.node.campana.field_patrocinadores
+    - field.field.node.campana.field_requisitos
+    - field.field.node.campana.field_subtitulo
+    - field.field.node.campana.field_telefonos
+    - field.field.node.campana.field_tipos
+    - field.field.node.campana.field_video_destacado
+    - field.field.node.campana.field_videos
+    - field.field.node.campana.field_yoast_seo
+    - node.type.campana
+    - views.view.entidades_nodo
+    - views.view.widget_multimedia_enlaces
+  module:
+    - datetime
+    - layout_builder
+    - layout_discovery
+    - metatag
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Cabecera
+          context_mapping: {  }
+        components:
+          888a5788-2ec3-4848-b227-2767fc0b9b54:
+            uuid: 888a5788-2ec3-4848-b227-2767fc0b9b54
+            region: content
+            configuration:
+              id: 'field_block:node:campana:field_tipos'
+              label: 'Tipo de ciclo'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e1437a06-6414-480d-b1ad-d5631a2b78a3:
+            uuid: e1437a06-6414-480d-b1ad-d5631a2b78a3
+            region: content
+            configuration:
+              id: 'field_block:node:campana:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: fecha
+          context_mapping: {  }
+        components:
+          38f3d2c2-2393-4d97-862e-599c7e2cdb97:
+            uuid: 38f3d2c2-2393-4d97-862e-599c7e2cdb97
+            region: content
+            configuration:
+              id: 'views_block:entidades_nodo-block_15'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Contenido
+          context_mapping: {  }
+        components:
+          c9b66fe1-1442-4e9c-99cc-2d4e1e0c30d2:
+            uuid: c9b66fe1-1442-4e9c-99cc-2d4e1e0c30d2
+            region: content
+            configuration:
+              id: 'field_block:node:campana:field_imagen_representativa'
+              label: 'Imagen representativa'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: banner_obras_con_pie_de_foto
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          9180671b-f7db-4bc8-b8e7-45a570de9267:
+            uuid: 9180671b-f7db-4bc8-b8e7-45a570de9267
+            region: content
+            configuration:
+              id: 'field_block:node:campana:body'
+              label: Descripción
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          0892458c-3c09-4b69-a9c8-d85f696e1697:
+            uuid: 0892458c-3c09-4b69-a9c8-d85f696e1697
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_29'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 3
+            additional: {  }
+          bf4d30b6-6953-49a3-82a4-7adea1fa9256:
+            uuid: bf4d30b6-6953-49a3-82a4-7adea1fa9256
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_31'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 5
+            additional: {  }
+          f6ee4670-6398-4401-9005-43f73180d6df:
+            uuid: f6ee4670-6398-4401-9005-43f73180d6df
+            region: content
+            configuration:
+              id: 'views_block:entidades_nodo-patrocina_evento'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.campana.full
+targetEntityType: node
+bundle: campana
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_representativa:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_lugares:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_requisitos:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  feeds_item: true
+  field_actividades: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_tematica: true
+  field_audios: true
+  field_colectivo: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_email: true
+  field_enlaces: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_no_mostrar_inverso: true
+  field_patrocinadores: true
+  field_subtitulo: true
+  field_telefonos: true
+  field_tipos: true
+  field_video_destacado: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,16 @@
+popup_agreed:
+  value: "<h2>Eskerrik asko cookieen erabilera onartzeagatik</h2>\r\n\r\n<p>Orain mezu hau ezkutatu dezakezu edo cookieen erabilerari buruz gehiago jakin dezakezu.</p>\r\n"
+popup_agree_button_message: OK
+popup_more_info_button_message: 'Informazio gehio'
+popup_find_more_button_message: 'Informazio gehio'
+popup_hide_button_message: Ezkutatu
+popup_info:
+  value: "<h2>Webgune honetan cookieak erabiltzen ditugu zure erabiltzailearen esperientzia hobetzeko</h2>\r\n\r\n<p>Onartu botoia sakatuz gero, hori egitea onartzen duzu.</p>\r\n"
+popup_link: node/2441
+disagree_button_label: 'No, gracias'
+withdraw_message:
+  value: "<h2>Webgune honetan cookieak erabiltzen ditugu zure erabiltzailearen esperientzia hobetzeko</h2>\r\n\r\n<p>Cookieak ezartzeko baimena eman diguzu.</p>\r\n"
+withdraw_action_button_label: 'baimena ezeztatu'
+withdraw_tab_button_label: 'Pribatutasun aukerak'
+save_preferences_button_label: 'Gorde hobespenak'
+accept_all_categories_button_label: 'Onartu cookie guztiak'

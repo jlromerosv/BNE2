@@ -1,0 +1,20 @@
+uuid: f1fc3b07-65e6-450a-80ad-7aacedcac4f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.colectivo
+  module:
+    - path
+id: taxonomy_term.colectivo.path
+field_name: path
+entity_type: taxonomy_term
+bundle: colectivo
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

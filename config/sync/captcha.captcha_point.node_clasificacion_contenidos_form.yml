@@ -1,0 +1,7 @@
+uuid: 3dcb3cbb-a7fd-4996-906d-090245dfdeec
+langcode: es
+status: false
+dependencies: {  }
+formId: node_clasificacion_contenidos_form
+captchaType: default
+label: node_clasificacion_contenidos_form

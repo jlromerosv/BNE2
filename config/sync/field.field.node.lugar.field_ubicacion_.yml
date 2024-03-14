@@ -1,0 +1,29 @@
+uuid: 43aca6d2-3eb8-42e5-b3f4-fc414168bc20
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ubicacion_
+    - node.type.lugar
+    - node.type.ubicacion
+id: node.lugar.field_ubicacion_
+field_name: field_ubicacion_
+entity_type: node
+bundle: lugar
+label: Dirección
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ubicacion: ubicacion
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

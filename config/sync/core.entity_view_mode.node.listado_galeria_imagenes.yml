@@ -1,0 +1,10 @@
+uuid: a9407c41-04e4-45ac-a446-917b6b00919a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.listado_galeria_imagenes
+label: 'Listado galería imágenes'
+targetEntityType: node
+cache: true

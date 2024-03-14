@@ -1,0 +1,30 @@
+uuid: 22f76279-e6b6-4f9b-a39a-bd402ac1643d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_videos
+    - media.type.archivo_de_video
+    - media.type.video_remoto
+    - node.type.lugar
+id: node.lugar.field_videos
+field_name: field_videos
+entity_type: node
+bundle: lugar
+label: Vídeos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo_de_video: archivo_de_video
+      video_remoto: video_remoto
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: archivo_de_video
+field_type: entity_reference

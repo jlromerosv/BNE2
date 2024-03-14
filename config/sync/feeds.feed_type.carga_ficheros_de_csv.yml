@@ -1,0 +1,146 @@
+uuid: 53e0e860-a9c8-4367-87fe-2ef2e658ef04
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.media.archivo.created
+    - core.base_field_override.media.archivo.name
+    - field.field.media.archivo.domain_access
+    - field.field.media.archivo.field_id_externo
+    - field.field.media.archivo.field_media_file
+    - media.type.archivo
+  module:
+    - feeds_tamper
+    - media
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      7ebf4dc2-e7b9-40d8-a3f5-efe407df385c:
+        invert: false
+        uuid: 7ebf4dc2-e7b9-40d8-a3f5-efe407df385c
+        plugin: required
+        source: rutaarchivo
+        weight: 0
+        label: Obligatorio
+label: 'Carga Ficheros de CSV'
+id: carga_ficheros_de_csv
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:media'
+processor_configuration:
+  values:
+    bundle: archivo
+  langcode: es
+  insert_new: 1
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  ruta:
+    value: Ruta
+    label: Ruta
+    machine_name: ruta
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  id:
+    value: id
+    label: id
+    machine_name: id
+    type: csv
+  creation_date:
+    value: creation_date
+    label: creation_date
+    machine_name: creation_date
+    type: csv
+  newpath:
+    value: newPath
+    label: newPath
+    machine_name: newpath
+    type: csv
+  category:
+    value: category
+    label: category
+    machine_name: category
+    type: csv
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: csv
+  rutaarchivo:
+    value: RutaArchivo
+    label: RutaArchivo
+    machine_name: rutaarchivo
+    type: csv
+  namearchivo:
+    value: NameArchivo
+    label: NameArchivo
+    machine_name: namearchivo
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+mappings:
+  -
+    target: field_media_file
+    map:
+      target_id: rutaarchivo
+      description: namearchivo
+    settings:
+      language: ''
+      reference_by: fid
+      existing: '0'
+      autocreate: 0
+  -
+    target: name
+    map:
+      value: namearchivo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: field_id_externo
+    map:
+      value: rutaarchivo
+    settings:
+      language: null
+    unique:
+      value: '1'

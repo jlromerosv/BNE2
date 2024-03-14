@@ -1,0 +1,14 @@
+uuid: d765049d-2e62-494d-a2ac-c7c9cd1e3672
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_estandar
+id: node_type_seccion_estandar
+entity_type_id: node_type
+entity_id: seccion_estandar
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,29 @@
+uuid: 910b91e3-f24d-4378-a9f1-7bd2a2c86eed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.convocatoria
+    - taxonomy.vocabulary.categoria_de_oposicion
+id: node.convocatoria.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: convocatoria
+label: 'Categoría de oposición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_de_oposicion: categoria_de_oposicion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

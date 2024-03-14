@@ -1,0 +1,11 @@
+uuid: 1c262b09-9de2-4d0d-85f4-d03cc2931737
+langcode: es
+status: true
+dependencies: {  }
+id: area
+label: Área
+description: ''
+new_revision: false
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

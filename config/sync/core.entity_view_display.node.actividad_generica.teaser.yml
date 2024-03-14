@@ -1,0 +1,166 @@
+uuid: 71937879-6024-4f28-a1f8-3eaa9aadadc3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.actividad_generica.title
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actividad_generica.body
+    - field.field.node.actividad_generica.feeds_item
+    - field.field.node.actividad_generica.field_archivos
+    - field.field.node.actividad_generica.field_area_tematica
+    - field.field.node.actividad_generica.field_categoria
+    - field.field.node.actividad_generica.field_colaboradores
+    - field.field.node.actividad_generica.field_colectivo
+    - field.field.node.actividad_generica.field_contenidos_vinculados
+    - field.field.node.actividad_generica.field_domain_access
+    - field.field.node.actividad_generica.field_domain_all_affiliates
+    - field.field.node.actividad_generica.field_domain_source
+    - field.field.node.actividad_generica.field_email
+    - field.field.node.actividad_generica.field_enlace_formulario_inscripc
+    - field.field.node.actividad_generica.field_entidades
+    - field.field.node.actividad_generica.field_imagen_destacada
+    - field.field.node.actividad_generica.field_imagen_representativa
+    - field.field.node.actividad_generica.field_imagenes
+    - field.field.node.actividad_generica.field_lugares
+    - field.field.node.actividad_generica.field_telefonos
+    - field.field.node.actividad_generica.field_tipo
+    - node.type.actividad_generica
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          46a60f3d-74bb-4c81-924a-e3cea36572d9:
+            uuid: 46a60f3d-74bb-4c81-924a-e3cea36572d9
+            region: first
+            configuration:
+              id: 'field_block:node:actividad_generica:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: cuarto_de_ancho
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          3dd94828-5dcd-46c4-aae8-4c2e19ee1666:
+            uuid: 3dd94828-5dcd-46c4-aae8-4c2e19ee1666
+            region: second
+            configuration:
+              id: 'field_block:node:actividad_generica:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          b1d64f95-5c96-4f9c-9a2f-64c0a7cc665a:
+            uuid: b1d64f95-5c96-4f9c-9a2f-64c0a7cc665a
+            region: second
+            configuration:
+              id: 'extra_field_block:node:actividad_generica:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+          65af5fc7-4e9f-4d1f-82eb-b7b44f78dfd7:
+            uuid: 65af5fc7-4e9f-4d1f-82eb-b7b44f78dfd7
+            region: second
+            configuration:
+              id: 'field_block:node:actividad_generica:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+id: node.actividad_generica.teaser
+targetEntityType: node
+bundle: actividad_generica
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: cuarto_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  feeds_item: true
+  field_archivos: true
+  field_area_tematica: true
+  field_categoria: true
+  field_colaboradores: true
+  field_colectivo: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_email: true
+  field_enlace_formulario_inscripc: true
+  field_entidades: true
+  field_imagen_representativa: true
+  field_imagenes: true
+  field_lugares: true
+  field_telefonos: true
+  field_tipo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

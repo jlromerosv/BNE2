@@ -1,0 +1,27 @@
+uuid: ae3cfaeb-8d73-4c2c-b47a-405f52dd251b
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - fundacion_theme
+_core:
+  default_config_hash: OFEDxrButmQ8Vac1kiVr1gtw6vYKuSJPr9cJQZVKCKg
+id: fundacion_theme_admin
+theme: fundacion_theme
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administración
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

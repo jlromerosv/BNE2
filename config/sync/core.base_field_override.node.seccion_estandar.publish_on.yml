@@ -1,0 +1,18 @@
+uuid: 140e1d0a-9166-46f1-a6e9-7c056d5dc74c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_estandar
+id: node.seccion_estandar.publish_on
+field_name: publish_on
+entity_type: node
+bundle: seccion_estandar
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

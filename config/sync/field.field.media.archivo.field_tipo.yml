@@ -1,0 +1,29 @@
+uuid: e10c01a4-9577-458e-9c57-f3472535de8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_tipo
+    - media.type.archivo
+    - taxonomy.vocabulary.tipo_de_documento_institucional
+id: media.archivo.field_tipo
+field_name: field_tipo
+entity_type: media
+bundle: archivo
+label: 'Tipo de documento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_documento_institucional: tipo_de_documento_institucional
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

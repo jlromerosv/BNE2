@@ -1,0 +1,14 @@
+uuid: 5cda2efc-72a2-4184-b2a4-194e5b52dfca
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_contenidos_avanzado
+  module:
+    - user
+id: user_remove_role_action.editor_contenidos_avanzado
+label: 'Elimina el rol Editor contenidos avanzado al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor_contenidos_avanzado

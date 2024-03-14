@@ -1,0 +1,437 @@
+uuid: 2d8f8269-2712-423c-a757-ceb38746e6c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.publicacion.created
+    - core.base_field_override.node.publicacion.path
+    - core.base_field_override.node.publicacion.title
+    - field.field.node.publicacion.body
+    - field.field.node.publicacion.field_ano
+    - field.field.node.publicacion.field_archivo
+    - field.field.node.publicacion.field_codigo_referencia
+    - field.field.node.publicacion.field_contenido_generico
+    - field.field.node.publicacion.field_contenidos_relacionados
+    - field.field.node.publicacion.field_descripcion_corta
+    - field.field.node.publicacion.field_descripcion_sin_formato
+    - field.field.node.publicacion.field_domain_access
+    - field.field.node.publicacion.field_enlace
+    - field.field.node.publicacion.field_enlaces
+    - field.field.node.publicacion.field_epub_url
+    - field.field.node.publicacion.field_estado
+    - field.field.node.publicacion.field_galeria_de_imagenes
+    - field.field.node.publicacion.field_id_externo
+    - field.field.node.publicacion.field_imagen_destacada
+    - field.field.node.publicacion.field_imagen_representativa
+    - field.field.node.publicacion.field_precio_euros
+    - field.field.node.publicacion.field_precio_oferta_euros
+    - field.field.node.publicacion.field_tipo_encuadernacion
+    - field.field.node.publicacion.field_tipo_texto_libre_
+    - field.field.node.publicacion.field_tipos
+    - field.field.node.publicacion.field_valor
+    - node.type.publicacion
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      9a64a3f4-788d-46d8-b89c-b7e553b41f20:
+        separator: '}'
+        limit: null
+        uuid: 9a64a3f4-788d-46d8-b89c-b7e553b41f20
+        plugin: explode
+        source: enlacesexternostexto
+        weight: 0
+        label: Explode
+      a53b3744-cbfa-4167-8959-a0f290c1e351:
+        separator: '}'
+        limit: null
+        uuid: a53b3744-cbfa-4167-8959-a0f290c1e351
+        plugin: explode
+        source: enlacesexternosurl
+        weight: 0
+        label: Explode
+      ceec0892-3d5f-4a84-92cf-0bb1fb160699:
+        invert: false
+        uuid: ceec0892-3d5f-4a84-92cf-0bb1fb160699
+        plugin: required
+        source: id_externo
+        weight: 0
+        label: Obligatorio
+label: 'Carga Publicaciones'
+id: carga_publicaciones
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: publicacion
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  alias:
+    value: Alias
+    label: Alias
+    machine_name: alias
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  enlacesexternosurl:
+    value: EnlacesExternosURL
+    label: EnlacesExternosURL
+    machine_name: enlacesexternosurl
+    type: csv
+  enlacesexternostexto:
+    value: EnlacesExternosTexto
+    label: EnlacesExternosTexto
+    machine_name: enlacesexternostexto
+    type: csv
+  precio:
+    value: Precio
+    label: Precio
+    machine_name: precio
+    type: csv
+  oferta:
+    value: Oferta
+    label: Oferta
+    machine_name: oferta
+    type: csv
+  paginas:
+    value: Paginas
+    label: Paginas
+    machine_name: paginas
+    type: csv
+  isbn:
+    value: ISBN
+    label: ISBN
+    machine_name: isbn
+    type: csv
+  dl:
+    value: DL
+    label: DL
+    machine_name: dl
+    type: csv
+  nipo:
+    value: NIPO
+    label: NIPO
+    machine_name: nipo
+    type: csv
+  anyo:
+    value: Anyo
+    label: Anyo
+    machine_name: anyo
+    type: csv
+  tipodeencuadernacion:
+    value: TipoDeEncuadernacion
+    label: TipoDeEncuadernacion
+    machine_name: tipodeencuadernacion
+    type: csv
+  enlaceonline:
+    value: EnlaceOnline
+    label: EnlaceOnline
+    machine_name: enlaceonline
+    type: csv
+  textoenlaceonline:
+    value: TextoEnlaceOnline
+    label: TextoEnlaceOnline
+    machine_name: textoenlaceonline
+    type: csv
+  archivodescarga:
+    value: ArchivoDescarga
+    label: ArchivoDescarga
+    machine_name: archivodescarga
+    type: csv
+  epub:
+    value: ePub
+    label: ePub
+    machine_name: epub
+    type: csv
+  contenidosrelacionados:
+    value: ContenidosRelacionados
+    label: ContenidosRelacionados
+    machine_name: contenidosrelacionados
+    type: csv
+  contacto:
+    value: Contacto
+    label: Contacto
+    machine_name: contacto
+    type: csv
+  tipo:
+    value: Tipo
+    label: Tipo
+    machine_name: tipo
+    type: csv
+  disponibilidad:
+    value: Disponibilidad
+    label: Disponibilidad
+    machine_name: disponibilidad
+    type: csv
+  imagendestacada:
+    value: ImagenDestacada
+    label: ImagenDestacada
+    machine_name: imagendestacada
+    type: csv
+  textoepubportamper:
+    value: TextoePubporTamper
+    label: TextoePubporTamper
+    machine_name: textoepubportamper
+    type: csv
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: csv
+  linkgaleriaimagenes:
+    value: LinkGaleriaImagenes
+    label: LinkGaleriaImagenes
+    machine_name: linkgaleriaimagenes
+    type: csv
+  listacontenidosrelacionados:
+    value: ListaContenidosRelacionados
+    label: ListaContenidosRelacionados
+    machine_name: listacontenidosrelacionados
+    type: csv
+  medidas:
+    value: Medidas
+    label: Medidas
+    machine_name: medidas
+    type: csv
+mappings:
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: path
+    map:
+      alias: alias
+      pathauto: ''
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_enlaces
+    map:
+      uri: enlacesexternosurl
+      title: enlacesexternostexto
+    settings:
+      language: null
+  -
+    target: field_precio_euros
+    map:
+      value: precio
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_precio_oferta_euros
+    map:
+      value: oferta
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_valor
+    map:
+      value: paginas
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_codigo_referencia
+    map:
+      value: isbn
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_descripcion_corta
+    map:
+      value: dl
+    settings:
+      language: null
+  -
+    target: field_tipo_texto_libre_
+    map:
+      value: nipo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_ano
+    map:
+      value: anyo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_tipo_encuadernacion
+    map:
+      value: tipodeencuadernacion
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_enlace
+    map:
+      uri: enlaceonline
+      title: textoenlaceonline
+    settings:
+      language: null
+  -
+    target: field_archivo
+    map:
+      target_id: archivodescarga
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_contenidos_relacionados
+    map:
+      target_id: listacontenidosrelacionados
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_contenido_generico
+    map:
+      target_id: contacto
+    settings:
+      language: ''
+      reference_by: nid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_tipos
+    map:
+      target_id: tipo
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_estado
+    map:
+      target_id: disponibilidad
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_imagen_destacada
+    map:
+      target_id: imagendestacada
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_imagen_representativa
+    map:
+      target_id: imagendestacada
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_epub_url
+    map:
+      uri: epub
+      title: ''
+    settings:
+      language: null
+  -
+    target: field_galeria_de_imagenes
+    map:
+      target_id: linkgaleriaimagenes
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_descripcion_sin_formato
+    map:
+      value: medidas
+    settings:
+      language: null

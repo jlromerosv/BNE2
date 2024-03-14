@@ -1,0 +1,19 @@
+uuid: 312e5db1-5b8c-4f6f-8d5c-e856097ab86e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_texto
+    - node.type.convocatoria
+id: node.convocatoria.field_email_texto
+field_name: field_email_texto
+entity_type: node
+bundle: convocatoria
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

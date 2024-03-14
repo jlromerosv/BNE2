@@ -1,0 +1,185 @@
+.ps-noticias-destacadas {
+  .view-header {
+    h2 {
+      font-size: $h4_home_block;
+      font-family: $dm-serif;
+      font-weight: $dm-serif-regular;
+      color: $negro;
+      padding-left: 96px;
+      @media (max-width: 767.98px) {
+        font-size: 28px;
+        letter-spacing: 0px;
+        line-height: 48px;
+      }
+    }
+  }
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-top: 0.5px solid $bne_color_3;
+    border-left: 0.5px solid $bne_color_3;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .views-row {
+      position: relative;
+      padding: 30px;
+      border-right: 0.5px solid $bne_color_3;
+      border-bottom: 0.5px solid $bne_color_3;
+      display: flex;
+      flex-direction: column;
+      min-height: 250px;
+      .ps-title {
+        font-size: $h5_home_block;
+        color: $negro;
+        line-height: 30px;
+        font-family: $dm-serif;
+        font-weight: $dm-serif-regular;
+        @media (max-width: 767.98px) {
+          font-size: $h4_font_size_movil;
+        }
+      }
+      .ps-descripcion {
+        font-size: 16px;
+        color: $bne_color_2;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+        font-family: "Roboto";
+        margin-top: 1em;
+
+        p{
+          font-size: 16px;
+          color: $bne_color_2;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.48px;
+          font-family: "Roboto";
+          margin-top: 1em;
+          margin-block-start: 0;
+        }
+      }
+      .ps-fecha {
+          font-size: 14px;
+          color: $bne_color_1;
+          line-height: 20px;
+          letter-spacing: 0.42px;
+          font-weight: 400;
+          margin-top: auto;
+          text-transform: lowercase;
+          &::first-letter{
+            text-transform: uppercase;
+          }
+
+
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 400;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+      }
+    }
+    .view-footer {
+      padding: 0 15px;
+      position: relative;
+      border-right: 0.5px solid $bne_color_3;
+      border-bottom: 0.5px solid $bne_color_3;
+      background: $bne_color_4;
+      height: 100%;
+      min-height: 250px;
+      @media (max-width: 767.98px) {
+        height: 84px !important;
+        min-height: 84px;
+      }
+      .ps-enlace-listado{
+        padding: 0;
+        height: 100%;
+      }
+      .view-content {
+        display: block;
+        border: none;
+        padding: 0;
+        height: 100%;
+        .views-row {
+          display: block;
+          border: none;
+          padding: 0;
+          height: 100%;
+          min-height: auto;
+          .views-field-title {
+            display: block;
+            height: 100%;
+            margin-bottom: 0;
+            .field-content {
+              display: block;
+              position: absolute;
+              height: 100%;
+              top: 0;
+              left: 0;
+              margin-block-start: 0;
+              margin-block-end: 0;
+              padding: 0;
+              width: 100%;
+              a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                font-size: 16px;
+                font-weight: 400;
+                color: $bne_color_2;
+                line-height: 24px;
+                letter-spacing: 0.96px;
+                text-align: center;
+                @include tipografia($Roboto, 3, regular);
+              }
+            }
+          }
+        }
+      }
+
+    }
+    // .view-footer {
+    //   padding: 30px;
+    //   border-right: 0.5px solid $bne_color_3;
+    //   border-bottom: 0.5px solid $bne_color_3;
+    //   background: $bne_color_4;
+    //   position: relative;
+    //   p {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 30;
+    //     margin: 0;
+    //     a {
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       width: 100%;
+    //       height: 100%;
+    //       font-size: 16px;
+    //       color: $bne_color_2;
+    //       line-height: 24px;
+    //       letter-spacing: 0.96px;
+    //       font-weight: 400;
+    //     }
+    //   }
+    //   @media (max-width: 575.98px) {
+    //     height: 84px;
+    //     padding: 0;
+    //   }
+    // }
+  }
+}

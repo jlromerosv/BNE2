@@ -1,0 +1,21 @@
+uuid: 5dfce12c-c3e9-4f18-919b-a7f5615db3bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_relacionados
+    - node.type.autor
+id: node.autor.field_contenidos_relacionados
+field_name: field_contenidos_relacionados
+entity_type: node
+bundle: autor
+label: 'Contenidos relacionados'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

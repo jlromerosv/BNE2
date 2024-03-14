@@ -1,0 +1,23 @@
+uuid: d069a251-b7f1-4e37-9154-811906fe429c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.obra
+  module:
+    - text
+id: node.obra.body
+field_name: body
+entity_type: node
+bundle: obra
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,29 @@
+uuid: 6b3cd34a-1689-4b6b-afdd-45ab82731762
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_categoria
+    - taxonomy.vocabulary.buzones_de_envio
+    - taxonomy.vocabulary.categoria_contacto
+id: taxonomy_term.buzones_de_envio.field_categoria
+field_name: field_categoria
+entity_type: taxonomy_term
+bundle: buzones_de_envio
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_contacto: categoria_contacto
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,59 @@
+uuid: 2cabce0e-2baa-4e34-9a4f-dc5140417e80
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.html_full
+    - filter.format.html_sencillo
+    - media.type.archivo
+    - media.type.imagen
+    - media.type.video_remoto
+    - node.type.campana
+    - node.type.entrada_de_blog
+    - node.type.evento
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - domain_access
+    - domain_content
+    - filter
+    - media
+    - node
+    - yoast_seo
+id: editor_contenidos_avanzado
+label: 'Editor Eventos'
+weight: -2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access domain content'
+  - 'access domain content editors'
+  - 'access media overview'
+  - 'administer yoast seo'
+  - 'create archivo media'
+  - 'create campana content'
+  - 'create campana content on assigned domains'
+  - 'create evento content'
+  - 'create evento content on assigned domains'
+  - 'create imagen media'
+  - 'create video_remoto media'
+  - 'delete media'
+  - 'delete own archivo media'
+  - 'delete own imagen media'
+  - 'delete own video_remoto media'
+  - 'edit any entrada_de_blog content'
+  - 'edit own archivo media'
+  - 'edit own campana content'
+  - 'edit own evento content'
+  - 'edit own imagen media'
+  - 'edit own video_remoto media'
+  - 'revert campana revisions'
+  - 'revert evento revisions'
+  - 'update evento content on assigned domains'
+  - 'update media'
+  - 'use editorial transition solicitar_publicacion'
+  - 'use text format html_full'
+  - 'use text format html_sencillo'
+  - 'use yoast seo'
+  - 'view media'
+  - 'view own unpublished media'

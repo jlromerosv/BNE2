@@ -1,0 +1,200 @@
+// FORMULARIOS DE LA WEB
+
+// TITULOS
+.webform-section-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 10px 0;
+}
+
+// GENERAL: Oculta el label y dejar únicamente el placeholder
+.js-form-item{
+    position: relative;
+    margin: 10px 0;
+    label {
+        display: none;
+    }
+}
+
+// Quita rl margen por defecto que trae el Filset
+fieldset{
+    margin: 0;
+}
+
+// Asterisco (*) del campo obligatorio
+.js-form-required{
+    display: flex !important;
+    visibility: hidden;
+    align-items: center;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    font-size: 0;
+    margin-left: 20px;
+}
+.js-form-required::after{
+    visibility: visible;
+    position: absolute;
+    top: 20px;
+}
+
+// ===========================================
+// TYPE TEXT
+// TEXTO
+input[type="text"], input[type="email"] {
+  margin-top: 0;
+  height: 60px;
+  border: 0.5px solid $bne_color_3;
+  padding: 0 30px;
+  background-color: $blanco;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  color: $bne_color_1;
+  &::placeholder {
+    color: $bne_color_2;
+    font-size: 16px;
+  }
+}
+
+
+// ===========================================
+// TYPE RADIO
+input[type=radio]{
+    border: 0.5px solid $bne_color_2;
+    appearance: auto;
+    width: auto;
+    &:hover{
+        appearance: auto;
+        width: auto;
+    }
+}
+
+
+// Muestra los label de los input type radio
+.js-form-type-radio{
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+
+    label {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.webform-type-radios{
+    .js-form-required::after{
+        top: -30px;
+        left: -20px;
+    }
+}
+
+
+// Formulario type radio
+.form-radios .form-item{
+    display: flex;
+    gap: 10px;
+}
+
+// ===========================================
+
+// TYPE CHECKBOX
+input[type="checkbox"]{
+    box-shadow: none;
+}
+
+
+.js-form-type-checkbox{
+    display: flex;
+    align-items: baseline;
+    label{
+        display: block;
+        position: relative;
+        font-size: 16px;
+        visibility: visible;
+        margin-left: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .js-form-required::after{
+        top: 0px;
+        left: -20px;
+        display: none;
+    }
+}
+
+// TEXTO PROCESADO
+.js-form-type-processed-text{
+    margin: 30px 0px 20px;
+    line-height: 2;
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// SUBMIT - BOTON ENVIAR
+input[type=submit] {
+    height: 60px;
+    border: 0.5px solid $bne_color_3;
+    background-color: $bne_color_5;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    color: $blanco;
+    letter-spacing: 0.96px;
+    line-height: 24px;
+    border: none;
+    padding: 0;
+    text-transform: uppercase;
+    &::placeholder {
+        font-size: 14px;
+        color: $bne_color_2;
+    }
+}
+input[type=submit]:hover {
+    background-color: $bne_color_5;
+}
+.form-actions{
+    // margin: 0 0 60px;
+}
+
+// FECHA TYPE DATE
+.form-type-date{
+    label{
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        margin-right: 10px;
+        @media (max-width: 576px) {
+            margin-bottom: 10px;
+        }
+    }
+    .js-form-required {
+        position: relative;
+        visibility: visible;
+        margin-left: 30px;
+        &::after{
+            top: 2px;
+            left: -15px;
+        }
+    }
+    input{
+        width: 100%;
+        height: 58px;
+        border: 0.5px solid #d3d3d3;
+        padding: 0 30px;
+    }
+}
+
+// AUTOCOMPLETE
+.js-form-type-entity-autocomplete{
+    label{
+        display: block;
+        margin-bottom: 5px;
+    }
+}

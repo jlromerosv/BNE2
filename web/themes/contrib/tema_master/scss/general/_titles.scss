@@ -1,0 +1,106 @@
+/*
+    ========== TÍTULOS ==========
+    
+    Estilos dedicados a los títulos de la web. 
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin h1_style ($color, $size)
+        
+        @mixin h2_style ($color, $size)
+        
+        @mixin h3_style ($color, $size)
+        
+        @mixin h4_style ($color, $size)
+        
+        @mixin h5_style ($color, $size)
+        
+        @mixin h6_style ($color, $size)
+        
+        @mixin underline_view_title
+
+    ------------------------- MIXINS --------------------------
+    h1 / h2 / h3 / h4 / h5 / h6_style = Estilos para los
+    diferentes títulos
+
+    underline_view_title = Estilo para crear una línea debajo
+    del título
+    ----------------------- VARIABLES -------------------------
+    $main_color_1 = Color principal de tipo 1
+
+    $color = Color de la fuente
+
+    $size = Tamaño de la fuente
+
+*/
+
+// h1 {
+//     @include h1_style($h1_color, $h1_font_size);
+//     &::after {
+//         @include underline_view_title($main_color_1, 2px, 35px);
+//     }
+// }
+
+// h2 {
+//     @include h2_style($h2_color, $h2_font_size);
+//     &::after {
+//         @include underline_view_title($main_color_1, 2px, 35px);
+//     }
+// }
+
+// h3 {
+//     @include h3_style($h3_color, $h3_font_size);
+// }
+
+// h4 {
+//     @include h4_style($h4_color, $h4_font_size);
+// }
+
+// h5 {
+//     @include h5_style($h5_color, $h5_font_size);
+// }
+
+// h6 {
+//     @include h6_style($h6_color, $h6_font_size);
+// }
+
+
+
+// Ocultar títulos según el modo de visualización
+
+.node--view-mode-minificha,
+.node--view-mode-teaser {
+    & > h1,
+    & > h2,
+    & > h3 {
+        display: none;
+    }
+}
+
+
+// Ocultar títulos según el contenido
+
+.node--type-pagina-avanzada {
+    &.node--view-mode-full {
+        & > h2 {
+            display: none
+        }
+    }
+}
+.node--type-pagina-personalizada {
+    &.node--view-mode-full {
+        & > h2 {
+            display: none;
+        }
+    }
+}
+
+
+// Estilo para título dentro de Layout Builder
+
+.ps-style-lb-title .field--name-title{
+    @include h1_style($h1_color, $h1_font_size);
+    &::after {
+        @include underline_view_title($main_color_1, 2px, 35px);
+    }
+}

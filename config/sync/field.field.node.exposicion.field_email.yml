@@ -1,0 +1,19 @@
+uuid: 911da1ec-e08b-4cd5-9c06-48e908d5827e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.exposicion
+id: node.exposicion.field_email
+field_name: field_email
+entity_type: node
+bundle: exposicion
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

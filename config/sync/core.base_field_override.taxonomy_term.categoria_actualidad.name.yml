@@ -1,0 +1,18 @@
+uuid: 24078082-d939-4d58-86ad-681df11be7fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_actualidad
+id: taxonomy_term.categoria_actualidad.name
+field_name: name
+entity_type: taxonomy_term
+bundle: categoria_actualidad
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

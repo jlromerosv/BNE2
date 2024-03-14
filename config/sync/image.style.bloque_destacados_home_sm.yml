@@ -1,0 +1,15 @@
+uuid: 76107163-98a8-4634-b3a0-c222edded300
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_destacados_home_sm
+label: 'Bloque Destacados Home SM'
+effects:
+  acc9d1c9-b449-4cd8-9743-5e9c10998f07:
+    uuid: acc9d1c9-b449-4cd8-9743-5e9c10998f07
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 540
+      anchor: center-center

@@ -1,0 +1,18 @@
+uuid: 9f4bf266-3a4f-4d8e-817b-dc400752496a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+id: node.tramite.title
+field_name: title
+entity_type: node
+bundle: tramite
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

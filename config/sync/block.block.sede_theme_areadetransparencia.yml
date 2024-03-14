@@ -1,0 +1,33 @@
+uuid: 888538d1-4228-4dda-b112-3bcf76e9cb31
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.area_de_transparencia
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_areadetransparencia
+theme: sede_theme
+region: sidebar_first
+weight: -26
+provider: null
+plugin: 'facet_block:area_de_transparencia'
+settings:
+  id: 'facet_block:area_de_transparencia'
+  label: 'Área de transparencia'
+  label_display: '0'
+  provider: facets
+  block_id: areadetransparencia
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/3311

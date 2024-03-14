@@ -1,0 +1,33 @@
+uuid: ccaf1ede-0cb2-4012-a155-1e76807f788f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - mx1---bne
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Secciones principales'
+type: seccion_nivel_1_estandar
+description: 'Página con estructura predeterminada para secciones principales. Muestra el menú dependiente del elemento de primer nivel que representa la sección.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

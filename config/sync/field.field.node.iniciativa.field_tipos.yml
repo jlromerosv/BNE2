@@ -1,0 +1,34 @@
+uuid: e24d919b-1750-444e-8683-89248645a37b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipos
+    - node.type.iniciativa
+    - taxonomy.vocabulary.tipo_de_portal_web
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.iniciativa.field_tipos
+field_name: field_tipos
+entity_type: node
+bundle: iniciativa
+label: 'Tipo de portal web'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_portal_web: tipo_de_portal_web
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

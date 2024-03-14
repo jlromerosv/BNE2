@@ -1,0 +1,18 @@
+uuid: c0e837ef-ca33-4e1f-b43c-79841a7d0665
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+id: node.tramite.publish_on
+field_name: publish_on
+entity_type: node
+bundle: tramite
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

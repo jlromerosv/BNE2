@@ -1,0 +1,20 @@
+uuid: 1c3e6d8a-b5ab-47c0-9bdd-7552ab8ee75f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero
+  module:
+    - text
+id: taxonomy_term.genero.description
+field_name: description
+entity_type: taxonomy_term
+bundle: genero
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: c38a4c7e-af0e-4236-b0ae-95ac0a7b30d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_correo_electronico
+    - taxonomy.vocabulary.buzones_de_envio
+id: taxonomy_term.buzones_de_envio.field_correo_electronico
+field_name: field_correo_electronico
+entity_type: taxonomy_term
+bundle: buzones_de_envio
+label: 'Correo Electrónico'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

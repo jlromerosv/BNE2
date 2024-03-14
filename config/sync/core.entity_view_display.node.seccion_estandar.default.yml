@@ -1,0 +1,39 @@
+uuid: 796dedfa-a3cd-40ad-9103-27f08d095775
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.seccion_estandar.body
+    - field.field.node.seccion_estandar.field_contenidos_relacionados
+    - field.field.node.seccion_estandar.field_contenidos_vinculados
+    - field.field.node.seccion_estandar.field_domain_access
+    - field.field.node.seccion_estandar.field_domain_all_affiliates
+    - field.field.node.seccion_estandar.field_domain_source
+    - field.field.node.seccion_estandar.field_rede
+    - node.type.seccion_estandar
+  module:
+    - text
+    - user
+id: node.seccion_estandar.default
+targetEntityType: node
+bundle: seccion_estandar
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_rede: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,20 @@
+uuid: a35d9249-c9db-4c08-be36-55b8c64739dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+  module:
+    - path
+id: node.exposicion.path
+field_name: path
+entity_type: node
+bundle: exposicion
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

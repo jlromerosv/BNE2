@@ -1,0 +1,31 @@
+uuid: 5458753a-7f7a-458f-84b7-5a07e623de72
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: Widgets
+type: widget
+description: "Se utiliza para mostrar un listado de contenidos definido manualmente en el diseño de la página, en bloques del header o del footer por ejemplo\t\t"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

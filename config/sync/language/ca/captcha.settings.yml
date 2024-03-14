@@ -1,0 +1,2 @@
+description: 'Aquesta pregunta es fa per comprovar si vostè és o no una persona real i impedir l''enviament automatitzat de missatges brossa.'
+wrong_captcha_response_message: 'La resposta que heu introduït per al CAPTCHA és incorrecta.'

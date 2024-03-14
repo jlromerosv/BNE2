@@ -1,0 +1,28 @@
+uuid: e12fc3d7-3859-4521-b360-49aa7109e871
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivo
+    - media.type.archivo
+    - node.type.publicacion
+id: node.publicacion.field_archivo
+field_name: field_archivo
+entity_type: node
+bundle: publicacion
+label: Descargar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo: archivo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: ee9d7f50-ede5-4017-8e90-ce09364f87a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+id: node_type_bolsa_de_trabajo
+entity_type_id: node_type
+entity_id: bolsa_de_trabajo
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

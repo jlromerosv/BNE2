@@ -1,0 +1,15 @@
+uuid: 79f3e3dd-ed92-4c17-9c34-0c1c0900af63
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_imagen_cabecera_ficha_coleccion_xxl
+label: 'Bloque Imagen Cabecera ficha colección XXL'
+effects:
+  96601609-52bd-43e9-aa20-6fa67a2b63d3:
+    uuid: 96601609-52bd-43e9-aa20-6fa67a2b63d3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 240
+      anchor: center-center

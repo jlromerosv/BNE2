@@ -1,0 +1,14 @@
+uuid: 12dfb8fa-bca8-4d55-bf7c-94b322c49c82
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_lugar
+id: taxonomy_vocabulary_tipo_de_lugar
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_lugar
+action: page_redirect
+allow_override: 0
+redirect: /node/2438
+redirect_code: 301
+redirect_fallback_action: access_denied

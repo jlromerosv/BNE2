@@ -1,0 +1,20 @@
+uuid: e55a0b7a-8af2-4e02-ad91-415696d2c8bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_referencia_bibliografica
+  module:
+    - text
+id: taxonomy_term.tipo_de_referencia_bibliografica.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_referencia_bibliografica
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

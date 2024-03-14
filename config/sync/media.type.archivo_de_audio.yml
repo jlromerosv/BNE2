@@ -1,0 +1,13 @@
+uuid: 7c26bebc-9067-4afb-a508-cbfad5e9a857
+langcode: es
+status: true
+dependencies: {  }
+id: archivo_de_audio
+label: 'Archivo de audio'
+description: ''
+source: audio_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_audio_file
+field_map: {  }

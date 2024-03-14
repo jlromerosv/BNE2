@@ -1,0 +1,697 @@
+uuid: f839cbd1-b9bb-4bb2-9099-dab3b3a9afb6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.tramite.body
+    - field.field.node.tramite.field_archivos
+    - field.field.node.tramite.field_area_organizativa
+    - field.field.node.tramite.field_area_tematica
+    - field.field.node.tramite.field_codigo_procedimiento
+    - field.field.node.tramite.field_codigo_referencia
+    - field.field.node.tramite.field_colectivo
+    - field.field.node.tramite.field_contenidos_relacionados
+    - field.field.node.tramite.field_contenidos_vinculados
+    - field.field.node.tramite.field_criterios
+    - field.field.node.tramite.field_destinatarios
+    - field.field.node.tramite.field_domain_access
+    - field.field.node.tramite.field_domain_all_affiliates
+    - field.field.node.tramite.field_domain_source
+    - field.field.node.tramite.field_efectos_silencio_administr
+    - field.field.node.tramite.field_enlace
+    - field.field.node.tramite.field_enlaces
+    - field.field.node.tramite.field_entidades
+    - field.field.node.tramite.field_fecha_fin
+    - field.field.node.tramite.field_fecha_inicio
+    - field.field.node.tramite.field_imagen_destacada
+    - field.field.node.tramite.field_imagenes
+    - field.field.node.tramite.field_importe_ayuda
+    - field.field.node.tramite.field_info_documentacion
+    - field.field.node.tramite.field_informacion_plazo_solicitu
+    - field.field.node.tramite.field_informacion_tramite_online
+    - field.field.node.tramite.field_informacion_tramite_presen
+    - field.field.node.tramite.field_marco_legal
+    - field.field.node.tramite.field_mas_informacion
+    - field.field.node.tramite.field_meta_tags
+    - field.field.node.tramite.field_modalidad
+    - field.field.node.tramite.field_plazo_de_resolucion
+    - field.field.node.tramite.field_plazo_presentacion_permane
+    - field.field.node.tramite.field_precio
+    - field.field.node.tramite.field_preguntas_frecuentes
+    - field.field.node.tramite.field_requisitos
+    - field.field.node.tramite.field_tipo
+    - field.field.node.tramite.field_videos
+    - field.field.node.tramite.field_yoast_seo
+    - node.type.tramite
+    - views.view.widget_multimedia_enlaces
+  module:
+    - datetime
+    - field_group
+    - layout_builder
+    - layout_discovery
+    - link
+    - metatag
+    - text
+    - user
+    - views
+    - yoast_seo
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          fd715fa8-1286-49a9-8bce-4f5b0b0cc06a:
+            uuid: fd715fa8-1286-49a9-8bce-4f5b0b0cc06a
+            region: first
+            configuration:
+              id: 'field_block:node:tramite:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7e077071-981f-4b66-adf7-48422f8d1b0c:
+            uuid: 7e077071-981f-4b66-adf7-48422f8d1b0c
+            region: first
+            configuration:
+              id: 'field_block:node:tramite:field_destinatarios'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          44947980-4c89-4659-8bbc-6151a6ce611d:
+            uuid: 44947980-4c89-4659-8bbc-6151a6ce611d
+            region: first
+            configuration:
+              id: 'field_block:node:tramite:field_requisitos'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          48a2913c-9e4c-4842-8cc8-452ab3cfc176:
+            uuid: 48a2913c-9e4c-4842-8cc8-452ab3cfc176
+            region: first
+            configuration:
+              id: 'field_block:node:tramite:field_criterios'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          709cbfcd-f58a-4352-a0f2-ec2735ee3fbd:
+            uuid: 709cbfcd-f58a-4352-a0f2-ec2735ee3fbd
+            region: first
+            configuration:
+              id: 'field_block:node:tramite:field_mas_informacion'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          bd8e4be4-a959-41fa-aa23-7ce559204d1f:
+            uuid: bd8e4be4-a959-41fa-aa23-7ce559204d1f
+            region: first
+            configuration:
+              id: 'field_block:node:tramite:field_info_documentacion'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          6b4ca1b1-8526-4a79-811f-b9904b3fbdf5:
+            uuid: 6b4ca1b1-8526-4a79-811f-b9904b3fbdf5
+            region: first
+            configuration:
+              id: 'field_block:node:tramite:field_marco_legal'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          612162bb-2a4c-4e6f-9ecc-fb308a213261:
+            uuid: 612162bb-2a4c-4e6f-9ecc-fb308a213261
+            region: first
+            configuration:
+              id: 'field_block:node:tramite:field_importe_ayuda'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          57d72ef3-a609-4090-bf50-1873e53bcbae:
+            uuid: 57d72ef3-a609-4090-bf50-1873e53bcbae
+            region: second
+            configuration:
+              id: 'field_block:node:tramite:field_fecha_inicio'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          f44875ac-7ba7-4740-bc61-4a095fb43cfa:
+            uuid: f44875ac-7ba7-4740-bc61-4a095fb43cfa
+            region: second
+            configuration:
+              id: 'field_block:node:tramite:field_codigo_procedimiento'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          3d38ce36-7fcc-4541-995c-2dc1736afda5:
+            uuid: 3d38ce36-7fcc-4541-995c-2dc1736afda5
+            region: second
+            configuration:
+              id: 'field_block:node:tramite:field_codigo_referencia'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          60aa4194-1f2f-4265-878f-b44e9d68b980:
+            uuid: 60aa4194-1f2f-4265-878f-b44e9d68b980
+            region: second
+            configuration:
+              id: 'field_block:node:tramite:field_area_organizativa'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          c8820828-fc7a-43f4-b225-824ca0158d3e:
+            uuid: c8820828-fc7a-43f4-b225-824ca0158d3e
+            region: second
+            configuration:
+              id: 'field_block:node:tramite:field_fecha_fin'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          a989dd63-54eb-4f2b-a547-81a69f2007ef:
+            uuid: a989dd63-54eb-4f2b-a547-81a69f2007ef
+            region: second
+            configuration:
+              id: 'field_block:node:tramite:field_modalidad'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          9a1c40c9-34c0-4a9c-b5d9-702e56de0748:
+            uuid: 9a1c40c9-34c0-4a9c-b5d9-702e56de0748
+            region: second
+            configuration:
+              id: 'field_block:node:tramite:field_efectos_silencio_administr'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          98cb1589-0f86-46f9-af5e-5bc1babc944a:
+            uuid: 98cb1589-0f86-46f9-af5e-5bc1babc944a
+            region: second
+            configuration:
+              id: 'field_block:node:tramite:field_plazo_de_resolucion'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          c05ff0b5-be66-4f07-9b77-96d9659fd971:
+            uuid: c05ff0b5-be66-4f07-9b77-96d9659fd971
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:field_meta_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: metatag_empty_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          be3ad1cf-e1e3-4373-bea2-55af9e20769e:
+            uuid: be3ad1cf-e1e3-4373-bea2-55af9e20769e
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:field_informacion_tramite_online'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 16
+            additional: {  }
+          df6a9e61-4314-4af9-83e7-d02a4d48d423:
+            uuid: df6a9e61-4314-4af9-83e7-d02a4d48d423
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:field_informacion_plazo_solicitu'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 18
+            additional: {  }
+          460afe79-1f18-40ca-93d7-ef5b640285ff:
+            uuid: 460afe79-1f18-40ca-93d7-ef5b640285ff
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:field_enlace'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 19
+            additional: {  }
+          fe4a764b-ed0b-444b-a920-54b1fa327f21:
+            uuid: fe4a764b-ed0b-444b-a920-54b1fa327f21
+            region: content
+            configuration:
+              id: 'field_block:node:tramite:field_informacion_tramite_presen'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 20
+            additional: {  }
+          6b5aa64d-d6ee-4ffe-bfc1-28a8706de5ee:
+            uuid: 6b5aa64d-d6ee-4ffe-bfc1-28a8706de5ee
+            region: content
+            configuration:
+              id: 'views_block:widget_multimedia_enlaces-block_8'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 21
+            additional: {  }
+        third_party_settings: {  }
+  field_group:
+    group_principal:
+      children:
+        - body
+        - field_destinatarios
+        - field_requisitos
+        - field_criterios
+        - field_info_documentacion
+        - field_mas_informacion
+        - field_marco_legal
+        - field_importe_ayuda
+        - field_modalidad
+        - field_informacion_tramite_online
+        - field_enlace
+        - field_informacion_tramite_presen
+      label: Principal
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: ''
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_sidebar_derecho:
+      children:
+        - field_codigo_procedimiento
+        - field_codigo_referencia
+        - field_area_organizativa
+        - field_fecha_inicio
+        - field_fecha_fin
+        - field_informacion_plazo_solicitu
+        - field_efectos_silencio_administr
+        - field_plazo_de_resolucion
+      label: 'Sidebar derecho'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: ''
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_inferior:
+      children:
+        - field_archivos
+        - field_contenidos_relacionados
+        - field_enlaces
+        - field_imagenes
+        - field_preguntas_frecuentes
+        - field_videos
+      label: Inferior
+      parent_name: ''
+      region: hidden
+      weight: 12
+      format_type: html_element
+      format_settings:
+        classes: ''
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.tramite.full
+targetEntityType: node
+bundle: tramite
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_area_organizativa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_codigo_procedimiento:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_codigo_referencia:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_criterios:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_destinatarios:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_efectos_silencio_administr:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_enlace:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_importe_ayuda:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_info_documentacion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_informacion_plazo_solicitu:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_informacion_tramite_online:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_informacion_tramite_presen:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_marco_legal:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_mas_informacion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_modalidad:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_plazo_de_resolucion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_requisitos:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_yoast_seo:
+    type: yoastseo_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_archivos: true
+  field_area_tematica: true
+  field_colectivo: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_entidades: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_plazo_presentacion_permane: true
+  field_precio: true
+  field_preguntas_frecuentes: true
+  field_tipo: true
+  field_videos: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

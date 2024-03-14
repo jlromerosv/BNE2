@@ -1,0 +1,29 @@
+uuid: 415ed2c3-9d69-4f26-bc0a-56d8e2d4b494
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area_tematica
+    - node.type.galeria_de_videos
+    - taxonomy.vocabulary.area_tematica
+id: node.galeria_de_videos.field_area_tematica
+field_name: field_area_tematica
+entity_type: node
+bundle: galeria_de_videos
+label: 'Área temática'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_tematica: area_tematica
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

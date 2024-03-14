@@ -1,0 +1,22 @@
+uuid: bf9b6707-eac9-48b8-b15a-80c98df5da40
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.serie_estadistica
+id: node.serie_estadistica.sticky
+field_name: sticky
+entity_type: node
+bundle: serie_estadistica
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

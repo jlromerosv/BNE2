@@ -1,0 +1,20 @@
+uuid: 3dee3b32-e8ac-42e6-bab9-8d9654e4a2bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.menu_link
+field_name: menu_link
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Enlace del menu'
+description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

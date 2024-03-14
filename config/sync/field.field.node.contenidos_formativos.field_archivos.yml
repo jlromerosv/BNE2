@@ -1,0 +1,28 @@
+uuid: 010cbce9-03b8-4f75-9d2e-1de8883e6659
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivos
+    - media.type.archivo
+    - node.type.contenidos_formativos
+id: node.contenidos_formativos.field_archivos
+field_name: field_archivos
+entity_type: node
+bundle: contenidos_formativos
+label: Archivos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo: archivo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

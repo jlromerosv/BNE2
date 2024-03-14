@@ -1,0 +1,20 @@
+uuid: 5494064a-2bfe-45fa-a073-88fe1d74274e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_persona
+  module:
+    - text
+id: taxonomy_term.tipo_de_persona.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_persona
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

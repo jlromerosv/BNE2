@@ -1,0 +1,22 @@
+uuid: c6c65509-2dd5-44bf-aa8d-ab95dbb16f2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iniciativa
+id: node.iniciativa.promote
+field_name: promote
+entity_type: node
+bundle: iniciativa
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

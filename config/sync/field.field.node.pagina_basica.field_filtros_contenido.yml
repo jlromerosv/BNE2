@@ -1,0 +1,28 @@
+uuid: b8bafe1c-e234-4b78-8d56-e2de95d31360
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_filtros_contenido
+    - node.type.entidad
+    - node.type.pagina_basica
+id: node.pagina_basica.field_filtros_contenido
+field_name: field_filtros_contenido
+entity_type: node
+bundle: pagina_basica
+label: 'Filtros de contenido'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,150 @@
+.page-node-type-persona {
+  .ps-main {
+    .layout-content {
+      max-width: 1366px;
+      margin: 0 auto;
+    }
+  }
+  #block-sede-theme-contenidoprincipaldelapagina {
+    h1{
+      margin: 0.5em 0 0.9em 0;
+      .field--name-title{
+        @include estilo_h1();
+      }
+    }
+    padding: 0 15px;
+    article {
+      .node__content {
+        .layout--twocol-section {
+          margin: 1.9em 0;
+          @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+
+          }
+
+          .layout__region--first {
+            flex: 0 1 100% !important;
+            @media (min-width: 768px) {
+              flex: 0 1 33% !important;
+            }
+            .block-field-blocknodepersonafield-imagen-representativa {
+              margin: 0;
+              img {
+                width: 100%;
+                height: auto;
+              }
+              @media (min-width: 300px) and (max-width: 768px) {
+                width: 250px;
+                margin: 0 auto;
+              }
+            }
+          }
+          .layout__region--second {
+            flex: 0 1 100% !important;
+
+            padding: 30px 0px;
+            @media (min-width: 768px) {
+              flex: 0 1 67% !important;
+              padding: 0 30px 30px 30px;
+            }
+
+            .block-layout-builder {
+              margin: 0;
+              .field__item {
+                padding: 0;
+              }
+            }
+            .block-field-blocknodepersonafield-tipos {
+              margin-bottom: 0.9em;
+              .field--name-field-tipos {
+                .field__item {
+                  font-size: 16px;
+                  color: $bne_color_2;
+                  line-height: 24px;
+                  letter-spacing: 0.48px;
+                  border-left: 2px solid #b40d04;
+                  padding-left: 1em;
+                }
+              }
+            }
+            .block-field-blocknodepersonafield-valor {
+              margin: 0.9em 0;
+              .field__item {
+                font-size: 16px;
+                color: $bne_color_2;
+                line-height: 24px;
+                letter-spacing: 0.48px;
+              }
+            }
+            .block-field-blocknodepersonabody{
+              margin: 0.9em 0 1.9em;
+            }
+          }
+        }
+        .layout--onecol {
+          .layout__region {
+            .block-field-blocknodepersonabody {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ps-bibliotecarios-emeritos {
+  .view-content {
+    .views-row {
+      display: grid;
+      grid-template-columns: 155px 1fr;
+      grid-gap: 2em;
+      margin-bottom: 2em;
+      @media (max-width: 450px) {
+
+        display: flex;
+        flex-direction: column-reverse;
+        grid-gap: 1em;
+        margin-bottom: 3em;
+      }
+      .views-field-field-imagen-representativa {
+        .field__item{
+          display: flex;
+          justify-content: center;
+          img {
+            width: 100%;
+            height: auto;
+           @media (max-width: 450px) {
+            width: 250px;
+
+           }
+          }
+        }
+
+      }
+      .views-field-title {
+        .container {
+          .titulo {
+            margin-bottom: 1em;
+            a {
+              font-size: 18px;
+              color: $negro;
+              line-height: 24px;
+              font-weight: 500;
+            }
+          }
+          .descripcion {
+            font-size: 16px;
+            color: $bne_color_2;
+            line-height: 34px;
+            letter-spacing: 0.48px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ps-node-3043 {
+}

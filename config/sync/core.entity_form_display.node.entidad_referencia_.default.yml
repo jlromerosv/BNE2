@@ -1,0 +1,111 @@
+uuid: f11f646e-cb24-40bd-b242-2f130d0c1a6b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.entidad_referencia_.feeds_item
+    - field.field.node.entidad_referencia_.field_domain_access
+    - field.field.node.entidad_referencia_.field_domain_all_affiliates
+    - field.field.node.entidad_referencia_.field_domain_source
+    - field.field.node.entidad_referencia_.field_enlace
+    - field.field.node.entidad_referencia_.field_id_externo
+    - field.field.node.entidad_referencia_.field_imagen_representativa
+    - field.field.node.entidad_referencia_.field_mostrar_bloque_fabne
+    - node.type.entidad_referencia_
+  module:
+    - content_moderation
+    - link
+    - media_library
+id: node.entidad_referencia_.default
+targetEntityType: node
+bundle: entidad_referencia_
+mode: default
+content:
+  field_domain_access:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_domain_source:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_enlace:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_id_externo:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_imagen_representativa:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_mostrar_bloque_fabne:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  feeds_item: true
+  langcode: true
+  path: true
+  promote: true
+  publish_on: true
+  publish_state: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
+  url_redirects: true

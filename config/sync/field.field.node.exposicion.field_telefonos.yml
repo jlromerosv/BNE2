@@ -1,0 +1,19 @@
+uuid: dbd012c1-b5bf-4333-8e58-b3f12dd68003
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefonos
+    - node.type.exposicion
+id: node.exposicion.field_telefonos
+field_name: field_telefonos
+entity_type: node
+bundle: exposicion
+label: Teléfonos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

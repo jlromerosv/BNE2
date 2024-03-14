@@ -1,0 +1,18 @@
+uuid: 69ebcdbf-7411-4f43-86a5-7dee15311ebd
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: rk2G0ozgUlKP7ic1RRjMcXUmeZxXUKPV-q-brekIKMc
+id: group_content
+label: 'Contenido de grupo'
+type: 'canonical_entities:group_content'
+pattern: 'group/[group_content:group:id]/[group_content:pretty-path-key]/[group_content:id]'
+selection_criteria: {  }
+selection_logic: and
+weight: -7
+relationships:
+  'group_content:langcode:language':
+    label: Idioma

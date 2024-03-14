@@ -1,0 +1,22 @@
+/*
+    ========= FOOTER ==========
+    Estilos dedicados al footer de la web.
+
+    ----------------------- VARIABLES -------------------------
+    $footer_background_color = Color de fondo del footer
+
+    $footer_font_color = El color de fuente del footer
+*/
+
+
+ footer{
+    background-color: $footer_background_color;
+    color: $footer_font_color;
+    p, a {
+        color: $footer_font_color;
+    }
+    .logo svg, .logo img{
+        min-height: 45px;
+        width: auto;
+    };
+} 

@@ -1,0 +1,12 @@
+uuid: 097eae89-8e91-4be9-8030-82438089ea53
+langcode: es
+status: true
+dependencies: {  }
+id: search_api__views_block__buscador_texto_completo__block_1
+name: 'search_api:views_block__buscador_texto_completo__block_1'
+filter_key: buscador_documentos
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

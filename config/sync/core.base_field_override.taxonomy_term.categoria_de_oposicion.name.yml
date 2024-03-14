@@ -1,0 +1,18 @@
+uuid: e87c3af0-a6ed-4a7c-8a78-ad04187cc30f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_oposicion
+id: taxonomy_term.categoria_de_oposicion.name
+field_name: name
+entity_type: taxonomy_term
+bundle: categoria_de_oposicion
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

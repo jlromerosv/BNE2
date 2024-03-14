@@ -1,0 +1,38 @@
+uuid: 73765f13-68f5-413f-aaf2-7ac3dbf0a04f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alias_tipo_contenido
+    - node.type.publicacion
+    - taxonomy.vocabulary.alias_de_tipo_de_contenido
+  content:
+    - 'taxonomy_term:alias_de_tipo_de_contenido:44121b58-7d8f-4600-b793-771b66c38be2'
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.publicacion.field_alias_tipo_contenido
+field_name: field_alias_tipo_contenido
+entity_type: node
+bundle: publicacion
+label: 'Alias de tipo de contenido'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 44121b58-7d8f-4600-b793-771b66c38be2
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alias_de_tipo_de_contenido: alias_de_tipo_de_contenido
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

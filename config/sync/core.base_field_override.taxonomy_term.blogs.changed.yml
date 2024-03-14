@@ -1,0 +1,18 @@
+uuid: 03f68bc3-58dc-4119-a6c5-ebd93d89e73f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.blogs
+id: taxonomy_term.blogs.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: blogs
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,29 @@
+uuid: abd2ce3a-434b-4af7-8286-92857b5b332c
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - eu_cookie_compliance
+    - field_permissions
+    - media
+    - organigrams
+    - poll
+    - search_api_autocomplete
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Usuario anónimo'
+weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access polls'
+  - 'display eu cookie compliance popup'
+  - 'post comments'
+  - 'use search_api_autocomplete for buscador_solr_texto_completo'
+  - 'view field_alias_tipo_contenido'
+  - 'view media'
+  - 'view organigrams'

@@ -1,0 +1,12 @@
+uuid: c97740e9-93ea-4f88-86fc-687d193df34c
+langcode: es
+status: true
+dependencies: {  }
+id: estilos_tabla
+label: 'Tabla ancho fijo 1100px'
+image: ''
+description: ''
+html:
+  value: "<p>&nbsp;</p>\r\n\r\n<div class=\"ck-tabla\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\">&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: root_formato_de_texto
+weight: 8

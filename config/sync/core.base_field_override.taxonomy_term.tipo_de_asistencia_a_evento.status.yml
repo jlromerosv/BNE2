@@ -1,0 +1,22 @@
+uuid: 29964e0d-1c91-4151-9be0-084eda4c860b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_asistencia_a_evento
+id: taxonomy_term.tipo_de_asistencia_a_evento.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_asistencia_a_evento
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

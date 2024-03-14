@@ -1,0 +1,14 @@
+uuid: 6c46b01d-fc5e-46d0-bf3d-0fada144170f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.alerta
+id: node_type_alerta
+entity_type_id: node_type
+entity_id: alerta
+action: page_redirect
+allow_override: 0
+redirect: '[site:url]'
+redirect_code: 301
+redirect_fallback_action: access_denied

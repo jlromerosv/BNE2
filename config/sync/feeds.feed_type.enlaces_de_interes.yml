@@ -1,0 +1,183 @@
+uuid: d81fda44-ad1c-4032-9ed9-165c4c5e6517
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.enlace.created
+    - core.base_field_override.node.enlace.status
+    - core.base_field_override.node.enlace.title
+    - field.field.node.enlace.body
+    - field.field.node.enlace.field_domain_access
+    - field.field.node.enlace.field_enlace
+    - field.field.node.enlace.field_etiquetas_busqueda
+    - field.field.node.enlace.field_id_externo
+    - field.field.node.enlace.field_tipo
+    - node.type.enlace
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      c13a1721-476c-46a0-93ef-77c701ae7d2c:
+        separator: '}'
+        limit: null
+        uuid: c13a1721-476c-46a0-93ef-77c701ae7d2c
+        plugin: explode
+        source: categoria
+        weight: 0
+        label: Explode
+      cad216cf-ec24-471d-8e15-8e6e48ee7748:
+        separator: '}'
+        limit: null
+        uuid: cad216cf-ec24-471d-8e15-8e6e48ee7748
+        plugin: explode
+        source: etiqueta
+        weight: 0
+        label: Explode
+label: 'Carga de Enlaces de interés'
+id: enlaces_de_interes
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: enlace
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  categoria:
+    value: Categoria
+    label: Categoria
+    machine_name: categoria
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  publicado:
+    value: Publicado
+    label: Publicado
+    machine_name: publicado
+    type: csv
+  etiqueta:
+    value: Etiqueta
+    label: Etiqueta
+    machine_name: etiqueta
+    type: csv
+  enlace:
+    value: Enlace
+    label: Enlace
+    machine_name: enlace
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: field_tipo
+    map:
+      target_id: categoria
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: status
+    map:
+      value: publicado
+    settings:
+      language: null
+  -
+    target: field_etiquetas_busqueda
+    map:
+      target_id: etiqueta
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_enlace
+    map:
+      uri: enlace
+      title: ''
+    settings:
+      language: null

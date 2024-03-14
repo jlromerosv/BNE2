@@ -1,0 +1,138 @@
+uuid: 9bff0b62-5608-4325-b609-9c18ffa43462
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.catalogo.body
+    - field.field.node.catalogo.field_alertas
+    - field.field.node.catalogo.field_alias_tipo_contenido
+    - field.field.node.catalogo.field_archivos
+    - field.field.node.catalogo.field_audios
+    - field.field.node.catalogo.field_bloquear_la_traduccion_
+    - field.field.node.catalogo.field_contenido_generico
+    - field.field.node.catalogo.field_contenidos_relacionados
+    - field.field.node.catalogo.field_contenidos_vinculados
+    - field.field.node.catalogo.field_domain_access
+    - field.field.node.catalogo.field_domain_all_affiliates
+    - field.field.node.catalogo.field_domain_source
+    - field.field.node.catalogo.field_enlaces
+    - field.field.node.catalogo.field_etiquetas_busqueda
+    - field.field.node.catalogo.field_galeria_de_imagenes
+    - field.field.node.catalogo.field_icono
+    - field.field.node.catalogo.field_id_externo
+    - field.field.node.catalogo.field_iframe
+    - field.field.node.catalogo.field_imagen_destacada
+    - field.field.node.catalogo.field_imagenes
+    - field.field.node.catalogo.field_meta_tags
+    - field.field.node.catalogo.field_no_mostrar_inverso
+    - field.field.node.catalogo.field_tipos
+    - field.field.node.catalogo.field_videos
+    - field.field.node.catalogo.field_yoast_seo
+    - node.type.catalogo
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          86f9d2a8-d7b1-42d8-9cde-a3cd5924cc2f:
+            uuid: 86f9d2a8-d7b1-42d8-9cde-a3cd5924cc2f
+            region: content
+            configuration:
+              id: 'field_block:node:catalogo:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: banner_obras_con_pie_de_foto
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          904f5a65-0678-498d-9ea6-0db9e18da1d7:
+            uuid: 904f5a65-0678-498d-9ea6-0db9e18da1d7
+            region: content
+            configuration:
+              id: 'field_block:node:catalogo:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.catalogo.full
+targetEntityType: node
+bundle: catalogo
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_contenido_generico:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_alertas: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_audios: true
+  field_bloquear_la_traduccion_: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_imagenes: true
+  field_icono: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_tipos: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,22 @@
+/*
+    ========== COMENTARIOS ==========
+
+    Estilos dedicados a los comentarios.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin ps-content-margins($breakpoint, $max-width)
+
+    ------------------------- MIXINS --------------------------   
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    ----------------------- VARIABLES -------------------------
+    $breakpoints = Medida que marca el punto de ruptura
+
+    $max-width = Máximo de ancho
+*/
+
+.ps-comentarios {
+    @include ps-content-margins(992px, 1366px);
+}

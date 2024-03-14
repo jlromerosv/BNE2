@@ -1,0 +1,18 @@
+uuid: 40289977-a8c3-4f05-8ebf-7d4ed27f7498
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cargo
+id: node.cargo.changed
+field_name: changed
+entity_type: node
+bundle: cargo
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

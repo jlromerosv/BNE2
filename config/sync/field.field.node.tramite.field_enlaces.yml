@@ -1,0 +1,23 @@
+uuid: 90297621-1300-4fce-8f87-c2d7a902bfb9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlaces
+    - node.type.tramite
+  module:
+    - link
+id: node.tramite.field_enlaces
+field_name: field_enlaces
+entity_type: node
+bundle: tramite
+label: Enlaces
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

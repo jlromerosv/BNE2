@@ -1,0 +1,21 @@
+uuid: 0f6eeda6-e2c9-4c2c-aaa5-930893e1bc4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requisitos
+    - node.type.evento
+  module:
+    - text
+id: node.evento.field_requisitos
+field_name: field_requisitos
+entity_type: node
+bundle: evento
+label: Requisitos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

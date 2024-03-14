@@ -1,0 +1,21 @@
+uuid: 0915a479-736c-4c02-af81-029a85995c70
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_precio
+    - node.type.evento
+  module:
+    - text
+id: node.evento.field_precio
+field_name: field_precio
+entity_type: node
+bundle: evento
+label: Precio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

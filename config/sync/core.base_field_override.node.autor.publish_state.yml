@@ -1,0 +1,20 @@
+uuid: 965eb4bf-8c35-4526-8043-d05dc6ddd087
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autor
+  module:
+    - options
+id: node.autor.publish_state
+field_name: publish_state
+entity_type: node
+bundle: autor
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

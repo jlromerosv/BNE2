@@ -1,0 +1,5 @@
+name: 'Type de convocation'
+url_alias: Type_convocation
+widget:
+  config:
+    reset_text: 'Montrer tout'

@@ -1,0 +1,22 @@
+uuid: 16184bc0-9ed5-4cb0-98d6-5869d65a1c90
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+id: node.obra.sticky
+field_name: sticky
+entity_type: node
+bundle: obra
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

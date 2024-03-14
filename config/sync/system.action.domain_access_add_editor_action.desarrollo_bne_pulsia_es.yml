@@ -1,0 +1,14 @@
+uuid: b9816c32-d9b0-4471-9cf7-a7bb7f9c2717
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.desarrollo_bne_pulsia_es
+  module:
+    - domain_access
+id: domain_access_add_editor_action.desarrollo_bne_pulsia_es
+label: 'Add editors to the BNE domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: desarrollo_bne_pulsia_es

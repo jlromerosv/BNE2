@@ -1,0 +1,49 @@
+/*
+    ========== COLECTIVOS ==========
+
+    Estilos dedicados a la vista para los colectivos.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $main_color_1 / 2 = Color principal de tipo 1 / 2
+
+*/
+
+
+
+.ps-colectivos-iconos {
+    .grid__content {
+        @include display_flex(column, center, center);
+        .views-field-field-icono-svg- {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            @include display_flex(row, center, center);
+            background-color: $main_color_1;
+            margin-bottom: 20px;
+        }
+        .views-field-name {
+            text-align: center;
+            &::after {
+                content: '';
+                display: block;
+                width: 30px;
+                height: 2px;
+                background-color: $main_color_2;
+                margin: 5px auto 0;
+            }
+        }
+    }
+}

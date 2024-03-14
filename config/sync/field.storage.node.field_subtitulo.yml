@@ -1,0 +1,25 @@
+uuid: f5ff8a4f-fb92-422b-9ece-6ff6e178b166
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_subtitulo
+field_name: field_subtitulo
+entity_type: node
+type: string
+settings:
+  max_length: 1023
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

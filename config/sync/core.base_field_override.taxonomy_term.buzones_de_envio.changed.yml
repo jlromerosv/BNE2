@@ -1,0 +1,18 @@
+uuid: ad6dccc2-47c3-47b6-a315-f26a06b3692c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.buzones_de_envio
+id: taxonomy_term.buzones_de_envio.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: buzones_de_envio
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

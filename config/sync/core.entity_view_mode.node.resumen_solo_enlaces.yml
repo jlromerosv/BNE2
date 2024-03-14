@@ -1,0 +1,10 @@
+uuid: 18d38ad7-8b86-4294-8bde-437d452e4666
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.resumen_solo_enlaces
+label: 'Resumen solo enlaces'
+targetEntityType: node
+cache: true

@@ -1,0 +1,7 @@
+uuid: 703a7c42-cc0f-45a4-ba46-c484be14f398
+langcode: es
+status: false
+dependencies: {  }
+formId: node_exposicion_form
+captchaType: default
+label: node_exposicion_form

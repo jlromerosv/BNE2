@@ -1,0 +1,18 @@
+uuid: cb5ae1de-2ff9-49f6-8737-2b80bf6e5ab4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_albacete_
+id: node.seccion_albacete_.publish_on
+field_name: publish_on
+entity_type: node
+bundle: seccion_albacete_
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

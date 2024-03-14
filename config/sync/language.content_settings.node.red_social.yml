@@ -1,0 +1,18 @@
+uuid: cd24bf49-cfe1-45b0-8294-f995a0840894
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.red_social
+target_entity_type_id: node
+target_bundle: red_social
+default_langcode: site_default
+language_alterable: false

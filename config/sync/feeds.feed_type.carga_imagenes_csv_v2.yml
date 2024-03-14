@@ -1,0 +1,152 @@
+uuid: 5a99fa67-e96d-4b7a-a17b-2e20a67613fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.media.imagen.name
+    - field.field.media.imagen.field_id_blog_attachment_
+    - field.field.media.imagen.field_id_externo
+    - field.field.media.imagen.field_media_image
+    - field.field.media.imagen.field_tipo
+    - media.type.imagen
+  module:
+    - feeds_tamper
+    - media
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      ae74d739-bf39-4a48-8ce2-631451185590:
+        invert: false
+        uuid: ae74d739-bf39-4a48-8ce2-631451185590
+        plugin: required
+        source: id_externo
+        weight: 0
+        label: Obligatorio
+      fa6a7bdc-ab8a-446e-b649-0bbc7cc1eac0:
+        find: '|'
+        replace: ;
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: fa6a7bdc-ab8a-446e-b649-0bbc7cc1eac0
+        plugin: find_replace
+        source: nameimagen
+        weight: 0
+        label: 'Find replace'
+label: 'Carga Imágenes CSV (BNE)'
+id: carga_imagenes_csv_v2
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:media'
+processor_configuration:
+  values:
+    bundle: imagen
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  nameimagen:
+    value: NameImagen
+    label: NameImagen
+    machine_name: nameimagen
+    type: csv
+  rutaimagen:
+    value: RutaImagen
+    label: RutaImagen
+    machine_name: rutaimagen
+    type: csv
+  altimagen:
+    value: AltImagen
+    label: AltImagen
+    machine_name: altimagen
+    type: csv
+  '':
+    value: AltImagen
+    label: AltImagen
+    machine_name: ''
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  alttext:
+    value: AltText
+    label: AltText
+    machine_name: alttext
+    type: csv
+  categoriaimagen:
+    value: CategoriaImagen
+    label: CategoriaImagen
+    machine_name: categoriaimagen
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  id_blog_attachment:
+    value: Id_blog_attachment
+    label: Id_blog_attachment
+    machine_name: id_blog_attachment
+    type: csv
+mappings:
+  -
+    target: name
+    map:
+      value: nameimagen
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_media_image
+    map:
+      target_id: rutaimagen
+      alt: alttext
+      title: alttext
+    settings:
+      language: ''
+      reference_by: fid
+      existing: '1'
+      autocreate: 0
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_tipo
+    map:
+      target_id: categoriaimagen
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_id_blog_attachment_
+    map:
+      value: id_blog_attachment
+    settings:
+      language: null
+    unique: {  }

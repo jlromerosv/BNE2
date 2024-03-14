@@ -1,0 +1,14 @@
+uuid: 1ec6d815-f941-4fd2-874f-d8b8911c0dcb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+id: node_type_tramite
+entity_type_id: node_type
+entity_id: tramite
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

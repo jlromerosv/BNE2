@@ -1,0 +1,49 @@
+uuid: 55f726eb-db1d-4657-8d2b-e372f9cbea7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas_busqueda
+    - node.type.pagina_basica
+    - taxonomy.vocabulary.area_organizativa
+    - taxonomy.vocabulary.area_tematica
+    - taxonomy.vocabulary.categorias_evento
+    - taxonomy.vocabulary.colectivo
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+    - taxonomy.vocabulary.tipo_de_documento_institucional
+    - taxonomy.vocabulary.tipo_entidad
+    - taxonomy.vocabulary.tipo_evento
+    - taxonomy.vocabulary.tipo_galeria
+    - taxonomy.vocabulary.tipo_iniciativa
+    - taxonomy.vocabulary.tipo_tramite
+id: node.pagina_basica.field_etiquetas_busqueda
+field_name: field_etiquetas_busqueda
+entity_type: node
+bundle: pagina_basica
+label: 'Etiquetas de búsqueda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorias_evento: categorias_evento
+      colectivo: colectivo
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+      tipo_de_documento_institucional: tipo_de_documento_institucional
+      tipo_entidad: tipo_entidad
+      tipo_evento: tipo_evento
+      tipo_galeria: tipo_galeria
+      tipo_iniciativa: tipo_iniciativa
+      tipo_tramite: tipo_tramite
+      area_organizativa: area_organizativa
+      area_tematica: area_tematica
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: etiquetas_de_busqueda
+field_type: entity_reference

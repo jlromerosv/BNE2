@@ -1,0 +1,20 @@
+uuid: b77c9876-0196-43e1-ae0f-8d611917c9d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.icono_svg_
+  module:
+    - options
+id: node.icono_svg_.publish_state
+field_name: publish_state
+entity_type: node
+bundle: icono_svg_
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

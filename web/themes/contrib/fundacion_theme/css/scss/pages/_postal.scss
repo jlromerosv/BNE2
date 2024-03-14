@@ -1,0 +1,29 @@
+.ps-postal-listado{
+    .view-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+
+        .views-row{
+
+            img{
+                max-height: 280px;
+                object-fit: contain;
+            }
+        }
+    }
+} 
+
+.ps-postal-ficha{
+
+    .field--name-field-media-image{
+        display: flex;
+        img{
+            width: 230px;
+            height: 300px;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+    }
+}

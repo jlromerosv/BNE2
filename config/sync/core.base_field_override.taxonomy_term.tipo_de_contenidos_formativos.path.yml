@@ -1,0 +1,20 @@
+uuid: 0e2c5225-a282-4f4c-93bf-07a48d19a5eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contenidos_formativos
+  module:
+    - path
+id: taxonomy_term.tipo_de_contenidos_formativos.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_contenidos_formativos
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

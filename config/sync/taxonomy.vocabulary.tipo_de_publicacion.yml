@@ -1,0 +1,8 @@
+uuid: 993e446e-2c7c-4934-b063-a23dc48cf294
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de publicación'
+vid: tipo_de_publicacion
+description: ''
+weight: 0

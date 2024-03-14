@@ -1,0 +1,22 @@
+uuid: a9320a98-9097-4137-b53a-55210c43bda1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_iniciativa
+id: taxonomy_term.categoria_de_iniciativa.status
+field_name: status
+entity_type: taxonomy_term
+bundle: categoria_de_iniciativa
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 1bb1d96e-b1c4-4a62-92c9-02d7df39ac63
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_avanzada
+  module:
+    - text
+id: node.pagina_avanzada.body
+field_name: body
+entity_type: node
+bundle: pagina_avanzada
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

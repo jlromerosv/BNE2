@@ -1,0 +1,10 @@
+uuid: cde1bd62-c88c-4afb-a4e8-6316d43f84c5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.horarios_resumen_o_recortado_
+label: 'horarios (resumen o recortado)'
+targetEntityType: node
+cache: true

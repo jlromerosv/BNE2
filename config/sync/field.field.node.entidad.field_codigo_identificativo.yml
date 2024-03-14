@@ -1,0 +1,19 @@
+uuid: 9a49704d-682f-43b1-9d9b-e415e48da168
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codigo_identificativo
+    - node.type.entidad
+id: node.entidad.field_codigo_identificativo
+field_name: field_codigo_identificativo
+entity_type: node
+bundle: entidad
+label: Cargo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

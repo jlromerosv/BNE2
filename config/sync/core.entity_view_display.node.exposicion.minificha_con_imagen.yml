@@ -1,0 +1,266 @@
+uuid: cf1671e8-3527-4fab-a7bb-56c43395c301
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.exposicion.created
+    - core.base_field_override.node.exposicion.title
+    - core.entity_view_mode.node.minificha_con_imagen
+    - facets.facet.categorias_de_iniciativa
+    - field.field.node.exposicion.body
+    - field.field.node.exposicion.field_alertas
+    - field.field.node.exposicion.field_archivos
+    - field.field.node.exposicion.field_area_tematica
+    - field.field.node.exposicion.field_audios
+    - field.field.node.exposicion.field_colaboradores
+    - field.field.node.exposicion.field_comentarios
+    - field.field.node.exposicion.field_contenidos_relacionados
+    - field.field.node.exposicion.field_domain_access
+    - field.field.node.exposicion.field_domain_all_affiliates
+    - field.field.node.exposicion.field_domain_source
+    - field.field.node.exposicion.field_email
+    - field.field.node.exposicion.field_enlace
+    - field.field.node.exposicion.field_enlace_formulario_inscripc
+    - field.field.node.exposicion.field_entidades
+    - field.field.node.exposicion.field_entidades_subvencionadoras
+    - field.field.node.exposicion.field_etiquetas_busqueda
+    - field.field.node.exposicion.field_fecha_fin
+    - field.field.node.exposicion.field_fecha_inicio
+    - field.field.node.exposicion.field_galeria_de_imagenes
+    - field.field.node.exposicion.field_horarios
+    - field.field.node.exposicion.field_horarios_especificos
+    - field.field.node.exposicion.field_imagen_destacada
+    - field.field.node.exposicion.field_imagenes
+    - field.field.node.exposicion.field_informacion_adicional
+    - field.field.node.exposicion.field_intervalo_add_to_cal
+    - field.field.node.exposicion.field_lugar
+    - field.field.node.exposicion.field_marca_agua
+    - field.field.node.exposicion.field_mas_informacion
+    - field.field.node.exposicion.field_meta_tags
+    - field.field.node.exposicion.field_patrocinadores
+    - field.field.node.exposicion.field_precio
+    - field.field.node.exposicion.field_telefonos
+    - field.field.node.exposicion.field_tipo
+    - field.field.node.exposicion.field_tipos
+    - field.field.node.exposicion.field_url
+    - field.field.node.exposicion.field_videos
+    - field.field.node.exposicion.field_yoast_seo
+    - node.type.exposicion
+  module:
+    - datetime
+    - facets
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          025a631a-0d12-4587-af9a-1dd7ef8bbe1a:
+            uuid: 025a631a-0d12-4587-af9a-1dd7ef8bbe1a
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: minificha_destacados_responsivo
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          a1fd1e19-6101-4b74-9d61-1694554d2af4:
+            uuid: a1fd1e19-6101-4b74-9d61-1694554d2af4
+            region: content
+            configuration:
+              id: 'facet_block:categorias_de_iniciativa'
+              label: 'Categorías de iniciativa'
+              label_display: visible
+              provider: facets
+              context_mapping: {  }
+            weight: 7
+            additional: {  }
+          424a2154-e253-4054-820f-9e5906e58360:
+            uuid: 424a2154-e253-4054-820f-9e5906e58360
+            region: content
+            configuration:
+              id: 'facet_block:categorias_de_iniciativa'
+              label: 'Categorías de iniciativa'
+              label_display: '0'
+              provider: facets
+              context_mapping: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          a044bc95-4af5-4c7f-948c-185a61d9c024:
+            uuid: a044bc95-4af5-4c7f-948c-185a61d9c024
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          dbe81d35-2ae4-48d3-9e18-dcb08f19dc63:
+            uuid: dbe81d35-2ae4-48d3-9e18-dcb08f19dc63
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:created'
+              label: Fecha
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: hidden
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d083e486-ce31-45a2-b0b2-089c871da1cd:
+            uuid: d083e486-ce31-45a2-b0b2-089c871da1cd
+            region: content
+            configuration:
+              id: 'field_block:node:exposicion:body'
+              label: Descripción
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 200
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          b240b448-1ec0-4362-aecf-5fdde6c9a25f:
+            uuid: b240b448-1ec0-4362-aecf-5fdde6c9a25f
+            region: content
+            configuration:
+              id: 'extra_field_block:node:exposicion:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+id: node.exposicion.minificha_con_imagen
+targetEntityType: node
+bundle: exposicion
+mode: minificha_con_imagen
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_alertas: true
+  field_archivos: true
+  field_area_tematica: true
+  field_audios: true
+  field_colaboradores: true
+  field_comentarios: true
+  field_contenidos_relacionados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_email: true
+  field_enlace: true
+  field_enlace_formulario_inscripc: true
+  field_entidades: true
+  field_entidades_subvencionadoras: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_imagenes: true
+  field_horarios: true
+  field_horarios_especificos: true
+  field_imagenes: true
+  field_informacion_adicional: true
+  field_intervalo_add_to_cal: true
+  field_lugar: true
+  field_marca_agua: true
+  field_mas_informacion: true
+  field_meta_tags: true
+  field_patrocinadores: true
+  field_precio: true
+  field_telefonos: true
+  field_tipo: true
+  field_tipos: true
+  field_url: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

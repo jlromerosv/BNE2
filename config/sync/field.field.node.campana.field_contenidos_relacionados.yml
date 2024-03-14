@@ -1,0 +1,57 @@
+uuid: 41e3804c-9b6f-4ecb-8387-28af0e729c58
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_relacionados
+    - node.type.autor
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.convocatoria
+    - node.type.enlace
+    - node.type.entidad
+    - node.type.evento
+    - node.type.faq
+    - node.type.galeria_de_imagenes
+    - node.type.noticia
+    - node.type.obra
+    - node.type.pagina_basica
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.servicio
+    - node.type.tramite
+id: node.campana.field_contenidos_relacionados
+field_name: field_contenidos_relacionados
+entity_type: node
+bundle: campana
+label: 'Contenidos relacionados'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      autor: autor
+      catalogo: catalogo
+      campana: campana
+      convocatoria: convocatoria
+      enlace: enlace
+      entidad: entidad
+      evento: evento
+      galeria_de_imagenes: galeria_de_imagenes
+      pagina_basica: pagina_basica
+      noticia: noticia
+      obra: obra
+      persona: persona
+      faq: faq
+      publicacion: publicacion
+      servicio: servicio
+      tramite: tramite
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: autor
+field_type: entity_reference

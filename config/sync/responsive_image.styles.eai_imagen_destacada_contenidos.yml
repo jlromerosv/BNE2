@@ -1,0 +1,62 @@
+uuid: 3ab3c1e0-83bc-4c0c-bc9e-331ab552b41d
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.imagen_destacada_contenido_lg
+    - image.style.imagen_destacada_contenido_md
+    - image.style.imagen_destacada_contenido_xl
+    - image.style.imagen_destacada_contenido_xs
+    - image.style.imagen_destacada_contenido_xxl
+  theme:
+    - bne_theme
+id: eai_imagen_destacada_contenidos
+label: 'EAI Imagen Destacada Contenidos'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: imagen_destacada_contenido_xxl
+    breakpoint_id: bne_theme.4xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: imagen_destacada_contenido_xxl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: imagen_destacada_contenido_xxl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: imagen_destacada_contenido_xxl
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: imagen_destacada_contenido_xl
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: imagen_destacada_contenido_lg
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: imagen_destacada_contenido_md
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: imagen_destacada_contenido_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: imagen_destacada_contenido_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: imagen_destacada_contenido_xxl

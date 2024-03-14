@@ -1,0 +1,41 @@
+uuid: 55149dd1-6788-4810-ac46-8af1a2583f38
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.clasificacion_contenidos.body
+    - field.field.node.clasificacion_contenidos.field_colectivo
+    - field.field.node.clasificacion_contenidos.field_domain_access
+    - field.field.node.clasificacion_contenidos.field_domain_all_affiliates
+    - field.field.node.clasificacion_contenidos.field_domain_source
+    - node.type.clasificacion_contenidos
+  module:
+    - text
+    - user
+id: node.clasificacion_contenidos.teaser
+targetEntityType: node
+bundle: clasificacion_contenidos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_colectivo: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

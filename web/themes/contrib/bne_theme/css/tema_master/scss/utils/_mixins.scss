@@ -1,0 +1,289 @@
+/*
+	========== SASS MIXINS ==========
+
+	Fichero dedicado a los mixins creados para el proyecto.
+
+*/
+
+
+@mixin tipografia($font,$index,$weight)
+{
+	font-family: nth($family,$index);
+	font-weight: #{map-get($font,$weight)};
+}
+
+//  @mixin display_flex($direction, $justify_content, $align_items) {
+// 	display: flex;
+// 	flex-direction: $direction;
+// 	justify-content: $justify_content;
+// 	align-items: $align_items;
+// } 
+
+@mixin background_image($bg_repeat, $bg_size, $bg_position, $url) {
+	background-image: url($url);
+	background-repeat: $bg_repeat;
+	background-size: $bg_size;
+	background-position: $bg_position;
+}
+
+
+//TÍTULOS
+	
+@mixin h1_style{  
+	color: $h1_color;
+	font-size: $h1_font_size; 
+	@include tipografia($Roboto,3,medium)
+} 
+
+@mixin h2_style{
+	color: $h2_color;
+	font-size: $h2_font_size; 
+	@include tipografia($Roboto,3,medium)
+}
+
+@mixin h3_style{ 
+	color: $h3_color;
+	font-size: $h3_font_size; 
+	@include tipografia($Roboto,3,bold)	
+}
+
+@mixin h4_style{ 
+	color: $h4_color;
+	font-size: $h4_font_size; 
+	@include tipografia($Roboto,3,bold)
+}
+
+@mixin h5_style{
+	color: $h5_color;
+	font-size: $h5_font_size; 
+	@include tipografia($Roboto,3,medium)
+}
+
+@mixin h6_style{
+	color: $h6_color;
+	font-size: $h6_font_size; 
+	@include tipografia($Roboto,3,bold)
+}
+
+@mixin underline_view_title($background-color, $height, $width) {
+	content: '';
+	display: block;
+	width: $width;
+	height: $height;
+	margin: 5px 0;
+	background-color: $background-color;
+}
+
+
+//PARRAFOS
+
+@mixin p_style($color){ 
+	color: $color;
+	font-size: $p_font_size; 
+	@include tipografia($Roboto,3,medium)
+}
+	
+
+//ENLACES
+
+@mixin link_style($color){
+	color: $color; 
+	@include tipografia($Roboto,3,medium);
+	text-decoration: none;
+}
+
+
+//BOTONES
+
+@mixin button_style_scnd($color, $bg_color, $border_color){
+	color: $color;
+	font-size: $button2_font_size; 
+	background-color: $bg_color; 
+	padding: 8px 24px;
+	border: 1px solid $border_color;
+	@include tipografia($Roboto,3,medium);
+}
+@mixin button_style_scnd_hover($color, $bg_color, $border_color){
+	color: $color;
+	font-size: $button2_font_size; 
+	background-color: $bg_color;
+	border-color: $border_color;
+}
+@mixin button_icon($height, $width, $m-left, $img, $filter) {
+	content: '';
+	display: block;
+	width: $width;
+	height: $height;
+	margin-left: $m-left;
+	@include background_image(no-repeat, contain, initial, $img);
+	filter: $filter;
+}
+
+//LABEL
+
+@mixin form_label{ 
+	color: $main_color_2;
+	font-size: $h3_font_size; 
+	@include tipografia($Roboto,3,bold)	
+}
+
+
+//INPUT
+
+@mixin input_style($padding) {
+	border: none;
+	border-bottom: $border_bottom_input;
+	padding: $padding;
+	background-color: $bg_color_form_item;
+}
+
+// RADIO
+
+@mixin radio_style($size, $border-width) {
+	appearance: none;
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+    border: $border-width solid $main_color_5;
+}
+@mixin radio_check_style($size, $margin) {
+	content: '';
+    display: block;
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+    margin: $margin auto;
+}
+
+//BOX
+
+@mixin main_box{
+	background-color: $main_color_1;
+	color: $main_font_color_4;
+	border-radius: 3px; 
+}
+
+
+// TABLAS
+
+@mixin table_style {
+	width: $table_width;
+    margin: $table_margin;
+}
+
+@mixin table_thead_th {
+	padding: $table_thead_th_padding;
+	height: $table_thead_th_height;
+	background-color: $main_color_4;
+}
+
+@mixin table_thead_filter {
+	position: relative;
+	@include display_flex(row, space-between, center)
+}
+
+@mixin table_thead_filter_icon {
+	content: "";
+	@include background_image(no-repeat, contain, initial, $filter_icon);
+	display: block;
+	height: $icon_height;
+	width: $icon_width;
+	margin-left: 15px;
+}
+
+
+// MENÚS
+
+@mixin right_arrow {
+	content: $menu_icon;
+	font-weight: bold;
+	transform: rotateZ(270deg);
+}
+
+@mixin down_arrow {
+	content: $menu_icon;
+	font-weight: bold;
+}
+@mixin sf_sub_indicator($size, $top) {
+	width: $size;    
+	height: $size;
+	top: $top;
+}
+
+
+// IMÁGENES
+
+@mixin responsive-img {
+	width: 100%;
+	height: auto;
+}
+
+
+// GALERÍA
+
+@mixin gallery_img_styles($column_number, $column_width, $gap) {
+	display: grid;
+	grid-template-columns: repeat($column_number, $column_width);
+	justify-items: center;
+	align-items: center;
+	gap: $gap;
+	img {
+		@include responsive-img;
+	}
+}
+
+
+// ACORDEONES
+
+@mixin accordion-header($padding) {
+	background-color: $accordion-header;
+	color: $text-accordion-header;
+	font-weight: bold;
+	border: 1px solid #ddd;
+	padding: $padding;
+	@include display_flex(row, initial, center);
+}
+
+
+// REGIONS
+
+@mixin grid-column-region($columns, $justify, $align, $gap) {
+	display: grid;
+	grid-template-columns: $columns;
+	justify-items: $justify;
+	align-items: $align;
+	column-gap: $gap;
+}
+
+
+// BASE
+
+@mixin ps-content-margins($breakpoint, $max-width) {
+	@media screen and (min-width: $breakpoint) {
+		max-width: $max-width;
+    	margin: 0 auto;
+	}
+}
+
+
+// ICONOS
+
+@mixin before-icon($size, $left, $icon) {
+	content: '';
+	display: block;
+	@include background-image(no-repeat, contain, initial, $icon);
+	position: absolute;
+	left: $left;
+	width: $size;
+	height: $size;
+}
+
+@mixin after-icon($size, $right, $icon) {
+	content: '';
+	display: block;
+	@include background-image(no-repeat, cover, initial, $icon);
+	position: absolute;
+	right: $right;
+	width: $size;
+	height: $size;
+}

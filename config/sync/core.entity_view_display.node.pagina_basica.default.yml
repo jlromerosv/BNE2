@@ -1,0 +1,190 @@
+uuid: 0651c709-c524-4a58-bd35-f65b258f1de8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_basica.body
+    - field.field.node.pagina_basica.feeds_item
+    - field.field.node.pagina_basica.field_alertas
+    - field.field.node.pagina_basica.field_alias_tipo_contenido
+    - field.field.node.pagina_basica.field_archivos
+    - field.field.node.pagina_basica.field_area_de_transparencia
+    - field.field.node.pagina_basica.field_area_tematica
+    - field.field.node.pagina_basica.field_audios
+    - field.field.node.pagina_basica.field_bloquear_la_traduccion_
+    - field.field.node.pagina_basica.field_colectivo
+    - field.field.node.pagina_basica.field_contenido_generico
+    - field.field.node.pagina_basica.field_contenidos_genericos_2
+    - field.field.node.pagina_basica.field_contenidos_relacionados
+    - field.field.node.pagina_basica.field_contenidos_vinculados
+    - field.field.node.pagina_basica.field_domain_access
+    - field.field.node.pagina_basica.field_domain_all_affiliates
+    - field.field.node.pagina_basica.field_domain_source
+    - field.field.node.pagina_basica.field_enlaces
+    - field.field.node.pagina_basica.field_etiquetas_busqueda
+    - field.field.node.pagina_basica.field_filtros
+    - field.field.node.pagina_basica.field_filtros_contenido
+    - field.field.node.pagina_basica.field_galeria_de_documentos
+    - field.field.node.pagina_basica.field_galeria_de_imagenes
+    - field.field.node.pagina_basica.field_icono
+    - field.field.node.pagina_basica.field_id_externo
+    - field.field.node.pagina_basica.field_iframe
+    - field.field.node.pagina_basica.field_imagen_cabecera
+    - field.field.node.pagina_basica.field_imagen_destacada
+    - field.field.node.pagina_basica.field_imagenes
+    - field.field.node.pagina_basica.field_listado_contenido_filtrado
+    - field.field.node.pagina_basica.field_meta_tags
+    - field.field.node.pagina_basica.field_no_mostrar_inverso
+    - field.field.node.pagina_basica.field_preguntas_frecuentes
+    - field.field.node.pagina_basica.field_search_api_exclude_entity
+    - field.field.node.pagina_basica.field_subtitulo
+    - field.field.node.pagina_basica.field_urlanterior
+    - field.field.node.pagina_basica.field_videos
+    - field.field.node.pagina_basica.field_view_mode
+    - field.field.node.pagina_basica.field_yoast_seo
+    - node.type.pagina_basica
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.pagina_basica.default
+targetEntityType: node
+bundle: pagina_basica
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_alias_tipo_contenido:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_bloquear_la_traduccion_:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_contenido_generico:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_contenidos_genericos_2:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_galeria_de_documentos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_galeria_de_imagenes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_icono:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_id_externo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_imagen_cabecera:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_no_mostrar_inverso:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_alertas: true
+  field_archivos: true
+  field_area_de_transparencia: true
+  field_area_tematica: true
+  field_audios: true
+  field_colectivo: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_etiquetas_busqueda: true
+  field_filtros: true
+  field_filtros_contenido: true
+  field_iframe: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_listado_contenido_filtrado: true
+  field_meta_tags: true
+  field_preguntas_frecuentes: true
+  field_search_api_exclude_entity: true
+  field_subtitulo: true
+  field_urlanterior: true
+  field_videos: true
+  field_view_mode: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

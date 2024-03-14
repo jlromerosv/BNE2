@@ -1,0 +1,24 @@
+uuid: f3e1b103-9ad5-41a5-89c3-95fc1574a1b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_listado_agenda
+    - node.type.evento
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.evento.field_titulo_listado_agenda
+field_name: field_titulo_listado_agenda
+entity_type: node
+bundle: evento
+label: 'Título listado agenda'
+description: 'Título alternativo que sustituye al original en el listado, por ejemplo, por ser demasiado largo.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

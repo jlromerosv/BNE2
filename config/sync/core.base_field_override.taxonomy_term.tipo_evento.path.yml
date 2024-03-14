@@ -1,0 +1,20 @@
+uuid: 2626660c-ea57-47cf-a3a1-e0b12c3ab70f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_evento
+  module:
+    - path
+id: taxonomy_term.tipo_evento.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_evento
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

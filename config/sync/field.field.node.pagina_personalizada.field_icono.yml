@@ -1,0 +1,28 @@
+uuid: 80e940ca-d837-4fbd-ac34-2a97500439bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icono
+    - node.type.icono_svg_
+    - node.type.pagina_personalizada
+id: node.pagina_personalizada.field_icono
+field_name: field_icono
+entity_type: node
+bundle: pagina_personalizada
+label: Icono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      icono_svg_: icono_svg_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

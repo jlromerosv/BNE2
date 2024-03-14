@@ -1,0 +1,21 @@
+uuid: 330e6e43-c649-4659-a2a5-d399f3295d7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.entrada_de_blog
+  module:
+    - datetime
+id: node.entrada_de_blog.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: entrada_de_blog
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

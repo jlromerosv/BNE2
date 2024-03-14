@@ -1,0 +1,9 @@
+uuid: 5293c570-d1ad-4b3a-ab3f-b7ece312bb86
+langcode: es
+status: true
+dependencies: {  }
+id: vista_agenda
+label: 'x_vista agenda'
+weight: -1
+is_admin: null
+permissions: {  }

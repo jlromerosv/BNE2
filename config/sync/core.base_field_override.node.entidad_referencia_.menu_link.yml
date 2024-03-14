@@ -1,0 +1,20 @@
+uuid: 34d81374-31a6-4218-81d1-d98838a272a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad_referencia_
+id: node.entidad_referencia_.menu_link
+field_name: menu_link
+entity_type: node
+bundle: entidad_referencia_
+label: 'Enlace del menu'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

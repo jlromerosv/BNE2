@@ -1,0 +1,18 @@
+uuid: 328a26e9-3d9c-442c-82c6-cc4dc9dce54a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organigrama_de_prueba
+id: taxonomy_term.organigrama_de_prueba.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: organigrama_de_prueba
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

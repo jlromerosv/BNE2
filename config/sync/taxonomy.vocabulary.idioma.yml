@@ -1,0 +1,8 @@
+uuid: 373b383b-e092-426e-930f-eddc1a59c3f3
+langcode: es
+status: true
+dependencies: {  }
+name: x_Idioma
+vid: idioma
+description: ''
+weight: 0

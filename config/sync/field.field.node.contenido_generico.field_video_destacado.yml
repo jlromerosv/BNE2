@@ -1,0 +1,30 @@
+uuid: 9e0a85f9-f6c7-4621-a812-9c2f8400e5bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_destacado
+    - media.type.archivo_de_video
+    - media.type.video_remoto
+    - node.type.contenido_generico
+id: node.contenido_generico.field_video_destacado
+field_name: field_video_destacado
+entity_type: node
+bundle: contenido_generico
+label: 'Vídeo destacado'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo_de_video: archivo_de_video
+      video_remoto: video_remoto
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: archivo_de_video
+field_type: entity_reference

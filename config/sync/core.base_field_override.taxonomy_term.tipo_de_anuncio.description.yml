@@ -1,0 +1,20 @@
+uuid: b8f7d717-0f3d-4b9a-a8fc-844e6644da29
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_anuncio
+  module:
+    - text
+id: taxonomy_term.tipo_de_anuncio.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_anuncio
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

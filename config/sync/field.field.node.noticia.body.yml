@@ -1,0 +1,23 @@
+uuid: 2c098ee8-bc8e-4e6d-8e58-d07a77a80f8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.noticia
+  module:
+    - text
+id: node.noticia.body
+field_name: body
+entity_type: node
+bundle: noticia
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

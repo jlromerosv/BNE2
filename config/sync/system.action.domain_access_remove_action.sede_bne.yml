@@ -1,0 +1,14 @@
+uuid: abf1a0a5-5f47-48a1-a1bf-bab24327bd08
+langcode: es
+status: true
+dependencies:
+  config:
+    - domain.record.sede_bne
+  module:
+    - domain_access
+id: domain_access_remove_action.sede_bne
+label: 'Remove selected content from the Sede BNE domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id: sede_bne

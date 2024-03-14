@@ -1,0 +1,19 @@
+uuid: 5409dfb8-b912-4c41-a7d4-55e9bf138acd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_texto_libre_
+    - node.type.hito
+id: node.hito.field_tipo_texto_libre_
+field_name: field_tipo_texto_libre_
+entity_type: node
+bundle: hito
+label: Etapa
+description: "1. BIBLIOTECA REAL (1712-1836)\r\n2. BIBLIOTECA NACIONAL (1836-1892)\r\n3. BIBLIOTECA NACIONAL (1892-2007)\r\n4. BIBLIOTECA NACIONAL DE ESPAÑA (2008- )\r\n\r\n\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

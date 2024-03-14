@@ -1,0 +1,20 @@
+uuid: d638fc3b-148a-4868-9503-19a2c82cf919
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad
+  module:
+    - options
+id: node.entidad.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: entidad
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+uuid: 18c6dc04-f9bc-45a4-831a-91f9e32669de
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad_referencia_
+id: node.entidad_referencia_.publish_on
+field_name: publish_on
+entity_type: node
+bundle: entidad_referencia_
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

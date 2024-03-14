@@ -1,0 +1,55 @@
+uuid: 06b130fa-b1f3-46e0-b0d9-e4e6729207dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.documentos_enlaces_de_la_pagina
+  module:
+    - node
+    - views
+  theme:
+    - fundacion_theme
+id: views_block__documentos_enlaces_de_la_pagina_block_1_3
+theme: fundacion_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:documentos_enlaces_de_la_pagina-block_1'
+settings:
+  id: 'views_block:documentos_enlaces_de_la_pagina-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      autor: autor
+      campana: campana
+      catalogo: catalogo
+      convocatoria: convocatoria
+      dossier: dossier
+      entidad: entidad
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      galeria_de_documentos: galeria_de_documentos
+      galeria_de_imagenes: galeria_de_imagenes
+      iniciativa: iniciativa
+      lugar: lugar
+      noticia: noticia
+      obra: obra
+      pagina_basica: pagina_basica
+      persona: persona
+      publicacion: publicacion
+      referencias_bibliograficas: referencias_bibliograficas
+      servicio: servicio

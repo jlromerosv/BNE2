@@ -1,0 +1,14 @@
+uuid: c43471bc-8cdf-428e-88d5-c3cd473c9cf9
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.blog_periodicomania
+  module:
+    - user
+id: user_add_role_action.blog_periodicomania
+label: 'Añade el rol Blog Periodicomania al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: blog_periodicomania

@@ -1,0 +1,8 @@
+uuid: debe6792-5c42-472c-9c33-02c9860eb55b
+langcode: es
+status: true
+dependencies: {  }
+name: Blogs
+vid: blogs
+description: ''
+weight: 0

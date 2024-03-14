@@ -1,0 +1,22 @@
+uuid: 8ac43c5f-d176-4e7f-adc4-b6d8b84e1c84
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.convocatoria
+id: node.convocatoria.sticky
+field_name: sticky
+entity_type: node
+bundle: convocatoria
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

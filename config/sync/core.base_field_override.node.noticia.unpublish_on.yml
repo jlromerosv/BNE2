@@ -1,0 +1,18 @@
+uuid: b739bd92-8e4d-44a5-9b22-d226cb4d577b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.noticia
+id: node.noticia.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: noticia
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

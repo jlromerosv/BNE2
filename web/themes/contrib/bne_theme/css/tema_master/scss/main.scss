@@ -1,0 +1,69 @@
+/*
+    ========== FICHERO DE IMPORTACIÓN ==========
+    
+    En este fichero se hará la importación de cada archivo
+    SCSS. 
+
+*/
+
+/* UTILS */
+@import
+    'utils/variables',
+    'utils/mixins',
+    'utils/reset',
+    'utils/typography';
+
+
+/* GENERAL */
+@import
+    'general/titles',
+    'general/forms',
+    'general/links',
+    'general/table',
+    'general/list',
+    'general/paragraphs';
+
+
+/* LAYOUT */
+@import
+    'layout/base', 
+    'layout/region',
+    'layout/header',
+    'layout/menu',
+    'layout/footer',
+    'layout/sidebar-first',
+    'layout/tabs',
+    'layout/breadcrumb',
+    'layout/regions',
+    'layout/sidebar-second';
+
+ /* BLOCKS */
+@import
+    'blocks/componente_grid',
+    'blocks/layout-builder',
+    'blocks/noticia',
+    'blocks/sf-menu',
+    'blocks/img-gallery',
+    'blocks/video-gallery',
+    'blocks/menu-encabezado',
+    'blocks/social-block',
+    'blocks/logo-multisite',
+    'blocks/lang-switcher',
+    'blocks/custom-block-inicio-arriba',
+    'blocks/subencabezado-site',
+    'blocks/footer-mapa-web',
+    'blocks/enlaces-pagina',
+    'blocks/media-file',
+    'blocks/webs-destacadas';
+ 
+ /* PAGES */
+@import
+    'pages/buscador-solr',
+    'pages/home';
+
+/* CONTROLES UI*/
+@import 
+    'controles-ui/buttons',
+    'controles-ui/form-control-ui',
+    'controles-ui/acordeon';
+

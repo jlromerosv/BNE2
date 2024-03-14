@@ -1,0 +1,19 @@
+uuid: 1c4f6418-a67e-41d7-a419-089e088c3a84
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+    - node.type.entrada_de_blog
+  module:
+    - gnode
+    - node
+id: area-group_node-entrada_de_blog
+label: 'Área: Group node (Entradas de blog)'
+description: 'Adds <em class="placeholder">Entradas de blog</em> content to groups both publicly and privately.'
+group_type: area
+content_plugin: 'group_node:entrada_de_blog'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

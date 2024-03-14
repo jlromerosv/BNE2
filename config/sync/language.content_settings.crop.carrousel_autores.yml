@@ -1,0 +1,11 @@
+uuid: e230f065-0551-415c-bfe4-02a3aaa83d6c
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.carrousel_autores
+id: crop.carrousel_autores
+target_entity_type_id: crop
+target_bundle: carrousel_autores
+default_langcode: site_default
+language_alterable: false

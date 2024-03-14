@@ -1,0 +1,75 @@
+uuid: d50e563a-b4fe-452c-95f4-9708dafd475a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.imagen.domain_access
+    - field.field.media.imagen.feeds_item
+    - field.field.media.imagen.field_area_tematica
+    - field.field.media.imagen.field_id_blog_attachment_
+    - field.field.media.imagen.field_id_externo
+    - field.field.media.imagen.field_media_image
+    - field.field.media.imagen.field_pie_de_foto
+    - field.field.media.imagen.field_tipo
+    - field.field.media.imagen.field_urlanterior
+    - image.style.escalar_a_ancho_180px
+    - media.type.imagen
+  module:
+    - image_widget_crop
+id: media.imagen.media_library
+targetEntityType: media
+bundle: imagen
+mode: media_library
+content:
+  field_media_image:
+    type: image_widget_crop
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: escalar_a_ancho_180px
+      crop_preview_image_style: crop_banner
+      crop_list:
+        - banner_obras
+        - focal_point_banner
+        - recorte_libre
+      crop_types_required: {  }
+      warn_multiple_usages: true
+      show_crop_area: false
+      show_default_crop: true
+    third_party_settings: {  }
+  field_pie_de_foto:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tipo:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  domain_access: true
+  feeds_item: true
+  field_area_tematica: true
+  field_id_blog_attachment_: true
+  field_id_externo: true
+  field_urlanterior: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

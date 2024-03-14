@@ -1,0 +1,20 @@
+uuid: 4f1cdf37-c117-48a8-9383-2535f409b6d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entrada_de_blog
+  module:
+    - options
+id: node.entrada_de_blog.publish_state
+field_name: publish_state
+entity_type: node
+bundle: entrada_de_blog
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

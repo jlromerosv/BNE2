@@ -1,0 +1,64 @@
+uuid: 8114a91c-22ee-4242-a870-e67ce5f38336
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.archivo_de_audio.domain_access
+    - field.field.media.archivo_de_audio.feeds_item
+    - field.field.media.archivo_de_audio.field_area_tematica
+    - field.field.media.archivo_de_audio.field_descripcion
+    - field.field.media.archivo_de_audio.field_media_audio_file
+    - field.field.media.archivo_de_audio.field_urlanterior
+    - media.type.archivo_de_audio
+  module:
+    - file
+id: media.archivo_de_audio.default
+targetEntityType: media
+bundle: archivo_de_audio
+mode: default
+content:
+  field_area_tematica:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_descripcion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_media_audio_file:
+    type: file_audio
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  domain_access: true
+  feeds_item: true
+  field_urlanterior: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
+  uuid: true

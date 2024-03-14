@@ -1,0 +1,9 @@
+uuid: 7832bd76-967a-4df9-80b1-cd91fd9f967e
+langcode: es
+status: true
+dependencies: {  }
+id: usuario_mibne
+label: 'Usuario MiBNE'
+weight: 2
+is_admin: null
+permissions: {  }

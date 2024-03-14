@@ -1,0 +1,37 @@
+uuid: dc823290-c125-4509-9818-fb48d5fa0075
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo_de_audio
+  module:
+    - image
+id: media.archivo_de_audio.thumbnail
+field_name: thumbnail
+entity_type: media
+bundle: archivo_de_audio
+label: Thumbnail
+description: 'La miniatura del elemento de multimedia.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

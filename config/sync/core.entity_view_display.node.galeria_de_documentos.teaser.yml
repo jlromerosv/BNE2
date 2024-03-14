@@ -1,0 +1,61 @@
+uuid: b90105c8-6909-492e-aeb9-c1ccbeb5d843
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galeria_de_documentos.body
+    - field.field.node.galeria_de_documentos.field_alias_tipo_contenido
+    - field.field.node.galeria_de_documentos.field_archivos
+    - field.field.node.galeria_de_documentos.field_area_de_transparencia
+    - field.field.node.galeria_de_documentos.field_area_tematica
+    - field.field.node.galeria_de_documentos.field_colectivo
+    - field.field.node.galeria_de_documentos.field_domain_access
+    - field.field.node.galeria_de_documentos.field_domain_all_affiliates
+    - field.field.node.galeria_de_documentos.field_domain_source
+    - field.field.node.galeria_de_documentos.field_enlaces
+    - field.field.node.galeria_de_documentos.field_etiquetas_busqueda
+    - field.field.node.galeria_de_documentos.field_meta_tags
+    - field.field.node.galeria_de_documentos.field_tipo
+    - field.field.node.galeria_de_documentos.field_visualizacion_documentos
+    - field.field.node.galeria_de_documentos.field_yoast_seo
+    - node.type.galeria_de_documentos
+  module:
+    - text
+    - user
+id: node.galeria_de_documentos.teaser
+targetEntityType: node
+bundle: galeria_de_documentos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_de_transparencia: true
+  field_area_tematica: true
+  field_colectivo: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_etiquetas_busqueda: true
+  field_meta_tags: true
+  field_tipo: true
+  field_visualizacion_documentos: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,5 @@
+name: Type
+url_alias: 'categoria _ event'
+widget:
+  config:
+    reset_text: 'Show all'

@@ -1,0 +1,22 @@
+uuid: 2120d2fe-2ef3-4285-ad80-52de47b4d4b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_publicacion
+id: taxonomy_term.tipo_de_publicacion.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_publicacion
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

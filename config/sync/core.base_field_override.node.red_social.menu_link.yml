@@ -1,0 +1,20 @@
+uuid: 11374c14-8ddb-4417-89c0-6023c783d533
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+id: node.red_social.menu_link
+field_name: menu_link
+entity_type: node
+bundle: red_social
+label: 'Enlace del menu'
+description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

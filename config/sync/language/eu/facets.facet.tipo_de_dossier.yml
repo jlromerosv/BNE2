@@ -1,0 +1,5 @@
+name: Txosten-mota
+url_alias: 'mota _ _ (e) ko txostena'
+widget:
+  config:
+    reset_text: 'Erakutsi dena'

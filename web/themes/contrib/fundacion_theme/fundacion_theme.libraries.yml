@@ -1,0 +1,26 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      ../tema_master/tema_master.css: {}
+      css/fundacion_theme.css: {}
+      css/fundacion_theme_entorno.css: {}
+  js:
+    js/load.js: {}
+    js/buscador-general.js: {}
+    js/scroll-to-top.js: {}
+    js/stacktable.js: {}
+    js/menu.js: {}
+    js/alertas.js: {}
+    js/asistente-lectura.js: {}
+    js/home.js: {}
+    js/footer.js: {}
+    js/login.js: {}
+    js/multimedia.js: {}
+    js/contenidos.js: {}
+    js/select2.min.js: {}
+  dependencies:
+    - core/jquery
+
+
+

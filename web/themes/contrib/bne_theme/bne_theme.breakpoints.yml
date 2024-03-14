@@ -1,0 +1,54 @@
+bne_theme.vxs:
+  label: Very extra small devices, less than 360px
+  mediaQuery: 'all and (max-width: 360px)'
+  weight: 0
+  multipliers:
+    - 1x
+bne_theme.xs:
+  label: Extra small devices 360px and up
+  mediaQuery: 'all and (min-width: 360px)'
+  weight: 1
+  multipliers:
+    - 1x
+bne_theme.sm:
+  label: Small devices (landscape phones, 576px and up)
+  mediaQuery: 'all and (min-width: 576px)'
+  weight: 2
+  multipliers:
+    - 1x
+bne_theme.md:
+  label: Medium devices (tablets, 768px and up)
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 3
+  multipliers:
+    - 1x
+bne_theme.lg:
+  label: Large devices (desktops, 992px and up)
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 4
+  multipliers:
+    - 1x
+bne_theme.xl:
+  label: Extra large devices (large desktops, 1200px and up)
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 5
+  multipliers:
+    - 1x
+bne_theme.xxl:
+  label: 2 Extra large devices (2 extra large desktops, 1366px and up)
+  mediaQuery: 'all and (min-width: 1366px)'
+  weight: 6
+  multipliers:
+    - 1x
+bne_theme.3xl:
+  label: 3 Extra large devices (3 extra large desktops, 1768px and up)
+  mediaQuery: 'all and (min-width: 1768px)'
+  weight: 7
+  multipliers:
+    - 1x
+bne_theme.4xl:
+  label: 4 Extra large devices (4 extra large desktops, 1920px and up)
+  mediaQuery: 'all and (min-width: 1920px)'
+  weight: 8
+  multipliers:
+    - 1x

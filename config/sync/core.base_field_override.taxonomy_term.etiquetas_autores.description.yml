@@ -1,0 +1,20 @@
+uuid: 82df9e47-ada3-44cc-a798-ff3106a4993b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_autores
+  module:
+    - text
+id: taxonomy_term.etiquetas_autores.description
+field_name: description
+entity_type: taxonomy_term
+bundle: etiquetas_autores
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

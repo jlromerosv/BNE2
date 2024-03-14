@@ -1,0 +1,29 @@
+uuid: 00bb2a76-381b-4de0-8dbf-f0852179f58d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas_busqueda
+    - node.type.galeria_de_documentos
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+id: node.galeria_de_documentos.field_etiquetas_busqueda
+field_name: field_etiquetas_busqueda
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Etiquetas de búsqueda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: categorias_evento
+field_type: entity_reference

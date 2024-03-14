@@ -1,0 +1,26 @@
+uuid: 34616736-bf47-49b9-9aab-f518994c58c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requisitos
+    - node.type.contenidos_formativos
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.contenidos_formativos.field_requisitos
+field_name: field_requisitos
+entity_type: node
+bundle: contenidos_formativos
+label: Requisitos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

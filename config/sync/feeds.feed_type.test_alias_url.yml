@@ -1,0 +1,33 @@
+uuid: 88d62452-3439-4a7c-b14a-8bab71cc2094
+langcode: es
+status: true
+dependencies:
+  module:
+    - path_alias
+label: 'test alias url'
+id: test_alias_url
+description: ''
+help: ''
+import_period: 3600
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: syndication
+parser_configuration: {  }
+processor: 'entity:path_alias'
+processor_configuration:
+  values: {  }
+  langcode: es
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources: {  }
+mappings: {  }

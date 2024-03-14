@@ -1,0 +1,8 @@
+uuid: 08a1dcb6-d659-4370-af43-d228b010cfe5
+langcode: es
+status: true
+dependencies: {  }
+name: x_Tema
+vid: area_tematica
+description: ''
+weight: 0

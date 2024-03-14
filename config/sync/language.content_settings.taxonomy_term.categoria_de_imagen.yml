@@ -1,0 +1,18 @@
+uuid: 54993c24-0200-448d-8399-ed11cb4b7372
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_imagen
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.categoria_de_imagen
+target_entity_type_id: taxonomy_term
+target_bundle: categoria_de_imagen
+default_langcode: site_default
+language_alterable: false

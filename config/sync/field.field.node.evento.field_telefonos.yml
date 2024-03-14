@@ -1,0 +1,19 @@
+uuid: 2268f84c-97ba-4fc8-a428-18499b3ba266
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefonos
+    - node.type.evento
+id: node.evento.field_telefonos
+field_name: field_telefonos
+entity_type: node
+bundle: evento
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

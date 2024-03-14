@@ -1,0 +1,57 @@
+/*
+    ========== ARBOL DE TEMAS ==========
+
+    Estilos dedicados a la vista para el tipo de multimedia "audio".
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin grid-layout-view($columns, $rows)
+
+        @mixin mf-responsive-grid-layout-view ($min-width, $columns, $rows)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    grid-layout-view = Convierte la estructura de la vista
+    en grid
+
+    mf-responsive-grid-layout-view = Te permite hacer 
+    responsive la estructura
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+    
+    $columns = Número de columnas del grid (grid-layout-view / mf-responsive-grid-layout-view)
+
+    $rows = Número de filas (grid-layout-view / mf-responsive-grid-layout-view)
+
+*/
+
+
+.ps-arbol-temas {
+    .view-content {
+        @include grid-layout-view(1fr, initial);
+        @include mf-responsive-grid-layout-view(460px, repeat(2, 1fr), initial);
+        @include mf-responsive-grid-layout-view(760px, repeat(3, 1fr), initial);
+        & > .view-grouping {
+            @include display_flex(row, initial, initial);
+            &:not(:first-child, :nth-child(2), :nth-child(3)) {
+                margin-top: 15px;
+            }
+            & > .view-grouping-header {
+                margin-right: 20px;
+            }
+        }
+        h1,
+        h2,
+        h3 {
+            margin-top: 0;
+        }
+    }
+}

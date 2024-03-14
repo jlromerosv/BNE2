@@ -1,0 +1,68 @@
+uuid: 7cb1b727-6549-495d-a9ff-9c60f0173940
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidos_vinculados
+    - node.type.autor
+    - node.type.campana
+    - node.type.catalogo
+    - node.type.coleccion
+    - node.type.convocatoria
+    - node.type.dossier
+    - node.type.entidad
+    - node.type.entrada_de_blog
+    - node.type.evento
+    - node.type.faq
+    - node.type.galeria_de_imagenes
+    - node.type.iniciativa
+    - node.type.lugar
+    - node.type.noticia
+    - node.type.obra
+    - node.type.pagina_basica
+    - node.type.persona
+    - node.type.publicacion
+    - node.type.referencias_bibliograficas
+    - node.type.seccion_nivel_1_estandar
+    - node.type.servicio
+id: node.persona.field_contenidos_vinculados
+field_name: field_contenidos_vinculados
+entity_type: node
+bundle: persona
+label: 'Te puede interesar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      autor: autor
+      catalogo: catalogo
+      campana: campana
+      coleccion: coleccion
+      convocatoria: convocatoria
+      dossier: dossier
+      entidad: entidad
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      galeria_de_imagenes: galeria_de_imagenes
+      pagina_basica: pagina_basica
+      iniciativa: iniciativa
+      noticia: noticia
+      obra: obra
+      persona: persona
+      faq: faq
+      publicacion: publicacion
+      referencias_bibliograficas: referencias_bibliograficas
+      lugar: lugar
+      seccion_nivel_1_estandar: seccion_nivel_1_estandar
+      servicio: servicio
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: autor
+field_type: entity_reference

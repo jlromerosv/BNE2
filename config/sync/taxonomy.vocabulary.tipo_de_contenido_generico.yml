@@ -1,0 +1,8 @@
+uuid: cf5fb921-3254-44a6-8917-843d7e427932
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de contenido genérico'
+vid: tipo_de_contenido_generico
+description: ''
+weight: 0

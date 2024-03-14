@@ -1,0 +1,18 @@
+uuid: 9e7ed3a7-7729-47c0-9f08-fbf171339a7c
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.area-group_membership
+id: group_content.area-group_membership.label
+field_name: label
+entity_type: group_content
+bundle: area-group_membership
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

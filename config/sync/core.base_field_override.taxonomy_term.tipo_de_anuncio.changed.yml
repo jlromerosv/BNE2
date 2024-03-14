@@ -1,0 +1,18 @@
+uuid: bc268eac-0924-400f-b756-413233358fbf
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_anuncio
+id: taxonomy_term.tipo_de_anuncio.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_anuncio
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

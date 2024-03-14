@@ -1,0 +1,101 @@
+uuid: 0991c51d-8f79-4dca-b674-939889acd91c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.media.imagen.name
+    - field.field.media.imagen.field_id_externo
+    - field.field.media.imagen.field_media_image
+    - media.type.imagen
+  module:
+    - media
+label: 'Actualizar pie de foto Galería Imagenes (CSV)'
+id: actualizar_metadatos_imagenes_cs
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:media'
+processor_configuration:
+  values:
+    bundle: imagen
+  langcode: es
+  insert_new: 0
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  nameimagen:
+    value: NameImagen
+    label: NameImagen
+    machine_name: nameimagen
+    type: csv
+  alttext:
+    value: AltText
+    label: AltText
+    machine_name: alttext
+    type: csv
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  categoriaimagen:
+    value: CategoriaImagen
+    label: CategoriaImagen
+    machine_name: categoriaimagen
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  id_blog_attachment:
+    value: Id_blog_attachment
+    label: Id_blog_attachment
+    machine_name: id_blog_attachment
+    type: csv
+  rutaimagen:
+    value: RutaImagen
+    label: RutaImagen
+    machine_name: rutaimagen
+    type: csv
+mappings:
+  -
+    target: name
+    map:
+      value: alttext
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_media_image
+    map:
+      target_id: rutaimagen
+      alt: alttext
+      title: alttext
+    settings:
+      language: ''
+      reference_by: filename
+      existing: '2'
+      autocreate: 0
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'

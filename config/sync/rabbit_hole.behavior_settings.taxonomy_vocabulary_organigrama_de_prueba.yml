@@ -1,0 +1,14 @@
+uuid: 96243fac-f5ec-4a6c-8995-9606ade1c6b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organigrama_de_prueba
+id: taxonomy_vocabulary_organigrama_de_prueba
+entity_type_id: taxonomy_vocabulary
+entity_id: organigrama_de_prueba
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

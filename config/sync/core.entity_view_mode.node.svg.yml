@@ -1,0 +1,10 @@
+uuid: 38cee588-ae39-4407-aa06-1fd55a1986d0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.svg
+label: SVG
+targetEntityType: node
+cache: true

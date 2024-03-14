@@ -1,0 +1,14 @@
+uuid: 0da400fc-da87-4484-97f3-865ee7cf6703
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+id: node_type_documento
+entity_type_id: node_type
+entity_id: documento
+action: page_redirect
+allow_override: 1
+redirect: '[node:field_archivo:entity:field_media_file:entity:url]'
+redirect_code: 301
+redirect_fallback_action: display_page

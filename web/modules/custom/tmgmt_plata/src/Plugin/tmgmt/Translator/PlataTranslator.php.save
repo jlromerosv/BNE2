@@ -1,0 +1,203 @@
+<?php
+
+/**
+ * @file
+ * Contains \Drupal\tmgmt_microsoft\Plugin\tmgmt\Translator\MicrosoftTranslator.
+ */
+
+namespace Drupal\tmgmt_plata\Plugin\tmgmt\Translator;
+
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\tmgmt\ContinuousTranslatorInterface;
+use Drupal\tmgmt\Entity\Job;
+use Drupal\tmgmt\JobInterface;
+use Drupal\tmgmt\TranslatorInterface;
+use Drupal\tmgmt\Entity\Translator;
+use Drupal\tmgmt\TMGMTException;
+use Drupal\tmgmt\TranslatorPluginBase;
+use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Exception\BadResponseException;
+use GuzzleHttp\Psr7\Request;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use \Drupal\tmgmt\Translator\AvailableResult;
+use \Drupal\tmgmt\Translator\TranslatableResult;
+
+/**
+ * Plata translator plugin.
+ *
+ * @TranslatorPlugin(
+ *   id = "plata",
+ *   label = @Translation("Plata"),
+ *   description = @Translation("Plata Translator service."),
+ *   ui = "Drupal\tmgmt_plata\PlataTranslatorUi",
+ *   logo = "icons/plata.svg",
+ * )
+ */
+class PlataTranslator extends TranslatorPluginBase implements ContainerFactoryPluginInterface, ContinuousTranslatorInterface {
+
+  /**
+   * Translation service URL.
+   *
+   * @var string
+   */
+  protected $translatorUrl = 'http://pre-apertium.redsara.es/TranslatorService_v2/Translator_v2?wsdl';
+ /* protected $translatorUrl = 'http://moses.redsara.es/TranslatorService_v2/Translator_v2?wsdl';*/
+
+  /**
+   * Name of parameter that contains source string to be translated.
+   *
+   * @var string
+   */
+  protected $qParamName = 'q';
+
+  /**
+   * Maximum supported characters.
+   *
+   * @var int
+   */
+  protected $maxCharacters = 5000;
+
+  /**
+   * Available actions for Plata translator.
+   *
+   * @var array
+   */
+  protected $availableActions = array('translate', 'languages', 'detect');
+
+  /**
+   * Max number of text queries for translation sent in one request.
+   *
+   * @var int
+   */
+  protected $qChunkSize = 5;
+
+  /**
+   * Guzzle HTTP client.
+   *
+   * @var \GuzzleHttp\ClientInterface
+   */
+  protected $client;
+
+  /**
+   * Constructs a LocalActionBase object.
+   *
+   * @param \GuzzleHttp\ClientInterface $client
+   *   The Guzzle HTTP client.
+   * @param array $configuration
+   *   A configuration array containing information about the plugin instance.
+   * @param string $plugin_id
+   *   The plugin_id for the plugin instance.
+   * @param array $plugin_definition
+   *   The plugin implementation definition.
+   */
+  public function __construct(ClientInterface $client, array $configuration, $plugin_id, array $plugin_definition) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition);
+    $this->client = $client;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+    return new static(
+      $container->get('http_client'),
+      $configuration,
+      $plugin_id,
+      $plugin_definition
+    );
+  }
+
+  /**
+   * Overrides TMGMTDefaultTranslatorPluginController::checkAvailable().
+   */
+  public function checkAvailable(TranslatorInterface $translator) {
+    if ($translator->getSetting('api_key')) {
+      return AvailableResult::yes();
+    }
+
+    return AvailableResult::no(t('@translator is not available. Make sure it is properly <a href=:configured>configured</a>.', [
+      '@translator' => $translator->label(),
+      ':configured' => $translator->toUrl()->toString()
+      ]));
+  }
+
+  /**
+   * Overrides TMGMTDefaultTranslatorPluginController::checkTranslatable().
+   */
+  public function checkTranslatable(TranslatorInterface $translator, JobInterface $job) {
+    foreach (\Drupal::service('tmgmt.data')->filterTranslatable($job->getData()) as $value) {
+      // If one of the texts in this job exceeds the max character count
+      // the job can't be translated.
+      if (mb_strlen($value['#text']) > $this->maxCharacters) {
+        return TranslatableResult::no(t('The length of the job exceeds tha max character count (@count).', ['@count' => $this->maxCharacters]));
+      }
+    }
+    return parent::checkTranslatable($translator, $job);
+  }
+
+  /**
+   * Implements TMGMTTranslatorPluginControllerInterface::requestTranslation().
+   */
+  public function requestTranslation(JobInterface $job) {
+    $this->requestJobItemsTranslation($job->getItems());
+    if (!$job->isRejected()) {
+      $job->submitted('The translation job has been submitted.');
+    }
+  }
+
+  /**
+   * Helper method to do translation request.
+   *
+   * @param Job $job
+   *   TMGMT Job to be used for translation.
+   * @param array|string $q
+   *   Text/texts to be translated.
+   *
+   * @return array
+   *   Userialized JSON containing translated texts.
+   */
+  protected function plataRequestTranslation(Job $job, $q) {
+    $translator = $job->getTranslator();
+    return $this->doRequest($translator, 'translate', array(
+      'source' => $job->getRemoteSourceLanguage(),
+      'target' => $job->getRemoteTargetLanguage(),
+      $this->qParamName => $q,
+    ), array(
+      'headers' => array(
+        'Content-Type' => 'text/plain',
+      ),
+    ));
+  }
+
+
+  /**
+   * Overrides TMGMTDefaultTranslatorPluginController::getSupportedRemoteLanguages().
+   */
+  public function getSupportedRemoteLanguages(TranslatorInterface $translator) {
+    $languages = array();
+    // Prevent access if the translator isn't configured yet.
+    if (!$translator->getSetting('api_key')) {
+      return $languages;
+    }
+    try {
+      $request = $this->doRequest($translator, 'languages');
+      if (isset($request['data'])) {
+        foreach ($request['data']['languages'] as $language) {
+          $languages[$language['language']] = $language['language'];
+        }
+      }
+    }
+    catch (\Exception $e) {
+      \Drupal::messenger()->addMessage($e->getMessage(), 'error');
+      return $languages;
+    }
+
+    return $languages;
+  }
+
+  /**
+   * Overrides TMGMTDefaultTranslatorPluginController::getDefaultRemoteLanguagesMappings().
+   */
+  public function getDefaultRemoteLanguagesMappings() {
+    return array(

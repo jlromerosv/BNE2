@@ -1,0 +1,75 @@
+/*
+    ============= TEASER ==============
+
+    Estilos dedicados al modo de visualización de resumen.
+
+    Se ha hecho uso de los siguientes MIXINS:
+
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin responsive-img
+
+        @mixin button_icon($height, $width, $m-left, $img, $filter)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    responsive-img = Convierte una imagen en responsive
+
+    button_icon = Poner un icono a un botón
+
+    ----------------------- VARIABLES -------------------------
+
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $height = Altura del icono
+
+    $width = Anchura del icono
+
+    $m-left = Margen izquierdo del icono
+
+    $img = Imagen del icono
+
+    $filter = Filtro aplicado al icono
+
+*/
+
+.node--view-mode-teaser {
+    .node__content {
+        .layout--twocol-section {
+            @include display_flex(row, initial, center);
+            flex-wrap: nowrap;
+            .field--type-image {
+                .field__item {
+                    @include display_flex(row, center, center);
+                    img {
+                        @include responsive-img;
+                    }
+                }
+                
+            }
+            
+            .layout__region--first {
+                flex: 0 1 33%;
+            }
+            .layout__region--second {
+                margin-left: 15px;
+                flex: 0 1 67%;
+                .node__links {
+                    .node-readmore {
+                        a {
+                            @include display_flex(row, flex-end, center);
+                            &::after {
+                                @include button_icon($icon_btn_mn_2_size, $icon_btn_mn_2_size, $icon_btn_mn_2_m-left, $button_mn_2_icon, $filter_main_color_1_mod_1)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

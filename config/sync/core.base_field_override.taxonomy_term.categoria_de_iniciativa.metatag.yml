@@ -1,0 +1,18 @@
+uuid: 0be36d59-72aa-472f-956d-c88ae9015cdf
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_iniciativa
+id: taxonomy_term.categoria_de_iniciativa.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: categoria_de_iniciativa
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

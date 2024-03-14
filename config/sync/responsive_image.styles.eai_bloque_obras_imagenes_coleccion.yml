@@ -1,0 +1,60 @@
+uuid: 46e03d48-eb17-4d5c-bfb6-8cef3f5854df
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.bloque_obras_imagenes_md
+    - image.style.bloque_obras_imagenes_xl
+    - image.style.bloque_obras_imagenes_xs
+  theme:
+    - bne_theme
+id: eai_bloque_obras_imagenes_coleccion
+label: 'EAI Bloque obras imagenes colección'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_obras_imagenes_xl
+    breakpoint_id: bne_theme.4xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_obras_imagenes_xl
+    breakpoint_id: bne_theme.3xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_obras_imagenes_xl
+    breakpoint_id: bne_theme.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_obras_imagenes_xl
+    breakpoint_id: bne_theme.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_obras_imagenes_md
+    breakpoint_id: bne_theme.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_obras_imagenes_md
+    breakpoint_id: bne_theme.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_obras_imagenes_md
+    breakpoint_id: bne_theme.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_obras_imagenes_xs
+    breakpoint_id: bne_theme.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_obras_imagenes_xs
+    breakpoint_id: bne_theme.vxs
+    multiplier: 1x
+breakpoint_group: bne_theme
+fallback_image_style: bloque_obras_imagenes_xl

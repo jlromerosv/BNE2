@@ -1,0 +1,18 @@
+uuid: adf9cd38-827f-4deb-8d35-5a26ce36c3df
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace
+id: node.enlace.title
+field_name: title
+entity_type: node
+bundle: enlace
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

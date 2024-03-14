@@ -1,0 +1,18 @@
+uuid: 193f044b-b8f2-4019-9848-8f7141969adf
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+id: comment.comentario.subject
+field_name: subject
+entity_type: comment
+bundle: comentario
+label: Asunto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

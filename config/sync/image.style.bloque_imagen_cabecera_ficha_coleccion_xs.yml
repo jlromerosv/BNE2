@@ -1,0 +1,15 @@
+uuid: 8f2d9b12-a61b-44d7-870f-16c09465253b
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_imagen_cabecera_ficha_coleccion_xs
+label: 'Bloque Imagen Cabecera ficha colección XS'
+effects:
+  aba7cf3b-92d8-4185-a075-e1ae8cabf671:
+    uuid: aba7cf3b-92d8-4185-a075-e1ae8cabf671
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 576
+      height: 240
+      anchor: center-center

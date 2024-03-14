@@ -1,0 +1,23 @@
+uuid: a6646e17-24d6-41c0-bb18-b05fd2c431f7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.autor
+  module:
+    - feeds
+id: node.autor.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: autor
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

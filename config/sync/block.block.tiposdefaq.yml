@@ -1,0 +1,29 @@
+uuid: 58ad7e51-de46-46db-9bbf-966468778c49
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipos_de_faq
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: tiposdefaq
+theme: bne_theme
+region: sidebar_first
+weight: -60
+provider: null
+plugin: 'facet_block:tipos_de_faq'
+settings:
+  id: 'facet_block:tipos_de_faq'
+  label: 'Tipos de FAQ'
+  label_display: '0'
+  provider: facets
+  block_id: tiposdefaq
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/3001

@@ -1,0 +1,29 @@
+uuid: 60a8472f-027a-4d76-a69f-491448acb9c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.categorias_noticia
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_categorias
+theme: fundacion_theme
+region: sidebar_first
+weight: -26
+provider: null
+plugin: 'facet_block:categorias_noticia'
+settings:
+  id: 'facet_block:categorias_noticia'
+  label: 'Categorías de noticia'
+  label_display: '0'
+  provider: facets
+  block_id: categorias
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/2821

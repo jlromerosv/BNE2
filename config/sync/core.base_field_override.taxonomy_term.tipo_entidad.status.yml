@@ -1,0 +1,22 @@
+uuid: ccc4cbd8-695d-43a6-a41a-1286c98ce4c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_entidad
+id: taxonomy_term.tipo_entidad.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_entidad
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

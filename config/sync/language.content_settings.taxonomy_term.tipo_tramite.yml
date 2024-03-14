@@ -1,0 +1,18 @@
+uuid: 343d8c4e-deab-4d78-80b5-bf0e917ce2f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_tramite
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tipo_tramite
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_tramite
+default_langcode: site_default
+language_alterable: false

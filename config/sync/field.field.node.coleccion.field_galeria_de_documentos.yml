@@ -1,0 +1,28 @@
+uuid: f3491835-a558-45fc-94a4-e61472793026
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_galeria_de_documentos
+    - node.type.coleccion
+    - node.type.galeria_de_documentos
+id: node.coleccion.field_galeria_de_documentos
+field_name: field_galeria_de_documentos
+entity_type: node
+bundle: coleccion
+label: 'Grupo de documentos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      galeria_de_documentos: galeria_de_documentos
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: faa623e1-6893-445b-9dda-b3625dc56b07
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disponibilidad_texto_libre
+    - node.type.publicacion
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.publicacion.field_disponibilidad_texto_libre
+field_name: field_disponibilidad_texto_libre
+entity_type: node
+bundle: publicacion
+label: 'Disponibilidad texto libre'
+description: 'Texto libre que se mostrará en  el listado de publicaciones entre el precio y el campo disponibilidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: f87de72c-d475-4fd2-baa4-fe015ab76b01
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: grupo_de_documentos
+label: 'Grupo de documentos'
+type: 'canonical_entities:node'
+pattern: '/transparencia/[node:title]'
+selection_criteria:
+  a4ea3290-b13d-452a-b613-64697f61244f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a4ea3290-b13d-452a-b613-64697f61244f
+    context_mapping:
+      node: node
+    bundles:
+      galeria_de_documentos: galeria_de_documentos
+selection_logic: and
+weight: -5
+relationships: {  }

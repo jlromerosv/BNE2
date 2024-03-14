@@ -1,0 +1,75 @@
+uuid: a5ce4633-341b-4aa5-8e1a-246acc28107f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.svg
+    - field.field.node.contenido_generico.body
+    - field.field.node.contenido_generico.field_alias_tipo_contenido
+    - field.field.node.contenido_generico.field_archivo
+    - field.field.node.contenido_generico.field_bloquear_la_traduccion_
+    - field.field.node.contenido_generico.field_contenidos_relacionados
+    - field.field.node.contenido_generico.field_domain_access
+    - field.field.node.contenido_generico.field_domain_all_affiliates
+    - field.field.node.contenido_generico.field_domain_source
+    - field.field.node.contenido_generico.field_enlace
+    - field.field.node.contenido_generico.field_icono
+    - field.field.node.contenido_generico.field_id_externo
+    - field.field.node.contenido_generico.field_imagen_destacada
+    - field.field.node.contenido_generico.field_imagen_representativa
+    - field.field.node.contenido_generico.field_imagen_svg_
+    - field.field.node.contenido_generico.field_imagenes
+    - field.field.node.contenido_generico.field_meta_tags
+    - field.field.node.contenido_generico.field_subtitulo
+    - field.field.node.contenido_generico.field_tipo
+    - field.field.node.contenido_generico.field_url_2
+    - field.field.node.contenido_generico.field_video_destacado
+    - node.type.contenido_generico
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.contenido_generico.svg
+targetEntityType: node
+bundle: contenido_generico
+mode: svg
+content:
+  field_imagen_destacada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_alias_tipo_contenido: true
+  field_archivo: true
+  field_bloquear_la_traduccion_: true
+  field_contenidos_relacionados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_icono: true
+  field_id_externo: true
+  field_imagen_representativa: true
+  field_imagen_svg_: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_subtitulo: true
+  field_tipo: true
+  field_url_2: true
+  field_video_destacado: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

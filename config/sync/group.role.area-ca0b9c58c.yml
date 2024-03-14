@@ -1,0 +1,17 @@
+uuid: dff867b4-ce2e-4e93-bfa8-8ebfdc0c4cad
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+  enforced:
+    config:
+      - user.role.editor_fabne
+id: area-ca0b9c58c
+label: 'Editor FABNE'
+weight: 4
+internal: true
+audience: outsider
+group_type: area
+permissions_ui: false
+permissions: {  }

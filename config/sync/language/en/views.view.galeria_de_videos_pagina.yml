@@ -1,0 +1,6 @@
+display:
+  block_1:
+    display_options:
+      footer:
+        area_text_custom:
+          content: '<a href="/es/galeria-videos">All videos</a>'

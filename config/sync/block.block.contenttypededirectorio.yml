@@ -1,0 +1,29 @@
+uuid: bb18cadd-029b-4089-98df-7175a97b0130
+langcode: es
+status: false
+dependencies:
+  config:
+    - facets.facet.content_type_de_directorio
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: contenttypededirectorio
+theme: bne_theme
+region: sidebar_first
+weight: -25
+provider: null
+plugin: 'facet_block:content_type_de_directorio'
+settings:
+  id: 'facet_block:content_type_de_directorio'
+  label: 'Content type de directorio'
+  label_display: '0'
+  provider: facets
+  block_id: contenttypededirectorio
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/directorio\r\n"

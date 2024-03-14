@@ -1,0 +1,28 @@
+uuid: aefa5102-e0b3-48e9-a347-5ec78770723b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidad
+    - node.type.convocatoria
+    - node.type.entidad
+id: node.convocatoria.field_entidad
+field_name: field_entidad
+entity_type: node
+bundle: convocatoria
+label: 'Entidad ofertante'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,42 @@
+uuid: d5ed395a-e5af-4559-b0c5-01608e8fa97e
+langcode: es
+status: true
+dependencies: {  }
+id: slider_multimedia_dos_imagenes
+name: slider_multimedia_dos_imagenes
+weight: 0
+label: 'Slider multimedia dos imagenes'
+group: ''
+skin: ''
+breakpoints: 2
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    lazyLoad: ondemand
+    slidesPerRow: 2
+    slidesToShow: 2
+  responsives:
+    responsive:
+      -
+        breakpoint: 578
+        unslick: false
+        settings:
+          arrows: false
+          draggable: false
+          infinite: false
+          swipe: false
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: 1920
+        unslick: false
+        settings:
+          arrows: false
+          draggable: false
+          infinite: false
+          slidesPerRow: 2
+          slidesToShow: 2
+          swipe: false
+          touchMove: false
+          waitForAnimate: false

@@ -1,0 +1,30 @@
+uuid: ab8be9b4-3e70-4802-86e5-21ea8b494851
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog
+    - node.type.entrada_de_blog
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.entrada_de_blog.field_blog
+field_name: field_blog
+entity_type: node
+bundle: entrada_de_blog
+label: Blog
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: blogs_con_acceso_por_el_editor_del_contenido
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

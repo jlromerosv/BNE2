@@ -1,0 +1,28 @@
+uuid: 2cd918b0-d600-4544-acbe-a3b00527450e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audios
+    - media.type.archivo_de_audio
+    - node.type.exposicion
+id: node.exposicion.field_audios
+field_name: field_audios
+entity_type: node
+bundle: exposicion
+label: Audios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo_de_audio: archivo_de_audio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

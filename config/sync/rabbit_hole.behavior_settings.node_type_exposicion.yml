@@ -1,0 +1,14 @@
+uuid: 1498e40d-f596-4632-839f-d1a6ab92d8d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+id: node_type_exposicion
+entity_type_id: node_type
+entity_id: exposicion
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

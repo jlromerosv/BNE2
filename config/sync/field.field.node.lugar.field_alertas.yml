@@ -1,0 +1,28 @@
+uuid: 582050e7-6123-4985-84e9-eb636dc0c4fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alertas
+    - node.type.alerta
+    - node.type.lugar
+id: node.lugar.field_alertas
+field_name: field_alertas
+entity_type: node
+bundle: lugar
+label: Alertas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      alerta: alerta
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: 08d1e5b0-603d-48a4-be74-551fa8c638ad
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_intervalo_add_to_cal
+field_name: field_intervalo_add_to_cal
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

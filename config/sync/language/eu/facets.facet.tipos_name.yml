@@ -1,0 +1,7 @@
+name: 'Mota (taxonomia)'
+url_alias: '_ name'
+widget:
+  config:
+    reset_text: 'Erakutsi dena'
+empty_behavior:
+  text: 'Ez dago mota alderdi (taxonomia)'

@@ -1,0 +1,305 @@
+uuid: 20fc1395-c1bf-4a31-8fe1-af7d296ce494
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.convocatoria.title
+    - core.entity_view_mode.node.listado
+    - field.field.node.convocatoria.body
+    - field.field.node.convocatoria.field_alertas
+    - field.field.node.convocatoria.field_alias_tipo_contenido
+    - field.field.node.convocatoria.field_archivos
+    - field.field.node.convocatoria.field_area_organizativa
+    - field.field.node.convocatoria.field_area_tematica
+    - field.field.node.convocatoria.field_audios
+    - field.field.node.convocatoria.field_bolsas_de_trabajo
+    - field.field.node.convocatoria.field_categoria
+    - field.field.node.convocatoria.field_codigo_referencia
+    - field.field.node.convocatoria.field_colectivo
+    - field.field.node.convocatoria.field_contenidos_relacionados
+    - field.field.node.convocatoria.field_contenidos_vinculados
+    - field.field.node.convocatoria.field_domain_access
+    - field.field.node.convocatoria.field_domain_all_affiliates
+    - field.field.node.convocatoria.field_domain_source
+    - field.field.node.convocatoria.field_email
+    - field.field.node.convocatoria.field_email_texto
+    - field.field.node.convocatoria.field_enlace
+    - field.field.node.convocatoria.field_enlaces
+    - field.field.node.convocatoria.field_entidad
+    - field.field.node.convocatoria.field_estado
+    - field.field.node.convocatoria.field_etiquetas_busqueda
+    - field.field.node.convocatoria.field_fecha_fin
+    - field.field.node.convocatoria.field_fecha_inicio
+    - field.field.node.convocatoria.field_galeria_de_documentos
+    - field.field.node.convocatoria.field_galeria_de_imagenes
+    - field.field.node.convocatoria.field_idioma
+    - field.field.node.convocatoria.field_iframe
+    - field.field.node.convocatoria.field_imagen_destacada
+    - field.field.node.convocatoria.field_imagenes
+    - field.field.node.convocatoria.field_mas_informacion
+    - field.field.node.convocatoria.field_meta_tags
+    - field.field.node.convocatoria.field_no_mostrar_inverso
+    - field.field.node.convocatoria.field_requisitos
+    - field.field.node.convocatoria.field_search_api_exclude_entity
+    - field.field.node.convocatoria.field_subtitulo
+    - field.field.node.convocatoria.field_telefonos
+    - field.field.node.convocatoria.field_tipo
+    - field.field.node.convocatoria.field_tipo_personal
+    - field.field.node.convocatoria.field_videos
+    - field.field.node.convocatoria.field_yoast_seo
+    - node.type.convocatoria
+  module:
+    - iframe
+    - layout_builder
+    - layout_discovery
+    - search_api_exclude_entity
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          41955391-fe95-4f90-b587-0fdba386d0c4:
+            uuid: 41955391-fe95-4f90-b587-0fdba386d0c4
+            region: content
+            configuration:
+              id: 'field_block:node:convocatoria:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          df9028c1-7ea8-4ccc-8f44-4ec430490417:
+            uuid: df9028c1-7ea8-4ccc-8f44-4ec430490417
+            region: content
+            configuration:
+              id: 'field_block:node:convocatoria:body'
+              label: Descripción
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 200
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          61cd4a3b-68e6-4cc9-8d83-3f6aa658b6e8:
+            uuid: 61cd4a3b-68e6-4cc9-8d83-3f6aa658b6e8
+            region: content
+            configuration:
+              id: 'field_block:node:convocatoria:field_fecha_inicio'
+              label: 'Fecha inicio solicitudes'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: fecha_bloque_noticias_home
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          c8364ff2-01aa-4049-8af3-d57caa03dd1d:
+            uuid: c8364ff2-01aa-4049-8af3-d57caa03dd1d
+            region: content
+            configuration:
+              id: 'field_block:node:convocatoria:field_tipo'
+              label: 'Tipo de convocatoria'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.convocatoria.listado
+targetEntityType: node
+bundle: convocatoria
+mode: listado
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_audios:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_bolsas_de_trabajo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_contenidos_relacionados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_contenidos_vinculados:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_estado:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_etiquetas_busqueda:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_galeria_de_documentos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_galeria_de_imagenes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_iframe:
+    type: iframe_default
+    label: above
+    settings:
+      url: ''
+      title: ''
+      class: ''
+      frameborder: '0'
+      scrolling: ''
+      transparency: '0'
+      allowfullscreen: '0'
+      tokensupport: '0'
+      width: ''
+      height: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_mas_informacion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_search_api_exclude_entity:
+    type: search_api_exclude_entity_formatter
+    label: above
+    settings:
+      format: yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_tipo_personal:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  field_alertas: true
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_organizativa: true
+  field_area_tematica: true
+  field_codigo_referencia: true
+  field_colectivo: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_email: true
+  field_email_texto: true
+  field_enlace: true
+  field_enlaces: true
+  field_entidad: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_idioma: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_requisitos: true
+  field_subtitulo: true
+  field_telefonos: true
+  field_tipo: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

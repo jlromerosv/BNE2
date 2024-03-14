@@ -1,0 +1,28 @@
+uuid: 11f4f6ee-cb61-4924-a14e-ac4b88567eb1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_personalizada
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.pagina_personalizada.body
+field_name: body
+entity_type: node
+bundle: pagina_personalizada
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 00119265-571c-42b7-90da-748cc2dc4513
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlaces
+    - node.type.entrada_de_blog
+  module:
+    - link
+id: node.entrada_de_blog.field_enlaces
+field_name: field_enlaces
+entity_type: node
+bundle: entrada_de_blog
+label: Enlaces
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

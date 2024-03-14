@@ -1,0 +1,25 @@
+uuid: 56458e5b-79f4-49ab-bbed-3c97caead244
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_source
+    - node.type.contenido_generico
+id: node.contenido_generico.field_domain_source
+field_name: field_domain_source
+entity_type: node
+bundle: contenido_generico
+label: 'Domain Source'
+description: 'Select the canonical domain for this content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

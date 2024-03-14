@@ -1,0 +1,119 @@
+uuid: d30dbdd1-70e5-4a50-95a7-45b8df100a26
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.html_sencillo
+    - media.type.archivo
+    - media.type.archivo_de_audio
+    - media.type.archivo_de_video
+    - media.type.imagen
+    - media.type.video_remoto
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - domain_access
+    - domain_content
+    - entity_browser
+    - eu_cookie_compliance
+    - filter
+    - media
+    - node
+    - path
+id: editor_contenidos
+label: 'x_Editor Contenidos'
+weight: 0
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access content_browser entity browser pages'
+  - 'access domain content'
+  - 'create actividad_generica content on assigned domains'
+  - 'create alerta content on assigned domains'
+  - 'create anuncio content on assigned domains'
+  - 'create archivo media'
+  - 'create archivo_de_audio media'
+  - 'create archivo_de_video media'
+  - 'create autor content on assigned domains'
+  - 'create campana content on assigned domains'
+  - 'create cargo content on assigned domains'
+  - 'create catalogo content on assigned domains'
+  - 'create coleccion content on assigned domains'
+  - 'create contenido_generico content on assigned domains'
+  - 'create contenidos_formativos content on assigned domains'
+  - 'create convocatoria content on assigned domains'
+  - 'create dossier content on assigned domains'
+  - 'create enlace content on assigned domains'
+  - 'create entidad content on assigned domains'
+  - 'create entidad_referencia_ content on assigned domains'
+  - 'create entrada_de_blog content on assigned domains'
+  - 'create evento content on assigned domains'
+  - 'create exposicion content on assigned domains'
+  - 'create faq content on assigned domains'
+  - 'create galeria_de_documentos content on assigned domains'
+  - 'create galeria_de_imagenes content on assigned domains'
+  - 'create galeria_de_videos content on assigned domains'
+  - 'create horarios content on assigned domains'
+  - 'create imagen media'
+  - 'create iniciativa content on assigned domains'
+  - 'create lugar content on assigned domains'
+  - 'create noticia content on assigned domains'
+  - 'create obra content on assigned domains'
+  - 'create pagina_basica content on assigned domains'
+  - 'create persona content on assigned domains'
+  - 'create publicacion content on assigned domains'
+  - 'create red_social content on assigned domains'
+  - 'create referencias_bibliograficas content on assigned domains'
+  - 'create servicio content on assigned domains'
+  - 'create tramite content on assigned domains'
+  - 'create url aliases'
+  - 'create video_remoto media'
+  - 'display eu cookie compliance popup'
+  - 'edit domain content'
+  - 'edit own archivo media'
+  - 'edit own archivo_de_audio media'
+  - 'edit own archivo_de_video media'
+  - 'edit own imagen media'
+  - 'edit own video_remoto media'
+  - 'publish to any assigned domain'
+  - 'update actividad_generica content on assigned domains'
+  - 'update alerta content on assigned domains'
+  - 'update anuncio content on assigned domains'
+  - 'update autor content on assigned domains'
+  - 'update campana content on assigned domains'
+  - 'update cargo content on assigned domains'
+  - 'update catalogo content on assigned domains'
+  - 'update coleccion content on assigned domains'
+  - 'update contenido_generico content on assigned domains'
+  - 'update contenidos_formativos content on assigned domains'
+  - 'update convocatoria content on assigned domains'
+  - 'update dossier content on assigned domains'
+  - 'update enlace content on assigned domains'
+  - 'update entidad content on assigned domains'
+  - 'update entidad_referencia_ content on assigned domains'
+  - 'update entrada_de_blog content on assigned domains'
+  - 'update evento content on assigned domains'
+  - 'update exposicion content on assigned domains'
+  - 'update faq content on assigned domains'
+  - 'update galeria_de_documentos content on assigned domains'
+  - 'update galeria_de_imagenes content on assigned domains'
+  - 'update galeria_de_videos content on assigned domains'
+  - 'update horarios content on assigned domains'
+  - 'update iniciativa content on assigned domains'
+  - 'update lugar content on assigned domains'
+  - 'update noticia content on assigned domains'
+  - 'update obra content on assigned domains'
+  - 'update pagina_basica content on assigned domains'
+  - 'update persona content on assigned domains'
+  - 'update publicacion content on assigned domains'
+  - 'update red_social content on assigned domains'
+  - 'update referencias_bibliograficas content on assigned domains'
+  - 'update servicio content on assigned domains'
+  - 'update tramite content on assigned domains'
+  - 'use editorial transition editar_borrador'
+  - 'use editorial transition nuevo_borrador'
+  - 'use editorial transition restablecer_publicacion'
+  - 'use editorial transition solicitar_publicacion'
+  - 'use text format html_sencillo'
+  - 'view latest version'
+  - 'view own unpublished media'

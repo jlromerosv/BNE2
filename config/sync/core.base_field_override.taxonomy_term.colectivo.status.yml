@@ -1,0 +1,22 @@
+uuid: d6bae898-2e89-4e93-a497-72332e84567b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.colectivo
+id: taxonomy_term.colectivo.status
+field_name: status
+entity_type: taxonomy_term
+bundle: colectivo
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

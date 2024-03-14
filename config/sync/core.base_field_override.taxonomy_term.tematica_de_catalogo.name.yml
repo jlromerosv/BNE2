@@ -1,0 +1,18 @@
+uuid: 3198702c-4c21-4ac4-b72b-d84be95009a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tematica_de_catalogo
+id: taxonomy_term.tematica_de_catalogo.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tematica_de_catalogo
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

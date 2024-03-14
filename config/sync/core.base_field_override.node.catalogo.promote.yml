@@ -1,0 +1,22 @@
+uuid: a3fde8a4-5947-44fd-af75-6d60dd597e3f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.catalogo
+id: node.catalogo.promote
+field_name: promote
+entity_type: node
+bundle: catalogo
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

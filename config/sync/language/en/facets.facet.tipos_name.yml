@@ -1,0 +1,7 @@
+name: 'Type (taxonomy)'
+url_alias: 'types _ name'
+widget:
+  config:
+    reset_text: 'Show all'
+empty_behavior:
+  text: 'There is No facets of type (taxonomy)'

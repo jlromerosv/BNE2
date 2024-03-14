@@ -1,0 +1,10 @@
+uuid: 06df5a83-f180-4569-b256-b91270add4ca
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.crop_libre
+label: 'Crop libre'
+targetEntityType: media
+cache: true

@@ -1,0 +1,27 @@
+uuid: 65609fac-340f-4792-ae37-d59514f44ea6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicaciones
+    - node.type.publicacion
+id: node.publicacion.field_publicaciones
+field_name: field_publicaciones
+entity_type: node
+bundle: publicacion
+label: 'Otras publicaciones'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      publicacion: publicacion
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

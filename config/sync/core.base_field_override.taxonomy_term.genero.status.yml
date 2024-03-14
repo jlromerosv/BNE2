@@ -1,0 +1,22 @@
+uuid: be320236-71be-4e86-9515-65ef3a644efc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero
+id: taxonomy_term.genero.status
+field_name: status
+entity_type: taxonomy_term
+bundle: genero
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

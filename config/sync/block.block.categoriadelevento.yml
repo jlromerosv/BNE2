@@ -1,0 +1,29 @@
+uuid: 671e4806-58a6-46e1-9d1c-89c4408aff48
+langcode: es
+status: false
+dependencies:
+  config:
+    - facets.facet.categoria_del_evento
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: categoriadelevento
+theme: bne_theme
+region: sidebar_first
+weight: -27
+provider: null
+plugin: 'facet_block:categoria_del_evento'
+settings:
+  id: 'facet_block:categoria_del_evento'
+  label: 'Categoría del evento'
+  label_display: '0'
+  provider: facets
+  block_id: categoriadelevento
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/3057

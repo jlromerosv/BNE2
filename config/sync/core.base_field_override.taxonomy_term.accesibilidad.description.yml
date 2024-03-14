@@ -1,0 +1,20 @@
+uuid: 06e1147e-2c1b-426b-b78d-80306f5f0730
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.accesibilidad
+  module:
+    - text
+id: taxonomy_term.accesibilidad.description
+field_name: description
+entity_type: taxonomy_term
+bundle: accesibilidad
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,26 @@
+uuid: d56e374e-dbbe-4ced-82d1-686fc5dc2742
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informacion_adicional
+    - node.type.servicio
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.servicio.field_informacion_adicional
+field_name: field_informacion_adicional
+entity_type: node
+bundle: servicio
+label: 'Información adicional'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

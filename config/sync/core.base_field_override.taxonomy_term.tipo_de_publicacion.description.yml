@@ -1,0 +1,20 @@
+uuid: 7e3e028d-6889-4094-a9c0-e76018ca6261
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_publicacion
+  module:
+    - text
+id: taxonomy_term.tipo_de_publicacion.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_de_publicacion
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

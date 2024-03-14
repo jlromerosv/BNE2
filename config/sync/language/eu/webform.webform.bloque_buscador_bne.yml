@@ -1,0 +1,5 @@
+elements: |
+  search_api_fulltext:
+    '#title': 'Bilatzaile Orokorra'
+    '#help_title': 'Bilatzaile Orokorra'
+    '#placeholder': 'Sartu bilaketa-testua'

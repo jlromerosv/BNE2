@@ -1,0 +1,18 @@
+uuid: c59be915-8069-4652-8f42-1be6c0ee686a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+id: node.horarios.title
+field_name: title
+entity_type: node
+bundle: horarios
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

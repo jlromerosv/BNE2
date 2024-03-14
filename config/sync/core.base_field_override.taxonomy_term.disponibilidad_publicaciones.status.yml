@@ -1,0 +1,22 @@
+uuid: 7d11b779-6551-47d3-be11-5c93338b7f73
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.disponibilidad_publicaciones
+id: taxonomy_term.disponibilidad_publicaciones.status
+field_name: status
+entity_type: taxonomy_term
+bundle: disponibilidad_publicaciones
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

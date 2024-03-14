@@ -1,0 +1,84 @@
+label: 'Documentos/Enlaces da páxina'
+description: null
+display:
+  default:
+    display_options:
+      title: 'Documentos / Enlaces de interese'
+      fields:
+        field_media_file:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_archivos:
+          admin_label: null
+          label: null
+          alter:
+            text: '<html><body><a href="%7B%7B%20field_media_file%20%7D%7D%20" target="_blank">{{ field_arquivos }} </a></body></html>'
+            path: '{{ field_arquivos }}'
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+        field_enlaces:
+          admin_label: null
+          label: null
+          alter:
+            text: null
+            path: null
+            alt: null
+            prefix: null
+            suffix: null
+            more_link_text: null
+      sorts:
+        created:
+          admin_label: null
+          expose:
+            label: null
+      arguments:
+        nid:
+          admin_label: null
+          title: null
+      filters:
+        field_enlaces_title:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        field_archivos_target_id:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          group_info:
+            label: null
+            description: null
+        langcode:
+          admin_label: null
+          expose:
+            label: null
+            description: null
+          group_info:
+            label: null
+            description: null
+      header:
+        area:
+          admin_label: null
+          content:
+            value: '<html><body><div class="ps-documentos-enlaces-title">[view:title]</div></body></html>'
+  block_1:
+    display_title: 'Documentos/Enlaces da páxina'
+    display_options:
+      display_description: null

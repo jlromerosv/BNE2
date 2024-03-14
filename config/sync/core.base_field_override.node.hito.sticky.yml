@@ -1,0 +1,22 @@
+uuid: 58cfe993-f787-426b-8563-599dd5ec0a17
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.hito
+id: node.hito.sticky
+field_name: sticky
+entity_type: node
+bundle: hito
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

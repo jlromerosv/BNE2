@@ -1,0 +1,15 @@
+uuid: 994dd567-ef39-4d07-a796-c1cc862ad9a7
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_publicaciones_home_xl
+label: 'Bloque publicaciones home XL'
+effects:
+  c27f7149-e7d8-48fe-a6c8-d66b5a153e69:
+    uuid: c27f7149-e7d8-48fe-a6c8-d66b5a153e69
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 340
+      height: 451
+      anchor: center-center

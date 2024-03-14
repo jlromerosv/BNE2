@@ -1,0 +1,18 @@
+uuid: 5b121905-d25b-43e9-813e-e5056d365eed
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+id: node.documento.title
+field_name: title
+entity_type: node
+bundle: documento
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

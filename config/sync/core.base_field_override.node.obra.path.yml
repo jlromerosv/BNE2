@@ -1,0 +1,20 @@
+uuid: 54a97040-7b4d-4db6-b8cc-3c2f414d2053
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.obra
+  module:
+    - path
+id: node.obra.path
+field_name: path
+entity_type: node
+bundle: obra
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

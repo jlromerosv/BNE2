@@ -1,0 +1,18 @@
+uuid: 57c7d869-49cb-4fdf-9132-9ff2fbc21d01
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.webform
+id: node.webform.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: webform
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

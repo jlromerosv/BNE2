@@ -1,0 +1,18 @@
+uuid: d8210a80-bc1e-4f17-9657-d2c3e169e861
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.dossier
+id: node.dossier.created
+field_name: created
+entity_type: node
+bundle: dossier
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

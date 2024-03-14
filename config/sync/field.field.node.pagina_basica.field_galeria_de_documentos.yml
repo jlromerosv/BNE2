@@ -1,0 +1,28 @@
+uuid: 28d8e732-225e-4a15-a4ec-aafc7fded9a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_galeria_de_documentos
+    - node.type.galeria_de_documentos
+    - node.type.pagina_basica
+id: node.pagina_basica.field_galeria_de_documentos
+field_name: field_galeria_de_documentos
+entity_type: node
+bundle: pagina_basica
+label: 'Grupo de documentos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      galeria_de_documentos: galeria_de_documentos
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

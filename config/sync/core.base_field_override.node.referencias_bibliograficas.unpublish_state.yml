@@ -1,0 +1,20 @@
+uuid: 9f0929af-11e3-4f79-8acf-d9f1440fa433
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.referencias_bibliograficas
+  module:
+    - options
+id: node.referencias_bibliograficas.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: referencias_bibliograficas
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

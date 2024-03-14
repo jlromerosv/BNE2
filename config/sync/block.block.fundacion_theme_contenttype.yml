@@ -1,0 +1,33 @@
+uuid: 7bbbbf3b-34a7-44d1-90df-33915ce62776
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipo_contenido
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_contenttype
+theme: fundacion_theme
+region: sidebar_first
+weight: -25
+provider: null
+plugin: 'facet_block:tipo_contenido'
+settings:
+  id: 'facet_block:tipo_contenido'
+  label: 'Content type del buscador general'
+  label_display: '0'
+  provider: facets
+  block_id: contenttype
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/22877

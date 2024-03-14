@@ -1,0 +1,12 @@
+uuid: 9e0ed26a-cbe0-421f-89ba-4dfa4b55f371
+langcode: es
+status: true
+dependencies: {  }
+id: search_api__views_block__buscador_de_noticias_a_texto_completo__block_1
+name: 'search_api:views_block__buscador_de_noticias_a_texto_completo__block_1'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

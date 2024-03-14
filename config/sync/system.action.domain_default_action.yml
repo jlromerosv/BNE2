@@ -1,0 +1,13 @@
+uuid: 0d561d42-952b-43a5-940d-7644f8f29bbc
+langcode: es
+status: true
+dependencies:
+  module:
+    - domain
+_core:
+  default_config_hash: U77VcyTo3hScOYROyvcFDVkljoviYgj0XG_yZlxUQ8U
+id: domain_default_action
+label: 'Set default domain record'
+type: domain
+plugin: domain_default_action
+configuration: {  }

@@ -1,0 +1,18 @@
+uuid: 4c0e6978-1fa6-434e-bc46-76d911b4ace4
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.buzones_de_envio
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.buzones_de_envio
+target_entity_type_id: taxonomy_term
+target_bundle: buzones_de_envio
+default_langcode: site_default
+language_alterable: false

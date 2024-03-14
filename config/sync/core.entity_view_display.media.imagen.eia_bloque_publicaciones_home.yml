@@ -1,0 +1,58 @@
+uuid: 8f754a3a-e796-42c6-abb0-5d0890d970de
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.eia_bloque_publicaciones_home
+    - field.field.media.imagen.domain_access
+    - field.field.media.imagen.feeds_item
+    - field.field.media.imagen.field_area_tematica
+    - field.field.media.imagen.field_id_blog_attachment_
+    - field.field.media.imagen.field_id_externo
+    - field.field.media.imagen.field_media_image
+    - field.field.media.imagen.field_pie_de_foto
+    - field.field.media.imagen.field_tipo
+    - field.field.media.imagen.field_urlanterior
+    - media.type.imagen
+    - responsive_image.styles.eia_bloque_publicaciones_home
+  module:
+    - layout_builder
+    - svg_image_responsive
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.imagen.eia_bloque_publicaciones_home
+targetEntityType: media
+bundle: imagen
+mode: eia_bloque_publicaciones_home
+content:
+  field_media_image:
+    type: responsive_image
+    label: visually_hidden
+    settings:
+      responsive_image_style: eia_bloque_publicaciones_home
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  domain_access: true
+  feeds_item: true
+  field_area_tematica: true
+  field_id_blog_attachment_: true
+  field_id_externo: true
+  field_pie_de_foto: true
+  field_tipo: true
+  field_urlanterior: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
+  uuid: true

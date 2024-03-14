@@ -1,0 +1,32 @@
+uuid: 755f14f7-6dee-4d63-8e60-a074e9df43b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.colectivo_de_evento_v2
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_colectivodeeventov2
+theme: sede_theme
+region: sidebar_first
+weight: -15
+provider: null
+plugin: 'facet_block:colectivo_de_evento_v2'
+settings:
+  id: 'facet_block:colectivo_de_evento_v2'
+  label: 'Colectivo de evento v2'
+  label_display: '0'
+  provider: facets
+  block_id: colectivodeeventov2
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/22642

@@ -1,0 +1,202 @@
+uuid: e7a6a251-91ec-49d0-a792-d48cd930673f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.pagina_basica.created
+    - core.base_field_override.node.pagina_basica.path
+    - core.base_field_override.node.pagina_basica.title
+    - field.field.node.pagina_basica.body
+    - field.field.node.pagina_basica.field_archivos
+    - field.field.node.pagina_basica.field_domain_access
+    - field.field.node.pagina_basica.field_enlaces
+    - field.field.node.pagina_basica.field_id_externo
+    - field.field.node.pagina_basica.field_videos
+    - node.type.pagina_basica
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      49264cfc-8d00-46f3-9b17-e06963cbde54:
+        separator: '}'
+        limit: null
+        uuid: 49264cfc-8d00-46f3-9b17-e06963cbde54
+        plugin: explode
+        source: rutaarchivo
+        weight: 0
+        label: Explode
+      ab7b7a32-a3d3-4fd4-96fc-dee6df0cd9ed:
+        separator: '}'
+        limit: null
+        uuid: ab7b7a32-a3d3-4fd4-96fc-dee6df0cd9ed
+        plugin: explode
+        source: enlacesexternosurl
+        weight: 0
+        label: Explode
+      6b8c1209-585a-4e85-892d-17aa1b9b764d:
+        separator: '}'
+        limit: null
+        uuid: 6b8c1209-585a-4e85-892d-17aa1b9b764d
+        plugin: explode
+        source: enlacesexternostexto
+        weight: 0
+        label: Explode
+      e9818922-9d0b-4e1c-9cfb-75b59d211f3b:
+        invert: false
+        uuid: e9818922-9d0b-4e1c-9cfb-75b59d211f3b
+        plugin: required
+        source: alias
+        weight: 0
+        label: Obligatorio
+      847f0d9b-206c-4194-a23b-28fd1c1e8868:
+        separator: '}'
+        limit: null
+        uuid: 847f0d9b-206c-4194-a23b-28fd1c1e8868
+        plugin: explode
+        source: rutavideo
+        weight: 0
+        label: Explode
+label: 'Carga de Muestras bibliográficas'
+id: carga_de_muestras_bibliograficas
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: pagina_basica
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  alias:
+    value: Alias
+    label: Alias
+    machine_name: alias
+    type: csv
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  titulo:
+    value: Titulo
+    label: Titulo
+    machine_name: titulo
+    type: csv
+  created:
+    value: Created
+    label: Created
+    machine_name: created
+    type: csv
+  descripcion:
+    value: Descripcion
+    label: Descripcion
+    machine_name: descripcion
+    type: csv
+  rutaarchivo:
+    value: RutaArchivo
+    label: RutaArchivo
+    machine_name: rutaarchivo
+    type: csv
+  enlacesexternosurl:
+    value: EnlacesExternosURL
+    label: EnlacesExternosURL
+    machine_name: enlacesexternosurl
+    type: csv
+  enlacesexternostexto:
+    value: EnlacesExternosTexto
+    label: EnlacesExternosTexto
+    machine_name: enlacesexternostexto
+    type: csv
+  rutavideo:
+    value: RutaVideo
+    label: RutaVideo
+    machine_name: rutavideo
+    type: csv
+mappings:
+  -
+    target: field_id_externo
+    map:
+      value: alias
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: path
+    map:
+      alias: alias
+      pathauto: ''
+    settings:
+      language: null
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: title
+    map:
+      value: titulo
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: ''
+      timezone: Europe/Madrid
+  -
+    target: body
+    map:
+      value: descripcion
+      summary: ''
+    settings:
+      language: ''
+      format: html_full
+  -
+    target: field_archivos
+    map:
+      target_id: rutaarchivo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_enlaces
+    map:
+      uri: enlacesexternosurl
+      title: enlacesexternostexto
+    settings:
+      language: null
+  -
+    target: field_videos
+    map:
+      target_id: rutavideo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0

@@ -1,0 +1,22 @@
+uuid: 746eff03-3d26-4bdc-bc0c-1649c01c5d3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero_autor
+id: taxonomy_term.genero_autor.status
+field_name: status
+entity_type: taxonomy_term
+bundle: genero_autor
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

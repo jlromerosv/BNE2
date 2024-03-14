@@ -1,0 +1,20 @@
+uuid: 555f41dc-2b29-41bc-bda4-64ea7919074c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.noticia
+  module:
+    - options
+id: node.noticia.publish_state
+field_name: publish_state
+entity_type: node
+bundle: noticia
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

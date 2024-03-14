@@ -1,0 +1,20 @@
+uuid: a617a5cb-d6c7-469d-b0c1-6ca6b9fb15ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+  module:
+    - path
+id: taxonomy_term.etiquetas_de_busqueda.path
+field_name: path
+entity_type: taxonomy_term
+bundle: etiquetas_de_busqueda
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

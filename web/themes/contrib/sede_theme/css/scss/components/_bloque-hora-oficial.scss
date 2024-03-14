@@ -1,0 +1,31 @@
+.view-hora-oficial{
+    padding: 20px 0;
+
+    @media (max-width: 991.98px) {
+        padding: 20px 15px !important;
+    }
+    @media (min-width: 992px) and (max-width: 1950px) {
+        padding: 20px 30px !important;
+    }
+
+    a{
+        @include link_style($bne_color_5);
+    }
+
+    p{
+        margin: 0;
+    }
+
+}
+
+.path-frontpage{
+    .view-hora-oficial{
+        .view-content{
+            @media (min-width: 1366px) {
+                 padding: 0px 30px !important;
+            }
+        }
+
+
+    }
+}

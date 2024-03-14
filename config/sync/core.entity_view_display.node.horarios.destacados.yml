@@ -1,0 +1,49 @@
+uuid: d4521999-48b5-4fbd-859d-6da975489c4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.destacados
+    - field.field.node.horarios.body
+    - field.field.node.horarios.field_alias_tipo_contenido
+    - field.field.node.horarios.field_domain_access
+    - field.field.node.horarios.field_domain_all_affiliates
+    - field.field.node.horarios.field_domain_source
+    - field.field.node.horarios.field_enlace
+    - field.field.node.horarios.field_meta_tags
+    - field.field.node.horarios.field_nombre
+    - field.field.node.horarios.field_yoast_seo
+    - node.type.horarios
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.horarios.destacados
+targetEntityType: node
+bundle: horarios
+mode: destacados
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_alias_tipo_contenido: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_meta_tags: true
+  field_nombre: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

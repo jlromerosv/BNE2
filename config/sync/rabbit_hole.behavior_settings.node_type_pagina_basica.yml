@@ -1,0 +1,14 @@
+uuid: 2ba4e3a0-c9be-49b5-8812-ec7a37c30e40
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_basica
+id: node_type_pagina_basica
+entity_type_id: node_type
+entity_id: pagina_basica
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

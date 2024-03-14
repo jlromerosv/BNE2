@@ -1,0 +1,20 @@
+uuid: 3c748039-14c5-4915-ba12-34679c2ded71
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.anuncio
+  module:
+    - options
+id: node.anuncio.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: anuncio
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

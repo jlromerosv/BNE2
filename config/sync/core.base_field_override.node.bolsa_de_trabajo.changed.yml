@@ -1,0 +1,18 @@
+uuid: 1ae2b868-f127-40d1-ba10-071622fdb44d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+id: node.bolsa_de_trabajo.changed
+field_name: changed
+entity_type: node
+bundle: bolsa_de_trabajo
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

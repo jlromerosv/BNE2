@@ -1,0 +1,18 @@
+uuid: 644a2cbd-4d89-4f0c-ac06-7bdad203f2bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+id: node.enlace_a_web_archivada.changed
+field_name: changed
+entity_type: node
+bundle: enlace_a_web_archivada
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

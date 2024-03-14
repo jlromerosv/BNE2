@@ -1,0 +1,15 @@
+uuid: 751296f0-c2a1-4b92-ae44-13d27cc2a33b
+langcode: es
+status: true
+dependencies: {  }
+name: slider_home_pantalla_completa_sm
+label: 'Slider home pantalla completa SM'
+effects:
+  50065218-1be1-4741-b620-0b906b7c6587:
+    uuid: 50065218-1be1-4741-b620-0b906b7c6587
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 550
+      anchor: center-center

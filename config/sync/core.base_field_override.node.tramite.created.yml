@@ -1,0 +1,18 @@
+uuid: 946603cf-dcb8-480f-b6d4-27cbe363d8e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+id: node.tramite.created
+field_name: created
+entity_type: node
+bundle: tramite
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

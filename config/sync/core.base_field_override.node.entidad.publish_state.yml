@@ -1,0 +1,20 @@
+uuid: f94c36a3-0add-4fb3-85c2-98facca437d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad
+  module:
+    - options
+id: node.entidad.publish_state
+field_name: publish_state
+entity_type: node
+bundle: entidad
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: 19c1dc4c-1432-46dc-bdd4-f0fbbe460e6c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_valor
+    - node.type.entidad
+id: node.entidad.field_valor
+field_name: field_valor
+entity_type: node
+bundle: entidad
+label: Responsable
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,30 @@
+uuid: 6dea6753-92f8-430d-8699-9e2ccf10999f
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.buscadores_a_texto_completo
+  module:
+    - system
+    - views
+  theme:
+    - bne_theme
+id: views_block__buscadores_a_texto_completo_block_4
+theme: bne_theme
+region: content
+weight: -51
+provider: null
+plugin: 'views_block:buscadores_a_texto_completo-block_4'
+settings:
+  id: 'views_block:buscadores_a_texto_completo-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/directorio\r\n/directorio/*"

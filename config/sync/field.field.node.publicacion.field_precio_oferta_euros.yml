@@ -1,0 +1,23 @@
+uuid: e8902261-4b60-4598-b19e-4b8830af341d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_precio_oferta_euros
+    - node.type.publicacion
+id: node.publicacion.field_precio_oferta_euros
+field_name: field_precio_oferta_euros
+entity_type: node
+bundle: publicacion
+label: 'Precio oferta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: '€ '
+field_type: decimal

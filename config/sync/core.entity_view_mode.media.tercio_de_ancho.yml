@@ -1,0 +1,10 @@
+uuid: c87e8944-724c-4316-bab0-c94c51e3ed8c
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.tercio_de_ancho
+label: 'Tercio de ancho'
+targetEntityType: media
+cache: true

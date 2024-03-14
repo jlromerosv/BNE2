@@ -1,0 +1,10 @@
+uuid: 754e3683-62fd-40b3-9e20-acb6016fc97c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.direccion_ubicacion
+label: 'Dirección ubicación'
+targetEntityType: node
+cache: true

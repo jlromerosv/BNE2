@@ -1,0 +1,5 @@
+name: Types
+url_alias: 'types _ of _ publications'
+widget:
+  config:
+    reset_text: 'Show all'

@@ -1,0 +1,18 @@
+uuid: df2be7af-8021-4f47-9a48-46b3d9bbe0c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tematica_de_catalogo
+id: taxonomy_term.tematica_de_catalogo.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tematica_de_catalogo
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

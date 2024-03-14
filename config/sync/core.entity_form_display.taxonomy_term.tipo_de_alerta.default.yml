@@ -1,0 +1,73 @@
+uuid: 00c9206a-a7f1-497f-a19b-6b8d4fa4721c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tipo_de_alerta.field_color
+    - field.field.taxonomy_term.tipo_de_alerta.field_color_texto
+    - taxonomy.vocabulary.tipo_de_alerta
+  module:
+    - color_field
+    - path
+    - text
+id: taxonomy_term.tipo_de_alerta.default
+targetEntityType: taxonomy_term
+bundle: tipo_de_alerta
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_color:
+    type: color_field_widget_box
+    weight: 101
+    region: content
+    settings:
+      default_colors: '#333333,#606060,#d3d3d3,#f9f9f9,#a02424,#b40d04,#ec0000,#ffffff,#1d1d1d,#ececec'
+    third_party_settings: {  }
+  field_color_texto:
+    type: color_field_widget_box
+    weight: 102
+    region: content
+    settings:
+      default_colors: '#333333,#606060,#d3d3d3,#f9f9f9,#a02424,#b40d04,#ec0000,#ffffff,#1d1d1d,#ececec'
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

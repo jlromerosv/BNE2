@@ -1,0 +1,158 @@
+/*
+    ========== WEBS DESTACADAS ==========
+
+    Estilos dedicados a la vista de webs destacadas.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin ps-content-margins($breakpoint, $max-width)
+
+    ------------------------- MIXINS --------------------------   
+    ps-content-margins = Mixin que limita el ancho del
+    contenido atendiendo a un breakpoint y margen específico
+
+    ----------------------- VARIABLES -------------------------
+    $main_color_1 / 2 / 3 / 6 = Color principal de tipo 1 / 2 / 3 / 6
+
+    $a_color = Color por defecto de los enlaces de la web
+
+    $blanco = Color blanco
+
+    $breakpoints = Medida que marca el punto de ruptura
+
+    $max-width = Máximo de ancho
+
+    $global_icon = Icono de la bola del mundo
+*/
+
+/* Slider webs destacadas */
+.ps-webs-destacadas {
+    background-color: $blanco;
+    margin-top: 30px;
+    .view-content {
+        display: flex;
+        @include ps-content-margins(992px, 1366px);
+        -ms-overflow-style: none; // for Internet Explorer, Edge
+        scrollbar-width: none; // for Firefox
+        overflow-x: scroll; 
+        position: relative;
+        &::-webkit-scrollbar {
+            display: none; // for Chrome, Safari, and Opera */
+        }
+        .views-row {
+            &:not(:first-child) {
+                margin-left: 50px;
+            }
+            .field-content {
+                & > div {
+    
+                    a {
+                        display: grid;
+                        justify-items: center;
+                        text-align: center;
+                        color: $a_color;
+                    }
+                    
+    
+                    .field__item {
+                        padding: 10px;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        box-shadow: 0px 4px 4px 3px $main_color_3;
+                       img {
+                            width: auto;
+                            height: 80px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ps-slider-control-web-destacadas {
+    background-color: $blanco;
+    @include display_flex(row, space-between, center);
+    padding: 0 10px 10px 10px;
+    .control {
+        &-left {
+            transform: rotateZ(-90deg);
+            cursor: pointer;
+            filter: $filter_main_color_1;
+        }
+
+        &-right {
+            transform: rotateZ(90deg);
+            cursor: pointer;
+            filter: $filter_main_color_1;
+        }
+    }
+}
+
+
+/* Menú de webs destacadas */
+
+.ps-menu--webs-destacadas {
+    @include display_flex(row, initial, center);
+    position: relative;
+    &::before {
+        @include before-icon(20px, -20px, $global_icon);
+        position: initial;
+        transform: translateY(-2px);
+        @media (min-width: 912px) {
+            content: none;
+        }
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $blanco;
+        margin-left: 5px;
+    }
+    &:hover {
+        .menu.menu-level-0 .menu-item .menu-link-contentwebs-destacadas {
+            display: block;
+        }
+     }
+    .menu.menu-level-0{
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .menu-item{
+            & > span {
+                cursor: pointer;
+                color: $blanco;
+                font-size: 0;
+                @include display_flex(row, initial, center);
+                @media (min-width: 912px) {
+                    font-size: 12px;
+                }
+            }
+           .menu-link-contentwebs-destacadas {
+               position: absolute;
+               z-index: 99;
+               display: none;
+               padding-top: 18px;
+               right: 0;
+               .view-content {
+                   background-color: $main_color_2;
+                   .views-row {
+                       border-bottom: 1px solid $main_color_6;
+                       a {
+                           display: block;
+                           padding: 10px;
+                           text-align: center;
+                           &:hover {
+                               text-decoration: underline;
+                           }
+                       }
+                   }
+               }
+           }
+       }
+    } 
+}

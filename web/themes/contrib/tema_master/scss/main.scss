@@ -1,0 +1,111 @@
+/*
+    ========== FICHERO DE IMPORTACIÓN ==========
+    
+    En este fichero se hará la importación de cada archivo
+    SCSS. 
+
+*/
+
+/* UTILS */
+@import
+    'utils/variables',
+    'utils/mixins',
+    'utils/typography';
+
+
+/* GENERAL */
+@import
+    'general/titles',
+    'general/forms',
+    'general/links',
+    'general/table',
+    'general/list',
+    'general/ck-editor-plantilla',
+    'general/templates-ckeditor',
+    'general/field-name-body',
+    'general/breadcrumb',
+    'general/media',
+    'general/paragraphs';
+
+
+/* LAYOUT */
+@import
+    'layout/base', 
+    'layout/region',
+    'layout/header',
+    'layout/menu',
+    'layout/footer',
+    'layout/sidebar-first',
+    'layout/tabs',
+    'layout/breadcrumb',
+    'layout/regions',
+    'layout/node-actividad-generica',
+    'layout/grid-layout-view',
+    'layout/sidebar-second';
+
+
+/* DISPLAY MODES */
+@import 
+    'display-modes/view-mode-teaser',
+    'display-modes/view-mode-acordeon',
+    "display-modes/minificha-imagen";
+
+ /* BLOCKS */
+@import
+    'blocks/componente_grid',
+    'blocks/menu-sidebar',
+    'blocks/menu-footer',
+    'blocks/layout-builder',
+    'blocks/sf-menu',
+    'blocks/img-gallery',
+    'blocks/video-gallery',
+    'blocks/menu-encabezado',
+    'blocks/destacados',
+    'blocks/social-block',
+    'blocks/logo-multisite',
+    'blocks/lang-switcher',
+    'blocks/enlaces-interes',
+    'blocks/custom-block-inicio-arriba',
+    'blocks/subencabezado-site',
+    'blocks/menu-enlaces-superior',
+    'blocks/footer-mapa-web',
+    'blocks/enlaces-pagina',
+    'blocks/media-file',
+    'blocks/media-audio',
+    'blocks/facets',
+    'blocks/obras',
+    'blocks/dossier-boletines',
+    'blocks/alert',
+    'blocks/block-buscador',
+    'blocks/eu-footer',
+    'blocks/red-social',
+    'blocks/webform-search',
+    'blocks/submenu-card',
+    'blocks/titulo-dominio',
+    'blocks/documentos',
+    'blocks/eu-cookie-compliance',
+    'blocks/custom-volver',
+    'blocks/comentarios.scss',
+    'blocks/iconos-acceso-rapido',
+    'blocks/mas-reciente',
+    'blocks/arbol-temas',
+    'blocks/panel-gestion',
+    'blocks/colectivos',
+    'blocks/webs-destacadas';
+ 
+ /* PAGES */
+@import
+    'pages/buscador-solr',
+    'pages/home';
+
+/* CONTROLES UI*/
+@import 
+    'controles-ui/buttons',
+    'controles-ui/form-control-ui',
+    'controles-ui/acordeon';
+
+
+/* CUSTOM */
+@import
+    'custom_mateo',
+    'custom_maria';

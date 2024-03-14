@@ -1,0 +1,20 @@
+uuid: b5c82e6e-c8db-44e1-99b9-fe75de84e789
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.catalogo
+  module:
+    - options
+id: node.catalogo.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: catalogo
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 2918ce32-e09a-4b5e-94df-439f8af302ff
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_descripcion
+field_name: field_descripcion
+entity_type: media
+type: string
+settings:
+  max_length: 512
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

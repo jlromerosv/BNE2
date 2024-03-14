@@ -1,0 +1,32 @@
+uuid: 3196611b-c86f-4d00-92e3-6ce247af4c31
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenido_generico
+    - node.type.contenido_generico
+    - node.type.galeria_de_imagenes
+  content:
+    - 'node:contenido_generico:81abdbf6-ec12-4e5b-bd5d-549ff20231a8'
+id: node.galeria_de_imagenes.field_contenido_generico
+field_name: field_contenido_generico
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Enlace Destacado'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 81abdbf6-ec12-4e5b-bd5d-549ff20231a8
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contenido_generico: contenido_generico
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

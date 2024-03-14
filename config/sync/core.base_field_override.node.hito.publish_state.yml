@@ -1,0 +1,20 @@
+uuid: 7b92678d-21ee-4bab-b987-e2c6708f2a5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.hito
+  module:
+    - options
+id: node.hito.publish_state
+field_name: publish_state
+entity_type: node
+bundle: hito
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

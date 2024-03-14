@@ -1,0 +1,20 @@
+uuid: cc90d682-f23a-4ac4-b182-aec2dd713722
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace
+  module:
+    - options
+id: node.enlace.publish_state
+field_name: publish_state
+entity_type: node
+bundle: enlace
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

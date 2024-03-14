@@ -1,0 +1,14 @@
+uuid: 4952a367-c7ad-4921-ad4c-fa10ad94afdc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_documentos
+id: node_type_galeria_de_documentos
+entity_type_id: node_type
+entity_id: galeria_de_documentos
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

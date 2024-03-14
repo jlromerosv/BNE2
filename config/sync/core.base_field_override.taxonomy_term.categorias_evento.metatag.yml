@@ -1,0 +1,18 @@
+uuid: 95e65a12-0019-4ff8-9e2f-86015265b4d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorias_evento
+id: taxonomy_term.categorias_evento.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: categorias_evento
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

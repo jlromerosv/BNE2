@@ -1,0 +1,14 @@
+uuid: 4b6eacd6-dd06-4ecc-a18c-08cf7b68d35e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+id: node_type_ubicacion
+entity_type_id: node_type
+entity_id: ubicacion
+action: display_page
+allow_override: 1
+redirect: '[site:url]'
+redirect_code: 301
+redirect_fallback_action: access_denied

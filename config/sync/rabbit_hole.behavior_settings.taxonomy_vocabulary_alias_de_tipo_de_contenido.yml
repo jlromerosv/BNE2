@@ -1,0 +1,14 @@
+uuid: 6f82852e-9c37-44c0-bbba-3b1d30a4e804
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.alias_de_tipo_de_contenido
+id: taxonomy_vocabulary_alias_de_tipo_de_contenido
+entity_type_id: taxonomy_vocabulary
+entity_id: alias_de_tipo_de_contenido
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

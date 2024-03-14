@@ -1,0 +1,12 @@
+uuid: aa508785-a2de-4403-8ff1-6c2effed0ee8
+langcode: es
+status: true
+dependencies: {  }
+id: leer_mas
+label: 'Leer más'
+image: ''
+description: ''
+html:
+  value: "<div class=\"ps-leer-mas\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\">\r\n<div class=\"ps-texto-leer-mas\" style=\"border-width: 1px; border-style: dotted; border-color: green; padding: 1em; margin-bottom: 1em\">Introduzca aquí el texto</div>\r\n\r\n<div class=\"ps-botones-leer-mas\"><button class=\"ps-show-text\" style=\"border-width: 1px; border-style: dotted; border-color: green; padding: 1em; margin-right: 30px\">LEER MÁS</button><button class=\"ps-hide-text ps-hide-button\" style=\"border-width: 1px; border-style: dotted; border-color: green; padding: 1em\">OCULTAR</button></div>\r\n</div>\r\n"
+  format: html_full
+weight: 13

@@ -1,0 +1,20 @@
+uuid: 2617ed58-03f6-43b9-bbc6-0d1225cb5b08
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo
+id: media.archivo.name
+field_name: name
+entity_type: media
+bundle: archivo
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

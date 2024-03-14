@@ -1,0 +1,28 @@
+uuid: 0bb4b377-eb9b-4cfd-87ce-260f52639a28
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugares
+    - node.type.campana
+    - node.type.lugar
+id: node.campana.field_lugares
+field_name: field_lugares
+entity_type: node
+bundle: campana
+label: Lugares
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lugar: lugar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

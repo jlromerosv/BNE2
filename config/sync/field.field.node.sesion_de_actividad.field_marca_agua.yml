@@ -1,0 +1,29 @@
+uuid: fbd3f584-78a0-424c-9971-0e78f15877f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_marca_agua
+    - node.type.sesion_de_actividad
+    - taxonomy.vocabulary.marca_de_agua_evento
+id: node.sesion_de_actividad.field_marca_agua
+field_name: field_marca_agua
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Marca de agua'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      marca_de_agua_evento: marca_de_agua_evento
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

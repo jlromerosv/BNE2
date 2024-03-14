@@ -1,0 +1,182 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - resultado_bdh: Array con los resultados de la busqueda en la bdh.
+ * - resultado_bdPI: Array con los resultados de la busqueda en la bdpi.
+ * - resultado_datos_bne: Array con los resultados de la busqueda datos BNE.
+ * - resultado_hd: Array con los resultados de la busqueda de la Hemeroteca Digital.
+ * - resultado_datos: Array con los resultados de la busqueda de datos bne.
+ * - parametro: parámetro de busqueda optenido de la url.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+
+{% set url_bdh = "http://bdh.bne.es/bnesearch/Search.do?text=" ~ parametro %}
+{% set url_bdpi = "http://www.iberoamericadigital.net/BDPI/Search.do?numfields=1&field1=todos&field1val=" ~ parametro ~ "&field1Op=AND&advanced=true" %}
+{% set url_datos_bne = "https://datos.bne.es/principalfind?s=" ~ parametro ~ "&type=" %}
+{% set url_hd = "https://hemerotecadigital.bne.es/hd/es/results?w=" ~ parametro ~ "&o=&f=text" %}
+{% set url_datos = resultado_datos.URLSearch %}
+
+
+
+<div class="ps-busquedas-bne-api">
+
+ {% if resultado_bdh.totalHits > 0 %}
+    <div class="bloque">
+        <div class="title">{{"Results in the BDH"|trans }}</div>
+        <div class="view-content">
+            {% for field in resultado_bdh.registros %}
+                <div class="view-row">
+                {% if field.Tipo_de_material != "null" %}
+                    <div class="tipo"> {{ field.Tipo_de_material }}</div>
+                {% endif %}
+
+                 {% if field.Título != "null" %}
+                    <div class="titulo"> {{ field.Título }}</div>
+                 {% endif %}
+
+                {% if field.Autor != "null" %}
+                    <div class="autor"> {{ field.Autor }}</div>
+                 {% endif %}
+
+                {% if field.Fecha != "null" %}
+                    <div class="fecha"> {{ field.Fecha }}</div>
+                {% endif %}
+
+                <div class="url"><a href="{{ field.URL_única }}" target="_blank"></a> </div>
+            </div>
+            {% endfor %}
+            <div class="view-row ver-mas">
+                <div class="ver-resultados-titulo"> {{"See all results"|trans }}</div>
+                <div class="num-resultados"> ({{ resultado_bdh.totalHits|number_format(0, ',', '.') }})</div>
+                <div class="enlace-ver-mas"><a href="{{ url_bdh }}" target="_blank"></a></div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+
+{% if resultado_bdpi.totalHits > 0 %}
+    <div class="bloque">
+        <div class="title">{{"Results in the BDPI"|trans }}</div>
+        <div class="view-content">
+            {% for field in resultado_bdpi.registros %}
+            <div class="view-row">
+                {% if field.Tipo_de_material != "null" %}
+                    <div class="tipo"> {{ field.Tipo_de_material }}</div>
+                {% endif %}
+
+                 {% if field.Título != "null" %}
+                    <div class="titulo"> {{ field.Título }}</div>
+                 {% endif %}
+
+                {% if field.Autor != "null" %}
+                    <div class="autor"> {{ field.Autor }}</div>
+                 {% endif %}
+
+                {% if field.Fecha != "null" %}
+                    <div class="fecha"> {{ field.Fecha }}</div>
+                {% endif %}
+                <div class="url"><a href="{{ field.URL_única|raw }}" target="_blank"></a> </div>
+            </div>
+        {% endfor %}
+            <div class="view-row ver-mas">
+                <div class="ver-resultados-titulo"> {{"See all results"|trans }}</div>
+                <div class="num-resultados"> ({{ resultado_bdpi.totalHits|number_format(0, ',', '.') }})</div>
+                <div class="enlace-ver-mas"><a href="{{ url_bdpi }}" target="_blank"></a></div>
+
+            </div>
+    </div>
+{% endif %}
+
+
+{% if resultado_hemeroteca.total > 0 %}
+    <div class="bloque">
+        <div class="title">{{"Results in the HD"|trans }}</div>
+        <div class="view-content">
+            {% for field in resultado_hemeroteca.results %}
+            <div class="view-row">
+
+                    <div class="tipo">Prensa y revistas</div>
+
+
+                 {% if field.title != "null" %}
+                    <div class="titulo"> {{ field.title }}</div>
+                 {% endif %}
+
+                {% if field.text != "null" %}
+                    <div class="autor"> {{ field.text|striptags }}</div>
+                 {% endif %}
+
+                {% if field.Fecha != "null" %}
+                    <div class="fecha"> {{ field.Fecha }}</div>
+                {% endif %}
+                <div class="url"><a href="{{ field.url|raw }}" target="_blank"></a> </div>
+            </div>
+        {% endfor %}
+            <div class="view-row ver-mas">
+                <div class="ver-resultados-titulo"> {{"See all results"|trans }}</div>
+                <div class="num-resultados"> ({{ resultado_hemeroteca.total|number_format(0, ',', '.') }})</div>
+                <div class="enlace-ver-mas"><a href="{{ url_hd }}" target="_blank"></a></div>
+
+            </div>
+    </div>
+{% endif %}
+
+
+{% if resultado_datos.totalHits > 0 %}
+    <div class="bloque">
+        <div class="title">{{"Results in BNE Data"|trans }}</div>
+        <div class="view-content">
+            {% for field in resultado_datos.registros %}
+            <div class="view-row">
+
+
+                {% if field.Tipo != "null" %}
+                    <div class="tipo"> {{ field.Tipo }}</div>
+                {% endif %}
+
+
+                 {% if field.Titulo != "null" %}
+                    <div class="titulo"> {{ field.Titulo }}</div>
+                 {% endif %}
+
+                {% if field.Autor != "null" %}
+                    <div class="autor"> {{ field.Autor|striptags }}</div>
+                 {% endif %}
+
+                  {% if field.Fecha_Publicacion != "null" %}
+                    <div class="fecha"> {{ field.Fecha_Publicacion|striptags }}</div>
+                 {% endif %}
+
+                  {% if field.Editorial != "null" %}
+                    <div class="editorial"> {{ field.Editorial|striptags }}</div>
+                 {% endif %}
+
+
+                <div class="url"><a href="{{ field.URLUnica|raw }}" target="_blank"></a> </div>
+            </div>
+        {% endfor %}
+            <div class="view-row ver-mas">
+                <div class="ver-resultados-titulo"> {{"See all results"|trans }}</div>
+                <div class="num-resultados"> ({{ resultado_datos.totalHits|number_format(0, ',', '.') }})</div>
+                <div class="enlace-ver-mas"><a href="{{ url_datos }}" target="_blank"></a></div>
+
+            </div>
+    </div>
+
+{% endif %}
+
+</div>
+
+
+
+
+
+
+
+

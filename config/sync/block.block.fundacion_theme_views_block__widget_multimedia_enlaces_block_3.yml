@@ -1,0 +1,31 @@
+uuid: 582fc4b6-8eb5-4ced-a750-a02f9a9fa449
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.widget_multimedia_enlaces
+  module:
+    - system
+    - views
+  theme:
+    - fundacion_theme
+id: fundacion_theme_views_block__widget_multimedia_enlaces_block_3
+theme: fundacion_theme
+region: content
+weight: -20
+provider: null
+plugin: 'views_block:widget_multimedia_enlaces-block_3'
+settings:
+  id: 'views_block:widget_multimedia_enlaces-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/selecciona-tu-perfil/*\r\n/blog"

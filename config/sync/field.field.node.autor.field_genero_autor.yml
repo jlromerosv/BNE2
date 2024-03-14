@@ -1,0 +1,34 @@
+uuid: 5a74b4c1-357f-45e8-94b0-85bd563a3fd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_genero_autor
+    - node.type.autor
+    - taxonomy.vocabulary.genero_autor
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.autor.field_genero_autor
+field_name: field_genero_autor
+entity_type: node
+bundle: autor
+label: 'Género autor'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      genero_autor: genero_autor
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

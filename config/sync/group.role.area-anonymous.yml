@@ -1,0 +1,14 @@
+uuid: 0dcec058-381b-42f0-9ecb-d6310d6cb33b
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.area
+id: area-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: area
+permissions_ui: true
+permissions: {  }

@@ -1,0 +1,96 @@
+/*
+    ========== SUBENCABEZADO SITE ==========
+
+    Estilos dedicados a la vista del subencabezado.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin after-icon($size, $right, $icon)
+
+    ------------------------- MIXINS --------------------------
+    after-icon = Inserta un icono después del contenido
+
+    ----------------------- VARIABLES -------------------------
+    $size = Tamaño del icono
+
+    $right = Posición a la izquierda del icono
+
+    $icon = SVG del icono
+
+    $h1_font_size = Tamaño del texto de h1
+
+    $button_mn_2_icon = Icono del botón principal 2
+
+    $filter_white = Filtro de color blanco
+
+    $blanco = Color blanco
+
+*/
+
+.ps-submenu-card {
+    .menu-level-0 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        @media (min-width: 560px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 960px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        & > .menu-item {
+            background-size: cover;
+            overflow: hidden;
+            height: 250px;
+            &::marker {
+                content: '';
+            }
+            @media (min-width: 560px) {
+                &:hover > span,
+                &:hover > a {
+                    margin-top: 0;
+                }
+            }
+            & > span,
+            & > a {
+                display: block;
+                font-size: 18px;
+                background-color: rgba(0, 0, 0, 0.4);
+                color: $blanco;
+                padding: 20px 10px;
+                transition: all 300ms;
+                @media (min-width: 560px) {
+                    margin-top: 180px;
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 30px;
+                    background-color: $blanco;
+                }
+            }
+
+            .menu-dropdown-0 {
+                height: calc(100% - 69px);
+                background-color: rgba(0, 0, 0, 0.4);
+                padding: 0 10px;
+                a {
+                    color: $blanco;
+                }
+
+                &::after {
+                    @include after-icon(20px, 10px, $button_mn_2_icon);
+                    bottom: 10px;
+                    filter: $filter_white;
+                }
+            }
+        }
+
+        img {
+            display: none;
+        }
+    }
+}

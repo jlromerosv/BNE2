@@ -1,0 +1,18 @@
+uuid: 700f81ea-86d4-428b-a7f2-27bbd3b6fcc0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_promocion_inmuebles
+id: taxonomy_term.estado_promocion_inmuebles.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: estado_promocion_inmuebles
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

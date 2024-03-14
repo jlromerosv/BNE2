@@ -1,0 +1,20 @@
+uuid: 25746ab3-4d35-4dac-84f5-ba90eb7288fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bolsa_de_trabajo
+  module:
+    - path
+id: node.bolsa_de_trabajo.path
+field_name: path
+entity_type: node
+bundle: bolsa_de_trabajo
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

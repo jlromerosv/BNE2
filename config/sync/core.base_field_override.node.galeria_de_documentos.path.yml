@@ -1,0 +1,20 @@
+uuid: 0610d68a-7ba0-40a4-a5c3-dccdcaaf570f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_documentos
+  module:
+    - path
+id: node.galeria_de_documentos.path
+field_name: path
+entity_type: node
+bundle: galeria_de_documentos
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

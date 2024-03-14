@@ -1,0 +1,30 @@
+uuid: ff7203d7-c9b5-45a2-85c7-1bb257c564a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden_cronologia
+    - node.type.hito
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.hito.field_orden_cronologia
+field_name: field_orden_cronologia
+entity_type: node
+bundle: hito
+label: 'Orden cronología'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

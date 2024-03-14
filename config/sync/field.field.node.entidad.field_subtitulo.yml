@@ -1,0 +1,19 @@
+uuid: 495e73a9-313b-4bfb-9ece-7b63fa794d08
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitulo
+    - node.type.entidad
+id: node.entidad.field_subtitulo
+field_name: field_subtitulo
+entity_type: node
+bundle: entidad
+label: Acrónimo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

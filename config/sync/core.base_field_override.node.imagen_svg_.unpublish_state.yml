@@ -1,0 +1,20 @@
+uuid: 562222b0-d529-4138-bb4d-52af28b114b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+  module:
+    - options
+id: node.imagen_svg_.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: imagen_svg_
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

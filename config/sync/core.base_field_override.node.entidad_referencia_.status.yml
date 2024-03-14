@@ -1,0 +1,22 @@
+uuid: 21fde06f-d93b-4487-a0a6-559e45e7b467
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad_referencia_
+id: node.entidad_referencia_.status
+field_name: status
+entity_type: node
+bundle: entidad_referencia_
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

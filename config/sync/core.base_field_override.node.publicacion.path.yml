@@ -1,0 +1,20 @@
+uuid: 86e3c47c-748d-4e83-bb10-7241051489c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.publicacion
+  module:
+    - path
+id: node.publicacion.path
+field_name: path
+entity_type: node
+bundle: publicacion
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

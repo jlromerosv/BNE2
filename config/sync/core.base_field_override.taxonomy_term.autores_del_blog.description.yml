@@ -1,0 +1,20 @@
+uuid: b25522a0-dacb-4f8d-aac2-a08aa17d3071
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.autores_del_blog
+  module:
+    - text
+id: taxonomy_term.autores_del_blog.description
+field_name: description
+entity_type: taxonomy_term
+bundle: autores_del_blog
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: df532026-ba57-4a3b-ad1c-f5936330f5a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero_autor
+  module:
+    - text
+id: taxonomy_term.genero_autor.description
+field_name: description
+entity_type: taxonomy_term
+bundle: genero_autor
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

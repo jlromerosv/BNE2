@@ -1,0 +1,85 @@
+uuid: 2743f67f-61a0-4121-a497-6199eac78ad2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.sesion_de_actividad.body
+    - field.field.node.sesion_de_actividad.field_actividad_generica
+    - field.field.node.sesion_de_actividad.field_domain_access
+    - field.field.node.sesion_de_actividad.field_domain_all_affiliates
+    - field.field.node.sesion_de_actividad.field_domain_source
+    - field.field.node.sesion_de_actividad.field_fecha_fin
+    - field.field.node.sesion_de_actividad.field_fecha_inicio
+    - field.field.node.sesion_de_actividad.field_marca_agua
+    - field.field.node.sesion_de_actividad.field_tipo
+    - node.type.sesion_de_actividad
+  module:
+    - datetime
+    - text
+    - user
+id: node.sesion_de_actividad.default
+targetEntityType: node
+bundle: sesion_de_actividad
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_actividad_generica:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_marca_agua:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_tipo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,33 @@
+uuid: 22568372-ccb8-43e4-b8c2-e66923383f19
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne
+  module:
+    - domain
+    - system
+  theme:
+    - bne_theme
+id: bne_theme_mx1bne
+theme: bne_theme
+region: header_site_2_2
+weight: -17
+provider: null
+plugin: 'system_menu_block:mx1---bne'
+settings:
+  id: 'system_menu_block:mx1---bne'
+  label: Menú
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      desarrollo_bne_pulsia_es: desarrollo_bne_pulsia_es

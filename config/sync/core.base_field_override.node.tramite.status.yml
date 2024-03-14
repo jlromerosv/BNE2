@@ -1,0 +1,22 @@
+uuid: ad63c134-bf1b-474d-8d65-25d7a5a29943
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramite
+id: node.tramite.status
+field_name: status
+entity_type: node
+bundle: tramite
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

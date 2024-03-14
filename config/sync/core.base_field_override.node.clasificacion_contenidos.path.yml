@@ -1,0 +1,20 @@
+uuid: f01a55c9-9b44-4e2b-96e0-bb702c9b1a04
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificacion_contenidos
+  module:
+    - path
+id: node.clasificacion_contenidos.path
+field_name: path
+entity_type: node
+bundle: clasificacion_contenidos
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

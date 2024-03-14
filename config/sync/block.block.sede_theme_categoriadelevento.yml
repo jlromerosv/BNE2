@@ -1,0 +1,29 @@
+uuid: e3424be7-6a61-422b-b7b3-7292ef4766b5
+langcode: es
+status: false
+dependencies:
+  config:
+    - facets.facet.categoria_del_evento
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_categoriadelevento
+theme: sede_theme
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'facet_block:categoria_del_evento'
+settings:
+  id: 'facet_block:categoria_del_evento'
+  label: 'Categoría del evento'
+  label_display: '0'
+  provider: facets
+  block_id: categoriadelevento
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/3057

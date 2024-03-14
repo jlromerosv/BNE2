@@ -1,0 +1,18 @@
+uuid: be612d85-4b16-465f-a8ee-b0171f82efa3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ubicacion
+id: node.ubicacion.metatag
+field_name: metatag
+entity_type: node
+bundle: ubicacion
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,22 @@
+uuid: 2797f101-0c08-4001-b2a5-2085d08fd734
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_promocion_de_inmuebles
+id: taxonomy_term.tipo_de_promocion_de_inmuebles.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_promocion_de_inmuebles
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

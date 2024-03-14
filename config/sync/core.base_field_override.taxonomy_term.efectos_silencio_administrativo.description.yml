@@ -1,0 +1,20 @@
+uuid: aa8f3a0d-e03b-4da3-91f6-3e9a63c2f3da
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.efectos_silencio_administrativo
+  module:
+    - text
+id: taxonomy_term.efectos_silencio_administrativo.description
+field_name: description
+entity_type: taxonomy_term
+bundle: efectos_silencio_administrativo
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

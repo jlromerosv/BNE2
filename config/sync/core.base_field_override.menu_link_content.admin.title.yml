@@ -1,0 +1,18 @@
+uuid: f6f973b0-f88c-4c89-a1b7-6a2de30f3967
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.admin
+id: menu_link_content.admin.title
+field_name: title
+entity_type: menu_link_content
+bundle: admin
+label: 'Título del enlace del menú.'
+description: 'El texto que se usará en el menú para este enlace.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

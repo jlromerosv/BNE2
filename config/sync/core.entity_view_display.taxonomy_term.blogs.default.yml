@@ -1,0 +1,33 @@
+uuid: 24060fdb-b899-4544-b143-5b9119060c65
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.blogs.field_texto_url
+    - taxonomy.vocabulary.blogs
+  module:
+    - text
+id: taxonomy_term.blogs.default
+targetEntityType: taxonomy_term
+bundle: blogs
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_texto_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

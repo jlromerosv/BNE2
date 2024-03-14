@@ -1,0 +1,28 @@
+uuid: 05c333e4-5cc6-47dc-8858-7a9ef55acfdb
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.materia_de_web_archivada
+  module:
+    - facets
+    - system
+  theme:
+    - fundacion_theme
+id: fundacion_theme_materiadewebarchivada
+theme: fundacion_theme
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'facet_block:materia_de_web_archivada'
+settings:
+  id: 'facet_block:materia_de_web_archivada'
+  label: 'Materia de web archivada'
+  label_display: '0'
+  provider: facets
+  block_id: materiadewebarchivada
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /colecciones/archivo-web-espanola/webs-achivadas

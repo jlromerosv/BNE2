@@ -1,0 +1,34 @@
+uuid: 14a4fc3d-d7b5-476b-a671-edf2dbaf24b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.tipo_de_evento
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: tipodeevento
+theme: bne_theme
+region: sidebar_first
+weight: -57
+provider: null
+plugin: 'facet_block:tipo_de_evento'
+settings:
+  id: 'facet_block:tipo_de_evento'
+  label: 'Tipo de evento'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: tipodeevento
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/21961\r\n"

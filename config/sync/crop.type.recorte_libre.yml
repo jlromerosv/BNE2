@@ -1,0 +1,12 @@
+uuid: 5d2a37f0-2304-4486-9e20-04205d5ebb53
+langcode: es
+status: true
+dependencies: {  }
+label: 'Recorte libre'
+id: recorte_libre
+description: 'Crop para que el usuario defina la sección de la imagen destacada (encima del título) que quiere mostrar'
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,14 @@
+uuid: 52c8d24d-c5c6-41ce-bfb0-e9605cf74c12
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_contenidos
+  module:
+    - user
+id: user_remove_role_action.editor_contenidos
+label: 'Elimina el rol Editor Contenidos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor_contenidos

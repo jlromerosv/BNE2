@@ -1,0 +1,12 @@
+uuid: bd2c21a9-e9c3-4a9f-bdb0-ca97aa088bc3
+langcode: es
+status: true
+dependencies: {  }
+id: linea_descontinua
+label: 'Línea Discontinua'
+image: ''
+description: ''
+html:
+  value: "<p>&nbsp;</p>\r\n\r\n<div class=\"ck-linea-continua\" style=\"border-bottom: 1px dashed; border-color: #444444;\">&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: html_full
+weight: -3

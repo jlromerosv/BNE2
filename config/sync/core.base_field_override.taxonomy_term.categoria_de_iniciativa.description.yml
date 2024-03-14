@@ -1,0 +1,20 @@
+uuid: d84c726e-0da7-4d0b-acda-2a02addc1374
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_iniciativa
+  module:
+    - text
+id: taxonomy_term.categoria_de_iniciativa.description
+field_name: description
+entity_type: taxonomy_term
+bundle: categoria_de_iniciativa
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

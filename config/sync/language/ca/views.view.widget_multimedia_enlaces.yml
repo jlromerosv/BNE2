@@ -1,0 +1,9 @@
+display:
+  block_3:
+    display_title: 'Continguts relacionats'
+    display_options:
+      title: 'Continguts relacionats'
+  block_2:
+    display_title: 'Et pot interessar'
+    display_options:
+      title: 'Et pot interessar'

@@ -1,0 +1,53 @@
+// SIDEBAR
+.menu--mx1---sede-electronica-bne{
+    svg{
+        display: none;
+    }
+}
+// HOME
+.path-frontpage .menu--mx1---sede-electronica-bne{
+
+    ul.menu{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        li.menu-item{
+            height: 165px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $bne_color_3;
+            gap: 20px;
+            cursor: pointer;
+
+            a{
+                color: $negro;
+                font-family: $dm-serif;
+                font-size: 18px;
+                order: 1;
+                padding: 0 10px;
+                text-align: center;
+            }
+
+            &:hover{
+                @include box-hover-effect();
+            }
+        }
+    }
+
+    svg{
+        display: block;
+        width: auto;
+        height: 55px;
+
+
+    }
+
+
+}

@@ -1,0 +1,19 @@
+uuid: bc2f7cff-f6fe-42da-a339-00e0d0f6a757
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codigo_referencia
+    - node.type.tramite
+id: node.tramite.field_codigo_referencia
+field_name: field_codigo_referencia
+entity_type: node
+bundle: tramite
+label: 'Código de trámite'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,108 @@
+uuid: 94262d09-c6c0-47e7-927d-5717a247c3f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.minificha
+    - field.field.node.exposicion.body
+    - field.field.node.exposicion.field_alertas
+    - field.field.node.exposicion.field_archivos
+    - field.field.node.exposicion.field_area_tematica
+    - field.field.node.exposicion.field_audios
+    - field.field.node.exposicion.field_colaboradores
+    - field.field.node.exposicion.field_comentarios
+    - field.field.node.exposicion.field_contenidos_relacionados
+    - field.field.node.exposicion.field_domain_access
+    - field.field.node.exposicion.field_domain_all_affiliates
+    - field.field.node.exposicion.field_domain_source
+    - field.field.node.exposicion.field_email
+    - field.field.node.exposicion.field_enlace
+    - field.field.node.exposicion.field_enlace_formulario_inscripc
+    - field.field.node.exposicion.field_entidades
+    - field.field.node.exposicion.field_entidades_subvencionadoras
+    - field.field.node.exposicion.field_etiquetas_busqueda
+    - field.field.node.exposicion.field_fecha_fin
+    - field.field.node.exposicion.field_fecha_inicio
+    - field.field.node.exposicion.field_galeria_de_imagenes
+    - field.field.node.exposicion.field_horarios
+    - field.field.node.exposicion.field_horarios_especificos
+    - field.field.node.exposicion.field_imagen_destacada
+    - field.field.node.exposicion.field_imagenes
+    - field.field.node.exposicion.field_informacion_adicional
+    - field.field.node.exposicion.field_intervalo_add_to_cal
+    - field.field.node.exposicion.field_lugar
+    - field.field.node.exposicion.field_marca_agua
+    - field.field.node.exposicion.field_mas_informacion
+    - field.field.node.exposicion.field_meta_tags
+    - field.field.node.exposicion.field_patrocinadores
+    - field.field.node.exposicion.field_precio
+    - field.field.node.exposicion.field_telefonos
+    - field.field.node.exposicion.field_tipo
+    - field.field.node.exposicion.field_tipos
+    - field.field.node.exposicion.field_url
+    - field.field.node.exposicion.field_videos
+    - field.field.node.exposicion.field_yoast_seo
+    - node.type.exposicion
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.exposicion.minificha
+targetEntityType: node
+bundle: exposicion
+mode: minificha
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_alertas: true
+  field_archivos: true
+  field_area_tematica: true
+  field_audios: true
+  field_colaboradores: true
+  field_comentarios: true
+  field_contenidos_relacionados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_email: true
+  field_enlace: true
+  field_enlace_formulario_inscripc: true
+  field_entidades: true
+  field_entidades_subvencionadoras: true
+  field_etiquetas_busqueda: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_galeria_de_imagenes: true
+  field_horarios: true
+  field_horarios_especificos: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_informacion_adicional: true
+  field_intervalo_add_to_cal: true
+  field_lugar: true
+  field_marca_agua: true
+  field_mas_informacion: true
+  field_meta_tags: true
+  field_patrocinadores: true
+  field_precio: true
+  field_telefonos: true
+  field_tipo: true
+  field_tipos: true
+  field_url: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

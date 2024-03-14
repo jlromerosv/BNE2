@@ -1,0 +1,8 @@
+uuid: 8e110a8a-cc61-41e6-9784-1fdb6a5ae74e
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Área Organizativa'
+vid: area_organizativa
+description: ''
+weight: 0

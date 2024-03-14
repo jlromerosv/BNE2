@@ -1,0 +1,8 @@
+uuid: 0b070221-6406-43d0-a318-4c3fa3065497
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría de imagen'
+vid: categoria_de_imagen
+description: ''
+weight: 0

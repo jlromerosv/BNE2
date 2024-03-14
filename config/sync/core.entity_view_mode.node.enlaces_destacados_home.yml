@@ -1,0 +1,10 @@
+uuid: ed2d44a6-142c-4134-8730-0c0ffd8a85a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.enlaces_destacados_home
+label: 'Enlaces Destacados Home'
+targetEntityType: node
+cache: true

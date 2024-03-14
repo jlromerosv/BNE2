@@ -1,0 +1,20 @@
+uuid: b9ff0346-aa5f-405a-9ea9-0f45a84a8524
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sesion_de_actividad
+  module:
+    - path
+id: node.sesion_de_actividad.path
+field_name: path
+entity_type: node
+bundle: sesion_de_actividad
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

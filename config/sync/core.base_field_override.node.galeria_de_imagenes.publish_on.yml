@@ -1,0 +1,18 @@
+uuid: 22a35fd3-03bb-461a-970d-1401e7f5bf40
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.publish_on
+field_name: publish_on
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

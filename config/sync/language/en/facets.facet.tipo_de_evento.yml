@@ -1,0 +1,5 @@
+name: Type
+url_alias: 'type _ of _ event'
+widget:
+  config:
+    reset_text: 'Show all'

@@ -1,0 +1,22 @@
+uuid: 46ba37c0-8263-4e58-be73-5ade9fdcce46
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.lugar
+id: node.lugar.promote
+field_name: promote
+entity_type: node
+bundle: lugar
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

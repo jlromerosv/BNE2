@@ -1,0 +1,117 @@
+uuid: bb64c995-c3be-4cd2-ab2c-b694332624b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.destacados
+    - field.field.node.tramite.body
+    - field.field.node.tramite.field_archivos
+    - field.field.node.tramite.field_area_organizativa
+    - field.field.node.tramite.field_area_tematica
+    - field.field.node.tramite.field_codigo_procedimiento
+    - field.field.node.tramite.field_codigo_referencia
+    - field.field.node.tramite.field_colectivo
+    - field.field.node.tramite.field_contenidos_relacionados
+    - field.field.node.tramite.field_contenidos_vinculados
+    - field.field.node.tramite.field_criterios
+    - field.field.node.tramite.field_destinatarios
+    - field.field.node.tramite.field_domain_access
+    - field.field.node.tramite.field_domain_all_affiliates
+    - field.field.node.tramite.field_domain_source
+    - field.field.node.tramite.field_efectos_silencio_administr
+    - field.field.node.tramite.field_enlace
+    - field.field.node.tramite.field_enlaces
+    - field.field.node.tramite.field_entidades
+    - field.field.node.tramite.field_fecha_fin
+    - field.field.node.tramite.field_fecha_inicio
+    - field.field.node.tramite.field_imagen_destacada
+    - field.field.node.tramite.field_imagenes
+    - field.field.node.tramite.field_importe_ayuda
+    - field.field.node.tramite.field_info_documentacion
+    - field.field.node.tramite.field_informacion_plazo_solicitu
+    - field.field.node.tramite.field_informacion_tramite_online
+    - field.field.node.tramite.field_informacion_tramite_presen
+    - field.field.node.tramite.field_marco_legal
+    - field.field.node.tramite.field_mas_informacion
+    - field.field.node.tramite.field_meta_tags
+    - field.field.node.tramite.field_modalidad
+    - field.field.node.tramite.field_plazo_de_resolucion
+    - field.field.node.tramite.field_plazo_presentacion_permane
+    - field.field.node.tramite.field_precio
+    - field.field.node.tramite.field_preguntas_frecuentes
+    - field.field.node.tramite.field_requisitos
+    - field.field.node.tramite.field_tipo
+    - field.field.node.tramite.field_videos
+    - field.field.node.tramite.field_yoast_seo
+    - node.type.tramite
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.tramite.destacados
+targetEntityType: node
+bundle: tramite
+mode: destacados
+content:
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_lugar_presentacion_:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+hidden:
+  body: true
+  field_archivos: true
+  field_area_organizativa: true
+  field_area_tematica: true
+  field_codigo_procedimiento: true
+  field_codigo_referencia: true
+  field_colectivo: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_criterios: true
+  field_destinatarios: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_efectos_silencio_administr: true
+  field_enlace: true
+  field_enlaces: true
+  field_entidades: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_imagenes: true
+  field_importe_ayuda: true
+  field_info_documentacion: true
+  field_informacion_plazo_solicitu: true
+  field_informacion_tramite_online: true
+  field_informacion_tramite_presen: true
+  field_marco_legal: true
+  field_mas_informacion: true
+  field_meta_tags: true
+  field_modalidad: true
+  field_plazo_de_resolucion: true
+  field_plazo_presentacion_permane: true
+  field_precio: true
+  field_preguntas_frecuentes: true
+  field_requisitos: true
+  field_tipo: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

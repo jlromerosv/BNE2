@@ -1,0 +1,22 @@
+uuid: 53b2fe9c-ef63-43ff-98ca-b9d4a9ca5ed4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ponentes_participantes
+    - node.type.evento
+  module:
+    - key_value_field
+id: node.evento.field_ponentes_participantes
+field_name: field_ponentes_participantes
+entity_type: node
+bundle: evento
+label: 'Ponentes / participantes'
+description: "<b>Clave:</b> Nombre <br>\r\n<b>Valor:</b> Foto y/o reseña"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  default_format: html_full
+field_type: key_value_long

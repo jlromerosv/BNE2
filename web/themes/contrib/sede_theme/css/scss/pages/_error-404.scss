@@ -1,0 +1,96 @@
+// .ps-node-2439 {
+//   .ps_layout.ps-left-main {
+//     display: block;
+//   }
+//   .layout-sidebar-first {
+//     display: none !important;
+//   }
+//   #block-sede-theme-contenidoprincipaldelapagina {
+//     max-width: 1366px;
+//     margin: 0 auto;
+//     padding: 15px !important;
+//     > h1 {
+//       text-align: center;
+//       display: none;
+//     }
+//     article{
+//         .node__content{
+//             .field--name-body {
+//                 .field--name-field-media-image{
+//                     text-align: center;
+//                 }
+//                 .msg-error{
+//                     text-align: center;
+//                     h1{
+//                         line-height: 40px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//   }
+// }
+
+//estilos pagina de error 404
+.ps-node-2439,
+.ps-node-2438 {
+    .ps-encabezados-region{
+        display: none;
+    }
+
+  .ps-left-main {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    display: block;
+    .layout-sidebar-first {
+        display: none !important;
+    }
+
+    .layout-content {
+      #block-sede-theme-contenidoprincipaldelapagina {
+        padding: 0 !important;
+
+        h1 {
+          display: none;
+        }
+
+        article {
+          .node__content {
+            .block-field-blocknodepagina-basicafield-imagen-destacada {
+              display: none;
+            }
+
+            .block-field-blocknodepagina-basicabody {
+                .field--name-body{
+                    margin: 0;
+                }
+              p {
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+              }
+
+              img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+              }
+
+              .msg-error {
+                max-width: 1366px;
+                margin: 0 auto;
+                padding: 15px;
+
+                h1 {
+                  display: block;
+                  text-align: center;
+                  margin: 2em 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

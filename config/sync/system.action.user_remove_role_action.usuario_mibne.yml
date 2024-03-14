@@ -1,0 +1,14 @@
+uuid: 4b22d169-b49c-49c7-8fee-4f302055725d
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.usuario_mibne
+  module:
+    - user
+id: user_remove_role_action.usuario_mibne
+label: 'Elimina el rol Usuario MiBNE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: usuario_mibne

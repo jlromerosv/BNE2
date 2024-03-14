@@ -1,0 +1,18 @@
+uuid: 73082430-7151-4d39-8e3b-9e746088275f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.alerta
+id: node.alerta.created
+field_name: created
+entity_type: node
+bundle: alerta
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

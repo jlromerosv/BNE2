@@ -1,0 +1,12 @@
+uuid: ec8e2865-be64-484c-b425-b5297bfaac29
+langcode: es
+status: true
+dependencies: {  }
+id: dos_columnas_75_25_
+label: 'Dos columnas 75% - 25%'
+image: ''
+description: ''
+html:
+  value: "<div class=\"template-two-colums-75-25\" style=\"display: grid; grid-template-columns: 3fr 1fr\">\r\n<div class=\"colum-1\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em \"><p>&nbsp;</p></div>\r\n\r\n<div class=\"colum-2\" style=\"border-width: 1px; border-style: dotted; border-color: red; padding: 1em\"><p>&nbsp;</p></div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: html_full
+weight: -7

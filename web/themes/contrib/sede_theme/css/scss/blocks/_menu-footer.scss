@@ -1,0 +1,30 @@
+.block-menu.menu--footer {
+    padding: 1.563em 0em;
+    .menu {
+        @include display_flex(row, space-evenly, center);
+    }
+}
+
+
+nav#block-mxaccesospiebne{
+    //display: flex;
+    ul.menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 0.625em;
+        row-gap: 0.625em;
+        margin: 0em;
+        li.menu-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $bne_color_1;
+            height: 8.75em;
+            a, span{
+                max-width: 70%;
+                text-align: center;
+                color: #D3D3D3;
+            }
+        }
+    }
+}

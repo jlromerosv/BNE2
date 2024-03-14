@@ -1,0 +1,18 @@
+uuid: 591c6734-9644-4320-ae99-4ad1971145b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.evento
+id: node.evento.created
+field_name: created
+entity_type: node
+bundle: evento
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

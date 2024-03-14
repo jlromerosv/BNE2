@@ -1,0 +1,8 @@
+uuid: 97a251e2-0968-4867-bf42-4dc80cd88e6e
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_bloque_noticias_home
+label: 'fecha bloque noticias home'
+locked: false
+pattern: 'j \d\e F \d\e Y'

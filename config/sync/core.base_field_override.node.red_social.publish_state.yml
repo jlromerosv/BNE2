@@ -1,0 +1,20 @@
+uuid: 14e837e3-509d-4f59-b828-01e392619a01
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+  module:
+    - options
+id: node.red_social.publish_state
+field_name: publish_state
+entity_type: node
+bundle: red_social
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

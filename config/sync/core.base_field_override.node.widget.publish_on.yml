@@ -1,0 +1,18 @@
+uuid: c624b1a1-a05d-4bc6-a7ff-a38d20cb1dc8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.widget
+id: node.widget.publish_on
+field_name: publish_on
+entity_type: node
+bundle: widget
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

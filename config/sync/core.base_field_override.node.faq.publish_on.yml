@@ -1,0 +1,18 @@
+uuid: 4538421d-8142-4811-a7d2-e405a09bcf1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.faq
+id: node.faq.publish_on
+field_name: publish_on
+entity_type: node
+bundle: faq
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

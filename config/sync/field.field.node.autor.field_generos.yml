@@ -1,0 +1,29 @@
+uuid: 7c918713-0eb4-4c52-bd20-5fb623445a2c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_generos
+    - node.type.autor
+    - taxonomy.vocabulary.genero
+id: node.autor.field_generos
+field_name: field_generos
+entity_type: node
+bundle: autor
+label: Géneros
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      genero: genero
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

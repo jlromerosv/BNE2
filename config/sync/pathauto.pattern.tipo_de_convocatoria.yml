@@ -1,0 +1,23 @@
+uuid: 45d2dd86-a7d8-4e8c-afab-52f0efff4098
+langcode: es
+status: false
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: tipo_de_convocatoria
+label: 'Tipo de convocatoria'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/convocatorias/[term:name]'
+selection_criteria:
+  6b59b874-a58c-4a31-83ab-e365877bd91b:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 6b59b874-a58c-4a31-83ab-e365877bd91b
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tipo_convocatoria: tipo_convocatoria
+selection_logic: and
+weight: 5
+relationships: {  }

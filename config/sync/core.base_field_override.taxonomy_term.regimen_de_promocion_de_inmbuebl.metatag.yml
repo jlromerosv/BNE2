@@ -1,0 +1,18 @@
+uuid: 3b7636a0-9433-4f5c-89b4-38b3a4932650
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regimen_de_promocion_de_inmbuebl
+id: taxonomy_term.regimen_de_promocion_de_inmbuebl.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: regimen_de_promocion_de_inmbuebl
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

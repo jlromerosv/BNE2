@@ -1,0 +1,20 @@
+uuid: a638e0b7-04dd-4761-bd4d-a318b1f3ea93
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.anuncio
+  module:
+    - path
+id: node.anuncio.path
+field_name: path
+entity_type: node
+bundle: anuncio
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

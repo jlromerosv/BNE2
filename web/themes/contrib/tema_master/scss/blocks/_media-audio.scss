@@ -1,0 +1,32 @@
+/*
+    ========== MEDIA AUDIO ==========
+
+    Estilos dedicados a la vista para el tipo de multimedia "audio".
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+*/
+
+.media--type-archivo-de-audio.media--view-mode-default {
+    @include display_flex(row, initial, center);
+    
+    .field--name-field-media-audio-file {
+        margin-right: 15px;
+    }
+
+    .field--name-name {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,81 @@
+<?php
+
+use \Drupal\views\ViewExecutable;
+use Drupal\Component\Render\FormattableMarkup;
+use GuzzleHttp\Exception\GuzzleException;
+
+function fundacion_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    if($form["field_domain_access"] && $form["search_api_fulltext"]) {
+        $loader = \Drupal::service('domain.negotiator')->getActiveDomain()->id();
+        $form['field_domain_access']['#value'] = $loader;
+    }
+}
+
+function fundacion_theme_preprocess_html(&$variables) {
+  // Add node ID to the body class.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (is_object($node)) {
+    $variables['attributes']['class'][] = 'ps-node-' . $node->id();
+  }
+}
+
+
+
+function fundacion_theme_views_pre_render(ViewExecutable $view) {
+     if ($view->id() == 'resultados_de_busqueda_en_catalogos') {
+        \Drupal::logger('pulsia')->notice('Lanzar api de catálogos');
+
+        $buscar = \Drupal::request()->query->get('buscar');
+        foreach ($view->result as $key => $value) {
+			//print_r($value);
+			//die('stop');
+            //\Drupal::logger('pulsia')->notice('value' . serialize($value));
+
+			if (str_contains(strtolower($value->_relationship_entities['field_contenidos_vinculados']->field_subtitulo->value), 'hemeroteca-search')){
+					$value->_relationship_entities['field_contenidos_vinculados']->title->value .= ' (1423) ';
+          $value->_relationship_entities['field_contenidos_vinculados']->field_enlace->uri .= '?buscar=' . $_GET["search_api_fulltext"];
+			}
+
+            if (str_contains(strtolower($value->_relationship_entities['field_contenidos_vinculados']->field_subtitulo->value), 'bdh-search')){
+                try {
+					/*
+                  $method="POST";
+                  $endpoint="http://bns278.bne.local/bnesearch/GetHits.do?text=" . $buscar;
+                  $options=[
+                                'timeout' => 10,
+                    ];
+
+                  $client = \Drupal::httpClient();
+                  $response = $client->request($method, $endpoint, $options);
+
+                  //json
+                  $result = json_decode($response->getBody(), TRUE);
+
+                  if ($response->getStatusCode() == 200){
+                    $value->_relationship_entities['field_contenidos_vinculados']->title->value .= ' (' . $result .')';
+                  }
+				  */
+				  $value->_relationship_entities['field_contenidos_vinculados']->title->value .= ' (20) ';
+          $value->_relationship_entities['field_contenidos_vinculados']->field_enlace->uri .= '?buscar=' . $_GET["search_api_fulltext"];
+
+
+                }
+                // First try to catch the GuzzleException. This indicates a failed response from the remote API.
+                catch (GuzzleException $error) {
+                  // Get the original response
+                  $response = $error->getResponse();
+                  // Get the info returned from the remote server.
+                  $response_info = $response->getBody()->getContents();
+                  // Using FormattableMarkup allows for the use of <pre/> tags, giving a more readable log item.
+                  $message = new FormattableMarkup('API connection error. Error details are as follows:<pre>@response</pre>', ['@response' => print_r(json_decode($response_info), TRUE)]);
+                  // Log the error
+                  watchdog_exception('Remote API Connection', $error, $message);
+                }
+            }
+        }
+
+     }
+
+}
+
+

@@ -1,0 +1,31 @@
+uuid: c55bf51b-e254-4d5d-80d5-57b89c41079f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: true
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: _Alertas
+type: alerta
+description: "Muestra advertencias generales en la parte superior de la página (Alerta general) o en una parte relevante del contenido para informar de situaciones especiales en Eventos y Salas, espacios y sedes.<br>\r\nNo tiene presentación propia, sino que se añade al Widget \"Alerta general del dominio\" que despliega las alertas publicadas y añadidas al mismo.<br>\r\nEn el caso de Eventos y Salas, espacios y sedes, las alertas se añaden al contenido principal como contenido relacionado.<br>"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

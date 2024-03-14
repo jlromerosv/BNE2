@@ -1,0 +1,18 @@
+uuid: faa57bc8-1ff9-4ef2-abfe-bf072daa01e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_estandar
+id: node.seccion_estandar.created
+field_name: created
+entity_type: node
+bundle: seccion_estandar
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

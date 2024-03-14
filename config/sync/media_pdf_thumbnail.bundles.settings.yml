@@ -1,0 +1,10 @@
+archivo_field: field_media_file
+archivo_enable: 1
+archivo_de_audio_field: field_media_audio_file
+archivo_de_audio_enable: 0
+archivo_de_video_field: field_media_video_file
+archivo_de_video_enable: 0
+imagen_field: null
+imagen_enable: null
+video_remoto_field: null
+video_remoto_enable: null

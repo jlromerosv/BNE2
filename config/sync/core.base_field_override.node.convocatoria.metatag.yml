@@ -1,0 +1,18 @@
+uuid: e6d1928c-e89c-4bea-99ce-8fc400c81ae0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.convocatoria
+id: node.convocatoria.metatag
+field_name: metatag
+entity_type: node
+bundle: convocatoria
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,20 @@
+uuid: 3aea60b7-4e50-4bb5-bb5e-fcb7c35b7f0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.accesibilidad
+  module:
+    - path
+id: taxonomy_term.accesibilidad.path
+field_name: path
+entity_type: taxonomy_term
+bundle: accesibilidad
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

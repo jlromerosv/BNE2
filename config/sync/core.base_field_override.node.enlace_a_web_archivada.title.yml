@@ -1,0 +1,18 @@
+uuid: a7d9da97-0766-4350-ab91-67bec1c35740
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+id: node.enlace_a_web_archivada.title
+field_name: title
+entity_type: node
+bundle: enlace_a_web_archivada
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 05971a41-c3bf-4aad-9b57-803ed61c4ee9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_lugar
+id: taxonomy_term.tipo_de_lugar.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: tipo_de_lugar
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

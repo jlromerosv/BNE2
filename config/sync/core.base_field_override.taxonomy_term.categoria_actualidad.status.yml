@@ -1,0 +1,22 @@
+uuid: bfaf2b60-3ee5-415b-ba7f-2b90d63e1215
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_actualidad
+id: taxonomy_term.categoria_actualidad.status
+field_name: status
+entity_type: taxonomy_term
+bundle: categoria_actualidad
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

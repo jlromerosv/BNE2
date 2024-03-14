@@ -1,0 +1,20 @@
+uuid: a138752b-8f7e-48ed-988b-5875cc44520b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.widget
+  module:
+    - options
+id: node.widget.publish_state
+field_name: publish_state
+entity_type: node
+bundle: widget
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

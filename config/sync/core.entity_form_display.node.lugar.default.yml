@@ -1,0 +1,626 @@
+uuid: 6619512d-c512-4025-83d6-eadecc0d9780
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.content_browser
+    - field.field.node.lugar.body
+    - field.field.node.lugar.field_accesibilidad
+    - field.field.node.lugar.field_accesos
+    - field.field.node.lugar.field_alertas
+    - field.field.node.lugar.field_alias_tipo_contenido
+    - field.field.node.lugar.field_archivos
+    - field.field.node.lugar.field_area_tematica
+    - field.field.node.lugar.field_atributos
+    - field.field.node.lugar.field_audios
+    - field.field.node.lugar.field_bloquear_la_traduccion_
+    - field.field.node.lugar.field_colecciones_referencia
+    - field.field.node.lugar.field_colectivo
+    - field.field.node.lugar.field_contenido_generico
+    - field.field.node.lugar.field_contenidos_relacionados
+    - field.field.node.lugar.field_contenidos_vinculados
+    - field.field.node.lugar.field_domain_access
+    - field.field.node.lugar.field_domain_all_affiliates
+    - field.field.node.lugar.field_domain_source
+    - field.field.node.lugar.field_email
+    - field.field.node.lugar.field_email_texto
+    - field.field.node.lugar.field_enlace
+    - field.field.node.lugar.field_enlaces
+    - field.field.node.lugar.field_estado
+    - field.field.node.lugar.field_etiquetas_busqueda
+    - field.field.node.lugar.field_galeria_de_imagenes
+    - field.field.node.lugar.field_horarios
+    - field.field.node.lugar.field_horarios_especificos
+    - field.field.node.lugar.field_id_externo
+    - field.field.node.lugar.field_iframe
+    - field.field.node.lugar.field_imagen_destacada
+    - field.field.node.lugar.field_imagen_representativa
+    - field.field.node.lugar.field_imagenes
+    - field.field.node.lugar.field_informacion_adicional
+    - field.field.node.lugar.field_mas_informacion
+    - field.field.node.lugar.field_meta_tags
+    - field.field.node.lugar.field_no_mostrar_inverso
+    - field.field.node.lugar.field_orden
+    - field.field.node.lugar.field_rede
+    - field.field.node.lugar.field_regimen_promocion_inmueble
+    - field.field.node.lugar.field_servicio_texto_
+    - field.field.node.lugar.field_servicios
+    - field.field.node.lugar.field_servicios_texto_
+    - field.field.node.lugar.field_telefonos
+    - field.field.node.lugar.field_tipos
+    - field.field.node.lugar.field_ubicacion_
+    - field.field.node.lugar.field_url
+    - field.field.node.lugar.field_videos
+    - field.field.node.lugar.field_yoast_seo
+    - node.type.lugar
+  module:
+    - content_moderation
+    - entity_browser
+    - entity_browser_entity_form
+    - field_group
+    - iframe
+    - inline_entity_form
+    - link
+    - media_library
+    - metatag
+    - path
+    - text
+    - viewfield
+    - yoast_seo
+third_party_settings:
+  field_group:
+    group_ubicacion:
+      children:
+        - field_ubicacion_
+        - field_accesos
+        - field_accesibilidad
+      label: Ubicación
+      region: content
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+        effect: bounceslide
+        formatter: closed
+    group_contacto:
+      children:
+        - field_alertas
+        - field_horarios_especificos
+        - field_horarios
+        - field_telefonos
+        - field_email_texto
+        - field_enlace
+        - field_url
+        - field_informacion_adicional
+      label: 'Contacto y horarios'
+      region: content
+      parent_name: ''
+      weight: 7
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_multimedia:
+      children:
+        - field_imagen_destacada
+        - field_imagenes
+        - field_galeria_de_imagenes
+        - field_archivos
+        - field_enlaces
+        - field_videos
+        - field_audios
+        - field_iframe
+      label: Multimedia
+      region: content
+      parent_name: ''
+      weight: 8
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_descripcion:
+      children: {  }
+      label: Descripción
+      region: hidden
+      parent_name: ''
+      weight: 43
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_clasificacion:
+      children:
+        - field_colectivo
+        - field_etiquetas_busqueda
+      label: Clasificación
+      region: content
+      parent_name: ''
+      weight: 10
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_seo:
+      children:
+        - field_yoast_seo
+      label: SEO
+      region: content
+      parent_name: ''
+      weight: 11
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+        weight: 0
+    group_contenidos_e:
+      children:
+        - field_contenidos_relacionados
+        - field_no_mostrar_inverso
+        - field_contenidos_vinculados
+        - field_contenido_generico
+      label: 'Contenidos extra'
+      region: content
+      parent_name: ''
+      weight: 9
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: node.lugar.default
+targetEntityType: node
+bundle: lugar
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_accesibilidad:
+    type: entity_reference_autocomplete
+    weight: 33
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_accesos:
+    type: text_textarea_with_summary
+    weight: 31
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_alertas:
+    type: inline_entity_form_complex
+    weight: 37
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  field_alias_tipo_contenido:
+    type: entity_reference_autocomplete
+    weight: 22
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_archivos:
+    type: media_library_widget
+    weight: 12
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_audios:
+    type: media_library_widget
+    weight: 16
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_bloquear_la_traduccion_:
+    type: string_textfield
+    weight: 24
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_colecciones_referencia:
+    type: viewfield_select
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_colectivo:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contenido_generico:
+    type: entity_reference_autocomplete
+    weight: 18
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contenidos_relacionados:
+    type: entity_browser_entity_reference
+    weight: 15
+    region: content
+    settings:
+      entity_browser: content_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_contenidos_vinculados:
+    type: entity_browser_entity_reference
+    weight: 17
+    region: content
+    settings:
+      entity_browser: content_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_domain_source:
+    type: options_select
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_email_texto:
+    type: string_textarea
+    weight: 41
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_enlace:
+    type: link_default
+    weight: 42
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_enlaces:
+    type: link_default
+    weight: 13
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_etiquetas_busqueda:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_galeria_de_imagenes:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_horarios:
+    type: inline_entity_form_complex
+    weight: 39
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  field_horarios_especificos:
+    type: text_textarea
+    weight: 38
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_id_externo:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_iframe:
+    type: iframe_urlwidthheight
+    weight: 17
+    region: content
+    settings:
+      headerlevel: '3'
+      class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      allowfullscreen: '0'
+      tokensupport: '0'
+      width: ''
+      height: ''
+      expose_class: false
+    third_party_settings: {  }
+  field_imagen_destacada:
+    type: media_library_widget
+    weight: 9
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_imagenes:
+    type: media_library_widget
+    weight: 10
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_informacion_adicional:
+    type: text_textarea
+    weight: 44
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_mas_informacion:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 13
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_no_mostrar_inverso:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_orden:
+    type: number
+    weight: 21
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_servicio_texto_:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_servicios:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  field_telefonos:
+    type: string_textarea
+    weight: 40
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_tipos:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ubicacion_:
+    type: inline_entity_form_complex
+    weight: 30
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  field_url:
+    type: link_default
+    weight: 43
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_videos:
+    type: media_library_widget
+    weight: 14
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 52
+    region: content
+    settings:
+      body: body
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_area_tematica: true
+  field_atributos: true
+  field_email: true
+  field_estado: true
+  field_imagen_representativa: true
+  field_rede: true
+  field_regimen_promocion_inmueble: true
+  field_servicios_texto_: true
+  langcode: true
+  promote: true
+  publish_on: true
+  publish_state: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
+  url_redirects: true

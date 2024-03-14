@@ -1,0 +1,14 @@
+uuid: 6e96e622-aa8c-47d6-ba11-bd12a5c44e13
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_material
+id: taxonomy_vocabulary_tipo_de_material
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_material
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

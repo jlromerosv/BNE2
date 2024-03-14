@@ -1,0 +1,40 @@
+uuid: 6c13b4a3-ec06-4664-8de6-7c3afb1784fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.mx1---sede-electronica-bne.field_descripcion_enlace_menu
+    - field.field.menu_link_content.mx1---sede-electronica-bne.field_icono
+    - system.menu.mx1---sede-electronica-bne
+  module:
+    - text
+id: menu_link_content.mx1---sede-electronica-bne.default
+targetEntityType: menu_link_content
+bundle: mx1---sede-electronica-bne
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_descripcion_enlace_menu:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_icono:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: svg
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

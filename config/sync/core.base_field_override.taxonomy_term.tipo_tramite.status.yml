@@ -1,0 +1,22 @@
+uuid: 07d0f792-5f72-4e38-89ac-5a58507f170d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_tramite
+id: taxonomy_term.tipo_tramite.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_tramite
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

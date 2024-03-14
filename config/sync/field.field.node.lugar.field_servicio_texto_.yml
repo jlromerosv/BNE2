@@ -1,0 +1,19 @@
+uuid: 9334f928-6c0f-4bf4-acc9-b7123d490f88
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servicio_texto_
+    - node.type.lugar
+id: node.lugar.field_servicio_texto_
+field_name: field_servicio_texto_
+entity_type: node
+bundle: lugar
+label: Servicios
+description: 'Etiqueta de solo texto sin enlace'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

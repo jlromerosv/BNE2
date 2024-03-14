@@ -1,0 +1,59 @@
+uuid: 74943614-9b8f-4433-93a3-5376eaee8af8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.direccion_ubicacion
+    - field.field.node.ubicacion.field_codigo_postal
+    - field.field.node.ubicacion.field_direccion
+    - field.field.node.ubicacion.field_domain_access
+    - field.field.node.ubicacion.field_domain_all_affiliates
+    - field.field.node.ubicacion.field_domain_source
+    - field.field.node.ubicacion.field_municipio
+    - field.field.node.ubicacion.field_ubicacion
+    - node.type.ubicacion
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.ubicacion.direccion_ubicacion
+targetEntityType: node
+bundle: ubicacion
+mode: direccion_ubicacion
+content:
+  field_codigo_postal:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_direccion:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_municipio:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_ubicacion: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

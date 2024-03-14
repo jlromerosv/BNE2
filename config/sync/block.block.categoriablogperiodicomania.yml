@@ -1,0 +1,28 @@
+uuid: d5dc409b-323e-4ab4-bcb6-64a37c7d381c
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.categoria
+  module:
+    - facets
+    - system
+  theme:
+    - bne_theme
+id: categoriablogperiodicomania
+theme: bne_theme
+region: sidebar_first
+weight: -48
+provider: null
+plugin: 'facet_block:categoria'
+settings:
+  id: 'facet_block:categoria'
+  label: 'Categoría blog periodicomanía'
+  label_display: '0'
+  provider: facets
+  block_id: categoriablogperiodicomania
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/15363

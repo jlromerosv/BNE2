@@ -1,0 +1,44 @@
+name: Tema Fundacion Amigos
+type: theme
+base theme: classy
+description: 'Diseñado y desarrollado por <a href=http://pulsia.es>Pulsia</a><br/>Contacta con nosotros para cualquier servicio a través de <a href=mailto:jmoreno@pulsia.es>jmoreno@pulsia.es</a>'
+alt text: 'Tema personalizado por Pulsia para Portal de BNE'
+package: Core
+version: '1.0.0'
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+ - fundacion_theme/global-styling
+
+regions:
+  header_superior: 'Encabezado superior'
+  header_izquierdo_1_2: 'Encabezado izquierdo 1/2'
+  header_derecho_2_2: 'Encabezado derecho 2/2'
+  header_izquierdo_1_3: 'Encabezado izquierdo 1/3'
+  header_central_2_3: 'Encabezado central 2/3'
+  header_derecho_3_3: 'Encabezado derecho 3/3'
+  header_site_1_2: 'Encabezado site 1/2'
+  header_site_2_2: 'Encabezado site 2/2'
+  header_seccion: 'Encabezado seccion'
+  pre_content: 'Pre-contenido'
+  breadcrumb: 'Breadcrumb'
+  pre_content_full_width: 'Pre-contenido-pantalla-completa'
+  content: 'Contenido'
+  sidebar_first: 'Sidebar izquierdo'
+  sidebar_second: 'Sidebar derecho'
+  pre_multimedia: 'Pre-Multimedia'
+  multimedia: 'Multimedia'
+  post_contenido: 'Post contenido'
+  footer_superior: 'Pie superior'
+  footer_central_1_2: 'Pie central izquierdo'
+  footer_central_2_2: 'Pie central derecho'
+  footer_izquierdo_1_3: 'Pie izquierdo 1/3'
+  footer_central_2_3: 'Pie central 2/3'
+  footer_derecho_3_3: 'Pie derecho 3/3'
+  footer_izquierdo_1_2: 'Pie izquierdo 1/2'
+  footer_derecho_2_2: 'Pie derecho 2/2'
+  footer_logos: 'Pie logos'
+  footer_inferior: 'Pie inferior'
+  autohidden: 'autohidden'
+regions_hidden:
+  - autohidden

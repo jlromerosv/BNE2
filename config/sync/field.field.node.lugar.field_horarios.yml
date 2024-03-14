@@ -1,0 +1,28 @@
+uuid: f5626285-83f6-4004-8d58-586cdce1928e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horarios
+    - node.type.horarios
+    - node.type.lugar
+id: node.lugar.field_horarios
+field_name: field_horarios
+entity_type: node
+bundle: lugar
+label: 'Horario general'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      horarios: horarios
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

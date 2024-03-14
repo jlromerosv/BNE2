@@ -1,0 +1,12 @@
+uuid: 70522639-2d9f-4c0b-ae54-6757f412f773
+langcode: es
+status: true
+dependencies: {  }
+label: 'Banner crop type'
+id: focal_point_banner
+description: 'Crop orientado al subencabezado de la web'
+aspect_ratio: '40:5'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

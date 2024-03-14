@@ -1,0 +1,44 @@
+uuid: 76a69114-f87c-4e9d-b30a-c2dc9ccb2971
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.colectivo.field_icono_svg_
+    - field.field.taxonomy_term.colectivo.field_img_colectivo
+    - taxonomy.vocabulary.colectivo
+  module:
+    - text
+id: taxonomy_term.colectivo.default
+targetEntityType: taxonomy_term
+bundle: colectivo
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icono_svg_:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: svg
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_img_colectivo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

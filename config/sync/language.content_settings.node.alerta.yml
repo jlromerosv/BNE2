@@ -1,0 +1,18 @@
+uuid: da33c04c-bffa-44cd-b7d3-e8820393cc09
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.alerta
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.alerta
+target_entity_type_id: node
+target_bundle: alerta
+default_langcode: site_default
+language_alterable: true

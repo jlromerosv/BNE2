@@ -1,0 +1,7 @@
+uuid: 2c248e83-c008-401a-9bc9-5c2fa2072af4
+langcode: es
+status: false
+dependencies: {  }
+formId: node_referencias_bibliograficas_form
+captchaType: default
+label: node_referencias_bibliograficas_form

@@ -1,0 +1,14 @@
+uuid: 5ebbc31a-f58f-49cc-bb1b-837a0ff8e7fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_postal
+id: taxonomy_vocabulary_categoria_postal
+entity_type_id: taxonomy_vocabulary
+entity_id: categoria_postal
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

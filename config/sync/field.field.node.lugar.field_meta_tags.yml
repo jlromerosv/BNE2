@@ -1,0 +1,21 @@
+uuid: 91262ccd-6851-4e3f-a37f-0e1496d444ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.lugar
+  module:
+    - metatag
+id: node.lugar.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: lugar
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

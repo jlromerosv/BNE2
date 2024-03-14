@@ -1,0 +1,7 @@
+uuid: d21f4c18-d2d3-4d28-a3d6-a0a2766a7c28
+langcode: es
+status: false
+dependencies: {  }
+formId: node_entidad_form
+captchaType: default
+label: node_entidad_form

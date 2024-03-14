@@ -1,0 +1,20 @@
+uuid: bc401b26-6c9b-41a6-b2f1-7bfe235c7650
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.modalidad
+  module:
+    - path
+id: taxonomy_term.modalidad.path
+field_name: path
+entity_type: taxonomy_term
+bundle: modalidad
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,34 @@
+uuid: 59678641-a216-4058-9162-6b80936cc47b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_editor_de_blog
+    - taxonomy.vocabulary.blogs
+  module:
+    - tmgmt_content
+    - user
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: user.user.field_editor_de_blog
+field_name: field_editor_de_blog
+entity_type: user
+bundle: user
+label: 'Editor de blog'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      blogs: blogs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

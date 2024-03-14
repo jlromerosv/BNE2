@@ -1,0 +1,18 @@
+uuid: 2cb5842d-6764-4b46-baf1-f8dbbcfb6897
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+id: node.horarios.created
+field_name: created
+entity_type: node
+bundle: horarios
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

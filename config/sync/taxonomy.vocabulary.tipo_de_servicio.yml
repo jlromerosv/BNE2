@@ -1,0 +1,8 @@
+uuid: 95eb61e4-2fa5-4dc4-9608-9fc0f77192d6
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de servicio'
+vid: tipo_de_servicio
+description: ''
+weight: 0

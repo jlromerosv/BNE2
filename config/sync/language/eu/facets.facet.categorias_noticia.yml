@@ -1,0 +1,5 @@
+name: Kategoria
+url_alias: 'kategoriak _ berria'
+widget:
+  config:
+    reset_text: 'Erakutsi dena'

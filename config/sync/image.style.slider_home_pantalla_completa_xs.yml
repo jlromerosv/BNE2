@@ -1,0 +1,15 @@
+uuid: ccc1a627-6551-4c08-8382-e6f2ac40519d
+langcode: es
+status: true
+dependencies: {  }
+name: slider_home_pantalla_completa_xs
+label: 'Slider home pantalla completa XS'
+effects:
+  c5f508b4-f147-40dc-bc80-54a28bbb3b6e:
+    uuid: c5f508b4-f147-40dc-bc80-54a28bbb3b6e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 576
+      height: 550
+      anchor: center-center

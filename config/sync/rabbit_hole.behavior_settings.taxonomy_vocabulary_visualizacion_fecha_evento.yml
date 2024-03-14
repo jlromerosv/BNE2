@@ -1,0 +1,14 @@
+uuid: c856d8e4-345d-434a-a221-b8dcfec6cfed
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visualizacion_fecha_evento
+id: taxonomy_vocabulary_visualizacion_fecha_evento
+entity_type_id: taxonomy_vocabulary
+entity_id: visualizacion_fecha_evento
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

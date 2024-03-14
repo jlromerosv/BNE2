@@ -1,0 +1,59 @@
+uuid: 60b7330f-7fec-4998-bfa3-c3ddb8419ef5
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.rrss
+  module:
+    - node
+    - views
+  theme:
+    - fundacion_theme
+id: views_block__rrss_block_2
+theme: fundacion_theme
+region: content
+weight: -25
+provider: null
+plugin: 'views_block:rrss-block_2'
+settings:
+  id: 'views_block:rrss-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      autor: autor
+      campana: campana
+      catalogo: catalogo
+      coleccion: coleccion
+      convocatoria: convocatoria
+      documento: documento
+      dossier: dossier
+      entidad: entidad
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      faq: faq
+      galeria_de_documentos: galeria_de_documentos
+      galeria_de_imagenes: galeria_de_imagenes
+      horarios: horarios
+      iniciativa: iniciativa
+      lugar: lugar
+      noticia: noticia
+      obra: obra
+      pagina_basica: pagina_basica
+      persona: persona
+      publicacion: publicacion
+      red_social: red_social
+      referencias_bibliograficas: referencias_bibliograficas
+      servicio: servicio

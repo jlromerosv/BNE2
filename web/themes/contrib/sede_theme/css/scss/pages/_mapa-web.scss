@@ -1,0 +1,90 @@
+.ps-node-21982 {
+    #block-sede-theme-contenidoprincipaldelapagina {
+      @include ps-content-margins();
+      padding: 0 5%;
+    }
+    nav.menu--mx1---bne{
+      display: none
+    }
+    nav.menu--mx1---sede-electronica-bne {
+      @include ps-content-margins();
+      padding: 30px 15px 60px 15px;
+      h2#-menu {
+        display: none;
+      }
+
+      ul.menu-level-0 {
+        display: block;
+        .menu-item {
+          list-style-image: none;
+          list-style-type: none;
+          margin-bottom: 1em;
+          a,
+          span {
+            font-size: 28px;
+            color: $negro;
+            line-height: 24px;
+            letter-spacing: 0;
+            font-family: $dm-serif;
+            font-weight: $dm-serif-regular;
+          }
+          .menu_link_content {
+            margin-top: 0.5em;
+          }
+        }
+
+        ul.menu-level-1 {
+          // display: grid;
+          // grid-template-columns: 1fr;
+
+          // @media (min-width: 576px) {
+          //   grid-template-columns: 1fr 1fr;
+          // }
+          // @media (min-width: 992px) {
+          //   grid-template-columns: repeat(4, 1fr);
+          // }
+
+          .menu-item {
+            list-style-image: none;
+            margin-bottom: 0;
+            a,
+            span {
+              font-size: 16px;
+              color: $bne_color_1;
+              line-height: 24px;
+              letter-spacing: 0.48px;
+              font-family: "Roboto";
+              font-weight: 400;
+              padding-bottom: 3px;
+            }
+            .field--name-field-descripcion-enlace-menu {
+              display: none;
+            }
+          }
+          ul.menu-level-2 {
+            padding-left: 1em;
+            margin-left: 1em;
+            .menu-item {
+              list-style-image: none;
+              list-style-type: disc;
+
+            }
+            ul.menu-level-3{
+              padding-left: 1em;
+              margin-left: 1em;
+              .menu-item {
+                  list-style-type: circle;
+                }
+
+          }
+          }
+        }
+
+        .menu-item > a {
+          &:hover {
+            box-shadow: inset 0px -10px 0px -7px $bne_color_5;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,8 @@
+uuid: d9a9efca-bdfc-4bdd-bd33-0170ef87aa51
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Lugar'
+vid: tipo_de_lugar
+description: ''
+weight: 0

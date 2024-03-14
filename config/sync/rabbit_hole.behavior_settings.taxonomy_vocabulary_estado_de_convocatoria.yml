@@ -1,0 +1,14 @@
+uuid: 23151fc2-e7b1-482d-ac91-badab502ee06
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_de_convocatoria
+id: taxonomy_vocabulary_estado_de_convocatoria
+entity_type_id: taxonomy_vocabulary
+entity_id: estado_de_convocatoria
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

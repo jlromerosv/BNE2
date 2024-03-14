@@ -1,0 +1,8 @@
+uuid: 71846ce2-ed16-4a2a-ae2c-486087f8e25e
+langcode: es
+status: true
+dependencies: {  }
+name: 'x_Tipo de menú'
+vid: tipo_de_menu
+description: ''
+weight: 0

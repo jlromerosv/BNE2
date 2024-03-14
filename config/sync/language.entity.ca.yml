@@ -1,0 +1,9 @@
+uuid: 57d633bb-4400-4f27-9bbe-8a693c7ee01f
+langcode: es
+status: true
+dependencies: {  }
+id: ca
+label: Catalan
+direction: ltr
+weight: -9
+locked: false

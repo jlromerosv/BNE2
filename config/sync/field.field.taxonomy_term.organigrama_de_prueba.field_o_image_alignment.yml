@@ -1,0 +1,23 @@
+uuid: 46e96ea7-9257-427f-830f-7a7cc241c603
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_o_image_alignment
+    - taxonomy.vocabulary.organigrama_de_prueba
+  module:
+    - options
+id: taxonomy_term.organigrama_de_prueba.field_o_image_alignment
+field_name: field_o_image_alignment
+entity_type: taxonomy_term
+bundle: organigrama_de_prueba
+label: 'Image alignment'
+description: 'Specify the alignment of the image for this organigram item.'
+required: false
+translatable: false
+default_value:
+  -
+    value: lt
+default_value_callback: ''
+settings: {  }
+field_type: list_string

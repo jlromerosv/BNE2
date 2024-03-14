@@ -1,0 +1,18 @@
+uuid: 87ab8918-22c5-403f-b9ef-3bc595febe40
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_catalogo
+id: taxonomy_term.tipo_de_catalogo.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_de_catalogo
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

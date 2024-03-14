@@ -1,0 +1,25 @@
+uuid: 69c48403-2401-44eb-bb68-d4ca8b1094a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_access
+    - node.type.iniciativa
+id: node.iniciativa.field_domain_access
+field_name: field_domain_access
+entity_type: node
+bundle: iniciativa
+label: 'Domain Access'
+description: 'Select the affiliate domain(s) for this content'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\domain_access\DomainAccessManager::getDefaultValue'
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

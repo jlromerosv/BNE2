@@ -1,0 +1,33 @@
+uuid: af937654-f2b7-4728-8176-273d7f2f050f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas_busqueda
+    - node.type.galeria_de_imagenes
+    - taxonomy.vocabulary.area_tematica
+    - taxonomy.vocabulary.colectivo
+    - taxonomy.vocabulary.etiquetas_de_busqueda
+id: node.galeria_de_imagenes.field_etiquetas_busqueda
+field_name: field_etiquetas_busqueda
+entity_type: node
+bundle: galeria_de_imagenes
+label: 'Etiquetas de búsqueda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      colectivo: colectivo
+      etiquetas_de_busqueda: etiquetas_de_busqueda
+      area_tematica: area_tematica
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: etiquetas_de_busqueda
+field_type: entity_reference

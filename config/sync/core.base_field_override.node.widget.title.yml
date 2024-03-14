@@ -1,0 +1,18 @@
+uuid: 93e5a1f7-4170-47c0-9be5-f14f0dcc864a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.widget
+id: node.widget.title
+field_name: title
+entity_type: node
+bundle: widget
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

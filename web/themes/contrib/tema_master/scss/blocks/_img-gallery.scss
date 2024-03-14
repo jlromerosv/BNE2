@@ -1,0 +1,37 @@
+/*
+    ========== GALERÍA DE IMÁGENES ==========
+
+    Estilos dedicados a la vista de galería de imágenes.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin gallery_img_styles($column_number, $column_width)
+
+    ------------------------- MIXINS --------------------------
+    gallery_img_styles = Estilos de la galería de imágenes
+
+    ----------------------- VARIABLES -------------------------
+    $column_number = Número de columnas del grid
+
+    $column_width = Ancho de las columnas del grid
+*/
+
+.ps-gallery-img-block {
+    background-color: $main_color_3;
+    padding: 30px;
+    .ps-gallery-img {
+        h2 {
+            margin-top: 0;
+        }
+        .view-content {
+            @include gallery_img_styles(3, 1fr);
+
+            @media (max-width: 760px) {
+                @include gallery_img_styles(2, 1fr);
+            }
+            .views-row {
+                margin: 10px;
+            }
+        }
+    }
+}

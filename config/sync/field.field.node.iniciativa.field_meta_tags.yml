@@ -1,0 +1,21 @@
+uuid: 39a4e59c-a79e-4e96-89b8-7259fee1bf9b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.iniciativa
+  module:
+    - metatag
+id: node.iniciativa.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: iniciativa
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

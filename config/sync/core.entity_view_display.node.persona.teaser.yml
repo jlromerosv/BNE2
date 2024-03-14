@@ -1,0 +1,154 @@
+uuid: 055573aa-c0b4-4825-a318-4aae22d8d7c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.persona.body
+    - field.field.node.persona.field_alias_tipo_contenido
+    - field.field.node.persona.field_archivos
+    - field.field.node.persona.field_area_de_transparencia
+    - field.field.node.persona.field_audios
+    - field.field.node.persona.field_contenidos_relacionados
+    - field.field.node.persona.field_contenidos_vinculados
+    - field.field.node.persona.field_domain_access
+    - field.field.node.persona.field_domain_all_affiliates
+    - field.field.node.persona.field_domain_source
+    - field.field.node.persona.field_enlaces
+    - field.field.node.persona.field_etiquetas_busqueda
+    - field.field.node.persona.field_galeria_de_imagenes
+    - field.field.node.persona.field_iframe
+    - field.field.node.persona.field_imagen_cabecera
+    - field.field.node.persona.field_imagen_destacada
+    - field.field.node.persona.field_imagen_representativa
+    - field.field.node.persona.field_imagenes
+    - field.field.node.persona.field_meta_tags
+    - field.field.node.persona.field_no_mostrar_inverso
+    - field.field.node.persona.field_subtitulo
+    - field.field.node.persona.field_tipos
+    - field.field.node.persona.field_valor
+    - field.field.node.persona.field_videos
+    - node.type.persona
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          4ad3326e-ff94-4339-858a-e3dd95732613:
+            uuid: 4ad3326e-ff94-4339-858a-e3dd95732613
+            region: first
+            configuration:
+              id: 'field_block:node:persona:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: tercio_de_ancho
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          92eb3f6a-8217-4c70-b424-6b35c560e101:
+            uuid: 92eb3f6a-8217-4c70-b424-6b35c560e101
+            region: second
+            configuration:
+              id: 'extra_field_block:node:persona:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          3952f859-9be9-429d-b480-6a041be3ff18:
+            uuid: 3952f859-9be9-429d-b480-6a041be3ff18
+            region: second
+            configuration:
+              id: 'field_block:node:persona:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+id: node.persona.teaser
+targetEntityType: node
+bundle: persona
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen_representativa:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_alias_tipo_contenido: true
+  field_archivos: true
+  field_area_de_transparencia: true
+  field_audios: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_imagenes: true
+  field_iframe: true
+  field_imagen_cabecera: true
+  field_imagen_destacada: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_subtitulo: true
+  field_tipos: true
+  field_valor: true
+  field_videos: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

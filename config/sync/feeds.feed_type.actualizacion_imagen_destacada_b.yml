@@ -1,0 +1,66 @@
+uuid: 717aafe7-258d-4947-b03d-3b1c412ff7d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.entrada_de_blog.field_id_externo
+    - field.field.node.entrada_de_blog.field_imagen_destacada
+    - node.type.entrada_de_blog
+  module:
+    - node
+label: 'Actualizacion imagen destacada blog'
+id: actualizacion_imagen_destacada_b
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: entrada_de_blog
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  imagendestacada:
+    value: ImagenDestacada
+    label: ImagenDestacada
+    machine_name: imagendestacada
+    type: csv
+mappings:
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_imagen_destacada
+    map:
+      target_id: imagendestacada
+    settings:
+      language: ''
+      reference_by: field_id_blog_attachment_
+      feeds_item: guid
+      autocreate: 0

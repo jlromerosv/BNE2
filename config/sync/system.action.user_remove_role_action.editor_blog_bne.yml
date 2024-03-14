@@ -1,0 +1,14 @@
+uuid: d84b5141-a285-4207-b7b0-8c5ece22c35d
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_blog_bne
+  module:
+    - user
+id: user_remove_role_action.editor_blog_bne
+label: 'Elimina el rol Editor Blog BNE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor_blog_bne

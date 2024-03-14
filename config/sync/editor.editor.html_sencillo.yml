@@ -1,0 +1,62 @@
+uuid: 8cc3855f-3f25-4802-85e6-179009bb4c39
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.html_sencillo
+  module:
+    - ckeditor
+format: html_sencillo
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formato
+          items:
+            - Undo
+            - Redo
+            - Bold
+            - Italic
+            - Underline
+            - Format
+        -
+          name: Enlaces
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Listas
+          items:
+            - BulletedList
+            - NumberedList
+            - Indent
+            - Outdent
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalMediaLibrary
+        -
+          name: Herramientas
+          items:
+            - Copy
+            - Paste
+            - btn_readmore
+  plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
+    readmore:
+      type: button
+      more_text: 'Leer más'
+      less_text: Ocultar
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

@@ -1,0 +1,23 @@
+uuid: 19673387-9e3d-4881-9f75-2a8a1505d1a7
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: T3OcZElZjjCfliN1ft4AFIr3LlJNlxREmD0vy1nburw
+id: taxonomy_term.field_o_border_color
+field_name: field_o_border_color
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: true
+custom_storage: false

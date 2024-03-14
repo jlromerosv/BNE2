@@ -1,0 +1,21 @@
+uuid: 77a45e1b-6961-447e-b098-89f2162d707e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.seccion_nivel_1_estandar
+  module:
+    - metatag
+id: node.seccion_nivel_1_estandar.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: seccion_nivel_1_estandar
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

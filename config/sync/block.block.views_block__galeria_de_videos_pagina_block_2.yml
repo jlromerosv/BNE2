@@ -1,0 +1,33 @@
+uuid: 7eb9fb63-4f45-441b-828e-5996187a79a8
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.galeria_de_videos_pagina
+  module:
+    - system
+    - views
+  theme:
+    - fundacion_theme
+id: views_block__galeria_de_videos_pagina_block_2
+theme: fundacion_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:galeria_de_videos_pagina-block_2'
+settings:
+  id: 'views_block:galeria_de_videos_pagina-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/23360

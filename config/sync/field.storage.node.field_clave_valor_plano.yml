@@ -1,0 +1,28 @@
+uuid: 82abf763-0e73-458b-a727-de7a03657585
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - key_value_field
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_clave_valor_plano
+field_name: field_clave_valor_plano
+entity_type: node
+type: key_value
+settings:
+  key_max_length: 60
+  key_is_ascii: false
+  max_length: 60
+  is_ascii: false
+  case_sensitive: false
+module: key_value_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

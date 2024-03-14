@@ -1,0 +1,8 @@
+uuid: bea99ba9-b3f7-4c6c-9d0c-d4834284e198
+langcode: es
+status: true
+dependencies: {  }
+name: x_Accesibilidad
+vid: accesibilidad
+description: ''
+weight: 0

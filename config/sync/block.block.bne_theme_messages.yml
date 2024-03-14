@@ -1,0 +1,22 @@
+uuid: 30343c47-fa92-4b71-a783-fcc4ed2a3e21
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bne_theme
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: bne_theme_messages
+theme: bne_theme
+region: header_superior
+weight: -13
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

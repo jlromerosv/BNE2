@@ -1,0 +1,8 @@
+uuid: d142c24d-dffa-49c4-be22-bb01df1856c2
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de galería de documentos'
+vid: tipo_de_galeria_de_documentos
+description: ''
+weight: 0

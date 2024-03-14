@@ -1,0 +1,14 @@
+uuid: fd5bc528-7d01-49ee-866c-ba2430af28d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacados_manuales
+id: node_type_destacados_manuales
+entity_type_id: node_type
+entity_id: destacados_manuales
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

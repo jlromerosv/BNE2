@@ -1,0 +1,28 @@
+uuid: 16ca50ae-6245-4b6e-bfc6-2590517a9631
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type_de_directorio2
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_contenttypededirectorio2
+theme: sede_theme
+region: sidebar_first
+weight: -18
+provider: null
+plugin: 'facet_block:content_type_de_directorio2'
+settings:
+  id: 'facet_block:content_type_de_directorio2'
+  label: 'Tipo de contacto'
+  label_display: visible
+  provider: facets
+  block_id: contenttypededirectorio2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /directorio/28

@@ -1,0 +1,22 @@
+uuid: 3431f2be-defd-42a5-847b-51ed5fe7654e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estadistica
+id: node.estadistica.promote
+field_name: promote
+entity_type: node
+bundle: estadistica
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,44 @@
+uuid: e228d95f-fa08-4ced-a0ca-1c4db8b2f5c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.archivo_de_video.domain_access
+    - field.field.media.archivo_de_video.field_id_externo
+    - field.field.media.archivo_de_video.field_media_video_file
+    - media.type.archivo_de_video
+  module:
+    - path
+id: media.archivo_de_video.media_library
+targetEntityType: media
+bundle: archivo_de_video
+mode: media_library
+content:
+  domain_access:
+    type: options_buttons
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_id_externo: true
+  field_media_video_file: true
+  langcode: true
+  status: true
+  uid: true

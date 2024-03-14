@@ -1,0 +1,47 @@
+uuid: 73277cd0-b2c7-440c-8745-030072677f39
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.svg
+    - field.field.node.imagen_svg_.field_domain_access
+    - field.field.node.imagen_svg_.field_domain_all_affiliates
+    - field.field.node.imagen_svg_.field_domain_source
+    - field.field.node.imagen_svg_.field_icono_svg_
+    - node.type.imagen_svg_
+  module:
+    - layout_builder
+    - svg_image
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.imagen_svg_.svg
+targetEntityType: node
+bundle: imagen_svg_
+mode: svg
+content:
+  field_icono_svg_:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  uuid: true

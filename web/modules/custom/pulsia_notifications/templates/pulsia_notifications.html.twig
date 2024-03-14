@@ -1,0 +1,46 @@
+<!-- Add you custom twig html here -->
+{% set dominio = url('<front>')|render|render %}
+
+{# En etiqueta RSS poner mas atributos de ser necesario #}
+{# ATT QUE IMPLEMENTA EL MÓDULO >> #}
+{# 
+    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:og="http://ogp.me/ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:schema="http://schema.org/" 
+    xmlns:sioc="http://rdfs.org/sioc/ns#" 
+    xmlns:sioct="http://rdfs.org/sioc/types#" 
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" 
+    xml:base="http://master-des-alcobendas.pulsia.es/es" 
+#}
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+    <title>??</title>
+    <link>{{ dominio }}</link>
+    <description>??</description>
+    <language>es</language>
+
+    {% for row in rows %}
+        <item>
+            <title>{{ itemTitle }}</title>
+            <link>{{ itemLink }}</link>
+            <description>{{ itemDesc }}</description>
+
+            <image>
+                <url>{{ imageURL }}</url>
+                <title>{{ imageTitle }}</title>
+                {# <link>{{ imageLink }}</link> #}
+            </image>
+            <pubDate>{{ pubDate }}</pubDate>
+            {# <author>author@w3schools.com</author> #}
+            <dc:creator>{{ autor }}</dc:creator>
+            <guid isPermaLink="true">{{ guid }}</guid>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

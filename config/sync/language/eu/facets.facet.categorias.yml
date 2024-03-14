@@ -1,0 +1,5 @@
+name: 'Hiri ekimena-kategoria'
+url_alias: kategoriak
+widget:
+  config:
+    default_option_label: Hautatu

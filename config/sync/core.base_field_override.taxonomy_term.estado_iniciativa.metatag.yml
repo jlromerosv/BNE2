@@ -1,0 +1,18 @@
+uuid: 593d177d-76f3-4641-98a2-26e242f2eeb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_iniciativa
+id: taxonomy_term.estado_iniciativa.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: estado_iniciativa
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

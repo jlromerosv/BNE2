@@ -1,0 +1,66 @@
+uuid: 3713e1cd-a4f9-459e-91b8-82b2d248b647
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sesion_de_actividad.body
+    - field.field.node.sesion_de_actividad.field_actividad_generica
+    - field.field.node.sesion_de_actividad.field_domain_access
+    - field.field.node.sesion_de_actividad.field_domain_all_affiliates
+    - field.field.node.sesion_de_actividad.field_domain_source
+    - field.field.node.sesion_de_actividad.field_fecha_fin
+    - field.field.node.sesion_de_actividad.field_fecha_inicio
+    - field.field.node.sesion_de_actividad.field_marca_agua
+    - field.field.node.sesion_de_actividad.field_tipo
+    - node.type.sesion_de_actividad
+  module:
+    - datetime
+    - text
+    - user
+id: node.sesion_de_actividad.teaser
+targetEntityType: node
+bundle: sesion_de_actividad
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_actividad_generica: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_marca_agua: true
+  field_tipo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

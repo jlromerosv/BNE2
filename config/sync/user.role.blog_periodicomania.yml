@@ -1,0 +1,9 @@
+uuid: 7a072c6a-1b99-459b-b311-05e305b23afa
+langcode: es
+status: true
+dependencies: {  }
+id: blog_periodicomania
+label: 'x_Blog Periodicomania'
+weight: -4
+is_admin: null
+permissions: {  }

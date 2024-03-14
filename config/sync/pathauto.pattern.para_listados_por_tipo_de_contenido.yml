@@ -1,0 +1,31 @@
+uuid: c8603f56-6f86-4f6b-8063-0084d3b4391b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: para_listados_por_tipo_de_contenido
+label: 'Para listados, por tipo de contenido'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type]/[node:title]'
+selection_criteria:
+  5f80952c-182e-4183-a4fb-29f751ceb42e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5f80952c-182e-4183-a4fb-29f751ceb42e
+    context_mapping:
+      node: node
+    bundles:
+      autor: autor
+      catalogo: catalogo
+      coleccion: coleccion
+      documento: documento
+      dossier: dossier
+      enlace: enlace
+      entidad_referencia_: entidad_referencia_
+      faq: faq
+      publicacion: publicacion
+      tramite: tramite
+selection_logic: and
+weight: -8
+relationships: {  }

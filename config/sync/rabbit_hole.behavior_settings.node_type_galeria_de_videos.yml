@@ -1,0 +1,14 @@
+uuid: 9e0a6611-b86f-431a-abab-2931e424cc18
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_videos
+id: node_type_galeria_de_videos
+entity_type_id: node_type
+entity_id: galeria_de_videos
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

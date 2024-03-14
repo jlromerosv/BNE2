@@ -1,0 +1,20 @@
+uuid: df5b74d3-1d46-439d-80c5-524da3a24721
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo_de_video
+  module:
+    - path
+id: media.archivo_de_video.path
+field_name: path
+entity_type: media
+bundle: archivo_de_video
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: d1aa2609-c337-4f2a-96d4-14805c358a90
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx---accesos-pie-bne
+id: menu_link_content.mx---accesos-pie-bne.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: mx---accesos-pie-bne
+label: Modificado
+description: 'La hora en la que el enlace del menú se editó por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

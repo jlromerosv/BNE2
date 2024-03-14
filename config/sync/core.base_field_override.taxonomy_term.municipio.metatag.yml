@@ -1,0 +1,18 @@
+uuid: 0fc37771-ddb3-4d01-bb4e-78a87be84b5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.municipio
+id: taxonomy_term.municipio.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: municipio
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

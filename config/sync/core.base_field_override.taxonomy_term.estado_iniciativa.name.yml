@@ -1,0 +1,18 @@
+uuid: 8a61bb44-8d18-46a5-88bd-ff05d1be0008
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estado_iniciativa
+id: taxonomy_term.estado_iniciativa.name
+field_name: name
+entity_type: taxonomy_term
+bundle: estado_iniciativa
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 91699394-6fdb-46e1-9d49-701fff561e8c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.exposicion
+target_entity_type_id: node
+target_bundle: exposicion
+default_langcode: site_default
+language_alterable: false

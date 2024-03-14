@@ -1,0 +1,10 @@
+uuid: ccc636d2-2849-479a-910c-a93887b5177b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.contacto
+label: Contacto
+targetEntityType: node
+cache: true

@@ -1,0 +1,18 @@
+uuid: c2f82b32-c4ec-43c5-bc8f-debe11b6ee0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_estandar
+id: node.seccion_estandar.title
+field_name: title
+entity_type: node
+bundle: seccion_estandar
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

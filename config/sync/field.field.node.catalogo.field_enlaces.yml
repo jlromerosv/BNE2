@@ -1,0 +1,79 @@
+uuid: 77c774c0-76cc-4562-b2ef-547e2ed25755
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlaces
+    - node.type.catalogo
+  module:
+    - link
+    - link_field_autocomplete_filter
+    - linkchecker
+third_party_settings:
+  link_field_autocomplete_filter:
+    negate: null
+    allowed_content_types:
+      catalogo: '0'
+      actividad_generica: '0'
+      alerta: '0'
+      anuncio: '0'
+      autor: '0'
+      campana: '0'
+      cargo: '0'
+      coleccion: '0'
+      contenido_generico: '0'
+      contenidos_formativos: '0'
+      convocatoria: '0'
+      destacados_manuales: '0'
+      dossier: '0'
+      enlace: '0'
+      entidad: '0'
+      entidad_referencia_: '0'
+      entrada_de_blog: '0'
+      estadistica: '0'
+      evento: '0'
+      exposicion: '0'
+      faq: '0'
+      galeria_de_documentos: '0'
+      galeria_de_imagenes: '0'
+      galeria_de_videos: '0'
+      hito: '0'
+      horarios: '0'
+      icono_svg_: '0'
+      iniciativa: '0'
+      lugar: '0'
+      noticia: '0'
+      obra: '0'
+      pagina_avanzada: '0'
+      pagina_basica: '0'
+      pagina_personalizada: '0'
+      persona: '0'
+      publicacion: '0'
+      red_social: '0'
+      referencias_bibliograficas: '0'
+      seccion_estandar: '0'
+      seccion_nivel_1_estandar: '0'
+      serie_estadistica: '0'
+      servicio: '0'
+      sesion_de_actividad: '0'
+      tramite: '0'
+      ubicacion: '0'
+      webform: '0'
+      widget: '0'
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
+id: node.catalogo.field_enlaces
+field_name: field_enlaces
+entity_type: node
+bundle: catalogo
+label: Enlaces
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,28 @@
+uuid: 9728fc87-2467-4cc4-8e23-9353542e8342
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.exposicion
+  module:
+    - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
+id: node.exposicion.field_url
+field_name: field_url
+entity_type: node
+bundle: exposicion
+label: 'URL compra de entradas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,20 @@
+uuid: 19b9a5c8-86af-4495-9574-5817e4a74550
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.imagen
+  module:
+    - path
+id: media.imagen.path
+field_name: path
+entity_type: media
+bundle: imagen
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

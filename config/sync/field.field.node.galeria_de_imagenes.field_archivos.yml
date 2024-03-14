@@ -1,0 +1,28 @@
+uuid: 97464bbd-66bd-42f1-940d-0c5c8822bea1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivos
+    - media.type.archivo
+    - node.type.galeria_de_imagenes
+id: node.galeria_de_imagenes.field_archivos
+field_name: field_archivos
+entity_type: node
+bundle: galeria_de_imagenes
+label: Archivos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      archivo: archivo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

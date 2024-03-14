@@ -1,0 +1,18 @@
+uuid: 4b9394ed-3983-4632-a4eb-bf535e5144d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlace
+id: node.enlace.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: enlace
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

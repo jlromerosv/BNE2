@@ -1,0 +1,15 @@
+uuid: 026ef007-23e1-49c6-adb1-88b46289aec8
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_enlaces_destacados_home_xxl
+label: 'Bloque Enlaces Destacados Home XXL'
+effects:
+  a5b573f0-6e8e-4419-8105-04540810cb94:
+    uuid: a5b573f0-6e8e-4419-8105-04540810cb94
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 600
+      anchor: center-center

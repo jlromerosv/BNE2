@@ -1,0 +1,18 @@
+uuid: 03430a34-7650-4ff4-b92a-2291f4a0ad88
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.servicio
+id: node.servicio.created
+field_name: created
+entity_type: node
+bundle: servicio
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

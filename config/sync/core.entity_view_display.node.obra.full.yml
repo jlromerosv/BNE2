@@ -1,0 +1,749 @@
+uuid: 4d866612-28b5-4dba-85a8-83d823d4f9f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.obra.title
+    - core.entity_view_display.comment.comentario.default
+    - core.entity_view_mode.node.full
+    - field.field.node.obra.body
+    - field.field.node.obra.feeds_item
+    - field.field.node.obra.field_alias_tipo_contenido
+    - field.field.node.obra.field_ano
+    - field.field.node.obra.field_archivos
+    - field.field.node.obra.field_audio_destacado
+    - field.field.node.obra.field_audios
+    - field.field.node.obra.field_autores
+    - field.field.node.obra.field_autores_texto_plano_
+    - field.field.node.obra.field_campo_de_actividad
+    - field.field.node.obra.field_categoria_postal
+    - field.field.node.obra.field_codigo_identificativo
+    - field.field.node.obra.field_codigo_referencia
+    - field.field.node.obra.field_comentarios
+    - field.field.node.obra.field_contenidos_relacionados
+    - field.field.node.obra.field_contenidos_vinculados
+    - field.field.node.obra.field_datos_cartograficos
+    - field.field.node.obra.field_descripci
+    - field.field.node.obra.field_descripcion_corta
+    - field.field.node.obra.field_descripcion_sin_formato
+    - field.field.node.obra.field_domain_access
+    - field.field.node.obra.field_domain_all_affiliates
+    - field.field.node.obra.field_domain_source
+    - field.field.node.obra.field_enlace
+    - field.field.node.obra.field_enlaces
+    - field.field.node.obra.field_etiquetas_busqueda
+    - field.field.node.obra.field_fecha_obra
+    - field.field.node.obra.field_galeria_de_imagenes
+    - field.field.node.obra.field_generos
+    - field.field.node.obra.field_hashtag
+    - field.field.node.obra.field_id_externo
+    - field.field.node.obra.field_iframe
+    - field.field.node.obra.field_imagen_destacada
+    - field.field.node.obra.field_imagen_representativa
+    - field.field.node.obra.field_imagenes
+    - field.field.node.obra.field_interprete
+    - field.field.node.obra.field_issn
+    - field.field.node.obra.field_mas_informacion
+    - field.field.node.obra.field_meta_tags
+    - field.field.node.obra.field_no_mostrar_inverso
+    - field.field.node.obra.field_notas
+    - field.field.node.obra.field_numeros
+    - field.field.node.obra.field_tipo
+    - field.field.node.obra.field_tipo_texto_libre_
+    - field.field.node.obra.field_url
+    - field.field.node.obra.field_url_2
+    - field.field.node.obra.field_videos
+    - field.field.node.obra.field_yoast_seo
+    - node.type.obra
+    - views.view.entidades_nodo
+    - views.view.envio_postal
+  module:
+    - comment
+    - layout_builder
+    - layout_discovery
+    - link
+    - metatag
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Cabecera
+          context_mapping: {  }
+        components:
+          0fbecfa8-96e5-4669-82ad-50430174d051:
+            uuid: 0fbecfa8-96e5-4669-82ad-50430174d051
+            region: content
+            configuration:
+              id: 'field_block:node:obra:field_etiquetas_busqueda'
+              label: 'Etiquetas de búsqueda'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          8530427e-8e2e-4d98-8535-169f793dc6f3:
+            uuid: 8530427e-8e2e-4d98-8535-169f793dc6f3
+            region: content
+            configuration:
+              id: 'field_block:node:obra:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          ad5f1af9-e384-42c9-b48f-9d1370d7d500:
+            uuid: ad5f1af9-e384-42c9-b48f-9d1370d7d500
+            region: content
+            configuration:
+              id: 'field_block:node:obra:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: banner_obras_con_pie_de_foto
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          9c72495e-5ddf-4f24-869c-de16978ac472:
+            uuid: 9c72495e-5ddf-4f24-869c-de16978ac472
+            region: content
+            configuration:
+              id: 'field_block:node:obra:body'
+              label: Descripción
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: contenido
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          dc5024b1-7947-4312-8b89-3c66f214432f:
+            uuid: dc5024b1-7947-4312-8b89-3c66f214432f
+            region: first
+            configuration:
+              id: 'field_block:node:obra:field_imagen_destacada'
+              label: 'Imagen Destacada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: imagen_sidebar_obra
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          85a5ae0b-ec83-4f80-9ac2-eb7bdfcccf3d:
+            uuid: 85a5ae0b-ec83-4f80-9ac2-eb7bdfcccf3d
+            region: first
+            configuration:
+              id: 'field_block:node:obra:field_enlace'
+              label: 'Documento digitalizado'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 250
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          ed3b4bdc-fc1d-4326-b03f-7af642931c94:
+            uuid: ed3b4bdc-fc1d-4326-b03f-7af642931c94
+            region: first
+            configuration:
+              id: 'field_block:node:obra:field_url_2'
+              label: 'Registro en el catálogo'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 250
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          ddc050fb-4182-4a9a-8913-d3a1b4c17165:
+            uuid: ddc050fb-4182-4a9a-8913-d3a1b4c17165
+            region: first
+            configuration:
+              id: 'field_block:node:obra:field_url'
+              label: ePub
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 250
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          1133fc32-f1d0-436a-a512-adee7fc96140:
+            uuid: 1133fc32-f1d0-436a-a512-adee7fc96140
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_ano'
+              label: Fecha
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          5d68e023-b0e7-4466-84fa-13fe7eabcefc:
+            uuid: 5d68e023-b0e7-4466-84fa-13fe7eabcefc
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_tipo_texto_libre_'
+              label: 'Tipo (texto libre)'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          f21b7e1d-8eb5-457f-a038-4e8f9596e8c6:
+            uuid: f21b7e1d-8eb5-457f-a038-4e8f9596e8c6
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_mas_informacion'
+              label: 'Datos de edición'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          038b52ca-5f1c-431f-911b-7e868a751744:
+            uuid: 038b52ca-5f1c-431f-911b-7e868a751744
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_descripci'
+              label: 'Descripción Física'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          a6794d55-d14c-4e69-90c9-59a38865c031:
+            uuid: a6794d55-d14c-4e69-90c9-59a38865c031
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_datos_cartograficos'
+              label: 'Datos Cartográficos'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          47fafd07-58ce-4f2c-a5cb-541edc58e994:
+            uuid: 47fafd07-58ce-4f2c-a5cb-541edc58e994
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_interprete'
+              label: Intérprete
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          355e23cb-504d-4076-896a-dbbb0d63e4a3:
+            uuid: 355e23cb-504d-4076-896a-dbbb0d63e4a3
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_numeros'
+              label: Números
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          cf7e5b23-c6e7-4552-937f-217243b93266:
+            uuid: cf7e5b23-c6e7-4552-937f-217243b93266
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_issn'
+              label: ISSN
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+          637c44dc-8e2b-4762-81f6-07867f69f1aa:
+            uuid: 637c44dc-8e2b-4762-81f6-07867f69f1aa
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_descripcion_sin_formato'
+              label: Materia
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 12
+            additional: {  }
+          edd8f23b-8245-4bd4-aa30-372da2ecaffd:
+            uuid: edd8f23b-8245-4bd4-aa30-372da2ecaffd
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_codigo_referencia'
+              label: Signatura
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 16
+            additional: {  }
+          8c80f9ed-d35a-47b5-9ea0-3be66c43fcf6:
+            uuid: 8c80f9ed-d35a-47b5-9ea0-3be66c43fcf6
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_notas'
+              label: Notas
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 17
+            additional: {  }
+          72510ee6-8561-4030-9f4e-23ab58446722:
+            uuid: 72510ee6-8561-4030-9f4e-23ab58446722
+            region: first
+            configuration:
+              id: 'field_block:node:obra:field_audio_destacado'
+              label: 'Audio destacado'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: bloque_audios
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          f2b3d295-868f-4036-94c6-e5da876d1cb4:
+            uuid: f2b3d295-868f-4036-94c6-e5da876d1cb4
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_autores_texto_plano_'
+              label: 'Autores (texto_plano)'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          6c5da12b-384a-4abb-a710-b2d0dab3c18a:
+            uuid: 6c5da12b-384a-4abb-a710-b2d0dab3c18a
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_generos'
+              label: Géneros
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 14
+            additional: {  }
+          06071959-0ef5-48bd-8be3-7776176094f8:
+            uuid: 06071959-0ef5-48bd-8be3-7776176094f8
+            region: second
+            configuration:
+              id: 'views_block:entidades_nodo-block_autores_obra'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          f3f6415a-118c-4ea2-980d-6244b4ceebd7:
+            uuid: f3f6415a-118c-4ea2-980d-6244b4ceebd7
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_campo_de_actividad'
+              label: Técnica
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 15
+            additional: {  }
+          9f292826-c4c2-4c56-9ca5-d9b68bc57c56:
+            uuid: 9f292826-c4c2-4c56-9ca5-d9b68bc57c56
+            region: second
+            configuration:
+              id: 'field_block:node:obra:field_descripcion_corta'
+              label: 'Descripción y notas'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 18
+            additional: {  }
+          3bd2069f-9585-4d8d-956f-c5df71b3168b:
+            uuid: 3bd2069f-9585-4d8d-956f-c5df71b3168b
+            region: first
+            configuration:
+              id: 'views_block:envio_postal-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: '1'
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.obra.full
+targetEntityType: node
+bundle: obra
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_autores:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_codigo_identificativo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_codigo_referencia:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_comentarios:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_descripcion_corta:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_descripcion_sin_formato:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_enlace:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_generos:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: ancho_com
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_imagen_representativa:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: tercio_de_ancho
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_mas_informacion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_tipo_texto_libre_:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_url_2:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_ano: true
+  field_archivos: true
+  field_audio_destacado: true
+  field_audios: true
+  field_autores_texto_plano_: true
+  field_campo_de_actividad: true
+  field_categoria_postal: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_datos_cartograficos: true
+  field_descripci: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlaces: true
+  field_etiquetas_busqueda: true
+  field_fecha_obra: true
+  field_galeria_de_imagenes: true
+  field_hashtag: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagenes: true
+  field_interprete: true
+  field_issn: true
+  field_no_mostrar_inverso: true
+  field_notas: true
+  field_numeros: true
+  field_tipo: true
+  field_url: true
+  field_videos: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

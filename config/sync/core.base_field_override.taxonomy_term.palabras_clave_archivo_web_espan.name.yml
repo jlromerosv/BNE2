@@ -1,0 +1,18 @@
+uuid: 37e1909a-4244-4a2e-bd7c-f18b7fae7b43
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.palabras_clave_archivo_web_espan
+id: taxonomy_term.palabras_clave_archivo_web_espan.name
+field_name: name
+entity_type: taxonomy_term
+bundle: palabras_clave_archivo_web_espan
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

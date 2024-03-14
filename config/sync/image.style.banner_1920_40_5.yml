@@ -1,0 +1,25 @@
+uuid: 52a76d35-6ede-4b37-888b-54f92ea583a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point_banner
+  module:
+    - crop
+name: banner_1920_40_5
+label: 'Banner 1920 - 40:5'
+effects:
+  0e198b70-0a1b-4ffb-a125-94db5ff8dab2:
+    uuid: 0e198b70-0a1b-4ffb-a125-94db5ff8dab2
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point_banner
+  c5cb4b44-110d-4492-beba-ec42b8a33ce7:
+    uuid: c5cb4b44-110d-4492-beba-ec42b8a33ce7
+    id: image_scale
+    weight: 2
+    data:
+      width: 1920
+      height: null
+      upscale: false

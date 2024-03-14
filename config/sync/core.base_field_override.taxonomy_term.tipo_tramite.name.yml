@@ -1,0 +1,18 @@
+uuid: e286c8d3-4a69-43db-bba0-8e75c9605a1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_tramite
+id: taxonomy_term.tipo_tramite.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_tramite
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

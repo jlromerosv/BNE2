@@ -1,0 +1,22 @@
+uuid: e47db839-b857-4f54-b969-6f6955b56389
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.archivo_de_video
+id: media.archivo_de_video.status
+field_name: status
+entity_type: media
+bundle: archivo_de_video
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

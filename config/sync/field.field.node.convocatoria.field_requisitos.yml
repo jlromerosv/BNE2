@@ -1,0 +1,21 @@
+uuid: 91de204a-9b8d-4144-83f4-3366bb965358
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requisitos
+    - node.type.convocatoria
+  module:
+    - text
+id: node.convocatoria.field_requisitos
+field_name: field_requisitos
+entity_type: node
+bundle: convocatoria
+label: Requisitos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

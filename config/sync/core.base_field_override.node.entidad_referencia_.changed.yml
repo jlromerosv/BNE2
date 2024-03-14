@@ -1,0 +1,18 @@
+uuid: e0edcaab-ac67-429f-8b95-dfa32e3320e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.entidad_referencia_
+id: node.entidad_referencia_.changed
+field_name: changed
+entity_type: node
+bundle: entidad_referencia_
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

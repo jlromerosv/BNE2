@@ -1,0 +1,63 @@
+/*
+    ========== FORMULARIOS ==========
+    
+    Estilos dedicados a los formularios de la web.
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+        @mixin form_label
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display
+
+    form_label = Estilo de la etiqueta label
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+    
+    $color_placeholder = Color del texto placeholder del campo
+*/
+
+input[type="email"],
+input[type="text"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+    @include input_style(5px);
+}
+
+label {
+    @include form_label;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: $color_placeholder;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder, /* Internet Explorer 10-11 */
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color_placeholder;
+}
+
+
+.form-type-textfield,
+.form-type-email,
+.form-type-textarea,
+.form-type-select,
+.form-type-search-api-autocomplete,
+.form-type-password {
+    @include display_flex(column, initial, initial);
+}

@@ -1,0 +1,20 @@
+uuid: ea3deaa1-c6e5-4c66-add9-79ccfa5d65ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_iniciativa
+  module:
+    - path
+id: taxonomy_term.tipo_iniciativa.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_iniciativa
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

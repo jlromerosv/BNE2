@@ -1,0 +1,21 @@
+uuid: 6ad5c87c-8276-4649-a335-d88fa2162b70
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.entrada_de_blog
+  module:
+    - metatag
+id: node.entrada_de_blog.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: entrada_de_blog
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

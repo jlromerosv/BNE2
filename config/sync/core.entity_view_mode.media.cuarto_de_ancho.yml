@@ -1,0 +1,10 @@
+uuid: 6246fcab-eac2-4fdb-af35-3f5511ee9075
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.cuarto_de_ancho
+label: 'Cuarto de ancho'
+targetEntityType: media
+cache: true

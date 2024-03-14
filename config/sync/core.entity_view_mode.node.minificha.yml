@@ -1,0 +1,10 @@
+uuid: 3c20eee2-57df-48f1-a0a8-df9b978aa668
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.minificha
+label: Minificha
+targetEntityType: node
+cache: true

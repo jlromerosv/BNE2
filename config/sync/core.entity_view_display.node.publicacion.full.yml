@@ -1,0 +1,652 @@
+uuid: 03a83b7b-bbd9-45e7-84ec-780e07a7cff6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.publicacion.title
+    - core.entity_view_mode.node.full
+    - field.field.node.publicacion.body
+    - field.field.node.publicacion.feeds_item
+    - field.field.node.publicacion.field_alias_tipo_contenido
+    - field.field.node.publicacion.field_ano
+    - field.field.node.publicacion.field_archivo
+    - field.field.node.publicacion.field_archivo_2
+    - field.field.node.publicacion.field_archivos
+    - field.field.node.publicacion.field_audios
+    - field.field.node.publicacion.field_codigo_identificativo
+    - field.field.node.publicacion.field_codigo_referencia
+    - field.field.node.publicacion.field_contenido_generico
+    - field.field.node.publicacion.field_contenidos_relacionados
+    - field.field.node.publicacion.field_contenidos_vinculados
+    - field.field.node.publicacion.field_descripcion_corta
+    - field.field.node.publicacion.field_descripcion_sin_formato
+    - field.field.node.publicacion.field_disponibilidad_texto_libre
+    - field.field.node.publicacion.field_domain_access
+    - field.field.node.publicacion.field_domain_all_affiliates
+    - field.field.node.publicacion.field_domain_source
+    - field.field.node.publicacion.field_enlace
+    - field.field.node.publicacion.field_enlaces
+    - field.field.node.publicacion.field_epub_url
+    - field.field.node.publicacion.field_estado
+    - field.field.node.publicacion.field_etiquetas_busqueda
+    - field.field.node.publicacion.field_galeria_de_imagenes
+    - field.field.node.publicacion.field_id_externo
+    - field.field.node.publicacion.field_iframe
+    - field.field.node.publicacion.field_imagen_destacada
+    - field.field.node.publicacion.field_imagen_representativa
+    - field.field.node.publicacion.field_imagenes
+    - field.field.node.publicacion.field_mas_informacion
+    - field.field.node.publicacion.field_meta_tags
+    - field.field.node.publicacion.field_no_mostrar_inverso
+    - field.field.node.publicacion.field_precio_euros
+    - field.field.node.publicacion.field_precio_oferta_euros
+    - field.field.node.publicacion.field_publicaciones
+    - field.field.node.publicacion.field_texto_libre
+    - field.field.node.publicacion.field_tipo_encuadernacion
+    - field.field.node.publicacion.field_tipo_texto_libre_
+    - field.field.node.publicacion.field_tipos
+    - field.field.node.publicacion.field_url_2
+    - field.field.node.publicacion.field_valor
+    - field.field.node.publicacion.field_videos
+    - node.type.publicacion
+  module:
+    - layout_builder
+    - layout_discovery
+    - media_download_all
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          599fb826-f129-4e7a-8b6b-7662f3cc2613:
+            uuid: 599fb826-f129-4e7a-8b6b-7662f3cc2613
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          8dba13f7-7c66-4bb9-b0e7-16e57875e04c:
+            uuid: 8dba13f7-7c66-4bb9-b0e7-16e57875e04c
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:field_tipos'
+              label: 'Tipos de publicación'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          eac0ad80-2da3-463a-b26e-e2ce73fffe5c:
+            uuid: eac0ad80-2da3-463a-b26e-e2ce73fffe5c
+            region: first
+            configuration:
+              id: 'field_block:node:publicacion:field_archivo'
+              label: Archivo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_download_all_label
+                label: above
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          dc037949-5c9a-4c9c-8b10-e6660639124e:
+            uuid: dc037949-5c9a-4c9c-8b10-e6660639124e
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_precio_euros'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+          832088af-25da-4783-9692-6521854c8bb4:
+            uuid: 832088af-25da-4783-9692-6521854c8bb4
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_precio_oferta_euros'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 12
+            additional: {  }
+          4ef3f5cb-b8d5-4b9c-b204-c66547342ce3:
+            uuid: 4ef3f5cb-b8d5-4b9c-b204-c66547342ce3
+            region: first
+            configuration:
+              id: 'field_block:node:publicacion:field_imagen_representativa'
+              label: 'Imagen representativa'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: ficha_publicacion
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          afb800bc-1ebb-4727-adb9-72467aba610e:
+            uuid: afb800bc-1ebb-4727-adb9-72467aba610e
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_codigo_referencia'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          9c521c40-5c09-49b3-8b03-97f43ebd30b6:
+            uuid: 9c521c40-5c09-49b3-8b03-97f43ebd30b6
+            region: first
+            configuration:
+              id: 'field_block:node:publicacion:field_enlace'
+              label: Enlace
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 250
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          98c681b7-6fd6-4c24-8f55-821a3e2c2226:
+            uuid: 98c681b7-6fd6-4c24-8f55-821a3e2c2226
+            region: first
+            configuration:
+              id: 'field_block:node:publicacion:field_archivo_2'
+              label: ePub
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_download_all_label
+                label: above
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          f48cf9f9-4f97-4266-851a-63e1d037dbb3:
+            uuid: f48cf9f9-4f97-4266-851a-63e1d037dbb3
+            region: first
+            configuration:
+              id: 'field_block:node:publicacion:field_contenido_generico'
+              label: 'Enlace Destacado'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          5089cdc5-4271-4703-968d-073336da1e03:
+            uuid: 5089cdc5-4271-4703-968d-073336da1e03
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_ano'
+              label: Año
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          0f0947f7-70d6-49d4-b5f1-5ab90fa12fc0:
+            uuid: 0f0947f7-70d6-49d4-b5f1-5ab90fa12fc0
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_valor'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          1022f777-1211-45d7-8b7f-45e8d3488603:
+            uuid: 1022f777-1211-45d7-8b7f-45e8d3488603
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_descripcion_sin_formato'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          4e0a3305-17c1-457e-9981-db6f2e85ff82:
+            uuid: 4e0a3305-17c1-457e-9981-db6f2e85ff82
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_tipo_encuadernacion'
+              label: 'Tipo de encuadernación'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          1bf96084-61d4-4be8-bf4c-afb169333c5d:
+            uuid: 1bf96084-61d4-4be8-bf4c-afb169333c5d
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_codigo_identificativo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          e1ad9dde-adfd-48b2-828b-d5f94e4caa9b:
+            uuid: e1ad9dde-adfd-48b2-828b-d5f94e4caa9b
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_descripcion_corta'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          c8b3fef7-d58f-4793-95be-5c623bfc98cf:
+            uuid: c8b3fef7-d58f-4793-95be-5c623bfc98cf
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_tipo_texto_libre_'
+              label: NIPO
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          c82567a2-5b90-4d13-ad4e-2eba3e7a9ef7:
+            uuid: c82567a2-5b90-4d13-ad4e-2eba3e7a9ef7
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_estado'
+              label: Disponibilidad
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 14
+            additional: {  }
+          a8d1fd2e-2d1f-483a-8016-77bf4382b2e2:
+            uuid: a8d1fd2e-2d1f-483a-8016-77bf4382b2e2
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_url_2'
+              label: 'Enlace a compra'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 250
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 16
+            additional: {  }
+          92bc2b14-8ac8-4e59-af96-3152116689ab:
+            uuid: 92bc2b14-8ac8-4e59-af96-3152116689ab
+            region: first
+            configuration:
+              id: 'field_block:node:publicacion:field_epub_url'
+              label: 'ePub Url'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 250
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          493814cf-f4a0-4c8d-95a1-42c5af254d46:
+            uuid: 493814cf-f4a0-4c8d-95a1-42c5af254d46
+            region: second
+            configuration:
+              id: 'field_block:node:publicacion:field_texto_libre'
+              label: 'Información adicional'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 15
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          1f9b3d69-9272-467d-a4cc-ece677734a51:
+            uuid: 1f9b3d69-9272-467d-a4cc-ece677734a51
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          cb344ce3-c3a7-410f-b3b1-5dc0c3a07d37:
+            uuid: cb344ce3-c3a7-410f-b3b1-5dc0c3a07d37
+            region: content
+            configuration:
+              id: 'field_block:node:publicacion:field_mas_informacion'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.publicacion.full
+targetEntityType: node
+bundle: publicacion
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_archivo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_codigo_identificativo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_codigo_referencia:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_descripcion_corta:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_descripcion_sin_formato:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_imagen_destacada:
+    type: media_download_all_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_mas_informacion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_precio_euros:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_precio_oferta_euros:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_tipos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_valor:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  feeds_item: true
+  field_alias_tipo_contenido: true
+  field_ano: true
+  field_archivo_2: true
+  field_archivos: true
+  field_audios: true
+  field_contenido_generico: true
+  field_contenidos_relacionados: true
+  field_contenidos_vinculados: true
+  field_disponibilidad_texto_libre: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_enlace: true
+  field_enlaces: true
+  field_epub_url: true
+  field_estado: true
+  field_etiquetas_busqueda: true
+  field_galeria_de_imagenes: true
+  field_id_externo: true
+  field_iframe: true
+  field_imagen_representativa: true
+  field_imagenes: true
+  field_meta_tags: true
+  field_no_mostrar_inverso: true
+  field_publicaciones: true
+  field_texto_libre: true
+  field_tipo_encuadernacion: true
+  field_tipo_texto_libre_: true
+  field_url_2: true
+  field_videos: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

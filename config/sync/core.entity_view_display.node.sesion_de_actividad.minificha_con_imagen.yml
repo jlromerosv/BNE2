@@ -1,0 +1,85 @@
+uuid: f57cc983-1186-4d5e-b524-ab49e2ac34de
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.minificha_con_imagen
+    - field.field.node.sesion_de_actividad.body
+    - field.field.node.sesion_de_actividad.field_actividad_generica
+    - field.field.node.sesion_de_actividad.field_domain_access
+    - field.field.node.sesion_de_actividad.field_domain_all_affiliates
+    - field.field.node.sesion_de_actividad.field_domain_source
+    - field.field.node.sesion_de_actividad.field_fecha_fin
+    - field.field.node.sesion_de_actividad.field_fecha_inicio
+    - field.field.node.sesion_de_actividad.field_marca_agua
+    - field.field.node.sesion_de_actividad.field_tipo
+    - node.type.sesion_de_actividad
+  module:
+    - datetime
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.sesion_de_actividad.minificha_con_imagen
+targetEntityType: node
+bundle: sesion_de_actividad
+mode: minificha_con_imagen
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_actividad_generica:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: minificha_con_imagen
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_tipo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_marca_agua: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

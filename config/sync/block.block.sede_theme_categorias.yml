@@ -1,0 +1,29 @@
+uuid: 3ea37573-3748-489f-a52c-0857f62f37b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - facets.facet.categorias_noticia
+  module:
+    - facets
+    - system
+  theme:
+    - sede_theme
+id: sede_theme_categorias
+theme: sede_theme
+region: sidebar_first
+weight: -25
+provider: null
+plugin: 'facet_block:categorias_noticia'
+settings:
+  id: 'facet_block:categorias_noticia'
+  label: 'Categorías de noticia'
+  label_display: '0'
+  provider: facets
+  block_id: categorias
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/2821

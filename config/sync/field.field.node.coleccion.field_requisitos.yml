@@ -1,0 +1,21 @@
+uuid: 587afe06-33c0-4733-8f6b-23da822b1b5c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requisitos
+    - node.type.coleccion
+  module:
+    - text
+id: node.coleccion.field_requisitos
+field_name: field_requisitos
+entity_type: node
+bundle: coleccion
+label: 'Texto introductorio colecciones'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

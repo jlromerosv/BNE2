@@ -1,0 +1,18 @@
+uuid: d5410256-afb8-484b-ad99-b95297947da0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---bne---contacto-enlace-supe
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.mx1---bne---contacto-enlace-supe
+target_entity_type_id: menu_link_content
+target_bundle: mx1---bne---contacto-enlace-supe
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,19 @@
+uuid: c55acb5b-dab9-4f53-9b4f-525660b1b1b5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_marco_legal
+field_name: field_marco_legal
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

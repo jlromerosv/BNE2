@@ -1,0 +1,93 @@
+uuid: 62032009-8acb-4243-8c6d-7315988010af
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_convocatorias_de_esta_pagi
+    - node.type.bolsa_de_trabajo
+    - views.view.entidades_nodo
+  module:
+    - viewfield
+id: node.bolsa_de_trabajo.field_convocatorias_de_esta_pagi
+field_name: field_convocatorias_de_esta_pagi
+entity_type: node
+bundle: bolsa_de_trabajo
+label: 'Convocatorias de esta página'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: fe0e27dd-0d3b-4e24-a1dd-80c39d7c219a
+    display_id: block_6
+    arguments: ''
+    items_to_display: ''
+    token_help: ''
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    entidades_nodo: entidades_nodo
+    files: '0'
+    media_library: '0'
+    bloque_mostrar_ocultar_buscador_bne: '0'
+    bloques_de_noticias: '0'
+    buscadores_a_texto_completo: '0'
+    buscador_solr_texto_completo: '0'
+    colecciones: '0'
+    colectivos: '0'
+    comment: '0'
+    content: '0'
+    contenido_de_la_taxonomia: '0'
+    moderated_content: '0'
+    affiliated_content: '0'
+    contenidos_de_la_misma_taxonomia: '0'
+    contenidos_filtrados_por_taxonomia: '0'
+    contenidos_relacionados: '0'
+    content_browser: '0'
+    destacados_automaticos: '0'
+    destacados_manuales_de_seccion_de_taxonomia_2_: '0'
+    affiliated_editors: '0'
+    webform_submissions: '0'
+    feeds_feed: '0'
+    watchdog: '0'
+    hitos: '0'
+    horarios: '0'
+    broken_links_report: '0'
+    block_content: '0'
+    listados_estandar: '0'
+    poll_list: '0'
+    content_recent: '0'
+    lugares: '0'
+    group_members: '0'
+    media: '0'
+    poll_admin: '0'
+    proximos_eventos: '0'
+    redirect: '0'
+    scheduler_scheduled_content: '0'
+    test_jaime: '0'
+    test_jaime_minificha: '0'
+    test_minificha_con_imagen: '0'
+    test_organigrama: '0'
+    test_page_alias_jaime: '0'
+    transparencia: '0'
+    taxonomy_term: '0'
+    terminos_taxonomia: '0'
+    user_admin_people: '0'
+    widget_multimedia_enlaces: '0'
+    widgets_destacados_manuales_home: '0'
+    widgets_media: '0'
+    widget: '0'
+    widgets_imagenes: '0'
+    widgets_multimedia: '0'
+    arbol_de_taxonomia: '0'
+  allowed_display_types:
+    block: block
+    feed: '0'
+    entity_browser: '0'
+    embed: '0'
+    default: '0'
+    page: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

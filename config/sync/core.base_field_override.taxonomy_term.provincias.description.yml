@@ -1,0 +1,20 @@
+uuid: 5f819662-7a57-401d-9ab1-c4ea579fcb58
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.provincias
+  module:
+    - text
+id: taxonomy_term.provincias.description
+field_name: description
+entity_type: taxonomy_term
+bundle: provincias
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

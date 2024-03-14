@@ -1,0 +1,27 @@
+uuid: cf60c094-c154-42e8-8431-b986962c4ce2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_actualizacion_visibl
+    - node.type.bolsa_de_trabajo
+  module:
+    - datetime
+id: node.bolsa_de_trabajo.field_fecha_actualizacion_visibl
+field_name: field_fecha_actualizacion_visibl
+entity_type: node
+bundle: bolsa_de_trabajo
+label: 'Fecha de actualización'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    field_defaults:
+      update_defaults: 0
+      no_overwrite: 0
+default_value_callback: ''
+settings: {  }
+field_type: datetime

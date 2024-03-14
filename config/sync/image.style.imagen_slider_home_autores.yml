@@ -1,0 +1,26 @@
+uuid: 69584881-b14c-4807-a13c-72ed234151fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.carrousel_autores
+  module:
+    - crop
+name: imagen_slider_home_autores
+label: 'Imagen slider home autores'
+effects:
+  d8a237af-8872-4460-993c-f56fad277325:
+    uuid: d8a237af-8872-4460-993c-f56fad277325
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: carrousel_autores
+      automatic_crop_provider: null
+  3dd3e809-9880-44ee-a7e6-d990b7736d77:
+    uuid: 3dd3e809-9880-44ee-a7e6-d990b7736d77
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1920
+      height: 700
+      anchor: center-center

@@ -1,0 +1,12 @@
+uuid: e158229b-6f34-4d45-adcb-a3d2bb52a2be
+langcode: es
+status: true
+dependencies: {  }
+id: linea_continua_40_izquierda
+label: 'Linea continua 40% izquierda'
+image: ''
+description: ''
+html:
+  value: '<div class="linea-continua-40-izquierda" style="width: 40%; border-bottom-style: solid; border-bottom-color: #444444; border-bottom-width: 1px; margin-right: auto">&nbsp;</div>'
+  format: html_full
+weight: 2

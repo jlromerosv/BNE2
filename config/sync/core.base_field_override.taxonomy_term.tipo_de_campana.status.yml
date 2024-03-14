@@ -1,0 +1,22 @@
+uuid: f3486aee-1765-4e89-979c-a2f56284e654
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_campana
+id: taxonomy_term.tipo_de_campana.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_campana
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

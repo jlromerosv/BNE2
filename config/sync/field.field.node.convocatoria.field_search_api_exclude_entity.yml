@@ -1,0 +1,23 @@
+uuid: 0067b169-ae1c-46c2-9fa9-a51c970a2a2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_search_api_exclude_entity
+    - node.type.convocatoria
+  module:
+    - search_api_exclude_entity
+id: node.convocatoria.field_search_api_exclude_entity
+field_name: field_search_api_exclude_entity
+entity_type: node
+bundle: convocatoria
+label: 'Excluir de los resultados de búsqueda'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: false
+default_value_callback: ''
+settings: {  }
+field_type: search_api_exclude_entity

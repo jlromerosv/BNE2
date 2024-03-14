@@ -1,0 +1,14 @@
+uuid: 431a7f95-c125-44c8-920f-2586bedcf2b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_asistencia_a_evento
+id: taxonomy_vocabulary_tipo_de_asistencia_a_evento
+entity_type_id: taxonomy_vocabulary
+entity_id: tipo_de_asistencia_a_evento
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

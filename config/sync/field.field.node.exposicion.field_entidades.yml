@@ -1,0 +1,28 @@
+uuid: 464abcc6-9e9e-473f-9f07-faaba57cadc1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidades
+    - node.type.entidad
+    - node.type.exposicion
+id: node.exposicion.field_entidades
+field_name: field_entidades
+entity_type: node
+bundle: exposicion
+label: Organiza
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

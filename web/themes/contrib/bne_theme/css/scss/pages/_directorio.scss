@@ -1,0 +1,296 @@
+.ps-path-directorio-de-contacto, .ps-node-2884 {
+  #block-bne-theme-contenidoprincipaldelapagina {
+    padding: 0em 0 0 1em !important;
+    @media (max-width: 992px) {
+      padding: 0em !important;
+    }
+    h1 {
+      display: none;
+    }
+    article {
+      .node__content {
+      }
+    }
+  }
+}
+
+.ps-directorio {
+  margin-top: 1.9em;
+  .view-filters {
+    padding: 0 3em;
+    // margin-top: 2em;
+    min-height: 126px;
+    @media (max-width: 650px) {
+      min-height: 220px;
+    }
+    @media (max-width: 991.98px) {
+      padding: 0 15px;
+    }
+    .form--inline {
+      @media (max-width: 650px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+      }
+    }
+  }
+  .view-content {
+    // display: grid;
+    // grid-template-columns: 1fr;
+
+    // @media (min-width: 576px) {
+    //   grid-template-columns: 1fr 1fr;
+    // }
+
+    // @media (min-width: 992px) {
+    //   grid-template-columns: 1fr 1fr 1fr;
+    // }
+
+    // @media (min-width: 1600px) {
+    //   grid-template-columns: repeat(4, 1fr);
+    //   border-left: 0.5px solid $bne_color_3;
+    //   .views-row{
+
+    //   }
+    // }
+    @include cuadricula-listado();
+    .views-row {
+      // border: 0.5px solid $bne_color_3;
+      background: $blanco;
+      padding: 30px;
+      &:hover{
+        position: relative;
+        z-index: 20;
+        box-shadow: 0 0 8px #d3d3d3;
+      }
+      cursor: pointer;
+      article {
+        h2 {
+          a {
+            font-size: 24px;
+            color: $negro;
+            font-family: $dm-serif;
+            font-weight: $dm-serif-regular;
+            line-height: 36px;
+          }
+          &::after {
+            display: none;
+          }
+        }
+        .node__content {
+          .layout {
+            .layout__region {
+              .block-field-blocknodelugartitle, .block-field-blocknodeserviciotitle, .block-field-blocknodeentidadtitle {
+                a{
+                  font-size: 24px;
+                  font-family: "DM Serif Text", serif;
+                  font-weight: 400;
+                  color: $negro;
+                  line-height: 30px;
+                  margin-bottom: 0.5em;
+                }
+                font-size: 24px;
+                font-family: "DM Serif Text", serif;
+                font-weight: 400;
+                color: $negro;
+                line-height: 30px;
+                margin-bottom: 0.5em;
+              }
+              .block {
+                margin-bottom: 0.5em;
+                .field--name-field-telefonos {
+                  font-size: 16px;
+                  color: $bne_color_2;
+                  line-height: 24px;
+                  letter-spacing: 0.48px;
+                  @include estilos_body();
+                }
+              }
+              .block {
+                .field--name-field-email, .field--name-field-email-texto {
+                  font-size: 16px;
+                  color: $bne_color_2;
+                  line-height: 24px;
+                  letter-spacing: 0.48px;
+                  word-break: break-word;
+                  @include estilos_body();
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ps-directorio {
+  .view-filters {
+    //margin-bottom: 3em;
+    .form--inline {
+      display: grid;
+
+      grid-template-columns: 1fr 225px;
+      .form-type-textfield {
+        margin: 0;
+        height: 60px;
+
+        label {
+          display: none;
+        }
+
+        input {
+          height: 60px;
+          padding: 0 2% 0 2%;
+          border: 0.5px solid $bne_color_3;
+          background-color: $blanco;
+          width: 100%;
+
+          &::placeholder {
+            font-size: 14px;
+            color: $bne_color_2;
+          }
+        }
+      }
+
+      .form-item-field-domain-access {
+        display: none;
+      }
+
+      .form-actions {
+        margin: 0;
+        height: 60px;
+        width: 100%;
+        max-width: 225px;
+        grid-column: 2/3;
+        grid-row: 1;
+        display: flex;
+
+        input {
+          &:nth-child(1) {
+            width: 100%;
+            min-width: 150px;
+          }
+
+          &:nth-child(2) {
+            width: 65px;
+            margin: 0 0 0 1px;
+            background-image: url(/themes/contrib/bne_theme/recursos/reload.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 25px;
+            font-size: 0;
+          }
+
+          background-color: $bne_color_5;
+          height: 60px;
+          font-size: 16px;
+          color: $blanco;
+          letter-spacing: 0.96px;
+          line-height: 24px;
+          border: none;
+          padding: 0;
+        }
+
+
+      }
+
+      @media (max-width: 650px) {
+        grid-template-columns: 1fr 60px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1em;
+
+        .form-item-search-api-fulltext {
+          grid-column: span 2;
+
+          input {
+            width: auto;
+          }
+        }
+
+        .form-actions {
+          grid-row: 2;
+          grid-column: span 2;
+          width: auto;
+          max-width: 100%;
+
+          // input {
+          //   width: 100% !important;
+          // }
+          input {
+            &:nth-child(2) {
+              border-left: 1px solid $blanco;
+            }
+          }
+        }
+
+        .form-actions {
+          position: relative;
+          height: 60px;
+          background-color: $bne_color_5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          input {
+            font-size: 16px;
+            color: $blanco;
+            letter-spacing: 0.96px;
+            line-height: 24px;
+            background-color: transparent;
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            width: 60px;
+            height: 60px;
+            z-index: 20;
+          }
+
+          &::after {
+            content: "";
+            height: 30px;
+            display: block;
+            width: 30px;
+            background: url(/themes/contrib/bne_theme/recursos/simbolo-de-la-interfaz-de-busqueda.svg)
+              no-repeat center;
+            background-size: 30px;
+            display: none;
+          }
+        }
+
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // grid-gap: 1em;
+        // display: flex;
+        // flex-direction: column;
+        // .form-type-textfield {
+        //   margin-bottom: 1em;
+        // }
+        // .form-actions {
+        //   display: grid;
+        //   grid-template-columns: 1fr;
+        //   grid-gap: 1em;
+        //   width: 100%;
+        //   max-width: 100%;
+        //   padding-bottom: 3em;
+        //   input {
+        //     width: 100%;
+        //     background-color: $bne_color_5;
+        //     height: 60px;
+        //     font-size: 16px;
+        //     color: $blanco;
+        //     letter-spacing: 0.96px;
+        //     line-height: 24px;
+        //     border: none;
+        //     &:nth-child(2) {
+        //       margin-left: 0;
+        //       margin-bottom: 3em;
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
+
+
+}

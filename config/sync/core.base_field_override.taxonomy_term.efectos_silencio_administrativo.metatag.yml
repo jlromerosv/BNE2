@@ -1,0 +1,18 @@
+uuid: 8c69fb3f-249d-400a-a690-80fe49fd6a5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.efectos_silencio_administrativo
+id: taxonomy_term.efectos_silencio_administrativo.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: efectos_silencio_administrativo
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,29 @@
+uuid: 1547f77b-fbc8-4924-ae8c-14023ff745a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorias
+    - node.type.noticia
+    - taxonomy.vocabulary.categoria_actualidad
+id: node.noticia.field_categorias
+field_name: field_categorias
+entity_type: node
+bundle: noticia
+label: 'Categorías de actualidad'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_actualidad: categoria_actualidad
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 63ddc870-2d3c-44fc-a5d3-1ac4794ef5d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iniciativa
+id: node.iniciativa.uid
+field_name: uid
+entity_type: node
+bundle: iniciativa
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

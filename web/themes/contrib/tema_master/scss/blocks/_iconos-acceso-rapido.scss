@@ -1,0 +1,52 @@
+/*
+    ========== ICONOS ACCESO DIRECTO ==========
+
+    Estilos dedicados a los iconos de acceso directo
+
+    Se ha hecho uso de los siguientes MIXINS:
+    
+        @mixin display_flex($direction, $justify_content, $align_items)
+
+    ------------------------- MIXINS --------------------------
+    display_flex = Mixin para las vistas display flex
+
+    ----------------------- VARIABLES -------------------------
+    $direction = Propiedad flex-direction (Flex)
+
+    $justify_content = Propiedad justify-content (Flex)
+
+    $align_items = Propiedad align-items (Flex)
+
+    $main_color_5 = Color principal de tipo 5
+*/
+
+
+.ps-iconos-acceso-rapido {
+    .view-content {
+        @media (min-width: 420px) {
+            @include display_flex(row, center, center);
+            flex-wrap: wrap;
+        }
+        & > div {
+            border: 1px solid $main_color_5;
+            margin: 15px;
+            padding: 15px 10px;
+            @include display_flex(row, center, center);
+            @media (min-width: 420px) {
+                width: 130px;
+                height: 130px;
+                text-align: center;
+                padding: 0;
+                @include display_flex(column, center, center);
+            }
+            div {
+                margin-left: 15px;
+                @media (min-width: 420px) {
+                    margin-top: 10px;
+                    margin-left: 0;
+                }
+            }
+
+        }
+    }
+}

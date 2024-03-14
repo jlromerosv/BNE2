@@ -1,0 +1,22 @@
+uuid: 31159d91-3c12-4b92-a398-cb1dc5d4aeb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento
+id: node.documento.status
+field_name: status
+entity_type: node
+bundle: documento
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

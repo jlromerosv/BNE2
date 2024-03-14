@@ -1,0 +1,14 @@
+uuid: a3b4bcc6-096a-4764-b4c4-12e288762a66
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.buzones_de_envio
+id: taxonomy_vocabulary_buzones_de_envio
+entity_type_id: taxonomy_vocabulary
+entity_id: buzones_de_envio
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

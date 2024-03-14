@@ -1,0 +1,99 @@
+description: 'Localizar e xestionar qué persoas interactúan co seu sitio web.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Seguinte ›'
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Elementos por páxina'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desprazamento
+      fields:
+        user_bulk_form:
+          label: 'Actualización masiva'
+        name:
+          label: 'Nome de usuario/a'
+        status:
+          label: Estado
+          settings:
+            format_custom_true: Activo
+            format_custom_false: Bloqueado
+        roles_target_id:
+          label: Roles
+        field_domain_access:
+          separator: ', '
+        field_domain_all_affiliates:
+          separator: ', '
+        created:
+          label: 'Membro durante'
+        access:
+          label: 'Último acceso'
+        operations:
+          label: Operacións
+        mail:
+          separator: ', '
+      filters:
+        roles_target_id:
+          expose:
+            label: Rol
+        permission:
+          expose:
+            label: Permiso
+        status:
+          group_info:
+            label: Estado
+            group_items:
+              1:
+                title: Activo
+              2:
+                title: Bloqueado
+      title: Persoas
+      empty:
+        area_text_custom:
+          content: 'Non hai persoas dispoñibles.'
+      use_more_text: máis
+  page_1:
+    display_options:
+      menu:
+        title: Lista
+        description: 'Localizar e xestionar qué persoas interactúan co seu sitio web.'
+      tab_options:
+        title: Persoas
+        description: 'Xestionar contas de usuarios, papeis e permisos.'
+      arguments:
+        field_domain_access_target_id:
+          exception:
+            title: Todo
+  page_2:
+    display_options:
+      filters:
+        roles_target_id:
+          expose:
+            label: Rol
+        permission:
+          expose:
+            label: Permiso
+        status:
+          group_info:
+            label: Estado
+            group_items:
+              1:
+                title: Activo
+              2:
+                title: Bloqueado
+        field_domain_access_target_id:
+          expose:
+            label: Dominio

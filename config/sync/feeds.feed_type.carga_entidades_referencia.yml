@@ -1,0 +1,87 @@
+uuid: 9408dbfe-8c73-4848-8095-e460feb8c190
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.entidad_referencia_.title
+    - field.field.node.entidad_referencia_.field_domain_access
+    - field.field.node.entidad_referencia_.field_id_externo
+    - field.field.node.entidad_referencia_.field_imagen_representativa
+    - node.type.entidad_referencia_
+  module:
+    - node
+label: 'Carga Entidades Referencia'
+id: carga_entidades_referencia
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: entidad_referencia_
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  dominio:
+    value: Dominio
+    label: Dominio
+    machine_name: dominio
+    type: csv
+  name:
+    value: Name
+    label: Name
+    machine_name: name
+    type: csv
+  rutalogo:
+    value: RutaLogo
+    label: RutaLogo
+    machine_name: rutalogo
+    type: csv
+mappings:
+  -
+    target: field_domain_access
+    map:
+      target_id: dominio
+    settings:
+      reference_by: hostname
+  -
+    target: title
+    map:
+      value: name
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_imagen_representativa
+    map:
+      target_id: rutalogo
+    settings:
+      language: ''
+      reference_by: field_id_externo
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_id_externo
+    map:
+      value: name
+    settings:
+      language: null
+    unique:
+      value: '1'

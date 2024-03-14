@@ -1,0 +1,21 @@
+uuid: bfde9f2a-8a9a-480f-930d-6e923b11ce9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.evento
+  module:
+    - text
+id: node.evento.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: evento
+label: 'Más información'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

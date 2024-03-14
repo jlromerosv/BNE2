@@ -1,0 +1,8 @@
+uuid: 3322b746-0581-4a11-90a2-dc5f247f4bd0
+langcode: es
+status: true
+dependencies: {  }
+name: 'Buzones de envio'
+vid: buzones_de_envio
+description: ''
+weight: 0

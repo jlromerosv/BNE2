@@ -1,0 +1,22 @@
+uuid: febc76c8-2f8b-4fbb-ab0e-9242a7c92f5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+id: node.enlace_a_web_archivada.sticky
+field_name: sticky
+entity_type: node
+bundle: enlace_a_web_archivada
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

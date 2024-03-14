@@ -1,0 +1,18 @@
+uuid: 9e4c3cd3-cda1-4093-9abe-c985651d4656
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organigrama_de_prueba
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.organigrama_de_prueba
+target_entity_type_id: taxonomy_term
+target_bundle: organigrama_de_prueba
+default_langcode: site_default
+language_alterable: false

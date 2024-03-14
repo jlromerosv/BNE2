@@ -1,0 +1,65 @@
+uuid: 467eac2c-c308-4be4-b512-6db42ff27693
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.entrada_de_blog.body
+    - field.field.node.entrada_de_blog.field_id_externo
+    - node.type.entrada_de_blog
+  module:
+    - node
+label: 'Actualización body con URLs Wordpress'
+id: actualizacion_body_con_urls_word
+description: 'Despues de este script se debe ejecutar inmediatamente otro que sustituya las URLs de imagenes del body por las de Drupal'
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: entrada_de_blog
+  langcode: es
+  insert_new: 0
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  id_externo:
+    value: Id_externo
+    label: Id_externo
+    machine_name: id_externo
+    type: csv
+  descripcion2:
+    value: Descripcion2
+    label: Descripcion2
+    machine_name: descripcion2
+    type: csv
+mappings:
+  -
+    target: field_id_externo
+    map:
+      value: id_externo
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: descripcion2
+      summary: ''
+    settings:
+      language: ''
+      format: html_full

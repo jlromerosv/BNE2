@@ -1,0 +1,15 @@
+uuid: 869b505f-4dbf-4639-ab6e-6b4fa8df6f33
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_destacados_home_lg
+label: 'Bloque destacados home LG'
+effects:
+  2de61d4b-6f51-4ae3-81a9-53c5fc6b9dc9:
+    uuid: 2de61d4b-6f51-4ae3-81a9-53c5fc6b9dc9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 421
+      anchor: center-center

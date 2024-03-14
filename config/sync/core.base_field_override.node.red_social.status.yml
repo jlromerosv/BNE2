@@ -1,0 +1,22 @@
+uuid: 40160e41-d131-4a94-b06c-8bbd1ddf75fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.red_social
+id: node.red_social.status
+field_name: status
+entity_type: node
+bundle: red_social
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

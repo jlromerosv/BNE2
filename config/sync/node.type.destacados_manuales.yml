@@ -1,0 +1,32 @@
+uuid: e7d2c68b-8bbb-4c8f-be86-df87deb3de16
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: '_x_Destacados manuales'
+type: destacados_manuales
+description: "Para añadir los contenidos de Destacados y Te Puede Interesar manualmente a una término de taxonomía de Tema o de Área Organizativa, que se nos presentará como una sección. \r\nLos términos de la taxonomía no los podemos controlar por permisos de nodo, así que le damos los permisos a este nodo de contenido. "
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

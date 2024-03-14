@@ -1,0 +1,20 @@
+uuid: 7649ee74-b0fc-4601-aa29-706ab326fedd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.servicio
+  module:
+    - options
+id: node.servicio.publish_state
+field_name: publish_state
+entity_type: node
+bundle: servicio
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

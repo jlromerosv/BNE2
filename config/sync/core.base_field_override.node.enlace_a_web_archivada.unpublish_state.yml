@@ -1,0 +1,20 @@
+uuid: 90e0f80f-6d49-4b5b-a459-be61a92fd9dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.enlace_a_web_archivada
+  module:
+    - options
+id: node.enlace_a_web_archivada.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: enlace_a_web_archivada
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,62 @@
+uuid: 0ead3275-5441-4d87-ac8d-6160a87c0511
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentario
+    - core.entity_view_mode.comment.full
+    - field.field.comment.comentario.comment_body
+    - field.field.comment.comentario.feeds_item
+    - field.field.comment.comentario.field_email_comentario
+    - field.field.comment.comentario.field_fecha_comentario
+    - field.field.comment.comentario.field_id_externo
+    - field.field.comment.comentario.field_nombre_comentario
+  module:
+    - datetime
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: comment.comentario.full
+targetEntityType: comment
+bundle: comentario
+mode: full
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fecha_comentario:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: fecha_comentario
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_nombre_comentario:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  feeds_item: true
+  field_email_comentario: true
+  field_id_externo: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,8 @@
+uuid: 10f1b77f-7795-4aad-b9b4-4fd41fd61fae
+langcode: es
+status: true
+dependencies: {  }
+name: 'Alias de tipo de contenido'
+vid: alias_de_tipo_de_contenido
+description: ''
+weight: 0

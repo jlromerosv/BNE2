@@ -1,0 +1,63 @@
+uuid: 5b626207-919a-4cad-bc79-8aeb7c54599b
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:html:f52a299d-bfe9-4098-9a58-4e395759cdc4'
+  module:
+    - block_content
+    - language
+    - node
+  theme:
+    - bne_theme
+id: readspeakerlistados_2
+theme: bne_theme
+region: content
+weight: -63
+provider: null
+plugin: 'block_content:f52a299d-bfe9-4098-9a58-4e395759cdc4'
+settings:
+  id: 'block_content:f52a299d-bfe9-4098-9a58-4e395759cdc4'
+  label: 'ReadSpeaker contenidos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      autor: autor
+      campana: campana
+      catalogo: catalogo
+      coleccion: coleccion
+      convocatoria: convocatoria
+      documento: documento
+      dossier: dossier
+      entidad: entidad
+      entrada_de_blog: entrada_de_blog
+      evento: evento
+      faq: faq
+      galeria_de_documentos: galeria_de_documentos
+      galeria_de_imagenes: galeria_de_imagenes
+      horarios: horarios
+      iniciativa: iniciativa
+      lugar: lugar
+      noticia: noticia
+      obra: obra
+      pagina_basica: pagina_basica
+      persona: persona
+      publicacion: publicacion
+      referencias_bibliograficas: referencias_bibliograficas
+      servicio: servicio
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es

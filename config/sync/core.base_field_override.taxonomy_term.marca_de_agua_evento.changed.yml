@@ -1,0 +1,18 @@
+uuid: fc101d60-b0aa-4a3b-9205-79c7b0a0e1b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.marca_de_agua_evento
+id: taxonomy_term.marca_de_agua_evento.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: marca_de_agua_evento
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

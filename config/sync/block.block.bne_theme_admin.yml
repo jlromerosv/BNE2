@@ -1,0 +1,27 @@
+uuid: 00d673fb-4772-4b47-abe3-c15c20aafbe6
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - bne_theme
+_core:
+  default_config_hash: OFEDxrButmQ8Vac1kiVr1gtw6vYKuSJPr9cJQZVKCKg
+id: bne_theme_admin
+theme: bne_theme
+region: sidebar_first
+weight: -22
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administración
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

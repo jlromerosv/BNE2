@@ -1,0 +1,28 @@
+uuid: c6daab8b-a225-4c76-8ad2-128944b0da7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clasificacion_contenidos
+    - node.type.clasificacion_contenidos
+    - node.type.noticia
+id: node.noticia.field_clasificacion_contenidos
+field_name: field_clasificacion_contenidos
+entity_type: node
+bundle: noticia
+label: clasificacion_contenidos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      clasificacion_contenidos: clasificacion_contenidos
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

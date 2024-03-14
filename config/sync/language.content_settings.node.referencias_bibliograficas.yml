@@ -1,0 +1,18 @@
+uuid: e5f9408f-7dd0-4998-9010-a47bb2240049
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.referencias_bibliograficas
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.referencias_bibliograficas
+target_entity_type_id: node
+target_bundle: referencias_bibliograficas
+default_langcode: site_default
+language_alterable: false

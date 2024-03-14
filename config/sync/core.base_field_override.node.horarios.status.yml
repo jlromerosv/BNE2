@@ -1,0 +1,22 @@
+uuid: 4dd5588e-33dc-4e95-99a7-bcd8d418da81
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+id: node.horarios.status
+field_name: status
+entity_type: node
+bundle: horarios
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

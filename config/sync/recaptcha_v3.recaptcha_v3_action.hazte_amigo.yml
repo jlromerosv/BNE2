@@ -1,0 +1,8 @@
+uuid: 600c3ec9-28d1-4c0a-b8d2-f66324dce069
+langcode: es
+status: true
+dependencies: {  }
+id: hazte_amigo
+label: 'Hazte Amigo'
+threshold: 0.9
+challenge: default

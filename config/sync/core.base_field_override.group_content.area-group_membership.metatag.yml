@@ -1,0 +1,18 @@
+uuid: f4f69d25-a4ad-490a-a2c7-8e5d0dbe7f88
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.area-group_membership
+id: group_content.area-group_membership.metatag
+field_name: metatag
+entity_type: group_content
+bundle: area-group_membership
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

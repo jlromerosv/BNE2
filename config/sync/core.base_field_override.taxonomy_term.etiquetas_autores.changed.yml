@@ -1,0 +1,18 @@
+uuid: ae62b52b-66ce-4c31-978f-631f9bdc48ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_autores
+id: taxonomy_term.etiquetas_autores.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: etiquetas_autores
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

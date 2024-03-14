@@ -1,0 +1,26 @@
+uuid: 672eb980-d9a4-44fe-b878-d024d2dcfcd2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.domain_access
+    - taxonomy.vocabulary.area_de_transparencia
+id: taxonomy_term.area_de_transparencia.domain_access
+field_name: domain_access
+entity_type: taxonomy_term
+bundle: area_de_transparencia
+label: domain_access
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

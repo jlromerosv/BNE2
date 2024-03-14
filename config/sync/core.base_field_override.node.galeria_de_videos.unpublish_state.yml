@@ -1,0 +1,20 @@
+uuid: 29fd4d27-e904-4ef8-87d4-3587eb3975a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_videos
+  module:
+    - options
+id: node.galeria_de_videos.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: galeria_de_videos
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

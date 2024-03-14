@@ -1,0 +1,30 @@
+uuid: 28ab8c81-a233-4168-aeac-efdfebb73af7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.iniciativa
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.iniciativa.field_orden
+field_name: field_orden
+entity_type: node
+bundle: iniciativa
+label: Orden
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

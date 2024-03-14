@@ -1,0 +1,18 @@
+uuid: 18e795c9-b20c-4f82-9197-b71d5dffa8df
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mx1---fabne---sidebar---hazte-am
+id: menu_link_content.mx1---fabne---sidebar---hazte-am.title
+field_name: title
+entity_type: menu_link_content
+bundle: mx1---fabne---sidebar---hazte-am
+label: 'Título del enlace del menú.'
+description: 'El texto que se usará en el menú para este enlace.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

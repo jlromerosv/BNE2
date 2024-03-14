@@ -1,0 +1,14 @@
+uuid: 30b45104-b506-42c7-a9e8-985fc02a8d39
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.root
+  module:
+    - user
+id: user_add_role_action.root
+label: 'Añade el rol Root al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: root

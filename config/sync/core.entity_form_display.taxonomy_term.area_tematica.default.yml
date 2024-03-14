@@ -1,0 +1,92 @@
+uuid: dfe49622-15cb-4f14-bb31-8a3a2d510c00
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.area_tematica.domain_access
+    - field.field.taxonomy_term.area_tematica.field_destacados_manuales
+    - field.field.taxonomy_term.area_tematica.field_entidad_representada
+    - field.field.taxonomy_term.area_tematica.field_grupo_de_temas
+    - taxonomy.vocabulary.area_tematica
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - path
+    - text
+id: taxonomy_term.area_tematica.default
+targetEntityType: taxonomy_term
+bundle: area_tematica
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  domain_access:
+    type: options_buttons
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_destacados_manuales:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: content_browser
+  field_entidad_representada:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_grupo_de_temas:
+    type: options_buttons
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  langcode: true

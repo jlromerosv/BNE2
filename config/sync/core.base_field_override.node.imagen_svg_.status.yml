@@ -1,0 +1,22 @@
+uuid: 98c1e028-428c-4f04-855a-4010af9a23db
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_svg_
+id: node.imagen_svg_.status
+field_name: status
+entity_type: node
+bundle: imagen_svg_
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

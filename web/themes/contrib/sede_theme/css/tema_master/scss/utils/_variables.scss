@@ -1,0 +1,220 @@
+/*
+   ========== Sass Variables ==========
+
+   Fichero dedicado a todas las variables del tema.
+   
+   Estas variables atienden a un diseño previamente definido.
+
+*/
+
+
+
+//1. colores_______________________________________________________________________________________________
+    //1.1. COLORES PRINCIPALES_____________________________________________________________________________
+      $main_color_1: #1F4968;
+      $main_color_2: #181818;
+      $main_color_3: #EEEEEE;
+      $main_color_4: #F9F9F9;
+      $main_color_5: #617F95;
+      $main_color_6: #444444;
+
+      $blanco: #FFFFFF;
+      $negro: #000000; 
+
+      $color_upopular:#970076;
+      $color_albacete:#B31C46;
+
+      $error_color: #DC0000;
+      $success_color: #33D504;
+
+    //1.2. COLORES HEADING <H>__________________________________________________________________________________
+      $h1_color: $main_color_1;
+      $h2_color: $main_color_1;
+      $h3_color: $main_color_2;
+      $h4_color: $main_color_1;
+      $h5_color: $main_color_2;
+      $h6_color: $main_color_1;
+
+   //1.3. COLORES ENLACES <a>__________________________________________________________________________________
+      $a_color: $main_color_1;
+      $a_color_upopular: $color_upopular;
+      $a_color_albacete: $color_albacete;
+
+   //1.4. COLORES PÁRRAFOS <p>__________________________________________________________________________________
+      $p_color: $main_color_6;
+      $a_color_upopular: $color_upopular;
+      $a_color_albacete: $color_albacete;
+
+   //1.5. COLORES FORMULARIOS __________________________________________________________________________________
+      $bg_color_form_item: $main_color_4;
+      $form_error: $error_color;
+      $color_placeholder: $main_color_1;
+
+   //1.6. COLORES BOTONES__________________________________________________________________________________
+
+      //1.6.1 BOTON 1_______________________________________________________________________________
+         $button_color: $main_color_2;
+         $button_bg: $blanco;
+
+         $button_color_hover: $blanco;
+         $button_bg_hover: $main_color_1;
+
+         $button_color_albacete_hover: $color_albacete;
+         $button_color_upopular_hover: $color_upopular;
+
+      //1.6.2 BOTON 2_______________________________________________________________________________      
+         $button2_color: $blanco;
+         $button2_bg: $main_color_1;
+
+         $button2_color_hover: $blanco;
+         $button2_bg_hover: $main_color_5;
+
+         $button2_color_albacete: $main_color_2;
+         $button2_color_albacete_hover: $color_albacete;
+
+         $button2_color_upopular: $main_color_2;
+         $button2_color_upopular_hover: $color_upopular;
+
+   //1.7. COLORES DROPDOWN__________________________________________________________________________________
+      $dropdown_font_color: $main_color_5;
+      $dropdown2_font_color:  $main_color_4;
+ 
+      $dropdown_back_color: $main_color_4;
+      $dropdown2_back_color: $main_color_5;
+
+   //1.8. COLORES HEADER __________________________________________________________________________________
+      $header_font_color: $blanco;
+      $header_background_color: $main_color_2; 
+
+   //1.9. COLORES FOOTER __________________________________________________________________________________
+      $footer_font_color: $blanco;
+      $footer_background_color: $main_color_1; 
+
+   //1.10. COLOR OPACITY __________________________________________________________________________________
+      $opacity_color: $main_color_2;
+      $opacity: 0.8;
+   
+   //1.11. COLORES NOTICIA __________________________________________________________________________________
+      $fecha_color: $main_color_6;
+      $body_color: $main_color_6;
+
+   //1.12. COLOR BACKGROUND__________________________________________________________________________________
+
+   //1.13. COLOR ACORDEON_____________________________________________________________________________________________
+      $accordion-header: $main_color_4;
+      $text-accordion-header: $main_color_1;
+
+      $text-accordion-content: $main_color_6;
+
+//2. FUENTES TAMAÑOS___________________________________________________________________________________
+$h1_font_size:22px;
+$h2_font_size:20px;
+$h3_font_size:18px;
+$h4_font_size:16px;
+$h5_font_size:16px;
+$h6_font_size:14px;
+
+$p_font_size: 16px;  
+
+$button_font_size_mn_1: 14px; 
+$button_font_size_mn_2: 16px; 
+$button2_font_size: 16px;
+
+$label_layout_builder: 20px;
+
+$title_notice: 18px;
+
+//3. BORDES__________________________________________________________________________________________________
+$border_bottom_input: 1px solid $main_color_2;
+$border_tbody_tr: 2px solid $main_color_3;
+$border_layout_builder_separator_item: 1px outset;
+$border_form_input_error: 2px solid $form_error;
+$border_form_radio_error: 1px solid $form_error;
+$outline_form_check_error: 1px solid $form_error;
+
+//4. SHADOWS__________________________________________________________________________________________________
+$checkbox_shadow: 0 2px 3px #00000029;
+
+//5. TABLAS__________________________________________________________________________________________________
+
+   //5.1 TAMAÑOS_____________________________________________________________________________________________
+      $table_width: 100%;
+      $table_margin: 0 0 10px;
+
+      $table_thead_th_padding: 0.5rem 1rem;
+      $table_thead_th_height: 2rem;
+
+      $icon_width: 15px;
+      $icon_height: 8px;
+
+      $tbody_td_padding: 0.5rem 1rem;
+      $tbody_td_height: 4rem;
+
+//6. COMPONENTE GRID__________________________________________________________________________________________
+
+$grid-gap: 20px;
+
+   //6.1 COLUMNAS______________________________________________________________________________________________
+
+      $column_width: 1fr;
+      $repeat_column_num: 3;
+
+   //6.2 FILAS_________________________________________________________________________________________________
+
+
+//7. GALERÍAS__________________________________________________________________________________________
+
+   //7.1 IMÁGENES______________________________________________________________________________________________
+
+   $grid-gap_gallery_img: 20px;
+
+      //7.1.1 COLUMNAS____________________________________________________________________________________________
+
+         $column_width_gallery_img: 1fr;
+         $repeat_column_num_gallery_img: 4;
+
+   //7.1 VIDEOS______________________________________________________________________________________________
+      $grid-gap_gallery_video: 20px;
+
+      //7.1.1 COLUMNAS____________________________________________________________________________________________
+
+         $column_width_gallery_video: 1fr;
+         $repeat_column_num_gallery_video: 4;
+
+
+// 8. MEDIDAS DE BOTONES
+
+   // 8.1 BOTONES PRINCIPALES
+
+      // 8.1.1 ICONO
+
+         $icon_btn_mn_1_width: 21px;
+         $icon_btn_mn_1_height: 9px;
+         $icon_btn_mn_1_m-left: 8px;
+
+   // 8.2 BOTONES SECUNDARIOS
+
+      // 8.2.1 ICONO
+
+         $icon_btn_mn_2_size: 21px;
+         $icon_btn_mn_2_m-left: 8px;
+
+//8 ICONOS_______________________________________________________________________________________________
+$filter_icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8'%3E%3Cpath d='m1.75,0.25v1.5h10.5v-1.5z m0,3v1.5h7.5v-1.5z m0,3v1.5h4.5v-1.5z' fill='%23222330'/%3E%3C/svg%3E";
+
+$menu_icon: "⌵";
+
+$button_mn_1_icon: '';
+$button_mn_2_icon: '';
+
+$help_icon: '';
+$plus_icon: '';
+$search_icon: '/sites/default/files/iconos-svg/icono-lupa.svg';
+$link_icon: '/sites/default/files/iconos-svg/icono-link.svg';
+$file_icon: '/sites/default/files/iconos-svg/archivo.svg';
+
+//9 FILTROS
+
+$filter_main_color_1: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(92%) contrast(91%);
+$filter_main_color_1_mod_1: invert(22%) sepia(87%) saturate(404%) hue-rotate(161deg) brightness(62%) contrast(91%);
+$filter_white: invert(100%) sepia(0%) saturate(1%) hue-rotate(248deg) brightness(103%) contrast(101%);

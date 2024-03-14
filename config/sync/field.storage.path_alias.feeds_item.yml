@@ -1,0 +1,20 @@
+uuid: 089c9f03-c531-4270-8580-5437d45dbe87
+langcode: es
+status: true
+dependencies:
+  module:
+    - feeds
+    - path_alias
+id: path_alias.feeds_item
+field_name: feeds_item
+entity_type: path_alias
+type: feeds_item
+settings:
+  target_type: feeds_feed
+module: feeds
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

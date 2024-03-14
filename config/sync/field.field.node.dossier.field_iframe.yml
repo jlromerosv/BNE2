@@ -1,0 +1,30 @@
+uuid: 17295c78-0c88-45c6-80c8-3fa7c784b5b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.dossier
+  module:
+    - iframe
+id: node.dossier.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: dossier
+label: Iframes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '0'
+  tokensupport: null
+  width: null
+  height: null
+field_type: iframe

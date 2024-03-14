@@ -1,0 +1,28 @@
+uuid: aa02232b-a394-463c-9069-02a867a43229
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.seccion_torrevieja_
+  module:
+    - linkchecker
+    - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
+id: node.seccion_torrevieja_.body
+field_name: body
+entity_type: node
+bundle: seccion_torrevieja_
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

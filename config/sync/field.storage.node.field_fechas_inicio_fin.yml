@@ -1,0 +1,24 @@
+uuid: 22939f0f-6b97-4555-94c2-eb286149f61a
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_fechas_inicio_fin
+field_name: field_fechas_inicio_fin
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

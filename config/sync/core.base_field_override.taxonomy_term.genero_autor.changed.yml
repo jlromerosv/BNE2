@@ -1,0 +1,18 @@
+uuid: c7bba8e8-e492-4c7b-8e8e-9d4bf3ee7721
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero_autor
+id: taxonomy_term.genero_autor.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: genero_autor
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

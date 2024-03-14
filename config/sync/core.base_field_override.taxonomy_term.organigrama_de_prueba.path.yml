@@ -1,0 +1,20 @@
+uuid: 9872876b-0018-4af8-b765-8dd3c0c1517e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organigrama_de_prueba
+  module:
+    - path
+id: taxonomy_term.organigrama_de_prueba.path
+field_name: path
+entity_type: taxonomy_term
+bundle: organigrama_de_prueba
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

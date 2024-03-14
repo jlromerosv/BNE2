@@ -1,0 +1,20 @@
+uuid: 9d3962a6-b9fe-42cf-9dd0-0885cb99cd4a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_generico
+  module:
+    - options
+id: node.contenido_generico.publish_state
+field_name: publish_state
+entity_type: node
+bundle: contenido_generico
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

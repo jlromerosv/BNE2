@@ -1,0 +1,18 @@
+uuid: 729b8d86-865d-4ef5-a9d4-659f389be59d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_postal
+id: taxonomy_term.categoria_postal.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: categoria_postal
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

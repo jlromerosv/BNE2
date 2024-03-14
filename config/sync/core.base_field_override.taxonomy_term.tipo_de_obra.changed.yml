@@ -1,0 +1,18 @@
+uuid: cef7bf06-d4e6-417e-b739-e4e3f9fc07f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_obra
+id: taxonomy_term.tipo_de_obra.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_obra
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

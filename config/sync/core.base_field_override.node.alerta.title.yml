@@ -1,0 +1,18 @@
+uuid: bcea39d4-0428-46ab-883f-76ac94790d2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.alerta
+id: node.alerta.title
+field_name: title
+entity_type: node
+bundle: alerta
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

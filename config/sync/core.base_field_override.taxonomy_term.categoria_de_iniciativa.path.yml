@@ -1,0 +1,20 @@
+uuid: 26cf66e4-7f69-4ea5-81f4-fc2c71a986bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_de_iniciativa
+  module:
+    - path
+id: taxonomy_term.categoria_de_iniciativa.path
+field_name: path
+entity_type: taxonomy_term
+bundle: categoria_de_iniciativa
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

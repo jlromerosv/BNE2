@@ -1,0 +1,8 @@
+uuid: acbb893c-164c-48f3-b74f-7fcee43a481a
+langcode: es
+status: true
+dependencies: {  }
+name: 'Disponibilidad publicaciones'
+vid: disponibilidad_publicaciones
+description: ''
+weight: 0

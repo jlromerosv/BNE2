@@ -1,0 +1,18 @@
+uuid: 006a6a25-9ce9-42de-8090-ddafac764edf
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero_autor
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.genero_autor
+target_entity_type_id: taxonomy_term
+target_bundle: genero_autor
+default_langcode: site_default
+language_alterable: false

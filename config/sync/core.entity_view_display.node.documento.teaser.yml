@@ -1,0 +1,39 @@
+uuid: 3915390a-7fad-4024-8dec-c4007a3b0d36
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.documento.body
+    - field.field.node.documento.field_alias_tipo_contenido
+    - field.field.node.documento.field_archivo
+    - field.field.node.documento.field_area_de_transparencia
+    - field.field.node.documento.field_domain_access
+    - field.field.node.documento.field_domain_all_affiliates
+    - field.field.node.documento.field_domain_source
+    - field.field.node.documento.field_meta_tags
+    - node.type.documento
+  module:
+    - user
+id: node.documento.teaser
+targetEntityType: node
+bundle: documento
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_alias_tipo_contenido: true
+  field_archivo: true
+  field_area_de_transparencia: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_meta_tags: true
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

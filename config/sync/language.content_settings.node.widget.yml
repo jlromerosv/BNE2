@@ -1,0 +1,18 @@
+uuid: e87c2128-32df-4832-b069-73323ec0c6f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.widget
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.widget
+target_entity_type_id: node
+target_bundle: widget
+default_langcode: site_default
+language_alterable: false

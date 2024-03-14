@@ -1,0 +1,8 @@
+uuid: 26ad6259-ecbe-4a89-ad6c-0bfc997fc068
+langcode: es
+status: true
+dependencies: {  }
+id: mx1---sede-electronica-bne
+label: 'MX1 - Sede electrónica BNE'
+description: ''
+locked: false

@@ -1,0 +1,18 @@
+uuid: e051f9dd-6203-4eb9-bba5-ee9557880d65
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+id: node.pagina_avanzada.publish_on
+field_name: publish_on
+entity_type: node
+bundle: pagina_avanzada
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

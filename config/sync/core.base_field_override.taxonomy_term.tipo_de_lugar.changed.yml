@@ -1,0 +1,18 @@
+uuid: 8fb97a55-2c8d-4b9b-82ad-b59b4b1bd798
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_lugar
+id: taxonomy_term.tipo_de_lugar.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_lugar
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

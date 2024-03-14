@@ -1,0 +1,72 @@
+uuid: 3c5b2371-6eb1-4161-965e-aade31cca002
+langcode: es
+status: false
+dependencies:
+  config:
+    - search_api.index.solr_index
+    - views.view.buscador_solr_texto_completo
+  module:
+    - views
+    - search_api_autocomplete
+id: buscador_solr_texto_completo
+label: 'Buscador SOLR texto completo'
+index_id: solr_index
+suggester_settings:
+  live_results:
+    fields:
+      - body
+      - field_descripcion
+      - field_subtitulo
+      - title
+    highlight:
+      enabled: false
+      field: ''
+    view_modes:
+      'entity:media':
+        archivo: ''
+        archivo_de_audio: ''
+        archivo_de_video: ''
+        video_remoto: ''
+      'entity:node':
+        autor: ''
+        campana: ''
+        catalogo: ''
+        coleccion: ''
+        convocatoria: ''
+        documento: ''
+        dossier: ''
+        enlace: ''
+        enlace_a_web_archivada: ''
+        entidad: ''
+        entrada_de_blog: ''
+        evento: ''
+        faq: ''
+        galeria_de_documentos: ''
+        galeria_de_imagenes: ''
+        horarios: ''
+        iniciativa: ''
+        lugar: ''
+        noticia: ''
+        obra: ''
+        pagina_basica: ''
+        pagina_personalizada: ''
+        persona: ''
+        publicacion: ''
+        referencias_bibliograficas: ''
+        seccion_nivel_1_estandar: ''
+        servicio: ''
+suggester_weights:
+  live_results: 0
+suggester_limits: {  }
+search_settings:
+  'views:buscador_solr_texto_completo':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: edit-submit-buscador-solr-texto-completo--W7GzXrI23Co
+  autosubmit: false

@@ -1,0 +1,30 @@
+uuid: 8818533b-3f3e-421f-89d8-2ba42bfc95e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entidades
+    - node.type.entidad
+    - node.type.entidad_referencia_
+    - node.type.iniciativa
+id: node.iniciativa.field_entidades
+field_name: field_entidades
+entity_type: node
+bundle: iniciativa
+label: Participa
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      entidad: entidad
+      entidad_referencia_: entidad_referencia_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: entidad
+field_type: entity_reference

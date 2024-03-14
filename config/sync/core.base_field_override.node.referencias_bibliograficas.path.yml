@@ -1,0 +1,20 @@
+uuid: a0a2d1c3-d5cc-406d-96ed-1fef1fe61b57
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.referencias_bibliograficas
+  module:
+    - path
+id: node.referencias_bibliograficas.path
+field_name: path
+entity_type: node
+bundle: referencias_bibliograficas
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

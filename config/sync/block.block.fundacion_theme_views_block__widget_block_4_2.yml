@@ -1,0 +1,31 @@
+uuid: 816eda9b-1365-42ff-a2d4-df85d485c325
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.widget
+  module:
+    - domain
+    - views
+  theme:
+    - fundacion_theme
+id: fundacion_theme_views_block__widget_block_4_2
+theme: fundacion_theme
+region: footer_izquierdo_1_3
+weight: -51
+provider: null
+plugin: 'views_block:widget-block_4'
+settings:
+  id: 'views_block:widget-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  domain:
+    id: domain
+    negate: null
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains: {  }

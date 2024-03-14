@@ -1,0 +1,18 @@
+uuid: 6213c4ac-1428-4f63-83eb-8bb4a13252b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.hito
+id: node.hito.publish_on
+field_name: publish_on
+entity_type: node
+bundle: hito
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

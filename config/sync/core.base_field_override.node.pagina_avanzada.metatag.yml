@@ -1,0 +1,18 @@
+uuid: 4c6cf976-81cc-47ce-96df-e8a35eb7f3af
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_avanzada
+id: node.pagina_avanzada.metatag
+field_name: metatag
+entity_type: node
+bundle: pagina_avanzada
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

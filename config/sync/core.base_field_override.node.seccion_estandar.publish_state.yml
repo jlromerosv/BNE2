@@ -1,0 +1,20 @@
+uuid: 5a8259b5-4cbf-457d-a7c1-10a27592ae75
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.seccion_estandar
+  module:
+    - options
+id: node.seccion_estandar.publish_state
+field_name: publish_state
+entity_type: node
+bundle: seccion_estandar
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

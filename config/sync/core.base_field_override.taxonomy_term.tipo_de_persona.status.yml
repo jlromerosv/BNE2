@@ -1,0 +1,22 @@
+uuid: 28262db8-2a02-4013-b4c8-e0082c203728
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_persona
+id: taxonomy_term.tipo_de_persona.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_persona
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

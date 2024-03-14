@@ -1,0 +1,20 @@
+uuid: 49d42423-e6bc-466b-8708-08a49456eb93
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.serie_estadistica
+  module:
+    - path
+id: node.serie_estadistica.path
+field_name: path
+entity_type: node
+bundle: serie_estadistica
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

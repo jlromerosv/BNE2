@@ -1,0 +1,28 @@
+uuid: d6a13f02-c792-4467-a2e7-19f32da79d25
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.mx1---bne---contacto.field_descripcion_enlace
+    - system.menu.mx1---bne---contacto
+id: menu_link_content.mx1---bne---contacto.default
+targetEntityType: menu_link_content
+bundle: mx1---bne---contacto
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_descripcion_enlace:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  uuid: true

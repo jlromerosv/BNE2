@@ -1,0 +1,18 @@
+uuid: cca37557-50d9-418c-81d7-0ed985a3a76e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_de_videos
+id: node.galeria_de_videos.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: galeria_de_videos
+label: 'Estado de moderación'
+description: 'El estado de moderación de esta pieza de contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

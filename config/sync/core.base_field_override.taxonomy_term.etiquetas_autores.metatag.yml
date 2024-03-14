@@ -1,0 +1,18 @@
+uuid: 34b8ea7a-dfe6-4206-a650-c8f8d5d39ebb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_autores
+id: taxonomy_term.etiquetas_autores.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: etiquetas_autores
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

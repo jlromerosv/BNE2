@@ -1,0 +1,10 @@
+uuid: 6cbd0b73-03b9-41ac-9040-0fd64008a1be
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.bloque_audios
+label: 'Bloque Audios'
+targetEntityType: media
+cache: true

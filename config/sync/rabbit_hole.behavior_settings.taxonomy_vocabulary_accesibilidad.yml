@@ -1,0 +1,14 @@
+uuid: 7ee10a30-880a-442d-a4d0-56b8bed73ee7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.accesibilidad
+id: taxonomy_vocabulary_accesibilidad
+entity_type_id: taxonomy_vocabulary
+entity_id: accesibilidad
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

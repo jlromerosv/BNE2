@@ -1,0 +1,32 @@
+uuid: 4bdea14f-88ce-46fc-8a23-df6dfb6fb1ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenido_generico
+    - node.type.contenido_generico
+    - node.type.dossier
+  content:
+    - 'node:contenido_generico:81abdbf6-ec12-4e5b-bd5d-549ff20231a8'
+id: node.dossier.field_contenido_generico
+field_name: field_contenido_generico
+entity_type: node
+bundle: dossier
+label: 'Enlace Destacado'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 81abdbf6-ec12-4e5b-bd5d-549ff20231a8
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contenido_generico: contenido_generico
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
